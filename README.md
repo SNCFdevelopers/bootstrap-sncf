@@ -21,3 +21,11 @@ Documentation search is powered by [Algolia's DocSearch](https://community.algol
 5. Open `http://localhost:9001` in your browser, and voilà.
 
 Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
+
+
+## Build
+
+### Fonts and icons
+
+1. Run `npm run font-compile`
+2. Run `npm run css-main`

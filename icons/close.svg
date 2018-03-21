@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1" id="DESKTOP" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0088CE;}
+</style>
+<path class="st0" d="M329.5,250L484.1,95.5c21.2-21.2,21.2-58.3,0-79.5c-21.2-21.2-58.3-21.2-79.5,0L250,170.5L95.5,15.9
+	c-21.2-21.2-58.3-21.2-79.5,0s-21.2,58.3,0,79.5L170.5,250L15.9,404.5c-21.2,21.2-21.2,58.3,0,79.5s58.3,21.2,79.5,0L250,329.5
+	l154.5,154.5c21.2,21.2,58.3,21.2,79.5,0c21.2-21.2,21.2-58.3,0-79.5L329.5,250z"/>
+</svg>

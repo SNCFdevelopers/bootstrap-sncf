@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0088CE;}
+</style>
+<g id="MOBILE">
+	<rect x="337.1" y="212.1" class="st0" width="25" height="25"/>
+	<path class="st0" d="M250,0C112.9,0,0,112.9,0,250s112.9,250,250,250s250-112.1,250-250S387.9,0,250,0z M162.9,112.9h175v62.9h-175
+		V112.9z M337.1,387.9H162.9V300h175v87.9H337.1z M387.9,309.8c0,9.1-7.6,15.9-15.9,15.9h-21.2v-37.9H150v37.9h-22.7
+		c-7.6-1.5-15.2-9.1-15.2-15.9V203.8c0-9.1,7.6-15.2,15.9-15.9H372c9.1,0,15.9,7.6,15.9,15.9L387.9,309.8L387.9,309.8z"/>
+</g>
+</svg>

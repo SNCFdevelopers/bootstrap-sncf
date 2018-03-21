@@ -66,6 +66,8 @@
     "watch": "npm-run-all --parallel watch-css watch-js",
     "watch-css": "nodemon --ignore js/ --ignore dist/ -e scss -x \"npm run css\"",
     "watch-js": "nodemon --ignore scss/ --ignore js/dist/ --ignore dist/ -e js -x \"npm run js-compile\"",
+    "font-compile": "npm-run-all icofont font",
+    "icofont": "icon-font-generator icons/*.svg -o fonts/icons --csspath scss/generic/_icons.scss --fontspath ../../fonts/icons/ --html false -j false",
     "font": "cpx \"fonts/**/*.{woff,ttf}\" \"dist/fonts\""
   },
   "style": "dist/css/bootstrap.css",
@@ -101,6 +103,7 @@
     "eslint-plugin-compat": "^2.1.0",
     "glob": "^7.1.2",
     "htmllint-cli": "^0.0.6",
+    "icon-font-generator": "^1.1.1",
     "jsunitsaucelabs": "^1.3.0",
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
