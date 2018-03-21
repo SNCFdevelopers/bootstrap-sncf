@@ -12,10 +12,8 @@ toc: true
 Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
 
 {% example html %}
-{% for color in site.data.theme-colors %}
+{% for color in site.data.btn-colors %}
 <button type="button" class="btn btn-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}
-
-<button type="button" class="btn btn-link">Link</button>
 {% endexample %}
 
 {% capture callout-include %}{% include callout-warning-color-assistive-technologies.md %}{% endcapture %}
@@ -40,8 +38,39 @@ When using button classes on `<a>` elements that are used to trigger in-page fun
 In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the `.btn-outline-*` ones to remove all background images and colors on any button.
 
 {% example html %}
-{% for color in site.data.theme-colors %}
+{% for color in site.data.btn-colors %}
 <button type="button" class="btn btn-outline-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}
+{% endexample %}
+
+## Button link
+
+TODO : description
+
+{% example html %}
+<a href="#" class="btn btn-link"><span>Link</span> <i class="icons-share btn-icon-right"></i></a>
+<a href="#" class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share btn-icon-right"></i></a>
+{% endexample %}
+
+## Button icon
+
+TODO : description
+
+{% example html %}
+<button type="button" class="btn btn-only-icon btn-primary"><i class="icons-search"></i></button>
+<button type="button" class="btn btn-only-icon btn-white" disabled><i class="icons-search"></i></button>
+<button type="button" class="btn btn-only-icon btn-white"><i class="icons-search"></i></button>
+{% endexample %}
+
+TODO : description
+
+{% example html %}
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow icon-flip-horizontal"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow"></i></button>
+<button type="button" class="btn-rounded btn-rounded-primary"><i class="icons-share"></i></button>
+<button type="button" class="btn-rounded btn-rounded-facebook"><i class="icons-twitter"></i></button>
+<button type="button" class="btn-rounded btn-rounded-twitter"><i class="icons-twitter"></i></button>
+<button type="button" class="btn-rounded btn-rounded-linkedin"><i class="icons-twitter"></i></button>
+<button type="button" class="btn-rounded btn-rounded-youtube"><i class="icons-twitter"></i></button>
 {% endexample %}
 
 ## Sizes
@@ -61,8 +90,8 @@ Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes
 Create block level buttons—those that span the full width of a parent—by adding `.btn-block`.
 
 {% example html %}
-<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-primary btn-block">Block level button</button>
+<button type="button" class="btn btn-secondary btn-block">Block level button</button>
 {% endexample %}
 
 ## Active state
@@ -70,8 +99,8 @@ Create block level buttons—those that span the full width of a parent—by add
 Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. **There's no need to add a class to `<button>`s as they use a pseudo-class**. However, you can still force the same active appearance with `.active` (and include the <code>aria-pressed="true"</code> attribute) should you need to replicate the state programmatically.
 
 {% example html %}
-<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
-<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+<a href="#" class="btn btn-primary active" role="button" aria-pressed="true">Primary link</a>
+<a href="#" class="btn btn-secondary active" role="button" aria-pressed="true">Link</a>
 {% endexample %}
 
 ## Disabled state
@@ -79,8 +108,8 @@ Buttons will appear pressed (with a darker background, darker border, and inset 
 Make buttons look inactive by adding the `disabled` boolean attribute to any `<button>` element.
 
 {% example html %}
-<button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
-<button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+<button type="button" class="btn btn-primary" disabled>Primary button</button>
+<button type="button" class="btn btn-secondary" disabled>Button</button>
 {% endexample %}
 
 Disabled buttons using the `<a>` element behave a bit different:
@@ -90,8 +119,8 @@ Disabled buttons using the `<a>` element behave a bit different:
 - Disabled buttons should include the `aria-disabled="true"` attribute to indicate the state of the element to assistive technologies.
 
 {% example html %}
-<a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link</a>
-<a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link</a>
+<a href="#" class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
+<a href="#" class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
 {% endexample %}
 
 {% callout warning %}

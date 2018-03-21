@@ -10,3 +10,57 @@
 
 // stylelint-disable
 $colors: map-remove($colors, "indigo");
+
+$btn-colors: () !default;
+$btn-colors: map-merge((
+  "primary":    (
+    theme-color("primary"), theme-color("primary"), color("white"),
+    #0074af, #0074af, color("white"),
+    #0074af, #0074af, color("white")
+  ),
+  "secondary":  (
+    $secondary, $secondary, color("white"),
+    #333333, #333333, color("white"),
+    #333333, #333333, color("white")
+  ),
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "white":      (
+    color("white"), color("white"), theme-color("primary"),
+    color("white"), color("white"), #0074af,
+    color("white"), color("white"), #0074af
+  )
+), $btn-colors);
+
+$btn-rounded-colors: () !default;
+$btn-rounded-colors: map-merge((
+  "primary":    (
+    theme-color("primary"), theme-color("primary"), color("white"),
+    #0074af, #0074af, color("white")
+  ),
+  "white": (
+    color("white"), color("white"), theme-color("primary"),
+    theme-color("primary"), theme-color("primary"), color("white")
+  ),
+  "facebook": (
+    gray("400"), gray("400"), color("white"),
+    #3b5998, #3b5998, color("white")
+  ),
+  "twitter": (
+    gray("400"), gray("400"), color("white"),
+    #4099FF, #4099FF, color("white"),
+  ),
+  "linkedin": (
+    gray("400"), gray("400"), color("white"),
+    #007bb6, #007bb6, color("white")
+  ),
+  "youtube": (
+    gray("400"), gray("400"), color("white"),
+    #bb0000, #bb0000, color("white")
+  )
+), $btn-rounded-colors);
+// stylelint-enable

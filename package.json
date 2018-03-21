@@ -67,7 +67,7 @@
     "watch-css": "nodemon --ignore js/ --ignore dist/ -e scss -x \"npm run css\"",
     "watch-js": "nodemon --ignore scss/ --ignore js/dist/ --ignore dist/ -e js -x \"npm run js-compile\"",
     "font-compile": "npm-run-all icofont font",
-    "icofont": "icon-font-generator icons/*.svg -o fonts/icons --csspath scss/generic/_icons.scss --fontspath ../../fonts/icons/ --html false -j false",
+    "icofont": "icon-font-generator icons/*.svg -o fonts/icons --csspath scss/generic/_icons.css --fontspath ../../fonts/icons/ --html false -j false",
     "font": "cpx \"fonts/**/*.{woff,ttf}\" \"dist/fonts\""
   },
   "style": "dist/css/bootstrap.css",

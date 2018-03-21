@@ -1,0 +1,224 @@
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Base styles
+//
+
+.btn {
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: $btn-border-width solid transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
+  @include transition($btn-transition);
+
+  // Share hover and focus styles
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+
+  // Opinionated: add "hand" cursor to non-disabled .btn elements
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    background-image: none;
+    @include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $btn-colors {
+  .btn-#{$color} {
+    @if type-of($value) == "list" {
+      @include button-variant(
+        nth($value, 1), nth($value, 2), nth($value, 3),
+        nth($value, 4), nth($value, 5), nth($value, 6),
+        nth($value, 7), nth($value, 8), nth($value, 9)
+      );
+    } @else {
+      @include button-variant($value, $value);
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 0;
+  font-weight: $font-weight-medium;
+  color: $link-color;
+  background-color: transparent;
+
+  @include hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  [class^="icons-"] {
+    display: block;
+    font-size: rem(12px);
+
+    &.btn-icon-right {
+      margin-left: rem(8px);
+    }
+  }
+
+  &:focus,
+  &.focus {
+    text-decoration: $link-hover-decoration;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+  }
+
+  // No need for an active state here
+}
+
+//
+// Button icon
+//
+.btn-only-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(50px);
+  height: rem(45px);
+  padding: 0;
+}
+
+
+//
+// Button sizes
+//
+
+.btn-lg {
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+}
+
+.btn-sm {
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+}
+
+
+//
+// Block button
+//
+
+.btn-block {
+  display: block;
+  width: 100%;
+
+  // Vertically space out multiple block buttons
+  + .btn-block {
+    margin-top: $btn-block-spacing-y;
+  }
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+
+//
+// Button navigation
+//
+
+.btn-rounded {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(40px);
+  height: rem(40px);
+  font-size: rem(14px);
+  color: color("white");
+  background-color: gray("400");
+  border-color: gray("400");
+  border-radius: 50%;
+  @include transition($btn-transition);
+
+  @include hover {
+    background-color: #0074af;
+    border-color: #0074af;
+  }
+
+  &.box-shadow {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2);
+
+    @include hover {
+      box-shadow: none;
+    }
+  }
+}
+
+@each $color, $value in $btn-rounded-colors {
+  .btn-rounded-#{$color} {
+    @if type-of($value) == "list" {
+      color: nth($value, 3);
+      background-color: nth($value, 1);
+      border-color: nth($value, 2);
+
+      @include hover {
+        color: nth($value, 6);
+        background-color: nth($value, 4);
+        border-color: nth($value, 5);
+      }
+    }
+  }
+}
