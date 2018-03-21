@@ -12,7 +12,7 @@ let fileDest  = 'bootstrap.js'
 const external = ['jquery', 'popper.js']
 const plugins = [
   babel({
-    exclude: 'node_modules/**', // Only transpile our source code
+    exclude: '/node_modules/(?![bootstrap])', // Only transpile our source code
     externalHelpersWhitelist: [ // Include only required helpers
       'defineProperties',
       'createClass',
@@ -35,7 +35,7 @@ if (BUNDLE) {
 }
 
 module.exports = {
-  input: path.resolve(__dirname, '../js/src/index.js'),
+  input: path.resolve(__dirname, '../node_modules/bootstrap/js/src/index.js'),
   output: {
     banner: `/*!
   * Bootstrap v${pkg.version} (${pkg.homepage})

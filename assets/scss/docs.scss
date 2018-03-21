@@ -24,9 +24,11 @@
 // Happy Bootstrapping!
 
 // Load Bootstrap variables and mixins
-@import "../../scss/functions";
-@import "../../scss/variables";
-@import "../../scss/mixins";
+@import "node_modules/bootstrap/scss/functions";
+@import "../../scss/settings/variables";
+@import "node_modules/bootstrap/scss/variables";
+@import "../../scss/settings/maps";
+@import "node_modules/bootstrap/scss/mixins";
 
 // Load docs components
 @import "variables";
