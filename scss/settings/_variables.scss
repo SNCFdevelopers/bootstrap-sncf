@@ -26,13 +26,29 @@ $teal:    #d2e100;
 $cyan:    #009aa6;
 
 $secondary:     $gray-500;
+// stylelint-enable
 
 
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-caret:              false !default;
+$enable-caret:              false;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color:                $gray-500;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-hover-color:          #0074af;
+$link-hover-decoration:     none;
 
 
 // Components
@@ -54,33 +70,58 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 $font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
 
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+
 $font-weight-medium:          500;
+
+$line-height-base:            1.5;
 
 
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .75rem;
-$input-btn-padding-x:         1.875rem;
-
-$input-btn-padding-y-sm:      .21875rem;
-$input-btn-padding-x-sm:      1.25rem;
+$input-btn-line-height:       $line-height-base;
 
 
 // Buttons
 //
 // For each of Bootstrap's buttons, define text, background, and border color.
 
-$btn-font-weight:             $font-weight-medium;
+$btn-padding-y:             .75rem;
+$btn-padding-x:             1.875rem;
+
+$btn-padding-y-sm:          .21875rem;
+$btn-padding-x-sm:          1.25rem;
+
+$btn-font-weight:           $font-weight-medium;
 
 
-// Links
-//
-// Style anchor elements.
+// Forms
 
-$link-hover-color:          #0074af;
-$link-hover-decoration:     none;
+$input-padding-y:                       .75rem;
+$input-padding-x:                       1.25rem;
+
+$input-bg:                              $gray-100;
+$input-disabled-bg:                     $gray-200;
+
+$input-color:                           $gray-400;
+$input-border-color:                    $gray-100;
+$input-border-width:                    .125em;
+
+$input-focus-bg:                        $gray-100;
+$input-focus-border-color:              $gray-100;
+
+$input-placeholder-color:               $gray-300;
+
+$input-height-border:                   $input-border-width * 2;
+
+$input-height-inner:                    ($font-size-base * $input-btn-line-height) + ($input-padding-y * 2) !default;
+$input-height:                          calc(#{$input-height-inner} + #{$input-height-border}) !default;
+
+
+// Form validation
+$form-feedback-font-size:           1rem;
 
 
 // Dropdowns

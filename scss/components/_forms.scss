@@ -1,0 +1,25 @@
+/* forms
+   ========================================================================== */
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Textual form controls
+//
+
+.form-control {
+  .was-validated &:valid,
+  &.is-valid,
+  .was-validated &:invalid,
+  &.is-invalid {
+    border-top-color: gray("100");
+    border-right-color: gray("100");
+    border-left-color: gray("100");
+
+    &:focus {
+      border-top-color: gray("100");
+      border-right-color: gray("100");
+      border-left-color: gray("100");
+    }
+  }
+}
+
