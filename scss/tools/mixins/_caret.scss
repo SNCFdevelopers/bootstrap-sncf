@@ -1,0 +1,61 @@
+@mixin caret-down {
+  width: rem(10px);
+  height: rem(8px);
+  background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 8.02'><defs><style>.svg-caret{fill:initial;}</style></defs><title>caret</title><path class='svg-caret' d='M4,10.51l-6.2-6.1a1.22,1.22,0,0,1,0-1.6,1.33,1.33,0,0,1,.8-.3,1.14,1.14,0,0,1,.8.3L4,7.31l4.6-4.5a1.2,1.2,0,0,1,1.8.2,1.4,1.4,0,0,1-.3,1.5Z' transform='translate(2.51 -2.49)'/></svg>");
+}
+
+@mixin caret-up {
+  width: rem(10px);
+  height: rem(8px);
+  background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 8.02'><defs><style>.svg-caret{fill:currentColor;}</style></defs><title>caret</title><path class='svg-caret' d='M6.42.08l6.2,6.1a1.22,1.22,0,0,1,0,1.6,1.33,1.33,0,0,1-.8.3,1.14,1.14,0,0,1-.8-.3l-4.6-4.5-4.6,4.5A1.2,1.2,0,0,1,0,7.58a1.4,1.4,0,0,1,.3-1.5Z' transform='translate(0.08 -0.08)'/></svg>");
+}
+
+@mixin caret-right {
+  width: rem(8px);
+  height: rem(10px);
+  background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8.02 13'><defs><style>.svg-caret{fill:currentColor;}</style></defs><title>caret</title><path class='svg-caret' d='M10.43,4.09l-6.1,6.2a1.22,1.22,0,0,1-1.6,0,1.33,1.33,0,0,1-.3-.8,1.14,1.14,0,0,1,.3-.8l4.5-4.6L2.73-.51a1.2,1.2,0,0,1,.2-1.8,1.4,1.4,0,0,1,1.5.3Z' transform='translate(-2.41 2.41)'/></svg>");
+}
+
+@mixin caret-left {
+  width: rem(8px);
+  height: rem(10px);
+  background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8.02 13'><defs><style>.svg-caret{fill:currentColor;}</style></defs><title>caret</title><path class='svg-caret' d='M2.41,4.09l6.1-6.2a1.22,1.22,0,0,1,1.6,0,1.33,1.33,0,0,1,.3.8,1.14,1.14,0,0,1-.3.8l-4.5,4.6,4.5,4.6a1.2,1.2,0,0,1-.2,1.8,1.4,1.4,0,0,1-1.5-.3Z' transform='translate(-2.41 2.41)'/></svg>");
+}
+
+@mixin caret($direction: down) {
+  @if $enable-caret {
+    &::after {
+      display: inline-block;
+      margin-left: $caret-width * .85;
+      vertical-align: $caret-width * .85;
+      content: "";
+      @if $direction == down {
+        @include caret-down;
+      } @else if $direction == up {
+        @include caret-up;
+      } @else if $direction == right {
+        @include caret-right;
+      }
+    }
+
+    @if $direction == left {
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-right: $caret-width * .85;
+        vertical-align: $caret-width * .85;
+        content: "";
+        @include caret-left;
+      }
+    }
+
+    &:empty::after {
+      margin-left: 0;
+    }
+  }
+}

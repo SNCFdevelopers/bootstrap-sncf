@@ -28,6 +28,13 @@ $cyan:    #009aa6;
 $secondary:     $gray-500;
 
 
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret:              false !default;
+
+
 // Components
 //
 // Define common padding and border radius sizes and more.
@@ -74,3 +81,10 @@ $btn-font-weight:             $font-weight-medium;
 
 $link-hover-color:          #0074af;
 $link-hover-decoration:     none;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-border-color:             #d8d8d8;
