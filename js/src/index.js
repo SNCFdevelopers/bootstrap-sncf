@@ -1,15 +1,16 @@
 import $ from 'jquery'
-import Alert from './alert'
-import Button from './button'
-import Carousel from './carousel'
-import Collapse from './collapse'
-import Dropdown from './dropdown'
-import Modal from './modal'
-import Popover from './popover'
-import Scrollspy from './scrollspy'
-import Tab from './tab'
-import Tooltip from './tooltip'
-import Util from './util'
+import Alert from '../../node_modules/bootstrap/js/src/alert'
+import Button from '../../node_modules/bootstrap/js/src/button'
+import Carousel from '../../node_modules/bootstrap/js/src/carousel'
+import Collapse from '../../node_modules/bootstrap/js/src/collapse'
+import Dropdown from '../../node_modules/bootstrap/js/src/dropdown'
+import Modal from '../../node_modules/bootstrap/js/src/modal'
+import Popover from '../../node_modules/bootstrap/js/src/popover'
+import Scrollspy from '../../node_modules/bootstrap/js/src/scrollspy'
+import Select from './select'
+import Tab from '../../node_modules/bootstrap/js/src/tab'
+import Tooltip from '../../node_modules/bootstrap/js/src/tooltip'
+import Util from '../../node_modules/bootstrap/js/src/util'
 
 /**
  * --------------------------------------------------------------------------
@@ -48,3 +49,21 @@ export {
   Tab,
   Tooltip
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  /* eslint-disable no-console */
+  console.log('Hello from the Fab Design.')
+  /* eslint-enable no-console */
+
+  // data components
+  const dataComponent = '[data-component]'
+  const dataSelectExclusive = 'select-exclusive'
+
+  const components = document.querySelectorAll(dataComponent)
+
+  components.forEach((component) => {
+    if (component.dataset.component === dataSelectExclusive) {
+      new Select(component)
+    }
+  })
+})

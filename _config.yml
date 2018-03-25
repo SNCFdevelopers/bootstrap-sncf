@@ -21,7 +21,9 @@ exclude:
   - .github/
   - assets/scss/
   - build/
-  - js/
+  - js/dist
+  - js/src
+  - js/tests
   - node_modules/
   - nuget/
   - scss/
@@ -36,6 +38,9 @@ exclude:
   - README.md
   - sache.json
   - twbsconfig.yml
+
+keep_files:
+  - dist/js/
 
 plugins:
   - jekyll-redirect-from

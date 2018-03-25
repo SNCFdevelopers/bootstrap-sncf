@@ -35,7 +35,7 @@ if (BUNDLE) {
 }
 
 module.exports = {
-  input: path.resolve(__dirname, '../node_modules/bootstrap/js/src/index.js'),
+  input: path.resolve(__dirname, '../js/src/index.js'),
   output: {
     banner: `/*!
   * Bootstrap v${pkg.version} (${pkg.homepage})

@@ -22,3 +22,25 @@
 .icon-flip-vertical {
   transform: scaleY(-1);
 }
+
+
+// size
+.icon-size-x5 {
+  font-size: $font-size-base * .5;
+}
+
+.icon-size-x75 {
+  font-size: $font-size-base * .75;
+}
+
+.icon-size-1x {
+  font-size: $font-size-base;
+}
+
+.icon-size-1x25 {
+  font-size: $font-size-base * 1.25;
+}
+
+.icon-size-1x50 {
+  font-size: $font-size-base * 1.5;
+}

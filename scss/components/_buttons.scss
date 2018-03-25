@@ -136,8 +136,18 @@ fieldset:disabled a.btn {
   align-items: center;
   justify-content: center;
   width: rem(50px);
-  height: rem(45px);
+  height: $btn-height;
   padding: 0;
+
+  &.active {
+    .icons-arrow {
+      transform: rotate(270deg);
+    }
+  }
+
+  .icons-arrow {
+    transition: transform .15s ease-out;
+  }
 }
 
 
@@ -191,13 +201,12 @@ input[type="button"] {
   font-size: rem(14px);
   color: color("white");
   background-color: gray("400");
-  border-color: gray("400");
+  border: none;
   border-radius: 50%;
   @include transition($btn-transition);
 
   @include hover {
     background-color: #0074af;
-    border-color: #0074af;
   }
 
   &.box-shadow {
@@ -214,12 +223,10 @@ input[type="button"] {
     @if type-of($value) == "list" {
       color: nth($value, 3);
       background-color: nth($value, 1);
-      border-color: nth($value, 2);
 
       @include hover {
         color: nth($value, 6);
         background-color: nth($value, 4);
-        border-color: nth($value, 5);
       }
     }
   }

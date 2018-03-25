@@ -20,4 +20,20 @@
     throw new Error('Bootstrap\'s JavaScript requires at least jQuery v1.9.1 but less than v4.0.0');
   }
 })($);
+
+document.addEventListener('DOMContentLoaded', function () {
+  /* eslint-disable no-console */
+  console.log('Hello from the Fab Design.');
+  /* eslint-enable no-console */
+  // data components
+
+  var dataComponent = '[data-component]';
+  var dataSelectExclusive = 'select-exclusive';
+  var components = document.querySelectorAll(dataComponent);
+  components.forEach(function (component) {
+    if (component.dataset.component === dataSelectExclusive) {
+      new Select(component);
+    }
+  });
+});
 //# sourceMappingURL=index.js.map
