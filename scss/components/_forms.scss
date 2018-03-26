@@ -10,6 +10,14 @@ $icon-width: rem(48px);
 
 .form-control-container {
   position: relative;
+
+  &.is-valid + .valid-feedback {
+    display: block;
+  }
+
+  &.is-invalid + .invalid-feedback {
+    display: block;
+  }
 }
 
 // fancy border on focus
@@ -39,28 +47,17 @@ $icon-width: rem(48px);
     content: "";
     background-color: $input-border-color;
   }
+
+  .is-invalid &::after {
+    background-color: theme-color("danger");
+  }
+
+  .is-valid &::after {
+    background-color: theme-color("success");
+  }
 }
 
 .form-control {
-  &.standalone:focus {
-    border-bottom-color: theme-color("primary");
-  }
-
-  .was-validated &.standalone:valid,
-  &.standalone.is-valid,
-  .was-validated &.standalone:invalid,
-  &.standalone.is-invalid {
-    border-top-color: gray("100");
-    border-right-color: gray("100");
-    border-left-color: gray("100");
-
-    &:focus {
-      border-top-color: gray("100");
-      border-right-color: gray("100");
-      border-left-color: gray("100");
-    }
-  }
-
   &:focus ~ .form-control-state {
     &::after {
       background-color: theme-color("primary");

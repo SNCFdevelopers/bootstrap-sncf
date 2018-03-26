@@ -33,15 +33,6 @@ When using button classes on `<a>` elements that are used to trigger in-page fun
 <input class="btn btn-primary" type="reset" value="Reset">
 {% endexample %}
 
-## Outline buttons
-
-In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the `.btn-outline-*` ones to remove all background images and colors on any button.
-
-{% example html %}
-{% for color in site.data.btn-colors %}
-<button type="button" class="btn btn-outline-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}
-{% endexample %}
-
 ## Button link
 
 TODO : description
@@ -75,12 +66,7 @@ TODO : description
 
 ## Sizes
 
-Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes.
-
-{% example html %}
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
-<button type="button" class="btn btn-secondary btn-lg">Large button</button>
-{% endexample %}
+Fancy smaller buttons? Add `.btn-sm` for additional sizes.
 
 {% example html %}
 <button type="button" class="btn btn-primary btn-sm">Small button</button>

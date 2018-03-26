@@ -6,9 +6,7 @@
 // Base class takes care of all the key behavioral aspects.
 
 .custom-control-input {
-  &:checked,
-  &:focus,
-  &:active {
+  &:checked {
     ~ .custom-control-label{
       color: $custom-control-checked-color;
 
@@ -42,7 +40,7 @@
         color: $custom-control-label-disabled-color;
 
         &::before {
-          background-color: $custom-control-indicator-checked-disabled-bg;
+          background-color: $custom-control-indicator-disabled-bg;
           border-color: $custom-control-indicator-checked-disabled-bg;
         }
       }
@@ -60,7 +58,7 @@
 //
 // Build the custom controls out of psuedo-elements.
 
-.custom-control-label {
+.custom-control-label, {
   margin-bottom: 0;
 
   // Background-color and (when enabled) gradient
@@ -68,7 +66,10 @@
     border: $custom-control-indicator-border-size solid $custom-control-indicator-border-color;
   }
 
-  &:hover {
+  &:hover,
+  &:focus,
+  .custom-control-input:focus + &,
+  &:active {
     color: $custom-control-hover-color;
 
     &::before {
@@ -109,9 +110,13 @@
     &:disabled,
     &:disabled:focus,
     &:disabled:active {
-      ~ .custom-control-label,
       &:checked ~ .custom-control-label {
+        &::before {
+          background-color: $custom-control-indicator-checked-disabled-bg;
+        }
+
         &::after {
+
           background-image: $custom-checkbox-indicator-icon-disabled-checked;
         }
       }

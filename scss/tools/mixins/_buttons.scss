@@ -19,20 +19,10 @@
   border-color: $border;
   @include box-shadow($btn-box-shadow);
 
-  @include hover {
+  @include hover-focus {
     color: $hover-color;
     @include gradient-bg($hover-background);
     border-color: $hover-border;
-  }
-
-  &:focus,
-  &.focus {
-    // Avoid using mixin so we can pass custom focus shadow properly
-    @if $enable-shadows {
-      box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
-    } @else {
-      box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
-    }
   }
 
   // Disabled comes first so active can properly restyle

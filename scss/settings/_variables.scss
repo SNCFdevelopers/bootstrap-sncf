@@ -41,7 +41,7 @@ $enable-caret:              false;
 //
 // Settings for the `<body>` element.
 
-$body-color:                $gray-500;
+$body-color:                $gray-400;
 
 
 // Links
@@ -84,6 +84,8 @@ $line-height-base:            1.5;
 
 $input-btn-line-height:       $line-height-base;
 
+$input-btn-focus-box-shadow:  none;
+
 
 // Buttons
 //
@@ -97,6 +99,8 @@ $btn-padding-y-sm:          .21875rem;
 $btn-padding-x-sm:          1.25rem;
 
 $btn-font-weight:           $font-weight-medium;
+
+$btn-box-shadow:            none;
 
 
 // Forms
@@ -136,11 +140,10 @@ $custom-control-indicator-hover-border-color:   $primary;
 $custom-control-indicator-checked-hover-bg:     #0074af;
 $custom-control-indicator-border-size:          2px;
 
-$custom-control-indicator-disabled-bg:            transparent;
-$custom-control-indicator-checked-disabled-bg:  $gray-100;
-$custom-control-indicator-border-color:         $gray-100;
-$custom-control-label-disabled-color:     $gray-300;
-$custom-checkbox-indicator-icon-disabled-checked:        str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$custom-control-label-disabled-color}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$custom-control-indicator-disabled-bg:              transparent;
+$custom-control-indicator-checked-disabled-bg:      $gray-100;
+$custom-control-label-disabled-color:               $gray-300;
+$custom-checkbox-indicator-icon-disabled-checked:   str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$custom-control-label-disabled-color}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"), "#", "%23") !default;
 
 $custom-control-hover-color:                    $primary;
 $custom-control-checked-color:                  $primary;
