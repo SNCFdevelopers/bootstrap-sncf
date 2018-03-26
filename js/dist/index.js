@@ -29,10 +29,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var dataComponent = '[data-component]';
   var dataSelectExclusive = 'select-exclusive';
+  var dataSelectMultiple = 'select-multiple';
+  var dataSelectRadios = 'select-radios';
   var components = document.querySelectorAll(dataComponent);
   components.forEach(function (component) {
     if (component.dataset.component === dataSelectExclusive) {
-      new Select(component);
+      new SelectExclusive(component);
+    }
+
+    if (component.dataset.component === dataSelectMultiple) {
+      new SelectMultiple(component);
+    }
+
+    if (component.dataset.component === dataSelectRadios) {
+      new SelectRadios(component);
     }
   });
 });

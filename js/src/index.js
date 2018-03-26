@@ -7,7 +7,9 @@ import Dropdown from '../../node_modules/bootstrap/js/src/dropdown'
 import Modal from '../../node_modules/bootstrap/js/src/modal'
 import Popover from '../../node_modules/bootstrap/js/src/popover'
 import Scrollspy from '../../node_modules/bootstrap/js/src/scrollspy'
-import Select from './select'
+import SelectExclusive from './selectExclusive'
+import SelectMultiple from './selectMultiple'
+import SelectRadios from './selectRadios'
 import Tab from '../../node_modules/bootstrap/js/src/tab'
 import Tooltip from '../../node_modules/bootstrap/js/src/tooltip'
 import Util from '../../node_modules/bootstrap/js/src/util'
@@ -58,12 +60,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // data components
   const dataComponent = '[data-component]'
   const dataSelectExclusive = 'select-exclusive'
+  const dataSelectMultiple = 'select-multiple'
+  const dataSelectRadios = 'select-radios'
 
   const components = document.querySelectorAll(dataComponent)
 
   components.forEach((component) => {
     if (component.dataset.component === dataSelectExclusive) {
-      new Select(component)
+      new SelectExclusive(component)
+    }
+
+    if (component.dataset.component === dataSelectMultiple) {
+      new SelectMultiple(component)
+    }
+
+    if (component.dataset.component === dataSelectRadios) {
+      new SelectRadios(component)
     }
   })
 })

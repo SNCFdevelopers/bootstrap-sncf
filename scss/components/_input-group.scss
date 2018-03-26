@@ -4,3 +4,23 @@
 .input-group > .input-group-last:not(:last-child) > .btn {
   @include border-right-radius($border-radius);
 }
+
+.input-group-prepend {
+  > .btn-group {
+    .btn {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  + .form-control-container {
+    flex: 1 1 auto;
+    width: 1%;
+
+    &,
+    .form-control-state  {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

@@ -6052,10 +6052,10 @@ var ScrollSpy = function ($) {
  * Class Definition
  * ------------------------------------------------------------------------
  */
-var Select =
+var SelectExclusive =
 /*#__PURE__*/
 function () {
-  function Select(element) {
+  function SelectExclusive(element) {
     this.element = element;
     this.btn = element.querySelector('[data-role=btn]');
     this.toggle = element.querySelector('[data-role=select-toggle');
@@ -6071,16 +6071,12 @@ function () {
         event.stopPropagation();
         input.selectedIndex = event.target.dataset.id;
         placeholder.innerHTML = event.target.innerHTML;
-        /* eslint-disable no-console */
-
-        console.log('event.target.innerHTML: ', event);
-        /* eslint-enable no-console */
       });
     });
   } // Private
 
 
-  var _proto = Select.prototype;
+  var _proto = SelectExclusive.prototype;
 
   _proto._addEventListeners = function _addEventListeners() {
     var _this = this;
@@ -6109,8 +6105,33 @@ function () {
     });
   };
 
-  return Select;
+  return SelectExclusive;
 }();
+
+/**
+ * ------------------------------------------------------------------------
+ * Class Definition
+ * ------------------------------------------------------------------------
+ */
+var SelectMultiple = function SelectMultiple() {
+  console.log('TODO');
+};
+
+/**
+ * ------------------------------------------------------------------------
+ * Class Definition
+ * ------------------------------------------------------------------------
+ */
+var SelectRadios = function SelectRadios(element) {
+  var placeholder = element.querySelector('[data-role=placeholder]');
+  var values = element.querySelectorAll('[data-role=value]');
+  values.forEach(function (value) {
+    value.addEventListener('change', function (event) {
+      var label = element.querySelector("[for=" + event.target.id + "]");
+      placeholder.innerHTML = label.innerHTML;
+    });
+  });
+};
 
 /**
  * --------------------------------------------------------------------------
@@ -6391,10 +6412,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var dataComponent = '[data-component]';
   var dataSelectExclusive = 'select-exclusive';
+  var dataSelectMultiple = 'select-multiple';
+  var dataSelectRadios = 'select-radios';
   var components = document.querySelectorAll(dataComponent);
   components.forEach(function (component) {
     if (component.dataset.component === dataSelectExclusive) {
-      new Select(component);
+      new SelectExclusive(component);
+    }
+
+    if (component.dataset.component === dataSelectMultiple) {
+      new SelectMultiple(component);
+    }
+
+    if (component.dataset.component === dataSelectRadios) {
+      new SelectRadios(component);
     }
   });
 });

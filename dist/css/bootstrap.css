@@ -62,7 +62,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #747678;
+  color: #4d4f53;
   text-align: left;
   background-color: #fff;
 }
@@ -3899,7 +3899,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #747678;
+  color: #4d4f53;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -4502,6 +4502,24 @@ tbody.collapse.show {
 .input-group > .input-group-last:not(:last-child) > .btn {
   border-top-right-radius: 0.4375rem;
   border-bottom-right-radius: 0.4375rem;
+}
+
+.input-group-prepend > .btn-group .btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group-prepend + .form-control-container {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+}
+
+.input-group-prepend + .form-control-container,
+.input-group-prepend + .form-control-container .form-control-state {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .custom-control {
@@ -6489,7 +6507,7 @@ input:checked + .sami-checkbox-gray {
 }
 
 .list-group-item-action:active {
-  color: #747678;
+  color: #4d4f53;
   background-color: #d7d7d7;
 }
 
@@ -7151,7 +7169,7 @@ button.close {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #747678;
+  color: #4d4f53;
 }
 
 .carousel {

@@ -4,7 +4,7 @@
  * ------------------------------------------------------------------------
  */
 
-class Select {
+class SelectExclusive {
   constructor(element) {
     this.element = element;
     this.btn = element.querySelector('[data-role=btn]')
@@ -21,9 +21,6 @@ class Select {
         event.stopPropagation()
         input.selectedIndex = event.target.dataset.id
         placeholder.innerHTML = event.target.innerHTML
-        /* eslint-disable no-console */
-        console.log('event.target.innerHTML: ', event)
-        /* eslint-enable no-console */
       })
     })
   }
@@ -56,4 +53,4 @@ class Select {
   }
 }
 
-export default Select
+export default SelectExclusive

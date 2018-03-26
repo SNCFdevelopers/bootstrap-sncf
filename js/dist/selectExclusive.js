@@ -3,10 +3,10 @@
  * Class Definition
  * ------------------------------------------------------------------------
  */
-var Select =
+var SelectExclusive =
 /*#__PURE__*/
 function () {
-  function Select(element) {
+  function SelectExclusive(element) {
     this.element = element;
     this.btn = element.querySelector('[data-role=btn]');
     this.toggle = element.querySelector('[data-role=select-toggle');
@@ -27,7 +27,7 @@ function () {
   } // Private
 
 
-  var _proto = Select.prototype;
+  var _proto = SelectExclusive.prototype;
 
   _proto._addEventListeners = function _addEventListeners() {
     var _this = this;
@@ -56,6 +56,6 @@ function () {
     });
   };
 
-  return Select;
+  return SelectExclusive;
 }();
-//# sourceMappingURL=select.js.map
+//# sourceMappingURL=selectExclusive.js.map
