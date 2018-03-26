@@ -1,0 +1,10 @@
+- name: blue
+  hex: "#0088cd"
+- name: red
+  hex: "#cd0037"
+- name: yellow
+  hex: "#ffb612"
+- name: green
+  hex: "#82be00"
+- name: gray
+  hex: "#333"

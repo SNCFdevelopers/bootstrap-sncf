@@ -14,7 +14,7 @@
   --teal: #d2e100;
   --cyan: #009aa6;
   --white: #fff;
-  --gray: #6c757d;
+  --gray: #333;
   --gray-dark: #343a40;
   --primary: #0088ce;
   --secondary: #4d4f53;
@@ -219,7 +219,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #6c757d;
+  color: #333;
   text-align: left;
   caption-side: bottom;
 }
@@ -2422,7 +2422,7 @@ i:before {
 
 .figure-caption {
   font-size: 90%;
-  color: #6c757d;
+  color: #333;
 }
 
 code,
@@ -2668,7 +2668,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 .form-check-input:disabled ~ .form-check-label {
-  color: #6c757d;
+  color: #333;
 }
 
 .form-check-label {
@@ -3701,7 +3701,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:disabled, .btn-link.disabled {
-  color: #6c757d;
+  color: #333;
 }
 
 .btn-only-icon {
@@ -3964,7 +3964,7 @@ tbody.collapse.show {
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
-  color: #6c757d;
+  color: #333;
   background-color: transparent;
 }
 
@@ -3977,7 +3977,7 @@ tbody.collapse.show {
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
   font-size: 0.875rem;
-  color: #6c757d;
+  color: #333;
   white-space: nowrap;
 }
 
@@ -4658,7 +4658,7 @@ tbody.collapse.show {
 }
 
 .custom-select:disabled {
-  color: #6c757d;
+  color: #333;
   background-color: #d7d7d7;
 }
 
@@ -5084,7 +5084,7 @@ input[disabled]:checked + .options-btn {
 }
 
 .nav-link.disabled {
-  color: #6c757d;
+  color: #333;
 }
 
 .nav-tabs {
@@ -5106,7 +5106,7 @@ input[disabled]:checked + .options-btn {
 }
 
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #333;
   background-color: transparent;
   border-color: transparent;
 }
@@ -5928,7 +5928,7 @@ input[disabled]:checked + .options-btn {
   display: inline-block;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  color: #6c757d;
+  color: #333;
   content: "/";
 }
 
@@ -5941,7 +5941,7 @@ input[disabled]:checked + .options-btn {
 }
 
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: #333;
 }
 
 .pagination {
@@ -6000,7 +6000,7 @@ input[disabled]:checked + .options-btn {
 }
 
 .page-item.disabled .page-link {
-  color: #6c757d;
+  color: #333;
   pointer-events: none;
   cursor: auto;
   background-color: #fff;
@@ -6152,6 +6152,86 @@ input[disabled]:checked + .options-btn {
   color: #fff;
   text-decoration: none;
   background-color: #1d2124;
+}
+
+/* sami
+   ========================================================================== */
+.sami {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #b9b9b9;
+  border-radius: 0.4375rem;
+}
+
+.sami-blue {
+  background-color: #0088ce;
+}
+
+.sami-checkbox-blue {
+  cursor: pointer;
+}
+
+input:checked + .sami-checkbox-blue {
+  background-color: #0088ce;
+}
+
+.sami-red {
+  background-color: #cd0037;
+}
+
+.sami-checkbox-red {
+  cursor: pointer;
+}
+
+input:checked + .sami-checkbox-red {
+  background-color: #cd0037;
+}
+
+.sami-yellow {
+  background-color: #ffb612;
+}
+
+.sami-checkbox-yellow {
+  cursor: pointer;
+}
+
+input:checked + .sami-checkbox-yellow {
+  background-color: #ffb612;
+}
+
+.sami-green {
+  background-color: #82be00;
+}
+
+.sami-checkbox-green {
+  cursor: pointer;
+}
+
+input:checked + .sami-checkbox-green {
+  background-color: #82be00;
+}
+
+.sami-gray {
+  background-color: #333;
+}
+
+.sami-checkbox-gray {
+  cursor: pointer;
+}
+
+input:checked + .sami-checkbox-gray {
+  background-color: #333;
 }
 
 .jumbotron {
@@ -6439,7 +6519,7 @@ input[disabled]:checked + .options-btn {
 }
 
 .list-group-item.disabled, .list-group-item:disabled {
-  color: #6c757d;
+  color: #333;
   background-color: #fff;
 }
 
@@ -10113,7 +10193,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: #333 !important;
 }
 
 .text-hide {

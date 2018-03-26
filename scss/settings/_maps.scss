@@ -63,4 +63,13 @@ $btn-rounded-colors: map-merge((
     #bb0000, #bb0000, color("white")
   )
 ), $btn-rounded-colors);
+
+$sami-colors: () !default;
+$sami-colors: map-merge((
+  "blue":       $blue,
+  "red":        $red,
+  "yellow":     $yellow,
+  "green":      $green,
+  "gray":       $gray-600
+), $sami-colors);
 // stylelint-enable
