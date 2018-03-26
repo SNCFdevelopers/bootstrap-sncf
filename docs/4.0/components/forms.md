@@ -122,6 +122,30 @@ $('.your-checkbox').prop('indeterminate', true)
 </div>
 {% endexample %}
 
+### Switch
+
+{% example html %}
+<label class="switch-control">
+  <input type="checkbox" class="sr-only" >
+  <span class="switch-control-slider"></span>
+</label>
+{% endexample %}
+
+### Options
+
+{% example html %}
+<div class="options-control">
+  <div class="options-item">
+    <input type="radio" name="optionsRadio" id="optionsRadio1" class="sr-only" checked/>
+    <label class="options-btn font-weight-medium" for="optionsRadio1">Option 1</label>
+  </div>
+  <div class="options-item">
+    <input type="radio" name="optionsRadio" id="optionsRadio2" class="sr-only"/>
+    <label class="options-btn font-weight-medium" for="optionsRadio2">Option 2</label>
+  </div>
+</div>
+{% endexample %}
+
 ### Inline
 
 {% example html %}
@@ -153,6 +177,24 @@ Custom checkboxes and radios can also be disabled. Add the `disabled` boolean at
 <div class="custom-control custom-radio">
   <input type="radio" id="radio3" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
   <label class="custom-control-label font-weight-medium" for="customRadioDisabled">Toggle this custom radio</label>
+</div>
+
+<div class="mt-2">
+  <label class="switch-control">
+    <input type="checkbox" class="sr-only" disabled>
+    <span class="switch-control-slider"></span>
+  </label>
+</div>
+
+<div class="options-control disabled mt-2">
+  <div class="options-item">
+    <input type="radio" name="optionsRadioDisabled" id="optionsRadio3" class="sr-only" checked disabled/>
+    <label class="options-btn font-weight-medium" for="optionsRadio3">Option 1</label>
+  </div>
+  <div class="options-item">
+    <input type="radio" name="optionsRadioDisabled" id="optionsRadio4" class="sr-only" disabled/>
+    <label class="options-btn font-weight-medium" for="optionsRadio4">Option 2</label>
+  </div>
 </div>
 {% endexample %}
 
