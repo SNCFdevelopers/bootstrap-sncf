@@ -1,0 +1,120 @@
+/* custom forms
+   ========================================================================== */
+
+// Checkboxes and radios
+//
+// Base class takes care of all the key behavioral aspects.
+
+.custom-control-input {
+  &:checked,
+  &:focus,
+  &:active {
+    ~ .custom-control-label{
+      color: $custom-control-checked-color;
+
+      &::before {
+        border-color: $custom-control-indicator-checked-border-color;
+      }
+
+      &:hover {
+        color: $custom-control-checked-hover-color;
+
+        &::before {
+          background-color: $custom-control-indicator-checked-hover-bg;
+          border-color: $custom-control-checked-hover-color;
+        }
+      }
+    }
+  }
+
+  &:disabled,
+  &:disabled:focus,
+  &:disabled:active {
+    ~ .custom-control-label,
+    &:checked ~ .custom-control-label {
+      color: $custom-control-label-disabled-color;
+
+      &::before {
+        border-color: $custom-control-indicator-checked-disabled-bg;
+      }
+
+      &:hover {
+        color: $custom-control-label-disabled-color;
+
+        &::before {
+          background-color: $custom-control-indicator-checked-disabled-bg;
+          border-color: $custom-control-indicator-checked-disabled-bg;
+        }
+      }
+    }
+
+    &:checked ~ .custom-control-label {
+      &::before {
+        background-color: $custom-control-indicator-checked-disabled-bg;
+      }
+    }
+  }
+}
+
+// Custom control indicators
+//
+// Build the custom controls out of psuedo-elements.
+
+.custom-control-label {
+  margin-bottom: 0;
+
+  // Background-color and (when enabled) gradient
+  &::before {
+    border: $custom-control-indicator-border-size solid $custom-control-indicator-border-color;
+  }
+
+  &:hover {
+    color: $custom-control-hover-color;
+
+    &::before {
+      border-color: $custom-control-indicator-hover-border-color;
+    }
+  }
+
+  &:checked:hover {
+    color: $custom-control-checked-color;
+  }
+}
+
+// Checkboxes
+//
+// Tweak just a few things for checkboxes.
+
+.custom-checkbox {
+  .custom-control-input {
+    &:indeterminate {
+      ~ .custom-control-label{
+        color: $custom-control-checked-color;
+
+        &::before {
+          border-color: $custom-control-indicator-checked-border-color;
+        }
+
+        &:hover {
+          color: $custom-control-checked-hover-color;
+
+          &::before {
+            background-color: $custom-control-indicator-checked-hover-bg;
+            border-color: $custom-control-checked-hover-color;
+          }
+        }
+      }
+    }
+
+    &:disabled,
+    &:disabled:focus,
+    &:disabled:active {
+      ~ .custom-control-label,
+      &:checked ~ .custom-control-label {
+        &::after {
+          background-image: $custom-checkbox-indicator-icon-disabled-checked;
+        }
+      }
+    }
+  }
+}

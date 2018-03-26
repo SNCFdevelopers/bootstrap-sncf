@@ -12,27 +12,6 @@ Bootstrap's form controls expand on [our Rebooted form styles]({{ site.baseurl }
 
 Be sure to use an appropriate `type` attribute on all inputs (e.g., `email` for email address or `number` for numerical information) to take advantage of newer input controls like email verification, number selection, and more.
 
-Here's a quick example to demonstrate Bootstrap's form styles. Keep reading for documentation on required classes, form layout, and more.
-
-{% example html %}
-<form>
-  <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="font-weight-medium mb-2" class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-{% endexample %}
-
 ## Form controls
 
 Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are styled with the `.form-control` class. Included are styles for general appearance, focus state, sizing, and more.
@@ -42,33 +21,28 @@ Be sure to explore our [custom forms](#custom-forms) to further style `<select>`
 {% example html %}
 <form>
   <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-  <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleFormControlSelect1">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleFormControlSelect2">Example multiple select</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
+    <label class="font-weight-medium mb-2" for="exampleInputEmail1">Email address</label>
+    <div class="form-control-container">
+      <input type="email" class="form-control has-left-icon" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <span class="form-control-state"></span>
+      <span class="form-control-icon left">
+        <i class="icons-search"></i>
+      </span>
+    </div>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label class="font-weight-medium mb-2" for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <div class="form-control-container">
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Comment"></textarea>
+      <span class="form-control-state"></span>
+    </div>
   </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 {% endexample %}
 
@@ -83,26 +57,31 @@ For file inputs, swap the `.form-control` for `.form-control-file`.
 </form>
 {% endexample %}
 
-### Sizing
-
-Set heights using classes like `.form-control-lg` and `.form-control-sm`.
+### With icon
 
 {% example html %}
-<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
-<input class="form-control" type="text" placeholder="Default input">
-<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
-{% endexample %}
-
-{% example html %}
-<select class="form-control form-control-lg">
-  <option>Large select</option>
-</select>
-<select class="form-control">
-  <option>Default select</option>
-</select>
-<select class="form-control form-control-sm">
-  <option>Small select</option>
-</select>
+<form>
+  <div class="form-group">
+    <label class="font-weight-medium mb-2" for="exampleInputEmail1">Left icon</label>
+    <div class="form-control-container">
+      <input type="text" class="form-control has-left-icon" id="exampleLeftIcon" aria-describedby="emailHelp" placeholder="Enter text">
+      <span class="form-control-state"></span>
+      <span class="form-control-icon left">
+        <i class="icons-search"></i>
+      </span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="font-weight-medium mb-2" for="exampleInputEmail1">Right icon</label>
+    <div class="form-control-container">
+      <input type="text" class="form-control has-right-icon" id="exampleRightIcon" aria-describedby="emailHelp" placeholder="Enter text">
+      <span class="form-control-state"></span>
+      <span class="form-control-icon right">
+        <i class="icons-search"></i>
+      </span>
+    </div>
+  </div>
+</form>
 {% endexample %}
 
 ### Readonly
@@ -110,42 +89,10 @@ Set heights using classes like `.form-control-lg` and `.form-control-sm`.
 Add the `readonly` boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
 
 {% example html %}
-<input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-{% endexample %}
-
-### Readonly plain text
-
-If you want to have `<input readonly>` elements in your form styled as plain text, use the `.form-control-plaintext` class to remove the default form field styling and preserve the correct margin and padding.
-
-{% example html %}
-<form>
-  <div class="form-group row">
-    <label class="font-weight-medium mb-2" for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label class="font-weight-medium mb-2" for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-    </div>
-  </div>
-</form>
-{% endexample %}
-
-{% example html %}
-<form class="form-inline">
-  <div class="form-group mb-2">
-    <label for="staticEmail2" class="sr-only">Email</label>
-    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
-  </div>
-  <div class="form-group mx-sm-3 mb-2">
-    <label for="inputPassword2" class="sr-only">Password</label>
-    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-  </div>
-  <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-</form>
+<div class="form-control-container">
+  <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+  <span class="form-control-state"></span>
+</div>
 {% endexample %}
 
 ## Checkboxes and radios
@@ -545,7 +492,7 @@ And of course [custom form controls](#custom-forms) are supported.
     <div class="col-auto my-1">
       <div class="custom-control custom-checkbox mr-sm-2">
         <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-        <label class="font-weight-medium mb-2" class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+        <label class="custom-control-label font-weight-medium" for="customControlAutosizing">Remember my preference</label>
       </div>
     </div>
     <div class="col-auto my-1">
@@ -603,7 +550,7 @@ Custom form controls and selects are also supported.
 
   <div class="custom-control custom-checkbox my-1 mr-sm-2">
     <input type="checkbox" class="custom-control-input" id="customControlInline">
-    <label class="font-weight-medium mb-2" class="custom-control-label" for="customControlInline">Remember my preference</label>
+    <label class="custom-control-label font-weight-medium" for="customControlInline">Remember my preference</label>
   </div>
 
   <button type="submit" class="btn btn-primary my-1">Submit</button>
@@ -945,17 +892,17 @@ Our example forms show native textual `<input>`s above, but form validation styl
 <form class="was-validated">
   <div class="custom-control custom-checkbox mb-3">
     <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-    <label class="font-weight-medium mb-2" class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+    <label class="custom-control-label font-weight-medium" for="customControlValidation1">Check this custom checkbox</label>
     <div class="invalid-feedback">Example invalid feedback text</div>
   </div>
 
   <div class="custom-control custom-radio">
     <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
-    <label class="font-weight-medium mb-2" class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
+    <label class="custom-control-label font-weight-medium" for="customControlValidation2">Toggle this custom radio</label>
   </div>
   <div class="custom-control custom-radio mb-3">
     <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
-    <label class="font-weight-medium mb-2" class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
+    <label class="custom-control-label font-weight-medium" for="customControlValidation3">Or toggle this other custom radio</label>
     <div class="invalid-feedback">More example invalid feedback text</div>
   </div>
 
@@ -1057,7 +1004,7 @@ In the checked states, we use **base64 embedded SVG icons** from [Open Iconic](h
 {% example html %}
 <div class="custom-control custom-checkbox">
   <input type="checkbox" class="custom-control-input" id="customCheck1">
-  <label class="font-weight-medium mb-2" class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+  <label class="custom-control-label font-weight-medium" for="customCheck1">Check this custom checkbox</label>
 </div>
 {% endexample %}
 
@@ -1066,7 +1013,7 @@ Custom checkboxes can also utilize the `:indeterminate` pseudo class when manual
 <div class="bd-example bd-example-indeterminate">
   <div class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input" id="customCheck2">
-    <label class="font-weight-medium mb-2" class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+    <label class="custom-control-label font-weight-medium" for="customCheck2">Check this custom checkbox</label>
   </div>
 </div>
 
@@ -1081,11 +1028,11 @@ $('.your-checkbox').prop('indeterminate', true)
 {% example html %}
 <div class="custom-control custom-radio">
   <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-  <label class="font-weight-medium mb-2" class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+  <label class="custom-control-label font-weight-medium" for="customRadio1">Toggle this custom radio</label>
 </div>
 <div class="custom-control custom-radio">
   <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-  <label class="font-weight-medium mb-2" class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+  <label class="custom-control-label font-weight-medium" for="customRadio2">Or toggle this other custom radio</label>
 </div>
 {% endexample %}
 
@@ -1094,11 +1041,11 @@ $('.your-checkbox').prop('indeterminate', true)
 {% example html %}
 <div class="custom-control custom-radio custom-control-inline">
   <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-  <label class="font-weight-medium mb-2" class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
+  <label class="custom-control-label font-weight-medium" for="customRadioInline1">Toggle this custom radio</label>
 </div>
 <div class="custom-control custom-radio custom-control-inline">
   <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-  <label class="font-weight-medium mb-2" class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
+  <label class="custom-control-label font-weight-medium" for="customRadioInline2">Or toggle this other custom radio</label>
 </div>
 {% endexample %}
 
@@ -1109,12 +1056,17 @@ Custom checkboxes and radios can also be disabled. Add the `disabled` boolean at
 {% example html %}
 <div class="custom-control custom-checkbox">
   <input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled>
-  <label class="font-weight-medium mb-2" class="custom-control-label" for="customCheckDisabled">Check this custom checkbox</label>
+  <label class="custom-control-label font-weight-medium" for="customCheckDisabled">Check this custom checkbox</label>
+</div>
+
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheckCheckedDisabled" disabled checked>
+  <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled">Check this custom checkbox</label>
 </div>
 
 <div class="custom-control custom-radio">
   <input type="radio" id="radio3" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
-  <label class="font-weight-medium mb-2" class="custom-control-label" for="customRadioDisabled">Toggle this custom radio</label>
+  <label class="custom-control-label font-weight-medium" for="customRadioDisabled">Toggle this custom radio</label>
 </div>
 {% endexample %}
 
