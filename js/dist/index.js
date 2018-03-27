@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var dataSelectRadios = 'select-radios';
   var components = document.querySelectorAll(dataComponent);
   components.forEach(function (component) {
+    /* eslint-disable no-new */
     if (component.dataset.component === dataSelectExclusive) {
       new SelectExclusive(component);
     }
@@ -44,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (component.dataset.component === dataSelectRadios) {
       new SelectRadios(component);
     }
+    /* eslint-enable no-new */
+
   });
 });
 //# sourceMappingURL=index.js.map

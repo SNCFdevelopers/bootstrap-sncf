@@ -49,7 +49,7 @@ function () {
     this.element.addEventListener('click', function (event) {
       event.stopPropagation();
     });
-    document.addEventListener('click', function (event) {
+    document.addEventListener('click', function () {
       _this.element.classList.remove('active');
 
       _this.btn.classList.remove('active');

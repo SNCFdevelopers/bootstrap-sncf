@@ -93,10 +93,6 @@ $select-scrollable-max-height: rem(360px);
   justify-content: space-between;
   cursor: pointer;
 
-  > * {
-    pointer-events: none;
-  }
-
   .select-group-close {
     display: none;
   }

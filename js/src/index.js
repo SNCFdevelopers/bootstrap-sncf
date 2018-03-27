@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const components = document.querySelectorAll(dataComponent)
 
   components.forEach((component) => {
+    /* eslint-disable no-new */
     if (component.dataset.component === dataSelectExclusive) {
       new SelectExclusive(component)
     }
@@ -77,5 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (component.dataset.component === dataSelectRadios) {
       new SelectRadios(component)
     }
+    /* eslint-enable no-new */
   })
 })

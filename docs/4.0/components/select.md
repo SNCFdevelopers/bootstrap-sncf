@@ -144,3 +144,69 @@ TODO : description
   </div>
 </div>
 {% endexample %}
+
+## Multiple
+
+TODO : description
+
+{% example html %}
+<label class="font-weight-medium mb-2" for="exampleFormControlSelect1">Multi select</label>
+<div class="select-improved active" data-component="select-multiple">
+  <div class="select-control">
+    <div class="input-group" data-role="select-toggle">
+      <div class="form-control">
+        <div class="custom-control custom-checkbox">
+          <label data-role="placeholder" class="custom-control-label font-weight-medium active">Tous les secteurs</label>
+        </div>
+      </div>
+      <select class="sr-only" id="exampleFormControlMultiSelect" data-role="input" multiple>
+        <option data-id="0" selected>Sem Inceptos Tellus</option>
+        <option data-id="1" selected>Sem Inceptos Tellus</option>
+        <option data-id="2" selected>Sollicitudin Adipiscing Mattis</option>
+        <option data-id="3" selected>Amet Porta</option>
+      </select>
+      <div class="input-group-append input-group-last">
+        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
+          <i class="icons-arrow icon-size-x75 icon-rotate-90"></i>
+        </button>
+      </div>
+    </div>
+    <div class="select-menu" data-role="menu">
+      <div class="select-group" data-role="group" data-id="0">
+        <div class="select-group-head">
+          <button class="select-group-title text-uppercase">
+            <div class="custom-control custom-checkbox">
+              <label data-role="counter" class="custom-control-label font-weight-medium text-uppercase">Unité 1</label>
+            </div>     
+          </button>
+        </div>
+        <div class="select-group-content">
+          <div class="custom-control custom-checkbox">
+            <label data-role="value" data-target="0" class="custom-control-label font-weight-medium">Sem Inceptos Tellus</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <label data-role="value" data-target="1" class="custom-control-label font-weight-medium">Sollicitudin Adipiscing Mattis</label>
+          </div>
+        </div>
+      </div>
+      <div class="select-group" data-role="group" data-id="1">
+        <div class="select-group-head">
+          <button class="select-group-title text-uppercase">
+            <div class="custom-control custom-checkbox">
+              <label data-role="counter" class="custom-control-label font-weight-medium text-uppercase">Unité 2</label>
+            </div>     
+          </button>
+        </div>
+        <div class="select-group-content">
+          <div class="custom-control custom-checkbox">
+            <label data-role="value" data-target="2" class="custom-control-label font-weight-medium">Amet Porta</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <label data-role="value" data-target="3" class="custom-control-label font-weight-medium">Pharetra Fusce Venenatis</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}

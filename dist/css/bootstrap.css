@@ -4821,13 +4821,39 @@ tbody.collapse.show {
 }
 
 .custom-control-label:hover, .custom-control-label:focus,
-.custom-control-input:focus + .custom-control-label, .custom-control-label:active {
+.custom-control-input:focus + .custom-control-label, .custom-control-label:active, .custom-control-label.active {
   color: #0088ce;
 }
 
 .custom-control-label:hover::before, .custom-control-label:focus::before,
-.custom-control-input:focus + .custom-control-label::before, .custom-control-label:active::before {
+.custom-control-input:focus + .custom-control-label::before, .custom-control-label:active::before, .custom-control-label.active::before {
   border-color: #0088ce;
+}
+
+.custom-control-label.active::before {
+  background-color: #0088ce;
+}
+
+.custom-control-label.active::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+
+.custom-control-label.indeterminate::before {
+  background-color: #0088ce;
+  border-color: #0088ce;
+}
+
+.custom-control-label.indeterminate::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E");
+}
+
+.custom-control-label.indeterminate:hover {
+  color: #0074af;
+}
+
+.custom-control-label.indeterminate:hover::before {
+  background-color: #0074af;
+  border-color: #0074af;
 }
 
 .custom-control-label:checked:hover {
@@ -5030,10 +5056,6 @@ input[disabled]:checked + .options-btn {
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-}
-
-.select-group-head > * {
-  pointer-events: none;
 }
 
 .select-group-head .select-group-close {

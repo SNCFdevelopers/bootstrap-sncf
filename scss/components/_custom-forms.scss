@@ -69,11 +69,45 @@
   &:hover,
   &:focus,
   .custom-control-input:focus + &,
-  &:active {
+  &:active,
+  &.active {
     color: $custom-control-hover-color;
 
     &::before {
       border-color: $custom-control-indicator-hover-border-color;
+    }
+  }
+
+  // Multi select
+  &.active {
+    &::before {
+      @include gradient-bg($custom-control-indicator-checked-bg);
+    }
+
+    &::after {
+      background-image: $custom-checkbox-indicator-icon-checked;
+    }
+  }
+
+  // Multi select
+  &.indeterminate {
+    &::before {
+      @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
+      @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
+      border-color: $custom-control-indicator-checked-border-color;
+    }
+
+    &::after {
+      background-image: $custom-checkbox-indicator-icon-indeterminate;
+    }
+
+    &:hover {
+      color: $custom-control-checked-hover-color;
+
+      &::before {
+        background-color: $custom-control-indicator-checked-hover-bg;
+        border-color: $custom-control-checked-hover-color;
+      }
     }
   }
 

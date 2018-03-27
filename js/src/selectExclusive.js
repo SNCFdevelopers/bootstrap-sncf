@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 /**
  * ------------------------------------------------------------------------
  * Class Definition
@@ -6,7 +8,7 @@
 
 class SelectExclusive {
   constructor(element) {
-    this.element = element;
+    this.element = element
     this.btn = element.querySelector('[data-role=btn]')
     this.toggle = element.querySelector('[data-role=select-toggle')
     this.collapses = element.querySelectorAll('[data-role=collapse')
@@ -46,7 +48,7 @@ class SelectExclusive {
       event.stopPropagation()
     })
 
-    document.addEventListener('click', (event) => {
+    document.addEventListener('click', () => {
       this.element.classList.remove('active')
       this.btn.classList.remove('active')
     })
