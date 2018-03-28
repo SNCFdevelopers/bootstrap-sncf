@@ -1,0 +1,69 @@
+/* lists
+   ========================================================================== */
+
+.meta-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+}
+
+.meta-list-item {
+  padding-right: rem(20px);
+
+  &.separator {
+    position: relative;
+    padding-left: rem(22px);
+
+    &::before {
+      position: absolute;
+      top: rem(4px);
+      left: 0;
+      display: block;
+      width: rem(2px);
+      height: rem(12px);
+      content: "";
+      background-color: #8a8b8d;
+    }
+  }
+
+  @include media-breakpoint-only(xs) {
+    &.separator-xs-none {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-only(sm) {
+    &.separator-sm-none {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-only(md) {
+    &.separator-md-none {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-only(lg) {
+    &.separator-lg-none {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+/* management item
+   ========================================================================== */
+
+.management-item {
+  display: flex;
+  padding: $management-item-padding-y 0;
+}
+
+.management-item-input {
+  min-width: $management-item-padding-x;
+  padding-left: rem(30px);
+}
+
+.management-item-symbol {
+  min-width: $management-item-padding-x;
+  padding-top: rem(2px);
+  text-align: center;
+}
+
+.management-item-content {
+  &:last-child {
+    padding-right: $management-item-padding-x;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .management-item {
+    padding-top: $management-item-padding-y-md;
+    padding-bottom: $management-item-padding-y-md;
+
+    &:last-child {
+      padding-right: $management-item-padding-x-md;
+    }
+  }
+}
