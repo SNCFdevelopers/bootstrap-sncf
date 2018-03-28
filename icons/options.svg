@@ -3,15 +3,15 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#0088CE;}
+	.st0{fill:#0086D1;}
 </style>
-<title>Icons/Interface/Fermer</title>
+<title>Icons/Interface/Options</title>
 <desc>Created with Sketch.</desc>
-<g id="Icons_x2F_Interface_x2F_Fermer">
-	<g id="Fill-1">
-		<path id="path-1_1_" class="st0" d="M32.1,25.1L48.7,8.5c1.9-1.9,1.6-5.2-0.3-7.1c-1.9-1.9-5-1.9-6.9,0L25,18L8.3,1.4
-			c-1.9-1.9-5-1.9-6.9,0c-1.9,1.9-2,5.1-0.1,7L18,25L1.3,41.6c-1.9,1.9-1.7,5.1,0.1,7c1.9,1.9,5.1,2,7,0.1l16.6-16.6l16.5,16.5
-			c1.9,1.9,5,1.9,6.9,0c1.9-1.9,2-5.1,0.1-7L32.1,25.1z"/>
+<g id="Icons_x2F_Interface_x2F_Options">
+	<g id="Combined-Shape">
+		<path id="path-1_1_" class="st0" d="M11.4,26c0,3.3-2.5,6-5.7,6C2.5,32,0,29.3,0,26s2.5-6,5.7-6C8.8,20,11.4,22.7,11.4,26z M50,26
+			c0,3.3-2.5,6-5.7,6c-3.1,0-5.7-2.7-5.7-6s2.5-6,5.7-6C47.5,20,50,22.7,50,26z M30.7,26c0,3.3-2.5,6-5.7,6c-3.1,0-5.7-2.7-5.7-6
+			s2.5-6,5.7-6C28.1,20,30.7,22.7,30.7,26z"/>
 	</g>
 </g>
 </svg>

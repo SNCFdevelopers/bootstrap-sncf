@@ -5,13 +5,12 @@
 <style type="text/css">
 	.st0{fill:#0088CE;}
 </style>
-<title>Icons/Interface/Fermer</title>
+<title>Icons/Interface/Ajouter</title>
 <desc>Created with Sketch.</desc>
-<g id="Icons_x2F_Interface_x2F_Fermer">
+<g id="Icons_x2F_Interface_x2F_Ajouter">
 	<g id="Fill-1">
-		<path id="path-1_1_" class="st0" d="M32.1,25.1L48.7,8.5c1.9-1.9,1.6-5.2-0.3-7.1c-1.9-1.9-5-1.9-6.9,0L25,18L8.3,1.4
-			c-1.9-1.9-5-1.9-6.9,0c-1.9,1.9-2,5.1-0.1,7L18,25L1.3,41.6c-1.9,1.9-1.7,5.1,0.1,7c1.9,1.9,5.1,2,7,0.1l16.6-16.6l16.5,16.5
-			c1.9,1.9,5,1.9,6.9,0c1.9-1.9,2-5.1,0.1-7L32.1,25.1z"/>
+		<path id="path-1_1_" class="st0" d="M28.7,28.8h17.7c2,0,3.6-1.9,3.6-3.9s-1.6-3.6-3.6-3.6H28.7V3.6c0-2-1.6-3.6-3.6-3.6
+			s-3.8,1.6-3.8,3.6v17.7H3.6c-2,0-3.6,1.8-3.6,3.8c0,2,1.6,3.8,3.6,3.8h17.7v17.5c0,2,1.6,3.6,3.6,3.6s3.8-1.6,3.8-3.6V28.8z"/>
 	</g>
 </g>
 </svg>

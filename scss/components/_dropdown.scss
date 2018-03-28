@@ -7,60 +7,23 @@
   align-items: center;
   justify-content: center;
 
-  .icons-arrow {
+  [class^="icons-arrow-"] {
     display: inline-block;
     font-size: rem(10px);
     transition: transform .15s ease-out;
-    transform: rotate(90deg);
   }
 
-  span:not(.sr-only) + .icons-arrow {
+  span:not(.sr-only) + [class^="icons-arrow-"] {
     margin-left: rem(14px);
   }
 
-  .icons-arrow + span:not(.sr-only) {
+  [class^="icons-arrow-"] + span:not(.sr-only) {
     margin-left: rem(14px);
   }
 
   &[aria-expanded="true"] {
-    .icons-arrow {
-      transform: rotate(270deg);
-    }
-  }
-
-  .dropup & {
-    .icons-arrow {
-      transform: rotate(270deg);
-    }
-
-    &[aria-expanded="true"] {
-      .icons-arrow {
-        transform: rotate(90deg);
-      }
-    }
-  }
-
-  .dropright & {
-    .icons-arrow {
-      transform: rotate(0deg);
-    }
-
-    &[aria-expanded="true"] {
-      .icons-arrow {
-        transform: rotate(180deg);
-      }
-    }
-  }
-
-  .dropleft & {
-    .icons-arrow {
+    [class^="icons-arrow-"] {
       transform: rotate(180deg);
-    }
-
-    &[aria-expanded="true"] {
-      .icons-arrow {
-        transform: rotate(0deg);
-      }
     }
   }
 }

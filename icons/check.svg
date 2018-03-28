@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Interface/Check</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M49.4,17.2935994 L16.7275,49.4073283 C15.9075,50.1975572 14.58,50.1975572 13.805,49.4073283 L0.6,36.4486418 C-0.2,35.6717613 -0.2,34.3662818 0.6,33.5813922 L4.49,29.7370353 C5.32,28.9654942 6.62,28.9654942 7.4025,29.7370353 L13.805,35.9921244 C14.58,36.7876927 15.9075,36.7876927 16.7275,35.9921244 L42.58,10.5846626 C43.3825,9.80511246 44.695,9.80511246 45.4925,10.5846626 L49.4,14.4130014 C50.2,15.1978909 50.2,16.4980311 49.4,17.2935994" id="path-1"></path>
+    </defs>
+    <g id="Icons/Interface/Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Fill-1" fill="#0088CE" xlink:href="#path-1"></use>
+    </g>
+</svg>

@@ -55,13 +55,13 @@ TODO : description
 TODO : description
 
 {% example html %}
-<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow icon-flip-horizontal"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-prev"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-next"></i></button>
 <button type="button" class="btn-rounded btn-rounded-primary"><i class="icons-share"></i></button>
-<button type="button" class="btn-rounded btn-rounded-facebook"><i class="icons-twitter"></i></button>
-<button type="button" class="btn-rounded btn-rounded-twitter"><i class="icons-twitter"></i></button>
-<button type="button" class="btn-rounded btn-rounded-linkedin"><i class="icons-twitter"></i></button>
-<button type="button" class="btn-rounded btn-rounded-youtube"><i class="icons-twitter"></i></button>
+<button type="button" class="btn-rounded btn-rounded-facebook"><i class="icons-close"></i></button>
+<button type="button" class="btn-rounded btn-rounded-twitter"><i class="icons-close"></i></button>
+<button type="button" class="btn-rounded btn-rounded-linkedin"><i class="icons-close"></i></button>
+<button type="button" class="btn-rounded btn-rounded-youtube"><i class="icons-close"></i></button>
 {% endexample %}
 
 ## Sizes

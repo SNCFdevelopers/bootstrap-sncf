@@ -34,7 +34,7 @@ Any single `.btn` can be turned into a dropdown toggle with some markup changes.
 <div class="btn-group dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span>Dropdown button</span>
-    <i class="icons-arrow"></i>
+    <i class="icons-arrow-down"></i>
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="#">Action</a>
@@ -50,7 +50,7 @@ The best part is you can do this with any button variant, too:
   <div class="btn-group dropdown">
     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span>Primary</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -63,7 +63,7 @@ The best part is you can do this with any button variant, too:
   <div class="btn-group dropdown">
     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span>Secondary</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -76,7 +76,7 @@ The best part is you can do this with any button variant, too:
   <div class="btn-group dropdown">
     <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span>Success</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -89,7 +89,7 @@ The best part is you can do this with any button variant, too:
   <div class="btn-group dropdown">
     <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span>Info</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -102,7 +102,7 @@ The best part is you can do this with any button variant, too:
   <div class="btn-group dropdown">
     <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span>Warning</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -115,7 +115,7 @@ The best part is you can do this with any button variant, too:
   <div class="btn-group dropdown">
     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span>Danger</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -132,7 +132,7 @@ The best part is you can do this with any button variant, too:
 <div class="btn-group dropdown">
   <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span>Action</span>
-    <i class="icons-arrow"></i>
+    <i class="icons-arrow-down"></i>
   </button>
   <div class="dropdown-menu">
     <a class="dropdown-item" href="#">Action</a>
@@ -156,7 +156,7 @@ By default, a dropdown menu is automatically positioned 100% from the top and al
 <div class="btn-group dropdown">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span>Right-aligned menu</span>
-    <i class="icons-arrow"></i>
+    <i class="icons-arrow-down"></i>
   </button>
   <div class="dropdown-menu dropdown-menu-right">
     <button class="dropdown-item" type="button">Action</button>
@@ -177,7 +177,7 @@ We use this extra class to reduce the horizontal `padding` on either side of the
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="sr-only">Toggle Dropdown</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -191,7 +191,7 @@ We use this extra class to reduce the horizontal `padding` on either side of the
     <button type="button" class="btn btn-secondary">Secondary</button>
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="sr-only">Toggle Dropdown</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -205,7 +205,7 @@ We use this extra class to reduce the horizontal `padding` on either side of the
     <button type="button" class="btn btn-success">Success</button>
     <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="sr-only">Toggle Dropdown</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -219,7 +219,7 @@ We use this extra class to reduce the horizontal `padding` on either side of the
     <button type="button" class="btn btn-info">Info</button>
     <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="sr-only">Toggle Dropdown</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -233,7 +233,7 @@ We use this extra class to reduce the horizontal `padding` on either side of the
     <button type="button" class="btn btn-warning">Warning</button>
     <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="sr-only">Toggle Dropdown</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -247,7 +247,7 @@ We use this extra class to reduce the horizontal `padding` on either side of the
     <button type="button" class="btn btn-danger">Danger</button>
     <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="sr-only">Toggle Dropdown</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-down"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -265,7 +265,7 @@ We use this extra class to reduce the horizontal `padding` on either side of the
   <button type="button" class="btn btn-danger">Action</button>
   <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="sr-only">Toggle Dropdown</span>
-    <i class="icons-arrow"></i>
+    <i class="icons-arrow-down"></i>
   </button>
   <div class="dropdown-menu">
     <a class="dropdown-item" href="#">Action</a>
@@ -285,7 +285,7 @@ Trigger dropdown menus above elements by adding `.dropup` to the parent element.
   <div class="btn-group dropup">
     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span>Dropup</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-up"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -302,7 +302,7 @@ Trigger dropdown menus above elements by adding `.dropup` to the parent element.
     </button>
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="sr-only">Toggle Dropdown</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-up"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -319,7 +319,7 @@ Trigger dropdown menus above elements by adding `.dropup` to the parent element.
 <div class="btn-group dropup">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span>Dropup</span>
-    <i class="icons-arrow"></i>
+    <i class="icons-arrow-up"></i>
   </button>
   <div class="dropdown-menu">
     <!-- Dropdown menu links -->
@@ -333,7 +333,7 @@ Trigger dropdown menus above elements by adding `.dropup` to the parent element.
   </button>
   <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="sr-only">Toggle Dropdown</span>
-    <i class="icons-arrow"></i>
+    <i class="icons-arrow-up"></i>
   </button>
   <div class="dropdown-menu">
     <!-- Dropdown menu links -->
@@ -349,7 +349,7 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
   <div class="btn-group dropright">
     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span>Dropright</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-next"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -366,7 +366,7 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
     </button>
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="sr-only">Toggle Dropdright</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-prev"></i>
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -383,7 +383,7 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
 <div class="btn-group dropright">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span>Dropright</span>
-    <i class="icons-arrow"></i>
+    <i class="icons-arrow-next"></i>
   </button>
   <div class="dropdown-menu">
     <!-- Dropdown menu links -->
@@ -397,7 +397,7 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
   </button>
   <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="sr-only">Toggle Dropright</span>
-    <i class="icons-arrow"></i>
+    <i class="icons-arrow-next"></i>
   </button>
   <div class="dropdown-menu">
     <!-- Dropdown menu links -->
@@ -412,7 +412,7 @@ Trigger dropdown menus at the left of the elements by adding `.dropleft` to the 
 <div class="bd-example">
   <div class="btn-group dropleft">
     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-prev"></i>
       <span>Dropleft</span>
     </button>
     <div class="dropdown-menu">
@@ -427,7 +427,7 @@ Trigger dropdown menus at the left of the elements by adding `.dropleft` to the 
   <div class="btn-group">
     <div class="btn-group dropleft" role="group">
       <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="icons-arrow"></i>
+        <i class="icons-arrow-prev"></i>
         <span class="sr-only">Toggle Dropleft</span>
       </button>
       <div class="dropdown-menu">
@@ -449,7 +449,7 @@ Trigger dropdown menus at the left of the elements by adding `.dropleft` to the 
 <div class="btn-group dropleft">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span>Dropleft</span>
-    <i class="icons-arrow"></i>
+    <i class="icons-arrow-prev"></i>
   </button>
   <div class="dropdown-menu">
     <!-- Dropdown menu links -->
@@ -461,7 +461,7 @@ Trigger dropdown menus at the left of the elements by adding `.dropleft` to the 
   <div class="btn-group dropleft" role="group">
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="sr-only">Toggle Dropleft</span>
-      <i class="icons-arrow"></i>
+      <i class="icons-arrow-prev"></i>
     </button>
     <div class="dropdown-menu">
       <!-- Dropdown menu links -->
@@ -482,7 +482,7 @@ Historically dropdown menu contents *had* to be links, but that's no longer the 
 <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span>Dropdown</span>
-    <i class="icons-arrow"></i>
+    <i class="icons-arrow-down"></i>
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
     <button class="dropdown-item" type="button">Action</button>

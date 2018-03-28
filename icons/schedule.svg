@@ -3,15 +3,15 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#0088CE;}
+	.st0{fill:#0086D1;}
 </style>
-<title>Icons/Interface/Fermer</title>
+<title>Icons/Interface/Horaire</title>
 <desc>Created with Sketch.</desc>
-<g id="Icons_x2F_Interface_x2F_Fermer">
+<g id="Icons_x2F_Interface_x2F_Horaire">
 	<g id="Fill-1">
-		<path id="path-1_1_" class="st0" d="M32.1,25.1L48.7,8.5c1.9-1.9,1.6-5.2-0.3-7.1c-1.9-1.9-5-1.9-6.9,0L25,18L8.3,1.4
-			c-1.9-1.9-5-1.9-6.9,0c-1.9,1.9-2,5.1-0.1,7L18,25L1.3,41.6c-1.9,1.9-1.7,5.1,0.1,7c1.9,1.9,5.1,2,7,0.1l16.6-16.6l16.5,16.5
-			c1.9,1.9,5,1.9,6.9,0c1.9-1.9,2-5.1,0.1-7L32.1,25.1z"/>
+		<path id="path-1_1_" class="st0" d="M40.7,30.7c-0.2,0-0.3,0-0.5,0l-17.6-3.4L14,16.8c-1-1.2-0.8-2.9,0.3-3.9
+			c1.1-1,2.8-0.8,3.8,0.3l7.4,8.9l15.7,3c1.5,0.3,2.4,1.7,2.2,3.2C43.1,29.8,42,30.7,40.7,30.7 M24.1,0C10.8,0,0,11.1,0,24.7
+			c0,13.6,10.8,24.7,24.1,24.7c13.3,0,24.1-11.1,24.1-24.7C48.1,11.1,37.3,0,24.1,0"/>
 	</g>
 </g>
 </svg>
