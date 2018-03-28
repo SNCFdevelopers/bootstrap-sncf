@@ -174,11 +174,9 @@ TODO : description
     <div class="select-menu" data-role="menu">
       <div class="select-group" data-role="group" data-id="0">
         <div class="select-group-head">
-          <button class="select-group-title text-uppercase">
-            <div class="custom-control custom-checkbox">
-              <label data-role="counter" class="custom-control-label font-weight-medium text-uppercase">Unité 1</label>
-            </div>     
-          </button>
+          <div class="custom-control custom-checkbox">
+            <label data-role="counter" class="custom-control-label font-weight-medium text-uppercase">Unité 1</label>
+          </div>     
         </div>
         <div class="select-group-content">
           <div class="custom-control custom-checkbox">
@@ -191,11 +189,9 @@ TODO : description
       </div>
       <div class="select-group" data-role="group" data-id="1">
         <div class="select-group-head">
-          <button class="select-group-title text-uppercase">
-            <div class="custom-control custom-checkbox">
-              <label data-role="counter" class="custom-control-label font-weight-medium text-uppercase">Unité 2</label>
-            </div>     
-          </button>
+          <div class="custom-control custom-checkbox">
+            <label data-role="counter" class="custom-control-label font-weight-medium text-uppercase">Unité 2</label>
+          </div>     
         </div>
         <div class="select-group-content">
           <div class="custom-control custom-checkbox">

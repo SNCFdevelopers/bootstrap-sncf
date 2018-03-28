@@ -1,7 +1,11 @@
 import $ from 'jquery'
 import findIndex from '../../node_modules/lodash-es/findIndex'
+import getSelectedOptions from './utils/getSelectedOptions'
 import includes from '../../node_modules/lodash-es/includes'
 import pull from '../../node_modules/lodash-es/pull'
+
+const ACTIVE_CLASS = 'active'
+const INDETERMINATE_CLASS = 'indeterminate'
 
 /**
  * ------------------------------------------------------------------------
@@ -12,50 +16,59 @@ import pull from '../../node_modules/lodash-es/pull'
 class SelectMultiple {
   constructor(element) {
     this.element = element
+
     this.btn = element.querySelector('[data-role=btn]')
     this.toggle = element.querySelector('[data-role=select-toggle')
-    this.collapses = element.querySelectorAll('[data-role=collapse')
-    this.data = {}
+
     this.input = element.querySelector('[data-role=input]')
-    this.selectedOptions = this._getSelectedOptions(this.input)
     this.placeholder = element.querySelector('[data-role=placeholder]')
     const groups = element.querySelectorAll('[data-role=group]')
+
+    this.collapses = element.querySelectorAll('[data-role=collapse')
+
+    this.selectedOptions = getSelectedOptions(this.input)
+    this.store = {}
+    this.count = {
+      values: 0,
+      currentValues: 0
+    }
 
     this._addEventListeners()
 
     groups.forEach((group) => {
-      const groupId = group.dataset.id;
-      const values = group.querySelectorAll('[data-role=value]')
+      const id = group.dataset.id
+      const labelNode = group.querySelector('[data-role=counter]')
+      const valueNodeList = group.querySelectorAll('[data-role=value]')
 
-      this.data[groupId] = {
-        label: group.querySelector('[data-role=counter]'),
-        currentValues: [],
+      this.store[id] = {
         values: [],
-        valuesNode: values,
-        max: values.length
+        currentValues: [],
+        labelNode,
+        valueNodeList
       }
 
-      this.data[groupId].label.addEventListener('click', () => {
-        this._handleChangeGroupState(groupId)
+      labelNode.addEventListener('click', () => {
+        this._onGroupChange(id, (id) => this._addCurrentValues(id), (id) => this._removeCurrentValues(id))
       })
 
-      values.forEach((value) => {
-        this.data[groupId].values.push(value.dataset.target)
-        this._handleDefaultOptionState(value, groupId)
+      valueNodeList.forEach((value) => {
+        this.store[id].values.push(value.dataset.target)
+        this.count.values += 1
+        const valueId = value.dataset.target
+        this._setDefaultSelectedOptions(id, valueId, (isSelected) => this._toggleValue(id, valueId, value, isSelected))
 
         value.addEventListener('click', () => {
-          this._handleChangeOptionState(value, groupId)
+          this._onValueChange(id, valueId, (isSelected) => this._toggleValue(id, valueId, value, isSelected))
         })
       })
 
-      this._updatePlaceholder()
-      this._handleGroupState(groupId)
+      this._updatePlaceholderNodeStyle()
+      this._updateGroupNodeStyle(id)
     })
 
     this.placeholder.addEventListener('click', (event) => {
-      console.log('click')
       event.stopPropagation()
-      this._handleChangePlaceholder()
+      this._onPlaceholderChange((id) => this._addCurrentValues(id), (id) => this._removeCurrentValues(id))
     })
   }
 
@@ -64,13 +77,13 @@ class SelectMultiple {
   _addEventListeners() {
     this.toggle.addEventListener('click', (event) => {
       event.stopPropagation()
-      this.element.classList.toggle('active')
-      this.btn.classList.toggle('active')
+      this.element.classList.toggle(ACTIVE_CLASS)
+      this.btn.classList.toggle(ACTIVE_CLASS)
     })
 
     this.collapses.forEach((item) => {
       item.addEventListener('click', (event) => {
-        event.target.classList.toggle('active')
+        event.target.classList.toggle(ACTIVE_CLASS)
         // bootstrap jQuery collapse
         $(event.target.dataset.target).collapse('toggle')
       })
@@ -81,163 +94,124 @@ class SelectMultiple {
     })
 
     document.addEventListener('click', () => {
-      this.element.classList.remove('active')
-      this.btn.classList.remove('active')
+      this.element.classList.remove(ACTIVE_CLASS)
+      this.btn.classList.remove(ACTIVE_CLASS)
     })
   }
 
-  _getSelectedOptions(element) {
-    // validate element
-    if (!element || !element.options) {
-      // or null?
-      return []
-    }
-
-    // return HTML5 implementation of selectedOptions instead.
-    if (element.selectedOptions) {
-      return element.selectedOptions
-    }
-
-    // you are here because your browser doesn't have the HTML5 selectedOptions
-    const opts = element.options
-    const selectedOptions = []
-
-    for (let i = 0; i < opts.length; i++) {
-      if (opts[i].selected) {
-        selectedOptions.push(opts[i])
-      }
-    }
-
-    return selectedOptions
+  _setDefaultSelectedOptions(groupId, valueId, toggleCallback) {
+    /* eslint-disable arrow-body-style */
+    const isSelected = findIndex(this.selectedOptions, (o) => {
+      return o.dataset.id === valueId
+    })
+    /* eslint-enable arrow-body-style */
+    toggleCallback(isSelected < 0)
   }
 
-  _handleDefaultOptionState(value, groupId = 0) {
-    const valueId = value.dataset.target;
-    const isSelected = findIndex(this.selectedOptions, (o) => { return o.dataset.id === valueId })
-    this._toggleValue(value, groupId, isSelected >= 0 ? false : true)
+  _onValueChange(groupId = 0, valueId, toggleCallback) {
+    toggleCallback(includes(this.store[groupId].currentValues, valueId))
   }
 
-  _handleChangeOptionState(value, groupId = 0) {
-    const valueId = value.dataset.target;
-    const isSelected = includes(this.data[groupId].currentValues, valueId);
-
-    this._toggleValue(value, groupId, isSelected)
-  }
-
-  _toggleValue(value, groupId, isSelected) {
-    const valueId = value.dataset.target;
-
+  _toggleValue = (groupId, valueId, valueNode, isSelected) => {
     if (!isSelected) {
-      this.data[groupId].currentValues.push(valueId)
-      value.classList.add('active')
+      this.store[groupId].currentValues.push(valueId)
+      this.count.currentValues += 1
+      valueNode.classList.add(ACTIVE_CLASS)
     } else {
-      pull(this.data[groupId].currentValues, valueId)
-      value.classList.remove('active')
+      pull(this.store[groupId].currentValues, valueId)
+      this.count.currentValues -= 1
+      valueNode.classList.remove(ACTIVE_CLASS)
     }
 
-    this._updatePlaceholder()
-    this._handleGroupState(groupId)
+    this._updatePlaceholderNodeStyle()
+    this._updateGroupNodeStyle(groupId)
   }
 
-  _handleGroupState(groupId = 0) {
-    const counter = this.data[groupId].label
-    const length = this.data[groupId].currentValues.length
+  _updateGroupNodeStyle(id = 0) {
+    const labelNode = this.store[id].labelNode
+    const valuesLength = this.store[id].values.length
+    const currentValuesLength = this.store[id].currentValues.length
 
-    if (length > 0) {
-      if (length === this.data[groupId].max) {
-        counter.classList.add('active')
-        counter.classList.remove('indeterminate')
+    if (currentValuesLength > 0) {
+      if (currentValuesLength === valuesLength) {
+        labelNode.classList.add(ACTIVE_CLASS)
+        labelNode.classList.remove(INDETERMINATE_CLASS)
       } else {
-        counter.classList.remove('active')
-        counter.classList.add('indeterminate')
+        labelNode.classList.remove(ACTIVE_CLASS)
+        labelNode.classList.add(INDETERMINATE_CLASS)
       }
     } else {
-      counter.classList.remove('active')
-      counter.classList.remove('indeterminate')
+      labelNode.classList.remove(ACTIVE_CLASS, INDETERMINATE_CLASS)
     }
   }
 
-  _handleChangeGroupState(groupId) {
-    if (this.data[groupId].currentValues.length === this.data[groupId].values.length) {
-      this.data[groupId].label.classList.remove('active')
-      this.data[groupId].label.classList.remove('indeterminate')
-      this._removeValues(groupId)
+  _onGroupChange(id, addCallback, removeCallback) {
+    if (this.store[id].currentValues.length === this.store[id].values.length) {
+      this.store[id].labelNode.classList.remove(ACTIVE_CLASS, INDETERMINATE_CLASS)
+      removeCallback(id)
     } else {
-      this.data[groupId].label.classList.add('active')
-      this.data[groupId].label.classList.remove('indeterminate')
-      this._addValues(groupId)
+      this.store[id].labelNode.classList.add(ACTIVE_CLASS)
+      this.store[id].labelNode.classList.remove(INDETERMINATE_CLASS)
+      addCallback(id)
     }
 
-    this._updatePlaceholder()
+    this._updatePlaceholderNodeStyle()
   }
 
-  _addValues(groupId) {
-    this.data[groupId].currentValues = this.data[groupId].values
-    this.data[groupId].valuesNode.forEach((value) => {
-      value.classList.add('active')
-      value.classList.remove('indeterminate')
+  _addCurrentValues = (id) => {
+    this.count.currentValues += this.store[id].values.length - this.store[id].currentValues.length
+    this.store[id].currentValues = this.store[id].values
+    this.store[id].valueNodeList.forEach((value) => {
+      value.classList.add(ACTIVE_CLASS)
+      value.classList.remove(INDETERMINATE_CLASS)
       this.input[value.dataset.target].selected = true
     })
   }
 
-  _removeValues(groupId) {
-    this.data[groupId].currentValues = []
-    this.data[groupId].valuesNode.forEach((value) => {
-      value.classList.remove('active')
-      value.classList.remove('indeterminate')
+  _removeCurrentValues = (id) => {
+    this.count.currentValues -= this.store[id].currentValues.length
+    this.store[id].currentValues = []
+    this.store[id].valueNodeList.forEach((value) => {
+      value.classList.remove(ACTIVE_CLASS, INDETERMINATE_CLASS)
       this.input[value.dataset.target].selected = false
     })
   }
 
-  _handleChangePlaceholder() {
-    let totalCurrentValues = null
-    let totalValues = null
-
-    for (const key in this.data) {
-      totalCurrentValues += this.data[key].currentValues.length
-      totalValues += this.data[key].values.length
-    }
-
-    console.log('totalCurrentValues: ', totalCurrentValues)
-    console.log('totalValues: ', totalValues)
-
-    if (totalCurrentValues > 0) {
-      for (const key in this.data) {
-        this.data[key].currentValues = []
-        this._handleGroupState(key)
-        this._removeValues(key)
+  _onPlaceholderChange(addCallback, removeCallback) {
+    if (this.count.currentValues > 0) {
+      for (const key in this.store) {
+        if (Object.prototype.hasOwnProperty.call(this.store, key)) {
+          this.store[key].currentValues = []
+          this._updateGroupNodeStyle(key)
+          removeCallback(key)
+        }
       }
+      this.count.currentValues = 0
     } else {
-      for (const key in this.data) {
-        this.data[key].currentValues = this.data[key].values
-        this._handleGroupState(key)
-        this._addValues(key)
+      for (const key in this.store) {
+        if (Object.prototype.hasOwnProperty.call(this.store, key)) {
+          this.store[key].currentValues = this.store[key].values
+          this._updateGroupNodeStyle(key)
+          addCallback(key)
+        }
       }
+      this.count.currentValues = this.count.values
     }
 
-    this._updatePlaceholder()
+    this._updatePlaceholderNodeStyle()
   }
 
-  _updatePlaceholder() {
-    let totalCurrentValues = null
-    let totalValues = null
-
-    for (const key in this.data) {
-      totalCurrentValues += this.data[key].currentValues.length
-      totalValues += this.data[key].values.length
-    }
-
-    if (totalCurrentValues > 0) {
-      if (totalValues === totalCurrentValues) {
-        this.placeholder.classList.add('active')
-        this.placeholder.classList.remove('indeterminate')
+  _updatePlaceholderNodeStyle() {
+    if (this.count.currentValues > 0) {
+      if (this.count.values === this.count.currentValues) {
+        this.placeholder.classList.add(ACTIVE_CLASS)
+        this.placeholder.classList.remove(INDETERMINATE_CLASS)
       } else {
-        this.placeholder.classList.remove('active')
-        this.placeholder.classList.add('indeterminate')
+        this.placeholder.classList.remove(ACTIVE_CLASS)
+        this.placeholder.classList.add(INDETERMINATE_CLASS)
       }
     } else {
-      this.placeholder.classList.remove('active')
-      this.placeholder.classList.remove('indeterminate')
+      this.placeholder.classList.remove(ACTIVE_CLASS, INDETERMINATE_CLASS)
     }
   }
 }

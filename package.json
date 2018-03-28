@@ -95,6 +95,7 @@
     "@babel/preset-env": "7.0.0-beta.37",
     "autoprefixer": "^7.2.4",
     "babel-eslint": "^8.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
     "bundlesize": "^0.15.3",
     "clean-css-cli": "^4.1.10",
