@@ -12,7 +12,15 @@ The most basic list group is an unordered list with list items and the proper cl
 
 {% example html %}
 <ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">
+    <h3 class="font-weight-medium">Titre lorem ipsum dolor sit amet</h3>
+    <ul class="">
+      <li>Mise à jour le 4 avril 2017</li>
+      <li>Site : Lorem ipsum</li>
+      <li>Agent : William Lemire</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
+  </li>
   <li class="list-group-item">Dapibus ac facilisis in</li>
   <li class="list-group-item">Morbi leo risus</li>
   <li class="list-group-item">Porta ac consectetur ac</li>

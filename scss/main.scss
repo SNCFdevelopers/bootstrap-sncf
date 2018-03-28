@@ -11,8 +11,11 @@
 // generic
 @import "node_modules/bootstrap/scss/root";
 @import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "generic/base";
 @import "generic/fonts";
 @import "generic/icons";
+@import "generic/type";
 
 // objects
 @import "node_modules/bootstrap/scss/grid";
