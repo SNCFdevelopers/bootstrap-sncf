@@ -4142,20 +4142,33 @@ tbody.collapse.show {
   border-bottom-right-radius: 0.4375rem;
 }
 
-.input-group-prepend > .btn-group .btn {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.input-group-prepend + .form-control-container {
+.input-group .form-control-container {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   width: 1%;
 }
 
+.input-group .form-control-container:not(:last-child),
+.input-group .form-control-container:not(:last-child) .form-control-state {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group-prepend > .btn,
+.input-group-prepend > .btn-group .btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .input-group-prepend + .form-control-container,
 .input-group-prepend + .form-control-container .form-control-state {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group-append > .btn,
+.input-group-append > .btn-group .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -7133,6 +7146,102 @@ button.close {
   .management-item:last-child {
     padding-right: 3.5rem;
   }
+}
+
+/* chips
+   ========================================================================== */
+.form-chips-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 0.3125rem;
+  padding-left: 0.3125rem;
+  background-color: #f2f2f2;
+  background-clip: padding-box;
+  border-radius: 0.4375rem;
+}
+
+.chips-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-right: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  vertical-align: middle;
+}
+
+.chips-group .chips:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.chips-group .chips:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.chips {
+  display: inline-block;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #0088ce;
+  border: 1px solid #0088ce;
+  padding: 0.5em 1.125em;
+  font-size: 1rem;
+  line-height: 1.375;
+  border-radius: 0.4375rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.chips:hover, .chips:focus {
+  text-decoration: none;
+  background-color: #0074af;
+}
+
+.chips:focus, .chips.focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.chips .icons-close {
+  font-size: 0.625rem;
+}
+
+.chips-only-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  min-height: 2.5rem;
+  padding: 0;
+}
+
+.chips-input {
+  padding-right: 5px;
+  padding-bottom: 0.3125rem;
+  padding-left: 1.125rem;
+  background-color: transparent;
+  border: none;
+}
+
+.chips-input:focus {
+  outline: 0;
 }
 
 .align-baseline {

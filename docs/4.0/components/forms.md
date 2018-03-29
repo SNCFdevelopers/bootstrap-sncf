@@ -74,157 +74,31 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
 </div>
 {% endexample %}
 
-## Checkboxes and radios
-
-Each checkbox and radio is wrapped in a `<div>` with a sibling `<span>` to create our custom control and a `<label>` for the accompanying text. Structurally, this is the same approach as our default `.form-check`.
-
-We use the sibling selector (`~`) for all our `<input>` states—like `:checked`—to properly style our custom form indicator. When combined with the `.custom-control-label` class, we can also style the text for each item based on the `<input>`'s state.
-
-We hide the default `<input>` with `opacity` and use the `.custom-control-label` to build a new custom form indicator in its place with `::before` and `::after`. Unfortunately we can't build a custom one from just the `<input>` because CSS's `content` doesn't work on that element.
-
-In the checked states, we use **base64 embedded SVG icons** from [Open Iconic](https://useiconic.com/open). This provides us the best control for styling and positioning across browsers and devices.
-
-### Checkboxes
+### Chips
 
 {% example html %}
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck1">
-  <label class="custom-control-label font-weight-medium" for="customCheck1">Check this custom checkbox</label>
-</div>
-{% endexample %}
-
-Custom checkboxes can also utilize the `:indeterminate` pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).
-
-<div class="bd-example bd-example-indeterminate">
-  <div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" id="customCheck2">
-    <label class="custom-control-label font-weight-medium" for="customCheck2">Check this custom checkbox</label>
+<label class="font-weight-medium mb-2">Receivers</label>
+<div class="form-control-container form-chips-container">
+  <div class="chips-group">
+    <button type="button" class="chips">Mathéo Mercier</button>
+    <button type="button" class="chips chips-only-icon">
+      <span class="sr-only">Remove</span>
+      <i class="icons-close"></i>
+    </button>
   </div>
-</div>
-
-If you're using jQuery, something like this should suffice:
-
-{% highlight js %}
-$('.your-checkbox').prop('indeterminate', true)
-{% endhighlight %}
-
-### Radios
-
-{% example html %}
-<div class="custom-control custom-radio">
-  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-  <label class="custom-control-label font-weight-medium" for="customRadio1">Toggle this custom radio</label>
-</div>
-<div class="custom-control custom-radio">
-  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-  <label class="custom-control-label font-weight-medium" for="customRadio2">Or toggle this other custom radio</label>
-</div>
-{% endexample %}
-
-### Switch
-
-{% example html %}
-<label class="switch-control">
-  <input type="checkbox" class="sr-only" >
-  <span class="switch-control-slider"></span>
-</label>
-{% endexample %}
-
-### Options
-
-{% example html %}
-<div class="options-control">
-  <div class="options-item">
-    <input type="radio" name="optionsRadio" id="optionsRadio1" class="sr-only" checked/>
-    <label class="options-btn font-weight-medium" for="optionsRadio1">Option 1</label>
+  <div class="chips-group">
+    <button type="button" class="chips">Lucie Gauthier</button>
+    <button type="button" class="chips chips-only-icon">
+      <span class="sr-only">Remove</span>
+      <i class="icons-close"></i>
+    </button>
   </div>
-  <div class="options-item">
-    <input type="radio" name="optionsRadio" id="optionsRadio2" class="sr-only"/>
-    <label class="options-btn font-weight-medium" for="optionsRadio2">Option 2</label>
-  </div>
-</div>
-{% endexample %}
-
-### Inline
-
-{% example html %}
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-  <label class="custom-control-label font-weight-medium" for="customRadioInline1">Toggle this custom radio</label>
-</div>
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-  <label class="custom-control-label font-weight-medium" for="customRadioInline2">Or toggle this other custom radio</label>
-</div>
-{% endexample %}
-
-### Disabled
-
-Custom checkboxes and radios can also be disabled. Add the `disabled` boolean attribute to the `<input>` and the custom indicator and label description will be automatically styled.
-
-{% example html %}
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled>
-  <label class="custom-control-label font-weight-medium" for="customCheckDisabled">Check this custom checkbox</label>
-</div>
-
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheckCheckedDisabled" disabled checked>
-  <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled">Check this custom checkbox</label>
-</div>
-
-<div class="custom-control custom-radio">
-  <input type="radio" id="radio3" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
-  <label class="custom-control-label font-weight-medium" for="customRadioDisabled">Toggle this custom radio</label>
-</div>
-
-<div class="mt-2">
-  <label class="switch-control">
-    <input type="checkbox" class="sr-only" disabled>
-    <span class="switch-control-slider"></span>
-  </label>
-</div>
-
-<div class="options-control disabled mt-2">
-  <div class="options-item">
-    <input type="radio" name="optionsRadioDisabled" id="optionsRadio3" class="sr-only" checked disabled/>
-    <label class="options-btn font-weight-medium" for="optionsRadio3">Option 1</label>
-  </div>
-  <div class="options-item">
-    <input type="radio" name="optionsRadioDisabled" id="optionsRadio4" class="sr-only" disabled/>
-    <label class="options-btn font-weight-medium" for="optionsRadio4">Option 2</label>
-  </div>
-</div>
-{% endexample %}
-
-## Form group
-
-{% example html %}
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <div class="btn-group dropdown">
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span>Primary</span>
-        <i class="icons-arrow"></i>
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
-      </div>
-    </div>
-  </div>
-  <div class="form-control-container">
-    <input type="text" class="form-control" placeholder="Enter text">
-    <span class="form-control-state"></span>
-  </div>
+  <input type="text" class="chips-input" value="Edouard Morel" />
 </div>
 {% endexample %}
 
 {% callout warning %}
-##### Alternatives to hidden labels
+### Alternatives to hidden labels
 Assistive technologies such as screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the `.sr-only` class. There are further alternative methods of providing a label for assistive technologies, such as the `aria-label`, `aria-labelledby` or `title` attribute. If none of these are present, assistive technologies may resort to using the `placeholder` attribute, if present, but note that use of `placeholder` as a replacement for other labelling methods is not advised.
 {% endcallout %}
 
@@ -233,7 +107,7 @@ Assistive technologies such as screen readers will have trouble with your forms 
 Block-level help text in forms can be created using `.form-text` (previously known as `.help-block` in v3). Inline help text can be flexibly implemented using any inline HTML element and utility classes like `.text-muted`.
 
 {% callout warning %}
-##### Associating help text with form controls
+#### Associating help text with form controls
 
 Help text should be explicitly associated with the form control it relates to using the `aria-describedby` attribute. This will ensure that assistive technologies—such as screen readers—will announce this help text when the user focuses or enters the control.
 {% endcallout %}
@@ -291,25 +165,19 @@ Add the `disabled` attribute to a `<fieldset>` to disable all the controls withi
         <option>Disabled select</option>
       </select>
     </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-      <label class="font-weight-medium mb-2" class="form-check-label" for="disabledFieldsetCheck">
-        Can't check this
-      </label>
-    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </fieldset>
 </form>
 {% endexample %}
 
 {% callout warning %}
-##### Caveat with anchors
+### Caveat with anchors
 
 By default, browsers will treat all native form controls (`<input>`, `<select>` and `<button>` elements) inside a `<fieldset disabled>` as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes `<a ... class="btn btn-*">` elements, these will only be given a style of `pointer-events: none`. As noted in the section about [disabled state for buttons]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/buttons/#disabled-state) (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 10, and won't prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.
 {% endcallout %}
 
 {% callout danger %}
-#### Cross-browser compatibility
+### Cross-browser compatibility
 
 While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don't fully support the `disabled` attribute on a `<fieldset>`. Use custom JavaScript to disable the fieldset in these browsers.
 {% endcallout %}

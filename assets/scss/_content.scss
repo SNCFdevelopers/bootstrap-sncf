@@ -74,6 +74,7 @@
 .bd-content {
   > h2:not(:first-child) {
     margin-top: 3rem;
+    font-size: $font-size-base * 2;
   }
 
   > h3 {
