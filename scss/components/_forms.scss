@@ -16,8 +16,9 @@ $icon-width: rem(48px);
   }
 
   &.is-invalid {
-    .form-control {
-      color: color-theme("danger");
+    .form-control,
+    ~ div[data-role="counter"] {
+      color: theme-color("danger");
     }
 
     + .invalid-feedback {
@@ -137,6 +138,11 @@ textarea.form-control {
   min-height: rem(160px);
   padding-top: rem(20px);
   padding-bottom: rem(20px);
+  color: gray("500");
+
+  &:focus {
+    color: gray("500");
+  }
 
   &.stretchy {
     resize: none;

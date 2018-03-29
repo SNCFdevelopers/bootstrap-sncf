@@ -6,23 +6,46 @@
 
 class Control {
   constructor(element) {
-    const input = element.querySelector('[data-role=input]')
+    this.element = element
+    const inputNode = element.querySelector('[data-role=input]')
+    const counterNode = element.parentNode.querySelector('[data-role=counter]')
+
+    if (counterNode) {
+      const counterValueNode = counterNode.querySelector('[data-role=counter-value]')
+      const maxLimit = counterNode.getAttribute('data-limit')
+
+      this._toggleInvalidClass(inputNode.value.length, maxLimit)
+      counterValueNode.innerHTML = inputNode.value.length
+
+      inputNode.addEventListener('input', (event) => {
+        this._toggleInvalidClass(event.target.value.length, maxLimit)
+        counterValueNode.innerHTML = event.target.value.length
+      })
+    }
 
     if (element.getAttribute('data-clear-option') === "true") {
-      const btnClear = element.querySelector('[data-btn=clear]');
+      const btnClearNode = element.querySelector('[data-btn=clear]')
 
-      input.addEventListener('input', (event) => {
-        if (input.value.length > 0) {
-          btnClear.classList.remove('d-none')
+      inputNode.addEventListener('inputNode', () => {
+        if (inputNode.value.length > 0) {
+          btnClearNode.classList.remove('d-none')
         } else {
-          btnClear.classList.add('d-none')
+          btnClearNode.classList.add('d-none')
         }
       })
       
-      btnClear.addEventListener('click', () => {
-        input.value = ""
-        btnClear.classList.add('d-none')
+      btnClearNode.addEventListener('click', () => {
+        inputNode.value = ""
+        btnClearNode.classList.add('d-none')
       })
+    }
+  }
+
+  _toggleInvalidClass(currentValueLength, maxLimit) {
+    if (currentValueLength > maxLimit) {
+      this.element.classList.add('is-invalid')
+    } else {
+      this.element.classList.remove('is-invalid')
     }
   }
 }

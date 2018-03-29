@@ -3,18 +3,18 @@
  * Class Definition
  * ------------------------------------------------------------------------
  */
-var Control =
+var Textarea =
 /*#__PURE__*/
 function () {
-  function Control(element) {
+  function Textarea(element) {
     var _this = this;
 
     this.element = element;
     var inputNode = element.querySelector('[data-role=input]');
-    var counterNode = element.parentNode.querySelector('[data-role=counter]');
+    var counterNode = element.querySelector('[data-role=counter]');
 
     if (counterNode) {
-      var counterValueNode = counterNode.querySelector('[data-role=counter-value]');
+      var counterValueNode = element.querySelector('[data-role=counter-value]');
       var maxLimit = counterNode.getAttribute('data-limit');
 
       this._toggleInvalidClass(inputNode.value.length, maxLimit);
@@ -26,33 +26,18 @@ function () {
         counterValueNode.innerHTML = event.target.value.length;
       });
     }
-
-    if (element.getAttribute('data-clear-option') === "true") {
-      var btnClearNode = element.querySelector('[data-btn=clear]');
-      inputNode.addEventListener('inputNode', function () {
-        if (inputNode.value.length > 0) {
-          btnClearNode.classList.remove('d-none');
-        } else {
-          btnClearNode.classList.add('d-none');
-        }
-      });
-      btnClearNode.addEventListener('click', function () {
-        inputNode.value = "";
-        btnClearNode.classList.add('d-none');
-      });
-    }
   }
 
-  var _proto = Control.prototype;
+  var _proto = Textarea.prototype;
 
   _proto._toggleInvalidClass = function _toggleInvalidClass(currentValueLength, maxLimit) {
     if (currentValueLength > maxLimit) {
-      this.element.classList.add('is-invalid');
+      this.element.classList.add('invalid');
     } else {
-      this.element.classList.remove('is-invalid');
+      this.element.classList.remove('invalid');
     }
   };
 
-  return Control;
+  return Textarea;
 }();
-//# sourceMappingURL=control.js.map
+//# sourceMappingURL=textarea.js.map

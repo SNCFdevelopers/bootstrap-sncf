@@ -2652,8 +2652,9 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   width: 100%;
 }
 
-.form-control-container.is-invalid .form-control {
-  color: color-theme("danger");
+.form-control-container.is-invalid .form-control,
+.form-control-container.is-invalid ~ div[data-role="counter"] {
+  color: #cd0037;
 }
 
 .form-control-container.is-invalid + .invalid-feedback {
@@ -2761,6 +2762,11 @@ textarea.form-control {
   min-height: 10rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  color: #4d4f53;
+}
+
+textarea.form-control:focus {
+  color: #4d4f53;
 }
 
 textarea.form-control.stretchy {

@@ -26,9 +26,9 @@ Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are st
     </div>
   </div>
   <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleFormControlTextarea2">Example textarea</label>
+    <label class="font-weight-medium mb-2" for="exampleFormControlTextarea1">Example textarea</label>
     <div class="form-control-container">
-      <textarea class="form-control" id="exampleFormControlTextarea2" rows="6" placeholder="Comment"></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comment"></textarea>
       <span class="form-control-state"></span>
     </div>
   </div>
@@ -39,28 +39,26 @@ Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are st
 ### With icon
 
 {% example html %}
-<form>
-  <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleInputEmail1">Left icon</label>
-    <div class="form-control-container">
-      <input type="text" class="form-control has-left-icon" id="exampleLeftIcon" aria-describedby="emailHelp" placeholder="Enter text">
-      <span class="form-control-state"></span>
-      <span class="form-control-icon left">
-        <i class="icons-search"></i>
-      </span>
-    </div>
+<div class="form-group">
+  <label class="font-weight-medium mb-2" for="exampleInputEmail1">Left icon</label>
+  <div class="form-control-container">
+    <input type="text" class="form-control has-left-icon" id="exampleLeftIcon" aria-describedby="emailHelp" placeholder="Enter text">
+    <span class="form-control-state"></span>
+    <span class="form-control-icon left">
+      <i class="icons-search"></i>
+    </span>
   </div>
-  <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleInputEmail1">Right icon</label>
-    <div class="form-control-container">
-      <input type="text" class="form-control has-right-icon" id="exampleRightIcon" aria-describedby="emailHelp" placeholder="Enter text">
-      <span class="form-control-state"></span>
-      <span class="form-control-icon right">
-        <i class="icons-search"></i>
-      </span>
-    </div>
+</div>
+<div class="form-group">
+  <label class="font-weight-medium mb-2" for="exampleInputEmail1">Right icon</label>
+  <div class="form-control-container">
+    <input type="text" class="form-control has-right-icon" id="exampleRightIcon" aria-describedby="emailHelp" placeholder="Enter text">
+    <span class="form-control-state"></span>
+    <span class="form-control-icon right">
+      <i class="icons-search"></i>
+    </span>
   </div>
-</form>
+</div>
 {% endexample %}
 
 ### Readonly
@@ -101,15 +99,26 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
 Textual `stretchy` class on input.
 
 {% example html %}
-<form>
   <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleFormControlTextarea1">Example textarea</label>
+    <label class="font-weight-medium mb-2" for="exampleFormControlTextarea2">Example textarea</label>
     <div class="form-control-container">
-      <textarea class="form-control stretchy" id="exampleFormControlTextarea1" rows="6" placeholder="Comment"></textarea>
+      <textarea class="form-control stretchy" id="exampleFormControlTextarea2" placeholder="Comment"></textarea>
       <span class="form-control-state"></span>
     </div>
   </div>
-</form>
+{% endexample %}
+
+### With counter
+
+{% example html %}
+<div class="form-group">
+  <label class="font-weight-medium mb-2" for="exampleFormControlTextarea3">Example textarea</label>
+  <div class="form-control-container" data-component="control">
+    <textarea class="form-control stretchy" id="exampleFormControlTextarea3" placeholder="Comment" data-role="input">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illum aliquid, quis, labore sed ullam porro quam dolor error enim fuga et. Ratione assumenda, facilis illum placeat eligendi animi architecto.</textarea>
+    <span class="form-control-state"></span>
+  </div>
+  <div class="mt-2 font-weight-medium" data-role="counter" data-limit="200"><span data-role="counter-value">0</span>/200 caractères</div>
+</div>
 {% endexample %}
 
 ## Chips

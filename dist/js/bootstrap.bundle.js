@@ -1589,24 +1589,58 @@ var Collapse = function ($$$1) {
  * Class Definition
  * ------------------------------------------------------------------------
  */
-var Control = function Control(element) {
-  var input = element.querySelector('[data-role=input]');
+var Control =
+/*#__PURE__*/
+function () {
+  function Control(element) {
+    var _this = this;
 
-  if (element.getAttribute('data-clear-option') === "true") {
-    var btnClear = element.querySelector('[data-btn=clear]');
-    input.addEventListener('input', function (event) {
-      if (input.value.length > 0) {
-        btnClear.classList.remove('d-none');
-      } else {
-        btnClear.classList.add('d-none');
-      }
-    });
-    btnClear.addEventListener('click', function () {
-      input.value = "";
-      btnClear.classList.add('d-none');
-    });
+    this.element = element;
+    var inputNode = element.querySelector('[data-role=input]');
+    var counterNode = element.parentNode.querySelector('[data-role=counter]');
+
+    if (counterNode) {
+      var counterValueNode = counterNode.querySelector('[data-role=counter-value]');
+      var maxLimit = counterNode.getAttribute('data-limit');
+
+      this._toggleInvalidClass(inputNode.value.length, maxLimit);
+
+      counterValueNode.innerHTML = inputNode.value.length;
+      inputNode.addEventListener('input', function (event) {
+        _this._toggleInvalidClass(event.target.value.length, maxLimit);
+
+        counterValueNode.innerHTML = event.target.value.length;
+      });
+    }
+
+    if (element.getAttribute('data-clear-option') === "true") {
+      var btnClearNode = element.querySelector('[data-btn=clear]');
+      inputNode.addEventListener('inputNode', function () {
+        if (inputNode.value.length > 0) {
+          btnClearNode.classList.remove('d-none');
+        } else {
+          btnClearNode.classList.add('d-none');
+        }
+      });
+      btnClearNode.addEventListener('click', function () {
+        inputNode.value = "";
+        btnClearNode.classList.add('d-none');
+      });
+    }
   }
-};
+
+  var _proto = Control.prototype;
+
+  _proto._toggleInvalidClass = function _toggleInvalidClass(currentValueLength, maxLimit) {
+    if (currentValueLength > maxLimit) {
+      this.element.classList.add('is-invalid');
+    } else {
+      this.element.classList.remove('is-invalid');
+    }
+  };
+
+  return Control;
+}();
 
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
@@ -10284,6 +10318,49 @@ var Tab = function ($$$1) {
 }($);
 
 /**
+ * ------------------------------------------------------------------------
+ * Class Definition
+ * ------------------------------------------------------------------------
+ */
+var Textarea =
+/*#__PURE__*/
+function () {
+  function Textarea(element) {
+    var _this = this;
+
+    this.element = element;
+    var inputNode = element.querySelector('[data-role=input]');
+    var counterNode = element.querySelector('[data-role=counter]');
+
+    if (counterNode) {
+      var counterValueNode = element.querySelector('[data-role=counter-value]');
+      var maxLimit = counterNode.getAttribute('data-limit');
+
+      this._toggleInvalidClass(inputNode.value.length, maxLimit);
+
+      counterValueNode.innerHTML = inputNode.value.length;
+      inputNode.addEventListener('input', function (event) {
+        _this._toggleInvalidClass(event.target.value.length, maxLimit);
+
+        counterValueNode.innerHTML = event.target.value.length;
+      });
+    }
+  }
+
+  var _proto = Textarea.prototype;
+
+  _proto._toggleInvalidClass = function _toggleInvalidClass(currentValueLength, maxLimit) {
+    if (currentValueLength > maxLimit) {
+      this.element.classList.add('invalid');
+    } else {
+      this.element.classList.remove('invalid');
+    }
+  };
+
+  return Textarea;
+}();
+
+/**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0-alpha.6): index.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -10318,6 +10395,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var dataSelectExclusive = 'select-exclusive';
   var dataSelectMultiple = 'select-multiple';
   var dataSelectRadios = 'select-radios';
+  var dataTextarea = 'textarea';
   var components = document.querySelectorAll(dataComponent);
   components.forEach(function (component) {
     /* eslint-disable no-new */
@@ -10335,6 +10413,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (component.dataset.component === dataSelectRadios) {
       new SelectRadios(component);
+    }
+
+    if (component.dataset.component === dataTextarea) {
+      new Textarea(component);
     }
     /* eslint-enable no-new */
 
