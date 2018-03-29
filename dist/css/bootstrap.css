@@ -2145,7 +2145,7 @@ pre code {
   padding: 0.53125rem 1.25rem;
   font-size: 1rem;
   line-height: 1.375;
-  color: #747678;
+  color: #0088ce;
   background-color: #f2f2f2;
   background-clip: padding-box;
   border: 0.125em solid #f2f2f2;
@@ -2159,7 +2159,7 @@ pre code {
 }
 
 .form-control:focus {
-  color: #747678;
+  color: #0088ce;
   background-color: #f2f2f2;
   border-color: #f2f2f2;
   outline: 0;
@@ -2201,7 +2201,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 select.form-control:focus::-ms-value {
-  color: #747678;
+  color: #0088ce;
   background-color: #f2f2f2;
 }
 
@@ -2652,8 +2652,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   width: 100%;
 }
 
-.form-control-container.is-valid + .valid-feedback {
-  display: block;
+.form-control-container.is-invalid .form-control {
+  color: color-theme("danger");
 }
 
 .form-control-container.is-invalid + .invalid-feedback {
@@ -2711,12 +2711,50 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   padding-left: 3rem;
 }
 
+.form-control:disabled, .form-control[readonly] {
+  color: #4d4f53;
+}
+
 .form-control[readonly] {
   padding-right: 3rem;
   background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="0 0 27 25"><defs><style>.disabled-icon{fill:#747678;}</style></defs><path class="disabled-icon" d="M26.79,25.05H1.21a.73.73,0,0,0,0,1.45H26.79a.73.73,0,0,0,0-1.45Z" transform="translate(-0.5 -1.5)"/><path class="disabled-icon" d="M19.8,8.87h-.61V6.73a5.23,5.23,0,0,0-10.46,0V8.87H8.2a1.63,1.63,0,0,0-1.63,1.62V21.32A1.62,1.62,0,0,0,8.2,22.94H19.8a1.62,1.62,0,0,0,1.63-1.62V10.49A1.63,1.63,0,0,0,19.8,8.87ZM10.93,6.73a3,3,0,1,1,6.06,0V8.87H10.93Zm3,14.15a5,5,0,1,1,5-5A5,5,0,0,1,14,20.88Z" transform="translate(-0.5 -1.5)"/><path class="disabled-icon" d="M14,12.62a3.29,3.29,0,1,0,3.29,3.29A3.29,3.29,0,0,0,14,12.62Zm0,4.75a1.47,1.47,0,1,1,1.47-1.46A1.46,1.46,0,0,1,14,17.37Z" transform="translate(-0.5 -1.5)"/></svg>');
   background-repeat: no-repeat;
   background-position: center right 18px;
-  background-size: 27 25;
+  background-size: 27px 25px;
+}
+
+.form-control[required]:valid {
+  padding-right: 3rem;
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 22"><defs><style>.check-icon{fill:#0088ce;}</style></defs><title>check</title><path class="check-icon" d="M33.18,13.21,15.53,30.87a1.11,1.11,0,0,1-1.58,0L6.82,23.75a1.13,1.13,0,0,1,0-1.58l2.1-2.11a1.13,1.13,0,0,1,1.58,0L14,23.5a1.13,1.13,0,0,0,1.58,0l14-14a1.13,1.13,0,0,1,1.58,0l2.11,2.11a1.13,1.13,0,0,1,0,1.58" transform="translate(-6.5 -9.2)"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center right 18px;
+  background-size: 18px 14px;
+}
+
+.form-control.clear-option {
+  padding-right: 3rem;
+}
+
+.form-control.clear-option ~ .btn-clear {
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 1.625rem;
+  height: 1.625rem;
+  padding: 0;
+  font-size: 0.625rem;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 textarea.form-control {
@@ -4116,7 +4154,7 @@ tbody.collapse.show {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.375;
-  color: #747678;
+  color: #0088ce;
   text-align: center;
   white-space: nowrap;
   background-color: #d7d7d7;
@@ -4312,7 +4350,7 @@ tbody.collapse.show {
   height: calc(2.4375rem + 0.125em);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.375;
-  color: #747678;
+  color: #0088ce;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-size: 8px 10px;
@@ -4330,7 +4368,7 @@ tbody.collapse.show {
 }
 
 .custom-select:focus::-ms-value {
-  color: #747678;
+  color: #0088ce;
   background-color: #f2f2f2;
 }
 
@@ -4402,7 +4440,7 @@ tbody.collapse.show {
   height: calc(2.4375rem + 0.125em);
   padding: 0.375rem 0.75rem;
   line-height: 1.375;
-  color: #747678;
+  color: #0088ce;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   border-radius: 0.4375rem;
@@ -4418,7 +4456,7 @@ tbody.collapse.show {
   height: calc(calc(2.4375rem + 0.125em) - 1px * 2);
   padding: 0.375rem 0.75rem;
   line-height: 1.375;
-  color: #747678;
+  color: #0088ce;
   content: "Browse";
   background-color: #d7d7d7;
   border-left: 1px solid #f2f2f2;

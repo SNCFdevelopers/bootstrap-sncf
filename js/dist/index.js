@@ -28,12 +28,17 @@ document.addEventListener('DOMContentLoaded', function () {
   // data components
 
   var dataComponent = '[data-component]';
+  var dataControl = 'control';
   var dataSelectExclusive = 'select-exclusive';
   var dataSelectMultiple = 'select-multiple';
   var dataSelectRadios = 'select-radios';
   var components = document.querySelectorAll(dataComponent);
   components.forEach(function (component) {
     /* eslint-disable no-new */
+    if (component.dataset.component === dataControl) {
+      new Control(component);
+    }
+
     if (component.dataset.component === dataSelectExclusive) {
       new SelectExclusive(component);
     }

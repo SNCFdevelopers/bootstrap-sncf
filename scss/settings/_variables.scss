@@ -138,12 +138,14 @@ $input-line-height-lg:                  $line-height-base;
 $input-bg:                              $gray-100;
 $input-disabled-bg:                     $gray-100;
 
-$input-color:                           $gray-400;
+$input-color:                           $primary;
 $input-border-color:                    $gray-100;
 $input-border-width:                    .125em;
 
 $input-focus-bg:                        $gray-100;
 $input-focus-border-color:              $gray-100;
+
+$input-disabled-color:                  $gray-500;
 
 $input-placeholder-color:               $gray-400;
 

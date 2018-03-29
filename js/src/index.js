@@ -4,6 +4,7 @@ import Alert from '../../node_modules/bootstrap/js/src/alert'
 import Button from '../../node_modules/bootstrap/js/src/button'
 import Carousel from '../../node_modules/bootstrap/js/src/carousel'
 import Collapse from '../../node_modules/bootstrap/js/src/collapse'
+import Control from './control'
 import Dropdown from '../../node_modules/bootstrap/js/src/dropdown'
 import Modal from '../../node_modules/bootstrap/js/src/modal'
 import Popover from '../../node_modules/bootstrap/js/src/popover'
@@ -60,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // data components
   const dataComponent = '[data-component]'
+  const dataControl = 'control'
   const dataSelectExclusive = 'select-exclusive'
   const dataSelectMultiple = 'select-multiple'
   const dataSelectRadios = 'select-radios'
@@ -68,6 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   components.forEach((component) => {
     /* eslint-disable no-new */
+    if (component.dataset.component === dataControl) {
+      new Control(component)
+    }
+
     if (component.dataset.component === dataSelectExclusive) {
       new SelectExclusive(component)
     }

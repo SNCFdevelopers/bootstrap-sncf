@@ -26,9 +26,9 @@ Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are st
     </div>
   </div>
   <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleFormControlTextarea1">Example textarea</label>
+    <label class="font-weight-medium mb-2" for="exampleFormControlTextarea2">Example textarea</label>
     <div class="form-control-container">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Comment"></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea2" rows="6" placeholder="Comment"></textarea>
       <span class="form-control-state"></span>
     </div>
   </div>
@@ -74,6 +74,28 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
 </div>
 {% endexample %}
 
+### Required
+
+{% example html %}
+<div class="form-control-container">
+  <input class="form-control" type="text" placeholder="Required input here…" required>
+  <span class="form-control-state"></span>
+</div>
+{% endexample %}
+
+### With clear option
+
+{% example html %}
+<div class="form-control-container" data-component="control" data-clear-option="true">
+  <input class="form-control clear-option" type="text" placeholder="Required input here…" data-role="input">
+  <span class="form-control-state"></span>
+  <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
+    <span class="sr-only">Clear text</span>
+    <i class="icons-close"></i>
+  </button>
+</div>
+{% endexample %}
+
 ## Auto sizing
 
 Textual `stretchy` class on input.
@@ -90,7 +112,7 @@ Textual `stretchy` class on input.
 </form>
 {% endexample %}
 
-### Chips
+## Chips
 
 {% example html %}
 <label class="font-weight-medium mb-2">Receivers</label>
@@ -206,37 +228,25 @@ Provide valuable, actionable feedback to your users with HTML5 form validation�
 We **highly recommend** custom validation styles as native browser defaults are not announced to screen readers.
 {% endcallout %}
 
-### How it works
-
-Here's how form validation works with Bootstrap:
-
-- As a fallback, `.is-invalid` and `.is-valid` classes may be used instead of the pseudo-classes for [server side validation](#server-side). They do not require a `.was-validated` parent class.
-
 ### Server side
 
-We recommend using client side validation, but in case you require server side, you can indicate invalid and valid form fields with `.is-invalid` and `.is-valid`. Note that `.invalid-feedback` is also supported with these classes.
+We recommend using client side validation, but in case you require server side, you can indicate invalid form fields with `.is-invalid`. Note that `.invalid-feedback` is also supported with these classes.
 
 {% example html %}
 <form class="needs-validation" novalidate>
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label class="font-weight-medium mb-2" for="validationCustom01">First name</label>
-      <div class="form-control-container is-valid">
+      <div class="form-control-container">
         <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
         <span class="form-control-state"></span>
-      </div>
-      <div class="valid-feedback">
-        Looks good!
       </div>
     </div>
     <div class="col-md-4 mb-3">
       <label class="font-weight-medium mb-2" for="validationCustom02">Last name</label>
-      <div class="form-control-container is-valid">
+      <div class="form-control-container">
         <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
         <span class="form-control-state"></span>
-      </div>
-      <div class="valid-feedback">
-        Looks good!
       </div>
     </div>
     <div class="col-md-4 mb-3">

@@ -1586,6 +1586,30 @@ var Collapse = function ($$$1) {
 }($);
 
 /**
+ * ------------------------------------------------------------------------
+ * Class Definition
+ * ------------------------------------------------------------------------
+ */
+var Control = function Control(element) {
+  var input = element.querySelector('[data-role=input]');
+
+  if (element.getAttribute('data-clear-option') === "true") {
+    var btnClear = element.querySelector('[data-btn=clear]');
+    input.addEventListener('input', function (event) {
+      if (input.value.length > 0) {
+        btnClear.classList.remove('d-none');
+      } else {
+        btnClear.classList.add('d-none');
+      }
+    });
+    btnClear.addEventListener('click', function () {
+      input.value = "";
+      btnClear.classList.add('d-none');
+    });
+  }
+};
+
+/**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): dropdown.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -7848,12 +7872,17 @@ document.addEventListener('DOMContentLoaded', function () {
   // data components
 
   var dataComponent = '[data-component]';
+  var dataControl = 'control';
   var dataSelectExclusive = 'select-exclusive';
   var dataSelectMultiple = 'select-multiple';
   var dataSelectRadios = 'select-radios';
   var components = document.querySelectorAll(dataComponent);
   components.forEach(function (component) {
     /* eslint-disable no-new */
+    if (component.dataset.component === dataControl) {
+      new Control(component);
+    }
+
     if (component.dataset.component === dataSelectExclusive) {
       new SelectExclusive(component);
     }
