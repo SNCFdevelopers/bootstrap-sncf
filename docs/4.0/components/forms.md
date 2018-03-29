@@ -74,6 +74,22 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
 </div>
 {% endexample %}
 
+## Auto sizing
+
+Textual `stretchy` class on input.
+
+{% example html %}
+<form>
+  <div class="form-group">
+    <label class="font-weight-medium mb-2" for="exampleFormControlTextarea1">Example textarea</label>
+    <div class="form-control-container">
+      <textarea class="form-control stretchy" id="exampleFormControlTextarea1" rows="6" placeholder="Comment"></textarea>
+      <span class="form-control-state"></span>
+    </div>
+  </div>
+</form>
+{% endexample %}
+
 ### Chips
 
 {% example html %}
@@ -93,7 +109,7 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
       <i class="icons-close"></i>
     </button>
   </div>
-  <input type="text" class="chips-input" value="Edouard Morel" />
+  <input type="text" class="chips-input stretchy" value="Edouard Morel" />
 </div>
 {% endexample %}
 

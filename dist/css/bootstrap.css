@@ -2648,6 +2648,10 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   position: relative;
 }
 
+.form-control-container input {
+  width: 100%;
+}
+
 .form-control-container.is-valid + .valid-feedback {
   display: block;
 }
@@ -2713,6 +2717,16 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-repeat: no-repeat;
   background-position: center right 18px;
   background-size: 27 25;
+}
+
+textarea.form-control {
+  min-height: 10rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+textarea.form-control.stretchy {
+  resize: none;
 }
 
 .form-control-icon {
@@ -7233,6 +7247,7 @@ button.close {
 }
 
 .chips-input {
+  min-height: 2.8125rem;
   padding-right: 5px;
   padding-bottom: 0.3125rem;
   padding-left: 1.125rem;

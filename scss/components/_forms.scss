@@ -11,6 +11,10 @@ $icon-width: rem(48px);
 .form-control-container {
   position: relative;
 
+  input {
+    width: 100%;
+  }
+
   &.is-valid + .valid-feedback {
     display: block;
   }
@@ -92,6 +96,16 @@ $icon-width: rem(48px);
     background-repeat: no-repeat;
     background-position: center right 18px;
     background-size: 27 25;
+  }
+}
+
+textarea.form-control {
+  min-height: rem(160px);
+  padding-top: rem(20px);
+  padding-bottom: rem(20px);
+
+  &.stretchy {
+    resize: none;
   }
 }
 

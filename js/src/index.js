@@ -1,3 +1,4 @@
+import './utils/stretchy.js'
 import $ from 'jquery'
 import Alert from '../../node_modules/bootstrap/js/src/alert'
 import Button from '../../node_modules/bootstrap/js/src/button'
