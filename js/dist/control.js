@@ -27,7 +27,7 @@ function () {
       });
     }
 
-    if (element.getAttribute('data-clear-option') === "true") {
+    if (element.getAttribute('data-clear-option') === 'true') {
       var btnClearNode = element.querySelector('[data-btn=clear]');
       inputNode.addEventListener('inputNode', function () {
         if (inputNode.value.length > 0) {
@@ -37,7 +37,7 @@ function () {
         }
       });
       btnClearNode.addEventListener('click', function () {
-        inputNode.value = "";
+        inputNode.value = '';
         btnClearNode.classList.add('d-none');
       });
     }

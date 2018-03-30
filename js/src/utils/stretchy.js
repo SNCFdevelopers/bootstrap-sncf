@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*
  * Stretchy: Form element autosizing, the way it should be.
  * by Lea Verou http://lea.verou.me
@@ -217,3 +218,4 @@ if (self.MutationObserver) {
 }
 
 })();
+/* eslint-enable */

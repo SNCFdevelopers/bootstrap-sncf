@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var dataSelectExclusive = 'select-exclusive';
   var dataSelectMultiple = 'select-multiple';
   var dataSelectRadios = 'select-radios';
-  var dataTextarea = 'textarea';
   var components = document.querySelectorAll(dataComponent);
   components.forEach(function (component) {
     /* eslint-disable no-new */
@@ -50,10 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (component.dataset.component === dataSelectRadios) {
       new SelectRadios(component);
-    }
-
-    if (component.dataset.component === dataTextarea) {
-      new Textarea(component);
     }
     /* eslint-enable no-new */
 

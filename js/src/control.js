@@ -23,7 +23,7 @@ class Control {
       })
     }
 
-    if (element.getAttribute('data-clear-option') === "true") {
+    if (element.getAttribute('data-clear-option') === 'true') {
       const btnClearNode = element.querySelector('[data-btn=clear]')
 
       inputNode.addEventListener('inputNode', () => {
@@ -33,9 +33,9 @@ class Control {
           btnClearNode.classList.add('d-none')
         }
       })
-      
+
       btnClearNode.addEventListener('click', () => {
-        inputNode.value = ""
+        inputNode.value = ''
         btnClearNode.classList.add('d-none')
       })
     }

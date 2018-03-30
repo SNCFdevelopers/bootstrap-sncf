@@ -51,6 +51,8 @@ function _inheritsLoose(subClass, superClass) {
   subClass.__proto__ = superClass;
 }
 
+/* eslint-disable */
+
 /*
  * Stretchy: Form element autosizing, the way it should be.
  * by Lea Verou http://lea.verou.me
@@ -240,6 +242,7 @@ function _inheritsLoose(subClass, superClass) {
     });
   }
 })();
+/* eslint-enable */
 
 /**
  * --------------------------------------------------------------------------
@@ -1613,7 +1616,7 @@ function () {
       });
     }
 
-    if (element.getAttribute('data-clear-option') === "true") {
+    if (element.getAttribute('data-clear-option') === 'true') {
       var btnClearNode = element.querySelector('[data-btn=clear]');
       inputNode.addEventListener('inputNode', function () {
         if (inputNode.value.length > 0) {
@@ -1623,7 +1626,7 @@ function () {
         }
       });
       btnClearNode.addEventListener('click', function () {
-        inputNode.value = "";
+        inputNode.value = '';
         btnClearNode.classList.add('d-none');
       });
     }
@@ -10318,49 +10321,6 @@ var Tab = function ($$$1) {
 }($);
 
 /**
- * ------------------------------------------------------------------------
- * Class Definition
- * ------------------------------------------------------------------------
- */
-var Textarea =
-/*#__PURE__*/
-function () {
-  function Textarea(element) {
-    var _this = this;
-
-    this.element = element;
-    var inputNode = element.querySelector('[data-role=input]');
-    var counterNode = element.querySelector('[data-role=counter]');
-
-    if (counterNode) {
-      var counterValueNode = element.querySelector('[data-role=counter-value]');
-      var maxLimit = counterNode.getAttribute('data-limit');
-
-      this._toggleInvalidClass(inputNode.value.length, maxLimit);
-
-      counterValueNode.innerHTML = inputNode.value.length;
-      inputNode.addEventListener('input', function (event) {
-        _this._toggleInvalidClass(event.target.value.length, maxLimit);
-
-        counterValueNode.innerHTML = event.target.value.length;
-      });
-    }
-  }
-
-  var _proto = Textarea.prototype;
-
-  _proto._toggleInvalidClass = function _toggleInvalidClass(currentValueLength, maxLimit) {
-    if (currentValueLength > maxLimit) {
-      this.element.classList.add('invalid');
-    } else {
-      this.element.classList.remove('invalid');
-    }
-  };
-
-  return Textarea;
-}();
-
-/**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0-alpha.6): index.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -10395,7 +10355,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var dataSelectExclusive = 'select-exclusive';
   var dataSelectMultiple = 'select-multiple';
   var dataSelectRadios = 'select-radios';
-  var dataTextarea = 'textarea';
   var components = document.querySelectorAll(dataComponent);
   components.forEach(function (component) {
     /* eslint-disable no-new */
@@ -10413,10 +10372,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (component.dataset.component === dataSelectRadios) {
       new SelectRadios(component);
-    }
-
-    if (component.dataset.component === dataTextarea) {
-      new Textarea(component);
     }
     /* eslint-enable no-new */
 
