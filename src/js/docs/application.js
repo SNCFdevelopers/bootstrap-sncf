@@ -1,3 +1,4 @@
+/* eslint-disable */
 import jQuery from 'jquery'
 import Anchors from './vendor/anchor.min.js'
 import Clipboard from './vendor/clipboard.min.js'
@@ -138,3 +139,4 @@ import Clipboard from './vendor/clipboard.min.js'
     // })
   })
 }(jQuery))
+/* eslint-enable */

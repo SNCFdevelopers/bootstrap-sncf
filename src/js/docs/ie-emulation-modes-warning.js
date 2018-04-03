@@ -1,3 +1,4 @@
+/* eslint-disable */
 // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
 // IT'S JUST JUNK FOR OUR DOCS!
 // ++++++++++++++++++++++++++++++++++++++++++
@@ -45,3 +46,4 @@
     window.alert('WARNING: You appear to be using IE' + nonEmulated + ' in IE' + emulated + ' emulation mode.\nIE emulation modes can behave significantly differently from ACTUAL older versions of IE.\nPLEASE DON\'T FILE BOOTSTRAP BUGS based on testing in IE emulation modes!')
   }
 }())
+/* eslint-enable */

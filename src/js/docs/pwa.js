@@ -1,4 +1,4 @@
-/* eslint no-console:off */
+/* eslint-disable */
 
 (function () {
   'use strict'
@@ -15,3 +15,4 @@
     console.log('Service workers are not supported.')
   }
 }())
+/* eslint-enable */
