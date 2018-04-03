@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "icons";
+    src: url("../assets/fonts/icons/icons.eot?4413f3a4ac758503b718d04c3b3caa3b?#iefix") format("embedded-opentype"),
+url("../assets/fonts/icons/icons.woff2?4413f3a4ac758503b718d04c3b3caa3b") format("woff2"),
+url("../assets/fonts/icons/icons.woff?4413f3a4ac758503b718d04c3b3caa3b") format("woff"),
+url("../assets/fonts/icons/icons.ttf?4413f3a4ac758503b718d04c3b3caa3b") format("truetype"),
+url("../assets/fonts/icons/icons.svg?4413f3a4ac758503b718d04c3b3caa3b#icons") format("svg");
+}
+
+i {
+    line-height: 1;
+}
+
+i:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    vertical-align: top;
+}
+
+.icons-account-offline:before {
+    content: "\f101";
+}
+.icons-add:before {
+    content: "\f102";
+}
+.icons-admin:before {
+    content: "\f103";
+}
+.icons-agenda:before {
+    content: "\f104";
+}
+.icons-alerte-underline:before {
+    content: "\f105";
+}
+.icons-arrow-down:before {
+    content: "\f106";
+}
+.icons-arrow-next:before {
+    content: "\f107";
+}
+.icons-arrow-prev:before {
+    content: "\f108";
+}
+.icons-arrow-up:before {
+    content: "\f109";
+}
+.icons-check:before {
+    content: "\f10a";
+}
+.icons-close:before {
+    content: "\f10b";
+}
+.icons-collection:before {
+    content: "\f10c";
+}
+.icons-delete:before {
+    content: "\f10d";
+}
+.icons-distribution:before {
+    content: "\f10e";
+}
+.icons-divers:before {
+    content: "\f10f";
+}
+.icons-document:before {
+    content: "\f110";
+}
+.icons-download:before {
+    content: "\f111";
+}
+.icons-edit:before {
+    content: "\f112";
+}
+.icons-external-link:before {
+    content: "\f113";
+}
+.icons-favorite-on:before {
+    content: "\f114";
+}
+.icons-filters:before {
+    content: "\f115";
+}
+.icons-interrogation:before {
+    content: "\f116";
+}
+.icons-liste:before {
+    content: "\f117";
+}
+.icons-message:before {
+    content: "\f118";
+}
+.icons-mosaic:before {
+    content: "\f119";
+}
+.icons-options:before {
+    content: "\f11a";
+}
+.icons-restore:before {
+    content: "\f11b";
+}
+.icons-schedule:before {
+    content: "\f11c";
+}
+.icons-search:before {
+    content: "\f11d";
+}
+.icons-share:before {
+    content: "\f11e";
+}
+.icons-sort:before {
+    content: "\f11f";
+}
+.icons-support:before {
+    content: "\f120";
+}
+.icons-tag:before {
+    content: "\f121";
+}

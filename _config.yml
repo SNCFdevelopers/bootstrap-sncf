@@ -9,7 +9,7 @@ kramdown:
 permalink:      pretty
 
 # Server
-source:         "."
+source:         ./templates
 destination:    ./_gh_pages
 host:           0.0.0.0
 port:           9001
@@ -19,20 +19,13 @@ encoding:       UTF-8
 exclude:
   - .git/
   - .github/
-  - assets/scss/
   - build/
-  - js/dist
-  - js/src
   - js/tests
   - node_modules/
-  - nuget/
-  - scss/
-  - vendor/
-  - CODE_OF_CONDUCT.md
+  - src/
   - composer.json
   - Gemfile
   - Gemfile.lock
-  - package.js
   - package.json
   - package-lock.json
   - README.md
@@ -40,7 +33,10 @@ exclude:
   - twbsconfig.yml
 
 keep_files:
-  - dist/js/
+  - assets
+  - main.js
+  - main.css
+  - vendor
 
 plugins:
   - jekyll-redirect-from
