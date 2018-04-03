@@ -1,0 +1,40 @@
+/* navtabs
+   ========================================================================== */
+
+.navtabs {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.navtabs-item {
+  padding-right: rem(20px);
+
+  a {
+    display: block;
+    color: gray("400");
+
+    @include hover-focus-active {
+      position: relative;
+      color: theme-color("primary");
+    }
+
+    // stylelint-disable selector-no-qualifying-type
+    &.active {
+      font-weight: $font-weight-medium;
+      color: theme-color("primary");
+
+      &::after {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: rem(5px);
+        content: "";
+        background-color: theme-color("primary");
+        border-radius: 3px;
+      }
+    }
+    // stylelint-enable selector-no-qualifying-type
+  }
+}

@@ -11,11 +11,17 @@
     width: 1%;
 
     &:not(:last-child),
+    &:not(:last-child) .form-control,
     &:not(:last-child) .form-control-state  {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
   }
+}
+
+.input-group-horizontal {
+  display: flex;
+  align-items: center;
 }
 
 .input-group-prepend {

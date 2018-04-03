@@ -25,13 +25,10 @@ class Control {
 
     if (element.getAttribute('data-clear-option') === 'true') {
       const btnClearNode = element.querySelector('[data-btn=clear]')
+      this._handleInputClearChange(inputNode, btnClearNode)
 
-      inputNode.addEventListener('inputNode', () => {
-        if (inputNode.value.length > 0) {
-          btnClearNode.classList.remove('d-none')
-        } else {
-          btnClearNode.classList.add('d-none')
-        }
+      inputNode.addEventListener('input', () => {
+        this._handleInputClearChange(inputNode, btnClearNode)
       })
 
       btnClearNode.addEventListener('click', () => {
@@ -46,6 +43,14 @@ class Control {
       this.element.classList.add('is-invalid')
     } else {
       this.element.classList.remove('is-invalid')
+    }
+  }
+
+  _handleInputClearChange(inputNode, btnClearNode) {
+    if (inputNode.value.length > 0) {
+      btnClearNode.classList.remove('d-none')
+    } else {
+      btnClearNode.classList.add('d-none')
     }
   }
 }

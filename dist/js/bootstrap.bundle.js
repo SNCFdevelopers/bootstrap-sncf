@@ -1618,7 +1618,7 @@ function () {
 
     if (element.getAttribute('data-clear-option') === 'true') {
       var btnClearNode = element.querySelector('[data-btn=clear]');
-      inputNode.addEventListener('inputNode', function () {
+      inputNode.addEventListener('input', function () {
         if (inputNode.value.length > 0) {
           btnClearNode.classList.remove('d-none');
         } else {

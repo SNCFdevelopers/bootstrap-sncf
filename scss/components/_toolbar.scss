@@ -1,0 +1,24 @@
+/* toolbar
+   ========================================================================== */
+
+.toolbar {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.toolbar-item {
+  + .toolbar-item {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: calc(50% - #{rem(11px)});
+      left: 0;
+      width: rem(1px);
+      height: rem(22px);
+      content: "";
+      background-color: rgba(255, 255, 255, .1);
+    }
+  }
+}
