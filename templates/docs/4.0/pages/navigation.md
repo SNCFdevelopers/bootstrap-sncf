@@ -31,15 +31,16 @@ description: Navigation template.
   </div>
   <ul class="mastheader-toolbar toolbar mb-0">
     <li class="toolbar-item">
-      <a href="#" class="btn btn-only-icon">
+      <a href="#" class="btn btn-only-icon btn-notif">
         <span class="sr-only">Alert</span>
-        <i class="icons-alerte-underline"></i>
+        <i class="icons-alerte-underline icon-size-1x75"></i>
+        <span class="notif">1</span>
       </a>
     </li>
     <li class="toolbar-item">
       <a href="#" class="btn btn-only-icon">
         <span class="sr-only">Account</span>
-        <i class="icons-account-offline"></i>
+        <i class="icons-account-offline icon-size-1x75"></i>
       </a>
     </li>
   </ul>

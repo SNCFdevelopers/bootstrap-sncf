@@ -19,6 +19,12 @@
   min-width: 0;
 }
 
+.mastheader-toolbar {
+  .btn {
+    color: color("white");
+  }
+}
+
 @include media-breakpoint-down(md) {
   .mastheader {
     min-height: rem(60px);

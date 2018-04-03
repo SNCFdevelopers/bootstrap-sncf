@@ -8,6 +8,9 @@
 }
 
 .toolbar-item {
+  padding-right: rem(4px);
+  padding-left: rem(4px);
+
   + .toolbar-item {
     position: relative;
 

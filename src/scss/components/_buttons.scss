@@ -232,6 +232,7 @@ input[type="button"] {
 //
 // Button tool
 //
+
 .btn-options {
   min-width: rem(55px);
   padding: 0;
@@ -243,5 +244,31 @@ input[type="button"] {
   &:hover {
     color: theme-color("primary");
     background-color: transparent;
+  }
+}
+
+
+//
+// Button alert
+//
+
+.btn-notif {
+  position: relative;
+
+  .notif {
+    position: absolute;
+    top: rem(4px);
+    right: rem(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: rem(16px);
+    min-height: rem(16px);
+    padding-top: 3px;
+    font-size: rem(9px);
+    line-height: 1;
+    color: color("white");
+    background-color: theme-color("primary");
+    border-radius: 50%;
   }
 }
