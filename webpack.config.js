@@ -14,7 +14,7 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, '_gh_pages')
   },
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-source-map',
   mode: 'development',
   module: {
     rules: [
@@ -40,9 +40,17 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader', // translates CSS into CommonJS modules
+            loader: 'css-loader', options: { sourceMap: true } // translates CSS into CommonJS modules
           }, {
-            loader: 'sass-loader' // compiles Sass to CSS
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: path.resolve(__dirname, 'build/postcss.config.js'),
+              },
+              sourceMap: true
+            }
+          }, {
+            loader: 'sass-loader', options: { sourceMap: true }
           }]
       },
       {
