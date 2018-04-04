@@ -16,15 +16,21 @@
 
 @include media-breakpoint-down(md) {
   .actionbar {
-    top: rem(60px);
+    top: rem(76px);
     width: 100%;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .actionbar {
+    top: rem(60px);
     border-bottom: 1px solid #d8d8d8;
   }
 }
 
 @include media-breakpoint-up(lg) {
   .actionbar {
-    top: rem(76px);
+    top: rem(66px);
     right: 0;
     width: calc(100% - #{rem(100px)});
   }

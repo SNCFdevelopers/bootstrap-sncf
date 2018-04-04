@@ -11,9 +11,7 @@
     "docs-compile": "bundle exec jekyll build",
     "docs-lint-htmllint": "htmllint --rc build/.htmllintrc \"_gh_pages/**/*.html\" \"src/js/tests/**/*.html\"",
     "docs-serve": "bundle exec jekyll serve",
-    "font-compile": "npm-run-all icofont font",
-    "icofont": "icon-font-generator src/assets/icons/*.svg -o src/assets/fonts/icons --csspath src/scss/generic/_icons.css --fontspath ../assets/fonts/icons/ --html false -j false",
-    "font": "cpx \"src/assets/fonts/**/*.{woff,ttf}\" \"_gh_pages/assets/fonts\""
+    "icofont": "icon-font-generator src/assets/icons/*.svg -o src/assets/fonts/icons --csspath src/scss/generic/_icons.css --fontspath ../assets/fonts/icons/ --html false -j false"
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",

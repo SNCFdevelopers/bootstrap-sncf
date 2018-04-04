@@ -8,9 +8,7 @@
 }
 
 .toolbar-item {
-  padding-right: rem(4px);
-  padding-left: rem(4px);
-
+  &.separator,
   + .toolbar-item {
     position: relative;
 
@@ -22,6 +20,36 @@
       height: rem(22px);
       content: "";
       background-color: rgba(255, 255, 255, .1);
+    }
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .toolbar-item {
+      &.separator#{$infix} {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          top: calc(50% - #{rem(11px)});
+          left: 0;
+          width: rem(1px);
+          height: rem(22px);
+          content: "";
+          background-color: rgba(255, 255, 255, .1);
+        }
+      }
+
+      &.no-separator#{$infix} {
+        &::before {
+          width: 0;
+          height: 0;
+          opacity: 0;
+        }
+      }
     }
   }
 }

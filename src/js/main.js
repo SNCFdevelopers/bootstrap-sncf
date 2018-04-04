@@ -1,6 +1,7 @@
 import 'bootstrap'
 import './utils/stretchy.js'
 import Control from './components/control'
+import Searchbar from './components/searchbar'
 import SelectExclusive from './components/selectExclusive'
 import SelectMultiple from './components/selectMultiple'
 import SelectRadios from './components/selectRadios'
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // data components
   const dataComponent = '[data-component]'
   const dataControl = 'control'
+  const dataSearchbar = 'searchbar'
   const dataSelectExclusive = 'select-exclusive'
   const dataSelectMultiple = 'select-multiple'
   const dataSelectRadios = 'select-radios'
@@ -23,6 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
     /* eslint-disable no-new */
     if (component.dataset.component === dataControl) {
       new Control(component)
+    }
+
+    if (component.dataset.component === dataSearchbar) {
+      new Searchbar(component)
     }
 
     if (component.dataset.component === dataSelectExclusive) {

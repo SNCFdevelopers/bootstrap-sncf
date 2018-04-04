@@ -23,28 +23,33 @@
   transform: scaleY(-1);
 }
 
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-// size
-.icon-size-x5 {
-  font-size: $font-size-base * .5;
-}
+    // size
+    .icon-size-x5#{$infix} {
+      font-size: $font-size-base * .5;
+    }
 
-.icon-size-x75 {
-  font-size: $font-size-base * .75;
-}
+    .icon-size#{$infix}-x75 {
+      font-size: $font-size-base * .75;
+    }
 
-.icon-size-1x {
-  font-size: $font-size-base;
-}
+    .icon-size#{$infix}-1x {
+      font-size: $font-size-base;
+    }
 
-.icon-size-1x25 {
-  font-size: $font-size-base * 1.25;
-}
+    .icon-size#{$infix}-1x25 {
+      font-size: $font-size-base * 1.25;
+    }
 
-.icon-size-1x50 {
-  font-size: $font-size-base * 1.5;
-}
+    .icon-size#{$infix}-1x50 {
+      font-size: $font-size-base * 1.5;
+    }
 
-.icon-size-1x75 {
-  font-size: $font-size-base * 1.75;
+    .icon-size#{$infix}-1x75 {
+      font-size: $font-size-base * 1.75;
+    }
+  }
 }

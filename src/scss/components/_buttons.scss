@@ -257,8 +257,8 @@ input[type="button"] {
 
   .notif {
     position: absolute;
-    top: rem(4px);
-    right: rem(6px);
+    top: calc(50% - #{rem(16px)});
+    right: calc(50% - #{rem(18px)});
     display: flex;
     align-items: center;
     justify-content: center;

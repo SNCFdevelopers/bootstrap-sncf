@@ -125,7 +125,7 @@ $btn-box-shadow:            none;
 
 // Forms
 
-$input-padding-y:                       .53125rem;
+$input-padding-y:                       .71875rem;
 $input-padding-x:                       1.25rem;
 
 $input-padding-y-sm:                    $input-padding-y;
@@ -140,8 +140,7 @@ $input-bg:                              $gray-100;
 $input-disabled-bg:                     $gray-100;
 
 $input-color:                           $primary;
-$input-border-color:                    $gray-100;
-$input-border-width:                    .125em;
+$input-border-width:                    0;
 
 $input-focus-bg:                        $gray-100;
 $input-focus-border-color:              $gray-100;
