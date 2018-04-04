@@ -38,8 +38,8 @@ When using button classes on `<a>` elements that are used to trigger in-page fun
 TODO : description
 
 {% example html %}
-<a href="#" class="btn btn-link"><span>Link</span> <i class="icons-share btn-icon-right"></i></a>
-<a href="#" class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share btn-icon-right"></i></a>
+<a href="#" class="btn btn-link"><span>Link</span> <i class="icons-share icon-size-x75 ml-2"></i></a>
+<a href="#" class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share icon-size-x75 ml-2"></i></a>
 {% endexample %}
 
 ## Button icon

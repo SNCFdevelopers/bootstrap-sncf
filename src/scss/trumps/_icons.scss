@@ -1,6 +1,10 @@
 /* icons utilities
    ========================================================================== */
 
+[class^="icons-"] {
+  display: inline-block;
+}
+
 // rotate
 .icon-rotate-90 {
   transform: rotate(90deg);

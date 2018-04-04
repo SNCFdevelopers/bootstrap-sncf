@@ -3,33 +3,79 @@
 
 .management-item {
   display: flex;
-  padding: $management-item-padding-y 0;
+  padding-top: rem(18px);
+  padding-right: rem(8px);
+  padding-bottom: rem(18px);
+  padding-left: rem(8px);
+
+  .custom-control {
+    display: inline-block;
+    width: rem(18px);
+    height: rem(18px);
+    padding: 0;
+  }
+
+  .custom-control-label{
+    &::after,
+    &::before {
+      top: 0;
+    }
+  }
 }
 
-.management-item-input {
-  min-width: $management-item-padding-x;
-  padding-left: rem(30px);
-}
-
+.management-item-input,
 .management-item-symbol {
-  min-width: $management-item-padding-x;
-  padding-top: rem(2px);
+  padding-top: rem(1px);
+  padding-right: rem(8px);
+  padding-left: rem(8px);
   text-align: center;
 }
 
 .management-item-content {
-  &:last-child {
-    padding-right: $management-item-padding-x;
-  }
+  flex: 1 1 100%;
+  padding-right: rem(6px);
+  padding-left: rem(6px);
+}
+
+.management-item-action {
+  display: flex;
 }
 
 @include media-breakpoint-down(md) {
-  .management-item {
-    padding-top: $management-item-padding-y-md;
-    padding-bottom: $management-item-padding-y-md;
+  .management-item-input + .management-item-symbol {
+    display: none;
+  }
 
-    &:last-child {
-      padding-right: $management-item-padding-x-md;
-    }
+  .management-item-action {
+    align-items: center;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .management-item {
+    padding-right: rem(15px);
+    padding-left: rem(15px);
+  }
+
+  .management-item-input,
+  .management-item-symbol {
+    padding-right: rem(15px);
+    padding-left: rem(15px);
+  }
+
+  .management-item-symbol:first-child {
+    padding-left: rem(8px);
+  }
+
+  .management-item-content {
+    padding-right: rem(2px);
+    padding-left: rem(2px);
+  }
+
+
+  .management-item-action {
+    align-items: flex-start;
+    padding-right: rem(10px);
+    padding-left: rem(46px);
   }
 }

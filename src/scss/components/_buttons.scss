@@ -91,8 +91,7 @@ fieldset:disabled a.btn {
 .btn-link {
   display: inline-flex;
   align-items: center;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
   font-weight: $font-weight-medium;
   color: $link-color;
   background-color: transparent;
@@ -102,15 +101,6 @@ fieldset:disabled a.btn {
     text-decoration: $link-hover-decoration;
     background-color: transparent;
     border-color: transparent;
-  }
-
-  [class^="icons-"] {
-    display: block;
-    font-size: rem(12px);
-
-    &.btn-icon-right {
-      margin-left: rem(8px);
-    }
   }
 
   &:focus,
@@ -230,7 +220,7 @@ input[type="button"] {
 
 
 //
-// Button tool
+// Button option
 //
 
 .btn-options {
@@ -244,6 +234,17 @@ input[type="button"] {
   &:hover {
     color: theme-color("primary");
     background-color: transparent;
+  }
+}
+
+
+//
+// Button favorite
+//
+
+.btn-favorite {
+  &.active {
+    color: #ffb612;
   }
 }
 
