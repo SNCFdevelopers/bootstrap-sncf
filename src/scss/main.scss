@@ -8,6 +8,9 @@
 @import "settings/maps";
 @import "tools/mixins";
 
+// vendors
+@import "~tui-chart/dist/tui-chart.css";
+
 // generic
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";

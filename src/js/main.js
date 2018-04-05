@@ -1,10 +1,22 @@
 import 'bootstrap'
 import './utils/stretchy.js'
+import * as tuichart from 'tui-chart'
+import {
+  LineChart,
+  RadialChart
+} from './components/charts'
 import Control from './components/control'
 import Searchbar from './components/searchbar'
 import SelectExclusive from './components/selectExclusive'
 import SelectMultiple from './components/selectMultiple'
 import SelectRadios from './components/selectRadios'
+
+const theme = {
+  series: {
+    colors: ['#0088ce']
+  }
+}
+tuichart.registerTheme('sncf', theme)
 
 document.addEventListener('DOMContentLoaded', () => {
   /* eslint-disable no-console */
@@ -13,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // data components
   const dataComponent = '[data-component]'
+  const dataLineChart = 'line-chart'
+  const dataRadialChart = 'radial-chart'
   const dataControl = 'control'
   const dataSearchbar = 'searchbar'
   const dataSelectExclusive = 'select-exclusive'
@@ -23,6 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   components.forEach((component) => {
     /* eslint-disable no-new */
+    if (component.dataset.component === dataLineChart) {
+      new LineChart(component)
+    }
+
+    if (component.dataset.component === dataRadialChart) {
+      new RadialChart(component)
+    }
+
     if (component.dataset.component === dataControl) {
       new Control(component)
     }

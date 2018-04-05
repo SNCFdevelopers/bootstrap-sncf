@@ -47,8 +47,10 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "chart.js": "^2.7.2",
     "jquery": "^3.3.1",
     "lodash": "^4.17.5",
-    "popper.js": "^1.14.1"
+    "popper.js": "^1.14.1",
+    "tui-chart": "^3.0.1"
   }
 }

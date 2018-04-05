@@ -35,7 +35,9 @@ exclude:
 keep_files:
   - assets
   - main.js
+  - main.js.map
   - main.css
+  - main.css.map
   - vendor
 
 plugins:

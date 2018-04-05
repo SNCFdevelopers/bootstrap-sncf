@@ -14,7 +14,7 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, '_gh_pages')
   },
-  devtool: 'cheap-module-source-map',
+  devtool: 'source-map',
   mode: 'development',
   module: {
     rules: [
