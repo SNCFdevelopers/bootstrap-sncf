@@ -194,6 +194,46 @@ $form-feedback-font-size:           1rem;
 $dropdown-border-color:             #d8d8d8;
 
 
+// Modals
+
+$modal-header-padding-x:      1.875rem;
+$modal-header-padding-y:      1.375rem;
+$modal-inner-padding-x:       1.875rem;
+$modal-inner-padding-y:       1.375rem;
+$modal-footer-padding:        1.875rem;
+
+$modal-dialog-margin:         .5rem;
+$modal-dialog-margin-y-sm-up: 1.75rem;
+
+$modal-title-line-height:           $line-height-base;
+
+$modal-content-border-width:     0;
+
+$modal-backdrop-opacity:      .5;
+$modal-header-border-width:   0;
+$modal-footer-border-width:   0;
+
+
+$modal-md:                          480px;
+$modal-sm:                          320px;
+
+$modal-transition:                  transform .3s ease-out !default;
+
+
+// Progress bars
+
+$progress-height:                   .625rem;
+$progress-bg:                       #fff;
+$progress-border-radius:            .3125rem;
+$progress-bar-color:                $body-color;
+
+
 // List group
 
 $list-group-border-radius:          0;
+
+
+// Close
+
+$close-font-size:                   $font-size-base * 1.2;
+$close-color:                       #4c4f54;

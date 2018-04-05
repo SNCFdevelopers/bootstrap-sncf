@@ -50,9 +50,9 @@ $icon-width: rem(48px);
     left: 0;
     display: block;
     width: 100%;
-    height: $input-border-width;
+    height: 2px;
     content: "";
-    background-color: $input-border-color;
+    background-color: transparent;
   }
 
   .is-invalid &::after {
@@ -100,7 +100,8 @@ $icon-width: rem(48px);
 
   &[readonly] {
     padding-right: $icon-width;
-    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="0 0 27 25"><defs><style>.disabled-icon{fill:#747678;}</style></defs><path class="disabled-icon" d="M26.79,25.05H1.21a.73.73,0,0,0,0,1.45H26.79a.73.73,0,0,0,0-1.45Z" transform="translate(-0.5 -1.5)"/><path class="disabled-icon" d="M19.8,8.87h-.61V6.73a5.23,5.23,0,0,0-10.46,0V8.87H8.2a1.63,1.63,0,0,0-1.63,1.62V21.32A1.62,1.62,0,0,0,8.2,22.94H19.8a1.62,1.62,0,0,0,1.63-1.62V10.49A1.63,1.63,0,0,0,19.8,8.87ZM10.93,6.73a3,3,0,1,1,6.06,0V8.87H10.93Zm3,14.15a5,5,0,1,1,5-5A5,5,0,0,1,14,20.88Z" transform="translate(-0.5 -1.5)"/><path class="disabled-icon" d="M14,12.62a3.29,3.29,0,1,0,3.29,3.29A3.29,3.29,0,0,0,14,12.62Zm0,4.75a1.47,1.47,0,1,1,1.47-1.46A1.46,1.46,0,0,1,14,17.37Z" transform="translate(-0.5 -1.5)"/></svg>');
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='27' height='25' viewBox='0 0 27 25'%3e%3cdefs%3e%3cstyle%3e.disabled-icon%7bfill:%23747678;%7d%3c/style%3e%3c/defs%3e%3cpath class='disabled-icon' d='M26.79,25.05H1.21a.73.73,0,0,0,0,1.45H26.79a.73.73,0,0,0,0-1.45Z' transform='translate(-0.5 -1.5)'/%3e%3cpath class='disabled-icon' d='M19.8,8.87h-.61V6.73a5.23,5.23,0,0,0-10.46,0V8.87H8.2a1.63,1.63,0,0,0-1.63,1.62V21.32A1.62,1.62,0,0,0,8.2,22.94H19.8a1.62,1.62,0,0,0,1.63-1.62V10.49A1.63,1.63,0,0,0,19.8,8.87ZM10.93,6.73a3,3,0,1,1,6.06,0V8.87H10.93Zm3,14.15a5,5,0,1,1,5-5A5,5,0,0,1,14,20.88Z' transform='translate(-0.5 -1.5)'/%3e%3cpath class='disabled-icon' d='M14,12.62a3.29,3.29,0,1,0,3.29,3.29A3.29,3.29,0,0,0,14,12.62Zm0,4.75a1.47,1.47,0,1,1,1.47-1.46A1.46,1.46,0,0,1,14,17.37Z' transform='translate(-0.5 -1.5)'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: center right 18px;
     background-size: 27px 25px;
@@ -108,7 +109,7 @@ $icon-width: rem(48px);
 
   &[required]:valid {
     padding-right: $icon-width;
-    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 22"><defs><style>.check-icon{fill:#0088ce;}</style></defs><title>check</title><path class="check-icon" d="M33.18,13.21,15.53,30.87a1.11,1.11,0,0,1-1.58,0L6.82,23.75a1.13,1.13,0,0,1,0-1.58l2.1-2.11a1.13,1.13,0,0,1,1.58,0L14,23.5a1.13,1.13,0,0,0,1.58,0l14-14a1.13,1.13,0,0,1,1.58,0l2.11,2.11a1.13,1.13,0,0,1,0,1.58" transform="translate(-6.5 -9.2)"/></svg>');
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 22'%3e%3cdefs%3e%3cstyle%3e.check-icon%7bfill:%230088ce;%7d%3c/style%3e%3c/defs%3e%3ctitle%3echeck%3c/title%3e%3cpath class='check-icon' d='M33.18,13.21,15.53,30.87a1.11,1.11,0,0,1-1.58,0L6.82,23.75a1.13,1.13,0,0,1,0-1.58l2.1-2.11a1.13,1.13,0,0,1,1.58,0L14,23.5a1.13,1.13,0,0,0,1.58,0l14-14a1.13,1.13,0,0,1,1.58,0l2.11,2.11a1.13,1.13,0,0,1,0,1.58' transform='translate(-6.5 -9.2)'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: center right 18px;
     background-size: 18px 14px;
@@ -171,3 +172,16 @@ textarea.form-control {
   }
 }
 
+
+//
+// Labels
+//
+
+// For use with horizontal and inline forms, when you need the label (or legend)
+// text to align with the form controls.
+.col-form-label {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: ($spacer * .5);
+  font-weight: $font-weight-medium;
+}

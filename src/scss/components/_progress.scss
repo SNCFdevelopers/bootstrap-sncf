@@ -1,0 +1,66 @@
+/* progress
+   ========================================================================== */
+
+.progress {
+  display: flex;
+  height: $progress-height;
+  font-size: $progress-font-size;
+  background-color: $progress-bg;
+  background-image: linear-gradient(90deg, #e1ded9 50%, transparent 50%);
+  background-size: rem(4px) $progress-height;
+  @include border-radius($progress-border-radius);
+  @include box-shadow($progress-box-shadow);
+
+  &.has-label {
+    margin-top: rem(38px);
+  }
+}
+
+.progress-bar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $progress-bar-color;
+  text-align: center;
+  @include transition($progress-bar-transition);
+
+  &:not([aria-valuenow="0"]) {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: calc(100% - #{$progress-height} - 4px);
+      height: $progress-height;
+      content: "";
+      background-color: $progress-bar-bg;
+      @include border-radius($progress-border-radius);
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: $progress-height;
+      height: $progress-height;
+      content: "";
+      background-color: $progress-bar-bg;
+      border-radius: 50%;
+    }
+  }
+}
+
+.progress-label {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + #{rem(8px)});
+  font-size: rem(24px);
+  font-weight: $font-weight-medium;
+  transform: translateX(50%);
+
+  sup {
+    font-size: rem(14px);
+  }
+}
