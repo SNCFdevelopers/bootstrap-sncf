@@ -9,6 +9,7 @@
 //
 
 // stylelint-disable
+$white:    #fff;
 $gray-100: #f2f2f2;
 $gray-200: #d7d7d7;
 $gray-300: #b9b9b9;
@@ -218,6 +219,21 @@ $modal-md:                          480px;
 $modal-sm:                          320px;
 
 $modal-transition:                  transform .3s ease-out !default;
+
+
+// Popovers
+
+$popover-font-size:                 $font-size-base;
+$popover-max-width:                 420px;
+$popover-border-color:              $gray-200;
+$popover-border-radius:             $border-radius;
+
+$popover-header-bg:                 $white;
+$popover-header-color:              $primary;
+$popover-header-padding-y:          1.5rem;
+$popover-header-padding-x:          1.5rem;
+
+$popover-body-color:                $body-color !default;
 
 
 // Progress bars

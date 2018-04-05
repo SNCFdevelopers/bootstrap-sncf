@@ -51,6 +51,10 @@ $(function () {
 <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 {% endexample %}
 
+{% example html %}
+<i class="icons-interrogation" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><span class="sr-only">Click to toggle popover</span></i>
+{% endexample %}
+
 ### Four directions
 
 Four options are available: top, right, bottom, and left aligned.
