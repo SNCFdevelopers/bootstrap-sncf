@@ -1,10 +1,10 @@
 @font-face {
     font-family: "icons";
-    src: url("../assets/fonts/icons/icons.eot?777ebbda6a9e83915fd878e901bb57b5?#iefix") format("embedded-opentype"),
-url("../assets/fonts/icons/icons.woff2?777ebbda6a9e83915fd878e901bb57b5") format("woff2"),
-url("../assets/fonts/icons/icons.woff?777ebbda6a9e83915fd878e901bb57b5") format("woff"),
-url("../assets/fonts/icons/icons.ttf?777ebbda6a9e83915fd878e901bb57b5") format("truetype"),
-url("../assets/fonts/icons/icons.svg?777ebbda6a9e83915fd878e901bb57b5#icons") format("svg");
+    src: url("../assets/fonts/icons/icons.eot?c1ad4cba970f8006fb830b0c3a2497d6?#iefix") format("embedded-opentype"),
+url("../assets/fonts/icons/icons.woff2?c1ad4cba970f8006fb830b0c3a2497d6") format("woff2"),
+url("../assets/fonts/icons/icons.woff?c1ad4cba970f8006fb830b0c3a2497d6") format("woff"),
+url("../assets/fonts/icons/icons.ttf?c1ad4cba970f8006fb830b0c3a2497d6") format("truetype"),
+url("../assets/fonts/icons/icons.svg?c1ad4cba970f8006fb830b0c3a2497d6#icons") format("svg");
 }
 
 i {
@@ -102,21 +102,33 @@ i:before {
 .icons-restore:before {
     content: "\f11c";
 }
-.icons-schedule:before {
+.icons-sami-confused:before {
     content: "\f11d";
 }
-.icons-search:before {
+.icons-sami-grin:before {
     content: "\f11e";
 }
-.icons-share:before {
+.icons-sami-sad:before {
     content: "\f11f";
 }
-.icons-sort:before {
+.icons-sami-smile:before {
     content: "\f120";
 }
-.icons-support:before {
+.icons-schedule:before {
     content: "\f121";
 }
-.icons-tag:before {
+.icons-search:before {
     content: "\f122";
+}
+.icons-share:before {
+    content: "\f123";
+}
+.icons-sort:before {
+    content: "\f124";
+}
+.icons-support:before {
+    content: "\f125";
+}
+.icons-tag:before {
+    content: "\f126";
 }
