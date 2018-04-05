@@ -20,7 +20,7 @@ Bootstrap includes several predefined button styles, each serving its own semant
 {% for color in site.data.sami %}
 {% if color.icon %}
 <input type="checkbox" class="sr-only" id="sami{{ color.name }}">
-<label for="sami{{ color.name }}" class="sami sami-checkbox-{{ color.name }} font-weight-medium">
+<label for="sami{{ color.name }}" class="sami sami-checkbox-{{ color.name }}">
     <span class="sr-only">{{ color.icon }}</span>
     <i class="icons-sami-{{ color.icon }} icon-size-3x"></i>
 </label>

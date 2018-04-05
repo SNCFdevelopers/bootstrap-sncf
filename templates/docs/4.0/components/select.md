@@ -12,7 +12,7 @@ TODO : description
 
 {% example html %}
 <label class="font-weight-medium mb-2" for="exampleFormControlSelect1">Example select</label>
-<div class="select-improved" data-component="select-exclusive">
+<div class="select-improved active" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <div class="form-control" data-role="placeholder">
@@ -27,7 +27,7 @@ TODO : description
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow icon-size-x75 icon-rotate-90"></i>
+          <i class="icons-arrow-down icon-size-x75"></i>
         </button>
       </div>
     </div>
@@ -37,6 +37,15 @@ TODO : description
       <button class="select-menu-item" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button>
       <button class="select-menu-item" data-role="value" data-target="3">Amet Porta</button>
       <button class="select-menu-item" data-role="value" data-target="4">Pharetra Fusce Venenatis</button>
+      <div class="d-flex pt-4 flex-column flex-sm-row">
+        <div class="form-control-container w-100">
+          <input type="text" class="form-control" placeholder="Ajouter un agent">
+          <span class="form-control-state"></span>
+        </div>
+        <div class="pt-2 pt-sm-0 pl-sm-2">
+          <button type="button" class="btn btn-primary btn-block d-sm-inline-block">Ajouter</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -63,7 +72,7 @@ TODO : description
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow icon-size-x75 icon-rotate-90"></i>
+          <i class="icons-arrow-down icon-size-x75"></i>
         </button>
       </div>
     </div>
@@ -111,7 +120,7 @@ TODO : description
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow icon-size-x75 icon-rotate-90"></i>
+          <i class="icons-arrow-down icon-size-x75"></i>
         </button>
       </div>
     </div>
@@ -122,7 +131,7 @@ TODO : description
           <div class="select-group-toggle text-primary">
             <span class="select-group-close mr-2">Fermer</span>
             <span class="select-group-show mr-2">Ouvrir</span>
-            <i class="icons-arrow icon-size-x75"></i>
+            <i class="icons-arrow-down icon-size-x75"></i>
           </div>
         </div>
         <div id="collapseExample" class="collapse select-group-content">
@@ -132,10 +141,15 @@ TODO : description
         </div>
       </div>
       <div class="select-group select-group-expand">
-        <div class="select-group-head" data-toggle="buttons">
+        <div class="select-group-head" data-role="collapse" data-target="#collapseExample1">
           <button class="select-group-title text-uppercase">Unité 2</button>
+          <div class="select-group-toggle text-primary">
+            <span class="select-group-close mr-2">Fermer</span>
+            <span class="select-group-show mr-2">Ouvrir</span>
+            <i class="icons-arrow-down icon-size-x75"></i>
+          </div>
         </div>
-        <div class="select-group-content">
+        <div id="collapseExample1" class="select-group-content">
           <button class="select-menu-item" data-role="value" data-target="3">Amet Porta</button>
           <button class="select-menu-item" data-role="value" data-target="4">Pharetra Fusce Venenatis</button>
         </div>
@@ -167,7 +181,7 @@ TODO : description
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow icon-size-x75 icon-rotate-90"></i>
+          <i class="icons-arrow-down icon-size-x75"></i>
         </button>
       </div>
     </div>
@@ -179,11 +193,15 @@ TODO : description
           </div>     
         </div>
         <div class="select-group-content">
-          <div class="custom-control custom-checkbox">
-            <label data-role="value" data-target="0" class="custom-control-label font-weight-medium">Sem Inceptos Tellus</label>
+          <div class="select-menu-item">
+            <div class="custom-control custom-checkbox">
+              <label data-role="value" data-target="0" class="custom-control-label font-weight-medium">Sem Inceptos Tellus</label>
+            </div>
           </div>
-          <div class="custom-control custom-checkbox">
-            <label data-role="value" data-target="1" class="custom-control-label font-weight-medium">Sollicitudin Adipiscing Mattis</label>
+          <div class="select-menu-item">
+            <div class="custom-control custom-checkbox">
+              <label data-role="value" data-target="1" class="custom-control-label font-weight-medium">Sollicitudin Adipiscing Mattis</label>
+            </div>
           </div>
         </div>
       </div>
@@ -194,11 +212,15 @@ TODO : description
           </div>     
         </div>
         <div class="select-group-content">
-          <div class="custom-control custom-checkbox">
-            <label data-role="value" data-target="2" class="custom-control-label font-weight-medium">Amet Porta</label>
+          <div class="select-menu-item">
+            <div class="custom-control custom-checkbox">
+              <label data-role="value" data-target="2" class="custom-control-label font-weight-medium">Amet Porta</label>
+            </div>
           </div>
-          <div class="custom-control custom-checkbox">
-            <label data-role="value" data-target="3" class="custom-control-label font-weight-medium">Pharetra Fusce Venenatis</label>
+          <div class="select-menu-item">
+            <div class="custom-control custom-checkbox">
+              <label data-role="value" data-target="3" class="custom-control-label font-weight-medium">Pharetra Fusce Venenatis</label>
+            </div>
           </div>
         </div>
       </div>

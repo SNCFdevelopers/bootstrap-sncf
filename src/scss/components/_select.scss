@@ -14,7 +14,7 @@ $select-scrollable-max-height: rem(360px);
 .select-control {
   position: relative;
 
-  .select-improved.active & {
+  .select-improved.active > & {
     &::after {
       position: absolute;
       top: 0;
@@ -30,12 +30,12 @@ $select-scrollable-max-height: rem(360px);
       border-top-right-radius: $border-radius;
     }
 
-    .form-control {
+    // stylelint-disable selector-max-class
+    > .input-group .form-control {
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
     }
 
-    // stylelint-disable selector-max-class
     .input-group-last > .btn {
       border-bottom-right-radius: 0;
     }
@@ -101,10 +101,13 @@ $select-scrollable-max-height: rem(360px);
     display: inline-block;
   }
 
-  .icons-arrow {
+  [class^="icons-arrow-"] {
     display: inline-block;
     transition: transform .15s ease-out;
-    transform: rotate(90deg);
+  }
+
+  &[data-role="collapse"] > * {
+    pointer-events: none;
   }
 
   &.active {
@@ -116,8 +119,8 @@ $select-scrollable-max-height: rem(360px);
       display: none;
     }
 
-    .icons-arrow {
-      transform: rotate(270deg);
+    [class^="icons-arrow-"] {
+      transform: rotate(180deg);
     }
   }
 }

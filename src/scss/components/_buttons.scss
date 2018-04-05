@@ -130,12 +130,12 @@ fieldset:disabled a.btn {
   padding: 0;
 
   &.active {
-    .icons-arrow {
-      transform: rotate(270deg);
+    [class^="icons-arrow-"] {
+      transform: rotate(180deg);
     }
   }
 
-  .icons-arrow {
+  [class^="icons-arrow-"] {
     transition: transform .15s ease-out;
   }
 }
