@@ -273,3 +273,29 @@ input[type="button"] {
     border-radius: 50%;
   }
 }
+
+
+//
+// Button card
+//
+
+.btn-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: rem(145px);
+  min-height: rem(145px);
+  font-weight: $font-weight-normal;
+
+  span {
+    display: block;
+    margin-top: rem(18px);
+  }
+
+  @include button-variant(
+    color("white"), gray("400"), gray("400"),
+    theme-color("primary"), theme-color("primary"), color("white"),
+    #0074af, #0074af, color("white")
+  );
+}
