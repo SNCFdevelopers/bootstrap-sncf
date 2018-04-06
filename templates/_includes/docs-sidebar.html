@@ -6,8 +6,14 @@
 </form>
 
 <nav class="collapse bd-links" id="bd-docs-nav">
+  {%- if site.doc_theme == 'extern' -%}
+  {%- assign data_nav = site.data.nav-extern -%}
+  {% else %}
+  {%- assign data_nav = site.data.nav-intern -%}
+  {%- endif -%}
+
   {%- assign page_slug = page.url | split: '/' | last -%}
-  {%- for group in site.data.nav -%}
+  {%- for group in data_nav -%}
   {%- assign link = group.pages | first -%}
   {%- assign link_slug = link.title | slugify -%}
   {%- assign group_slug = group.title | slugify -%}

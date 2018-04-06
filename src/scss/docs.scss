@@ -25,9 +25,7 @@
 
 // Load Bootstrap variables and mixins
 @import "~bootstrap/scss/functions";
-@import "settings/variables";
-@import "~bootstrap/scss/variables";
-@import "settings/maps";
+@import "common/settings/variables";
 @import "~bootstrap/scss/mixins";
 
 // Load bootstrap components

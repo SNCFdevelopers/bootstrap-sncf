@@ -3,15 +3,17 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
+const theme = process.env.theme || 'extern';
+
 module.exports = {
   entry: [
-    './src/js/main.js',
-    './src/js/docs.js',
-    './src/scss/main.scss',
-    './src/scss/docs.scss'
+    path.resolve(__dirname, `src/js/${theme}.js`),
+    path.resolve(__dirname, 'src/js/docs.js'),
+    path.resolve(__dirname, `src/scss/${theme}.scss`),
+    path.resolve(__dirname, 'src/scss/docs.scss')
   ],
   output: {
-    filename: '[name].js',
+    filename: 'main.js',
     path: path.resolve(__dirname, '_gh_pages')
   },
   devtool: 'source-map',
@@ -68,7 +70,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css'
+      filename: 'main.css'
     }),
     new StyleLintPlugin(),
     new CopyWebpackPlugin([

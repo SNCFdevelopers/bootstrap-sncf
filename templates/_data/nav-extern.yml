@@ -1,0 +1,21 @@
+- title: Getting started
+  pages:
+    - title: Introduction
+
+- title: Content
+  pages:
+    - title: Reboot
+    - title: Typography
+    - title: Code
+    - title: Images
+    - title: Tables
+    - title: Figures
+
+- title: Components
+  pages:
+    - title: Alerts
+    - title: Badge
+    - title: Breadcrumb
+    - title: Buttons
+    - title: Card
+    - title: Carousel

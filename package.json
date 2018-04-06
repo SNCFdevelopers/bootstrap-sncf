@@ -5,13 +5,17 @@
   "sideEffects": false,
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch",
-    "build": "webpack",
+    "watch-intern": "webpack --watch",
+    "watch-extern": "webpack --env.theme=extern --watch",
+    "build-intern": "webpack",
+    "build-extern": "webpack --env.theme=extern",
     "prod": "webpack -p",
-    "docs-compile": "bundle exec jekyll build",
+    "docs-compile-intern": "bundle exec jekyll build --config _config.intern.yml",
+    "docs-compile-extern": "bundle exec jekyll build --config _config.extern.yml",
     "docs-lint-htmllint": "htmllint --rc build/.htmllintrc \"_gh_pages/**/*.html\" \"src/js/tests/**/*.html\"",
-    "docs-serve": "bundle exec jekyll serve",
-    "icofont": "icon-font-generator src/assets/icons/*.svg -o src/assets/fonts/icons --csspath src/scss/generic/_icons.css --fontspath ../assets/fonts/icons/ --html false -j false"
+    "docs-serve-intern": "bundle exec jekyll serve --config _config.intern.yml",
+    "docs-serve-extern": "bundle exec jekyll serve --config _config.extern.yml",
+    "icofont": "icon-font-generator src/assets/icons/*.svg -o src/assets/fonts/icons --csspath src/scss/common/generic/_icons.css --fontspath ../assets/fonts/icons/ --html false -j false"
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",

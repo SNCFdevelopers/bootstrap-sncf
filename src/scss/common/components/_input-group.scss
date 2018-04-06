@@ -13,8 +13,13 @@
     &:not(:last-child),
     &:not(:last-child) .form-control,
     &:not(:last-child) .form-control-state  {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
+      @include border-right-radius(0);
+    }
+
+    &:not(:first-child),
+    &:not(:first-child) .form-control,
+    &:not(:first-child) .form-control-state  {
+      @include border-left-radius(0);
     }
   }
 }
@@ -29,14 +34,6 @@
   > .btn-group .btn {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-  }
-
-  + .form-control-container {
-    &,
-    .form-control-state  {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
   }
 }
 

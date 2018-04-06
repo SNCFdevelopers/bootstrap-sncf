@@ -2,11 +2,9 @@
    ========================================================================== */
 
 @import "~bootstrap/scss/functions";
-@import "tools/functions";
-@import "settings/variables";
-@import "~bootstrap/scss/variables";
-@import "settings/maps";
-@import "tools/mixins";
+@import "common/tools/functions";
+@import "common/settings/variables";
+@import "common/tools/mixins";
 
 // vendors
 @import "~tui-chart/dist/tui-chart.css";
@@ -15,63 +13,63 @@
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/type";
-@import "generic/base";
-@import "generic/fonts";
-@import "generic/icons";
-@import "generic/type";
+@import "common/generic/base";
+@import "common/generic/fonts";
+@import "common/generic/icons";
+@import "common/generic/type";
 
 // objects
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/tables";
 
 // layouts
-@import "layout/actionbar";
-@import "layout/mastheader";
-@import "layout/mastnav";
+@import "common/layout/actionbar";
+@import "common/layout/mastheader";
+@import "common/layout/mastnav";
 
 // components
 @import "~bootstrap/scss/images";
 @import "~bootstrap/scss/code";
 @import "~bootstrap/scss/forms";
-@import "components/forms";
-@import "components/buttons";
+@import "common/components/forms";
+@import "common/components/buttons";
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/dropdown";
-@import "components/dropdown";
+@import "common/components/dropdown";
 @import "~bootstrap/scss/button-group";
 @import "~bootstrap/scss/input-group";
-@import "components/input-group";
+@import "common/components/input-group";
 @import "~bootstrap/scss/custom-forms";
-@import "components/custom-forms";
-@import "components/select";
+@import "common/components/custom-forms";
+@import "common/components/select";
 // @import "~bootstrap/scss/nav";
 // @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/card";
 @import "~bootstrap/scss/breadcrumb";
 @import "~bootstrap/scss/pagination";
 @import "~bootstrap/scss/badge";
-@import "components/sami";
+@import "common/components/sami";
 @import "~bootstrap/scss/jumbotron";
 @import "~bootstrap/scss/alert";
-@import "components/progress";
+@import "common/components/progress";
 @import "~bootstrap/scss/media";
-@import "components/lists";
+@import "common/components/lists";
 @import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/close";
-@import "components/close";
+@import "common/components/close";
 @import "~bootstrap/scss/modal";
-@import "components/modal";
+@import "common/components/modal";
 @import "~bootstrap/scss/tooltip";
 @import "~bootstrap/scss/popover";
-@import "components/popover";
+@import "common/components/popover";
 @import "~bootstrap/scss/carousel";
-@import "components/management-item";
-@import "components/chips";
-@import "components/toolbar";
-@import "components/navtabs";
+@import "common/components/management-item";
+@import "common/components/chips";
+@import "common/components/toolbar";
+@import "common/components/navtabs";
 
 // trumps
 @import "~bootstrap/scss/utilities";
-@import "trumps/icons";
-@import "trumps/text";
+@import "common/trumps/icons";
+@import "common/trumps/text";
 @import "~bootstrap/scss/print";

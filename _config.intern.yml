@@ -17,20 +17,7 @@ baseurl:        ""
 url:            "https://getbootstrap.com"
 encoding:       UTF-8
 exclude:
-  - .git/
-  - .github/
-  - build/
-  - js/tests
-  - node_modules/
-  - src/
-  - composer.json
-  - Gemfile
-  - Gemfile.lock
-  - package.json
-  - package-lock.json
-  - README.md
-  - sache.json
-  - twbsconfig.yml
+  - extern
 
 keep_files:
   - assets
@@ -63,6 +50,7 @@ blog:                 "https://blog.getbootstrap.com"
 expo:                 "https://expo.getbootstrap.com"
 jobs:                 "https://jobs.getbootstrap.com"
 themes:               "https://themes.getbootstrap.com"
+doc_theme:            "intern"
 
 download:
   source:           "https://github.com/twbs/bootstrap/archive/v4.0.0.zip"
