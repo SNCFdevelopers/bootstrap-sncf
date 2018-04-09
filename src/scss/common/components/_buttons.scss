@@ -138,6 +138,13 @@ fieldset:disabled a.btn {
   [class^="icons-arrow-"] {
     transition: transform .15s ease-out;
   }
+
+  &.btn-white.disabled,
+  &.btn-white:disabled {
+    color: gray("300");
+    background-color: color("white");
+    border-color: color("white");
+  }
 }
 
 
