@@ -74,14 +74,15 @@ $dark:          $gray-800;
 
 $theme-colors: ();
 $theme-colors: map-merge((
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  "primary":      $primary,
+  "primary-dark": $primary-dark,
+  "secondary":    $secondary,
+  "success":      $success,
+  "info":         $info,
+  "warning":      $warning,
+  "danger":       $danger,
+  "light":        $light,
+  "dark":         $dark
 ), $theme-colors);
 
 $btn-colors: ();

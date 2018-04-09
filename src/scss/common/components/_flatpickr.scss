@@ -1,0 +1,136 @@
+/* flatpick
+   ========================================================================== */
+
+.flatpickr-wrapper {
+  width: 100%;
+}
+
+.flatpickr-calendar {
+  // stylelint-disable declaration-no-important
+  width: auto !important;
+  // stylelint-enable declaration-no-important
+  min-width: 100%;
+  padding: rem(30px) rem(40px);
+  margin-top: rem(10px);
+  font-size: rem(12px);
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  box-shadow: none;
+
+  &.arrowTop::before {
+    border-bottom-color: $border-color;
+  }
+
+  &::after {
+    margin: 0 -9px;
+    border-width: 9px;
+  }
+
+  &::before {
+    margin: 0 -10px;
+    border-width: 10px;
+  }
+}
+
+.flatpickr-months {
+  position: relative;
+  padding-bottom: rem(30px);
+  color: theme-color("primary");
+  fill: theme-color("primary");
+
+  .flatpickr-month,
+  .flatpickr-month.flatpickr-prev-month,
+  .flatpickr-month.flatpickr-next-month {
+    color: theme-color("primary");
+
+    &:hover {
+      color: theme-color("primary");
+    }
+  }
+}
+
+.flatpickr-current-month {
+  pointer-events: none;
+
+  .cur-month.cur-month,
+  .cur-year.cur-year {
+    font-size: rem(20px);
+    font-weight: $font-weight-medium;
+  }
+}
+
+.flatpickr-weekday.flatpickr-weekday {
+  font-size: rem(12px);
+  color: gray("600");
+}
+
+.flatpickr-day {
+  &.today {
+    z-index: 2;
+    color: color("white");
+    background-color: gray("500");
+    border-color: gray("500");
+
+    &.inRange {
+      color: theme-color("primary");
+      background-color: #e5f3fa;
+      border-color: #e5f3fa;
+    }
+  }
+
+  &.selected,
+  &.focus {
+    color: color("white");
+    background-color: theme-color("primary");
+    border-color: theme-color("primary");
+
+    &:hover {
+      background-color: theme-color("primary-dark");
+      border-color: theme-color("primary-dark");
+    }
+  }
+
+  &.endRange.endRange,
+  &.startRange.startRange {
+    z-index: 2;
+    border-radius: 50%;
+  }
+
+  &.startRange + &.inRange {
+    &::before {
+      position: absolute;
+      top: -1px;
+      right: 100%;
+      z-index: 1;
+      display: block;
+      width: 50%;
+      height: calc(100% + 2px);
+      content: "";
+      background-color: #e5f3fa;
+    }
+  }
+
+  &.inRange {
+    background-color: #e5f3fa;
+    border-color: #e5f3fa;
+    box-shadow: -5px 0 0 #e5f3fa, 5px 0 0 #e5f3fa;
+
+    &::after {
+      position: absolute;
+      top: -1px;
+      left: 100%;
+      z-index: 1;
+      display: block;
+      width: 50%;
+      height: calc(100% + 2px);
+      content: "";
+      background-color: #e5f3fa;
+    }
+  }
+
+  &.selected.startRange + .endRange,
+  &.startRange.startRange + .endRange,
+  &.endRange.startRange + .endRange {
+    box-shadow: none;
+  }
+}

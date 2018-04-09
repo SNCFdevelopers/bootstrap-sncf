@@ -8,6 +8,7 @@
 
 // vendors
 @import "~tui-chart/dist/tui-chart.css";
+@import "~flatpickr/dist/flatpickr.css";
 
 // generic
 @import "~bootstrap/scss/root";
@@ -67,6 +68,7 @@
 @import "common/components/chips";
 @import "common/components/toolbar";
 @import "common/components/navtabs";
+@import "common/components/flatpickr";
 
 // trumps
 @import "~bootstrap/scss/utilities";

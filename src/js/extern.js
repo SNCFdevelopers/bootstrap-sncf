@@ -6,6 +6,7 @@ import {
   RadialChart
 } from './components/charts'
 import Control from './components/control'
+import Picker from './components/picker'
 import Searchbar from './components/searchbar'
 import SelectExclusive from './components/selectExclusive'
 import SelectMultiple from './components/selectMultiple'
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataLineChart = 'line-chart'
   const dataRadialChart = 'radial-chart'
   const dataControl = 'control'
+  const dataPicker = 'picker'
   const dataSearchbar = 'searchbar'
   const dataSelectExclusive = 'select-exclusive'
   const dataSelectMultiple = 'select-multiple'
@@ -47,6 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataControl) {
       new Control(component)
+    }
+
+    if (component.dataset.component === dataPicker) {
+      new Picker(component)
     }
 
     if (component.dataset.component === dataSearchbar) {
