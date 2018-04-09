@@ -58,6 +58,7 @@ TODO : description
 {% example html %}
 <button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-prev"></i></button>
 <button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-next"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-prev"></i></button>
 <button type="button" class="btn-rounded btn-rounded-primary"><i class="icons-share"></i></button>
 <button type="button" class="btn-rounded btn-rounded-facebook"><i class="icons-close"></i></button>
 <button type="button" class="btn-rounded btn-rounded-twitter"><i class="icons-close"></i></button>

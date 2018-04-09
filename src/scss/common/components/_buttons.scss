@@ -202,7 +202,14 @@ input[type="button"] {
     background-color: #0074af;
   }
 
-  &.box-shadow {
+  &.disabled,
+  &:disabled {
+    color: gray("300");
+    background-color: gray("100");
+    border-color: gray("100");
+  }
+
+  &:not(:disabled):not(.disabled).box-shadow {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2);
 
     @include hover {
@@ -217,9 +224,13 @@ input[type="button"] {
       color: nth($value, 3);
       background-color: nth($value, 1);
 
-      @include hover {
-        color: nth($value, 6);
-        background-color: nth($value, 4);
+      &:not(:disabled):not(.disabled) {
+        &:hover,
+        &:focus,
+        &:active {
+          color: nth($value, 6);
+          background-color: nth($value, 4);
+        }
       }
     }
   }
