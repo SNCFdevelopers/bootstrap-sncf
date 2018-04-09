@@ -47,10 +47,22 @@ TODO : description
 TODO : description
 
 {% example html %}
-<button type="button" class="btn btn-only-icon btn-primary"><i class="icons-search"></i></button>
-<button type="button" class="btn btn-only-icon btn-primary" disabled><i class="icons-search"></i></button>
-<button type="button" class="btn btn-only-icon btn-white"><i class="icons-search"></i></button>
-<button type="button" class="btn btn-only-icon btn-white" disabled><i class="icons-search"></i></button>
+<button type="button" class="btn btn-only-icon btn-primary">
+  <span class="sr-only">Search</span>
+  <i class="icons-search"></i>
+</button>
+<button type="button" class="btn btn-only-icon btn-primary" disabled>
+  <span class="sr-only">Search</span>
+  <i class="icons-search"></i>
+</button>
+<button type="button" class="btn btn-only-icon btn-white">
+  <span class="sr-only">Search</span>
+  <i class="icons-search"></i>
+</button>
+<button type="button" class="btn btn-only-icon btn-white" disabled>
+  <span class="sr-only">Search</span>
+  <i class="icons-search"></i>
+</button>
 {% endexample %}
 
 TODO : description

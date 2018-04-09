@@ -149,6 +149,10 @@ textarea.form-control {
   &.stretchy {
     resize: none;
   }
+
+  &[readonly] {
+    background-position: bottom 18px right 18px;
+  }
 }
 
 .form-control-icon {

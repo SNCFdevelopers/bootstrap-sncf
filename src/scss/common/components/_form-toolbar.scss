@@ -1,0 +1,41 @@
+/* form toolbar
+   ========================================================================== */
+
+.form-toolbar {
+  display: flex;
+  line-height: 1;
+}
+
+.toolbar-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(30px);
+  height: rem(24px);
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+
+  @include hover-focus-active {
+    color: theme-color("primary");
+  }
+}
+
+.toolbar-separator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(40px);
+  height: rem(24px);
+  margin: 0;
+  text-align: center;
+  border: 0;
+
+  &::after {
+    display: inline-block;
+    width: rem(1px);
+    height: rem(16px);
+    content: "";
+    background-color: gray("200");
+  }
+}

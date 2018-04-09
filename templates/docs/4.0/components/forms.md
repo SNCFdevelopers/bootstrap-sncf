@@ -66,9 +66,17 @@ Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are st
 Add the `readonly` boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
 
 {% example html %}
-<div class="form-control-container">
-  <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-  <span class="form-control-state"></span>
+<div class="form-group">
+  <div class="form-control-container">
+    <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+    <span class="form-control-state"></span>
+  </div>
+</div>
+<div class="form-group">
+  <div class="form-control-container">
+    <textarea class="form-control" type="text" placeholder="Readonly input here…" readonly>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eligendi amet, praesentium repellendus nesciunt ratione enim alias ad nemo sapiente minima aspernatur vero quaerat quae vitae a, cum inventore ipsum.</textarea>
+    <span class="form-control-state"></span>
+  </div>
 </div>
 {% endexample %}
 
@@ -118,6 +126,45 @@ Textual `stretchy` class on input.
     <span class="form-control-state"></span>
   </div>
   <div class="mt-2 font-weight-medium" data-role="counter" data-limit="200"><span data-role="counter-value">0</span>/200 caractères</div>
+</div>
+{% endexample %}
+
+### With toolbar
+
+{% example html %}
+<div class="form-group">
+  <label class="font-weight-medium mb-1" for="exampleFormControlTextarea3">Example textarea</label>
+  <div class="form-toolbar mb-1">
+    <button type="button" class="toolbar-item">
+      <span class="sr-only">Bold</span>
+      B
+    </button>
+    <button type="button" class="toolbar-item">
+      <span class="sr-only">Italic</span>
+      I
+    </button>
+    <button type="button" class="toolbar-item">
+      <span class="sr-only">Italic</span>
+      U
+    </button>
+    <span class="toolbar-separator"></span>
+    <button type="button" class="toolbar-item">
+      <span class="sr-only">Underline</span>
+      <i class="icons-search"></i>
+    </button>
+    <button type="button" class="toolbar-item">
+      <span class="sr-only">Underline</span>
+      <i class="icons-search"></i>
+    </button>
+    <button type="button" class="toolbar-item">
+      <span class="sr-only">Underline</span>
+      <i class="icons-search"></i>
+    </button>
+  </div>
+  <div class="form-control-container">
+    <textarea class="form-control" placeholder="Comment"></textarea>
+    <span class="form-control-state"></span>
+  </div>
 </div>
 {% endexample %}
 
