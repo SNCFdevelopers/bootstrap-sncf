@@ -7,6 +7,7 @@
   width: 100%;
   padding-top: rem(5px);
   padding-left: rem(5px);
+  cursor: text;
   background-color: $input-bg;
   background-clip: padding-box;
 
@@ -47,20 +48,25 @@
   @include button-size(.5em, 1.125em, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
-  // Share hover and focus styles
+  .icons-close {
+    font-size: rem(10px);
+  }
+}
+
+.chips-label {
+  padding-right: 0;
+}
+
+.chips-btn {
   @include hover-focus {
     text-decoration: none;
-    background-color: #0074af;
+    background-color: theme-color("primary-dark");
   }
 
   &:focus,
   &.focus {
     outline: 0;
     box-shadow: $btn-focus-box-shadow;
-  }
-
-  .icons-close {
-    font-size: rem(10px);
   }
 }
 

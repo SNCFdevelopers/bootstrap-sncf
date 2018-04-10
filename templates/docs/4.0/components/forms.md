@@ -171,23 +171,33 @@ Textual `stretchy` class on input.
 ## Chips
 
 {% example html %}
+<div class="chips-group">
+  <span class="chips chips-label">Mathéo Mercier</span>
+  <button type="button" class="chips chips-btn chips-only-icon">
+    <span class="sr-only">Remove</span>
+    <i class="icons-close"></i>
+  </button>
+</div>
+{% endexample %}
+
+{% example html %}
 <label class="font-weight-medium mb-2">Receivers</label>
-<div class="form-control-container form-chips-container">
-  <div class="chips-group">
-    <button type="button" class="chips">Mathéo Mercier</button>
-    <button type="button" class="chips chips-only-icon">
-      <span class="sr-only">Remove</span>
-      <i class="icons-close"></i>
-    </button>
-  </div>
-  <div class="chips-group">
-    <button type="button" class="chips">Lucie Gauthier</button>
-    <button type="button" class="chips chips-only-icon">
-      <span class="sr-only">Remove</span>
-      <i class="icons-close"></i>
-    </button>
-  </div>
-  <input type="text" class="chips-input stretchy" value="Edouard Morel" />
+<div class="form-control-container form-chips-container" data-component="chips">
+  <input data-role="typewriter" type="text" class="chips-input stretchy" />
+  <select class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" multiple>
+    <option selected>Sem Inceptos Tellus</option>
+    <option>Amet Porta</option>
+    <option selected>Pharetra Fusce Venenatis</option>
+  </select>
+</div>
+{% endexample %}
+
+{% example html %}
+<label class="font-weight-medium mb-2">Receivers</label>
+<div class="form-control-container form-chips-container" data-component="chips">
+  <input data-role="typewriter" type="text" class="chips-input stretchy" />
+  <select class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" multiple>
+  </select>
 </div>
 {% endexample %}
 

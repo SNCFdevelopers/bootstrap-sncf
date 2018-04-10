@@ -5,6 +5,7 @@ import {
   LineChart,
   RadialChart
 } from './components/charts'
+import Chips from './components/chips'
 import Control from './components/control'
 import Picker from './components/picker'
 import Searchbar from './components/searchbar'
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataComponent = '[data-component]'
   const dataLineChart = 'line-chart'
   const dataRadialChart = 'radial-chart'
+  const dataChips = 'chips'
   const dataControl = 'control'
   const dataPicker = 'picker'
   const dataSearchbar = 'searchbar'
@@ -45,6 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataRadialChart) {
       new RadialChart(component)
+    }
+
+    if (component.dataset.component === dataChips) {
+      new Chips(component)
     }
 
     if (component.dataset.component === dataControl) {

@@ -12,13 +12,13 @@ TODO : description
 
 {% example html %}
 <label class="font-weight-medium mb-2" for="exampleFormControlSelect1">Example select</label>
-<div class="select-improved active" data-component="select-exclusive">
+<div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <div class="form-control" data-role="placeholder">
         Sélectionner un secteur
       </div>
-      <select class="sr-only" id="exampleFormControlSelect1" data-role="input">
+      <select class="sr-only" id="exampleFormControlSelect1" data-role="input" tabindex="-1" aria-hidden="true">
         <option data-id="0">Sem Inceptos Tellus</option>
         <option data-id="1">Sem Inceptos Tellus</option>
         <option data-id="2">Sollicitudin Adipiscing Mattis</option>
@@ -63,7 +63,7 @@ TODO : description
       <div class="form-control" data-role="placeholder">
         Sélectionner un secteur
       </div>
-      <select class="sr-only" id="exampleFormControlSelect1" data-role="input">
+      <select class="sr-only" id="exampleFormControlSelect1" data-role="input" tabindex="-1" aria-hidden="true">
         <option data-id="0">Sem Inceptos Tellus</option>
         <option data-id="1">Sem Inceptos Tellus</option>
         <option data-id="2">Sollicitudin Adipiscing Mattis</option>
@@ -111,7 +111,7 @@ TODO : description
       <div class="form-control" data-role="placeholder">
         Sélectionner un secteur
       </div>
-      <select class="sr-only" id="exampleFormControlSelect1" data-role="input">
+      <select class="sr-only" id="exampleFormControlSelect1" data-role="input" tabindex="-1" aria-hidden="true">
         <option data-id="0">Sem Inceptos Tellus</option>
         <option data-id="1">Sem Inceptos Tellus</option>
         <option data-id="2">Sollicitudin Adipiscing Mattis</option>
@@ -173,7 +173,7 @@ TODO : description
           <label data-role="placeholder" class="custom-control-label font-weight-medium active">Tous les secteurs</label>
         </div>
       </div>
-      <select class="sr-only" id="exampleFormControlMultiSelect" data-role="input" multiple>
+      <select class="sr-only" id="exampleFormControlMultiSelect" data-role="input" tabindex="-1" aria-hidden="true" multiple>
         <option data-id="0" selected>Sem Inceptos Tellus</option>
         <option data-id="1" selected>Sem Inceptos Tellus</option>
         <option data-id="2" selected>Sollicitudin Adipiscing Mattis</option>
