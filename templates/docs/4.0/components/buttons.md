@@ -76,6 +76,7 @@ TODO : description
 <button type="button" class="btn-rounded btn-rounded-twitter"><i class="icons-close"></i></button>
 <button type="button" class="btn-rounded btn-rounded-linkedin"><i class="icons-close"></i></button>
 <button type="button" class="btn-rounded btn-rounded-youtube"><i class="icons-close"></i></button>
+<button type="button" class="btn-rounded btn-rounded-gray">999</button>
 {% endexample %}
 
 ## Sizes

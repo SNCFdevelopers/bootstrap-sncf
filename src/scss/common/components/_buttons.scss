@@ -192,6 +192,7 @@ input[type="button"] {
   width: rem(40px);
   height: rem(40px);
   font-size: rem(14px);
+  font-weight: $font-weight-medium;
   color: color("white");
   background-color: gray("400");
   border: none;

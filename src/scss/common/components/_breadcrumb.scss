@@ -2,9 +2,9 @@
    ========================================================================== */
 
 .breadcrumb {
+  font-weight: $font-weight-medium;
   border-bottom: 1px solid gray("100");
   border-radius: 0;
-  font-weight: $font-weight-medium;
 }
 
 .breadcrumb-item {

@@ -9,6 +9,10 @@ $select-scrollable-max-height: rem(360px);
       display: none;
     }
   }
+
+  .form-control.is-placeholder {
+    color: $input-placeholder-color;
+  }
 }
 
 .select-control {

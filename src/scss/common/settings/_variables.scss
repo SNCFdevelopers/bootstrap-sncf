@@ -125,6 +125,10 @@ $btn-rounded-colors: map-merge((
     color("white"), color("white"), theme-color("primary"),
     theme-color("primary"), theme-color("primary"), color("white")
   ),
+  "gray": (
+    gray("300"), gray("300"), color("white"),
+    gray("300"), gray("300"), color("white")
+  ),
   "facebook": (
     gray("400"), gray("400"), color("white"),
     #3b5998, #3b5998, color("white")
