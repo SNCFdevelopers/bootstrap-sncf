@@ -65,7 +65,7 @@ $icon-width: rem(48px);
 }
 
 .form-control {
-  &:focus ~ .form-control-state {
+  .form-control-container:not(.is-invalid) &:focus ~ .form-control-state {
     &::after {
       background-color: theme-color("primary");
     }
@@ -197,4 +197,31 @@ textarea.form-control {
   padding-bottom: 0;
   margin-bottom: ($spacer * .5);
   font-weight: $font-weight-medium;
+}
+
+label.required {
+  &::after {
+    color: theme-color("danger");
+    content: "*";
+  }
+}
+
+
+//
+// Error message
+//
+
+.form-error {
+  padding: rem(26px) rem(30px);
+  color: color("white");
+  background-color: theme-color("danger");
+  border-radius: rem(5px);
+
+  .h2 {
+    color: inherit;
+  }
+
+  ul {
+    padding-left: rem(16px);
+  }
 }

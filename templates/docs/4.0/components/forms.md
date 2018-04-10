@@ -302,21 +302,21 @@ We recommend using client side validation, but in case you require server side, 
 <form class="needs-validation" novalidate>
   <div class="form-row">
     <div class="col-md-4 mb-3">
-      <label class="font-weight-medium mb-2" for="validationCustom01">First name</label>
+      <label class="font-weight-medium mb-2 required" for="validationCustom01">First name</label>
       <div class="form-control-container">
         <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
         <span class="form-control-state"></span>
       </div>
     </div>
     <div class="col-md-4 mb-3">
-      <label class="font-weight-medium mb-2" for="validationCustom02">Last name</label>
+      <label class="font-weight-medium mb-2 required" for="validationCustom02">Last name</label>
       <div class="form-control-container">
         <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
         <span class="form-control-state"></span>
       </div>
     </div>
     <div class="col-md-4 mb-3">
-      <label class="font-weight-medium mb-2" for="validationCustomUsername">Username</label>
+      <label class="font-weight-medium mb-2 required" for="validationCustomUsername">Username</label>
       <div class="form-control-container is-invalid">
         <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
         <span class="form-control-state"></span>
@@ -328,7 +328,33 @@ We recommend using client side validation, but in case you require server side, 
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label class="font-weight-medium mb-2" for="validationCustom03">City</label>
+      <label class="font-weight-medium mb-2 required" for="validationCustom03">City</label>
+      <div class="form-control-container is-invalid">
+        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+        <span class="form-control-state"></span>
+      </div>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+{% endexample %}
+
+### Error message
+
+{% example html %}
+<form class="needs-validation" novalidate>
+  <div class="form-error mb-3">
+    <span class="h2 text-uppercase">Oouups ! Vous avez une erreur</span>
+    <ul class="mt-1 mb-0">
+      <li>Veuillez vérifier l'adresse email saisie</li>
+    </ul>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label class="font-weight-medium mb-2 required" for="validationCustom03">City</label>
       <div class="form-control-container is-invalid">
         <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         <span class="form-control-state"></span>
@@ -352,21 +378,21 @@ While these feedback styles cannot be styled with CSS, you can still customize t
 <form>
   <div class="form-row">
     <div class="col-md-4 mb-3">
-      <label class="font-weight-medium mb-2" for="validationDefault01">First name</label>
+      <label class="font-weight-medium mb-2 required" for="validationDefault01">First name</label>
       <div class="form-control-container">
         <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
         <span class="form-control-state"></span>
       </div>
     </div>
     <div class="col-md-4 mb-3">
-      <label class="font-weight-medium mb-2" for="validationDefault02">Last name</label>
+      <label class="font-weight-medium mb-2 required" for="validationDefault02">Last name</label>
       <div class="form-control-container">
         <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
         <span class="form-control-state"></span>
       </div>
     </div>
     <div class="col-md-4 mb-3">
-      <label class="font-weight-medium mb-2" for="validationDefaultUsername">Username</label>
+      <label class="font-weight-medium mb-2 required" for="validationDefaultUsername">Username</label>
       <div class="form-control-container">
         <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
         <span class="form-control-state"></span>
@@ -375,21 +401,21 @@ While these feedback styles cannot be styled with CSS, you can still customize t
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label class="font-weight-medium mb-2" for="validationDefault03">City</label>
+      <label class="font-weight-medium mb-2 required" for="validationDefault03">City</label>
       <div class="form-control-container">
         <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
         <span class="form-control-state"></span>
       </div>
     </div>
     <div class="col-md-3 mb-3">
-      <label class="font-weight-medium mb-2" for="validationDefault04">State</label>
+      <label class="font-weight-medium mb-2 required" for="validationDefault04">State</label>
       <div class="form-control-container">
         <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
         <span class="form-control-state"></span>
       </div>
     </div>
     <div class="col-md-3 mb-3">
-      <label class="font-weight-medium mb-2" for="validationDefault05">Zip</label>
+      <label class="font-weight-medium mb-2 required" for="validationDefault05">Zip</label>
       <div class="form-control-container">
         <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
         <span class="form-control-state"></span>

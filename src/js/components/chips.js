@@ -18,17 +18,19 @@ class Chips {
       }
     }
 
-    element.addEventListener('click', () => {
-      this.typewriterNode.focus()
-    })
+    if (this.typewriterNode) {
+      element.addEventListener('click', () => {
+        this.typewriterNode.focus()
+      })
 
-    this.typewriterNode.addEventListener('keyup', (e) => {
-      /* eslint-disable no-magic-numbers */
-      if (e.keyCode === 13) {
-        this._createChipsNode(element, e.target.value)
-      }
-      /* eslint-enable no-magic-numbers */
-    })
+      this.typewriterNode.addEventListener('keyup', (e) => {
+        /* eslint-disable no-magic-numbers */
+        if (e.keyCode === 13) {
+          this._createChipsNode(element, e.target.value)
+        }
+        /* eslint-enable no-magic-numbers */
+      })
+    }
   }
 
   _createChipsNode(element, value = 'Martin Dupond', optionNode = null) {
