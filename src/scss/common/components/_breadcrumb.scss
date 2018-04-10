@@ -1,0 +1,40 @@
+/* breadcrumb
+   ========================================================================== */
+
+.breadcrumb {
+  border-bottom: 1px solid gray("100");
+  border-radius: 0;
+  font-weight: $font-weight-medium;
+}
+
+.breadcrumb-item {
+  font-weight: $font-weight-medium;
+
+  // The separator between breadcrumbs (by default, a forward-slash: "/")
+  + .breadcrumb-item::before {
+    width: rem(8px) + $breadcrumb-item-padding;
+    height: rem(10px);
+    content: "";
+    background-image: $breadcrumb-active-divider;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: rem(8px) rem(10px);
+  }
+
+  &.active {
+    & ~ .breadcrumb-item {
+      &::before {
+        background-image: $breadcrumb-divider;
+      }
+
+      a {
+        font-weight: $font-weight-normal;
+        color: gray("400");
+      }
+    }
+
+    + .breadcrumb-item::before {
+      background-image: $breadcrumb-active-divider;
+    }
+  }
+}

@@ -26,8 +26,9 @@ Separators are automatically added in CSS through [`::before`](https://developer
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item"><a href="#">Library</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Data</li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+    <li class="breadcrumb-item"><a href="#">Data</a></li>
+    <li class="breadcrumb-item"><a href="#">Others</a></li>
   </ol>
 </nav>
 {% endexample %}

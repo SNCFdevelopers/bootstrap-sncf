@@ -943,15 +943,16 @@ $figure-caption-color:              $gray-600;
 // Breadcrumbs
 
 $breadcrumb-padding-y:              .75rem;
-$breadcrumb-padding-x:              1rem;
-$breadcrumb-item-padding:           .5rem;
+$breadcrumb-padding-x:              0;
+$breadcrumb-item-padding:           1rem;
 
 $breadcrumb-margin-bottom:          1rem;
 
-$breadcrumb-bg:                     $gray-200;
+$breadcrumb-bg:                     $white;
 $breadcrumb-divider-color:          $gray-600;
-$breadcrumb-active-color:           $gray-600;
-$breadcrumb-divider:                "/";
+$breadcrumb-active-color:           $primary;
+$breadcrumb-active-divider:         url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cdefs%3E%3Cstyle%3E.a{fill:%230088ce;}%3C/style%3E%3C/defs%3E%3Ctitle%3Earrow-right%3C/title%3E%3Cpath class='a' d='M40.42,25,17,48.85a4.69,4.69,0,0,1-6.15,0,5.15,5.15,0,0,1-1.16-3.08,4.38,4.38,0,0,1,1.16-3.08L28.12,25,10.81,7.31A4.6,4.6,0,0,1,11.58.38a5.39,5.39,0,0,1,5.77,1.16Z'/%3E%3C/svg%3E");
+$breadcrumb-divider:                url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cdefs%3E%3Cstyle%3E.a{fill:%23b9b9b9;}%3C/style%3E%3C/defs%3E%3Ctitle%3Earrow-right%3C/title%3E%3Cpath class='a' d='M40.42,25,17,48.85a4.69,4.69,0,0,1-6.15,0,5.15,5.15,0,0,1-1.16-3.08,4.38,4.38,0,0,1,1.16-3.08L28.12,25,10.81,7.31A4.6,4.6,0,0,1,11.58.38a5.39,5.39,0,0,1,5.77,1.16Z'/%3E%3C/svg%3E");
 
 
 // Carousel
