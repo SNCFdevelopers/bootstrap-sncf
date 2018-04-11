@@ -6,7 +6,7 @@
 // Base class takes care of all the key behavioral aspects.
 
 .custom-control-input {
-  &:checked {
+  &:not(:disabled):checked {
     ~ .custom-control-label{
       color: $custom-control-checked-color;
 
@@ -14,7 +14,7 @@
         border-color: $custom-control-indicator-checked-border-color;
       }
 
-      &:hover {
+      @include hover-focus-active {
         color: $custom-control-checked-hover-color;
 
         &::before {
@@ -25,24 +25,13 @@
     }
   }
 
-  &:disabled,
-  &:disabled:focus,
-  &:disabled:active {
+  &:disabled {
     ~ .custom-control-label,
     &:checked ~ .custom-control-label {
       color: $custom-control-label-disabled-color;
 
       &::before {
         border-color: $custom-control-indicator-checked-disabled-bg;
-      }
-
-      &:hover {
-        color: $custom-control-label-disabled-color;
-
-        &::before {
-          background-color: $custom-control-indicator-disabled-bg;
-          border-color: $custom-control-indicator-checked-disabled-bg;
-        }
       }
     }
 
@@ -66,6 +55,7 @@
     border: $custom-control-indicator-border-size solid $custom-control-indicator-border-color;
   }
 
+  // Multi select
   &:hover,
   &:focus,
   .custom-control-input:focus + &,
@@ -78,7 +68,6 @@
     }
   }
 
-  // Multi select
   &.active {
     &::before {
       @include gradient-bg($custom-control-indicator-checked-bg);
@@ -89,7 +78,6 @@
     }
   }
 
-  // Multi select
   &.indeterminate {
     &::before {
       @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
@@ -137,21 +125,6 @@
             background-color: $custom-control-indicator-checked-hover-bg;
             border-color: $custom-control-checked-hover-color;
           }
-        }
-      }
-    }
-
-    &:disabled,
-    &:disabled:focus,
-    &:disabled:active {
-      &:checked ~ .custom-control-label {
-        &::before {
-          background-color: $custom-control-indicator-checked-disabled-bg;
-        }
-
-        &::after {
-
-          background-image: $custom-checkbox-indicator-icon-disabled-checked;
         }
       }
     }
