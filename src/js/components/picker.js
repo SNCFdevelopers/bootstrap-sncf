@@ -4,10 +4,18 @@ import {
 import flatpickr from 'flatpickr'
 import rangePlugin from 'flatpickr/dist/plugins/rangePlugin'
 flatpickr.localize(French) // default locale is now Russian
-flatpickr.l10ns.default.locale = {
-  weekdays: {
-    shorthand: ['D', 'L', 'M', 'M', 'J', 'V', 'S']
-  }
+
+const DEFAULT_OPTIONS = {
+  locale: {
+    weekdays: {
+      shorthand: ['D', 'L', 'M', 'M', 'J', 'V', 'S']
+    }
+  },
+  wrap: true,
+  static: true,
+  /* eslint-disable camelcase */
+  time_24hr: true
+  /* eslint-enable camelcase */
 }
 
 /**
@@ -18,25 +26,54 @@ flatpickr.l10ns.default.locale = {
 
 class Picker {
   constructor(element) {
+    const btnNode = element.querySelector('[data-role=btn]')
+    const defaultDate = element.getAttribute('data-default-date')
+    const mode = element.getAttribute('data-mode') || 'single'
+    const enableTime = element.getAttribute('data-enable-time')
+    const dateFormat = this._getDateFormat(enableTime ? 'datetime' : mode)
+    const secondRangeInput = element.getAttribute('data-second-range')
+    const plugins = []
+
+    if (secondRangeInput) {
+      /* eslint-disable new-cap */
+      plugins.push(new rangePlugin({
+        input: secondRangeInput
+      }))
+      /* eslint-enable new-cap */
+    }
+
+    const options = {
+      mode,
+      dateFormat,
+      enableTime,
+      plugins
+    }
+
+    if (defaultDate) {
+      options.defaultDate = defaultDate
+    }
+
     flatpickr(element, {
-      locale: {
-        weekdays: {
-          shorthand: ['D', 'L', 'M', 'M', 'J', 'V', 'S']
-        }
+      ...DEFAULT_OPTIONS,
+      ...options,
+      onOpen: () => {
+        btnNode.classList.add('active')
       },
-      wrap: true,
-      /* eslint-disable new-cap, camelcase */
-      plugins: [
-        new rangePlugin({
-          input: '#secondRangeInput'
-        })
-      ],
-      static: true,
-      enableTime: true,
-      dateFormat: 'j/m/Y à H\\hi',
-      time_24hr: true
-      /* eslint-enable new-cap, camelcase */
+      onClose: () => {
+        btnNode.classList.remove('active')
+      }
     })
+  }
+
+  _getDateFormat(mode) {
+    switch (mode) {
+      case 'datetime':
+        return 'j/m/Y à H\\hi'
+      case 'time':
+        return 'H\\hi'
+      default:
+        return 'j/m/Y'
+    }
   }
 }
 

@@ -65,6 +65,12 @@ $icon-width: rem(48px);
 }
 
 .form-control {
+  font-weight: $font-weight-medium;
+
+  &::placeholder {
+    font-weight: $font-weight-normal;
+  }
+
   .form-control-container:not(.is-invalid) &:focus ~ .form-control-state {
     &::after {
       background-color: theme-color("primary");

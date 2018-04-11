@@ -195,12 +195,12 @@ TODO : description
 
 {% example html %}
 <label class="font-weight-medium mb-2" for="exampleFormControlSelect1">Multi select</label>
-<div class="select-improved active" data-component="select-multiple">
+<div class="select-improved" data-component="select-multiple">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <div class="form-control">
         <div class="custom-control custom-checkbox">
-          <label data-role="placeholder" class="custom-control-label font-weight-medium active">Tous les secteurs</label>
+          <label data-role="placeholder" class="custom-control-label font-weight-medium">Tous les secteurs</label>
         </div>
       </div>
       <select class="sr-only" id="exampleFormControlMultiSelect" data-role="input" tabindex="-1" aria-hidden="true" multiple>

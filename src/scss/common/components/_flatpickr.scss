@@ -1,16 +1,24 @@
 /* flatpick
    ========================================================================== */
 
+.flatpickr-input {
+  &[readonly] {
+    font-weight: $font-weight-medium;
+    color: $input-color;
+    background-image: none;
+  }
+}
+
 .flatpickr-wrapper {
   width: 100%;
 }
 
 .flatpickr-calendar {
   // stylelint-disable declaration-no-important
-  width: auto !important;
+  width: rem(306px) !important;
   // stylelint-enable declaration-no-important
-  min-width: 100%;
-  padding: rem(30px) rem(40px);
+  // min-width: 100%;
+  padding: rem(24px) rem(30px);
   margin-top: rem(10px);
   font-size: rem(12px);
   border: $border-width solid $border-color;
@@ -64,9 +72,28 @@
   color: gray("600");
 }
 
+.flatpickr-days {
+  // stylelint-disable declaration-no-important
+  width: 100% !important;
+  // stylelint-enable declaration-no-important
+}
+
+.flatpickr-rContainer,
+.dayContainer {
+  width: 100%;
+  min-width: auto;
+}
+
 .flatpickr-day {
+  flex-basis: 29px;
+  width: rem(29px);
+  height: rem(29px);
+  margin: rem(4px);
+  line-height: 29px;
+
   &.today {
     z-index: 2;
+    font-weight: $font-weight-medium;
     color: color("white");
     background-color: gray("500");
     border-color: gray("500");
@@ -80,6 +107,7 @@
 
   &.selected,
   &.focus {
+    font-weight: $font-weight-medium;
     color: color("white");
     background-color: theme-color("primary");
     border-color: theme-color("primary");
@@ -103,7 +131,7 @@
       right: 100%;
       z-index: 1;
       display: block;
-      width: 50%;
+      width: 100%;
       height: calc(100% + 2px);
       content: "";
       background-color: #e5f3fa;
@@ -121,7 +149,7 @@
       left: 100%;
       z-index: 1;
       display: block;
-      width: 50%;
+      width: 100%;
       height: calc(100% + 2px);
       content: "";
       background-color: #e5f3fa;
@@ -134,3 +162,13 @@
     box-shadow: none;
   }
 }
+
+/* stylelint-disable selector-max-class */
+.flatpickr-calendar.showTimeInput.hasTime .flatpickr-time {
+  border-top: none;
+}
+
+.flatpickr-calendar.showTimeInput.hasTime .flatpickr-innerContainer + .flatpickr-time {
+  border-top: 1px solid $border-color;
+}
+/* stylelint-enable selector-max-class */
