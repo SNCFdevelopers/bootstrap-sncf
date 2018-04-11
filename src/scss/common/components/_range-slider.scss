@@ -1,0 +1,66 @@
+/* range slider
+   ========================================================================== */
+
+.irs {
+  height: 26px;
+}
+
+.irs-with-grid {
+  height: 75px;
+}
+
+.irs-line {
+  top: 8px;
+  height: 10px;
+  background: gray("100");
+  border-radius: 5px;
+}
+
+.irs-line-left {
+  height: 8px;
+}
+
+.irs-line-mid {
+  height: 8px;
+}
+
+.irs-line-right {
+  height: 8px;
+}
+
+.irs-bar {
+  top: 8px;
+  height: 10px;
+  background: theme-color("primary");
+}
+.irs-bar-edge {
+  top: 8px;
+  width: 14px;
+  height: 10px;
+  background: theme-color("primary");
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.irs-slider {
+  top: 0;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  background: theme-color("primary");
+  border: 1px solid theme-color("primary");
+  border-radius: 50%;
+}
+
+.irs-min,
+.irs-max,
+.irs-single {
+  font-size: 14px;
+  font-weight: $font-weight-medium;
+  line-height: 26px;
+  color: color("white");
+}
+
+.irs-single {
+  z-index: 2;
+}

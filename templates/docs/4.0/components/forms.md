@@ -168,6 +168,15 @@ Textual `stretchy` class on input.
 </div>
 {% endexample %}
 
+## Rangle slider
+
+{% example html %}
+<div data-component="range-slider">
+  <div id="range_01">
+  </div>
+</div>
+{% endexample %}
+
 ## Chips
 
 {% example html %}

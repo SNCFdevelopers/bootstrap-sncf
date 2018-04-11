@@ -8,6 +8,7 @@ import {
 import Chips from './components/chips'
 import Control from './components/control'
 import Picker from './components/picker'
+import RangeSlider from './components/rangeSliders'
 import Searchbar from './components/searchbar'
 import SelectExclusive from './components/selectExclusive'
 import SelectMultiple from './components/selectMultiple'
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataChips = 'chips'
   const dataControl = 'control'
   const dataPicker = 'picker'
+  const dataRangeSlider = 'range-slider'
   const dataSearchbar = 'searchbar'
   const dataSelectExclusive = 'select-exclusive'
   const dataSelectMultiple = 'select-multiple'
@@ -59,6 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataPicker) {
       new Picker(component)
+    }
+
+    if (component.dataset.component === dataRangeSlider) {
+      new RangeSlider(component)
     }
 
     if (component.dataset.component === dataSearchbar) {
