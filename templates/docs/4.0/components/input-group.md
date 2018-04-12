@@ -80,3 +80,49 @@ toc: true
   </div>
 </div>
 {% endexample %}
+
+## Advanced search
+
+{% example html %}
+<label class="font-weight-medium mb-2">Search</label>
+<div class="advanced-search active">
+  <div class="advanced-search-control">
+    <div class="input-group">
+      <div class="form-control-container">
+        <input type="text" class="form-control" placeholder="Enter text">
+        <span class="form-control-state"></span>
+      </div>
+      <div class="input-group-append input-group-last">
+        <button type="button" class="btn btn-primary btn-only-icon active">
+          <i class="icons-search"></i>
+        </button>
+      </div>
+    </div>
+    <div class="advanced-search-menu" data-role="menu">
+      <div class="advanced-search-menu-item advanced-search-menu-title">
+        <span>Recherche enregistrée</span>
+      </div>
+      <div class="advanced-search-menu-item">
+        <button type="button" class="btn btn-link">Sem Inceptos Tellus</button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+      </div>
+      <div class="advanced-search-menu-item">
+        <button type="button" class="btn btn-link">Sollicitudin Adipiscing Mattis</button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+      </div>
+      <div class="advanced-search-menu-item advanced-search-menu-title">
+        <span>Recherche récentes</span>
+        <button type="button" class="btn btn-link">Tout effacer</button>
+      </div>
+      <div class="advanced-search-menu-item">
+        <button type="button" class="btn btn-link">Amet Porta</button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+      </div>
+      <div class="advanced-search-menu-item">
+        <button type="button" class="btn btn-link">Pharetra Fusce Venenatis</button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}

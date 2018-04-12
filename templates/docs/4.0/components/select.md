@@ -12,7 +12,7 @@ TODO : description
 
 {% example html %}
 <label class="font-weight-medium mb-2" for="exampleFormControlSelect1">Example select</label>
-<div class="select-improved active" data-component="select-exclusive">
+<div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <div class="form-control is-placeholder" data-role="placeholder">

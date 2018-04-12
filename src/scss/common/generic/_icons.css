@@ -1,10 +1,10 @@
 @font-face {
     font-family: "icons";
-    src: url("../assets/fonts/icons/icons.eot?c1ad4cba970f8006fb830b0c3a2497d6?#iefix") format("embedded-opentype"),
-url("../assets/fonts/icons/icons.woff2?c1ad4cba970f8006fb830b0c3a2497d6") format("woff2"),
-url("../assets/fonts/icons/icons.woff?c1ad4cba970f8006fb830b0c3a2497d6") format("woff"),
-url("../assets/fonts/icons/icons.ttf?c1ad4cba970f8006fb830b0c3a2497d6") format("truetype"),
-url("../assets/fonts/icons/icons.svg?c1ad4cba970f8006fb830b0c3a2497d6#icons") format("svg");
+    src: url("../assets/fonts/icons/icons.eot?36c7e27b57fa3937767b02fa5be04140?#iefix") format("embedded-opentype"),
+url("../assets/fonts/icons/icons.woff2?36c7e27b57fa3937767b02fa5be04140") format("woff2"),
+url("../assets/fonts/icons/icons.woff?36c7e27b57fa3937767b02fa5be04140") format("woff"),
+url("../assets/fonts/icons/icons.ttf?36c7e27b57fa3937767b02fa5be04140") format("truetype"),
+url("../assets/fonts/icons/icons.svg?36c7e27b57fa3937767b02fa5be04140#icons") format("svg");
 }
 
 i {
@@ -48,87 +48,90 @@ i:before {
 .icons-check:before {
     content: "\f10a";
 }
-.icons-close:before {
+.icons-close-circle:before {
     content: "\f10b";
 }
-.icons-collection:before {
+.icons-close:before {
     content: "\f10c";
 }
-.icons-delete:before {
+.icons-collection:before {
     content: "\f10d";
 }
-.icons-distribution:before {
+.icons-delete:before {
     content: "\f10e";
 }
-.icons-divers:before {
+.icons-distribution:before {
     content: "\f10f";
 }
-.icons-document:before {
+.icons-divers:before {
     content: "\f110";
 }
-.icons-download:before {
+.icons-document:before {
     content: "\f111";
 }
-.icons-earth-underline:before {
+.icons-download:before {
     content: "\f112";
 }
-.icons-edit:before {
+.icons-earth-underline:before {
     content: "\f113";
 }
-.icons-external-link:before {
+.icons-edit:before {
     content: "\f114";
 }
-.icons-favorite-on:before {
+.icons-external-link:before {
     content: "\f115";
 }
-.icons-filters:before {
+.icons-favorite-on:before {
     content: "\f116";
 }
-.icons-interrogation:before {
+.icons-filters:before {
     content: "\f117";
 }
-.icons-liste:before {
+.icons-interrogation:before {
     content: "\f118";
 }
-.icons-message:before {
+.icons-liste:before {
     content: "\f119";
 }
-.icons-mosaic:before {
+.icons-message:before {
     content: "\f11a";
 }
-.icons-options:before {
+.icons-mosaic:before {
     content: "\f11b";
 }
-.icons-restore:before {
+.icons-options:before {
     content: "\f11c";
 }
-.icons-sami-confused:before {
+.icons-restore:before {
     content: "\f11d";
 }
-.icons-sami-grin:before {
+.icons-sami-confused:before {
     content: "\f11e";
 }
-.icons-sami-sad:before {
+.icons-sami-grin:before {
     content: "\f11f";
 }
-.icons-sami-smile:before {
+.icons-sami-sad:before {
     content: "\f120";
 }
-.icons-schedule:before {
+.icons-sami-smile:before {
     content: "\f121";
 }
-.icons-search:before {
+.icons-schedule:before {
     content: "\f122";
 }
-.icons-share:before {
+.icons-search:before {
     content: "\f123";
 }
-.icons-sort:before {
+.icons-share:before {
     content: "\f124";
 }
-.icons-support:before {
+.icons-sort:before {
     content: "\f125";
 }
-.icons-tag:before {
+.icons-support:before {
     content: "\f126";
+}
+.icons-tag:before {
+    content: "\f127";
 }
