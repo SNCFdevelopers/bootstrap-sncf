@@ -1,3 +1,4 @@
+/* https://github.com/IonDen/ion.rangeSlider/ */
 import $ from 'jquery'
 /* eslint-disable no-unused-vars */
 import ionRangeSlider from 'ion-rangeslider'
@@ -10,8 +11,8 @@ import ionRangeSlider from 'ion-rangeslider'
  */
 
 class RangeSlider {
-  constructor() {
-    $('#range_01').ionRangeSlider({
+  constructor(element) {
+    $(element.dataset.target).ionRangeSlider({
       /* eslint-disable camelcase */
       hide_min_max: true
       // hide_from_to: true

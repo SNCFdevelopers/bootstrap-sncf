@@ -171,9 +171,20 @@ Textual `stretchy` class on input.
 ## Rangle slider
 
 {% example html %}
-<div data-component="range-slider">
-  <div id="range_01">
+<div class="range-slider" data-component="range-slider" data-target="#range_01">
+  <i class="icons-interrogation icon-size-1x25 pr-2"></i>
+  <div id="range_01" data-min="25" data-max="125" data-hide-from-to="true">
   </div>
+  <i class="icons-interrogation icon-size-1x25 pl-2"></i>
+</div>
+{% endexample %}
+
+{% example html %}
+<div class="range-slider" data-component="range-slider" data-target="#range_02">
+  <span class="d-inline-block pr-2">25</span>
+  <div id="range_02" data-min="25" data-max="125" data-type="double" data-from="50" data-to="100">
+  </div>
+  <span class="d-inline-block pl-2">125</span>
 </div>
 {% endexample %}
 
