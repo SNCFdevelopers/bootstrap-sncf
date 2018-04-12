@@ -135,28 +135,28 @@ Textual `stretchy` class on input.
 <div class="form-group">
   <label class="font-weight-medium mb-1" for="exampleFormControlTextarea3">Example textarea</label>
   <div class="form-toolbar mb-1">
-    <button type="button" class="toolbar-item">
+    <button type="button" class="form-toolbar-item">
       <span class="sr-only">Bold</span>
       B
     </button>
-    <button type="button" class="toolbar-item">
+    <button type="button" class="form-toolbar-item">
       <span class="sr-only">Italic</span>
       I
     </button>
-    <button type="button" class="toolbar-item">
+    <button type="button" class="form-toolbar-item">
       <span class="sr-only">Italic</span>
       U
     </button>
-    <span class="toolbar-separator"></span>
-    <button type="button" class="toolbar-item">
+    <span class="form-toolbar-separator"></span>
+    <button type="button" class="form-toolbar-item">
       <span class="sr-only">Underline</span>
       <i class="icons-search"></i>
     </button>
-    <button type="button" class="toolbar-item">
+    <button type="button" class="form-toolbar-item">
       <span class="sr-only">Underline</span>
       <i class="icons-search"></i>
     </button>
-    <button type="button" class="toolbar-item">
+    <button type="button" class="form-toolbar-item">
       <span class="sr-only">Underline</span>
       <i class="icons-search"></i>
     </button>

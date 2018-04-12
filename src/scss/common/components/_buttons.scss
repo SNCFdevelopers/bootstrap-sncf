@@ -153,7 +153,8 @@ fieldset:disabled a.btn {
 //
 
 .btn-sm {
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  font-weight: $font-weight-medium;
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-base, $btn-line-height-sm, $btn-border-radius-sm);
 }
 
 
@@ -317,4 +318,14 @@ input[type="button"] {
     theme-color("primary-dark"), theme-color("primary-dark"), color("white"),
     theme-color("primary"), theme-color("primary"), color("white")
   );
+}
+
+
+//
+// Button color
+//
+
+.btn-color-gray {
+  color: gray("500");
+  @include hover-focus-active { color: theme-color("primary"); }
 }

@@ -19,9 +19,14 @@
       width: rem(1px);
       height: rem(22px);
       content: "";
-      background-color: rgba(255, 255, 255, .1);
+      background-color: #e6e6e6;
     }
   }
+}
+
+.toolbar-item-spacing {
+  padding-right: rem(20px);
+  padding-left: rem(20px);
 }
 
 @each $breakpoint in map-keys($grid-breakpoints) {

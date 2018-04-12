@@ -409,3 +409,22 @@
     color: $gray-900; // Effectively the base text color
   }
 }
+
+
+//
+// Override
+//
+
+.bd-example {
+  .actionbar,
+  .mastheader {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .actionbar {
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .1);
+  }
+}
