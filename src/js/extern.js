@@ -1,4 +1,5 @@
 import 'bootstrap'
+import './utils/dragscroll.js'
 import './utils/stretchy.js'
 import * as tuichart from 'tui-chart'
 import {

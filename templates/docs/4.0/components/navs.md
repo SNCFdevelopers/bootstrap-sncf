@@ -80,15 +80,21 @@ toc: true
       </li>
     </ul>
   </div>
-  <ul class="navtabs mt-2 mb-0 d-none d-md-flex">
+  <ul class="navtabs mt-2 mb-0 dragscroll">
     <li class="navtabs-item pr-4">
-      <a href="#" class="active pt-1 pb-3">Titre onglet</a>
+      <a href="#" class="active">Titre onglet</a>
     </li>
     <li class="navtabs-item pr-4">
-      <a href="#" class="pt-1 pb-3">Titre onglet</a>
+      <a href="#">Titre onglet</a>
     </li>
     <li class="navtabs-item pr-4">
-      <a href="#" class="pt-1 pb-3">Titre onglet</a>
+      <a href="#">Titre onglet</a>
+    </li>
+    <li class="navtabs-item pr-4">
+      <a href="#">Titre onglet</a>
+    </li>
+    <li class="navtabs-item pr-4">
+      <a href="#">Titre onglet</a>
     </li>
   </ul>
 </div>
