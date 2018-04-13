@@ -133,15 +133,15 @@ The `.disabled` class uses `pointer-events: none` to try to disable the link fun
 ## Button illustration
 
 {% example html %}
-<button type="button" class="btn btn-card" data-toggle="button">
+<button type="button" class="btn btn-card">
   <i class="icons-earth-underline icon-size-4x50"></i>
   <span>Défaut</span>
 </button>
-<button type="button" class="btn btn-card active" data-toggle="button">
+<button type="button" class="btn btn-card active">
   <i class="icons-earth-underline icon-size-4x50"></i>
   <span>Sélectionné</span>
 </button>
-<button type="button" class="btn btn-card" data-toggle="button" disabled>
+<button type="button" class="btn btn-card" disabled>
   <i class="icons-earth-underline icon-size-4x50"></i>
   <span>Inactif</span>
 </button>
