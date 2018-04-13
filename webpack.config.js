@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
-const theme = process.env.theme || 'extern';
+const theme = process.env.theme || 'intern';
 
 module.exports = {
   entry: [

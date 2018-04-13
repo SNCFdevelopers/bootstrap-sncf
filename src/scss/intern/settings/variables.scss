@@ -1,0 +1,24 @@
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$h1-font-size:                $font-size-base * 2.625;
+$h2-font-size:                $font-size-base * 1.5;
+$h3-font-size:                $font-size-base * 1.5;
+
+$h1-line-height:              1.1428571429;
+$headings-line-height:        1.25;
+$h1-font-weight:              $font-weight-light;
+$h2-font-weight:              $font-weight-light;
+$h3-font-weight:              $font-weight-base;
+
+$display1-size:               $font-size-base * 3;
+$display1-line-height:        1.125;
+$display2-size:               $h2-font-size;
+$display3-size:               $h3-font-size;
+
+$display1-weight:             $font-weight-light;
+$display2-weight:             $font-weight-base;
+$display3-weight:             $font-weight-medium;
+
+$display-line-height:         $headings-line-height;
