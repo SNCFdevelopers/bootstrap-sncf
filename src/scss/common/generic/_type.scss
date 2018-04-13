@@ -11,7 +11,7 @@ h1,
   line-height: $h1-line-height;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
   h1,
   .h1 {
     font-size: $h1-font-size-md;

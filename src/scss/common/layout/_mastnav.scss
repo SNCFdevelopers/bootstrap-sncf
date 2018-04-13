@@ -53,7 +53,7 @@
     justify-content: space-between;
     width: rem(100px);
     height: 100vh;
-    padding-top: rem(66px);
+    padding-top: $mastheader-height-lg;
     background-color: theme-color("primary");
   }
 
@@ -84,5 +84,11 @@
       margin-right: rem(8px);
       margin-bottom: 0;
     }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .mastnav {
+    padding-top: $mastheader-height-xl;
   }
 }

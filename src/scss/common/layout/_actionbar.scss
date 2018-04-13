@@ -18,9 +18,11 @@ $actionbar-max-height-xl:   rem(105px);
 
 .actionbar {
   position: fixed;
+  top: $mastheader-height;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
   height: $actionbar-min-height;
   padding-right: rem(20px);
   padding-left: rem(20px);
@@ -44,12 +46,6 @@ $actionbar-max-height-xl:   rem(105px);
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  // padding-top: rem(20px);
-  // padding-bottom: rem(7px);
-
-  // &:last-child {
-  //   padding-bottom: rem(20px);
-  // }
 
   h1,
   .h1 {
@@ -68,22 +64,15 @@ $actionbar-max-height-xl:   rem(105px);
   }
 }
 
-@include media-breakpoint-down(md) {
-  .actionbar {
-    top: rem(76px);
-    width: 100%;
-  }
-}
-
 @include media-breakpoint-down(sm) {
   .actionbar {
-    top: rem(60px);
     border-bottom: 1px solid #d8d8d8;
   }
 }
 
 @include media-breakpoint-up(md) {
   .actionbar {
+    top: $mastheader-height-md;
     height: $actionbar-min-height-md;
   }
 
@@ -95,6 +84,9 @@ $actionbar-max-height-xl:   rem(105px);
 
 @include media-breakpoint-up(lg) {
   .actionbar {
+    top: $mastheader-height-lg;
+    right: 0;
+    width: calc(100% - #{rem(100px)});
     height: $actionbar-min-height-lg;
     padding-right: rem(12px);
     padding-left: rem(40px);
@@ -107,10 +99,10 @@ $actionbar-max-height-xl:   rem(105px);
 
 @include media-breakpoint-up(xl) {
   .actionbar {
-    top: rem(66px);
-    right: 0;
-    width: calc(100% - #{rem(100px)});
+    top: $mastheader-height-xl;
     height: $actionbar-min-height-xl;
+    padding-right: rem(30px);
+    padding-left: rem(30px);
   }
 
   .actionbar-lg {

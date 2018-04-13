@@ -41,8 +41,7 @@
         dragged = [].slice.call(_document.getElementsByClassName('dragscroll'));
         for (i = 0; i < dragged.length;) {
             (function(el, lastClientX, lastClientY, pushed, scroller, cont){
-
-                if (el.scrollLeft === el.scrollLeftMax) {
+                if (el.scrollLeft === el.scrollLeftMax && el.scrollLeftMax !== 0) {
                     el.classList.add('scroll-left-max')
                     el.classList.remove('scroll-left-min')
                 } else if (el.scrollLeft === 0) {

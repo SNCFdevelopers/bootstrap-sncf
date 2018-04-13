@@ -91,7 +91,7 @@ description: Navigation template.
     </a>
   </div>
 </nav>
-<div class="actionbar">
+<div class="actionbar actionbar-lg d-none d-md-flex">
   <div class="actionbar-head">
     <h1 class="mb-0">Titre section</h1>
     <ul class="toolbar mb-0">
@@ -134,17 +134,19 @@ description: Navigation template.
       </li>
     </ul>
   </div>
-  <ul class="navtabs mb-0">
-    <li class="navtabs-item pr-4">
-      <a href="#" class="active pt-1 pb-3">Titre onglet</a>
-    </li>
-    <li class="navtabs-item pr-4">
-      <a href="#" class="pt-1 pb-3">Titre onglet</a>
-    </li>
-    <li class="navtabs-item pr-4">
-      <a href="#" class="pt-1 pb-3">Titre onglet</a>
-    </li>
-  </ul>
+  <div class="position-relative mt-2">
+    <ul class="navtabs mb-0">
+      <li class="navtabs-item pr-4">
+        <a href="#" class="active pt-1 pb-3">Titre onglet</a>
+      </li>
+      <li class="navtabs-item pr-4">
+        <a href="#" class="pt-1 pb-3">Titre onglet</a>
+      </li>
+      <li class="navtabs-item pr-4">
+        <a href="#" class="pt-1 pb-3">Titre onglet</a>
+      </li>
+    </ul>
+  </div>
 </div>
 <main div class="mastcontainer">
   <p>Content</p>
