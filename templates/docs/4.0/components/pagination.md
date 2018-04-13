@@ -15,11 +15,11 @@ In addition, as pages likely have more than one such navigation section, it's ad
 {% example html %}
 <nav aria-label="Page navigation example">
   <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item page-skip"><a class="page-link" href="#">Previous</a></li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    <li class="page-item page-skip"><a class="page-link" href="#">Next</a></li>
   </ul>
 </nav>
 {% endexample %}
@@ -31,7 +31,7 @@ Looking to use an icon or symbol in place of text for some pagination links? Be 
 {% example html %}
 <nav aria-label="Page navigation example">
   <ul class="pagination">
-    <li class="page-item">
+    <li class="page-item page-skip">
       <a class="page-link" href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
         <span class="sr-only">Previous</span>
@@ -40,7 +40,7 @@ Looking to use an icon or symbol in place of text for some pagination links? Be 
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
+    <li class="page-item page-skip">
       <a class="page-link" href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
         <span class="sr-only">Next</span>
@@ -59,7 +59,7 @@ While the `.disabled` class uses `pointer-events: none` to _try_ to disable the 
 {% example html %}
 <nav aria-label="...">
   <ul class="pagination">
-    <li class="page-item disabled">
+    <li class="page-item page-skip disabled">
       <a class="page-link" href="#" tabindex="-1">Previous</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -67,7 +67,7 @@ While the `.disabled` class uses `pointer-events: none` to _try_ to disable the 
       <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
     </li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
+    <li class="page-item page-skip">
       <a class="page-link" href="#">Next</a>
     </li>
   </ul>
@@ -79,7 +79,7 @@ You can optionally swap out active or disabled anchors for `<span>`, or omit the
 {% example html %}
 <nav aria-label="...">
   <ul class="pagination">
-    <li class="page-item disabled">
+    <li class="page-item page-skip disabled">
       <span class="page-link">Previous</span>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -90,7 +90,7 @@ You can optionally swap out active or disabled anchors for `<span>`, or omit the
       </span>
     </li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
+    <li class="page-item page-skip">
       <a class="page-link" href="#">Next</a>
     </li>
   </ul>
@@ -132,13 +132,13 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
 {% example html %}
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
+    <li class="page-item page-skip disabled">
       <a class="page-link" href="#" tabindex="-1">Previous</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
+    <li class="page-item page-skip">
       <a class="page-link" href="#">Next</a>
     </li>
   </ul>
@@ -148,13 +148,13 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
 {% example html %}
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-end">
-    <li class="page-item disabled">
+    <li class="page-item page-skip disabled">
       <a class="page-link" href="#" tabindex="-1">Previous</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
+    <li class="page-item page-skip">
       <a class="page-link" href="#">Next</a>
     </li>
   </ul>

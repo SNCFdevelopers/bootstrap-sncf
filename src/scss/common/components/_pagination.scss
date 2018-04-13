@@ -1,0 +1,40 @@
+/* pagination
+   ========================================================================== */
+
+.page-item {
+  padding-right: rem(4px);
+  padding-left: rem(4px);
+
+  &.active .page-link {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: rem(2px);
+      content: "";
+      background-color: theme-color("primary");
+      border-radius: 2px;
+    }
+  }
+
+  + .page-skip {
+    padding-left: rem(30px);
+  }
+}
+
+.page-link {
+  font-size: rem(14px);
+}
+
+.page-skip {
+  &:not(:last-child) {
+    padding-right: rem(30px);
+  }
+
+  &:not(.disabled) .page-link {
+    color: $link-color;
+  }
+}
