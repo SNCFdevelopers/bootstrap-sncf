@@ -22,13 +22,11 @@
 @import "intern/generic/type";
 
 // objects
-@import "~bootstrap/scss/grid";
+@import "intern/layout/grid";
 @import "~bootstrap/scss/tables";
 
 // layouts
-@import "common/layout/mastheader";
-@import "common/layout/actionbar";
-@import "common/layout/mastnav";
+@import "intern/layout/mastheader";
 
 // components
 @import "~bootstrap/scss/images";

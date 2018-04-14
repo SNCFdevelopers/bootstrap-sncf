@@ -5,9 +5,9 @@
   "sideEffects": false,
   "main": "index.js",
   "scripts": {
-    "watch-intern": "webpack --watch",
+    "watch-intern": "webpack --env.theme=intern --watch",
     "watch-extern": "webpack --env.theme=extern --watch",
-    "build-intern": "webpack",
+    "build-intern": "webpack --env.theme=intern",
     "build-extern": "webpack --env.theme=extern",
     "prod": "webpack -p",
     "docs-compile-intern": "bundle exec jekyll build --config _config.intern.yml",

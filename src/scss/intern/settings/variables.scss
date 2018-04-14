@@ -22,3 +22,10 @@ $display2-weight:             $font-weight-base;
 $display3-weight:             $font-weight-medium;
 
 $display-line-height:         $headings-line-height;
+
+$font-size-lg:                $font-size-base * 1.125;
+$font-size-sm:                $font-size-base * .875;
+
+$container-max-width:         1004px;
+
+$grid-gutter-width:           40px;

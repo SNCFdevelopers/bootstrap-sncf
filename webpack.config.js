@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = env => {
-  const theme = env.theme || 'intern';
+  const theme = env.theme;
 
   return {
     entry: [
