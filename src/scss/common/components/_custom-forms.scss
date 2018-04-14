@@ -229,3 +229,9 @@
   }
   // stylelint-enable selector-no-qualifying-type
 }
+
+.options-control-lg {
+  .options-btn {
+    padding: rem(10px) rem(20px);
+  }
+}

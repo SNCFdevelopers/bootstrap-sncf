@@ -31,12 +31,19 @@ All HTML headings, `<h1>` through `<h2>`, are available.
       </td>
       <td><span class="h2">h2. Bootstrap heading</span></td>
     </tr>
+    <tr>
+      <td>
+        {% markdown %}`<h3></h3>`{% endmarkdown %}
+      </td>
+      <td><span class="h3">h3. Bootstrap heading</span></td>
+    </tr>
   </tbody>
 </table>
 
 {% highlight html %}
 <h1>h1. Bootstrap heading</h1>
 <h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h2>
 {% endhighlight %}
 
 `.h1` through `.h2` classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
@@ -44,6 +51,7 @@ All HTML headings, `<h1>` through `<h2>`, are available.
 {% example html %}
 <p class="h1">h1. Bootstrap heading</p>
 <p class="h2">h2. Bootstrap heading</p>
+<p class="h3">h3. Bootstrap heading</p>
 {% endexample %}
 
 ## Display headings
@@ -54,14 +62,22 @@ Traditional heading elements are designed to work best in the meat of your page 
   <table class="table">
     <tbody>
       <tr>
-        <td><span class="display-1">Display 1</span></td>
+        <td><span class="display-1 text-primary">Display 1</span></td>
+      </tr>
+      <tr>
+        <td><span class="display-2">Display 2</span></td>
+      </tr>
+      <tr>
+        <td><span class="display-3 text-primary">Display 3</span></td>
       </tr>
     </tbody>
   </table>
 </div>
 
 {% highlight html %}
-<h1 class="display-1">Display 1</h1>
+<h1 class="display-1 text-primary">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3 text-primary">Display 3</h1>
 {% endhighlight %}
 
 ## Lead
