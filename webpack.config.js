@@ -5,20 +5,27 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = env => {
   const theme = env.theme;
+  const production = env.production;
+  const entry = [
+    path.resolve(__dirname, `src/js/${theme}.js`),
+    path.resolve(__dirname, `src/scss/${theme}.scss`)
+  ];
+  let outputPath = path.resolve(__dirname, 'dist');
+
+  if (!production) {
+    entry.push(path.resolve(__dirname, 'src/js/docs.js'));
+    entry.push(path.resolve(__dirname, 'src/scss/docs.scss'));
+    outputPath = path.resolve(__dirname, '_gh_pages');
+  }
 
   return {
-    entry: [
-      path.resolve(__dirname, `src/js/${theme}.js`),
-      path.resolve(__dirname, 'src/js/docs.js'),
-      path.resolve(__dirname, `src/scss/${theme}.scss`),
-      path.resolve(__dirname, 'src/scss/docs.scss')
-    ],
+    entry,
     output: {
       filename: 'main.js',
-      path: path.resolve(__dirname, '_gh_pages')
+      path: outputPath
     },
-    devtool: 'source-map',
-    mode: 'development',
+    devtool: production ? 'none' : 'source-map',
+    mode: production ? 'production' : 'development',
     module: {
       rules: [
         {

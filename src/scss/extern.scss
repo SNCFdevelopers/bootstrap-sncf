@@ -4,6 +4,7 @@
 @import "~bootstrap/scss/functions";
 @import "common/tools/functions";
 @import "common/settings/variables";
+@import "extern/settings/variables";
 @import "common/tools/mixins";
 
 // vendors
@@ -18,16 +19,14 @@
 @import "common/generic/base";
 @import "common/generic/fonts";
 @import "common/generic/icons";
-@import "common/generic/type";
+@import "extern/generic/type";
 
 // objects
-@import "~bootstrap/scss/grid";
+@import "extern/layout/grid";
 @import "~bootstrap/scss/tables";
 
 // layouts
 @import "extern/layout/mastheader";
-@import "common/layout/actionbar";
-@import "common/layout/mastnav";
 
 // components
 @import "~bootstrap/scss/images";
