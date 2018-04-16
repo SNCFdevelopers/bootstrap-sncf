@@ -2,6 +2,7 @@
 layout: standalone
 title: Navigation
 description: Navigation template.
+permalink: /docs/4.0/pages/navigation
 ---
 
 <header class="mastheader">

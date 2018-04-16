@@ -4,6 +4,7 @@ title: Navs
 description: Documentation and examples for how to use Bootstrap's included navigation components.
 group: components
 toc: true
+permalink: /docs/4.0/components/navs
 ---
 
 ## Nav
