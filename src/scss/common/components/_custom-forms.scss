@@ -6,7 +6,8 @@
 // Base class takes care of all the key behavioral aspects.
 
 .custom-control-input {
-  &:not(:disabled):checked {
+  &:not(:disabled):checked,
+  &:not(:indeterminate):checked {
     ~ .custom-control-label{
       color: $custom-control-checked-color;
 
@@ -25,22 +26,26 @@
     }
   }
 
+  /* stylelint-disable declaration-no-important */
   &:disabled {
     ~ .custom-control-label,
+    &:indeterminate ~ .custom-control-label,
+    &:indeterminate:checked ~ .custom-control-label,
     &:checked ~ .custom-control-label {
-      color: $custom-control-label-disabled-color;
+      color: $custom-control-label-disabled-color !important;
 
       &::before {
-        border-color: $custom-control-indicator-checked-disabled-bg;
+        border-color: $custom-control-indicator-checked-disabled-bg !important;
       }
     }
 
     &:checked ~ .custom-control-label {
       &::before {
-        background-color: $custom-control-indicator-checked-disabled-bg;
+        background-color: $custom-control-indicator-checked-disabled-bg !important;
       }
     }
   }
+  /* stylelint-enable declaration-no-important */
 }
 
 // Custom control indicators
@@ -110,7 +115,7 @@
 
 .custom-checkbox {
   .custom-control-input {
-    &:indeterminate {
+    &:not(:disabled):not(.disabled):indeterminate {
       ~ .custom-control-label{
         color: $custom-control-checked-color;
 

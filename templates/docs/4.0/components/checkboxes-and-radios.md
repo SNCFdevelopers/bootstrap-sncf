@@ -92,20 +92,26 @@ $('.your-checkbox').prop('indeterminate', true)
 
 Custom checkboxes and radios can also be disabled. Add the `disabled` boolean attribute to the `<input>` and the custom indicator and label description will be automatically styled.
 
-{% example html %}
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled>
-  <label class="custom-control-label font-weight-medium" for="customCheckDisabled">Check this custom checkbox</label>
+  <input type="checkbox" class="custom-control-input" id="customCheckDisabled1" disabled>
+  <label class="custom-control-label font-weight-medium" for="customCheckDisabled1">Check this custom checkbox</label>
 </div>
 
 <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheckCheckedDisabled" disabled checked>
-  <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled">Check this custom checkbox</label>
+  <input type="checkbox" class="custom-control-input" id="customCheckCheckedDisabled2" disabled checked>
+  <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled2">Check this custom checkbox</label>
+</div>
+
+<div class="bd-example-indeterminate">
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheckCheckedDisabled3" disabled>
+    <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled3">Check this custom checkbox</label>
+  </div>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" id="radio3" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
-  <label class="custom-control-label font-weight-medium" for="customRadioDisabled">Toggle this custom radio</label>
+  <input type="radio" id="radio3" name="radioDisabled" id="customCheckCheckedDisabled4" class="custom-control-input" disabled>
+  <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled4">Toggle this custom radio</label>
 </div>
 
 <div class="mt-2">
@@ -125,4 +131,3 @@ Custom checkboxes and radios can also be disabled. Add the `disabled` boolean at
     <label class="options-btn font-weight-medium" for="optionsRadio4">Option 2</label>
   </div>
 </div>
-{% endexample %}
