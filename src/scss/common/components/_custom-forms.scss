@@ -139,6 +139,7 @@
 // Switch
 //
 // Binary checkboxe.
+
 .switch-control {
   position: relative;
   display: inline-block;
@@ -186,9 +187,25 @@
     }
   }
 
+  input:not([disabled]):checked + & {
+    background-color: theme-color("primary");
+
+    &::before {
+      background-color: color("white");
+    }
+  }
+
   // stylelint-disable selector-no-qualifying-type
   input[disabled] + & {
     cursor: initial;
+
+    &::before {
+      background-color: gray("300");
+    }
+  }
+
+  input[disabled]:checked + & {
+    background-color: gray("300");
 
     &::before {
       background-color: color("white");

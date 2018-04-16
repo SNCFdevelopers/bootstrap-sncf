@@ -55,7 +55,12 @@ $('.your-checkbox').prop('indeterminate', true)
 
 {% example html %}
 <label class="switch-control">
-  <input type="checkbox" class="sr-only" >
+  <input type="checkbox" class="sr-only">
+  <span class="switch-control-slider"></span>
+</label>
+
+<label class="switch-control">
+  <input type="checkbox" class="sr-only" checked>
   <span class="switch-control-slider"></span>
 </label>
 {% endexample %}
@@ -117,6 +122,13 @@ Custom checkboxes and radios can also be disabled. Add the `disabled` boolean at
 <div class="mt-2">
   <label class="switch-control">
     <input type="checkbox" class="sr-only" disabled>
+    <span class="switch-control-slider"></span>
+  </label>
+</div>
+
+<div class="mt-2">
+  <label class="switch-control">
+    <input type="checkbox" class="sr-only" checked disabled>
     <span class="switch-control-slider"></span>
   </label>
 </div>
