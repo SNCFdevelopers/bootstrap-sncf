@@ -1,0 +1,17 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .text#{$infix}-sm {
+      font-size: $font-size-sm;
+    }
+
+    .text#{$infix}-base {
+      font-size: $font-size-base;
+    }
+
+    .text#{$infix}-lg {
+      font-size: $font-size-lg;
+    }
+  }
+}

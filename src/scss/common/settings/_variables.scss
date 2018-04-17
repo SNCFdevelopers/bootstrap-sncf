@@ -378,7 +378,7 @@ $hr-margin-y:                 $spacer;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          .75rem;
+$table-cell-padding:          .563rem 1.25rem;
 $table-cell-padding-sm:       .3rem;
 
 $table-bg:                    transparent;
@@ -387,10 +387,10 @@ $table-hover-bg:              rgba($black, .075);
 $table-active-bg:             $table-hover-bg;
 
 $table-border-width:          $border-width;
-$table-border-color:          $gray-300;
+$table-border-color:          #d8d8d8;
 
-$table-head-bg:               $gray-200;
-$table-head-color:            $gray-700;
+$table-head-bg:               $gray-100;
+$table-head-color:            $gray-600;
 
 $table-dark-bg:               $gray-900;
 $table-dark-accent-bg:        rgba($white, .05);

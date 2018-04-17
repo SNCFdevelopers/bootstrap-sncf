@@ -136,6 +136,20 @@
   }
 }
 
+.custom-checkbox-alone {
+  width: $custom-control-indicator-size;
+  height: $custom-control-indicator-size;
+  min-height: auto;
+  padding: 0;
+
+  .custom-control-label {
+    &::before,
+    &::after {
+      top: 0;
+    }
+  }
+}
+
 // Switch
 //
 // Binary checkboxe.

@@ -13,36 +13,72 @@ Due to the widespread use of tables across third-party widgets like calendars an
 Using the most basic table markup, here's how `.table`-based tables look in Bootstrap. **All table styles are inherited in Bootstrap 4**, meaning any nested tables will be styled in the same manner as the parent.
 
 {% example html %}
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <div class="table-scroller">
+    <table class="table">
+      <thead class="thead thead-light">
+        <tr>
+          <th>
+            <div class="custom-control custom-checkbox custom-checkbox-alone">
+              <input type="checkbox" class="custom-control-input" id="thead">
+              <label class="custom-control-label" for="thead"></label>
+            </div>
+          </th>
+          <th>Nom</th>
+          <th>Type</th>
+          <th>Vers</th>
+          <th>Agent</th>
+          <th>Mise à jour</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr>
+          <th>
+            <div class="custom-control custom-checkbox custom-checkbox-alone">
+              <input type="checkbox" class="custom-control-input" id="thead">
+              <label class="custom-control-label" for="thead"></label>
+            </div>
+          </th>
+          <td>Aorem ipsum dolor sit amet</td>
+          <td>Aenean commodo</td>
+          <td>1</td>
+          <td>Léon MICHEL</td>
+          <td>4 Avril 2017</td>
+          <td>options</td>
+        </tr>
+        <tr>
+          <th>
+            <div class="custom-control custom-checkbox custom-checkbox-alone">
+              <input type="checkbox" class="custom-control-input" id="thead">
+              <label class="custom-control-label" for="thead"></label>
+            </div>
+          </th>
+          <td>Aorem ipsum dolor sit amet</td>
+          <td>Aenean commodo</td>
+          <td>2</td>
+          <td>Léon MICHEL</td>
+          <td>14 Mars 2017</td>
+          <td>options</td>
+        </tr>
+        <tr>
+          <th>
+            <div class="custom-control custom-checkbox custom-checkbox-alone">
+              <input type="checkbox" class="custom-control-input" id="thead">
+              <label class="custom-control-label" for="thead"></label>
+            </div>
+          </th>
+          <td>Aorem ipsum dolor sit amet</td>
+          <td>Aenean commodo</td>
+          <td>3</td>
+          <td>Léon MICHEL</td>
+          <td>28 Fév. 2017</td>
+          <td>options</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 {% endexample %}
 
 You can also invert the colors—with light text on dark backgrounds—with `.table-dark`.
