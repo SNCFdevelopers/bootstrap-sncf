@@ -1,7 +1,7 @@
 /* actionbar
    ========================================================================== */
 
-$actionbar-height:    rem(62px);
+$actionbar-height:    rem(60px);
 
 // md/768 +
 $actionbar-height-md: rem(76px);
@@ -26,15 +26,11 @@ $actionbar-height-md: rem(76px);
   }
 }
 
-.actionbar-nav {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  font-weight: $font-weight-bold;
-  list-style: none;
-}
+//
+// nav
+//
 
-.actionbar-nav-link {
+.nav-item {
   display: flex;
   align-items: center;
   height: 100%;
@@ -44,38 +40,22 @@ $actionbar-height-md: rem(76px);
   border: none;
 }
 
-.actionbar-menu {
+//
+// menu
+//
+
+.menu {
   position: absolute;
-  top: $actionbar-height;
-  left: 0;
-  width: 100%;
+  z-index: $zindex-sticky;
   color: color("white");
   background-color: theme-color("primary");
 }
 
-.actionbar-menu-inner {
-  position: relative;
-}
-
-.actionbar-menu-secondary {
-  background-color: theme-color("primary-dark");
-}
-
 //
-// overlay's menu
+// subnav
 //
-.actionbar-menu-list {
-  padding: rem(30px) 0 0 0;
-  list-style: none;
-}
 
-.actionbar-menu-item {
-  + .actionbar-menu-item {
-    padding-top: rem(22px);
-  }
-}
-
-.actionbar-menu-link {
+.subnav-item {
   display: flex;
   align-items: center;
   padding: 0;
@@ -83,21 +63,19 @@ $actionbar-height-md: rem(76px);
   color: color("white");
   background-color: transparent;
   border: none;
+
+  + .subnav-item {
+    padding-top: rem(22px);
+  }
 }
 
+
+//
+// Mobile
+//
+
 @include media-breakpoint-down(sm) {
-  .actionbar-menu,
-  .actionbar-menu-secondary {
-    &:not(.active) {
-      display: none;
-    }
-  }
-
-  .actionbar-menu-lead {
-    display: none;
-  }
-
-  .actionbar-overlay {
+  .actionbar-menu {
     position: absolute;
     top: $actionbar-height;
     left: 0;
@@ -105,122 +83,192 @@ $actionbar-height-md: rem(76px);
     background-color: color("white");
   }
 
-  .actionbar-nav {
+  //
+  // nav
+  //
+
+  .nav {
+    display: flex;
     flex-direction: column;
   }
 
-  .actionbar-nav-item {
-    + .actionbar-nav-item {
+  .nav-item {
+    width: 100%;
+
+    + .nav-item {
       margin-top: rem(12px);
     }
   }
 
-  .actionbar-nav-link {
-    width: 100%;
-  }
+  //
+  // menu
+  //
 
-  .actionbar-menu {
-    position: absolute;
-    top: - $actionbar-height;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-  }
-
-  .actionbar-menu-primary {
-    min-height: 100vh;
-    overflow-y: auto;
-  }
-
-  .actionbar-menu-primary,
-  .actionbar-menu-secondary {
-    .actionbar {
-      background-color: color("white");
-      border-bottom: none;
-
-      h3 {
-        display: flex;
-        align-items: center;
-        font-size: rem(20px);
-        font-weight: $font-weight-light;
-      }
+  .menu {
+    > .container {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 
-  .actionbar-menu-content {
-    padding-top: $actionbar-height;
+  .panel-head,
+  .panel-content {
+    @include make-container();
+  }
+
+  .panel-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: $actionbar-height;
+    color: gray("600");
+    background-color: color("white");
+    border-bottom: 1px solid $border-color;
+
+    .h3 {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .panel-close {
+    position: relative;
+    color: gray("600");
+
+    &::before {
+      position: absolute;
+      top: calc(50% - #{rem(9px)});
+      left: 0;
+      display: block;
+      width: rem(1px);
+      height: rem(18px);
+      content: "";
+      background-color: #e6e6e6;
+    }
+  }
+
+  .panel-lead {
+    display: none;
+  }
+
+  .primary-panel,
+  .secondary-panel {
+    min-height: 100vh;
+    overflow-y: auto;
+
+    &:not(.active) {
+      display: none;
+    }
+  }
+
+  .primary-panel {
+    z-index: 2;
+  }
+
+  .secondary-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    background-color: theme-color("primary-dark");
   }
 }
+
+
+//
+// Desktop
+//
 
 @include media-breakpoint-up(md) {
   .actionbar {
     height: $actionbar-height-md;
   }
 
-  .actionbar-overlay,
-  .actionbar-overlay > .container,
-  .actionbar-nav,
-  .actionbar-nav-item {
+  .actionbar-menu,
+  .nav,
+  .nav-item {
     height: 100%;
   }
 
-  .actionbar-overlay {
+  .actionbar-menu {
     padding: 0 0 0 rem(50px);
-    > .container {
-      padding: 0;
-    }
   }
 
-  .actionbar-nav-item {
-    + .actionbar-nav-item .actionbar-nav-link {
+  //
+  // nav
+  //
+
+  .nav-item {
+    + .nav-item {
       padding-left: rem(40px);
     }
-  }
 
-  .actionbar-nav-link {
     [class^="icons-arrow-"] {
       transition: transform .15s ease-out;
     }
 
-    @include hover-focus-active {
+    &.active {
       [class^="icons-arrow-"] {
         transform: rotate(90deg);
       }
     }
   }
 
-  .actionbar-menu {
-    top: ($actionbar-height-md - rem(1px));
-    // display: none;
+  //
+  // menu
+  //
 
-    // .actionbar-nav-link:hover + &,
-    // &:hover {
-    //   display: block;
-    // }
+  .menu {
+    top: ($actionbar-height-md - rem(1px)); // minus border-bottom
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    font-weight: $font-weight-bold;
+
+    > .container {
+      display: flex;
+    }
   }
 
+  .menu-item {
+    padding-top: rem(50px);
+    padding-bottom: rem(50px);
+  }
 
-  .actionbar-menu-primary {
-    width: 61.7529880478%;
+  .panel-head {
+    display: none;
+  }
 
-    .actionbar {
+  .primary-panel,
+  .secondary-panel {
+    &:not(.active) {
       display: none;
     }
+  }
 
-    .actionbar-menu-content {
+  .primary-panel {
+    flex: 0 0 61.7529880478%;
+
+    .panel-content {
       display: flex;
-      justify-content: flex-between;
+      justify-content: space-between;
     }
 
-    .actionbar-menu-list {
+    .panel-lead {
+      max-width: rem(260px);
+    }
+
+    .subnav {
       position: relative;
       flex: 0 0 auto;
       padding-right: 12.904%;
       padding-left: 8.067%;
     }
 
-    .actionbar-menu-link {
-      @include hover-focus-active {
+    .subnav-item {
+      &.active {
         &::after {
           position: absolute;
           left: 100%;
@@ -237,12 +285,10 @@ $actionbar-height-md: rem(76px);
     }
   }
 
-  .actionbar-menu-secondary {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 38.2470119522%;
-    height: 100%;
+  .secondary-panel {
+    position: relative;
+    flex: 0 0 38.2470119522%;
+    background-color: theme-color("primary-dark");
 
     &:not(.active) {
       display: none;
@@ -259,25 +305,8 @@ $actionbar-height-md: rem(76px);
       background-color: theme-color("primary-dark");
     }
 
-    .actionbar-menu-list {
+    .panel-content {
       padding-left: 20.836%;
     }
-  }
-
-  .actionbar-menu-content {
-    padding-top: rem(50px);
-    padding-bottom: rem(50px);
-  }
-
-  .actionbar-menu-lead {
-    flex: 0 1 65%;
-    max-width: 350px;
-  }
-
-  //
-  // overlay's menu
-  //
-  .actionbar-menu-link {
-    font-size: $font-size-lg;
   }
 }
