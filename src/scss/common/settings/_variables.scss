@@ -528,12 +528,12 @@ $input-group-addon-border-color:        $input-border-color;
 $custom-control-gutter:                 1.5rem;
 $custom-control-spacer-x:               1rem;
 
-$custom-control-indicator-size:         1rem;
+$custom-control-indicator-size:         1.125rem; // 18px
 $custom-control-indicator-bg:           $white;
 $custom-control-indicator-bg-size:      50% 50%;
 $custom-control-indicator-box-shadow:   inset 0 .25rem .25rem rgba($black, .1);
 
-$custom-control-indicator-disabled-bg:          $gray-200;
+$custom-control-indicator-disabled-bg:    $gray-200;
 $custom-control-label-disabled-color:     $gray-600;
 
 $custom-control-indicator-checked-color:        $component-active-color;
