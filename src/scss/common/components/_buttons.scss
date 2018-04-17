@@ -326,6 +326,6 @@ input[type="button"] {
 //
 
 .btn-color-gray {
-  color: gray("500");
+  color: gray("600");
   @include hover-focus-active { color: theme-color("primary"); }
 }

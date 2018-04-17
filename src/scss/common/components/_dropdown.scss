@@ -181,3 +181,8 @@
 .dropdown-item {
   font-weight: $font-weight-medium;
 }
+
+.dropdown-menu-header {
+  padding: rem(30px);
+  background-color: gray("500");
+}

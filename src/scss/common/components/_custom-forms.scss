@@ -237,6 +237,7 @@
   padding: rem(6px) rem(20px) rem(5px);
   margin-bottom: 0;
   color: color("white");
+  white-space: nowrap;
   border-radius: $btn-border-radius;
 
   // stylelint-disable selector-no-qualifying-type

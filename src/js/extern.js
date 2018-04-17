@@ -8,6 +8,7 @@ import {
 } from './components/charts'
 import Chips from './components/chips'
 import Control from './components/control'
+import Header from './components/header'
 import Nav from './components/nav-extern'
 import Picker from './components/picker'
 import RangeSlider from './components/rangeSliders'
@@ -34,7 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataRadialChart = 'radial-chart'
   const dataChips = 'chips'
   const dataControl = 'control'
-  const dataMainNav = 'mainnav'
+  const dataMastheader = 'mastheader'
+  const dataMastnav = 'mastnav'
   const dataPicker = 'picker'
   const dataRangeSlider = 'range-slider'
   const dataSearchbar = 'searchbar'
@@ -62,7 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
       new Control(component)
     }
 
-    if (component.dataset.component === dataMainNav) {
+    if (component.dataset.component === dataMastheader) {
+      new Header(component)
+    }
+
+    if (component.dataset.component === dataMastnav) {
       new Nav(component)
     }
 

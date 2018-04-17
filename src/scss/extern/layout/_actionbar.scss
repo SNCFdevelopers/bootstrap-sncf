@@ -6,10 +6,14 @@ $actionbar-height:    rem(60px);
 // md/768 +
 $actionbar-height-md: rem(76px);
 
-.actionbar {
+.mastnav {
   position: fixed;
-  top: 0;
+  top: $mastheader-height;
   left: 0;
+  width: 100%;
+}
+
+.actionbar {
   width: 100%;
   height: $actionbar-height;
   color: gray("600");
@@ -154,7 +158,7 @@ $actionbar-height-md: rem(76px);
 
   .primary-panel,
   .secondary-panel {
-    min-height: 100vh;
+    min-height: calc(100vh - #{$mastheader-height});
     overflow-y: auto;
 
     &:not(.active) {
@@ -193,6 +197,7 @@ $actionbar-height-md: rem(76px);
   }
 
   .actionbar-menu {
+    flex: 1 1 100%;
     padding: 0 0 0 rem(50px);
   }
 
@@ -221,7 +226,7 @@ $actionbar-height-md: rem(76px);
   //
 
   .menu {
-    top: ($actionbar-height-md - rem(1px)); // minus border-bottom
+    top: calc(100% - #{rem(1px)}); // minus border-bottom
     left: 0;
     width: 100%;
     overflow: hidden;
