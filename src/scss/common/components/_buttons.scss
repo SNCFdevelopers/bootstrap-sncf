@@ -118,35 +118,6 @@ fieldset:disabled a.btn {
   // No need for an active state here
 }
 
-//
-// Button icon
-//
-.btn-only-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: rem(50px);
-  min-height: $input-btn-height;
-  padding: 0;
-
-  &.active {
-    [class^="icons-arrow-"] {
-      transform: rotate(180deg);
-    }
-  }
-
-  [class^="icons-arrow-"] {
-    transition: transform .15s ease-out;
-  }
-
-  &.btn-white.disabled,
-  &.btn-white:disabled {
-    color: gray("300");
-    background-color: color("white");
-    border-color: color("white");
-  }
-}
-
 
 //
 // Button sizes
@@ -178,6 +149,37 @@ input[type="reset"],
 input[type="button"] {
   &.btn-block {
     width: 100%;
+  }
+}
+
+
+//
+// Button icon
+//
+
+.btn-only-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: rem(50px);
+  min-height: $input-btn-height;
+  padding: 0;
+
+  &.active {
+    [class^="icons-arrow-"] {
+      transform: rotate(180deg);
+    }
+  }
+
+  [class^="icons-arrow-"] {
+    transition: transform .15s ease-out;
+  }
+
+  &.btn-white.disabled,
+  &.btn-white:disabled {
+    color: gray("300");
+    background-color: color("white");
+    border-color: color("white");
   }
 }
 
@@ -262,7 +264,10 @@ input[type="button"] {
 // Button favorite
 //
 
-.btn-favorite {
+.btn.btn-favorite {
+  color: gray("300");
+
+  &:hover,
   &.active {
     color: #ffb612;
   }

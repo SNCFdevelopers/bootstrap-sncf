@@ -20,6 +20,7 @@
     var _window = window;
     var _document = document;
     var mousemove = 'mousemove';
+    var scroll = 'scroll';
     var mouseup = 'mouseup';
     var mousedown = 'mousedown';
     var EventListener = 'EventListener';
@@ -35,21 +36,26 @@
             el[removeEventListener](mousedown, el.md, 0);
             _window[removeEventListener](mouseup, el.mu, 0);
             _window[removeEventListener](mousemove, el.mm, 0);
+            _window[removeEventListener](scroll, el.sc, 0);
         }
 
         // cloning into array since HTMLCollection is updated dynamically
         dragged = [].slice.call(_document.getElementsByClassName('dragscroll'));
         for (i = 0; i < dragged.length;) {
             (function(el, lastClientX, lastClientY, pushed, scroller, cont){
-                if (el.scrollLeft === el.scrollLeftMax && el.scrollLeftMax !== 0) {
-                    el.classList.add('scroll-left-max')
-                    el.classList.remove('scroll-left-min')
-                } else if (el.scrollLeft === 0) {
-                    el.classList.add('scroll-left-min')
-                    el.classList.remove('scroll-left-max')
-                } else {
-                    el.classList.add('scroll-left-min')
-                    el.classList.add('scroll-left-max') 
+                var scrollLeftMax = el.scrollWidth - el.clientWidth;
+
+                if (scrollLeftMax !== 0) {
+                    if (el.scrollLeft === scrollLeftMax) {
+                        el.classList.add('scroll-left-max')
+                        el.classList.remove('scroll-left-min')
+                    } else if (el.scrollLeft !== scrollLeftMax) {
+                        el.classList.add('scroll-left-min')
+                        el.classList.remove('scroll-left-max')
+                    } else {
+                        el.classList.add('scroll-left-min')
+                        el.classList.add('scroll-left-max') 
+                    }
                 }
 
                 (cont = el.container || el)[addEventListener](
@@ -81,19 +87,43 @@
                                 newScrollX = (- lastClientX + (lastClientX=e.clientX));
                             scroller.scrollTop -=
                                 newScrollY = (- lastClientY + (lastClientY=e.clientY));
-                            if (scroller.scrollLeft === scroller.scrollLeftMax) {
-                                scroller.classList.add('scroll-left-max')
-                                scroller.classList.remove('scroll-left-min')
-                            } else if (scroller.scrollLeft === 0) {
-                                scroller.classList.add('scroll-left-min')
-                                scroller.classList.remove('scroll-left-max')
-                            } else {
-                                scroller.classList.add('scroll-left-min')
-                                scroller.classList.add('scroll-left-max') 
+
+                            var scrollLeftMax = scroller.scrollWidth - scroller.clientWidth;
+                            if (scrollLeftMax !== 0) {
+                                if (scroller.scrollLeft === scrollLeftMax) {
+                                    scroller.classList.add('scroll-left-max')
+                                    scroller.classList.remove('scroll-left-min')
+                                } else if (scroller.scrollLeft === 0) {
+                                    scroller.classList.add('scroll-left-min')
+                                    scroller.classList.remove('scroll-left-max')
+                                } else {
+                                    scroller.classList.add('scroll-left-min')
+                                    scroller.classList.add('scroll-left-max') 
+                                }
                             }
+
                             if (el == _document.body) {
                                 (scroller = _document.documentElement).scrollLeft -= newScrollX;
                                 scroller.scrollTop -= newScrollY;
+                            }
+                        }
+                    }, 0
+                );
+                el[addEventListener](
+                    scroll,
+                    cont.sc = function(e) {
+                        var scrollLeftMax = el.scrollWidth - el.clientWidth;
+
+                        if (scrollLeftMax !== 0) {
+                            if (el.scrollLeft === scrollLeftMax) {
+                                el.classList.add('scroll-left-max')
+                                el.classList.remove('scroll-left-min')
+                            } else if (el.scrollLeft === 0) {
+                                el.classList.add('scroll-left-min')
+                                el.classList.remove('scroll-left-max')
+                            } else {
+                                el.classList.add('scroll-left-min')
+                                el.classList.add('scroll-left-max') 
                             }
                         }
                     }, 0

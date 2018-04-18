@@ -14,66 +14,123 @@ Using the most basic table markup, here's how `.table`-based tables look in Boot
 
 {% example html %}
 <div class="table-wrapper">
-  <div class="table-scroller">
+  <div class="table-scroller dragscroll">
     <table class="table">
       <thead class="thead thead-light">
         <tr>
           <th>
-            <div class="custom-control custom-checkbox custom-checkbox-alone">
-              <input type="checkbox" class="custom-control-input" id="thead">
-              <label class="custom-control-label" for="thead"></label>
+            <div class="th-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="thead">
+                <label class="custom-control-label" for="thead"></label>
+              </div>
             </div>
           </th>
-          <th>Nom</th>
-          <th>Type</th>
-          <th>Vers</th>
-          <th>Agent</th>
-          <th>Mise à jour</th>
+          <th><div class="th-inner">Nom</div></th>
+          <th><div class="th-inner">Type</div></th>
+          <th><div class="th-inner">Vers</div></th>
+          <th><div class="th-inner">Agent</div></th>
+          <th><div class="th-inner">Mise à jour</div></th>
           <th></th>
         </tr>
       </thead>
       <tbody class="tbody">
         <tr>
-          <th>
-            <div class="custom-control custom-checkbox custom-checkbox-alone">
-              <input type="checkbox" class="custom-control-input" id="thead">
-              <label class="custom-control-label" for="thead"></label>
+          <td>
+            <div class="td-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="thead">
+                <label class="custom-control-label" for="thead"></label>
+              </div>
             </div>
-          </th>
-          <td>Aorem ipsum dolor sit amet</td>
-          <td>Aenean commodo</td>
-          <td>1</td>
-          <td>Léon MICHEL</td>
-          <td>4 Avril 2017</td>
-          <td>options</td>
+          </td>
+          <td><div class="td-inner">Aorem ipsum dolor sit amet</div></td>
+          <td><div class="td-inner">Aenean commodo</div></td>
+          <td><div class="td-inner">1</div></td>
+          <td><div class="td-inner">Léon MICHEL</div></td>
+          <td><div class="td-inner">4 Avril 2017</div></td>
+          <td>
+            <div class="td-inner">
+              <button class="btn btn-only-icon btn-transparent btn-favorite">
+                <span class="sr-only">Favorite</span>
+                <i class="icons-favorite-on icon-size-1x25"></i>
+              </button>
+              <button class="btn btn-only-icon btn-transparent btn-color-gray">
+                <span class="sr-only">Favorite</span>
+                <i class="icons-divers icon-size-1x25"></i>
+              </button>
+              <div class="btn-group dropdown">
+                <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
+                  <span class="sr-only">Favorite</span>
+                  <i class="icons-options icon-size-1x75"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button type="button" class="dropdown-item" href="#">Télécharger</button>
+                  <button type="button" class="dropdown-item" href="#">Imprimer</button>
+                  <button type="button" class="dropdown-item" href="#">Partager</button>
+                </div>
+              </div>
+            </div>
+          </td>
         </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endexample %}
+
+{% example html %}
+<div class="table-wrapper">
+  <div class="table-scroller last-thfixed dragscroll">
+    <table class="table">
+      <thead class="thead thead-light">
         <tr>
           <th>
-            <div class="custom-control custom-checkbox custom-checkbox-alone">
-              <input type="checkbox" class="custom-control-input" id="thead">
-              <label class="custom-control-label" for="thead"></label>
+            <div class="th-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="thead">
+                <label class="custom-control-label" for="thead"></label>
+              </div>
             </div>
           </th>
-          <td>Aorem ipsum dolor sit amet</td>
-          <td>Aenean commodo</td>
-          <td>2</td>
-          <td>Léon MICHEL</td>
-          <td>14 Mars 2017</td>
-          <td>options</td>
+          <th><div class="th-inner">Nom</div></th>
+          <th><div class="th-inner">Type</div></th>
+          <th><div class="th-inner">Vers</div></th>
+          <th><div class="th-inner">Agent</div></th>
+          <th><div class="th-inner">Mise à jour</div></th>
+          <th class="thplaceholder"><span></span></th>
+          <th class="thfixed"></th>
         </tr>
+      </thead>
+      <tbody class="tbody">
         <tr>
-          <th>
-            <div class="custom-control custom-checkbox custom-checkbox-alone">
-              <input type="checkbox" class="custom-control-input" id="thead">
-              <label class="custom-control-label" for="thead"></label>
+          <td>
+            <div class="td-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="thead">
+                <label class="custom-control-label" for="thead"></label>
+              </div>
             </div>
-          </th>
-          <td>Aorem ipsum dolor sit amet</td>
-          <td>Aenean commodo</td>
-          <td>3</td>
-          <td>Léon MICHEL</td>
-          <td>28 Fév. 2017</td>
-          <td>options</td>
+          </td>
+          <td><div class="td-inner">Aorem ipsum dolor sit amet</div></td>
+          <td><div class="td-inner">Aenean commodo</div></td>
+          <td><div class="td-inner">1</div></td>
+          <td><div class="td-inner">Léon MICHEL</div></td>
+          <td><div class="td-inner">4 Avril 2017</div></td>
+          <td class="thplaceholder"><span></span></td>
+          <td class="thfixed">
+            <div class="btn-group dropdown">
+              <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
+                <span class="sr-only">Favorite</span>
+                <i class="icons-options icon-size-1x75"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <button type="button" class="dropdown-item" href="#">Télécharger</button>
+                <button type="button" class="dropdown-item" href="#">Imprimer</button>
+                <button type="button" class="dropdown-item" href="#">Partager</button>
+              </div>
+            </div>
+          </td>
         </tr>
       </tbody>
     </table>
