@@ -1,7 +1,6 @@
 import 'bootstrap'
 import './utils/dragscroll.js'
 import './utils/stretchy.js'
-import * as tuichart from 'tui-chart'
 import {
   LineChart,
   RadialChart
@@ -14,13 +13,7 @@ import Searchbar from './components/searchbar'
 import SelectExclusive from './components/selectExclusive'
 import SelectMultiple from './components/selectMultiple'
 import SelectRadios from './components/selectRadios'
-
-const theme = {
-  series: {
-    colors: ['#0088ce']
-  }
-}
-tuichart.registerTheme('sncf', theme)
+import Table from './components/table'
 
 document.addEventListener('DOMContentLoaded', () => {
   /* eslint-disable no-console */
@@ -39,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataSelectExclusive = 'select-exclusive'
   const dataSelectMultiple = 'select-multiple'
   const dataSelectRadios = 'select-radios'
+  const dataTable = 'table'
 
   const components = document.querySelectorAll(dataComponent)
 
@@ -82,6 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataSelectRadios) {
       new SelectRadios(component)
+    }
+
+    if (component.dataset.component === dataTable) {
+      new Table(component)
     }
     /* eslint-enable no-new */
   })

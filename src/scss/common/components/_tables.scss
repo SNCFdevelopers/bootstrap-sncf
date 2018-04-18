@@ -45,7 +45,7 @@ th {
   }
 
   // right scroll shadow
-  &:not(.last-thfixed) {
+  &:not(.last-cell-fixed) {
     &::after {
       position: absolute;
       top: 0;
@@ -64,8 +64,8 @@ th {
     }
   }
 
-  &.last-thfixed {
-    .tbody .thfixed::after {
+  &.last-cell-fixed {
+    .tbody .cell-fixed::after {
       position: absolute;
       top: 0;
       z-index: 2;
@@ -76,7 +76,7 @@ th {
     }
 
     /* stylelint-disable selector-max-class */
-    &.scroll-left-min .tbody .thfixed {
+    &.scroll-left-min .tbody .cell-fixed {
       &::after {
         right: 100%;
         background: linear-gradient(to left, #fff 2%, rgba(255, 255, 255, 0) 98%);
@@ -121,8 +121,7 @@ th {
     }
   }
 
-  .th-inner,
-  .td-inner {
+  .cell-inner {
     min-height: rem(40px);
   }
 }
@@ -131,24 +130,62 @@ th {
   tr:first-child {
     th,
     td {
-      vertical-align: middle;
       border: none;
     }
+  }
 
-    .th-inner,
-    .td-inner {
-      min-height: rem(52px);
+  tr {
+    vertical-align: middle;
+  }
+}
+
+.trgroup {
+  &:not(.active) {
+    display: none;
+  }
+
+  > th:first-child,
+  > td:first-child {
+    > .cell-inner {
+      padding-left: rem(40px);
     }
   }
 }
 
-.th-inner,
-.td-inner {
+.cell-inner {
   display: flex;
   align-items: center;
+  min-height: rem(52px);
 }
 
-.thfixed {
+.cell-350 {
+  > .cell-inner {
+    max-width: rem(350px);
+  }
+}
+
+.cell-caret {
+  > .cell-inner {
+    &::before {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-right: rem(20px);
+      content: "";
+      border-top: $caret-width solid gray("300");
+      border-right: $caret-width solid transparent;
+      border-bottom: 0;
+      border-left: $caret-width solid transparent;
+      transition: transform .15s ease-out;
+    }
+
+    .trhead.active &::before {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.cell-fixed {
   text-align: center;
 
   .table &,
@@ -182,7 +219,9 @@ th {
   }
 }
 
-.thplaceholder {
+.cell-placeholder {
+  width: rem(74px);
+
   .table &,
   .thead.thead & {
     padding-right: 0;

@@ -19,38 +19,39 @@ Using the most basic table markup, here's how `.table`-based tables look in Boot
       <thead class="thead thead-light">
         <tr>
           <th>
-            <div class="th-inner">
+            <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
                 <input type="checkbox" class="custom-control-input" id="thead">
                 <label class="custom-control-label" for="thead"></label>
               </div>
             </div>
           </th>
-          <th><div class="th-inner">Nom</div></th>
-          <th><div class="th-inner">Type</div></th>
-          <th><div class="th-inner">Vers</div></th>
-          <th><div class="th-inner">Agent</div></th>
-          <th><div class="th-inner">Mise à jour</div></th>
+          <th><div class="cell-inner">Nom</div></th>
+          <th><div class="cell-inner">Type</div></th>
+          <th><div class="cell-inner">Vers</div></th>
+          <th><div class="cell-inner">Agent</div></th>
+          <th><div class="cell-inner">Mise à jour</div></th>
           <th></th>
         </tr>
       </thead>
       <tbody class="tbody">
+        {% for item in site.data.tables %}
         <tr>
           <td>
-            <div class="td-inner">
+            <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
                 <input type="checkbox" class="custom-control-input" id="thead">
                 <label class="custom-control-label" for="thead"></label>
               </div>
             </div>
           </td>
-          <td><div class="td-inner">Aorem ipsum dolor sit amet</div></td>
-          <td><div class="td-inner">Aenean commodo</div></td>
-          <td><div class="td-inner">1</div></td>
-          <td><div class="td-inner">Léon MICHEL</div></td>
-          <td><div class="td-inner">4 Avril 2017</div></td>
+          <td><div class="cell-inner">{{ item.name }}</div></td>
+          <td><div class="cell-inner">{{ item.type }}</div></td>
+          <td><div class="cell-inner">{{ item.version }}</div></td>
+          <td><div class="cell-inner">{{ item.agent }}</div></td>
+          <td><div class="cell-inner">{{ item.update }}</div></td>
           <td>
-            <div class="td-inner">
+            <div class="cell-inner">
               <button class="btn btn-only-icon btn-transparent btn-favorite">
                 <span class="sr-only">Favorite</span>
                 <i class="icons-favorite-on icon-size-1x25"></i>
@@ -73,6 +74,7 @@ Using the most basic table markup, here's how `.table`-based tables look in Boot
             </div>
           </td>
         </tr>
+        {% endfor %}
       </tbody>
     </table>
   </div>
@@ -81,44 +83,45 @@ Using the most basic table markup, here's how `.table`-based tables look in Boot
 
 {% example html %}
 <div class="table-wrapper">
-  <div class="table-scroller last-thfixed dragscroll">
+  <div class="table-scroller last-cell-fixed dragscroll">
     <table class="table">
       <thead class="thead thead-light">
         <tr>
           <th>
-            <div class="th-inner">
+            <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
                 <input type="checkbox" class="custom-control-input" id="thead">
                 <label class="custom-control-label" for="thead"></label>
               </div>
             </div>
           </th>
-          <th><div class="th-inner">Nom</div></th>
-          <th><div class="th-inner">Type</div></th>
-          <th><div class="th-inner">Vers</div></th>
-          <th><div class="th-inner">Agent</div></th>
-          <th><div class="th-inner">Mise à jour</div></th>
-          <th class="thplaceholder"><span></span></th>
-          <th class="thfixed"></th>
+          <th><div class="cell-inner">Nom</div></th>
+          <th><div class="cell-inner">Type</div></th>
+          <th><div class="cell-inner">Vers</div></th>
+          <th><div class="cell-inner">Agent</div></th>
+          <th><div class="cell-inner">Mise à jour</div></th>
+          <th class="cell-placeholder"><span></span></th>
+          <th class="cell-fixed"></th>
         </tr>
       </thead>
       <tbody class="tbody">
+        {% for item in site.data.tables %}
         <tr>
           <td>
-            <div class="td-inner">
+            <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
                 <input type="checkbox" class="custom-control-input" id="thead">
                 <label class="custom-control-label" for="thead"></label>
               </div>
             </div>
           </td>
-          <td><div class="td-inner">Aorem ipsum dolor sit amet</div></td>
-          <td><div class="td-inner">Aenean commodo</div></td>
-          <td><div class="td-inner">1</div></td>
-          <td><div class="td-inner">Léon MICHEL</div></td>
-          <td><div class="td-inner">4 Avril 2017</div></td>
-          <td class="thplaceholder"><span></span></td>
-          <td class="thfixed">
+          <td><div class="cell-inner">{{ item.name }}</div></td>
+          <td><div class="cell-inner">{{ item.type }}</div></td>
+          <td><div class="cell-inner">{{ item.version }}</div></td>
+          <td><div class="cell-inner">{{ item.agent }}</div></td>
+          <td><div class="cell-inner">{{ item.update }}</div></td>
+          <td class="cell-placeholder"><span></span></td>
+          <td class="cell-fixed">
             <div class="btn-group dropdown">
               <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
                 <span class="sr-only">Favorite</span>
@@ -132,6 +135,42 @@ Using the most basic table markup, here's how `.table`-based tables look in Boot
             </div>
           </td>
         </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endexample %}
+
+{% example html %}
+<div class="table-wrapper" data-component="table">
+  <div class="table-scroller dragscroll">
+    <table class="table">
+      <thead class="thead thead-light">
+        <tr>
+          <th><div class="cell-inner cell-inner-350">Nom</div></th>
+          <th><div class="cell-inner">Type</div></th>
+          <th><div class="cell-inner">Vers</div></th>
+          <th><div class="cell-inner">Agent</div></th>
+          <th><div class="cell-inner">Mise à jour</div></th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        {% for item in site.data.tables %}
+        {% assign index = forloop.index %}
+        <tr class="trhead" data-role="trhead" data-id="{{ index }}">
+          <td class="cell-350 cell-caret"><div class="cell-inner">{{ item.name }}</div></td>
+          <td><div class="cell-inner">{{ item.type }}</div></td>
+          <td><div class="cell-inner">{{ item.version }}</div></td>
+          <td><div class="cell-inner">{{ item.agent }}</div></td>
+          <td><div class="cell-inner">{{ item.update }}</div></td>
+        </tr>
+        {% for subitem in item.subrows %}
+          <tr class="trgroup" data-trgroup="{{ index }}">
+            <td class="cell-350" colspan="5"><div class="cell-inner"><div class="text-truncate">{{ subitem.name }}</div></div></td>
+          </tr>
+        {% endfor %}
+        {% endfor %}
       </tbody>
     </table>
   </div>
