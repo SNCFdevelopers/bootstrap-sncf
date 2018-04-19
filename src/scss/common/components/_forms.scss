@@ -4,6 +4,11 @@
 
 $icon-width: rem(48px);
 
+label {
+  margin-bottom: map-get($spacers, 2);
+  font-weight: $font-weight-medium;
+}
+
 //
 // Textual form controls
 //
@@ -23,6 +28,22 @@ $icon-width: rem(48px);
 
     + .invalid-feedback {
       display: block;
+    }
+  }
+
+  &.has-right-icon {
+    .form-control { padding-right: $icon-width; }
+    .form-control-icon {
+      right: 0;
+      padding-right: rem(8px);
+    }
+  }
+
+  &.has-left-icon {
+    .form-control { padding-left: $icon-width; }
+    .form-control-icon {
+      left: 0;
+      padding-left: rem(8px);
     }
   }
 }
@@ -89,14 +110,6 @@ $icon-width: rem(48px);
     ~ .form-control-state::after {
       background-color: theme-color("danger");
     }
-  }
-
-  &.has-right-icon {
-    padding-right: $icon-width;
-  }
-
-  &.has-left-icon {
-    padding-left: $icon-width;
   }
 
   &:disabled,
@@ -179,16 +192,6 @@ textarea.form-control {
   width: $icon-width;
   height: 100%;
   color: theme-color("primary");
-
-  &.right {
-    right: 0;
-    padding-right: rem(8px);
-  }
-
-  &.left {
-    left: 0;
-    padding-left: rem(8px);
-  }
 }
 
 

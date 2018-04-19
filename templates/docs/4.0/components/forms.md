@@ -19,114 +19,82 @@ Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are st
 {% example html %}
 <form>
   <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleInputEmail1">Email address</label>
-    <div class="form-control-container">
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <span class="form-control-state"></span>
-    </div>
+    <label for="inputEmail1">Example label</label>
+    {% include components/input.html type="email" id="inputEmail1" placeholder="Example input" %}
   </div>
   <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleFormControlTextarea1">Example textarea</label>
-    <div class="form-control-container">
-      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comment"></textarea>
-      <span class="form-control-state"></span>
-    </div>
+    <label for="textarea1">Example textarea</label>
+    {% include components/textarea.html id="textarea1" placeholder="Example textarea" %}
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 {% endexample %}
 
-### With icon
+### Inputs with icon
+
+Use `.has-left-icon` or `.has-right-icon` class on `.form-control` element. Then use `.form-control-icon` element with an fonticon element inside.
+
+{% capture control_icon %}
+  <span class="form-control-icon"><i class="icons-search"></i></span>
+{% endcapture %}
 
 {% example html %}
-<div class="form-group">
-  <label class="font-weight-medium mb-2" for="exampleInputEmail1">Left icon</label>
-  <div class="form-control-container">
-    <input type="text" class="form-control has-left-icon" id="exampleLeftIcon" aria-describedby="emailHelp" placeholder="Enter text">
-    <span class="form-control-state"></span>
-    <span class="form-control-icon left">
-      <i class="icons-search"></i>
-    </span>
-  </div>
-</div>
-<div class="form-group">
-  <label class="font-weight-medium mb-2" for="exampleInputEmail1">Right icon</label>
-  <div class="form-control-container">
-    <input type="text" class="form-control has-right-icon" id="exampleRightIcon" aria-describedby="emailHelp" placeholder="Enter text">
-    <span class="form-control-state"></span>
-    <span class="form-control-icon right">
-      <i class="icons-search"></i>
-    </span>
-  </div>
-</div>
+<label for="inputIcon1">Left icon</label>
+{% include components/input.html container="has-left-icon" id="inputIcon1" placeholder="Example input with left icon" content=control_icon %}
 {% endexample %}
 
-### Readonly
-
-Add the `readonly` boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
-
 {% example html %}
-<div class="form-group">
-  <div class="form-control-container">
-    <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-    <span class="form-control-state"></span>
-  </div>
-</div>
-<div class="form-group">
-  <div class="form-control-container">
-    <textarea class="form-control" type="text" placeholder="Readonly input here…" readonly>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eligendi amet, praesentium repellendus nesciunt ratione enim alias ad nemo sapiente minima aspernatur vero quaerat quae vitae a, cum inventore ipsum.</textarea>
-    <span class="form-control-state"></span>
-  </div>
-</div>
+<label for="inputIcon2">Right icon</label>
+{% include components/input.html container="has-right-icon" id="inputIcon2" placeholder="Example input with right icon" content=control_icon %}
 {% endexample %}
 
-### Required
+### Readonly inputs
+
+Add the `readonly` boolean attribute on an input to prevent modification of the input's value.
 
 {% example html %}
-<div class="form-control-container">
-  <input class="form-control" type="text" placeholder="Required input here…" required>
-  <span class="form-control-state"></span>
-</div>
+<label for="readonly1">Readonly input</label>
+{% include components/input.html type="text" id="readonly1" placeholder="Readonly input here..." attr="readonly" %}
 {% endexample %}
 
-### With clear option
-
 {% example html %}
-<div class="form-control-container" data-component="control" data-clear-option="true">
-  <input class="form-control clear-option" type="text" placeholder="Required input here…" data-role="input">
-  <span class="form-control-state"></span>
-  <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
-    <span class="sr-only">Clear text</span>
-    <i class="icons-close"></i>
-  </button>
-</div>
+<label for="readonly2">Readonly textarea</label>
+{% include components/textarea.html id="readonly2" placeholder="Readonly textarea here..." attr="readonly" %}
 {% endexample %}
 
-## Auto sizing
+### Required inputs
 
-Textual `stretchy` class on input.
+Add the `required` boolean attribute on an input.
 
 {% example html %}
-  <div class="form-group">
-    <label class="font-weight-medium mb-2" for="exampleFormControlTextarea2">Example textarea</label>
-    <div class="form-control-container">
-      <textarea class="form-control stretchy" id="exampleFormControlTextarea2" placeholder="Comment"></textarea>
-      <span class="form-control-state"></span>
-    </div>
-  </div>
+<label for="required1">Required input</label>
+{% include components/input.html type="text" id="required1" placeholder="Required input here..." attr="required" %}
 {% endexample %}
 
-### With counter
+### Input with clear option
+
+The clear text behavior is made of `javascript`. Use `data-component="control"` with `data-clear-option="true"` to enable it. Don't forget to add the `button` element.
 
 {% example html %}
-<div class="form-group">
-  <label class="font-weight-medium mb-2" for="exampleFormControlTextarea3">Example textarea</label>
-  <div class="form-control-container" data-component="control">
-    <textarea class="form-control stretchy" id="exampleFormControlTextarea3" placeholder="Comment" data-role="input">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illum aliquid, quis, labore sed ullam porro quam dolor error enim fuga et. Ratione assumenda, facilis illum placeat eligendi animi architecto.</textarea>
-    <span class="form-control-state"></span>
-  </div>
-  <div class="mt-2 font-weight-medium" data-role="counter" data-limit="200"><span data-role="counter-value">0</span>/200 caractères</div>
-</div>
+{% include components/input-clear-option.html type="text" id="readonly2" placeholder="Search..." %}
+{% endexample %}
+
+## Textarea options
+
+### Auto sizing
+
+Add a `stretchy` class on `textarea` element.
+
+{% example html %}
+<label for="stretchyTextarea1">Auto sizing textarea</label>
+{% include components/textarea.html id="stretchyTextarea1" class="stretchy" placeholder="Auto sizing..." %}
+{% endexample %}
+
+### Textarea with counter
+
+{% example html %}
+<label class="font-weight-medium mb-2" for="countTextarea1">Textarea with counter</label>
+{% include components/textarea.html id="countTextarea1" placeholder="Character counter..." %}
 {% endexample %}
 
 ### With toolbar

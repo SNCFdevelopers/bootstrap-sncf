@@ -519,7 +519,7 @@ $form-check-input-margin-x:             .25rem;
 $form-check-inline-margin-x:            .75rem;
 $form-check-inline-input-margin-x:      .3125rem;
 
-$form-group-margin-bottom:              1rem;
+$form-group-margin-bottom:              $spacer * 2;
 
 $input-group-addon-color:               $input-color;
 $input-group-addon-bg:                  $gray-200;
