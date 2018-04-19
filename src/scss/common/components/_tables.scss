@@ -91,6 +91,11 @@ th {
   td {
     white-space: nowrap;
     border-color: #d8d8d8;
+
+    &:first-child {
+      padding-right: rem(20px);
+      padding-left: rem(20px);
+    }
   }
 
   .btn-only-icon {
@@ -230,6 +235,29 @@ th {
     > span {
       display: block;
       width: rem(74px);
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .table {
+    th,
+    td {
+      &:first-child {
+        padding-right: rem(12px);
+        padding-left: rem(30px);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .table {
+    th,
+    td {
+      &:first-child {
+        padding-left: rem(30px);
+      }
     }
   }
 }

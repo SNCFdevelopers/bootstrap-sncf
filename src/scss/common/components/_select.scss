@@ -45,6 +45,31 @@ $select-scrollable-max-height: rem(360px);
     }
     // stylelint-enable selector-max-class
   }
+
+  .select-improved-up.active > & {
+    &::after {
+      border-top: none;
+      border-bottom: gray("200") solid 1px;
+      border-left: gray("200") solid 1px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+
+    // stylelint-disable selector-max-class
+    > .input-group .form-control {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    .input-group-last > .btn {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: $border-radius;
+    }
+    // stylelint-enable selector-max-class
+  }
 }
 
 .select-menu {
@@ -61,6 +86,14 @@ $select-scrollable-max-height: rem(360px);
   border-left: gray("200") solid 1px;
   border-bottom-right-radius: $border-radius;
   border-bottom-left-radius: $border-radius;
+
+  .select-improved-up & {
+    top: auto;
+    bottom: 100%;
+    border-top: gray("200") solid 1px;
+    border-bottom: none;
+    border-radius: $border-radius $border-radius 0 0;
+  }
 }
 
 .select-menu-item {

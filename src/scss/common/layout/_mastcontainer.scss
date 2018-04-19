@@ -1,0 +1,43 @@
+/* mastcontainer
+   ========================================================================== */
+
+@include media-breakpoint-down(sm) {
+  .mastcontainer {
+    padding-top: ($mastheader-height + $actionbar-min-height);
+  }
+
+  .mastcontainer-max {
+    padding-top: $actionbar-max-height;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .mastcontainer {
+    padding-top: ($mastheader-height-md + $actionbar-min-height-md);
+  }
+
+  .mastcontainer-max {
+    padding-top: ($mastheader-height-md + $actionbar-max-height-md);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .mastcontainer {
+    padding-top: ($mastheader-height-lg + $actionbar-min-height-lg);
+    padding-left: $mastnav-width-lg;
+  }
+
+  .mastcontainer-max {
+    padding-top: ($mastheader-height-lg + $actionbar-max-height-lg);
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .mastcontainer {
+    padding-top: ($mastheader-height-xl + $actionbar-min-height-xl);
+  }
+
+  .mastcontainer-max {
+    padding-top: ($mastheader-height-xl + $actionbar-max-height-xl);
+  }
+}

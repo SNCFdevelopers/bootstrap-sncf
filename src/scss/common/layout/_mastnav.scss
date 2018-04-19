@@ -1,9 +1,13 @@
 /* mastnav
    ========================================================================== */
 
+$mastnav-height-sm: rem(52px);
+$mastnav-width-lg: rem(100px);
+
 .mastnav {
   position: fixed;
   left: 0;
+  z-index: $zindex-fixed;
   display: flex;
 }
 
@@ -21,7 +25,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    min-height: rem(52px);
+    min-height: $mastnav-height-sm;
     background-color: color("white");
     border-top: 1px solid #d8d8d8;
   }
@@ -51,7 +55,7 @@
     top: 0;
     flex-direction: column;
     justify-content: space-between;
-    width: rem(100px);
+    width: $mastnav-width-lg;
     height: 100vh;
     padding-top: $mastheader-height-lg;
     background-color: theme-color("primary");

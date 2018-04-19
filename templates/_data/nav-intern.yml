@@ -19,10 +19,6 @@
     - title: Utilities for layout
     - title: Form
 
-- title: Pages
-  pages:
-    - title: Navigation
-
 - title: Content
   pages:
     - title: Reboot
@@ -92,3 +88,7 @@
     - title: Brand
     - title: License
     - title: Translations
+
+- title: Pages
+  pages:
+    - title: Navigation

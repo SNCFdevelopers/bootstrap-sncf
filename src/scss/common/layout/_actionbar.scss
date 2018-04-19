@@ -19,6 +19,7 @@ $actionbar-max-height-xl:   rem(105px);
 .actionbar {
   position: fixed;
   top: $mastheader-height;
+  z-index: $zindex-fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,10 +87,10 @@ $actionbar-max-height-xl:   rem(105px);
   .actionbar {
     top: $mastheader-height-lg;
     right: 0;
-    width: calc(100% - #{rem(100px)});
+    width: calc(100% - #{$mastnav-width-lg});
     height: $actionbar-min-height-lg;
     padding-right: rem(12px);
-    padding-left: rem(40px);
+    padding-left: rem(30px);
   }
 
   .actionbar-lg {
@@ -102,7 +103,6 @@ $actionbar-max-height-xl:   rem(105px);
     top: $mastheader-height-xl;
     height: $actionbar-min-height-xl;
     padding-right: rem(30px);
-    padding-left: rem(30px);
   }
 
   .actionbar-lg {

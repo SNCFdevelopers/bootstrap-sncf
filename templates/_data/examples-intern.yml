@@ -1,0 +1,5 @@
+- category: Navigation
+  description: "Navigation template"
+  examples:
+    - name: navigation
+      description: "Demonstration of all responsive and container options for the navbar."
