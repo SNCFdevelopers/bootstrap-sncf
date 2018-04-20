@@ -22,6 +22,10 @@
       background-color: #e6e6e6;
     }
   }
+
+  &.separator-gray-200::before {
+    background-color: gray("200");
+  }
 }
 
 .toolbar-item-spacing {

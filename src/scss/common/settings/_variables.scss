@@ -408,7 +408,7 @@ $input-btn-padding-x:         1.875rem; // 30px
 $input-btn-line-height:       1.5;
 $input-btn-height:            2.8125rem; // 45px
 
-$input-btn-focus-width:       .2rem;
+$input-btn-focus-width:       0; // .2rem;
 $input-btn-focus-color:       rgba($component-active-bg, .25);
 $input-btn-focus-box-shadow:  none; // 0 0 0 $input-btn-focus-width $input-btn-focus-color;
 

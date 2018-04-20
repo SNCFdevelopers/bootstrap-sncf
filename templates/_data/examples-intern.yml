@@ -7,5 +7,11 @@
 - category: Navigation
   description: "Navigation template"
   examples:
-    - name: navigation
+    - name: Navigation
       description: "Demonstration of all responsive and container options for the navbar."
+
+- category: Layouts
+  description: "Layout templates"
+  examples:
+    - name: Table
+      description: "Demonstration of all responsive and container options for the table."

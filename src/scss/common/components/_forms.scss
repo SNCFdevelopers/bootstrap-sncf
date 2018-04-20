@@ -9,6 +9,12 @@ label {
   font-weight: $font-weight-medium;
 }
 
+input {
+  &:invalid {
+    box-shadow: none; // firefox override
+  }
+}
+
 //
 // Textual form controls
 //

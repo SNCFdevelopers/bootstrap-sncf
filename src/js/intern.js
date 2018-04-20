@@ -14,6 +14,7 @@ import SelectExclusive from './components/selectExclusive'
 import SelectMultiple from './components/selectMultiple'
 import SelectRadios from './components/selectRadios'
 import Table from './components/table'
+import state from './components/states'
 
 document.addEventListener('DOMContentLoaded', () => {
   /* eslint-disable no-console */
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataSelectExclusive = 'select-exclusive'
   const dataSelectMultiple = 'select-multiple'
   const dataSelectRadios = 'select-radios'
+  const dataState = 'state'
   const dataTable = 'table'
 
   const components = document.querySelectorAll(dataComponent)
@@ -76,6 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataSelectRadios) {
       new SelectRadios(component)
+    }
+
+    if (component.dataset.component === dataState) {
+      state(component)
     }
 
     if (component.dataset.component === dataTable) {
