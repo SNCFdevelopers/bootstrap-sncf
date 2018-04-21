@@ -6,7 +6,7 @@
 
 class Table {
   constructor(element) {
-    const headGroups = element.querySelectorAll('[data-role=trhead]')
+    const headGroups = element.querySelectorAll('[data-role=toggle-group-btn]')
     const groupItems = element.querySelectorAll('[data-trgroup]')
 
     headGroups.forEach((group) => {

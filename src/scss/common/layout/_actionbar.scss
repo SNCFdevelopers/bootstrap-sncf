@@ -70,6 +70,7 @@ $actionbar-max-height-xl:   rem(105px);
 .subactionbars {
   position: fixed;
   left: 0;
+  z-index: $zindex-fixed;
   display: flex;
   align-items: center;
   width: 100%;
@@ -83,15 +84,12 @@ $actionbar-max-height-xl:   rem(105px);
   }
 
   .subactionbars {
+    top: $mastheader-height + $actionbar-min-height;
     border-bottom: 1px solid #d8d8d8;
+  }
 
-    .actionbar + & {
-      top: $mastheader-height + $actionbar-min-height;
-    }
-
-    .actionbar-lg + & {
-      top: $mastheader-height + $actionbar-min-height;
-    }
+  .subactionbars-lg {
+    top: $mastheader-height + $actionbar-max-height;
   }
 }
 

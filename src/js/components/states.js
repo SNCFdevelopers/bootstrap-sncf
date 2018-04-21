@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 /* states
  ========================================================================== */
 
@@ -101,6 +103,24 @@ const setState = function (parameters) {
         setAria(elem, toggle)
         setTabindex(elem, tabindex, toggle)
       }
+
+      if (parameters.closeOnClickOutside[index] === "true") {
+        elem.querySelectorAll('[data-toggle=collapse]').forEach((toggle) => {
+          toggle.addEventListener('click', (event) => {
+            event.currentTarget.classList.toggle('active')
+            // bootstrap jQuery collapse
+            $(event.currentTarget.dataset.target).collapse('toggle')
+          })
+        })
+
+        document.addEventListener('click', () => {
+          setClass(elem, stateClass, remove)
+        })
+
+        elem.addEventListener('click', (event) => {
+          event.stopPropagation()
+        })
+      }
     })
   })
 }
@@ -111,7 +131,7 @@ export default function state(component) {
     states: component.dataset.state.split(', '),
     tabindexes: component.dataset.tabindex ? component.dataset.tabindex.split(', ') : null,
     targets: component.dataset.target.split(', '),
-    closeOnClickOutside: component.dataset.closeonclickoutside === "true"
+    closeOnClickOutside: component.dataset.closeonclickoutside ? component.dataset.closeonclickoutside.split(', ') : []
   }
 
   component.addEventListener('click', (event) => {

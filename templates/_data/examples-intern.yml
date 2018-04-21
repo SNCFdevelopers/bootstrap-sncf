@@ -15,3 +15,5 @@
   examples:
     - name: Table
       description: "Demonstration of all responsive and container options for the table."
+    - name: Table filters 
+      description: "Table with filters and sorts"

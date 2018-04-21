@@ -129,6 +129,34 @@ th {
   .cell-inner {
     min-height: rem(40px);
   }
+
+  .dropdown-toggle {
+    @include hover-focus {
+      color: theme-color("primary");
+    }
+
+    &[aria-expanded="true"] {
+      color: theme-color("primary");
+    }
+  }
+}
+
+.cell-sort {
+  .icons-sort {
+    transition: transform .15s ease;
+  }
+
+  &.active {
+    .icons-sort {
+      color: theme-color("primary");
+    }
+  }
+
+  &.up {
+    .icons-sort {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .tbody {
@@ -188,6 +216,10 @@ th {
       transform: rotate(180deg);
     }
   }
+
+  &.active > .cell-inner::before {
+    transform: rotate(180deg);
+  }
 }
 
 .cell-fixed {
@@ -205,6 +237,7 @@ th {
     padding-right: 0;
     padding-left: 0;
     background-color: color("white");
+    border-top: none;
 
     /* stylelint-disable declaration-no-important */
     &::before {
