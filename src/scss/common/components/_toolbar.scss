@@ -22,6 +22,12 @@
       background-color: #e6e6e6;
     }
   }
+
+  @each $color, $value in $grays {
+    &.separator-gray-#{$color}::before {
+      background-color: $value;
+    }
+  }
 }
 
 .toolbar-item-spacing {

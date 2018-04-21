@@ -332,5 +332,7 @@ input[type="button"] {
 
 .btn-color-gray {
   color: gray("600");
-  @include hover-focus-active { color: theme-color("primary"); }
+  &:not(:disabled):not(.disabled) {
+    @include hover-focus-active { color: theme-color("primary"); }
+  }
 }

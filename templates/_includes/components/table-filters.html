@@ -1,0 +1,72 @@
+<div class="table-wrapper">
+  <div class="table-scroller dragscroll">
+    <table class="table">
+      <thead class="thead thead-light">
+        <tr>
+          <th>
+            <div class="cell-inner">
+              {% include components/checkbox.html container="custom-checkbox-alone" name="thead" id="thead" %}
+            </div>
+          </th>
+          <th><div class="cell-inner cell-sort active">Nom <i class="ml-2 icons-sort"></i></div></th>
+          <th><div class="cell-inner">
+            <div class="dropdown">
+              <div class="dropdown-toggle" type="button" data-toggle="dropdown" data-offset="24, 0">
+                <span>Type</span>
+                <i class="icons-arrow-down"></i>
+              </div>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div></th>
+          <th><div class="cell-inner">Vers</div></th>
+          <th><div class="cell-inner">Agent</div></th>
+          <th><div class="cell-inner cell-sort">Mise à jour <i class="ml-2 icons-sort"></i></div></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        {% for item in include.data %}
+        <tr>
+          <td>
+            <div class="cell-inner">
+              {% include components/checkbox.html container="custom-checkbox-alone" name=forloop.index id=forloop.index %}
+            </div>
+          </td>
+          <td><div class="cell-inner">{{ item.name }}</div></td>
+          <td><div class="cell-inner">{{ item.type }}</div></td>
+          <td><div class="cell-inner">{{ item.version }}</div></td>
+          <td><div class="cell-inner">{{ item.agent }}</div></td>
+          <td><div class="cell-inner">{{ item.update }}</div></td>
+          <td>
+            <div class="cell-inner justify-content-end">
+              <button class="btn btn-only-icon btn-transparent btn-favorite">
+                <span class="sr-only">Favorite</span>
+                <i class="icons-favorite-on icon-size-1x25"></i>
+              </button>
+              <button class="btn btn-only-icon btn-transparent btn-color-gray">
+                <span class="sr-only">Favorite</span>
+                <i class="icons-divers icon-size-1x25"></i>
+              </button>
+              <div class="btn-group dropdown">
+                <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
+                  <span class="sr-only">Favorite</span>
+                  <i class="icons-options icon-size-1x75"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button type="button" class="dropdown-item" href="#">Télécharger</button>
+                  <button type="button" class="dropdown-item" href="#">Imprimer</button>
+                  <button type="button" class="dropdown-item" href="#">Partager</button>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

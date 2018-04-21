@@ -17,10 +17,7 @@ In the checked states, we use **base64 embedded SVG icons** from [Open Iconic](h
 ### Checkboxes
 
 {% example html %}
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck1">
-  <label class="custom-control-label font-weight-medium" for="customCheck1">Check this custom checkbox</label>
-</div>
+{% include components/checkbox.html name="exampleCheckbox1" id="exampleCheckbox1" label="Custom checkbox" %}
 {% endexample %}
 
 Custom checkboxes can also utilize the `:indeterminate` pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).
@@ -28,7 +25,7 @@ Custom checkboxes can also utilize the `:indeterminate` pseudo class when manual
 <div class="bd-example bd-example-indeterminate">
   <div class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input" id="customCheck2">
-    <label class="custom-control-label font-weight-medium" for="customCheck2">Check this custom checkbox</label>
+    <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
   </div>
 </div>
 

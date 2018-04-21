@@ -1,0 +1,22 @@
+<div class="select-improved" data-component="select-exclusive">
+  <div class="select-control">
+    <div class="input-group" data-role="select-toggle">
+      <div class="form-control is-placeholder" data-role="placeholder">{{ include.placeholder }}</div>
+      <select class="sr-only" id="{{ include.id }}" data-role="input" tabindex="-1" aria-hidden="true">
+        <option {{ include.placeholderAttr }} disabled hidden>{{ include.placeholder }}</option>
+        {% for item in include.items %}<option data-id="{{ forloop.index }}" {{ item.attr }}>{{ item.name }}</option>
+        {% endfor %}
+      </select>
+      <div class="input-group-append input-group-last">
+        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
+          <i class="icons-arrow-down icon-size-x75"></i>
+        </button>
+      </div>
+    </div>
+    <div class="select-menu" data-role="menu">
+      {% for item in include.items %}<button class="select-menu-item" data-role="value" data-target="{{ forloop.index }}">{{ item.name }}</button>
+      {% endfor %}
+      {{- include.content }}
+    </div>
+  </div>
+</div>

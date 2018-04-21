@@ -4,6 +4,17 @@
 
 $icon-width: rem(48px);
 
+label {
+  margin-bottom: map-get($spacers, 2);
+  font-weight: $font-weight-medium;
+}
+
+input {
+  &:invalid {
+    box-shadow: none; // firefox override
+  }
+}
+
 //
 // Textual form controls
 //
@@ -23,6 +34,22 @@ $icon-width: rem(48px);
 
     + .invalid-feedback {
       display: block;
+    }
+  }
+
+  &.has-right-icon {
+    .form-control { padding-right: $icon-width; }
+    .form-control-icon {
+      right: 0;
+      padding-right: rem(8px);
+    }
+  }
+
+  &.has-left-icon {
+    .form-control { padding-left: $icon-width; }
+    .form-control-icon {
+      left: 0;
+      padding-left: rem(8px);
     }
   }
 }
@@ -91,14 +118,6 @@ $icon-width: rem(48px);
     }
   }
 
-  &.has-right-icon {
-    padding-right: $icon-width;
-  }
-
-  &.has-left-icon {
-    padding-left: $icon-width;
-  }
-
   &:disabled,
   &[readonly] {
     color: $input-disabled-color;
@@ -113,7 +132,7 @@ $icon-width: rem(48px);
     background-size: 27px 25px;
   }
 
-  &[required]:valid {
+  .form-control-container:not(.is-invalid) &[required]:valid {
     padding-right: $icon-width;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 22'%3e%3cdefs%3e%3cstyle%3e.check-icon%7bfill:%230088ce;%7d%3c/style%3e%3c/defs%3e%3ctitle%3echeck%3c/title%3e%3cpath class='check-icon' d='M33.18,13.21,15.53,30.87a1.11,1.11,0,0,1-1.58,0L6.82,23.75a1.13,1.13,0,0,1,0-1.58l2.1-2.11a1.13,1.13,0,0,1,1.58,0L14,23.5a1.13,1.13,0,0,0,1.58,0l14-14a1.13,1.13,0,0,1,1.58,0l2.11,2.11a1.13,1.13,0,0,1,0,1.58' transform='translate(-6.5 -9.2)'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
@@ -179,16 +198,6 @@ textarea.form-control {
   width: $icon-width;
   height: 100%;
   color: theme-color("primary");
-
-  &.right {
-    right: 0;
-    padding-right: rem(8px);
-  }
-
-  &.left {
-    left: 0;
-    padding-left: rem(8px);
-  }
 }
 
 

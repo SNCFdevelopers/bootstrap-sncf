@@ -1,6 +1,8 @@
 /* actionbar
    ========================================================================== */
 
+$subactionbar-height:   rem(40px);
+
 $actionbar-min-height:   rem(62px);
 $actionbar-max-height:   rem(90px);
 
@@ -65,9 +67,29 @@ $actionbar-max-height-xl:   rem(105px);
   }
 }
 
+.subactionbars {
+  position: fixed;
+  left: 0;
+  z-index: $zindex-fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: $subactionbar-height;
+  background-color: gray("100");
+}
+
 @include media-breakpoint-down(sm) {
   .actionbar {
     border-bottom: 1px solid #d8d8d8;
+  }
+
+  .subactionbars {
+    top: $mastheader-height + $actionbar-min-height;
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  .subactionbars-lg {
+    top: $mastheader-height + $actionbar-max-height;
   }
 }
 

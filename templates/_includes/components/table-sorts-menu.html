@@ -1,0 +1,29 @@
+<div id="collapseSortsMenu" class="table-filters">
+  <div class="table-filters-head">
+    <div class="table-filters-title">Trier par</div>
+    <ul class="toolbar mb-0">
+      <li class="toolbar-item">
+        <button class="btn btn-sm btn-white toolbar-item-spacing" data-component="state" data-state="active, active" data-behaviour="remove, remove" data-target="#collapseSortsMenu, .collapseSortsButton">
+          <span class="sr-only">Close</span>
+          <i class="icons-close icon-size-1x"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="table-filters-menu">
+    <div class="filters-group">
+      <div class="filters-menu-item">
+        {% include components/radio.html name="sorts" id="sort1" label="Titre (ordre croissant)" attr="checked" %}
+      </div>
+      <div class="filters-menu-item">
+        {% include components/radio.html name="sorts" id="sort2" label="Titre (ordre décroissant)" attr="checked" %}
+      </div>
+      <div class="filters-menu-item">
+        {% include components/radio.html name="sorts" id="sort3" label="Mise à jour (récent)" %}
+      </div>
+      <div class="filters-menu-item">
+        {% include components/radio.html name="sorts" id="sort4" label="Mise à jour (ancienneté)" %}
+      </div>
+    </div>
+  </div>
+</div>

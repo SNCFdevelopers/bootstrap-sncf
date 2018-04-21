@@ -4,40 +4,31 @@ title: Select
 description: Examples and usage guidelines for select.
 group: components
 toc: true
+default:
+  - name: Sem Inceptos Tellus
+  - name: Sollicitudin Adipiscing Mattis
+  - name: Amet Porta
+  - name: Pharetra Fusce Venenatis
+selected:
+  - name: Sem Inceptos Tellus
+  - name: Sollicitudin Adipiscing Mattis
+    attr: selected
+  - name: Amet Porta
+  - name: Pharetra Fusce Venenatis
 ---
 
 ## Default
 
-TODO : description
+Custom `<select>` menus need a custom class and data attribute, `.select-improved` to trigger the custom styles and `data-component="select-exclusive"` to trigger the custom javascript. Given the complexity and the different versions of the menu (simple, groups, input, etc), this one must be built in the markup.
 
 {% example html %}
-<label class="font-weight-medium mb-2" for="exampleFormControlSelect1">Example select</label>
-<div class="select-improved" data-component="select-exclusive">
-  <div class="select-control">
-    <div class="input-group" data-role="select-toggle">
-      <div class="form-control is-placeholder" data-role="placeholder">
-        Sélectionner un secteur
-      </div>
-      <select class="sr-only" id="exampleFormControlSelect1" data-role="input" tabindex="-1" aria-hidden="true">
-        <option selected disabled hidden>Sélectionner un secteur</option>
-        <option data-id="1">Sem Inceptos Tellus</option>
-        <option data-id="2">Sem Inceptos Tellus</option>
-        <option data-id="3">Sollicitudin Adipiscing Mattis</option>
-        <option data-id="4">Amet Porta</option>
-        <option data-id="5">Pharetra Fusce Venenatis</option>
-      </select>
-      <div class="input-group-append input-group-last">
-        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icon-size-x75"></i>
-        </button>
-      </div>
-    </div>
-    <div class="select-menu" data-role="menu">
-      <button class="select-menu-item" data-role="value" data-target="1">Sem Inceptos Tellus</button>
-      <button class="select-menu-item" data-role="value" data-target="2">Sem Inceptos Tellus</button>
-      <button class="select-menu-item" data-role="value" data-target="3">Sollicitudin Adipiscing Mattis</button>
-      <button class="select-menu-item" data-role="value" data-target="4">Amet Porta</button>
-      <button class="select-menu-item" data-role="value" data-target="5">Pharetra Fusce Venenatis</button>
+<label for="select1">Example select</label>
+{% include components/select-exclusive.html id="select1" placeholder="Lorem ipsum" placeholderAttr="selected" items=page.default %}
+{% endexample %}
+
+### Select menu with additional input
+
+{% capture input_add %}
       <div class="d-flex pt-4 flex-column flex-sm-row" data-role="add">
         <div class="form-control-container w-100">
           <input type="text" class="form-control" data-role="add-input" placeholder="Ajouter un agent" value="John Doe">
@@ -47,38 +38,17 @@ TODO : description
           <button type="button" class="btn btn-primary btn-block d-sm-inline-block" data-role="add-btn">Ajouter</button>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+{% endcapture %}
+{% example html %}
+<label for="select2">Additional input</label>
+{% include components/select-exclusive.html id="select2" placeholder="Lorem ipsum" placeholderAttr="selected" items=page.default content=input_add %}
 {% endexample %}
 
+### Select with default select value
+
 {% example html %}
-<label class="font-weight-medium mb-2">Already select</label>
-<div class="select-improved" data-component="select-exclusive">
-  <div class="select-control">
-    <div class="input-group" data-role="select-toggle">
-      <div class="form-control is-placeholder" data-role="placeholder">
-        Sélectionner un secteur
-      </div>
-      <select class="sr-only" id="exampleFormControlSelect1" data-role="input" tabindex="-1" aria-hidden="true">
-        <option disabled hidden>Sélectionner un secteur</option>
-        <option data-id="1">Sollicitudin Adipiscing Mattis</option>
-        <option data-id="2" selected>Amet Porta</option>
-        <option data-id="3">Pharetra Fusce Venenatis</option>
-      </select>
-      <div class="input-group-append input-group-last">
-        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icon-size-x75"></i>
-        </button>
-      </div>
-    </div>
-    <div class="select-menu" data-role="menu">
-      <button class="select-menu-item" data-role="value" data-target="1">Sollicitudin Adipiscing Mattis</button>
-      <button class="select-menu-item" data-role="value" data-target="2">Amet Porta</button>
-      <button class="select-menu-item" data-role="value" data-target="3">Pharetra Fusce Venenatis</button>
-    </div>
-  </div>
-</div>
+<label for="select3">Option selected by default</label>
+{% include components/select-exclusive.html id="select3" placeholder="Lorem ipsum" placeholderAttr="selected" items=page.selected %}
 {% endexample %}
 
 ## By group
@@ -86,7 +56,7 @@ TODO : description
 TODO : description
 
 {% example html %}
-<label class="font-weight-medium mb-2" for="exampleFormControlSelect1">Example select</label>
+<label for="exampleFormControlSelect1">Example select</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
@@ -134,7 +104,7 @@ TODO : description
 TODO : description
 
 {% example html %}
-<label class="font-weight-medium mb-2" for="exampleFormControlSelect1">Example select</label>
+<label for="exampleFormControlSelect1">Example select</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
@@ -194,7 +164,7 @@ TODO : description
 TODO : description
 
 {% example html %}
-<label class="font-weight-medium mb-2" for="exampleFormControlSelect1">Multi select</label>
+<label for="exampleFormControlSelect1">Multi select</label>
 <div class="select-improved" data-component="select-multiple">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
