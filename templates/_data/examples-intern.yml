@@ -17,3 +17,5 @@
       description: "Demonstration of all responsive and container options for the table."
     - name: Table filters 
       description: "Table with filters and sorts"
+    - name: List double columns 
+      description: "List with double columns."

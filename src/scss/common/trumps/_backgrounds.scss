@@ -1,0 +1,17 @@
+/* backgrounds
+   ========================================================================== */
+// stylelint-disable declaration-no-important
+
+// Contextual colors
+
+@each $color, $value in $theme-colors {
+  .background-#{$color} {
+    background-color: $value;
+  }
+}
+
+@each $color, $value in $grays {
+  .background-gray#{$color} {
+    background-color: $value;
+  }
+}
