@@ -12,6 +12,7 @@ $footerbar-height:   rem(68px);
   padding-right: rem(20px);
   padding-left: rem(20px);
   background-color: color("white");
+  border-top: rem(1px) solid $border-color;
 }
 
 @include media-breakpoint-down(md) {

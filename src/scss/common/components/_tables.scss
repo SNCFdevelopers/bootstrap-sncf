@@ -272,6 +272,12 @@ th {
   }
 }
 
+@include media-breakpoint-up(md) {
+  .table-wrapper.has-footerbar {
+    padding-bottom: rem(68px);
+  }
+}
+
 @include media-breakpoint-up(lg) {
   .table {
     th,

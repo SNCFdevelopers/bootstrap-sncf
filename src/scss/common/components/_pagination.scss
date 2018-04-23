@@ -30,6 +30,9 @@
 }
 
 .page-skip {
+  display: inline-flex;
+  align-items: center;
+
   &:not(:last-child) {
     padding-right: rem(30px);
   }

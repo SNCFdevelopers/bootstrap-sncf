@@ -14,7 +14,9 @@
     - name: Table filters 
       description: "Table with filters and sorts"
     - name: Table fixed 
-      description: "List with fixed column."
+      description: "Table with fixed column."
+    - name: Table pagination 
+      description: "Table with pagination."
     - name: List double columns 
       description: "List with double columns."
 
