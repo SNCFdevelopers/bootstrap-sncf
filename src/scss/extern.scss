@@ -77,10 +77,14 @@
 @import "common/components/form-toolbar";
 @import "common/components/range-slider";
 @import "common/components/advanced-search";
-@import "extern/components/card-accordion";
+@import "extern/components/accordion";
+@import "extern/components/evidences";
 
 // trumps
 @import "~bootstrap/scss/utilities";
+@import "common/trumps/backgrounds";
+@import "extern/trumps/backgrounds";
 @import "common/trumps/icons";
+@import "common/trumps/overflow";
 @import "common/trumps/text";
 @import "~bootstrap/scss/print";

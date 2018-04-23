@@ -63,5 +63,13 @@
     .icon-size#{$infix}-4x50 {
       font-size: $font-size-base * 4.5;
     }
+
+    .icon-size#{$infix}-5x {
+      font-size: $font-size-base * 5;
+    }
+
+    .icon-size#{$infix}-7x50 {
+      font-size: 7.5rem;
+    }
   }
 }
