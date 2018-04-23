@@ -1,0 +1,177 @@
+---
+layout: docs
+title: Editorial
+description: Editorial formatting elements.
+group: components
+toc: true
+permalink: /docs/4.0/components/edito
+---
+
+## Accordion
+
+{% example html %}
+<div id="accordion" class="accordions">
+  <div class="accordion">
+    <div class="accordion-head" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <h3 class="accordion-title mb-0">Collapsible Group Item #1</h3>
+      <div class="accordion-toggle">
+        <span class="accordion-toggle-close mr-2">Fermer</span>
+        <span class="accordion-toggle-show mr-2">Ouvrir</span>
+        <i class="icons-arrow-down icon-size-x75"></i>
+      </div>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="accordion-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="accordion">
+    <div class="accordion-head" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <h3 class="accordion-title mb-0">Collapsible Group Item #2</h3>
+      <div class="accordion-toggle">
+        <span class="accordion-toggle-close mr-2">Fermer</span>
+        <span class="accordion-toggle-show mr-2">Ouvrir</span>
+        <i class="icons-arrow-down icon-size-x75"></i>
+      </div>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="accordion-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+## Blockquotes
+
+For quoting blocks of content from another source within your document. Wrap `<blockquote class="blockquote">` around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.
+
+{% example html %}
+<blockquote class="blockquote">
+  <p class="blockquote-decoration mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+{% endexample %}
+
+### Naming a source
+
+Add a `<footer class="blockquote-footer">` for identifying the source. Wrap the name of the source work in `<cite>`.
+
+{% example html %}
+<blockquote class="blockquote">
+  <p class="blockquote-decoration mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+{% endexample %}
+
+## Proof block
+
+Use `is-gray` class or any `background-{color}` classes available to change the `background-color` element. Use `text-{color}` to choose the text color.
+
+{% example html %}
+<div class="proof is-gray has-strip text-primary" style="max-width: 41.000rem">
+  <div class="proof-icon pb-4 pb-md-0">
+    <i class="icons-alert-underline icon-size-5x icon-size-md-7x50"></i>
+  </div>
+  <div class="proof-content">
+    <p class="display-3 mb-3">20 ans de travaux<br/> pour vous</p>
+    <p class="mb-0">En 2016, SNCF fête son 20e été de travaux sur la ligne C.</p>
+  </div>
+</div>
+{% endexample %}
+
+{% example html %}
+<div class="proof has-strip text-white background-info" style="max-width: 41.000rem">
+  <div class="proof-icon pb-4 pb-md-0">
+    <i class="icons-alert-underline icon-size-5x icon-size-md-7x50"></i>
+  </div>
+  <div class="proof-content">
+    <h2 class="display-3 mb-3">20 ans de travaux<br/> pour vous</h2>
+    <p class="mb-0">En 2016, SNCF fête son 20e été de travaux sur la ligne C.</p>
+  </div>
+</div>
+{% endexample %}
+
+## Editorial block
+
+{% example html %}
+<div class="editorial" style="max-width: 41.000rem">
+  <div class="editorial-icon order-md-1">
+      <p>média</p>
+  </div>
+  <div class="editorial-content order-md-0">
+    <p class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</p>
+    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio.</p>
+    <a href="#" class="btn btn-link btn-link-white">Lorem ipsum dolor <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+  </div>
+</div>
+{% endexample %}
+
+{% example html %}
+<div class="editorial editorial-light" style="max-width: 41.000rem">
+  <div class="editorial-icon order-md-1">
+      <p>média</p>
+  </div>
+  <div class="editorial-content order-md-0">
+    <p class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</p>
+    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio.</p>
+    <a href="#" class="btn btn-link">Lorem ipsum dolor <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+  </div>
+</div>
+{% endexample %}
+
+{% example html %}
+<div class="editorial" style="max-width: 41.000rem">
+  <div class="editorial-icon order-md-1">
+      <p>média</p>
+  </div>
+  <div class="editorial-content order-md-0">
+    <p class="display-3 mb-4">Vous n'avez pas trouvé<br /> votre réponse ?</p>
+    <div class="pb-2 pb-md-0">
+      <a href="#" class="btn btn-primary">Questions/Réponses</a>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+{% example html %}
+<div style="max-width: 41.000rem">
+  <h2 class="display-3 text-primary mb-4">Les services OUIBUS</h2>
+  <ul class="list-unstyled">
+    <li class="gb-4">
+      <div class="d-flex flex-column flex-md-row">
+        <div class="col-auto gr-md-4 px-0 pb-4 pb-md-0">
+          <img class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
+        </div>
+        <div class="d-flex flex-column justify-content-center">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#" class="btn btn-link">Retrouvez l'intégralité des vidéos <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+        </div>
+      </div>
+    </li>
+    <li class="gb-4">
+      <div class="d-flex flex-column flex-md-row">
+        <div class="col-auto gr-md-4 px-0 pb-4 pb-md-0">
+          <img class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
+        </div>
+        <div class="d-flex flex-column justify-content-center">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum ea distinctio, consequatur facilis repudiandae incidunt.</p>
+          <a href="#" class="btn btn-link">Retrouvez l'intégralité des vidéos <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="d-flex flex-column flex-md-row">
+        <div class="col-auto gr-md-4 px-0 pb-4 pb-md-0">
+          <img class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
+        </div>
+        <div class="d-flex flex-column justify-content-center">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum ea distinctio.</p>
+          <a href="#" class="btn btn-link">Retrouvez l'intégralité des vidéos <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+{% endexample %}

@@ -199,6 +199,19 @@ $spacers: map-merge((
   5: ($spacer * 3)
 ), $spacers);
 
+// gutters spacing
+$gutter: 1.250rem; // 20px
+$gutters: ();
+$gutters: map-merge((
+  0: 0,
+  1: ($gutter * .25),
+  2: ($gutter * .5),
+  3: $gutter,
+  4: ($gutter * 1.5),
+  5: ($gutter * 2),
+  6: ($gutter * 2.5)
+), $gutters);
+
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: ();
 $sizes: map-merge((

@@ -80,3 +80,21 @@ permalink: /docs/4.0/components/evidences
   </div>
 </div>
 {% endexample %}
+
+{% example html %}
+<div class="background-gray600 text-white rounded" style="max-width: 41.000rem">
+  <div class="row">
+    <div class="col col-12 col-md-5 d-flex align-items-center order-md-1">
+      <div class="gt-4 gx-3 gb-3">
+        <p>média</p>
+      </div>
+    </div>
+    <div class="col col-12 col-md-7 d-flex align-items-center order-md-0">
+      <div class="gy-3 gy-md-5 gl-md-5">
+        <p class="display-3 mb-4">Vous n'avez pas trouvé votre réponse ?</p>
+        <a href="#" class="btn btn-primary">Questions/Réponses</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}
