@@ -58,7 +58,7 @@ $custom-control-indicator-size:         .875rem; // 14px
 // You can add more entries to the $spacers map, should you need more variation.
 
 // stylelint-disable
-$spacer: 1rem;
+$spacer: 1.250rem;
 $spacers: ();
 $spacers: map-merge((
   0: 0,
@@ -66,7 +66,7 @@ $spacers: map-merge((
   2: ($spacer * .5),
   3: $spacer,
   4: ($spacer * 1.5),
-  5: ($spacer * 3),
+  5: ($spacer * 2),
   6: ($spacer * 3.5),
   7: ($spacer * 4),
   8: ($spacer * 4.5)

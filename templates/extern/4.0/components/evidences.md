@@ -42,3 +42,41 @@ permalink: /docs/4.0/components/evidences
   </div>
 </div>
 {% endexample %}
+
+{% example html %}
+<div class="background-gray600 text-white rounded" style="max-width: 41.000rem">
+  <div class="row">
+    <div class="col col-12 col-md-5 d-flex align-items-center order-md-1">
+      <div class="pt-4 px-3 pb-3">
+        <p>média</p>
+      </div>
+    </div>
+    <div class="col col-12 col-md-7 d-flex align-items-center order-md-0">
+      <div class="py-3 py-md-5 pl-md-5">
+        <p class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</p>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+        <a href="#" class="btn btn-link btn-link-white">Lorem ipsum dolor <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+{% example html %}
+<div class="background-gray100 text-gray600 rounded" style="max-width: 41.000rem">
+  <div class="row">
+    <div class="col col-12 col-md-5 d-flex align-items-center order-md-1">
+      <div class="pt-4 pb-3 px-3">
+        <p>média</p>
+      </div>
+    </div>
+    <div class="col col-12 col-md-7 d-flex align-items-center order-md-0">
+      <div class="pb-4 px-3 py-md-5 pl-md-5 pr-md-0">
+        <p class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</p>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+        <a href="#" class="btn btn-link">Lorem ipsum dolor <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}
