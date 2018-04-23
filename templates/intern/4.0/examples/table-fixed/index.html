@@ -48,16 +48,8 @@ table:
   </head>
   <body>
     {% include components/mastnav.html %}
-    <div class="subactionbars">
-      <div class="toolbar w-100">
-        <div class="w-50 toolbar-item separator-gray-200">
-          <button type="button" class="btn btn-block btn-link justify-content-center btn-color-gray collapseFiltersButton" data-component="state" data-state="active, active" data-behaviour="toggle, toggle" data-target="#collapseFiltersMenu, .collapseFiltersButton" data-closeonclickoutside="true, true">Filtrer</button>
-        </div>
-        <div class="w-50 toolbar-item separator-gray-200 w-50">
-          <button type="button" class="btn btn-block btn-link justify-content-center btn-color-gray collapseSortsButton" data-component="state" data-state="active, active" data-behaviour="toggle, toggle" data-target="#collapseSortsMenu, .collapseSortsButton">Trier</button>
-        </div>
-      </div>
-    </div>
+    {% include components/mastheader.html %}
+
     <div class="actionbar">
       <div class="actionbar-head">
         <h1 class="mb-0">Titre tableau</h1>
@@ -83,12 +75,25 @@ table:
         </ul>
       </div>
     </div>
-    {% include components/mastheader.html %}
-    {% include components/table-filters-menu.html %}
-    {% include components/table-sorts-menu.html %}
+
+    <div class="controlbar">
+      <div class="toolbar w-100">
+        <div class="w-50 toolbar-item separator-gray-200">
+          <button type="button" class="btn btn-block btn-link justify-content-center btn-color-gray collapseFiltersButton" data-component="state" data-state="active, active" data-behaviour="toggle, toggle" data-target="#collapseFiltersMenu, .collapseFiltersButton" data-closeonclickoutside="true, true">Filtrer</button>
+        </div>
+        <div class="w-50 toolbar-item separator-gray-200 w-50">
+          <button type="button" class="btn btn-block btn-link justify-content-center btn-color-gray collapseSortsButton" data-component="state" data-state="active, active" data-behaviour="toggle, toggle" data-target="#collapseSortsMenu, .collapseSortsButton">Trier</button>
+        </div>
+      </div>
+    </div>
+
     <main div class="mastcontainer has-actionbar-subactionbar">
       {% include components/table-fixed.html data=page.table %}
     </main>
+
+    {% include components/table-filters-menu.html %}
+    {% include components/table-sorts-menu.html %}
+
     <script src="{{ site.baseurl }}/main.js"></script>
   </body>
 </html>

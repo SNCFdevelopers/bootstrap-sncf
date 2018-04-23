@@ -1,14 +1,10 @@
-- category: Forms
-  description: "Form layouts"
-  examples:
-    - name: Forms
-      description: "Demonstration of all responsive and container options for forms."
-
 - category: Navigation
   description: "Navigation template"
   examples:
     - name: Navigation
       description: "Demonstration of all responsive and container options for the navbar."
+    - name: Navtabs
+      description: "Actionbar with tabs navigation."
 
 - category: Layouts
   description: "Layout templates"
@@ -17,5 +13,13 @@
       description: "Demonstration of all responsive and container options for the table."
     - name: Table filters 
       description: "Table with filters and sorts"
+    - name: Table fixed 
+      description: "List with fixed column."
     - name: List double columns 
       description: "List with double columns."
+
+- category: Forms
+  description: "Form components"
+  examples:
+    - name: Forms
+      description: "Demonstration of all responsive and container options for forms."

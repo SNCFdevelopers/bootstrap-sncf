@@ -1,8 +1,6 @@
 /* actionbar
    ========================================================================== */
 
-$subactionbar-height:   rem(40px);
-
 $actionbar-min-height:   rem(62px);
 $actionbar-max-height:   rem(90px);
 
@@ -40,7 +38,7 @@ $actionbar-max-height-xl:   rem(105px);
   }
 }
 
-.actionbar-lg {
+.actionbar.has-tabs {
   height: $actionbar-max-height;
 }
 
@@ -67,29 +65,9 @@ $actionbar-max-height-xl:   rem(105px);
   }
 }
 
-.subactionbar {
-  position: fixed;
-  left: 0;
-  z-index: $zindex-fixed;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: $subactionbar-height;
-  background-color: gray("100");
-}
-
 @include media-breakpoint-down(sm) {
   .actionbar {
     border-bottom: 1px solid #d8d8d8;
-  }
-
-  .subactionbar {
-    top: $mastheader-height + $actionbar-min-height;
-    border-bottom: 1px solid #d8d8d8;
-  }
-
-  .subactionbar-lg {
-    top: $mastheader-height + $actionbar-max-height;
   }
 }
 
@@ -99,7 +77,7 @@ $actionbar-max-height-xl:   rem(105px);
     height: $actionbar-min-height-md;
   }
 
-  .actionbar-lg {
+  .actionbar.has-tabs {
     justify-content: flex-end;
     height: $actionbar-max-height-md;
   }
@@ -115,7 +93,7 @@ $actionbar-max-height-xl:   rem(105px);
     padding-left: rem(30px);
   }
 
-  .actionbar-lg {
+  .actionbar.has-tabs {
     height: $actionbar-max-height-lg;
   }
 }
@@ -127,7 +105,7 @@ $actionbar-max-height-xl:   rem(105px);
     padding-right: rem(30px);
   }
 
-  .actionbar-lg {
+  .actionbar.has-tabs {
     height: $actionbar-max-height-xl;
   }
 }

@@ -5,44 +5,54 @@ description: Components and options for laying out your Bootstrap project, inclu
 group: layout
 redirect_from: "/docs/4.0/layout/"
 toc: true
+permalink: /docs/4.0/layout/overview
 ---
 
 ## Containers
 
-Containers are the most basic layout element in Bootstrap and are **required when using our default grid system**. Choose from a responsive, fixed-width container (meaning its `max-width` changes at each breakpoint) or fluid-width (meaning it's `100%` wide all the time).
-
-While containers *can* be nested, most layouts do not require a nested container.
-
-<div class="bd-example">
-  <div class="bd-example-container">
-    <div class="bd-example-container-header"></div>
-    <div class="bd-example-container-sidebar"></div>
-    <div class="bd-example-container-body"></div>
-  </div>
-</div>
+Layout with actionbar, use `has-actionbar` class on the `mastcontainer` element.
 
 {% highlight html %}
-<div class="container">
+<nav class="mastnav">...</nav>
+<header class="mastheader">...</header>
+<div class="actionbar"></div>
+<main div class="mastcontainer has-actionbar">
   <!-- Content here -->
-</div>
+</main>
 {% endhighlight %}
 
-Use `.container-fluid` for a full width container, spanning the entire width of the viewport.
-
-<div class="bd-example">
-  <div class="bd-example-container bd-example-container-fluid">
-    <div class="bd-example-container-header"></div>
-    <div class="bd-example-container-sidebar"></div>
-    <div class="bd-example-container-body"></div>
-  </div>
-</div>
+Layout with a large actionbar (with tabs inside), use `actionbar-lg` class on `actionbar` element and use `has-actionbar` class on the `mastcontainer` element.
 
 {% highlight html %}
-<div class="container-fluid">
-  ...
-</div>
+<nav class="mastnav">...</nav>
+<header class="mastheader">...</header>
+<div class="actionbar actionbar-lg"></div>
+<main div class="mastcontainer has-actionbar-tabs">
+  <!-- Content here -->
+</main>
 {% endhighlight %}
 
+Layout with a large subactionbar, use `has-actionbar-subactionbar` class on the `mastcontainer` element.
+
+{% highlight html %}
+<nav class="mastnav">...</nav>
+<header class="mastheader">...</header>
+<div class="actionbar">...</div>
+<div class="subactionbar">...</div>
+<main div class="mastcontainer has-actionbar-subactionbar">
+  <!-- Content here -->
+</main>
+{% endhighlight %}
+
+{% highlight html %}
+<nav class="mastnav">...</nav>
+<header class="mastheader">...</header>
+<div class="actionbar actionbar-lg"></div>
+<div class="subactionbar">...</div>
+<main div class="mastcontainer has-actionbar-tabs-subactionbar">
+  <!-- Content here -->
+</main>
+{% endhighlight %}
 
 ## Responsive breakpoints
 
@@ -60,11 +70,11 @@ Bootstrap primarily uses the following media query ranges—or breakpoints—in 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+// Large devices (desktops, 960px and up)
+@media (min-width: 960px) { ... }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+// Extra large devices (large desktops, 1140px and up)
+@media (min-width: 1140px) { ... }
 {% endhighlight %}
 
 Since we write our source CSS in Sass, all our media queries are available via Sass mixins:
@@ -93,11 +103,11 @@ We occasionally use media queries that go in the other direction (the given scre
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { ... }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { ... }
+// Medium devices (tablets, less than 960px)
+@media (max-width: 959.98px) { ... }
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... }
+// Large devices (desktops, less than 1140px)
+@media (max-width: 1139.98px) { ... }
 
 // Extra large devices (large desktops)
 // No media query since the extra-large breakpoint has no upper bound on its width
@@ -125,13 +135,13 @@ There are also media queries and mixins for targeting a single segment of screen
 @media (min-width: 576px) and (max-width: 767.98px) { ... }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
+@media (min-width: 768px) and (max-width: 959.98px) { ... }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@media (min-width: 960px) and (max-width: 1139.98px) { ... }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+@media (max-width: 1139.98px) { ... }
 {% endhighlight %}
 
 These media queries are also available via Sass mixins:

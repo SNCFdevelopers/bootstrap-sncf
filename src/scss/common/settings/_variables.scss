@@ -214,6 +214,7 @@ $sizes: map-merge((
 // Settings for the `<body>` element.
 
 $body-bg:                   $gray-100;
+$body-bg-lg:                $gray-100;
 $body-color:                $gray-500;
 
 // Links
@@ -381,7 +382,7 @@ $hr-margin-y:                 $spacer;
 $table-cell-padding:          0 1.25rem;
 $table-cell-padding-sm:       0 .3rem;
 
-$table-bg:                    transparent;
+$table-bg:                    #fff;
 $table-accent-bg:             rgba($black, .05);
 $table-hover-bg:              rgba($black, .075);
 $table-active-bg:             $table-hover-bg;

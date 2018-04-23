@@ -1,5 +1,5 @@
 ---
-permalink: /docs/4.0/examples/navigation
+permalink: /docs/4.0/examples/navtabs
 ---
 
 <html lang="en">
@@ -23,7 +23,7 @@ permalink: /docs/4.0/examples/navigation
     {% include components/mastnav.html %}
     {% include components/mastheader.html %}
 
-    <div class="actionbar">
+    <div class="actionbar has-tabs">
       <div class="actionbar-head">
         <h1 class="mb-0">Titre section</h1>
         <ul class="toolbar mb-0">
@@ -66,6 +66,25 @@ permalink: /docs/4.0/examples/navigation
           </li>
         </ul>
       </div>
+      <nav class="position-relative mt-2">
+        <ul class="navtabs mb-0 dragscroll">
+          <li class="navtabs-item pr-4">
+            <a href="#" class="active">Titre onglet</a>
+          </li>
+          <li class="navtabs-item pr-4">
+            <a href="#">Titre onglet</a>
+          </li>
+          <li class="navtabs-item pr-4">
+            <a href="#">Titre onglet</a>
+          </li>
+          <li class="navtabs-item pr-4">
+            <a href="#">Titre onglet</a>
+          </li>
+          <li class="navtabs-item pr-4">
+            <a href="#">Titre onglet</a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <main div class="mastcontainer">

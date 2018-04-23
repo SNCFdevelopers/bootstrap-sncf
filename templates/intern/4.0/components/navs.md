@@ -38,7 +38,7 @@ permalink: /docs/4.0/components/navs
 {% endexample %}
 
 {% example html %}
-<div class="actionbar actionbar-lg">
+<div class="actionbar has-tabs">
   <div class="actionbar-head">
     <h1 class="mb-0">Titre section</h1>
     <ul class="toolbar mb-0 d-none d-md-flex">
@@ -125,7 +125,7 @@ permalink: /docs/4.0/components/navs
 {% endexample %}
 
 {% example html %}
-<div class="actionbar actionbar-lg">
+<div class="actionbar has-tabs">
   <div class="actionbar-head">
     <h1 class="mb-0">Titre section</h1>
     <ul class="toolbar mb-0 d-none d-md-flex">

@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: $zindex-fixed;
+  z-index: $zindex-fixed + 2;
   background-color: color("white");
 
   &:not(.active) {

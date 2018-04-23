@@ -27,9 +27,10 @@
 // layouts
 @import "intern/layout/mastheader";
 @import "common/layout/mastnav";
-@import "common/layout/actionbar";
+@import "intern/layout/actionbar";
 @import "common/layout/footerbar";
-@import "common/layout/mastcontainer";
+@import "intern/layout/controlbar";
+@import "intern/layout/mastcontainer";
 
 // components
 @import "~bootstrap/scss/images";
