@@ -32,10 +32,16 @@ h3,
 
 .display-2 {
   font-size: $h2-font-size;
+  text-transform: none;
 }
 
 .display-3 {
   font-size: $h3-font-size;
+  text-transform: none;
+}
+
+.lead {
+  color: gray("600");
 }
 
 @include media-breakpoint-up(md) {
