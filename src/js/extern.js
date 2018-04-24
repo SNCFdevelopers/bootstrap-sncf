@@ -15,6 +15,7 @@ import Searchbar from './components/searchbar'
 import SelectExclusive from './components/selectExclusive'
 import SelectMultiple from './components/selectMultiple'
 import SelectRadios from './components/selectRadios'
+import Swiper from 'swiper'
 import Table from './components/table'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataSelectExclusive = 'select-exclusive'
   const dataSelectMultiple = 'select-multiple'
   const dataSelectRadios = 'select-radios'
+  const dataSwiper = 'swiper'
   const dataTable = 'table'
 
   const components = document.querySelectorAll(dataComponent)
@@ -88,6 +90,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataSelectRadios) {
       new SelectRadios(component)
+    }
+
+    if (component.dataset.component === dataSwiper) {
+      new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        slidesPerView: 3,
+        spaceBetween: 40,
+        breakpoints: {
+          // when window width is <= 575px
+          575: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          // when window width is <= 767px
+          767: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          }
+        }
+      })
     }
 
     if (component.dataset.component === dataTable) {

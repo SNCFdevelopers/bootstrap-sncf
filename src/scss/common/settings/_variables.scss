@@ -210,7 +210,9 @@ $gutters: map-merge((
   3: $gutter,
   4: ($gutter * 1.5),
   5: ($gutter * 2),
-  6: ($gutter * 2.5)
+  6: ($gutter * 2.5),
+  7: ($gutter * 3),
+  8: ($gutter * 4)
 ), $gutters);
 
 // This variable affects the `.h-*` and `.w-*` classes.

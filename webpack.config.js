@@ -31,12 +31,12 @@ module.exports = env => {
         {
           enforce: 'pre',
           test: /\.js$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /node_modules/,
           loader: 'eslint-loader',
         },
         {
           test: /\.js$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /node_modules\/(?!(dom7|swiper)\/).*/,
           use: {
             loader: 'babel-loader',
             options: {
