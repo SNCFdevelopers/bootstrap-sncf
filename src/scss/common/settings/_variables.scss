@@ -82,7 +82,8 @@ $theme-colors: map-merge((
   "warning":      $warning,
   "danger":       $danger,
   "light":        $light,
-  "dark":         $dark
+  "dark":         $dark,
+  "white":        $white
 ), $theme-colors);
 
 $btn-colors: ();

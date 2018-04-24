@@ -161,6 +161,14 @@ input {
   }
 }
 
+.form-control-white {
+  background-color: $white;
+  &:focus,
+  &:active {
+    background-color: $white;
+  }
+}
+
 textarea.form-control {
   min-height: rem(160px);
   padding-top: rem(20px);

@@ -187,7 +187,7 @@ Use `is-gray` class or any `background-{color}` classes available to change the 
   <h2 class="display-3 text-primary mb-4">Titre bloc Packshot</h2>
   <div class="row">
     <div class="col-12 col-md-6 d-md-flex gb-5 gb-md-0">
-      <div class="d-flex flex-column background-gray100 gx-3 gy-4 gx-md-4 rounded">
+      <div class="d-flex flex-column background-light gx-3 gy-4 gx-md-4 rounded">
         <img class="w-100" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
         <div class="d-flex flex-column flex-fluid">
           <h3 class="text-gray500 mb-3">-25% garantis* sur tous les trains TGV et Intercités <br/>
@@ -200,7 +200,7 @@ Use `is-gray` class or any `background-{color}` classes available to change the 
       </div>
     </div>
     <div class="col-12 col-md-6 d-md-flex gb-5 gb-md-0">
-      <div class="d-flex flex-column background-gray100 gx-3 gy-4 gx-md-4 rounded">
+      <div class="d-flex flex-column background-light gx-3 gy-4 gx-md-4 rounded">
         <img class="w-100" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
         <div class="d-flex flex-column flex-fluid">
           <h3 class="text-gray500 mb-3">-10% supplémentaires sur les billets Prem’s*</h3>
@@ -214,7 +214,7 @@ Use `is-gray` class or any `background-{color}` classes available to change the 
 </div>
 {% endexample %}
 
-## Mosaic
+### Mosaic
 
 {% example html %}
 <div style="max-width: 41.000rem">
@@ -222,7 +222,7 @@ Use `is-gray` class or any `background-{color}` classes available to change the 
   <div class="row">
     <div class="col-12 col-md-6 gb-5 gb-md-0">
       <div>
-        <img class="w-100 mb-4 rounded" width="240" src="https://dummyimage.com/240x158/000/fff" />
+        <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
         <div>
           <h3 class="text-gray500 mb-2">Paris - Bordeaux</h3>
           <div class="mb-3">Lorem ipsum doloret</div>
@@ -232,13 +232,42 @@ Use `is-gray` class or any `background-{color}` classes available to change the 
     </div>
     <div class="col-12 col-md-6 gb-5 gb-md-0">
       <div>
-        <img class="w-100 mb-4 rounded" width="240" src="https://dummyimage.com/240x158/000/fff" />
+        <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
         <div>
           <h3 class="text-gray500 mb-2">Paris - Nantes</h3>
           <div class="mb-3">Lorem ipsum doloret</div>
           <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+## Contact
+
+{% example html %}
+<div style="max-width: 41.000rem">
+  <div class="row no-gutters background-light rounded gx-3 gb-4 g-md-5">
+    <div class="col-12 col-md-6 order-md-1">
+      <img class="w-100" src="https://dummyimage.com/286x160/000/fff" />
+    </div>
+    <div class="col-12 col-md-6 order-md-0 mb-1">
+      <h3 class="display-3 text-primary">Lorem ipsum</h3>
+      <p>Abonnez-vous à notre magazine Perspectives Fret en renseignant votre adresse éléctronique et recevez chaque mois une nouvelle édition en version numérique.</p>
+    </div>
+    <div class="col-12 order-md-2">
+      <form>
+        <div class="form-row">
+          <div class="col-12 col-sm-auto flex-sm-fluid gb-3 gb-sm-0">
+            <label for="inputEmail1">Courriel</label>
+            {% include components/input.html type="email" id="inputEmail1" placeholder="Example input" class="form-control-white" %}
+          </div>
+          <div class="col-12 col-sm-auto d-flex align-items-end">
+            <button type="submit" class="btn btn-primary w-100 w-sm-auto">Valider</button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </div>
