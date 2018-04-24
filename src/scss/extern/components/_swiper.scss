@@ -18,19 +18,10 @@
   background-image: none;
   border-radius: 50%;
 
-  &:hover {
-    color: theme-color("primary-dark");
+  &:not(.swiper-button-disabled):hover {
+    color: color("white");
+    background-color: theme-color("primary-dark");
   }
-}
-
-.swiper-button-prev {
-  right: calc(100% + #{rem(50px)});
-  left: auto;
-}
-
-.swiper-button-next {
-  right: auto;
-  left: calc(100% + #{rem(50px)});
 }
 
 .swiper-pagination {

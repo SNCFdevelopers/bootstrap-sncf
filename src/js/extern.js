@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataSelectExclusive = 'select-exclusive'
   const dataSelectMultiple = 'select-multiple'
   const dataSelectRadios = 'select-radios'
-  const dataSwiper = 'swiper'
+  const dataSlideshow = 'slideshow'
+  const dataMultiSlideshow = 'multi-slideshow'
   const dataTable = 'table'
 
   const components = document.querySelectorAll(dataComponent)
@@ -92,14 +93,29 @@ document.addEventListener('DOMContentLoaded', () => {
       new SelectRadios(component)
     }
 
-    if (component.dataset.component === dataSwiper) {
-      new Swiper('.swiper-container', {
+    if (component.dataset.component === dataSlideshow) {
+      new Swiper(component.querySelector('[data-role=container]'), {
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
+          nextEl: component.querySelector('[data-role=button-next]'),
+          prevEl: component.querySelector('[data-role=button-prev]')
         },
         pagination: {
-          el: '.swiper-pagination',
+          el: component.querySelector('[data-role=pagination]'),
+          type: 'custom',
+          renderCustom: (swiper, current, total) => `${current}/${total}`
+        },
+        slidesPerView: 1
+      })
+    }
+
+    if (component.dataset.component === dataMultiSlideshow) {
+      new Swiper(component.querySelector('[data-role=container]'), {
+        navigation: {
+          nextEl: component.querySelector('[data-role=button-next]'),
+          prevEl: component.querySelector('[data-role=button-prev]')
+        },
+        pagination: {
+          el: component.querySelector('[data-role=pagination]'),
           type: 'bullets',
           clickable: true
         },

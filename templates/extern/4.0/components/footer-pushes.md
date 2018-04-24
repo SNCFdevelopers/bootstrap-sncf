@@ -13,11 +13,9 @@ permalink: /docs/4.0/components/footer-pushes
 <div class="background-light">
   <div class="container gt-8 gb-5">
     <h2 class="h1 mb-5">À découvrir également</h2>
-    <div class="swiper">
-      <div class="swiper-container" data-component="swiper">
-        <!-- Additional required wrapper -->
+    <div class="swiper multi-slideshow" data-component="multi-slideshow">
+      <div class="swiper-container" data-role="container">
         <div class="swiper-wrapper">
-          <!-- Slides -->
           <div class="swiper-slide">
             <div>
               <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
@@ -60,12 +58,11 @@ permalink: /docs/4.0/components/footer-pushes
           </div>            
         </div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination gt-5"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev d-none d-md-flex"><i class="icons-arrow-prev icon-size-x75"></i></div>
-      <div class="swiper-button-next d-none d-md-flex"><i class="icons-arrow-next icon-size-x75"></i></div>
+      <div class="swiper-pagination gt-5" data-role="pagination"></div>
+      <div class="swiper-buttons">
+        <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icon-size-x75"></i></div>
+        <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icon-size-x75"></i></div>
+      </div>
     </div>
   </div>
 </div>

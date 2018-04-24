@@ -2,6 +2,11 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
+    .text#{$infix}-xs {
+      font-size: $font-size-xs;
+      line-height: $line-height-xs;
+    }
+
     .text#{$infix}-sm {
       font-size: $font-size-sm;
       line-height: $line-height-sm;
