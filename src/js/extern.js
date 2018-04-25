@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataSelectExclusive = 'select-exclusive'
   const dataSelectMultiple = 'select-multiple'
   const dataSelectRadios = 'select-radios'
+  const dataCarousel = 'carousel'
   const dataSlideshow = 'slideshow'
   const dataMultiSlideshow = 'multi-slideshow'
   const dataTable = 'table'
@@ -91,6 +92,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataSelectRadios) {
       new SelectRadios(component)
+    }
+
+    if (component.dataset.component === dataCarousel) {
+      new Swiper(component.querySelector('[data-role=container]'), {
+        navigation: {
+          nextEl: component.querySelector('[data-role=button-next]'),
+          prevEl: component.querySelector('[data-role=button-prev]')
+        },
+        pagination: {
+          el: component.querySelector('[data-role=pagination]'),
+          type: 'bullets'
+        },
+        slidesPerView: 1
+      })
     }
 
     if (component.dataset.component === dataSlideshow) {
