@@ -1,5 +1,6 @@
 import 'bootstrap'
 import './utils/dragscroll.js'
+import './utils/polyfill.js'
 import './utils/stretchy.js'
 import {
   LineChart,
