@@ -2,26 +2,14 @@
   pages:
     - title: Introduction
     - title: Download
-    - title: Contents
-    - title: Browsers & devices
-    - title: JavaScript
-    - title: Theming
-    - title: Build tools
-    # - title: Best practices # TODO: Write this content
-    - title: Webpack
     - title: Accessibility
 
 - title: Layout
   pages:
     - title: Overview
     - title: Grid
-    - title: Media object
     - title: Utilities for layout
     - title: Form
-
-- title: Pages
-  pages:
-    - title: Navigation
 
 - title: Content
   pages:
@@ -34,10 +22,11 @@
 
 - title: Components
   pages:
+    - title: Badge
+    - title: Breadcrumb
     - title: Buttons
     - title: Checkboxes and radios
     - title: Carousel
-    - title: Collapse
     - title: Dropdowns
     - title: Edito
     - title: Elements

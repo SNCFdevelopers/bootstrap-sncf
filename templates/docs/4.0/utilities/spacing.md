@@ -19,7 +19,8 @@ The classes are named using the format `{property}{sides}-{size}` for `xs` and `
 Where *property* is one of:
 
 * `m` - for classes that set `margin`
-* `p` - for classes that set `padding`
+* `p` - for classes that set `padding` based on `1rem`
+* `g` - for classes that set `padding` based on `1.250rem`
 
 Where *sides* is one of:
 
