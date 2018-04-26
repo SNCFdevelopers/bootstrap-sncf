@@ -4,6 +4,7 @@ title: Grid system
 description: Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.
 group: layout
 toc: true
+permalink: /docs/4.0/layout/grid
 ---
 
 ## How it works
@@ -71,11 +72,11 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
       </th>
       <th class="text-center">
         Large<br>
-        <small>&ge;992px</small>
+        <small>&ge;1024px</small>
       </th>
       <th class="text-center">
         Extra large<br>
-        <small>&ge;1200px</small>
+        <small>&ge;1280px</small>
       </th>
     </tr>
   </thead>
@@ -657,9 +658,9 @@ $grid-breakpoints: (
   // Medium screen / tablet
   md: 768px,
   // Large screen / desktop
-  lg: 992px,
+  lg: 1024px,
   // Extra large screen / wide desktop
-  xl: 1200px
+  xl: 1280px
 );
 
 $container-max-widths: (

@@ -5,6 +5,7 @@
   display: flex;
   height: $progress-height;
   font-size: $progress-font-size;
+  color: $progress-bar-color;
   background-color: $progress-bg;
   background-image: linear-gradient(90deg, #e1ded9 50%, transparent 50%);
   background-size: rem(4px) $progress-height;
@@ -23,33 +24,9 @@
   justify-content: center;
   color: $progress-bar-color;
   text-align: center;
+  background-color: $progress-bar-bg;
+  border-radius: 0 $progress-border-radius $progress-border-radius 0;
   @include transition($progress-bar-transition);
-
-  &:not([aria-valuenow="0"]) {
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      width: calc(100% - #{$progress-height} - 4px);
-      height: $progress-height;
-      content: "";
-      background-color: $progress-bar-bg;
-      @include border-radius($progress-border-radius);
-    }
-
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: block;
-      width: $progress-height;
-      height: $progress-height;
-      content: "";
-      background-color: $progress-bar-bg;
-      border-radius: 50%;
-    }
-  }
 }
 
 .progress-label {

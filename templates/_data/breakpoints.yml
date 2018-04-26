@@ -19,11 +19,11 @@
 - breakpoint: lg
   abbr: -lg
   name: Large
-  min-width: 992px
+  min-width: 1024px
   container: 960px
 
 - breakpoint: xl
   abbr: -xl
   name: Extra large
-  min-width: 1200px
+  min-width: 1280px
   container: 1140px

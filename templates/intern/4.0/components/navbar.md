@@ -66,16 +66,3 @@ permalink: /docs/4.0/components/navbar
   </ul>
 </header>
 {% endexample %}
-
-{% example html %}
-<div class="options-control options-control-lg">
-  <div class="options-item">
-    <input type="radio" name="optionsRadio" id="optionsRadio1" class="sr-only" checked/>
-    <label class="options-btn font-weight-medium" for="optionsRadio1">Option 1</label>
-  </div>
-  <div class="options-item">
-    <input type="radio" name="optionsRadio" id="optionsRadio2" class="sr-only"/>
-    <label class="options-btn font-weight-medium" for="optionsRadio2">Option 2</label>
-  </div>
-</div>
-{% endexample %}

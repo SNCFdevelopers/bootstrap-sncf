@@ -93,15 +93,14 @@ Add a `stretchy` class on `textarea` element.
 ### Textarea with counter
 
 {% example html %}
-<label class="font-weight-medium mb-2" for="countTextarea1">Textarea with counter</label>
-{% include components/textarea.html id="countTextarea1" placeholder="Character counter..." %}
+{% include components/textarea-counter.html id="countTextarea1" placeholder="Character counter..." %}
 {% endexample %}
 
 ### With toolbar
 
 {% example html %}
 <div class="form-group">
-  <label class="font-weight-medium mb-1" for="exampleFormControlTextarea3">Example textarea</label>
+  <label for="exampleFormControlTextarea3">Example textarea</label>
   <div class="form-toolbar mb-1">
     <button type="button" class="form-toolbar-item">
       <span class="sr-only">Bold</span>

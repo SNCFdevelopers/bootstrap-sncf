@@ -89,7 +89,6 @@ th {
 .table {
   th,
   td {
-    white-space: nowrap;
     border-color: #d8d8d8;
 
     &:first-child {
@@ -189,6 +188,12 @@ th {
   display: flex;
   align-items: center;
   min-height: rem(52px);
+  padding-top: ($spacer / 2);
+  padding-bottom: ($spacer / 2);
+
+  .dragscroll & {
+    white-space: nowrap;
+  }
 }
 
 .cell-350 {

@@ -137,7 +137,7 @@ There are also media queries and mixins for targeting a single segment of screen
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 1023.98px) { ... }
 
-// Large devices (desktops, 992px and up)
+// Large devices (desktops, 1024px and up)
 @media (min-width: 1024px) and (max-width: 1279.98px) { ... }
 
 // Extra large devices (large desktops, 1280px and up)

@@ -36,7 +36,9 @@ $mastnav-width-lg: rem(100px);
   }
 
   .mastnav-item {
+    display: flex;
     flex: 1;
+    min-height: $mastnav-height-sm;
     font-size: rem(10px);
     color: $body-color;
 
@@ -61,6 +63,11 @@ $mastnav-width-lg: rem(100px);
     background-color: theme-color("primary");
   }
 
+  .mastnav-top {
+    display: flex;
+    flex-direction: column;
+  }
+
   .mastnav-bottom {
     border-top: 1px solid rgba(255, 255, 255, .2);
   }
@@ -82,7 +89,7 @@ $mastnav-width-lg: rem(100px);
 
   .mastnav-item-horizontal {
     flex-direction: row;
-    min-height: rem(60px);
+    height: rem(60px); // can't use min-height for IE11
 
     [class^="icons-"] {
       margin-right: rem(8px);

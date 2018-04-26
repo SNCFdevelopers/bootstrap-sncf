@@ -27,7 +27,7 @@ sector:
 
     <link href="{{ site.baseurl }}/main.css" rel="stylesheet">
   </head>
-  <body>
+  <body style="background-color: #fff">
     <main class="container">
       <h1 class="display-1 pt-5">Formulaire empilé (e.g. E-isolement : Ajouter un agent)</h1>
       <div class="row justify-content-center pt-5 pb-5">
@@ -49,6 +49,10 @@ sector:
           <div class="form-group">
             <label for="lastname">Nom</label>
             {% include components/input.html type="email" id="lastname" %}
+          </div>
+          <div class="form-group">
+            <label for="profile">Profil</label>
+            {% include components/select-exclusive.html id="profile" placeholder="Sélectionner un profil" items=page.profile %}
           </div>
           <div class="form-group">
             <label for="profile">Profil</label>

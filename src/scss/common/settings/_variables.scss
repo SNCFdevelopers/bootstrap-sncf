@@ -486,7 +486,7 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 $input-padding-y:                       .65625rem; // 10.5px
 $input-padding-x:                       1.25rem;
 $input-line-height:                     $input-btn-line-height;
-$input-height:                          $input-btn-height;
+$input-min-height:                      $input-btn-height;
 
 $input-padding-y-sm:                    $input-btn-padding-y-sm;
 $input-padding-x-sm:                    $input-btn-padding-x-sm;
@@ -845,11 +845,11 @@ $popover-arrow-outer-color:         fade-in($popover-border-color, .05);
 
 // Badges
 
-$badge-font-size:                   75%;
-$badge-font-weight:                 $font-weight-bold;
-$badge-padding-y:                   .25em;
-$badge-padding-x:                   .4em;
-$badge-border-radius:               $border-radius;
+$badge-font-size:                   $font-size-sm;
+$badge-font-weight:                 $font-weight-medium;
+$badge-padding-y:                   .313rem;
+$badge-padding-x:                   1.5rem;
+$badge-border-radius:               .75rem;
 
 $badge-pill-padding-x:              .6em;
 // Use a higher than normal value to ensure completely rounded edges when
@@ -916,8 +916,8 @@ $progress-font-size:                ($font-size-base * .75);
 $progress-bg:                       $gray-200;
 $progress-border-radius:            .3125rem; // 5px
 $progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1);
-$progress-bar-color:                $white;
-$progress-bar-bg:                   theme-color("primary");
+$progress-bar-color:                $primary;
+$progress-bar-bg:                   $primary;
 $progress-bar-animation-timing:     1s linear infinite;
 $progress-bar-transition:           width .6s ease;
 
@@ -973,8 +973,8 @@ $breadcrumb-margin-bottom:          1rem;
 $breadcrumb-bg:                     $white;
 $breadcrumb-divider-color:          $gray-600;
 $breadcrumb-active-color:           $primary;
-$breadcrumb-active-divider:         url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cdefs%3E%3Cstyle%3E.a{fill:%230088ce;}%3C/style%3E%3C/defs%3E%3Ctitle%3Earrow-right%3C/title%3E%3Cpath class='a' d='M40.42,25,17,48.85a4.69,4.69,0,0,1-6.15,0,5.15,5.15,0,0,1-1.16-3.08,4.38,4.38,0,0,1,1.16-3.08L28.12,25,10.81,7.31A4.6,4.6,0,0,1,11.58.38a5.39,5.39,0,0,1,5.77,1.16Z'/%3E%3C/svg%3E");
-$breadcrumb-divider:                url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cdefs%3E%3Cstyle%3E.a{fill:%23b9b9b9;}%3C/style%3E%3C/defs%3E%3Ctitle%3Earrow-right%3C/title%3E%3Cpath class='a' d='M40.42,25,17,48.85a4.69,4.69,0,0,1-6.15,0,5.15,5.15,0,0,1-1.16-3.08,4.38,4.38,0,0,1,1.16-3.08L28.12,25,10.81,7.31A4.6,4.6,0,0,1,11.58.38a5.39,5.39,0,0,1,5.77,1.16Z'/%3E%3C/svg%3E");
+$breadcrumb-active-divider:         str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%230088ce' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
+$breadcrumb-divider:                str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%23b9b9b9' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
 
 
 // Carousel

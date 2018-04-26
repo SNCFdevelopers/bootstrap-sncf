@@ -8,7 +8,6 @@
   pages:
     - title: Overview
     - title: Grid
-    - title: Media object
     - title: Utilities for layout
     - title: Form
 
@@ -31,11 +30,9 @@
     - title: Carousel
     - title: Charts
     - title: Checkboxes and radios
-    - title: Collapse
     - title: Dropdowns
     - title: Forms
     - title: Input group
-    - title: Jumbotron
     - title: List group
     - title: Modal
     - title: Navs

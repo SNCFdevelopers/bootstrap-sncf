@@ -16,9 +16,13 @@ Bootstrap 4 is built with flexbox, but not every element's `display` has been ch
 
 Should you need to add `display: flex` to an element, do so with `.d-flex` or one of the responsive variants (e.g., `.d-sm-flex`). You'll need this class or `display` value to allow the use of our extra [flexbox utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/flex/) for sizing, alignment, spacing, and more.
 
-## Margin and padding
+## Vertical rythm, margin and padding
 
-Use the `margin` and `padding` [spacing utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/spacing/) to control how elements and components are spaced and sized. Bootstrap 4 includes a five-level scale for spacing utilities, based on a `1rem` value default `$spacer` variable. Choose values for all viewports (e.g., `.mr-3` for `margin-right: 1rem`), or pick responsive variants to target specific viewports (e.g., `.mr-md-3` for `margin-right: 1rem` starting at the `md` breakpoint).
+Use the `margin` and `padding` [spacing utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/spacing/) to control how elements and components are spaced and sized. SNCF framework includes a five-level scale for spacing utilities, based on a `1rem` value default `$spacer` variable. Choose values for all viewports (e.g., `.mr-3` for `margin-right: 1rem`), or pick responsive variants to target specific viewports (e.g., `.mr-md-3` for `margin-right: 1rem` starting at the `md` breakpoint).
+
+## Gutters, only padding
+
+Use the `padding` [spacing utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/spacing/) to control how components are spaced and sized. SNCF framework includes a height-level scale for spacing utilities, based on a `1.250rem` value default `$gutter` variable. Choose values for all viewports (e.g., `.gr-3` for `margin-right: 1.250rem`), or pick responsive variants to target specific viewports (e.g., `.mr-md-3` for `margin-right: 1.250rem` starting at the `md` breakpoint).
 
 ## Toggle `visibility`
 
