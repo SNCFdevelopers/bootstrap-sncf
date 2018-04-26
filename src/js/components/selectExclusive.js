@@ -10,14 +10,14 @@ class SelectExclusive {
   constructor(element) {
     this.element = element
     this.btnNode = element.querySelector('[data-role=btn]') // arrow btn
-    this.toggleNode = element.querySelector('[data-role=select-toggle') // menu toggle trigger
+    this.toggleNode = element.querySelector('[data-role=select-toggle]') // menu toggle trigger
     this.inputNode = element.querySelector('[data-role=input]') // select node
     this.placeholderNode = element.querySelector('[data-role=placeholder]') // placeholder
-    this.menu = element.querySelector('[data-role=menu')
+    this.menu = element.querySelector('[data-role=menu]')
     const optionsNode = element.querySelectorAll('[data-role=value]') // options
     this.currentValueNode = null
 
-    this.collapses = element.querySelectorAll('[data-role=collapse') // if collapse groups
+    this.collapses = element.querySelectorAll('[data-role=collapse]') // if collapse groups
 
     this.addContainerNode = element.querySelector('[data-role=add]')
     const addBtn = element.querySelector('[data-role=add-btn]')

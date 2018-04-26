@@ -2,13 +2,6 @@
   pages:
     - title: Introduction
     - title: Download
-    - title: Contents
-    - title: Browsers & devices
-    - title: JavaScript
-    - title: Theming
-    - title: Build tools
-    # - title: Best practices # TODO: Write this content
-    - title: Webpack
     - title: Accessibility
 
 - title: Layout

@@ -18,13 +18,13 @@ class SelectMultiple {
     this.element = element
 
     this.btn = element.querySelector('[data-role=btn]')
-    this.toggle = element.querySelector('[data-role=select-toggle')
+    this.toggle = element.querySelector('[data-role=select-toggle]')
 
     this.input = element.querySelector('[data-role=input]')
     this.placeholder = element.querySelector('[data-role=placeholder]')
     const groups = element.querySelectorAll('[data-role=group]')
 
-    this.collapses = element.querySelectorAll('[data-role=collapse')
+    this.collapses = element.querySelectorAll('[data-role=collapse]')
 
     this.selectedOptions = getSelectedOptions(this.input)
     this.store = {}
