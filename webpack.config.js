@@ -73,6 +73,13 @@ module.exports = env => {
               name: 'assets/fonts/[name].[ext]'
             }
           }],
+        },
+        {
+          test: require.resolve('jquery'),
+          use: [{
+            loader: 'expose-loader',
+            options: '$'
+          }]
         }
       ]
     },
@@ -87,7 +94,7 @@ module.exports = env => {
           to: 'assets/img' 
         }
       ], {
-        context:  path.resolve(__dirname, 'src/assets/img')
+        context: path.resolve(__dirname, 'src/assets/img')
       })
     ]
   }
