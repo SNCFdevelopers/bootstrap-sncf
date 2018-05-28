@@ -210,20 +210,19 @@ th {
       height: 0;
       margin-right: rem(20px);
       content: "";
-      border-top: $caret-width solid gray("300");
-      border-right: $caret-width solid transparent;
-      border-bottom: 0;
-      border-left: $caret-width solid transparent;
+      border-color: transparent transparent transparent gray("300");
+      border-style: solid;
+      border-width: $caret-width 0 $caret-width $caret-width;
       transition: transform .15s ease-out;
     }
 
     .trhead.active &::before {
-      transform: rotate(180deg);
+      transform: rotate(90deg);
     }
   }
 
   &.active > .cell-inner::before {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
   }
 }
 

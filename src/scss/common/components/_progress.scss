@@ -31,8 +31,8 @@
 
 .progress-label {
   position: absolute;
-  left: 100%;
   bottom: calc(100% + #{rem(8px)});
+  left: 100%;
   font-size: rem(24px);
   font-weight: $font-weight-medium;
   // transform: translateX(50%);
@@ -42,8 +42,8 @@
   }
 
   .progress-bar[aria-valuenow="100"] & {
-    left: auto;
     right: 0;
+    left: auto;
     color: theme-color("primary");
   }
 }
