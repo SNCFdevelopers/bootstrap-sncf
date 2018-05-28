@@ -183,6 +183,65 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
 </div>
 {% endexample %}
 
+{% example html %}
+<div class="table-wrapper" data-component="table">
+  <div class="table-scroller dragscroll">
+    <table class="table">
+      <thead class="thead thead-light">
+        <tr>
+          <th>
+            <div class="cell-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="thead">
+                <label class="custom-control-label" for="thead"></label>
+              </div>
+            </div>
+          </th>
+          <th><div class="cell-inner cell-inner-350">Nom</div></th>
+          <th><div class="cell-inner">Type</div></th>
+          <th><div class="cell-inner">Vers</div></th>
+          <th><div class="cell-inner">Agent</div></th>
+          <th><div class="cell-inner">Mise à jour</div></th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        {% for item in site.data.tables %}
+        {% assign index = forloop.index %}
+        <tr class="trhead">
+          <td>
+            <div class="cell-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
+                <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
+              </div>
+            </div>
+          </td>
+          <td class="cell-350 cell-caret" data-role="toggle-group-btn" data-id="{{ index }}"><div class="cell-inner">{{ item.name }}</div></td>
+          <td><div class="cell-inner">{{ item.type }}</div></td>
+          <td><div class="cell-inner">{{ item.version }}</div></td>
+          <td><div class="cell-inner">{{ item.agent }}</div></td>
+          <td><div class="cell-inner">{{ item.update }}</div></td>
+        </tr>
+        {% for subitem in item.subrows %}
+          <tr class="trgroup" data-trgroup="{{ index }}">
+            <td>
+              <div class="cell-inner">
+                <div class="custom-control custom-checkbox custom-checkbox-alone">
+                  <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
+                  <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
+                </div>
+              </div>
+            </td>
+            <td class="cell-350" colspan="5"><div class="cell-inner"><div class="text-truncate">{{ subitem.name }}</div></div></td>
+          </tr>
+        {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endexample %}
+
 ## Striped rows
 
 Use `.table-striped` to add zebra-striping to any table row within the `<tbody>`.

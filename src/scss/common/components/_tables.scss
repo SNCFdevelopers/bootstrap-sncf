@@ -176,8 +176,7 @@ th {
     display: none;
   }
 
-  > th:first-child,
-  > td:first-child {
+  .cell-350 {
     > .cell-inner {
       padding-left: rem(40px);
     }

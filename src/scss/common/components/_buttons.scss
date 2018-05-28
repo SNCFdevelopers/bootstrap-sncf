@@ -185,6 +185,11 @@ input[type="button"] {
     background-color: color("white");
     border-color: color("white");
   }
+
+  &.btn-sm {
+    min-width: $btn-height-sm;
+    min-height: $btn-height-sm;
+  }
 }
 
 

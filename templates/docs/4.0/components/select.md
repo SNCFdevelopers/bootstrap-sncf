@@ -23,7 +23,7 @@ Custom `<select>` menus need a custom class and data attribute, `.select-improve
 
 {% example html %}
 <label for="select1">Example select</label>
-{% include components/select-exclusive.html id="select1" placeholder="Lorem ipsum" placeholderAttr="selected" items=page.default %}
+{% include components/select-exclusive.html id="select1" placeholder="Lorem ipsum" iconsize="icon-size-x75" placeholderAttr="selected" items=page.default %}
 {% endexample %}
 
 ### Select menu with additional input
@@ -41,14 +41,14 @@ Custom `<select>` menus need a custom class and data attribute, `.select-improve
 {% endcapture %}
 {% example html %}
 <label for="select2">Additional input</label>
-{% include components/select-exclusive.html id="select2" placeholder="Lorem ipsum" placeholderAttr="selected" items=page.default content=input_add %}
+{% include components/select-exclusive.html id="select2" placeholder="Lorem ipsum" iconsize="icon-size-x75" placeholderAttr="selected" items=page.default content=input_add %}
 {% endexample %}
 
 ### Select with default select value
 
 {% example html %}
 <label for="select3">Option selected by default</label>
-{% include components/select-exclusive.html id="select3" placeholder="Lorem ipsum" placeholderAttr="selected" items=page.selected %}
+{% include components/select-exclusive.html id="select3" placeholder="Lorem ipsum" iconsize="icon-size-x75" items=page.selected %}
 {% endexample %}
 
 ## By group

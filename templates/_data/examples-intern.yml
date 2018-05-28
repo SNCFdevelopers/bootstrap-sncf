@@ -19,6 +19,8 @@
       description: "Table with pagination."
     - name: List double columns 
       description: "List with double columns."
+    - name: Table group
+      description: "List with group and search menu"
 
 - category: Forms
   description: "Form components"

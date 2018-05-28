@@ -43,11 +43,13 @@
   background: none;
   border: 0;
 
-  &:hover,
-  &:focus,
-  &:active,
-  &.active {
-    color: theme-color("primary");
+  &.has-hover {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: theme-color("primary");
+    }
   }
 
   + .filters-menu-item {
@@ -97,8 +99,17 @@
 
 @include media-breakpoint-down(sm) {
   .table-filters {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
+  }
+
+  .table-filters-head {
+    flex: 0 0 1;
+  }
+  .table-filters-menu {
+    flex: 1 1 100%;
   }
 }
 

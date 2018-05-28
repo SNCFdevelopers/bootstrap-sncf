@@ -435,6 +435,7 @@ $input-btn-focus-box-shadow:  none; // 0 0 0 $input-btn-focus-width $input-btn-f
 $input-btn-padding-y-sm:      .125rem; // 2px
 $input-btn-padding-x-sm:      1.25rem;
 $input-btn-line-height-sm:    $input-btn-line-height;
+$input-btn-height-sm:         1.875em;; // 30px
 
 $input-btn-padding-y-lg:      .5rem;
 $input-btn-padding-x-lg:      1rem;
@@ -455,6 +456,7 @@ $btn-height:                  $input-btn-height;
 $btn-padding-y-sm:            $input-btn-padding-y-sm;
 $btn-padding-x-sm:            $input-btn-padding-x-sm;
 $btn-line-height-sm:          $input-btn-line-height-sm;
+$btn-height-sm:               $input-btn-height-sm;
 
 $btn-padding-y-lg:            $input-btn-padding-y-lg;
 $btn-padding-x-lg:            $input-btn-padding-x-lg;
@@ -491,6 +493,7 @@ $input-min-height:                      $input-btn-height;
 $input-padding-y-sm:                    $input-btn-padding-y-sm;
 $input-padding-x-sm:                    $input-btn-padding-x-sm;
 $input-line-height-sm:                  $input-btn-line-height-sm;
+$input-min-height-sm:                   $input-btn-height-sm;
 
 $input-padding-y-lg:                    $input-btn-padding-y-lg;
 $input-padding-x-lg:                    $input-btn-padding-x-lg;
