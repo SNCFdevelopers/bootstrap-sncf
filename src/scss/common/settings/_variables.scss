@@ -916,7 +916,7 @@ $progress-font-size:                ($font-size-base * .75);
 $progress-bg:                       $gray-200;
 $progress-border-radius:            .3125rem; // 5px
 $progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1);
-$progress-bar-color:                $primary;
+$progress-bar-color:                $body-color;
 $progress-bar-bg:                   $primary;
 $progress-bar-animation-timing:     1s linear infinite;
 $progress-bar-transition:           width .6s ease;

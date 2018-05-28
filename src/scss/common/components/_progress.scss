@@ -25,19 +25,25 @@
   color: $progress-bar-color;
   text-align: center;
   background-color: $progress-bar-bg;
-  border-radius: 0 $progress-border-radius $progress-border-radius 0;
+  @include border-radius($progress-border-radius);
   @include transition($progress-bar-transition);
 }
 
 .progress-label {
   position: absolute;
-  right: 0;
+  left: 100%;
   bottom: calc(100% + #{rem(8px)});
   font-size: rem(24px);
   font-weight: $font-weight-medium;
-  transform: translateX(50%);
+  // transform: translateX(50%);
 
   sup {
     font-size: rem(14px);
+  }
+
+  .progress-bar[aria-valuenow="100"] & {
+    left: auto;
+    right: 0;
+    color: theme-color("primary");
   }
 }

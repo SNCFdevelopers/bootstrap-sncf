@@ -52,3 +52,15 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
   <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span class="progress-label">25<sup>%</sup></span></div>
 </div>
 {% endexample %}
+
+{% example html %}
+<div class="progress has-label">
+  <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"><span class="progress-label">99<sup>%</sup></span></div>
+</div>
+{% endexample %}
+
+{% example html %}
+<div class="progress has-label">
+  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span class="progress-label">100<sup>%</sup></span></div>
+</div>
+{% endexample %}
