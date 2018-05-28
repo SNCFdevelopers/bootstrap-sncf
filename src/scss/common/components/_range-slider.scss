@@ -86,3 +86,18 @@
 .irs-single {
   z-index: 10;
 }
+
+.range-slider.is-disabled {
+  color: gray("300");
+  pointer-events: none;
+
+  .irs-bar,
+  .irs-bar-edge,
+  .irs-slider {
+    background-color: gray("300");
+  }
+
+  .irs-slider {
+    border-color: gray("300");
+  }
+}
