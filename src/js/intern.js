@@ -9,6 +9,7 @@ import {
 import Chips from './components/chips'
 import Control from './components/control'
 import Picker from './components/picker'
+import RadialProgress from './components/progress'
 import RangeSlider from './components/rangeSliders'
 import Searchbar from './components/searchbar'
 import SelectExclusive from './components/selectExclusive'
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataSelectRadios = 'select-radios'
   const dataState = 'state'
   const dataTable = 'table'
+  const dataRadialProgress = 'radial-progress'
 
   const components = document.querySelectorAll(dataComponent)
 
@@ -87,6 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataTable) {
       new Table(component)
+    }
+
+    if (component.dataset.component === dataRadialProgress) {
+      new RadialProgress(component)
     }
     /* eslint-enable no-new */
   })

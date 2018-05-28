@@ -10,6 +10,7 @@ import Control from './components/control'
 import Header from './components/header'
 import Nav from './components/nav-extern'
 import Picker from './components/picker'
+import RadialProgress from './components/progress'
 import RangeSlider from './components/rangeSliders'
 import Searchbar from './components/searchbar'
 import SelectExclusive from './components/selectExclusive'
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataSlideshow = 'slideshow'
   const dataMultiSlideshow = 'multi-slideshow'
   const dataTable = 'table'
+  const dataRadialProgress = 'radial-progress'
 
   const components = document.querySelectorAll(dataComponent)
 
@@ -94,6 +96,10 @@ document.addEventListener('DOMContentLoaded', () => {
       new SelectRadios(component)
     }
 
+    if (component.dataset.component === dataRadialProgress) {
+      new RadialProgress(component)
+    }
+    
     if (component.dataset.component === dataCarousel) {
       new Swiper(component.querySelector('[data-role=container]'), {
         navigation: {

@@ -64,3 +64,17 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
   <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span class="progress-label">100<sup>%</sup></span></div>
 </div>
 {% endexample %}
+
+
+## Radial progress
+
+{% example html %}
+<div class="progress-circle" data-component="radial-progress">
+    <svg class="progress-circle-figure" data-role="figure" width="120" height="120" viewBox="0 0 120 120">
+        <circle class="progress-circle-meter" cx="60" cy="60" r="54" stroke-width="12" />
+        <circle class="progress-circle-value" cx="60" cy="60" r="54" stroke-width="12" />
+    </svg>
+    <div class="progress-circle-label"><span><span data-role="label">0</span><sup>%</sup></span></div>
+    <input data-role="control" class="sr-only" type="range" value="60" />
+</div>
+{% endexample %}
