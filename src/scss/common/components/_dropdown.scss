@@ -178,6 +178,12 @@
 }
 // stylelint-enable declaration-no-important
 
+// Dividers (basically an `<hr>`) within the dropdown
+.dropdown-divider {
+  width: calc(100% - #{$dropdown-item-padding-x * 2});
+  margin-left: $dropdown-item-padding-x;
+}
+
 .dropdown-item {
   font-weight: $font-weight-medium;
 }

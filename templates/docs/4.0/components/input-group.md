@@ -19,6 +19,7 @@ toc: true
       <div class="dropdown-menu">
         <input data-role="value" type="radio" name="keywordSearch" value="keywordSearch1" id="action1" class="sr-only"/>
         <label class="dropdown-item" for="action1">Action</label>
+        <hr class="dropdown-divider"/>
         <input data-role="value" type="radio" name="keywordSearch" value="keywordSearch2" id="action2" class="sr-only"/>
         <label class="dropdown-item" for="action2">Another action</label>
         <input data-role="value" type="radio" name="keywordSearch" value="keywordSearch3" id="action3" class="sr-only"/>
