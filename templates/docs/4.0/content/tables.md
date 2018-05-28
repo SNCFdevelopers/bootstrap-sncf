@@ -40,8 +40,8 @@ Using the most basic table markup, here's how `.table`-based tables look in SNCF
           <td>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
-                <input type="checkbox" class="custom-control-input" id="thead">
-                <label class="custom-control-label" for="thead"></label>
+                <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
+                <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
               </div>
             </div>
           </td>
@@ -114,8 +114,8 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
           <td>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
-                <input type="checkbox" class="custom-control-input" id="thead">
-                <label class="custom-control-label" for="thead"></label>
+                <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
+                <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
               </div>
             </div>
           </td>
