@@ -94,6 +94,7 @@ fieldset:disabled a.btn {
   padding: 0;
   font-weight: $font-weight-medium;
   color: $link-color;
+  border: 0;
   background-color: transparent;
 
   @include hover {

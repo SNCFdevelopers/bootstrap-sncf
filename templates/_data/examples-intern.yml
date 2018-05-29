@@ -27,3 +27,9 @@
   examples:
     - name: Forms
       description: "Demonstration of all responsive and container options for forms."
+
+- category: Calendar
+  description: "Calendar components"
+  examples:
+    - name: Calendar month
+      description: "Calendar month layout."
