@@ -4,8 +4,6 @@
 /* stylelint-disable selector-max-class */
 @include media-breakpoint-down(sm) {
   .mastcontainer {
-    padding-bottom: $mastnav-height-sm;
-
     .mastheader + & {
       padding-top: $mastheader-height;
     }
@@ -25,6 +23,12 @@
     .mastheader + .actionbar.has-tabs + .controlbar + & {
       padding-top: ($mastheader-height + $actionbar-max-height + $controlbar-height);
     }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .mastcontainer {
+    padding-bottom: $mastnav-height-sm;
   }
 }
 
