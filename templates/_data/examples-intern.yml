@@ -33,3 +33,5 @@
   examples:
     - name: Calendar month
       description: "Calendar month layout."
+    - name: Calendar week
+      description: "Calendar week layout."

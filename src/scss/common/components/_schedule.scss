@@ -89,6 +89,7 @@
   padding-right: rem(4px);
   padding-left: rem(18px);
   font-size: rem(12px);
+  word-wrap: break-word;
   border-radius: rem(7px);
 
   &::after {
@@ -106,10 +107,85 @@
   }
 }
 
+.event-day {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: rem(7px);
+  padding-right: rem(4px);
+  padding-bottom: rem(7px);
+  padding-left: rem(20px);
+  font-size: rem(12px);
+  border-radius: rem(7px);
+
+  &::after {
+    position: absolute;
+    top: rem(11px);
+    left: rem(6px);
+    width: rem(8px);
+    height: rem(8px);
+    content: "";
+    border-radius: 50%;
+  }
+}
+
 .event-more {
   padding-left: rem(16px);
   margin-top: rem(4px);
   font-size: rem(12px);
+}
+
+.schedule-week {
+  .schedule-cell {
+    height: rem(60px);
+
+    .schedule-hour {
+      position: relative;
+      top: rem(-8px);
+      text-align: center;
+    }
+  }
+
+  .schedule-columnhour {
+    flex: 0 0 rem(82px);
+  }
+
+  .schedule-columnevent {
+    position: relative;
+
+    .schedule-cell {
+      border-top: 1px solid gray("200");
+    }
+
+    .event {
+      position: absolute;
+      z-index: 99;
+      width: 100%;
+    }
+  }
+
+  .schedule-content {
+    padding-top: rem(24px);
+    overflow-y: auto;
+  }
+}
+
+.schedule-daily {
+  padding-top: rem(12px);
+  padding-bottom: rem(12px);
+  border-bottom: rem(5px) solid gray("100");
+}
+
+.schedule-hour {
+  font-size: rem(12px);
+}
+
+.schedule-hourlabel {
+  padding-top: rem(2px);
+  padding-right: rem(20px);
+  font-size: rem(12px);
+  line-height: 1.1;
+  text-align: right;
 }
 
 @include media-breakpoint-down(sm) {
@@ -154,9 +230,7 @@
   }
 
   .schedule-day {
-    padding-right: rem(34px);
     font-size: rem(16px);
-    text-align: right;
     border-right: 1px solid gray("200");
   }
 
@@ -180,17 +254,30 @@
     }
   }
 
-  .schedule-content {
-    .schedule-row {
-      &:not(:last-child) {
-        border-bottom: 1px solid gray("200");
+  .schedule-month {
+    .schedule-day {
+      padding-right: rem(34px);
+      text-align: right;
+    }
+
+    .schedule-content {
+      .schedule-row {
+        &:not(:last-child) {
+          border-bottom: 1px solid gray("200");
+        }
+      }
+
+      .schedule-columncontent {
+        &:not(:last-child) {
+          border-right: 1px solid gray("200");
+        }
       }
     }
   }
 
-  .schedule-columncontent {
-    &:not(:last-child) {
-      border-right: 1px solid gray("200");
+  .schedule-week {
+    .schedule-day {
+      text-align: center;
     }
   }
 }
