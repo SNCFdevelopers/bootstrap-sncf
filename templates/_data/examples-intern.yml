@@ -28,10 +28,12 @@
     - name: Forms
       description: "Demonstration of all responsive and container options for forms."
 
-- category: Calendar
-  description: "Calendar components"
+- category: Calendars
+  description: "Calendar layouts"
   examples:
-    - name: Calendar month
-      description: "Calendar month layout."
-    - name: Calendar week
-      description: "Calendar week layout."
+    - name: Calendar monthly
+      description: "Weekly calendar layout."
+    - name: Calendar weekly
+      description: "Monthly calendar layout."
+    - name: Calendar daily
+      description: "Daily calendar layout."

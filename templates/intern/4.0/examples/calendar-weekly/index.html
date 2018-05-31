@@ -1,5 +1,5 @@
 ---
-permalink: /docs/4.0/examples/calendar-week/
+permalink: /docs/4.0/examples/calendar-weekly/
 ---
 
 <html lang="en">
@@ -9,7 +9,7 @@ permalink: /docs/4.0/examples/calendar-week/
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Calendar week</title>
+    <title>Weekly calendar layout</title>
 
     <link href="{{ site.baseurl }}/main.css" rel="stylesheet">
   </head>
@@ -18,82 +18,82 @@ permalink: /docs/4.0/examples/calendar-week/
     {% include components/mastheader.html %}
 
     <main div class="mastcontainer h-100 d-flex flex-column">
-        <div class="schedule schedule-week">
+        <div class="schedule schedule-weekly">
             <div class="schedule-head schedule-row">
-                <div class="schedule-columnheader schedule-columnhour">
+                <div class="schedule-col-head schedule-col-hour">
                 </div>
-                <div class="schedule-columnheader">
-                    <span class="schedule-day">Lundi 01</span>
+                <div class="schedule-col-head">
+                    <span class="schedule-daylabel">Lun<span class="d-none d-lg-inline">di</span><span class="d-lg-none">.</span> 01</span>
                 </div>
-                <div class="schedule-columnheader">
-                    <span class="schedule-day current">Mardi 02</span>
+                <div class="schedule-col-head">
+                    <span class="schedule-daylabel current">Mar<span class="d-none d-lg-inline">di</span><span class="d-lg-none">.</span> 02</span>
                 </div>
-                <div class="schedule-columnheader">
-                    <span class="schedule-day">Mercredi 03</span>
+                <div class="schedule-col-head">
+                    <span class="schedule-daylabel">Mer<span class="d-none d-lg-inline">credi</span><span class="d-lg-none">.</span> 03</span>
                 </div>
-                <div class="schedule-columnheader">
-                    <span class="schedule-day">Jeudi 04</span>
+                <div class="schedule-col-head">
+                    <span class="schedule-daylabel">Jeu<span class="d-none d-lg-inline">di</span><span class="d-lg-none">.</span> 04</span>
                 </div>
-                <div class="schedule-columnheader">
-                    <span class="schedule-day">Vendredi 05</span>
+                <div class="schedule-col-head">
+                    <span class="schedule-daylabel">Ven<span class="d-none d-lg-inline">dredi</span><span class="d-lg-none">.</span> 05</span>
                 </div>
-                <div class="schedule-columnheader">
-                    <span class="schedule-day">Samedi 06</span>
+                <div class="schedule-col-head">
+                    <span class="schedule-daylabel">Sam<span class="d-none d-lg-inline">edi</span><span class="d-lg-none">.</span> 06</span>
                 </div>
-                <div class="schedule-columnheader">
-                    <span class="schedule-day">Dimanche 07</span>
+                <div class="schedule-col-head">
+                    <span class="schedule-daylabel">Dim<span class="d-none d-lg-inline">anche</span><span class="d-lg-none">.</span> 07</span>
                 </div>
             </div>
-            <div class="schedule-daily schedule-row">
-                <div class="schedule-columnhour">
+            <div class="schedule-row schedule-wholeday">
+                <div class="schedule-col-hour">
                     <div class="schedule-hourlabel">Journée<br/> entière</div>
                 </div>
-                <div class="schedule-columncontent"><div class="event event-day"><span class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing</span></div></div>
-                <div class="schedule-columncontent"></div>
-                <div class="schedule-columncontent"></div>
-                <div class="schedule-columncontent"><div class="event event-day"><span class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing</span></div></div>
-                <div class="schedule-columncontent"></div>
-                <div class="schedule-columncontent"></div>
-                <div class="schedule-columncontent"></div>
+                <div class="schedule-col-content"><div class="event event-day"><span class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing</span></div></div>
+                <div class="schedule-col-content"></div>
+                <div class="schedule-col-content"></div>
+                <div class="schedule-col-content"><div class="event event-day"><span class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing</span></div></div>
+                <div class="schedule-col-content"></div>
+                <div class="schedule-col-content"></div>
+                <div class="schedule-col-content"></div>
             </div>
             <div class="schedule-content">
                 <div class="schedule-row">
-                    <div class="schedule-columncontent schedule-columnhour">
+                    <div class="schedule-col-content schedule-col-hour">
                         <div class="schedule-cell">
-                            <div class="schedule-hour">8:00</div>
+                            <div class="schedule-hournumber">8:00</div>
                         </div>
                         <div class="schedule-cell">
-                            <div class="schedule-hour">9:00</div>
+                            <div class="schedule-hournumber">9:00</div>
                         </div>
                         <div class="schedule-cell">
-                            <div class="schedule-hour">10:00</div>
+                            <div class="schedule-hournumber">10:00</div>
                         </div>
                         <div class="schedule-cell">
-                            <div class="schedule-hour">11:00</div>
+                            <div class="schedule-hournumber">11:00</div>
                         </div>
                         <div class="schedule-cell">
-                            <div class="schedule-hour">12:00</div>
+                            <div class="schedule-hournumber">12:00</div>
                         </div>
                         <div class="schedule-cell">
-                            <div class="schedule-hour">13:00</div>
+                            <div class="schedule-hournumber">13:00</div>
                         </div>
                         <div class="schedule-cell">
-                            <div class="schedule-hour">14:00</div>
+                            <div class="schedule-hournumber">14:00</div>
                         </div>
                         <div class="schedule-cell">
-                            <div class="schedule-hour">15:00</div>
+                            <div class="schedule-hournumber">15:00</div>
                         </div>
                         <div class="schedule-cell">
-                            <div class="schedule-hour">16:00</div>
+                            <div class="schedule-hournumber">16:00</div>
                         </div>
                         <div class="schedule-cell">
-                            <div class="schedule-hour">17:00</div>
+                            <div class="schedule-hournumber">17:00</div>
                         </div>
                         <div class="schedule-cell">
-                            <div class="schedule-hour">18:00</div>
+                            <div class="schedule-hournumber">18:00</div>
                         </div>
                     </div>
-                    <div class="schedule-columncontent schedule-columnevent">
+                    <div class="schedule-col-content schedule-col-event">
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
@@ -109,7 +109,7 @@ permalink: /docs/4.0/examples/calendar-week/
                         <div class="event event-color1 event-day" style="top: 9.375rem; height: 3.75rem"><span>Dola vap numi sin avotul</span></div>
                         <div class="event event-day" style="top: 11.25rem; right: 0; width: 50%; height: 7.5rem"><span>Buvare ut non quis execita</span></div>
                     </div>
-                    <div class="schedule-columncontent schedule-columnevent">
+                    <div class="schedule-col-content schedule-col-event">
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
@@ -122,7 +122,7 @@ permalink: /docs/4.0/examples/calendar-week/
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
                     </div>
-                    <div class="schedule-columncontent schedule-columnevent">
+                    <div class="schedule-col-content schedule-col-event">
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
@@ -136,7 +136,7 @@ permalink: /docs/4.0/examples/calendar-week/
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="event event-color3 event-day" style="top: 9.375rem; height: 9.375rem"><span>Lucie Gautier</span><span>Dola vapis numi.</span></div>
                     </div>
-                    <div class="schedule-columncontent schedule-columnevent">
+                    <div class="schedule-col-content schedule-col-event">
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
@@ -149,7 +149,7 @@ permalink: /docs/4.0/examples/calendar-week/
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
                     </div>
-                    <div class="schedule-columncontent schedule-columnevent">
+                    <div class="schedule-col-content schedule-col-event">
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
@@ -162,7 +162,7 @@ permalink: /docs/4.0/examples/calendar-week/
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
                     </div>
-                    <div class="schedule-columncontent schedule-columnevent">
+                    <div class="schedule-col-content schedule-col-event">
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
@@ -175,7 +175,7 @@ permalink: /docs/4.0/examples/calendar-week/
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
                     </div>
-                    <div class="schedule-columncontent schedule-columnevent">
+                    <div class="schedule-col-content schedule-col-event">
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
                         <div class="schedule-cell" aria-hidden="true"></div>
