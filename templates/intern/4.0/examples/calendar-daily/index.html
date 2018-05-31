@@ -18,69 +18,7 @@ permalink: /docs/4.0/examples/calendar-daily/
     {% include components/mastheader.html %}
 
     <main div class="mastcontainer h-100 d-flex flex-column">
-        <div class="schedule schedule-daily">
-            <div class="schedule-row schedule-wholeday">
-                <div class="schedule-col-hour">
-                    <div class="schedule-hourlabel">Journée<br/> entière</div>
-                </div>
-                <div class="schedule-col-content"><div class="event event-day"><span class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing</span></div></div>
-            </div>
-            <div class="schedule-content">
-                <div class="schedule-row">
-                    <div class="schedule-col-content schedule-col-hour">
-                        <div class="schedule-cell">
-                            <div class="schedule-hournumber">8:00</div>
-                        </div>
-                        <div class="schedule-cell">
-                            <div class="schedule-hournumber">9:00</div>
-                        </div>
-                        <div class="schedule-cell">
-                            <div class="schedule-hournumber">10:00</div>
-                        </div>
-                        <div class="schedule-cell">
-                            <div class="schedule-hournumber">11:00</div>
-                        </div>
-                        <div class="schedule-cell">
-                            <div class="schedule-hournumber">12:00</div>
-                        </div>
-                        <div class="schedule-cell">
-                            <div class="schedule-hournumber">13:00</div>
-                        </div>
-                        <div class="schedule-cell">
-                            <div class="schedule-hournumber">14:00</div>
-                        </div>
-                        <div class="schedule-cell">
-                            <div class="schedule-hournumber">15:00</div>
-                        </div>
-                        <div class="schedule-cell">
-                            <div class="schedule-hournumber">16:00</div>
-                        </div>
-                        <div class="schedule-cell">
-                            <div class="schedule-hournumber">17:00</div>
-                        </div>
-                        <div class="schedule-cell">
-                            <div class="schedule-hournumber">18:00</div>
-                        </div>
-                    </div>
-                    <div class="schedule-col-content schedule-col-event">
-                        <div class="schedule-cell" aria-hidden="true"></div>
-                        <div class="schedule-cell" aria-hidden="true"></div>
-                        <div class="schedule-cell" aria-hidden="true"></div>
-                        <div class="schedule-cell" aria-hidden="true"></div>
-                        <div class="schedule-cell" aria-hidden="true"></div>
-                        <div class="schedule-cell" aria-hidden="true"></div>
-                        <div class="schedule-cell" aria-hidden="true"></div>
-                        <div class="schedule-cell" aria-hidden="true"></div>
-                        <div class="schedule-cell" aria-hidden="true"></div>
-                        <div class="schedule-cell" aria-hidden="true"></div>
-                        <div class="schedule-cell" aria-hidden="true"></div>
-                        <div class="event event-color1 event-day" style="top: 3.750rem; height: 3.75rem"><span>Lorem ipsum dol sit amet</span></div>
-                        <div class="event event-color1 event-day" style="top: 9.375rem; width: 50%; height: 3.75rem"><span>Dola vap numi sin avotul</span></div>
-                        <div class="event event-day" style="top: 11.25rem; right: 0; width: 50%; height: 7.5rem"><span>Buvare ut non quis execita</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      {% include components/schedule-daily.html %}
     </main>
 
     <script src="{{ site.baseurl }}/main.js"></script>
