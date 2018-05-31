@@ -1,0 +1,59 @@
+<div id="collapseScheduleFiltersMenu" class="schedule-filters">
+  <div class="schedule-filters-head">
+    <div class="schedule-filters-title">Afficher les agendas</div>
+    <ul class="toolbar mb-0">
+      <li class="toolbar-item">
+        <button class="btn btn-sm btn-white toolbar-item-spacing">
+          <span class="sr-only">Restore</span>
+          <i class="icons-restore icon-size-1x25"></i>
+        </button>
+      </li>
+      <li class="toolbar-item">
+        <button class="btn btn-sm btn-white toolbar-item-spacing" data-component="state" data-state="active, active" data-behaviour="toggle, toggle" data-target="#collapseScheduleFiltersMenu, .collapseScheduleFiltersButton" data-closeonclickoutside="true, true">
+          <span class="sr-only">Close</span>
+          <i class="icons-close icon-size-1x"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="schedule-filters-menu">
+    <div class="filters-group">
+      <div class="filters-group-head" data-toggle="collapse" data-target="#collapseExample1">
+        <div class="filters-group-title text-uppercase">Mes agendas</div>
+        <div class="filters-group-toggle text-primary">
+          <i class="icons-arrow-down icon-size-x75"></i>
+        </div>
+      </div>
+      <div id="collapseExample1" class="collapse show filters-group-content">
+        <div class="filters-menu-item">
+          {% include components/checkbox.html container="is-green" name="filters" id="agenda01" label="Agenda 01" %}
+        </div>
+        <div class="filters-menu-item">
+          {% include components/checkbox.html container="is-yellow" name="filters" id="agenda02" label="Agenda 02" %}
+        </div>
+        <div class="filters-menu-item">
+          {% include components/checkbox.html container="is-gray" name="filters" id="agenda03" label="Agenda 03" %}
+        </div>
+        <div class="filters-menu-item">
+          {% include components/checkbox.html container="is-pink" name="filters" id="agenda04" label="Agenda 04" %}
+        </div>
+      </div>
+    </div>
+    <div class="filters-group">
+      <div class="filters-group-head" data-toggle="collapse" data-target="#collapseExample2">
+        <div class="filters-group-title text-uppercase">Autres</div>
+        <div class="filters-group-toggle text-primary">
+          <i class="icons-arrow-down icon-size-x75"></i>
+        </div>
+      </div>
+      <div id="collapseExample2" class="collapse show filters-group-content">
+        <div class="filters-menu-item has-hover">
+          {% include components/checkbox.html name="filters" id="filter3" label="Gaspard Morin" %}
+        </div>
+        <div class="filters-menu-item has-hover">
+          {% include components/checkbox.html name="filters" id="filter4" label="Antoine Colin" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

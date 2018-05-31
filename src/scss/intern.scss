@@ -31,6 +31,7 @@
 @import "common/layout/footerbar";
 @import "intern/layout/controlbar";
 @import "intern/layout/mastcontainer";
+@import "common/layout/schedule-grid";
 
 // components
 @import "~bootstrap/scss/images";
@@ -81,6 +82,7 @@
 @import "common/components/tables";
 @import "common/components/table-filters";
 @import "common/components/schedule";
+@import "common/components/schedule-filters";
 
 // trumps
 @import "~bootstrap/scss/utilities";

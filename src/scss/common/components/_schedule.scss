@@ -201,8 +201,15 @@
 
 @include media-breakpoint-down(sm) {
   .schedule-monthly {
+    display: block;
+    flex: 0;
+
     .schedule-head {
       background-color: color("white");
+    }
+
+    .schedule-content {
+      display: block;
     }
 
     .schedule-col-content {

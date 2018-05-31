@@ -50,7 +50,8 @@
           width: rem(1px);
           height: rem(22px);
           content: "";
-          background-color: rgba(255, 255, 255, .1);
+          background-color: #e6e6e6;
+          opacity: 1;
         }
       }
 
@@ -61,6 +62,19 @@
           opacity: 0;
         }
       }
+    }
+
+    .toolbar-item-spacing-right#{$infix} {
+      padding-right: rem(20px);
+    }
+    .toolbar-item-spacing-left#{$infix} {
+      padding-left: rem(20px);
+    }
+    .toolbar-item-no-spacing-right#{$infix} {
+      padding-right: 0;
+    }
+    .toolbar-item-no-spacing-left#{$infix} {
+      padding-left: 0;
     }
   }
 }
