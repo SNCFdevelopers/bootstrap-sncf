@@ -108,7 +108,7 @@ class SelectMultiple {
     toggleCallback(isSelected < 0)
   }
 
-  _onValueChange(groupId = 0, valueId, toggleCallback) {
+  _onValueChange = (groupId = 0, valueId, toggleCallback) => {
     toggleCallback(includes(this.store[groupId].currentValues, valueId))
   }
 
@@ -145,7 +145,7 @@ class SelectMultiple {
     }
   }
 
-  _onGroupChange(id, addCallback, removeCallback) {
+  _onGroupChange = (id, addCallback, removeCallback) => {
     if (this.store[id].currentValues.length === this.store[id].values.length) {
       this.store[id].labelNode.classList.remove(ACTIVE_CLASS, INDETERMINATE_CLASS)
       removeCallback(id)
@@ -160,7 +160,7 @@ class SelectMultiple {
 
   _addCurrentValues = (id) => {
     this.count.currentValues += this.store[id].values.length - this.store[id].currentValues.length
-    this.store[id].currentValues = this.store[id].values
+    this.store[id].currentValues = [...this.store[id].values]
     this.store[id].valueNodeList.forEach((value) => {
       value.classList.add(ACTIVE_CLASS)
       value.classList.remove(INDETERMINATE_CLASS)
@@ -177,7 +177,7 @@ class SelectMultiple {
     })
   }
 
-  _onPlaceholderChange(addCallback, removeCallback) {
+  _onPlaceholderChange = (addCallback, removeCallback) => {
     if (this.count.currentValues > 0) {
       for (const key in this.store) {
         if (Object.prototype.hasOwnProperty.call(this.store, key)) {
