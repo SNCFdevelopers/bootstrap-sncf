@@ -68,9 +68,9 @@ class Picker {
   _getDateFormat(mode) {
     switch (mode) {
       case 'datetime':
-        return 'j/m/Y à H\\hi'
+        return 'j/m/Y à H\\:i'
       case 'time':
-        return 'H\\hi'
+        return 'H\\:i'
       default:
         return 'j/m/Y'
     }
