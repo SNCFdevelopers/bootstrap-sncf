@@ -90,4 +90,8 @@
   sup {
     font-size: rem(14px);
   }
+
+  &.done {
+    color: theme-color("primary");
+  }
 }
