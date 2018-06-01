@@ -48,8 +48,8 @@
   }
 
   &.rangeMode {
-    left: 0;
     right: auto;
+    left: 0;
 
     &::before {
       right: auto;

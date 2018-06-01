@@ -193,3 +193,84 @@
   padding: rem(30px);
   background-color: gray("500");
 }
+
+@include media-breakpoint-down(md) {
+  .dropdown .dropdown-toggle[aria-expanded="true"] {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .dropup .dropdown-toggle[aria-expanded="true"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  // The dropdown menu
+  // stylelint-disable declaration-no-important
+  .dropdown-menu {
+    .dropdown &,
+    .dropup & {
+      width: 100%;
+      min-width: auto;
+      margin: 0;
+
+      &::after,
+      &::before {
+        pointer-events: none;
+        border: 0;
+        opacity: 0;
+      }
+    }
+
+    .dropdown &[x-placement="bottom-start"],
+    .dropdown &[x-placement="bottom-end"],
+    .dropup &[x-placement="bottom-start"],
+    .dropup &[x-placement="bottom-end"] {
+      top: 0 !important;
+      border-top: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .dropdown &[x-placement="top-start"],
+    .dropdown &[x-placement="top-end"],
+    .dropup &[x-placement="top-start"],
+    .dropup &[x-placement="top-end"] {
+      top: 0 !important;
+      border-bottom: none;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  .dropup-split.show {
+    .dropdown-toggle-split {
+      border-top-right-radius: 0;
+    }
+    .dropdown-menu {
+      border-bottom-right-radius: $dropdown-border-radius;
+      border-bottom: 1px solid $dropdown-border-color;
+    }
+  }
+  .dropdown-split.show {
+    .dropdown-toggle-split {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .dropdown-menu {
+      border-top-right-radius: $dropdown-border-radius;
+      border-top: 1px solid $dropdown-border-color;
+    }
+  }
+  .dropdown-toggle-split + .dropdown-menu {
+    right: 0 !important;
+    left: auto !important;
+  }
+  // stylelint-enable declaration-no-important
+
+  .dropdown-item {
+    .dropdown &,
+    .dropup & {
+      white-space: initial;
+    }
+  }
+}
