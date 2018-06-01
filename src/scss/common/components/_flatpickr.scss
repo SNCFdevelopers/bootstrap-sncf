@@ -30,13 +30,31 @@
   }
 
   &::after {
+    right: rem(24px);
+    left: auto;
     margin: 0 -9px;
     border-width: 9px;
   }
 
   &::before {
+    right: rem(24px);
+    left: auto;
     margin: 0 -10px;
     border-width: 10px;
+  }
+
+  &.static {
+    right: 0;
+  }
+
+  &.rangeMode {
+    left: 0;
+    right: auto;
+
+    &::before {
+      right: auto;
+      left: rem(24px);
+    }
   }
 }
 
