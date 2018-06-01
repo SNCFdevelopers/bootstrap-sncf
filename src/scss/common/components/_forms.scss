@@ -188,6 +188,10 @@ textarea.form-control {
     resize: none;
   }
 
+  .form-control-container.is-invalid & {
+    color: gray("500");
+  }
+
   &[readonly] {
     background-position: bottom 18px right 18px;
   }

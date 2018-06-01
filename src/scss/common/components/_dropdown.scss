@@ -247,8 +247,8 @@
       border-top-right-radius: 0;
     }
     .dropdown-menu {
-      border-bottom-right-radius: $dropdown-border-radius;
       border-bottom: 1px solid $dropdown-border-color;
+      border-bottom-right-radius: $dropdown-border-radius;
     }
   }
   .dropdown-split.show {
@@ -257,8 +257,8 @@
       border-bottom-left-radius: 0;
     }
     .dropdown-menu {
-      border-top-right-radius: $dropdown-border-radius;
       border-top: 1px solid $dropdown-border-color;
+      border-top-right-radius: $dropdown-border-radius;
     }
   }
   .dropdown-toggle-split + .dropdown-menu {
