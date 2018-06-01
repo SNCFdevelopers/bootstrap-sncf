@@ -51,6 +51,7 @@
     right: auto;
     left: 0;
 
+    &::after,
     &::before {
       right: auto;
       left: rem(24px);
@@ -157,7 +158,9 @@
     }
   }
 
-  &.inRange {
+  &.inRange,
+  &.nextMonthDay.inRange,
+  &.prevMonthDay.inRange {
     background-color: #e5f3fa;
     border-color: #e5f3fa;
     box-shadow: -5px 0 0 #e5f3fa, 5px 0 0 #e5f3fa;
