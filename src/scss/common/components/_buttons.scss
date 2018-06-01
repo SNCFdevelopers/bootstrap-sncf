@@ -176,9 +176,9 @@ input[type="button"] {
     }
   }
 
-  [class^="icons-arrow-"] {
-    transition: transform .15s ease-out;
-  }
+  // [class^="icons-arrow-"] {
+  //   transition: transform .15s ease-out;
+  // }
 
   &.btn-white.disabled,
   &.btn-white:disabled {

@@ -11,7 +11,7 @@
   [class^="icons-arrow-"] {
     display: inline-block;
     font-size: rem(10px);
-    transition: transform .15s ease-out;
+    // transition: transform .15s ease-out;
   }
 
   span:not(.sr-only) + [class^="icons-arrow-"] {
