@@ -28,7 +28,9 @@ class RadialProgress {
     /* eslint-enable no-magic-numbers */
     const dashoffset = CIRCUMFERENCE * (1 - progress)
 
-    this.label.innerHTML = value
+    if (this.label) {
+      this.label.innerHTML = value
+    }
     this.figure.style.strokeDashoffset = dashoffset
   }
 }
