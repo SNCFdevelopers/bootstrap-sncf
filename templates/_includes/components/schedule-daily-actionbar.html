@@ -1,0 +1,49 @@
+<div class="actionbar">
+  <div class="actionbar-head">
+    <h1 class="mb-0">Titre section</h1>
+    <div class="d-flex align-items-center">
+      <div class="d-none d-md-flex align-items-center pr-2">
+        <button type="button" class="btn btn-only-icon btn-white">
+          <span class="sr-only">Dimanche 31 mai 2017</span>
+          <i class="icons-arrow-prev icon-size-1x text-primary pb-1"></i>
+        </button>
+        <div class="mb-0 h1 font-weight-medium text-primary pr-3 pl-3">Lundi 1<sup>er</sup> Juin 2017</div>
+        <button type="button" class="btn btn-only-icon btn-white">
+          <span class="sr-only">Mardi 2 Juin 2017</span>
+          <i class="icons-arrow-next icon-size-1x text-primary pb-1"></i>
+        </button>
+      </div>
+      <ul class="toolbar mb-0">
+        <li class="toolbar-item d-none d-lg-block">
+          <div class="toolbar-item-spacing">
+            <div class="options-links">
+              <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/calendar-monthly/" class="options-item">Mois</a>
+              <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/calendar-weekly/" class="options-item">Semaine</a>
+              <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/calendar-daily/" class="options-item active">Jour</a>
+              <a href="#" class="options-item">Planning</a>
+            </div>
+          </div>
+        </li>
+        <li class="toolbar-item toolbar-item-spacing toolbar-item-no-spacing-right-lg no-separator separator-lg">
+          <div class="btn-group dropdown">
+            <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span>Primary</span>
+              <i class="icons-arrow-down"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </li>
+        <li class="toolbar-item d-lg-none">
+          <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing collapseScheduleFiltersButton" data-component="state" data-state="active, active" data-behaviour="add, add" data-target="#collapseScheduleFiltersMenu, .collapseScheduleFiltersButton">
+            <span class="sr-only">Options</span>
+            <i class="icons-options icon-size-1x25"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

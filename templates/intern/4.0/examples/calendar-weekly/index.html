@@ -17,8 +17,17 @@ permalink: /docs/4.0/examples/calendar-weekly/
     {% include components/mastnav.html %}
     {% include components/mastheader.html %}
 
+    {% include components/schedule-weekly-actionbar.html %}
+
     <main div class="mastcontainer h-100 d-flex flex-column">
-      {% include components/schedule-weekly.html %}
+      <div class="schedule-grid">
+        <div class="schedule-sidebar schedule-sidebar-filters bg-white border-top border-right border-light">
+          {% include components/schedule-filters-menu.html %}
+        </div>
+        <div class="schedule-maincontent">
+          {% include components/schedule-weekly.html %}
+        </div>
+      </div>
     </main>
 
     <script src="{{ site.baseurl }}/main.js"></script>

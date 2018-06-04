@@ -12,6 +12,11 @@
   flex-direction: column;
   min-width: 0;
   background-color: color("white");
+
+  &.scrollable {
+    flex-direction: row;
+    overflow-x: auto;
+  }
 }
 
 @include media-breakpoint-up(lg) {

@@ -1,5 +1,5 @@
 ---
-permalink: /docs/4.0/examples/calendar-daily/
+permalink: /docs/4.0/examples/calendar-planning/
 ---
 
 <html lang="en">
@@ -21,11 +21,11 @@ permalink: /docs/4.0/examples/calendar-daily/
 
     <main div class="mastcontainer h-100 d-flex flex-column">
       <div class="schedule-grid">
-        <div class="schedule-sidebar schedule-sidebar-filters bg-white border-top border-right border-light">
-          {% include components/schedule-filters-menu.html %}
+        <div class="schedule-sidebar bg-white border-top border-right border-light">
+          {% include components/schedule-planning-menu.html %}
         </div>
-        <div class="schedule-maincontent border-top border-light">
-          {% include components/schedule-daily.html %}
+        <div class="schedule-maincontent scrollable border-top border-light">
+          {% include components/schedule-planning.html %}
         </div>
       </div>
     </main>

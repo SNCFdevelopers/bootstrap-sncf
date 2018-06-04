@@ -242,6 +242,23 @@
   }
 }
 
+/* monthly planning
+   -------------------------------------------------------------------------- */
+
+.schedule-planning {
+  .schedule-col-event {
+    flex: 0 0 rem(170px);
+  }
+  .schedule-col-head:not(.schedule-col-hour) {
+    flex: 0 0 rem(170px);
+
+    .schedule-daylabel {
+      padding-right: rem(20px);
+      padding-left: rem(20px);
+    }
+  }
+}
+
 /* day number in monthly cell
    -------------------------------------------------------------------------- */
 

@@ -17,54 +17,7 @@ permalink: /docs/4.0/examples/calendar-monthly/
     {% include components/mastnav.html %}
     {% include components/mastheader.html %}
 
-    <div class="actionbar">
-      <div class="actionbar-head">
-        <h1 class="mb-0">Titre section</h1>
-        <div class="d-flex align-items-center">
-          <div class="d-none d-md-flex align-items-center pr-2">
-            <button type="button" class="btn btn-only-icon btn-white">
-              <span class="sr-only">Juin 2017 .Sem 20</span>
-              <i class="icons-arrow-prev icon-size-1x text-primary pb-1"></i>
-            </button>
-            <div class="mb-0 h1 font-weight-medium text-primary pr-3 pl-3">Juin 2017 <small class="lead d-none d-lg-inline">.Sem 21</small></div>
-            <button type="button" class="btn btn-only-icon btn-white">
-              <span class="sr-only">Juin 2017 .Sem 22</span>
-              <i class="icons-arrow-next icon-size-1x text-primary pb-1"></i>
-            </button>
-          </div>
-          <ul class="toolbar mb-0">
-            <li class="toolbar-item d-none d-lg-block">
-              <div class="toolbar-item-spacing">
-                <div class="options-links">
-                  <a href="#" class="options-item active">Mois</a>
-                  <a href="#" class="options-item">Semaine</a>
-                  <a href="#" class="options-item">Jour</a>
-                  <a href="#" class="options-item">Planning</a>
-              </div>
-            </li>
-            <li class="toolbar-item toolbar-item-spacing toolbar-item-no-spacing-right-lg no-separator separator-lg">
-              <div class="btn-group dropdown">
-                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span>Primary</span>
-                  <i class="icons-arrow-down"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
-            </li>
-            <li class="toolbar-item d-lg-none">
-              <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing collapseScheduleFiltersButton" data-component="state" data-state="active, active" data-behaviour="add, add" data-target="#collapseScheduleFiltersMenu, .collapseScheduleFiltersButton">
-                <span class="sr-only">Options</span>
-                <i class="icons-options icon-size-1x25"></i>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    {% include components/schedule-monthly-actionbar.html %}
 
     <main div class="mastcontainer h-100 d-flex flex-column">
       <div class="schedule-grid">
