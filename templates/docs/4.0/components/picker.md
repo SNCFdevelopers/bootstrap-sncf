@@ -67,7 +67,7 @@ toc: true
 
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
-<div data-component="picker" data-mode="time">
+<div data-component="picker" data-mode="time" data-increment-hours-on-minutes-max>
   <div class="input-group" data-toggle>
     <div class="form-control-container">
       <input type="text" class="form-control" placeholder="Sélectionner une heure" data-input>
@@ -86,7 +86,7 @@ toc: true
 
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
-<div data-component="picker" data-enable-time="true">
+<div data-component="picker" data-enable-time="true" data-increment-hours-on-minutes-max>
   <div class="input-group" data-toggle>
     <div class="form-control-container">
       <input type="text" class="form-control" placeholder="Sélectionner une heure" data-input>

@@ -184,16 +184,13 @@
   }
 }
 
-/* stylelint-disable selector-max-class */
-.flatpickr-calendar.showTimeInput.hasTime .flatpickr-time {
-  border-top: none;
-}
-
+/* stylelint-disable selector-no-qualifying-type */
 .flatpickr-time {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-height: none;
+  color: gray("400");
 
   .numInputWrapper {
     display: inline-flex;
@@ -220,13 +217,13 @@
     span.arrowUp {
       position: absolute;
       top: 0;
-      opacity: 1;
       width: rem(24px);
       height: 100%;
       padding: 0;
       line-height: 1;
-      border: 0;
       background-repeat: no-repeat;
+      border: 0;
+      opacity: 1;
       &::after { opacity: 0; }
       &:hover {
         background-color: transparent;
@@ -235,15 +232,15 @@
 
     span.arrowDown {
       left: rem(75px);
-      background-size: 12px 2px;
-      background-position: center right;
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 2'%3e%3cdefs%3e%3cstyle%3e.a%7bfill:%230088ce;%7d%3c/style%3e%3c/defs%3e%3ctitle%3eSans titre - 1%3c/title%3e%3crect class='a' width='12' height='2'/%3e%3c/svg%3e");
+      background-position: center right;
+      background-size: 12px 2px;
     }
     span.arrowUp {
       right: 0;
-      background-size: 12px 12px;
-      background-position: center left;
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3cdefs%3e%3cstyle%3e.a%7bfill:%230088ce;%7d%3c/style%3e%3c/defs%3e%3ctitle%3eSans titre - 1%3c/title%3e%3crect class='a' y='5' width='12' height='2'/%3e%3crect class='a' y='5' width='12' height='2' transform='translate(0 12) rotate(-90)'/%3e%3c/svg%3e");
+      background-position: center left;
+      background-size: 12px 12px;
     }
   }
 
@@ -265,17 +262,20 @@
     &.input { font-weight: $font-weight-normal; }
   }
 }
+/* stylelint-enable selector-no-qualifying-type */
 
+// .flatpickr-calendar.hasTime .flatpickr-time,
+.flatpickr-calendar.showTimeInput.hasTime .flatpickr-time {
+  height: 100%;
+  padding-top: rem(10px);
+  border-top: none;
+}
+
+/* stylelint-disable selector-max-class, no-duplicate-selectors */
 .flatpickr-time {
   .flatpickr-time-separator {
     height: 10px;
     text-indent: -9999px;
   }
 }
-
-// .flatpickr-calendar.hasTime .flatpickr-time,
-.flatpickr-calendar.showTimeInput.hasTime .flatpickr-time {
-  height: 100%;
-  padding-top: rem(10px);
-}
-/* stylelint-enable selector-max-class */
+/* stylelint-enable selector-max-class, no-duplicate-selectors */
