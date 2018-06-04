@@ -314,6 +314,8 @@
    -------------------------------------------------------------------------- */
 
 .event {
+  z-index: 1;
+  cursor: pointer;
   background-color: rgba(97, 215, 31, .3);
   &::after {
     background-color: rgb(97, 215, 31);
@@ -390,4 +392,110 @@
   padding-left: rem(16px);
   margin-top: rem(4px);
   font-size: rem(12px);
+}
+
+/* events
+   -------------------------------------------------------------------------- */
+
+.event-modal {
+  font-size: $font-size-base;
+  background-color: color("white");
+
+  .event:not(.active) & {
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .event-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $zindex-modal;
+    width: 100%;
+    height: 100%;
+  }
+
+  .event-modal-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: rem(65px);
+    padding-right: rem(10px);
+    padding-left: rem(30px);
+    border-bottom: 1px solid $border-color;
+  }
+
+  .event-modal-title {
+    font-weight: $font-weight-medium;
+    color: gray("600");
+  }
+
+  .event-modal-content {
+    padding: rem(24px) rem(33px) rem(24px) rem(30px);
+    overflow-y: auto;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .event-modal {
+    position: absolute;
+    top: rem(-110px);
+    width: rem(460px);
+    padding: rem(40px);
+    border: 1px solid gray("100");
+    border-radius: rem(7px);
+
+    &.right {
+      left: calc(100% + #{rem(14px)});
+      &::after,
+      &::before {
+        right: 100%;
+      }
+      &::after {
+        border-color: transparent color("white") transparent transparent;
+        border-width: 18px 18px 18px 0;
+      }
+      &::before {
+        border-color: transparent gray("100") transparent transparent;
+        border-width: 19px 19px 19px 0;
+      }
+    }
+    &.left {
+      right: calc(100% + #{rem(14px)});
+      &::after,
+      &::before {
+        left: 100%;
+      }
+      &::after {
+        border-color: transparent transparent transparent color("white");
+        border-width: 18px 0 18px 18px;
+      }
+      &::before {
+        border-color: transparent transparent transparent gray("100");
+        border-width: 19px 0 19px 19px;
+      }
+    }
+
+    &::after,
+    &::before {
+      position: absolute;
+      top: rem(97px);
+      width: 0;
+      height: 0;
+      pointer-events: none;
+      content: "";
+      border-style: solid;
+    }
+
+    &::after {
+      border-color: transparent color("white") transparent transparent;
+      border-width: 18px 18px 18px 0;
+    }
+    &::before {
+      margin-top: -1px;
+      border-color: transparent gray("100") transparent transparent;
+      border-width: 19px 19px 19px 0;
+    }
+  }
 }

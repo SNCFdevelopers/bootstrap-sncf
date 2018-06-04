@@ -11,6 +11,7 @@ import Control from './components/control'
 import Picker from './components/picker'
 import RadialProgress from './components/progress'
 import RangeSlider from './components/rangeSliders'
+import Schedule from './components/schedule'
 import Searchbar from './components/searchbar'
 import SelectExclusive from './components/selectExclusive'
 import SelectMultiple from './components/selectMultiple'
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataState = 'state'
   const dataTable = 'table'
   const dataRadialProgress = 'radial-progress'
+  const dataSchedule = 'schedule'
 
   const components = document.querySelectorAll(dataComponent)
 
@@ -93,6 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataRadialProgress) {
       new RadialProgress(component)
+    }
+
+    if (component.dataset.component === dataSchedule) {
+      new Schedule(component)
     }
     /* eslint-enable no-new */
   })
