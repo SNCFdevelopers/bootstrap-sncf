@@ -65,6 +65,13 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
 </div>
 {% endexample %}
 
+## Small version
+
+{% example html %}
+<div class="progress progress-sm">
+  <div class="progress-bar" style="width: 50%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+{% endexample %}
 
 ## Radial progress
 

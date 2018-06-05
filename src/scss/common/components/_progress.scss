@@ -95,3 +95,14 @@
     color: theme-color("primary");
   }
 }
+
+/* variation
+   -------------------------------------------------------------------------- */
+.progress-sm {
+  height: rem(5px);
+  overflow: hidden;
+  background-color: color("white");
+  background-image: none;
+  background-size: auto;
+  border-radius: rem(2.5px);
+}

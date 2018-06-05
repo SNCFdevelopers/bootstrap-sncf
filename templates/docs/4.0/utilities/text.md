@@ -75,3 +75,12 @@ Quickly change the weight (boldness) of text or italicize text.
 <p class="font-weight-light">Light weight text.</p>
 <p class="font-italic">Italic text.</p>
 {% endexample %}
+
+## Size
+
+{% example html %}
+<p class="text-base">Base text.</p>
+<p class="text-lg">Large text.</p>
+<p class="text-sm">Small text.</p>
+<p class="text-xs">Extra small text.</p>
+{% endexample %}

@@ -13,14 +13,14 @@
 
 /* .schedule-row */.schedule-head {
   flex: 0 0 auto;
-  padding-top: rem(10px);
-  padding-bottom: rem(10px);
-  background-color: gray("100");
 }
 
 .schedule-col-head {
   flex: 1;
   min-width: 0;
+  padding-top: rem(10px);
+  padding-bottom: rem(10px);
+  background-color: gray("100");
 }
 
 .schedule-daylabel {
@@ -116,7 +116,7 @@
   width: 100%;
 }
 
-.schedule-wholeday {
+.schedule-wholeday > div {
   padding-top: rem(12px);
   padding-bottom: rem(12px);
   border-bottom: rem(5px) solid gray("100");
@@ -204,7 +204,7 @@
     display: block;
     flex: 0;
 
-    .schedule-head {
+    .schedule-col-head {
       background-color: color("white");
     }
 
@@ -242,20 +242,69 @@
   }
 }
 
-/* monthly planning
+/* daily planning
    -------------------------------------------------------------------------- */
 
 .schedule-planning {
+  .schedule-wholeday .schedule-col-content,
   .schedule-col-event {
-    flex: 0 0 rem(170px);
+    flex: 1 0 rem(170px);
   }
   .schedule-col-head:not(.schedule-col-hour) {
-    flex: 0 0 rem(170px);
+    flex: 1 0 rem(170px);
 
     .schedule-daylabel {
       padding-right: rem(20px);
       padding-left: rem(20px);
     }
+  }
+
+  .schedule-head {
+    padding: 0;
+  }
+
+  .schedule-col-head {
+    padding-top: rem(10px);
+    padding-bottom: rem(10px);
+    background-color: gray("100");
+  }
+
+  .schedule-col-hour {
+    flex: 0 0 rem(82px);
+  }
+
+  .schedule-col-event {
+    position: relative;
+
+    .schedule-cell {
+      border-top: 1px solid gray("200");
+    }
+
+    .event {
+      position: absolute;
+      z-index: 99;
+      width: 100%;
+    }
+  }
+
+  .schedule-cell {
+    height: rem(60px);
+
+    .schedule-hournumber {
+      position: relative;
+      top: rem(-8px);
+      text-align: center;
+    }
+  }
+
+  .schedule-content {
+    padding-top: rem(24px);
+  }
+
+  .schedule-progress {
+    padding-top: rem(6px);
+    padding-right: rem(20px);
+    padding-left: rem(20px);
   }
 }
 
@@ -338,6 +387,10 @@
       background-color: rgb(77, 79, 83);
     }
   }
+
+  &.active {
+    z-index: $zindex-modal;
+  }
 }
 
 .event-month {
@@ -392,6 +445,21 @@
   padding-left: rem(16px);
   margin-top: rem(4px);
   font-size: rem(12px);
+}
+
+.event-planning {
+  background-color: gray("100");
+  &::after {
+    position: absolute;
+    top: rem(10px);
+    left: rem(10px);
+    width: rem(2px);
+    height: rem(10px);
+    content: "";
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2 10'%3e%3cdefs%3e%3cstyle%3e.a%7bfill:%23737578;%7d%3c/style%3e%3c/defs%3e%3ctitle%3eSans titre - 2%3c/title%3e%3crect class='a' width='2' height='2'/%3e%3crect class='a' y='4' width='2' height='2'/%3e%3crect class='a' y='8' width='2' height='2'/%3e%3c/svg%3e");
+    background-size: 2px 10px;
+  }
 }
 
 /* events
