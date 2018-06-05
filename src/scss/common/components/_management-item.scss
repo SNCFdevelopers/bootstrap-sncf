@@ -12,6 +12,10 @@
   padding-bottom: rem(18px);
   padding-left: rem(8px);
 
+  &:hover {
+    background-color: gray("100");
+  }
+
   .custom-control {
     display: inline-block;
     width: rem(18px);
@@ -73,6 +77,8 @@
 }
 
 .management-item-group {
+  cursor: pointer;
+
   .management-item {
     border-top: 1px solid gray("200");
   }
