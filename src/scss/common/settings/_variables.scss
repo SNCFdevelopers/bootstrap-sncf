@@ -938,9 +938,9 @@ $list-group-item-padding-y:         .75rem;
 $list-group-item-padding-x:         1.25rem;
 
 $list-group-hover-bg:               $gray-100;
-$list-group-active-color:           $component-active-color;
-$list-group-active-bg:              $component-active-bg;
-$list-group-active-border-color:    $list-group-active-bg;
+$list-group-active-color:           $body-color;
+$list-group-active-bg:              $white;
+$list-group-active-border-color:    $border-color;
 
 $list-group-disabled-color:         $gray-600;
 $list-group-disabled-bg:            $list-group-bg;

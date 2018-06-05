@@ -1,7 +1,11 @@
 /* management item
    ========================================================================== */
 
-.management-item {
+.management-item.list-group-item {
+  padding: 0;
+}
+
+.management-item-content {
   display: flex;
   padding-top: rem(18px);
   padding-right: rem(8px);
@@ -23,6 +27,33 @@
   }
 }
 
+.management-item-checkbox {
+  display: flex;
+  align-items: center;
+  padding-right: rem(20px);
+  padding-left: rem(20px);
+}
+
+.management-item-caret {
+  display: flex;
+  align-items: center;
+  &::before {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: rem(18px);
+    content: "";
+    border-color: transparent transparent transparent gray("300");
+    border-style: solid;
+    border-width: $caret-width 0 $caret-width $caret-width;
+    transition: transform .15s ease-out;
+  }
+
+  .management-item-group.active &::before {
+    transform: rotate(90deg);
+  }
+}
+
 .management-item-input,
 .management-item-symbol {
   padding-top: rem(1px);
@@ -31,7 +62,7 @@
   text-align: center;
 }
 
-.management-item-content {
+.management-item-main {
   flex: 1 1 100%;
   padding-right: rem(6px);
   padding-left: rem(6px);
@@ -39,6 +70,53 @@
 
 .management-item-action {
   display: flex;
+}
+
+.management-item-group {
+  .management-item {
+    border-top: 1px solid gray("200");
+  }
+
+  .management-item-content {
+    min-height: rem(50px);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .management-item-main {
+    display: flex;
+    align-items: center;
+  }
+
+  .management-item-symbol {
+    display: flex;
+    align-items: center;
+    padding-right: rem(10px);
+    padding-left: 0;
+  }
+
+  /* stylelint-disable declaration-no-important */
+  .management-item-action {
+    align-items: center;
+    .btn {
+      display: flex !important;
+      min-height: rem(30px);
+    }
+  }
+  /* stylelint-enable declaration-no-important */
+
+  .management-item-spacing {
+    padding-left: rem(58px);
+  }
+}
+
+.management-item-grouplist {
+  padding-left: 0;
+  list-style: none;
+
+  .management-item-group:not(.active) & {
+    display: none;
+  }
 }
 
 @include media-breakpoint-down(md) {
@@ -52,7 +130,7 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .management-item {
+  .management-item-content {
     padding-right: rem(15px);
     padding-left: rem(15px);
   }
@@ -67,7 +145,7 @@
     padding-left: rem(8px);
   }
 
-  .management-item-content {
+  .management-item-main {
     padding-right: rem(2px);
     padding-left: rem(2px);
   }
