@@ -19,9 +19,17 @@
   }
 }
 
+.schedule-sidebar-planning {
+  display: none;
+}
+
 @include media-breakpoint-up(lg) {
   .schedule-sidebar {
     flex: 0 0 rem(200px);
     overflow-y: auto;
+  }
+
+  .schedule-sidebar-planning {
+    display: block;
   }
 }

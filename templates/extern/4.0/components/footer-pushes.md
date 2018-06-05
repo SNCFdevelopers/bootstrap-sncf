@@ -10,7 +10,7 @@ permalink: /docs/4.0/components/footer-pushes
 ## Carousel
 
 {% example html %}
-<div class="background-light">
+<div class="bg-light">
   <div class="container gt-8 gb-5">
     <h2 class="h1 mb-5">À découvrir également</h2>
     <div class="swiper multi-slideshow" data-component="multi-slideshow">

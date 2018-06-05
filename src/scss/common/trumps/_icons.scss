@@ -32,7 +32,7 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     // size
-    .icon-size-x5#{$infix} {
+    .icon-size-#{$infix}x5 {
       font-size: $font-size-base * .5;
     }
 

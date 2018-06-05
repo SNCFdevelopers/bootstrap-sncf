@@ -16,7 +16,7 @@ permalink: /docs/4.0/components/carousel
     <div class="swiper-wrapper">
       {% for i in (1..5) %}
       <div class="swiper-slide">
-        <div class="row background-light">
+        <div class="row bg-light">
           <div class="col-12 col-md-6">
             <img class="w-100" src="https://dummyimage.com/640x383/000/fff" />
           </div>

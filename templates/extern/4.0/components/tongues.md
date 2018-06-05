@@ -14,5 +14,5 @@ permalink: /docs/4.0/components/tongues
 {% endexample %}
 
 {% example html %}
-<div class="tongue background-green text-dark">Du 2 janvier au 28 février</div>
+<div class="tongue bg-green text-dark">Du 2 janvier au 28 février</div>
 {% endexample %}

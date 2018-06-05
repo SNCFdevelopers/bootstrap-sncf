@@ -1,0 +1,18 @@
+/* planning menu
+   ========================================================================== */
+
+.schedule-planning-menu {
+  padding-top: rem(60px);
+  background-color: gray("100");
+}
+
+.schedule-planning-menu-inner {
+  padding-top: rem(20px);
+  padding-right: rem(30px);
+  padding-left: rem(30px);
+  background-color: gray("200");
+
+  .event-planning + .event-planning {
+    margin-top: rem(10px);
+  }
+}

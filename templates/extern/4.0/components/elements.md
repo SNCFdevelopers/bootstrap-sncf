@@ -27,7 +27,7 @@ permalink: /docs/4.0/components/elements
 {% endexample %}
 
 {% example html %}
-<div class="background-light">
+<div class="bg-light">
   <div class="row">
     <div class="col-12 col-md-6">
       <img class="w-100" src="https://dummyimage.com/640x383/000/fff" />

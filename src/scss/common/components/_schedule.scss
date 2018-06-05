@@ -260,6 +260,7 @@
   }
 
   .schedule-head {
+    min-height: rem(60px);
     padding: 0;
   }
 
@@ -393,6 +394,12 @@
   }
 }
 
+.event-close {
+  position: absolute;
+  top: rem(2px);
+  right: 0;
+}
+
 .event-month {
   position: relative;
   display: flex;
@@ -462,7 +469,7 @@
   }
 }
 
-/* events
+/* event modal
    -------------------------------------------------------------------------- */
 
 .event-modal {

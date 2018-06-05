@@ -67,7 +67,7 @@ Add a `<footer class="blockquote-footer">` for identifying the source. Wrap the 
 
 ## Proof block
 
-Use `is-gray` class or any `background-{color}` classes available to change the `background-color` element. Use `text-{color}` to choose the text color.
+Use `is-gray` class or any `bg-{color}` classes available to change the `background-color` element. Use `text-{color}` to choose the text color.
 
 {% example html %}
 <div class="proof is-gray has-strip text-primary" style="max-width: 41.000rem">
@@ -82,7 +82,7 @@ Use `is-gray` class or any `background-{color}` classes available to change the 
 {% endexample %}
 
 {% example html %}
-<div class="proof has-strip text-white background-info" style="max-width: 41.000rem">
+<div class="proof has-strip text-white bg-info" style="max-width: 41.000rem">
   <div class="proof-icon pb-4 pb-md-0">
     <i class="icons-alert-underline icon-size-5x icon-size-md-7x50"></i>
   </div>
@@ -187,7 +187,7 @@ Use `is-gray` class or any `background-{color}` classes available to change the 
   <h2 class="display-3 text-primary mb-4">Titre bloc Packshot</h2>
   <div class="row">
     <div class="col-12 col-md-6 d-md-flex gb-5 gb-md-0">
-      <div class="d-flex flex-column background-light gx-3 gy-4 gx-md-4 rounded">
+      <div class="d-flex flex-column bg-light gx-3 gy-4 gx-md-4 rounded">
         <img class="w-100" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
         <div class="d-flex flex-column flex-fluid">
           <h3 class="text-gray500 mb-3">-25% garantis* sur tous les trains TGV et Intercités <br/>
@@ -200,7 +200,7 @@ Use `is-gray` class or any `background-{color}` classes available to change the 
       </div>
     </div>
     <div class="col-12 col-md-6 d-md-flex gb-5 gb-md-0">
-      <div class="d-flex flex-column background-light gx-3 gy-4 gx-md-4 rounded">
+      <div class="d-flex flex-column bg-light gx-3 gy-4 gx-md-4 rounded">
         <img class="w-100" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
         <div class="d-flex flex-column flex-fluid">
           <h3 class="text-gray500 mb-3">-10% supplémentaires sur les billets Prem’s*</h3>
@@ -248,7 +248,7 @@ Use `is-gray` class or any `background-{color}` classes available to change the 
 
 {% example html %}
 <div style="max-width: 41.000rem">
-  <div class="row no-gutters background-light rounded gx-3 gb-4 g-md-5">
+  <div class="row no-gutters bg-light rounded gx-3 gb-4 g-md-5">
     <div class="col-12 col-md-6 order-md-1">
       <img class="w-100" src="https://dummyimage.com/286x160/000/fff" />
     </div>
