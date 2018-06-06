@@ -7,6 +7,12 @@
  * @copyright 2015 asvd <heliosframework@gmail.com> 
  */
 
+function fixTouches(e) {
+    if(e.touches) {
+        e.clientX = e.touches[0].clientX;
+        e.clientY = e.touches[0].clientY;
+    }
+}
 
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -19,10 +25,9 @@
 }(this, function (exports) {
     var _window = window;
     var _document = document;
-    var mousemove = 'mousemove';
-    var scroll = 'scroll';
-    var mouseup = 'mouseup';
-    var mousedown = 'mousedown';
+    var mousemove = 'mousemove touchmove';
+    var mouseup = 'mouseup touchend';
+    var mousedown = 'mousedown touchstart';
     var EventListener = 'EventListener';
     var addEventListener = 'add'+EventListener;
     var removeEventListener = 'remove'+EventListener;
@@ -34,9 +39,12 @@
             el = dragged[i++];
             el = el.container || el;
             el[removeEventListener](mousedown, el.md, 0);
-            _window[removeEventListener](mouseup, el.mu, 0);
-            _window[removeEventListener](mousemove, el.mm, 0);
-            _window[removeEventListener](scroll, el.sc, 0);
+            mouseup.split(' ').forEach(function(ev) {
+                _window[removeEventListener](ev, el.mu, 0);
+            });
+            mousemove.split(' ').forEach(function(ev) {
+                _window[removeEventListener](ev, el.mm, 0);
+            });
         }
 
         // cloning into array since HTMLCollection is updated dynamically
@@ -58,76 +66,64 @@
                     }
                 }
 
-                (cont = el.container || el)[addEventListener](
-                    mousedown,
-                    cont.md = function(e) {
-                        if (!el.hasAttribute('nochilddrag') ||
-                            _document.elementFromPoint(
-                                e.pageX, e.pageY
-                            ) == cont
-                        ) {
-                            pushed = 1;
-                            lastClientX = e.clientX;
-                            lastClientY = e.clientY;
+                mousedown.split(' ').forEach(function(ev) {
+                    (cont = el.container || el)[addEventListener](
+                        ev,
+                        cont.md = function(e) {
+                            fixTouches(e);
+                            if (!el.hasAttribute('nochilddrag') ||
+                                _document.elementFromPoint(
+                                    e.pageX, e.pageY
+                                ) == cont
+                            ) {
+                                pushed = 1;
+                                lastClientX = e.clientX;
+                                lastClientY = e.clientY;
 
-                            e.preventDefault();
-                        }
-                    }, 0
-                );
+                                e.preventDefault();
+                            }
+                        }, 0
+                    );
+                });
 
-                _window[addEventListener](
-                    mouseup, cont.mu = function() {pushed = 0;}, 0
-                );
+                mouseup.split(' ').forEach(function(ev) {
+                    _window[addEventListener](
+                        ev, cont.mu = function() {pushed = 0;}, 0
+                    );
+                });
+                mousemove.split(' ').forEach(function(ev) {
+                    _window[addEventListener](
+                        ev,
+                        cont.mm = function(e) {
+                            fixTouches(e);
+                            if (pushed) {
+                                (scroller = el.scroller||el).scrollLeft -=
+                                    newScrollX = (- lastClientX + (lastClientX=e.clientX));
+                                scroller.scrollTop -=
+                                    newScrollY = (- lastClientY + (lastClientY=e.clientY));
 
-                _window[addEventListener](
-                    mousemove,
-                    cont.mm = function(e) {
-                        if (pushed) {
-                            (scroller = el.scroller||el).scrollLeft -=
-                                newScrollX = (- lastClientX + (lastClientX=e.clientX));
-                            scroller.scrollTop -=
-                                newScrollY = (- lastClientY + (lastClientY=e.clientY));
-
-                            var scrollLeftMax = scroller.scrollWidth - scroller.clientWidth;
-                            if (scrollLeftMax !== 0) {
-                                if (scroller.scrollLeft === scrollLeftMax) {
-                                    scroller.classList.add('scroll-left-max')
-                                    scroller.classList.remove('scroll-left-min')
-                                } else if (scroller.scrollLeft === 0) {
-                                    scroller.classList.add('scroll-left-min')
-                                    scroller.classList.remove('scroll-left-max')
-                                } else {
-                                    scroller.classList.add('scroll-left-min')
-                                    scroller.classList.add('scroll-left-max') 
+                                var scrollLeftMax = scroller.scrollWidth - scroller.clientWidth;
+                                if (scrollLeftMax !== 0) {
+                                    if (scroller.scrollLeft === scrollLeftMax) {
+                                        scroller.classList.add('scroll-left-max')
+                                        scroller.classList.remove('scroll-left-min')
+                                    } else if (scroller.scrollLeft === 0) {
+                                        scroller.classList.add('scroll-left-min')
+                                        scroller.classList.remove('scroll-left-max')
+                                    } else {
+                                        scroller.classList.add('scroll-left-min')
+                                        scroller.classList.add('scroll-left-max') 
+                                    }
+                                }
+                            
+                                if (el == _document.body) {
+                                    (scroller = _document.documentElement).scrollLeft -= newScrollX;
+                                    scroller.scrollTop -= newScrollY;
                                 }
                             }
-
-                            if (el == _document.body) {
-                                (scroller = _document.documentElement).scrollLeft -= newScrollX;
-                                scroller.scrollTop -= newScrollY;
-                            }
-                        }
-                    }, 0
-                );
-                el[addEventListener](
-                    scroll,
-                    cont.sc = function(e) {
-                        var scrollLeftMax = el.scrollWidth - el.clientWidth;
-
-                        if (scrollLeftMax !== 0) {
-                            if (el.scrollLeft === scrollLeftMax) {
-                                el.classList.add('scroll-left-max')
-                                el.classList.remove('scroll-left-min')
-                            } else if (el.scrollLeft === 0) {
-                                el.classList.add('scroll-left-min')
-                                el.classList.remove('scroll-left-max')
-                            } else {
-                                el.classList.add('scroll-left-min')
-                                el.classList.add('scroll-left-max') 
-                            }
-                        }
-                    }, 0
-                );
+                        }, 0
+                    );
+                });
              })(dragged[i++]);
         }
     }
