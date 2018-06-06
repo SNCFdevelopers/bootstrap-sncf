@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (component.dataset.component === dataRadialProgress) {
       new RadialProgress(component)
     }
-    
+
     if (component.dataset.component === dataCarousel) {
       new Swiper(component.querySelector('[data-role=container]'), {
         navigation: {
