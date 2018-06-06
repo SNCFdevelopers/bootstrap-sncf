@@ -128,6 +128,15 @@ permalink: /docs/4.0/examples/navigation
         <div class="container">
           <h2 class="mb-0">#Digitalsncf</h2>
           <div class="actionbar-menu">
+            <div>
+              <label for="search" class="h3 d-md-none">Rechercher</label>
+              <div class="form-control-container has-left-icon">
+                <input type="" class="form-control " id="search">
+                <span class="form-control-state"></span>
+                <span class="form-control-icon"><i class="icons-search"></i></span>
+              </div>
+            </div>
+            <h3 class="gt-5 mb-3 d-md-none">Menu</h3>
             <nav class="nav">
               {% for item in site.data.nav-fixtures %}
                 <button type="button" class="nav-item" data-role="main-toggle" data-target="#{{ item.name | slugify }}">

@@ -23,6 +23,7 @@ $actionbar-height-md: rem(76px);
   > .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
   }
 
@@ -38,7 +39,6 @@ $actionbar-height-md: rem(76px);
 .nav-item {
   display: flex;
   align-items: center;
-  height: 100%;
   padding: 0;
   font-weight: $font-weight-medium;
   background-color: transparent;
@@ -85,11 +85,19 @@ $actionbar-height-md: rem(76px);
 //
 
 @include media-breakpoint-down(sm) {
+  .mastnav {
+    z-index: $zindex-fixed;
+  }
+
   .actionbar-menu {
     position: absolute;
     top: $actionbar-height;
     left: 0;
     width: 100%;
+    height: calc(100vh - #{$actionbar-height});
+    padding-top: rem(15px);
+    padding-right: rem(20px);
+    padding-left: rem(20px);
     background-color: color("white");
   }
 
@@ -115,10 +123,19 @@ $actionbar-height-md: rem(76px);
   //
 
   .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     > .container {
       padding-right: 0;
       padding-left: 0;
     }
+  }
+
+  .panel-inner {
+    display: flex;
+    flex-direction: column;
   }
 
   .panel-head,
@@ -128,6 +145,7 @@ $actionbar-height-md: rem(76px);
 
   .panel-head {
     display: flex;
+    flex: 0 0 auto;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -140,6 +158,12 @@ $actionbar-height-md: rem(76px);
       display: flex;
       align-items: center;
     }
+  }
+
+  .panel-content {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding-top: rem(30px);
   }
 
   .panel-close {
@@ -164,8 +188,7 @@ $actionbar-height-md: rem(76px);
 
   .primary-panel,
   .secondary-panel {
-    min-height: calc(100vh - #{$mastheader-height});
-    overflow-y: auto;
+    min-height: 100vh;
 
     &:not(.active) {
       display: none;
@@ -212,6 +235,7 @@ $actionbar-height-md: rem(76px);
   //
 
   .nav-item {
+    height: 100%;
     + .nav-item {
       padding-left: rem(40px);
     }
