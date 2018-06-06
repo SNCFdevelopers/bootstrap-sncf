@@ -206,7 +206,7 @@
   background-color: gray("500");
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
   .dropdown .dropdown-toggle[aria-expanded="true"] {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;

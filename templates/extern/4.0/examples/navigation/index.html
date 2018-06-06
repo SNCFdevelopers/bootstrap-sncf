@@ -19,6 +19,7 @@ permalink: /docs/4.0/examples/navigation
         <span class="skiplink-text">Skip to main content</span>
       </div>
     </a>
+    
     <header class="mastheader" data-component="mastheader">
       <div class="container">
         <div class="d-flex align-items-center">
@@ -121,6 +122,7 @@ permalink: /docs/4.0/examples/navigation
         </ul>
       </div>
     </header>
+
     <div class="mastnav" data-component="mastnav">
       <div class="actionbar">
         <div class="container">
@@ -168,16 +170,18 @@ permalink: /docs/4.0/examples/navigation
                 </div>
                 <div class="panel-content">
                   <div class="panel-lead">
-                    <div class="h3 mb-4 text-white font-weight-medium">{{ item.name }}</div>
+                    <div class="h3 mb-4 text-white">{{ item.name }}</div>
                     <p>{{ item.description }}</p>
                   </div>
                   <nav class="subnav">
-                    {% for category in item.categories %}
-                      <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#{{ category.name | slugify }}">
-                        {{ category.name }}
-                        <i class="icons-arrow-next icon-size-x5 ml-2"></i>
-                      </button>
-                    {% endfor %}
+                    <div class="subnav-inner">
+                      {% for category in item.categories %}
+                        <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#{{ category.name | slugify }}">
+                          {{ category.name }}
+                          <i class="icons-arrow-next icon-size-x5 ml-2"></i>
+                        </button>
+                      {% endfor %}
+                    </div>
                   </nav>
                 </div>
               </div>
@@ -212,6 +216,112 @@ permalink: /docs/4.0/examples/navigation
         </div>
       </div>
     </div>
+
+    <main class="mastcontainer">
+      <div class="mastcontent">
+      </div>
+
+      <footer class="mastfooter bg-gray">
+        <div class="container d-flex flex-column">
+          <div class="mastfooter-links order-2 order-md-1 row text-white gy-5">
+            <div class="col-12 col-md-4 pb-3 pb-md-0">
+              <div class="d-flex align-items-center">
+                <i class="icons-tag icon-size-1x75 mr-2"></i>
+                S'abonner à la Newsletter
+                <i class="icons-arrow-next icon-size-x75 ml-2"></i>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 pb-3 pb-md-0">
+              <div class="d-flex align-items-center">
+                <i class="icons-tag icon-size-1x75 mr-2"></i>
+                Découvrir le programme
+                <i class="icons-arrow-next icon-size-x75 ml-2"></i>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="d-flex align-items-center">
+                <i class="icons-tag icon-size-1x75 mr-2"></i>
+                Voir les actualités
+                <i class="icons-arrow-next icon-size-x75 ml-2"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-1 order-md-2 row gt-5">
+            <div class="col-12 col-md-6">
+              <p class="display-3 text-white">Inscrivez-vous à nos news pour être tenu informé Nibh Dolor Parturient Quam</p>
+            </div>
+            <form class="col-12 col-md-6">
+              <div class="form-row">
+                <div class="col-12 col-sm-auto flex-sm-fluid gb-3 gb-sm-0">
+                  <label class="text-white" for="inputEmail1">Votre adresse email</label>
+                  <div class="form-control-container ">
+                    <input type="email" class="form-control form-control-white" id="inputEmail1" placeholder="Example input" >
+                    <span class="form-control-state"></span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-auto d-flex align-items-end">
+                  <button type="submit" class="btn btn-primary w-100 w-sm-auto">Valider</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="order-3 row text-sm gt-5 gb-6 font-weight-medium">
+            <div class="col-12 col-md-3">
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+            </div>
+            <div class="col-12 col-md-3 gt-5 gt-md-0">
+              <div class="pb-2 text-white">Suivez-nous :</div>
+              <div class="d-flex">
+                <div class="pr-2">
+                  <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-arrow-prev"></i></button>
+                </div>
+                <div class="pr-2">
+                  <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-arrow-prev"></i></button>
+                </div>
+                <div>
+                  <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-arrow-prev"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-4 d-flex flex-column flex-md-row justify-content-between gb-6">
+            <div class="row flex-column flex-md-row">
+              <div class="col-auto pb-3 pb-md-0">
+                <a href="#" class="text-gray300">Contact</a>
+              </div>
+              <div class="col-auto pb-3 pb-md-0">
+                <a href="#" class="text-gray300">Plan du site</a>
+              </div>
+              <div class="col-auto pb-3 pb-md-0">
+                <a href="#" class="text-gray300">Mentions légales</a>
+              </div>
+              <div class="col-auto pb-3 pb-md-0">
+                <a href="#" class="text-gray300">Conditions d'utilisation</a>
+              </div>
+            </div>
+            <div class="mastfooter-lang pt-2 pt-md-0">
+              <a href="#" class="text-gray300 active"><img src="https://dummyimage.com/30x30/000/fff" class="gr-2" />Fr</a>
+              <a href="#" class="text-gray300"><img src="https://dummyimage.com/30x30/000/fff" class="d-none gr-3" />En</a>
+              <a href="#" class="text-gray300"><img src="https://dummyimage.com/30x30/000/fff" class="d-none gr-3" />De</a>
+            </div>
+        </div>
+      </footer>
+    </main>
 
     <script src="{{ site.baseurl }}/main.js"></script>
   </body>

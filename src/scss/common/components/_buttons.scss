@@ -345,4 +345,10 @@ input[type="button"] {
   &:not(:disabled):not(.disabled) {
     @include hover-focus-active { color: theme-color("primary"); }
   }
+
+  &.btn-rounded-white {
+    &:not(:disabled):not(.disabled) {
+      @include hover-focus-active { background-color: color("white"); }
+    }
+  }
 }
