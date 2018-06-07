@@ -1,10 +1,10 @@
 @font-face {
     font-family: "icons";
-    src: url("../assets/fonts/icons/icons.eot?55443f72fc79a08b602d0ce0139f4f78?#iefix") format("embedded-opentype"),
-url("../assets/fonts/icons/icons.woff2?55443f72fc79a08b602d0ce0139f4f78") format("woff2"),
-url("../assets/fonts/icons/icons.woff?55443f72fc79a08b602d0ce0139f4f78") format("woff"),
-url("../assets/fonts/icons/icons.ttf?55443f72fc79a08b602d0ce0139f4f78") format("truetype"),
-url("../assets/fonts/icons/icons.svg?55443f72fc79a08b602d0ce0139f4f78#icons") format("svg");
+    src: url("../assets/fonts/icons/icons.eot?bd8e734ab87f47024a8f4a18492d26e8?#iefix") format("embedded-opentype"),
+url("../assets/fonts/icons/icons.woff2?bd8e734ab87f47024a8f4a18492d26e8") format("woff2"),
+url("../assets/fonts/icons/icons.woff?bd8e734ab87f47024a8f4a18492d26e8") format("woff"),
+url("../assets/fonts/icons/icons.ttf?bd8e734ab87f47024a8f4a18492d26e8") format("truetype"),
+url("../assets/fonts/icons/icons.svg?bd8e734ab87f47024a8f4a18492d26e8#icons") format("svg");
 }
 
 i {
@@ -147,438 +147,441 @@ i:before {
 .icons-document:before {
     content: "\f12b";
 }
-.icons-download:before {
+.icons-document2:before {
     content: "\f12c";
 }
-.icons-eco-consumption:before {
+.icons-download:before {
     content: "\f12d";
 }
-.icons-external-link:before {
+.icons-eco-consumption:before {
     content: "\f12e";
 }
-.icons-facebook:before {
+.icons-external-link:before {
     content: "\f12f";
 }
-.icons-file:before {
+.icons-facebook:before {
     content: "\f130";
 }
-.icons-filters:before {
+.icons-file:before {
     content: "\f131";
 }
-.icons-free-bike:before {
+.icons-filters:before {
     content: "\f132";
 }
-.icons-instagram:before {
+.icons-free-bike:before {
     content: "\f133";
 }
-.icons-itinerary-bike:before {
+.icons-instagram:before {
     content: "\f134";
 }
-.icons-itinerary-bullet:before {
+.icons-itinerary-bike:before {
     content: "\f135";
 }
-.icons-itinerary-bus-2:before {
+.icons-itinerary-bullet:before {
     content: "\f136";
 }
-.icons-itinerary-bus:before {
+.icons-itinerary-bus-2:before {
     content: "\f137";
 }
-.icons-itinerary-car:before {
+.icons-itinerary-bus:before {
     content: "\f138";
 }
-.icons-itinerary-line-idf-a:before {
+.icons-itinerary-car:before {
     content: "\f139";
 }
-.icons-itinerary-line-idf-b:before {
+.icons-itinerary-line-idf-a:before {
     content: "\f13a";
 }
-.icons-itinerary-line-idf-c:before {
+.icons-itinerary-line-idf-b:before {
     content: "\f13b";
 }
-.icons-itinerary-line-idf-d:before {
+.icons-itinerary-line-idf-c:before {
     content: "\f13c";
 }
-.icons-itinerary-line-idf-e:before {
+.icons-itinerary-line-idf-d:before {
     content: "\f13d";
 }
-.icons-itinerary-line-idf-h:before {
+.icons-itinerary-line-idf-e:before {
     content: "\f13e";
 }
-.icons-itinerary-line-idf-j:before {
+.icons-itinerary-line-idf-h:before {
     content: "\f13f";
 }
-.icons-itinerary-line-idf-k:before {
+.icons-itinerary-line-idf-j:before {
     content: "\f140";
 }
-.icons-itinerary-line-idf-l:before {
+.icons-itinerary-line-idf-k:before {
     content: "\f141";
 }
-.icons-itinerary-line-idf-n:before {
+.icons-itinerary-line-idf-l:before {
     content: "\f142";
 }
-.icons-itinerary-line-idf-p:before {
+.icons-itinerary-line-idf-n:before {
     content: "\f143";
 }
-.icons-itinerary-line-idf-r:before {
+.icons-itinerary-line-idf-p:before {
     content: "\f144";
 }
-.icons-itinerary-line-idf-u:before {
+.icons-itinerary-line-idf-r:before {
     content: "\f145";
 }
-.icons-itinerary-line-metro-1:before {
+.icons-itinerary-line-idf-u:before {
     content: "\f146";
 }
-.icons-itinerary-line-metro-10:before {
+.icons-itinerary-line-metro-1:before {
     content: "\f147";
 }
-.icons-itinerary-line-metro-11:before {
+.icons-itinerary-line-metro-10:before {
     content: "\f148";
 }
-.icons-itinerary-line-metro-12:before {
+.icons-itinerary-line-metro-11:before {
     content: "\f149";
 }
-.icons-itinerary-line-metro-13:before {
+.icons-itinerary-line-metro-12:before {
     content: "\f14a";
 }
-.icons-itinerary-line-metro-14:before {
+.icons-itinerary-line-metro-13:before {
     content: "\f14b";
 }
-.icons-itinerary-line-metro-2:before {
+.icons-itinerary-line-metro-14:before {
     content: "\f14c";
 }
-.icons-itinerary-line-metro-3:before {
+.icons-itinerary-line-metro-2:before {
     content: "\f14d";
 }
-.icons-itinerary-line-metro-3bis:before {
+.icons-itinerary-line-metro-3:before {
     content: "\f14e";
 }
-.icons-itinerary-line-metro-4:before {
+.icons-itinerary-line-metro-3bis:before {
     content: "\f14f";
 }
-.icons-itinerary-line-metro-5:before {
+.icons-itinerary-line-metro-4:before {
     content: "\f150";
 }
-.icons-itinerary-line-metro-6:before {
+.icons-itinerary-line-metro-5:before {
     content: "\f151";
 }
-.icons-itinerary-line-metro-7:before {
+.icons-itinerary-line-metro-6:before {
     content: "\f152";
 }
-.icons-itinerary-line-metro-7bis:before {
+.icons-itinerary-line-metro-7:before {
     content: "\f153";
 }
-.icons-itinerary-line-metro-8:before {
+.icons-itinerary-line-metro-7bis:before {
     content: "\f154";
 }
-.icons-itinerary-line-metro-9:before {
+.icons-itinerary-line-metro-8:before {
     content: "\f155";
 }
-.icons-itinerary-line-tram-1:before {
+.icons-itinerary-line-metro-9:before {
     content: "\f156";
 }
-.icons-itinerary-line-tram-10:before {
+.icons-itinerary-line-tram-1:before {
     content: "\f157";
 }
-.icons-itinerary-line-tram-11:before {
+.icons-itinerary-line-tram-10:before {
     content: "\f158";
 }
-.icons-itinerary-line-tram-12:before {
+.icons-itinerary-line-tram-11:before {
     content: "\f159";
 }
-.icons-itinerary-line-tram-13:before {
+.icons-itinerary-line-tram-12:before {
     content: "\f15a";
 }
-.icons-itinerary-line-tram-2:before {
+.icons-itinerary-line-tram-13:before {
     content: "\f15b";
 }
-.icons-itinerary-line-tram-3:before {
+.icons-itinerary-line-tram-2:before {
     content: "\f15c";
 }
-.icons-itinerary-line-tram-3a:before {
+.icons-itinerary-line-tram-3:before {
     content: "\f15d";
 }
-.icons-itinerary-line-tram-3b:before {
+.icons-itinerary-line-tram-3a:before {
     content: "\f15e";
 }
-.icons-itinerary-line-tram-3est:before {
+.icons-itinerary-line-tram-3b:before {
     content: "\f15f";
 }
-.icons-itinerary-line-tram-4:before {
+.icons-itinerary-line-tram-3est:before {
     content: "\f160";
 }
-.icons-itinerary-line-tram-5:before {
+.icons-itinerary-line-tram-4:before {
     content: "\f161";
 }
-.icons-itinerary-line-tram-6:before {
+.icons-itinerary-line-tram-5:before {
     content: "\f162";
 }
-.icons-itinerary-line-tram-7:before {
+.icons-itinerary-line-tram-6:before {
     content: "\f163";
 }
-.icons-itinerary-line-tram-8:before {
+.icons-itinerary-line-tram-7:before {
     content: "\f164";
 }
-.icons-itinerary-line-tram-9:before {
+.icons-itinerary-line-tram-8:before {
     content: "\f165";
 }
-.icons-itinerary-metro:before {
+.icons-itinerary-line-tram-9:before {
     content: "\f166";
 }
-.icons-itinerary-pedestrian:before {
+.icons-itinerary-metro:before {
     content: "\f167";
 }
-.icons-itinerary-rer:before {
+.icons-itinerary-pedestrian:before {
     content: "\f168";
 }
-.icons-itinerary-train-station:before {
+.icons-itinerary-rer:before {
     content: "\f169";
 }
-.icons-itinerary-train:before {
+.icons-itinerary-train-station:before {
     content: "\f16a";
 }
-.icons-itinerary-tram:before {
+.icons-itinerary-train:before {
     content: "\f16b";
 }
-.icons-itinerary-tramway:before {
+.icons-itinerary-tram:before {
     content: "\f16c";
 }
-.icons-label:before {
+.icons-itinerary-tramway:before {
     content: "\f16d";
 }
-.icons-large-building:before {
+.icons-label:before {
     content: "\f16e";
 }
-.icons-large-clock:before {
+.icons-large-building:before {
     content: "\f16f";
 }
-.icons-large-conversation:before {
+.icons-large-clock:before {
     content: "\f170";
 }
-.icons-large-creditcard:before {
+.icons-large-conversation:before {
     content: "\f171";
 }
-.icons-large-france:before {
+.icons-large-creditcard:before {
     content: "\f172";
 }
-.icons-large-group:before {
+.icons-large-france:before {
     content: "\f173";
 }
-.icons-large-headphones:before {
+.icons-large-group:before {
     content: "\f174";
 }
-.icons-large-information:before {
+.icons-large-headphones:before {
     content: "\f175";
 }
-.icons-large-itinerary-bike:before {
+.icons-large-information:before {
     content: "\f176";
 }
-.icons-large-itinerary-bus-2:before {
+.icons-large-itinerary-bike:before {
     content: "\f177";
 }
-.icons-large-itinerary-bus:before {
+.icons-large-itinerary-bus-2:before {
     content: "\f178";
 }
-.icons-large-itinerary-car:before {
+.icons-large-itinerary-bus:before {
     content: "\f179";
 }
-.icons-large-itinerary-metro:before {
+.icons-large-itinerary-car:before {
     content: "\f17a";
 }
-.icons-large-itinerary-pedestrian:before {
+.icons-large-itinerary-metro:before {
     content: "\f17b";
 }
-.icons-large-itinerary-rer:before {
+.icons-large-itinerary-pedestrian:before {
     content: "\f17c";
 }
-.icons-large-itinerary-train-station:before {
+.icons-large-itinerary-rer:before {
     content: "\f17d";
 }
-.icons-large-itinerary-train:before {
+.icons-large-itinerary-train-station:before {
     content: "\f17e";
 }
-.icons-large-itinerary-tram:before {
+.icons-large-itinerary-train:before {
     content: "\f17f";
 }
-.icons-large-itinerary-tramway:before {
+.icons-large-itinerary-tram:before {
     content: "\f180";
 }
-.icons-large-lightbulb:before {
+.icons-large-itinerary-tramway:before {
     content: "\f181";
 }
-.icons-large-luggage:before {
+.icons-large-lightbulb:before {
     content: "\f182";
 }
-.icons-large-mail:before {
+.icons-large-luggage:before {
     content: "\f183";
 }
-.icons-large-phone:before {
+.icons-large-mail:before {
     content: "\f184";
 }
-.icons-large-search-recent:before {
+.icons-large-phone:before {
     content: "\f185";
 }
-.icons-large-seat:before {
+.icons-large-search-recent:before {
     content: "\f186";
 }
-.icons-large-skateboard:before {
+.icons-large-seat:before {
     content: "\f187";
 }
-.icons-large-smartphone:before {
+.icons-large-skateboard:before {
     content: "\f188";
 }
-.icons-large-sncf:before {
+.icons-large-smartphone:before {
     content: "\f189";
 }
-.icons-large-stroller:before {
+.icons-large-sncf:before {
     content: "\f18a";
 }
-.icons-large-suitcase:before {
+.icons-large-stroller:before {
     content: "\f18b";
 }
-.icons-large-swipecard:before {
+.icons-large-suitcase:before {
     content: "\f18c";
 }
-.icons-large-ticket:before {
+.icons-large-swipecard:before {
     content: "\f18d";
 }
-.icons-large-truck:before {
+.icons-large-ticket:before {
     content: "\f18e";
 }
-.icons-large-warning:before {
+.icons-large-truck:before {
     content: "\f18f";
 }
-.icons-list:before {
+.icons-large-warning:before {
     content: "\f190";
 }
-.icons-localisation-pin:before {
+.icons-list:before {
     content: "\f191";
 }
-.icons-lounge-car:before {
+.icons-localisation-pin:before {
     content: "\f192";
 }
-.icons-menu-account:before {
+.icons-lounge-car:before {
     content: "\f193";
 }
-.icons-menu-burger:before {
+.icons-menu-account:before {
     content: "\f194";
 }
-.icons-menu-searchbar:before {
+.icons-menu-burger:before {
     content: "\f195";
 }
-.icons-message:before {
+.icons-menu-searchbar:before {
     content: "\f196";
 }
-.icons-mosaic:before {
+.icons-message:before {
     content: "\f197";
 }
-.icons-nursery-service:before {
+.icons-mosaic:before {
     content: "\f198";
 }
-.icons-options:before {
+.icons-nursery-service:before {
     content: "\f199";
 }
-.icons-pause:before {
+.icons-options:before {
     content: "\f19a";
 }
-.icons-pencil:before {
+.icons-pause:before {
     content: "\f19b";
 }
-.icons-play-area:before {
+.icons-pencil:before {
     content: "\f19c";
 }
-.icons-play:before {
+.icons-play-area:before {
     content: "\f19d";
 }
-.icons-position:before {
+.icons-play:before {
     content: "\f19e";
 }
-.icons-print:before {
+.icons-position:before {
     content: "\f19f";
 }
-.icons-professionnal-area:before {
+.icons-print:before {
     content: "\f1a0";
 }
-.icons-quiet-area:before {
+.icons-professionnal-area:before {
     content: "\f1a1";
 }
-.icons-refresh:before {
+.icons-quiet-area:before {
     content: "\f1a2";
 }
-.icons-rent-bike:before {
+.icons-refresh:before {
     content: "\f1a3";
 }
-.icons-sami-confused:before {
+.icons-rent-bike:before {
     content: "\f1a4";
 }
-.icons-sami-grin:before {
+.icons-sami-confused:before {
     content: "\f1a5";
 }
-.icons-sami-sad:before {
+.icons-sami-grin:before {
     content: "\f1a6";
 }
-.icons-sami-smile:before {
+.icons-sami-sad:before {
     content: "\f1a7";
 }
-.icons-search-recent:before {
+.icons-sami-smile:before {
     content: "\f1a8";
 }
-.icons-search:before {
+.icons-search-recent:before {
     content: "\f1a9";
 }
-.icons-share:before {
+.icons-search:before {
     content: "\f1aa";
 }
-.icons-slider-off:before {
+.icons-share:before {
     content: "\f1ab";
 }
-.icons-slider-on:before {
+.icons-slider-off:before {
     content: "\f1ac";
 }
-.icons-sort:before {
+.icons-slider-on:before {
     content: "\f1ad";
 }
-.icons-support:before {
+.icons-sort:before {
     content: "\f1ae";
 }
-.icons-tag:before {
+.icons-support:before {
     content: "\f1af";
 }
-.icons-tgv-family:before {
+.icons-tag:before {
     content: "\f1b0";
 }
-.icons-toolbar-bold:before {
+.icons-tgv-family:before {
     content: "\f1b1";
 }
-.icons-toolbar-center:before {
+.icons-toolbar-bold:before {
     content: "\f1b2";
 }
-.icons-toolbar-italic:before {
+.icons-toolbar-center:before {
     content: "\f1b3";
 }
-.icons-toolbar-left:before {
+.icons-toolbar-italic:before {
     content: "\f1b4";
 }
-.icons-toolbar-list:before {
+.icons-toolbar-left:before {
     content: "\f1b5";
 }
-.icons-toolbar-underline:before {
+.icons-toolbar-list:before {
     content: "\f1b6";
 }
-.icons-twitter:before {
+.icons-toolbar-underline:before {
     content: "\f1b7";
 }
-.icons-volume-down:before {
+.icons-twitter:before {
     content: "\f1b8";
 }
-.icons-volume-up:before {
+.icons-volume-down:before {
     content: "\f1b9";
 }
-.icons-warning:before {
+.icons-volume-up:before {
     content: "\f1ba";
 }
-.icons-wifi-area:before {
+.icons-warning:before {
     content: "\f1bb";
 }
-.icons-young-service:before {
+.icons-wifi-area:before {
     content: "\f1bc";
+}
+.icons-young-service:before {
+    content: "\f1bd";
 }
