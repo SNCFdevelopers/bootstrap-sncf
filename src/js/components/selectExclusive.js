@@ -33,6 +33,8 @@ class SelectExclusive {
 
       option.addEventListener('click', (event) => {
         this._onOptionChange(event)
+        this.element.classList.toggle('active')
+        this.btnNode.classList.toggle('active')
       })
     })
 
