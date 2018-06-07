@@ -479,7 +479,7 @@ Trigger dropdown menus at the left of the elements by adding `.dropleft` to the 
 Historically dropdown menu contents *had* to be links, but that's no longer the case with v4. Now you can optionally use `<button>` elements in your dropdowns instead of just `<a>`s.
 
 {% example html %}
-<div class="dropdown">
+<div class="btn-group dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span>Dropdown</span>
     <i class="icons-arrow-down"></i>
