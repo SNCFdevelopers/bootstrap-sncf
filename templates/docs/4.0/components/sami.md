@@ -22,7 +22,7 @@ Bootstrap includes several predefined button styles, each serving its own semant
 <input type="checkbox" class="sr-only" id="sami{{ color.name }}">
 <label for="sami{{ color.name }}" class="sami sami-checkbox-{{ color.name }}">
     <span class="sr-only">{{ color.icon }}</span>
-    <i class="icons-sami-{{ color.icon }} icon-size-3x"></i>
+    <i class="icons-sami-{{ color.icon }} icons-size-3x"></i>
 </label>
 {% endif %}
 {% endfor %}

@@ -33,9 +33,9 @@ permalink: /docs/4.0/examples/navigation
         </div>
         <ul class="mastheader-toolbar mb-0 d-none d-md-flex">
           <li class="mastheader-toolbar-item dropdown dropdown-mastheader">
-            <button type="button" class="dropdown-toggle" data-toggle="dropdown" data-offset="68, 0" aria-haspopup="true" aria-expanded="false">Accessibilité <i class="icons-arrow-down icon-size-x5 ml-2"></i></button>
+            <button type="button" class="dropdown-toggle" data-toggle="dropdown" data-offset="68, 0" aria-haspopup="true" aria-expanded="false">Accessibilité <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>
             <div class="dropdown-menu dropdown-menu-right">
-              <i class="dropdown-close icons-close icon-size-x75"></i>
+              <i class="dropdown-close icons-close icons-size-x5"></i>
               <div data-role="stop-propagation">
                 <div class="mb-3">
                   <label class="w-100 text-white font-weight-medium mb-2">Police (dyslexie)</label>
@@ -97,9 +97,9 @@ permalink: /docs/4.0/examples/navigation
             </div>
           </li>
           <li class="mastheader-toolbar-item dropdown dropdown-mastheader dropdown-lang">
-            <button type="button" class="dropdown-toggle" data-toggle="dropdown" data-offset="52, 0" aria-haspopup="true" aria-expanded="false">Langue : Fr <i class="icons-arrow-down icon-size-x5 ml-2"></i></button>
+            <button type="button" class="dropdown-toggle" data-toggle="dropdown" data-offset="52, 0" aria-haspopup="true" aria-expanded="false">Langue : Fr <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>
             <div class="dropdown-menu dropdown-menu-right">
-              <i class="dropdown-close icons-close icon-size-x75"></i>
+              <i class="dropdown-close icons-close icons-size-6px"></i>
               <div class="pr-5">
                 <div class="dropdown-menu-lang-item active">
                   <img src="https://dummyimage.com/30x30/000/fff" class="gr-3" />
@@ -141,11 +141,11 @@ permalink: /docs/4.0/examples/navigation
               {% for item in site.data.nav-fixtures %}
                 <button type="button" class="nav-item" data-role="main-toggle" data-target="#{{ item.name | slugify }}">
                   {{ item.name }}
-                  <i class="icons-arrow-next icon-size-x5 ml-2"></i>
+                  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
                 </button>
               {% endfor %}
               <div class="dropdown dropdown-actionbar gt-5 d-md-none">
-                <button type="button" class="btn w-100 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessibilité <i class="icons-arrow-down icon-size-x5 ml-2"></i></button>
+                <button type="button" class="btn w-100 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessibilité <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>
                 <div class="dropdown-menu">
                   <div data-role="stop-propagation">
                     <div class="mb-3">
@@ -208,7 +208,7 @@ permalink: /docs/4.0/examples/navigation
                 </div>
               </div>
               <div class="dropdown dropdown-actionbar gt-2 d-md-none">
-                <button type="button" class="btn w-100 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Langue : Fr <i class="icons-arrow-down icon-size-x5 ml-2"></i></button>
+                <button type="button" class="btn w-100 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Langue : Fr <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>
                 <div class="dropdown-menu">
                   <div class="pr-4">
                     <div class="dropdown-menu-lang-item gb-3 active">
@@ -232,20 +232,20 @@ permalink: /docs/4.0/examples/navigation
             <li class="toolbar-item d-none d-md-block">
               <a href="#" class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
                 <span class="sr-only">Search</span>
-                <i class="icons-search icon-size-1x25"></i>
+                <i class="icons-menu-searchbar icons-size-30px"></i>
               </a>
             </li>
             <li class="toolbar-item no-separator separator-md">
               <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
                 <span class="sr-only">Account</span>
-                <i class="icons-account-offline icon-size-1x50"></i>
+                <i class="icons-menu-account icons-size-30px"></i>
               </button>
             </li>
             <li class="toolbar-item no-separator-md d-md-none">
               <button class="btn btn-burger btn-sm btn-transparent btn-color-gray toolbar-item-spacing" data-role="burger">
                 <span class="sr-only">Menu</span>
-                <i class="btn-burger-open icons-liste icon-size-1x50"></i>
-                <i class="btn-burger-close icons-close icon-size-1x50"></i>
+                <i class="btn-burger-open icons-menu-burger icons-size-30px"></i>
+                <i class="btn-burger-close icons-close icons-size-30px"></i>
               </button>
             </li>
           </ul>
@@ -259,11 +259,11 @@ permalink: /docs/4.0/examples/navigation
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icon-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
                     {{ item.name }}
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
-                    <i class="icons-close icon-size-1x" aria-hidden="true"></i>
+                    <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
                 <div class="panel-content">
@@ -276,7 +276,7 @@ permalink: /docs/4.0/examples/navigation
                       {% for category in item.categories %}
                         <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#{{ category.name | slugify }}">
                           {{ category.name }}
-                          <i class="icons-arrow-next icon-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
                         </button>
                       {% endfor %}
                     </div>
@@ -290,11 +290,11 @@ permalink: /docs/4.0/examples/navigation
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icon-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
                     {{ category.name }}
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
-                    <i class="icons-close icon-size-1x" aria-hidden="true"></i>
+                    <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
                 <div class="panel-content">
@@ -302,7 +302,7 @@ permalink: /docs/4.0/examples/navigation
                       {% for subcategory in category.subcategories %}
                         <button type="button" class="subnav-item">
                           {{ subcategory.name }}
-                          <i class="icons-arrow-next icon-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
                         </button>
                       {% endfor %}
                   </nav>
@@ -329,7 +329,7 @@ permalink: /docs/4.0/examples/navigation
             <div class="col-12 col-md-6">
               <div class="d-flex align-items-center gr-md-4 gb-6">
                 <div class="gr-3 text-gray200">
-                  <i class="icons-schedule icon-size-4x50"></i>
+                  <i class="icons-large-clock icons-size-66px"></i>
                 </div>
                 <div>
                   <h2 class="display-3 text-primary">Itinéraires et Réservation</h2>
@@ -340,18 +340,18 @@ permalink: /docs/4.0/examples/navigation
             <div class="col-12 col-md-6">
               <div class="d-flex align-items-center gl-md-4 gb-6">
                 <div class="gr-3 text-gray200">
-                  <i class="icons-schedule icon-size-4x50"></i>
+                  <i class="icons-large-ticket icons-size-66px"></i>
                 </div>
                 <div>
-                  <h2 class="display-3 text-primary">Itinéraires et Réservation</h2>
-                  <p class="text-lg mb-0">Réservation, horaires des trains, trafic temps réel et trajet porte-à-porte.</p>
+                  <h2 class="display-3 text-primary">Voyager à petits prix</h2>
+                  <p class="text-lg mb-0">Trains Grandes Lignes, TER, Transilien, Eurostar, Thalys, bus, voiture, vélo…</p>
                 </div>
               </div>
             </div>
             <div class="col-12 col-md-6">
               <div class="d-flex align-items-center gr-md-4 gb-6 gb-md-0">
                 <div class="gr-3 text-gray200">
-                  <i class="icons-schedule icon-size-4x50"></i>
+                  <i class="icons-large-itinerary-train icons-size-66px"></i>
                 </div>
                 <div>
                   <h2 class="display-3 text-primary">Itinéraires et Réservation</h2>
@@ -362,7 +362,7 @@ permalink: /docs/4.0/examples/navigation
             <div class="col-12 col-md-6">
               <div class="d-flex align-items-center gl-md-4 gb-6 gb-md-0">
                 <div class="gr-3 text-gray200">
-                  <i class="icons-schedule icon-size-4x50"></i>
+                  <i class="icons-large-group icons-size-66px"></i>
                 </div>
                 <div>
                   <h2 class="display-3 text-primary">Itinéraires et Réservation</h2>
@@ -379,23 +379,23 @@ permalink: /docs/4.0/examples/navigation
           <div class="mastfooter-links order-2 order-md-1 row text-white gy-5">
             <div class="col-12 col-md-4 pb-3 pb-md-0">
               <div class="d-flex align-items-center">
-                <i class="icons-tag icon-size-1x75 mr-2"></i>
+                <i class="icons-large-mail icons-size-50px mr-2"></i>
                 S'abonner à la Newsletter
-                <i class="icons-arrow-next icon-size-x75 ml-2"></i>
+                <i class="icons-arrow-next icons-size-x5 ml-2"></i>
               </div>
             </div>
             <div class="col-12 col-md-4 pb-3 pb-md-0">
               <div class="d-flex align-items-center">
-                <i class="icons-tag icon-size-1x75 mr-2"></i>
+                <i class="icons-large-mail icons-size-50px mr-2"></i>
                 Découvrir le programme
-                <i class="icons-arrow-next icon-size-x75 ml-2"></i>
+                <i class="icons-arrow-next icons-size-x5 ml-2"></i>
               </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="d-flex align-items-center">
-                <i class="icons-tag icon-size-1x75 mr-2"></i>
+                <i class="icons-large-mail icons-size-50px mr-2"></i>
                 Voir les actualités
-                <i class="icons-arrow-next icon-size-x75 ml-2"></i>
+                <i class="icons-arrow-next icons-size-x5 ml-2"></i>
               </div>
             </div>
           </div>
@@ -422,19 +422,19 @@ permalink: /docs/4.0/examples/navigation
 
           <div class="order-3 row text-sm gt-5 gb-6 font-weight-medium">
             <div class="col-12 col-md-3">
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
             </div>
             <div class="col-12 col-md-3">
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
             </div>
             <div class="col-12 col-md-3">
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
             </div>
             <div class="col-12 col-md-3 gt-5 gt-md-0">
               <div class="pb-2 text-white">Suivez-nous :</div>

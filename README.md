@@ -25,14 +25,6 @@ Learn more about using Jekyll by reading its [documentation](https://jekyllrb.co
 
 ## Build
 
-### Custom Flatpickr
-```
-$ cd node_modules/flatpickr
-$ yarn install
-$ yarn run build
-```
+### Icofont
 
-### Fonts and icons
-
-1. Run `npm run font-compile`
-2. Run `npm run css-main`
+1. Run `yarn run icofont`

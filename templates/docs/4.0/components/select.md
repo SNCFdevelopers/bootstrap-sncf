@@ -23,7 +23,7 @@ Custom `<select>` menus need a custom class and data attribute, `.select-improve
 
 {% example html %}
 <label for="select1">Example select</label>
-{% include components/select-exclusive.html id="select1" placeholder="Lorem ipsum" iconsize="icon-size-x75" placeholderAttr="selected" items=page.default %}
+{% include components/select-exclusive.html id="select1" placeholder="Lorem ipsum" iconsize="icons-size-x75" placeholderAttr="selected" items=page.default %}
 {% endexample %}
 
 ### Select menu with additional input
@@ -41,14 +41,14 @@ Custom `<select>` menus need a custom class and data attribute, `.select-improve
 {% endcapture %}
 {% example html %}
 <label for="select2">Additional input</label>
-{% include components/select-exclusive.html id="select2" placeholder="Lorem ipsum" iconsize="icon-size-x75" placeholderAttr="selected" items=page.default content=input_add %}
+{% include components/select-exclusive.html id="select2" placeholder="Lorem ipsum" iconsize="icons-size-x75" placeholderAttr="selected" items=page.default content=input_add %}
 {% endexample %}
 
 ### Select with default select value
 
 {% example html %}
 <label for="select3">Option selected by default</label>
-{% include components/select-exclusive.html id="select3" placeholder="Lorem ipsum" iconsize="icon-size-x75" items=page.selected %}
+{% include components/select-exclusive.html id="select3" placeholder="Lorem ipsum" iconsize="icons-size-x75" items=page.selected %}
 {% endexample %}
 
 ## By group
@@ -72,7 +72,7 @@ TODO : description
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icon-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75"></i>
         </button>
       </div>
     </div>
@@ -120,7 +120,7 @@ TODO : description
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icon-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75"></i>
         </button>
       </div>
     </div>
@@ -131,7 +131,7 @@ TODO : description
           <div class="select-group-toggle text-primary">
             <span class="select-group-close mr-2">Fermer</span>
             <span class="select-group-show mr-2">Ouvrir</span>
-            <i class="icons-arrow-down icon-size-x75"></i>
+            <i class="icons-arrow-down icons-size-x75"></i>
           </div>
         </div>
         <div id="collapseExample" class="collapse select-group-content">
@@ -146,7 +146,7 @@ TODO : description
           <div class="select-group-toggle text-primary">
             <span class="select-group-close mr-2">Fermer</span>
             <span class="select-group-show mr-2">Ouvrir</span>
-            <i class="icons-arrow-down icon-size-x75"></i>
+            <i class="icons-arrow-down icons-size-x75"></i>
           </div>
         </div>
         <div id="collapseExample1" class="select-group-content">
@@ -181,7 +181,7 @@ TODO : description
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icon-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75"></i>
         </button>
       </div>
     </div>

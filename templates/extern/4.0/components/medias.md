@@ -25,8 +25,8 @@ permalink: /docs/4.0/components/medias
   </div>
   <div class="swiper-pagination mt-3 mt-md-4 text-primary" data-role="pagination"></div>
   <div class="swiper-buttons">
-    <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icon-size-x75"></i></div>
-    <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icon-size-x75"></i></div>
+    <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75"></i></div>
+    <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75"></i></div>
   </div>
 </div>
 {% endexample %}

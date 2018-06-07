@@ -139,10 +139,10 @@ Add a `stretchy` class on `textarea` element.
 
 {% example html %}
 <div class="range-slider" data-component="range-slider" data-target="#range_01">
-  <i class="icons-interrogation icon-size-1x25 pr-2"></i>
+  <i class="icons-interrogation icons-size-1x25 pr-2"></i>
   <div id="range_01" data-min="25" data-max="125" data-hide-from-to="true">
   </div>
-  <i class="icons-interrogation icon-size-1x25 pl-2"></i>
+  <i class="icons-interrogation icons-size-1x25 pl-2"></i>
 </div>
 {% endexample %}
 

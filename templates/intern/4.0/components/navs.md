@@ -17,19 +17,19 @@ permalink: /docs/4.0/components/navs
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Edit</span>
-          <i class="icons-edit icon-size-1x25"></i>
+          <i class="icons-pencil icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">List</span>
-          <i class="icons-liste icon-size-1x25"></i>
+          <i class="icons-list icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Search</span>
-          <i class="icons-search icon-size-1x25"></i>
+          <i class="icons-search icons-size-1x25"></i>
         </button>
       </li>
     </ul>
@@ -45,7 +45,7 @@ permalink: /docs/4.0/components/navs
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Edit</span>
-          <i class="icons-edit icon-size-1x25"></i>
+          <i class="icons-pencil icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item toolbar-item-spacing">
@@ -64,19 +64,19 @@ permalink: /docs/4.0/components/navs
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">List</span>
-          <i class="icons-liste icon-size-1x25"></i>
+          <i class="icons-list icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Search</span>
-          <i class="icons-search icon-size-1x25"></i>
+          <i class="icons-search icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Filters</span>
-          <i class="icons-filters icon-size-1x25"></i>
+          <i class="icons-filters icons-size-1x25"></i>
         </button>
       </li>
     </ul>
@@ -106,7 +106,7 @@ permalink: /docs/4.0/components/navs
 {% example html %}
 <div class="actionbar">
   <div class="actionbar-head">
-    <h1 class="mb-0"><a href="#"><i class="icons-arrow-prev icon-size-x75 mr-2"></i>Titre section</a></h1>
+    <h1 class="mb-0"><a href="#"><i class="icons-arrow-prev icons-size-x75 mr-2"></i>Titre section</a></h1>
   </div>
 </div>
 {% endexample %}
@@ -132,7 +132,7 @@ permalink: /docs/4.0/components/navs
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Edit</span>
-          <i class="icons-edit icon-size-1x25"></i>
+          <i class="icons-pencil icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item toolbar-item-spacing">
@@ -151,19 +151,19 @@ permalink: /docs/4.0/components/navs
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">List</span>
-          <i class="icons-liste icon-size-1x25"></i>
+          <i class="icons-list icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Search</span>
-          <i class="icons-search icon-size-1x25"></i>
+          <i class="icons-search icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Filters</span>
-          <i class="icons-filters icon-size-1x25"></i>
+          <i class="icons-filters icons-size-1x25"></i>
         </button>
       </li>
     </ul>
@@ -198,7 +198,7 @@ permalink: /docs/4.0/components/navs
             <i class="icons-search"></i>
           </button>
         </div>
-        <button type="button" class="btn btn-only-icon btn-white d-block d-md-none" data-role="close"><i class="icons-close icon-size-1x25"></i></button>
+        <button type="button" class="btn btn-only-icon btn-white d-block d-md-none" data-role="close"><i class="icons-close icons-size-1x25"></i></button>
       </div>
     </div>
   </div>

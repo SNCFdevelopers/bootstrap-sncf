@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0088CE;}
+</style>
+<title>SNCF_</title>
+<g id="MOBILE">
+	<path class="st0" d="M250,0C112.1,0,0,112.1,0,250s112.1,250,250,250s250-112.1,250-250S387.9,0,250,0z M184.1,350
+		c-18.2,0-33.3-15.2-33.3-33.3s15.2-33.3,33.3-33.3s33.3,15.2,33.3,33.3l0,0l0,0C216.7,334.8,202.3,350,184.1,350z M266.7,350
+		c0-31.1-12.1-60.6-34.1-82.6s-51.5-34.8-82.6-34.8v-47.7c90.9,0,165.2,73.5,165.2,165.2l0,0H266.7z M351.5,350
+		c0-111.4-90.2-201.5-201.5-202.3l0,0l0,0V100c137.9,0,250,112.1,250,250H351.5z"/>
+</g>
+</svg>

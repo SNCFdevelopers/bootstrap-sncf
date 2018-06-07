@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#0088CE;}
 </style>
-<title>Icons/Interface/LienExterne</title>
-<desc>Created with Sketch.</desc>
-<g id="Icons_x2F_Interface_x2F_LienExterne">
-	<g id="Combined-Shape">
-		<path id="path-1_1_" class="st0" d="M45.8,0C48.1,0,50,1.9,50,4.2V25c0,2.3-1.9,4.2-4.2,4.2c-2.3,0-4.2-1.9-4.2-4.2V14.2
-			L23.8,32.1c-0.8,0.8-1.9,1.2-2.9,1.2c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9L35.8,8.3H25c-2.3,0-4.2-1.9-4.2-4.2
-			S22.7,0,25,0H45.8z M37.5,50H4.2C1.9,50,0,48.1,0,45.8V12.5c0-2.3,1.9-4.2,4.2-4.2s4.2,1.9,4.2,4.2v29.2h29.2
-			c2.3,0,4.2,1.9,4.2,4.2C41.7,48.1,39.8,50,37.5,50z"/>
-	</g>
+<g>
+	<path class="st0" d="M458.3,0H250c-22.7,0-41.7,18.9-41.7,41.7s18.9,41.7,41.7,41.7h107.6L178.8,262.1c-15.9,15.9-15.9,42.4,0,59.1
+		c8.3,8.3,18.9,12.1,29.5,12.1c10.6,0,21.2-3.8,29.5-12.1l178.8-178.8V250c0,22.7,18.9,41.7,41.7,41.7c22.7,0,41.7-18.9,41.7-41.7
+		V41.7C500,18.9,481.1,0,458.3,0z"/>
+	<path class="st0" d="M375,500H41.7C18.9,500,0,481.1,0,458.3V125c0-22.7,18.9-41.7,41.7-41.7s41.7,18.9,41.7,41.7v291.7H375
+		c22.7,0,41.7,18.9,41.7,41.7C416.7,481.1,397.7,500,375,500z"/>
 </g>
 </svg>

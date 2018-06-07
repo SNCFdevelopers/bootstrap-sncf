@@ -17,7 +17,7 @@ permalink: /docs/4.0/components/edito
       <div class="accordion-toggle">
         <span class="accordion-toggle-close mr-2">Fermer</span>
         <span class="accordion-toggle-show mr-2">Ouvrir</span>
-        <i class="icons-arrow-down icon-size-x75"></i>
+        <i class="icons-arrow-down icons-size-x75"></i>
       </div>
     </div>
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
@@ -32,7 +32,7 @@ permalink: /docs/4.0/components/edito
       <div class="accordion-toggle">
         <span class="accordion-toggle-close mr-2">Fermer</span>
         <span class="accordion-toggle-show mr-2">Ouvrir</span>
-        <i class="icons-arrow-down icon-size-x75"></i>
+        <i class="icons-arrow-down icons-size-x75"></i>
       </div>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -72,7 +72,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
 {% example html %}
 <div class="proof is-gray has-strip text-primary" style="max-width: 41.000rem">
   <div class="proof-icon pb-4 pb-md-0">
-    <i class="icons-alert-underline icon-size-5x icon-size-md-7x50"></i>
+    <i class="icons-admin icons-size-96px icons-md-size-140px"></i>
   </div>
   <div class="proof-content">
     <p class="display-3 mb-3">20 ans de travaux<br/> pour vous</p>
@@ -84,7 +84,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
 {% example html %}
 <div class="proof has-strip text-white bg-info" style="max-width: 41.000rem">
   <div class="proof-icon pb-4 pb-md-0">
-    <i class="icons-alert-underline icon-size-5x icon-size-md-7x50"></i>
+    <i class="icons-admin icons-size-96px icons-md-size-140px"></i>
   </div>
   <div class="proof-content">
     <h2 class="display-3 mb-3">20 ans de travaux<br/> pour vous</h2>
@@ -105,7 +105,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
   <div class="editorial-content order-md-0">
     <p class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</p>
     <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio.</p>
-    <a href="#" class="btn btn-link btn-link-white">Lorem ipsum dolor <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+    <a href="#" class="btn btn-link btn-link-white">Lorem ipsum dolor <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
   </div>
 </div>
 {% endexample %}
@@ -118,7 +118,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
   <div class="editorial-content order-md-0">
     <p class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</p>
     <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio.</p>
-    <a href="#" class="btn btn-link">Lorem ipsum dolor <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+    <a href="#" class="btn btn-link">Lorem ipsum dolor <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
   </div>
 </div>
 {% endexample %}
@@ -150,7 +150,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
         </div>
         <div class="d-flex flex-column justify-content-center">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <a href="#" class="btn btn-link">Retrouvez l'intégralité des vidéos <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+          <a href="#" class="btn btn-link">Retrouvez l'intégralité des vidéos <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
         </div>
       </div>
     </li>
@@ -161,7 +161,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
         </div>
         <div class="d-flex flex-column justify-content-center">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum ea distinctio, consequatur facilis repudiandae incidunt.</p>
-          <a href="#" class="btn btn-link">Retrouvez l'intégralité des vidéos <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+          <a href="#" class="btn btn-link">Retrouvez l'intégralité des vidéos <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
         </div>
       </div>
     </li>
@@ -172,7 +172,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
         </div>
         <div class="d-flex flex-column justify-content-center">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum ea distinctio.</p>
-          <a href="#" class="btn btn-link">Retrouvez l'intégralité des vidéos <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+          <a href="#" class="btn btn-link">Retrouvez l'intégralité des vidéos <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
         </div>
       </div>
     </li>
@@ -194,7 +194,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
             <span class="text-base">à réservation obligatoire</span>
           </h3>
           <div class="d-flex align-items-end flex-fluid">
-            <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+            <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
           </div>
         </div>
       </div>
@@ -205,7 +205,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
         <div class="d-flex flex-column flex-fluid">
           <h3 class="text-gray500 mb-3">-10% supplémentaires sur les billets Prem’s*</h3>
           <div class="d-flex align-items-end flex-fluid">
-            <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+            <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
           </div>
         </div>
       </div>
@@ -226,7 +226,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
         <div>
           <h3 class="text-gray500 mb-2">Paris - Bordeaux</h3>
           <div class="mb-3">Lorem ipsum doloret</div>
-          <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+          <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
         </div>
       </div>
     </div>
@@ -236,7 +236,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
         <div>
           <h3 class="text-gray500 mb-2">Paris - Nantes</h3>
           <div class="mb-3">Lorem ipsum doloret</div>
-          <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+          <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
         </div>
       </div>
     </div>

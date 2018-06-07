@@ -22,7 +22,7 @@ permalink: /docs/4.0/components/footer-pushes
               <div>
                 <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@ permalink: /docs/4.0/components/footer-pushes
               <div>
                 <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ permalink: /docs/4.0/components/footer-pushes
               <div>
                 <div class="text-sm text-uppercase text-primary font-weight-medium mb-2">Internet industriel</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ permalink: /docs/4.0/components/footer-pushes
               <div>
                 <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icon-size-x5 ml-2"></i></a>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
               </div>
             </div>
           </div>            
@@ -60,8 +60,8 @@ permalink: /docs/4.0/components/footer-pushes
       </div>
       <div class="swiper-pagination gt-5" data-role="pagination"></div>
       <div class="swiper-buttons">
-        <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icon-size-x75"></i></div>
-        <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icon-size-x75"></i></div>
+        <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75"></i></div>
+        <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75"></i></div>
       </div>
     </div>
   </div>

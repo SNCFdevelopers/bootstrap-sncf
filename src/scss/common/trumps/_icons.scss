@@ -32,44 +32,60 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     // size
-    .icon-size-#{$infix}x5 {
-      font-size: $font-size-base * .5;
+    .icons#{$infix}-size-x5 {
+      font-size: $font-size-base * .5; // 8px
     }
 
-    .icon-size#{$infix}-x75 {
-      font-size: $font-size-base * .75;
+    .icons#{$infix}-size-x75 {
+      font-size: $font-size-base * .75; // 12px
     }
 
-    .icon-size#{$infix}-1x {
-      font-size: $font-size-base;
+    .icons#{$infix}-size-1x {
+      font-size: $font-size-base; // 16px
     }
 
-    .icon-size#{$infix}-1x25 {
-      font-size: $font-size-base * 1.25;
+    .icons#{$infix}-size-1x25 {
+      font-size: $font-size-base * 1.25; // 20px
     }
 
-    .icon-size#{$infix}-1x50 {
-      font-size: $font-size-base * 1.5;
+    .icons#{$infix}-size-1x5 {
+      font-size: $font-size-base * 1.5; // 24px
     }
 
-    .icon-size#{$infix}-1x75 {
-      font-size: $font-size-base * 1.75;
+    .icons#{$infix}-size-1x75 {
+      font-size: $font-size-base * 1.75; // 28px
     }
 
-    .icon-size#{$infix}-3x {
-      font-size: $font-size-base * 3;
+    .icons#{$infix}-size-2x {
+      font-size: $font-size-base * 2; // 28px
     }
 
-    .icon-size#{$infix}-4x50 {
-      font-size: $font-size-base * 4.5;
+    .icons#{$infix}-size-3x {
+      font-size: $font-size-base * 3; // 48px
     }
 
-    .icon-size#{$infix}-5x {
-      font-size: $font-size-base * 5;
+    .icons#{$infix}-size-30px {
+      font-size: rem(30px);
     }
 
-    .icon-size#{$infix}-7x50 {
-      font-size: 7.5rem;
+    .icons#{$infix}-size-50px {
+      font-size: rem(50px);
+    }
+
+    .icons#{$infix}-size-66px {
+      font-size: rem(66px);
+    }
+
+    .icons#{$infix}-size-90px {
+      font-size: rem(90px);
+    }
+
+    .icons#{$infix}-size-96px {
+      font-size: rem(96px);
+    }
+
+    .icons#{$infix}-size-140px {
+      font-size: rem(140px);
     }
   }
 }

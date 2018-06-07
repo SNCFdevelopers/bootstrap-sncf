@@ -52,11 +52,11 @@ sector:
           </div>
           <div class="form-group">
             <label for="profile">Profil</label>
-            {% include components/select-exclusive.html id="profile" placeholder="Sélectionner un profil" iconsize="icon-size-x75" items=page.profile %}
+            {% include components/select-exclusive.html id="profile" placeholder="Sélectionner un profil" iconsize="icons-size-x75" items=page.profile %}
           </div>
           <div class="form-group">
             <label for="profile">Profil</label>
-            {% include components/select-exclusive.html id="profile" placeholder="Sélectionner un profil" iconsize="icon-size-x75" items=page.profile %}
+            {% include components/select-exclusive.html id="profile" placeholder="Sélectionner un profil" iconsize="icons-size-x75" items=page.profile %}
           </div>
           <div class="form-group">
             <label>Droit d'admin</label>
@@ -77,11 +77,11 @@ sector:
           </div>
           <div class="form-group">
             <label for="profile">Unité</label>
-            {% include components/select-exclusive.html id="unit" placeholder="Sélectionner une unité" iconsize="icon-size-x75" items=page.unit %}
+            {% include components/select-exclusive.html id="unit" placeholder="Sélectionner une unité" iconsize="icons-size-x75" items=page.unit %}
           </div>
           <div class="form-group">
             <label for="profile">Secteur</label>
-            {% include components/select-exclusive.html id="unit" placeholder="Sélectionner un secteur" iconsize="icon-size-x75" items=page.sector %}
+            {% include components/select-exclusive.html id="unit" placeholder="Sélectionner un secteur" iconsize="icons-size-x75" items=page.sector %}
           </div>
           <div class="form-group pt-2">
             <button type="button" class="btn btn-primary mr-2">Ajouter</button>

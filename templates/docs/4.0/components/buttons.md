@@ -38,8 +38,8 @@ When using button classes on `<a>` elements that are used to trigger in-page fun
 TODO : description
 
 {% example html %}
-<a href="#" class="btn btn-link"><span>Link</span> <i class="icons-share icon-size-x75 ml-2"></i></a>
-<a href="#" class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share icon-size-x75 ml-2"></i></a>
+<a href="#" class="btn btn-link"><span>Link</span> <i class="icons-share icons-size-x75 ml-2"></i></a>
+<a href="#" class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share icons-size-x75 ml-2"></i></a>
 {% endexample %}
 
 ## Button icon
@@ -134,15 +134,15 @@ The `.disabled` class uses `pointer-events: none` to try to disable the link fun
 
 {% example html %}
 <button type="button" class="btn btn-card">
-  <i class="icons-earth-underline icon-size-4x50"></i>
+  <i class="icons-large-france icons-size-90px"></i>
   <span>Défaut</span>
 </button>
 <button type="button" class="btn btn-card active">
-  <i class="icons-earth-underline icon-size-4x50"></i>
+  <i class="icons-large-france icons-size-90px"></i>
   <span>Sélectionné</span>
 </button>
 <button type="button" class="btn btn-card" disabled>
-  <i class="icons-earth-underline icon-size-4x50"></i>
+  <i class="icons-large-france icons-size-90px"></i>
   <span>Inactif</span>
 </button>
 {% endexample %}

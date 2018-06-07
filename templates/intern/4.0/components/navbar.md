@@ -32,27 +32,27 @@ permalink: /docs/4.0/components/navbar
           <i class="icons-search"></i>
         </button>
       </div>
-      <button type="button" class="btn btn-only-icon btn-white d-block d-md-none" data-role="close"><i class="icons-close icon-size-1x25"></i></button>
+      <button type="button" class="btn btn-only-icon btn-white d-block d-md-none" data-role="close"><i class="icons-close icons-size-1x25"></i></button>
     </div>
   </div>
   <ul class="mastheader-toolbar toolbar mb-0">
     <li class="toolbar-item d-none d-md-block">
       <a href="#" class="btn btn-only-icon btn-notif toolbar-item-spacing">
         <span class="sr-only">Alert</span>
-        <i class="icons-alert-underline icon-size-1x25 icon-size-md-1x50"></i>
+        <i class="icons-alert-underline icons-size-1x25 icons-md-size-1x5"></i>
         <span class="notif">1</span>
       </a>
     </li>
     <li class="toolbar-item no-separator d-block d-md-none">
       <a href="#" class="btn btn-only-icon toolbar-item-spacing" data-component="searchbar-toggle">
         <span class="sr-only">Open search</span>
-        <i class="icons-search icon-size-1x25 icon-size-md-1x50"></i>
+        <i class="icons-search icons-size-1x25 icons-md-size-1x5"></i>
       </a>
     </li>
     <li class="toolbar-item">
       <div class="btn-group dropdown">
         <button class="btn btn-transparent dropdown-toggle toolbar-item-spacing" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="icons-account-offline icon-size-1x25 icon-size-md-1x50 mr-xl-2"></i>
+          <i class="icons-account-offline icons-size-1x25 icons-md-size-1x5 mr-xl-2"></i>
           <span class="d-none d-xl-block">Pierre Dumont</span>
           <i class="icons-arrow-down d-none d-xl-block"></i>
         </button>

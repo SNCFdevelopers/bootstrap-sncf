@@ -10,6 +10,7 @@ $actionbar-height-md: rem(76px);
   position: fixed;
   top: $mastheader-height;
   left: 0;
+  z-index: $zindex-fixed;
   width: 100%;
   background-color: color("white");
 }

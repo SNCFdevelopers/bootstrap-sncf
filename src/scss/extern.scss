@@ -9,10 +9,10 @@
 @import "common/tools/colors";
 
 // vendors
-@import "~tui-chart/dist/tui-chart.css";
-@import "~flatpickr/dist/flatpickr.css";
+@import "~tui-chart/dist/tui-chart";
+@import "~flatpickr/dist/flatpickr";
 @import "~ion-rangeslider/css/ion.rangeSlider";
-@import "~swiper/dist/css/swiper.css";
+@import "~swiper/dist/css/swiper";
 
 // generic
 @import "~bootstrap/scss/root";

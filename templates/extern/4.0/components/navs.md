@@ -32,13 +32,13 @@ permalink: /docs/4.0/components/navs
       <li class="toolbar-item">
         <a href="#" class="btn btn-sm btn-transparent toolbar-item-spacing">
           <span class="sr-only">search</span>
-          <i class="icons-search icon-size-1x25"></i>
+          <i class="icons-search icons-size-1x25"></i>
         </a>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent toolbar-item-spacing">
           <span class="sr-only">Account</span>
-          <i class="icons-account-offline icon-size-1x25"></i>
+          <i class="icons-account-offline icons-size-1x25"></i>
         </button>
       </li>
     </ul>

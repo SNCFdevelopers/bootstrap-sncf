@@ -1,16 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#0088CE;}
-</style>
-<title>Icons/Interface/Ajouter</title>
-<desc>Created with Sketch.</desc>
-<g id="Icons_x2F_Interface_x2F_Ajouter">
-	<g id="Fill-1">
-		<path id="path-1_1_" class="st0" d="M28.7,28.8h17.7c2,0,3.6-1.9,3.6-3.9s-1.6-3.6-3.6-3.6H28.7V3.6c0-2-1.6-3.6-3.6-3.6
-			s-3.8,1.6-3.8,3.6v17.7H3.6c-2,0-3.6,1.8-3.6,3.8c0,2,1.6,3.8,3.6,3.8h17.7v17.5c0,2,1.6,3.6,3.6,3.6s3.8-1.6,3.8-3.6V28.8z"/>
-	</g>
-</g>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M28.7068464,28.8426106 L46.3610357,28.8426106 C48.3611327,28.8426106 50,26.9273662 50,24.9272692 C50,22.9271722 48.3611327,21.2907292 46.36346,21.2907292 L28.7068464,21.2907292 L28.7068464,3.63653995 C28.7068464,1.63401862 27.0704034,0 25.0703064,0 C23.0702095,0 21.2907292,1.63401862 21.2907292,3.63653995 L21.2907292,21.2907292 L3.63653995,21.2907292 C1.63401862,21.2907292 0,23.0702095 0,25.0678821 C0,27.0704034 1.63401862,28.8426106 3.63653995,28.8426106 L21.2907292,28.8426106 L21.2907292,46.36346 C21.2907292,48.363557 22.9271722,50 24.9272692,50 C26.9273662,50 28.7068464,48.363557 28.7068464,46.36346 L28.7068464,28.8426106 Z" id="path-1"></path>
+    </defs>
 </svg>
