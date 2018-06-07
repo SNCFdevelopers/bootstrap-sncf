@@ -18,7 +18,7 @@ toc: true
     </div>
     <div class="input-group-append">
       <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
-        <i class="icons-agenda"></i>
+        <i class="icons-calendar"></i>
       </button>
     </div>
   </div>
@@ -37,7 +37,7 @@ toc: true
     </div>
     <div class="input-group-append">
       <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
-        <i class="icons-agenda"></i>
+        <i class="icons-calendar"></i>
       </button>
     </div>
   </div>
@@ -56,7 +56,7 @@ toc: true
     </div>
     <div class="input-group-append">
       <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
-        <i class="icons-agenda"></i>
+        <i class="icons-calendar"></i>
       </button>
     </div>
   </div>
@@ -67,7 +67,7 @@ toc: true
 
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
-<div data-component="picker" data-mode="time" data-increment-hours-on-minutes-max>
+<div data-component="picker" data-mode="time">
   <div class="input-group" data-toggle>
     <div class="form-control-container">
       <input type="text" class="form-control" placeholder="Sélectionner une heure" data-input>
@@ -75,7 +75,7 @@ toc: true
     </div>
     <div class="input-group-append">
       <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
-        <i class="icons-schedule"></i>
+        <i class="icons-calendar-time"></i>
       </button>
     </div>
   </div>
@@ -86,7 +86,7 @@ toc: true
 
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
-<div data-component="picker" data-enable-time="true" data-increment-hours-on-minutes-max>
+<div data-component="picker" data-enable-time="true">
   <div class="input-group" data-toggle>
     <div class="form-control-container">
       <input type="text" class="form-control" placeholder="Sélectionner une heure" data-input>
@@ -94,7 +94,7 @@ toc: true
     </div>
     <div class="input-group-append">
       <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
-        <i class="icons-schedule"></i>
+        <i class="icons-calendar-time"></i>
       </button>
     </div>
   </div>
@@ -115,7 +115,7 @@ toc: true
           </div>
           <div class="input-group-append">
             <button type="button" class="btn btn-primary btn-only-icon" data-toggle>
-              <i class="icons-agenda"></i>
+              <i class="icons-calendar"></i>
             </button>
           </div>
         </div>
@@ -131,7 +131,7 @@ toc: true
         </div>
         <div class="input-group-append">
           <button type="button" class="btn btn-primary btn-only-icon" data-toggle>
-            <i class="icons-agenda"></i>
+            <i class="icons-calendar"></i>
           </button>
         </div>
       </div>

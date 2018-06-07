@@ -33,6 +33,7 @@ class Picker {
     const dateFormat = this._getDateFormat(enableTime ? 'datetime' : mode)
     const secondRangeInput = element.getAttribute('data-second-range')
     const incrementHoursOnMinutesMax = element.getAttribute('data-increment-hours-on-minutes-max') || false
+    const decrementHoursOnMinutesMin = element.getAttribute('data-decrement-hours-on-minutes-min') || false
     const plugins = []
 
     if (secondRangeInput) {
@@ -48,7 +49,12 @@ class Picker {
       dateFormat,
       enableTime,
       plugins,
-      incrementHoursOnMinutesMax
+      incrementHoursOnMinutesMax,
+      decrementHoursOnMinutesMin
+    }
+
+    if (mode === 'time') {
+      options.enableTime = true
     }
 
     if (defaultDate) {
