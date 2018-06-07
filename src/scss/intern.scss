@@ -85,6 +85,7 @@
 @import "common/components/schedule";
 @import "common/components/schedule-filters";
 @import "common/components/schedule-planning-menu";
+@import "intern/components/options-menu";
 
 // trumps
 @import "~bootstrap/scss/utilities";
@@ -92,5 +93,6 @@
 @import "common/trumps/icons";
 @import "common/trumps/flex";
 @import "common/trumps/overflow";
+@import "common/trumps/spacing";
 @import "common/trumps/text";
 @import "~bootstrap/scss/print";
