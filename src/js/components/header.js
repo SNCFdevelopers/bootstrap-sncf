@@ -10,9 +10,6 @@ class Header {
 
     menus.forEach((menu) => {
       menu.addEventListener('click', (event) => {
-        /* eslint-disable no-console */
-        console.log('click')
-        /* eslint-enable no-console */
         event.stopPropagation()
       })
     })

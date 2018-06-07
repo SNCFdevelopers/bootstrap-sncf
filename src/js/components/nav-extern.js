@@ -15,6 +15,21 @@ class Nav {
     const subToggles = element.querySelectorAll('[data-role=sub-toggle]')
     const closeBtns = element.querySelectorAll('[data-role=close]')
     const prevBtns = element.querySelectorAll('[data-role=prev]')
+    const menus = element.querySelectorAll('[data-role=stop-propagation]')
+    const burger = element.querySelector('[data-role=burger]')
+    const menu = element.querySelector('[data-role=menu]')
+    const actionbarMenu = element.querySelector('[data-role=actionbar-menu]')
+
+    menus.forEach((menu) => {
+      menu.addEventListener('click', (event) => {
+        event.stopPropagation()
+      })
+    })
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('active')
+      actionbarMenu.classList.toggle('active')
+    })
 
     mainToggles.forEach((toggle) => {
       toggle.addEventListener('click', (event) => {
@@ -44,7 +59,7 @@ class Nav {
       })
     })
 
-    element.querySelector('[data-role=menu]').addEventListener('click', (event) => {
+    menu.addEventListener('click', (event) => {
       event.stopPropagation()
     })
 

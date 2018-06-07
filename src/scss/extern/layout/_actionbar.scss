@@ -99,6 +99,10 @@ $actionbar-height-md: rem(76px);
     padding-right: rem(20px);
     padding-left: rem(20px);
     background-color: color("white");
+
+    &:not(.active) {
+      display: none;
+    }
   }
 
   //
@@ -162,8 +166,8 @@ $actionbar-height-md: rem(76px);
 
   .panel-content {
     flex: 1 1 auto;
-    overflow-y: auto;
     padding-top: rem(30px);
+    overflow-y: auto;
   }
 
   .panel-close {
