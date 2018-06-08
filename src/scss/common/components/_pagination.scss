@@ -4,6 +4,8 @@
 .page-item {
   padding-right: rem(4px);
   padding-left: rem(4px);
+  font-size: $font-size-base;
+  color: #808080;
 
   &.active .page-link {
     position: relative;
@@ -20,12 +22,14 @@
     }
   }
 
-  + .page-skip {
+  &:not(.page-skip) + .page-skip {
     padding-left: rem(30px);
   }
 }
 
 .page-link {
+  display: inline-flex;
+  align-items: center;
   font-size: rem(14px);
 }
 
@@ -33,11 +37,17 @@
   display: inline-flex;
   align-items: center;
 
-  &:not(:last-child) {
-    padding-right: rem(30px);
-  }
-
   &:not(.disabled) .page-link {
     color: $link-color;
+  }
+
+  + .page-item:not(.page-skip) {
+    padding-left: rem(30px);
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .page-link {
+    font-size: rem(16px);
   }
 }

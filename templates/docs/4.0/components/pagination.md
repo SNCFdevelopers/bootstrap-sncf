@@ -15,35 +15,31 @@ In addition, as pages likely have more than one such navigation section, it's ad
 {% example html %}
 <nav aria-label="Page navigation example">
   <ul class="pagination">
-    <li class="page-item page-skip"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item page-skip"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</nav>
-{% endexample %}
-
-## Working with icons
-
-Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with `aria` attributes and the `.sr-only` utility.
-
-{% example html %}
-<nav aria-label="Page navigation example">
-  <ul class="pagination">
     <li class="page-item page-skip">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
+      <a class="page-link" href="#">
+        <i class="icons-arrow-double icon-rotate-180 icons-size-x5"></i>
+        <span class="d-none d-sm-inline ml-2">Début</span>
+      </a>
+    </li>
+    <li class="page-item page-skip">
+      <a class="page-link" href="#">
+        <i class="icons-arrow-prev icons-size-x5"></i>
+        <span class="d-none d-sm-inline ml-2">Précédent</span>
       </a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item page-skip">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
+      <a class="page-link" href="#">
+        <span class="d-none d-sm-inline mr-2">Suivant</span>
+        <i class="icons-arrow-next icons-size-x5"></i>
+      </a>
+    </li>
+    <li class="page-item page-skip">
+      <a class="page-link" href="#">
+        <span class="d-none d-sm-inline mr-2">Fin</span>
+        <i class="icons-arrow-double icons-size-x5"></i>
       </a>
     </li>
   </ul>
@@ -60,7 +56,10 @@ While the `.disabled` class uses `pointer-events: none` to _try_ to disable the 
 <nav aria-label="...">
   <ul class="pagination">
     <li class="page-item page-skip disabled">
-      <a class="page-link" href="#" tabindex="-1">Previous</a>
+      <a class="page-link" href="#" tabindex="-1">
+        <i class="icons-arrow-prev icons-size-x5"></i>
+        <span class="d-none d-sm-inline ml-2">Précédent</span>
+      </a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item active">
@@ -68,7 +67,10 @@ While the `.disabled` class uses `pointer-events: none` to _try_ to disable the 
     </li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item page-skip">
-      <a class="page-link" href="#">Next</a>
+      <a class="page-link" href="#">
+        <span class="d-none d-sm-inline mr-2">Suivant</span>
+        <i class="icons-arrow-next icons-size-x5"></i>
+      </a>
     </li>
   </ul>
 </nav>
@@ -132,14 +134,32 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
 {% example html %}
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
-    <li class="page-item page-skip disabled">
-      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    <li class="page-item page-skip">
+      <a class="page-link" href="#">
+        <i class="icons-arrow-double icon-rotate-180 icons-size-x5"></i>
+        <span class="d-none d-sm-inline ml-2">Début</span>
+      </a>
+    </li>
+    <li class="page-item page-skip">
+      <a class="page-link" href="#">
+        <i class="icons-arrow-prev icons-size-x5"></i>
+        <span class="d-none d-sm-inline ml-2">Précédent</span>
+      </a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item page-skip">
-      <a class="page-link" href="#">Next</a>
+      <a class="page-link" href="#">
+        <span class="d-none d-sm-inline mr-2">Suivant</span>
+        <i class="icons-arrow-next icons-size-x5"></i>
+      </a>
+    </li>
+    <li class="page-item page-skip">
+      <a class="page-link" href="#">
+        <span class="d-none d-sm-inline mr-2">Fin</span>
+        <i class="icons-arrow-double icons-size-x5"></i>
+      </a>
     </li>
   </ul>
 </nav>
@@ -148,14 +168,32 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
 {% example html %}
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-end">
-    <li class="page-item page-skip disabled">
-      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    <li class="page-item page-skip">
+      <a class="page-link" href="#">
+        <i class="icons-arrow-double icon-rotate-180 icons-size-x5"></i>
+        <span class="d-none d-sm-inline ml-2">Début</span>
+      </a>
+    </li>
+    <li class="page-item page-skip">
+      <a class="page-link" href="#">
+        <i class="icons-arrow-prev icons-size-x5"></i>
+        <span class="d-none d-sm-inline ml-2">Précédent</span>
+      </a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item page-skip">
-      <a class="page-link" href="#">Next</a>
+      <a class="page-link" href="#">
+        <span class="d-none d-sm-inline mr-2">Suivant</span>
+        <i class="icons-arrow-next icons-size-x5"></i>
+      </a>
+    </li>
+    <li class="page-item page-skip">
+      <a class="page-link" href="#">
+        <span class="d-none d-sm-inline mr-2">Fin</span>
+        <i class="icons-arrow-double icons-size-x5"></i>
+      </a>
     </li>
   </ul>
 </nav>
