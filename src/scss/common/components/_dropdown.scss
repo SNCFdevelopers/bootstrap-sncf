@@ -168,6 +168,10 @@
   }
 }
 
+.dropdown-menu-lg {
+  width: $dropdown-width-lg;
+}
+
 .dropdown-menu-right {
   &::after {
     right: rem(18px);
