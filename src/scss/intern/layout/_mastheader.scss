@@ -27,6 +27,10 @@ $mastheader-height-xl:   rem(64px);
   background-color: gray("600");
 }
 
+.mastheader-logo img {
+  width: rem(50px);
+}
+
 .mastheader-toolbar {
   .btn {
     color: color("white");
@@ -109,6 +113,10 @@ $mastheader-height-xl:   rem(64px);
 @include media-breakpoint-up(md) {
   .mastheader {
     height: $mastheader-height-md;
+  }
+
+  .mastheader-logo img {
+    width: rem(70px);
   }
 
   .mastheader-search {
