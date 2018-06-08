@@ -980,6 +980,7 @@ $breadcrumb-bg:                     $white;
 $breadcrumb-divider-color:          $gray-600;
 $breadcrumb-active-color:           $primary;
 $breadcrumb-active-divider:         str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%230088ce' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
+$breadcrumb-current-divider:        str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%333333' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
 $breadcrumb-divider:                str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%23b9b9b9' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
 
 
