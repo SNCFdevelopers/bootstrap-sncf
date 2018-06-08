@@ -3,8 +3,8 @@ import './utils/dragscroll.js'
 import './utils/polyfill.js'
 import './utils/stretchy.js'
 import {
-  LineChart,
-  RadialChart
+  BarChart,
+  LineChart
 } from './components/charts'
 import Chips from './components/chips'
 import Control from './components/control'
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // data components
   const dataComponent = '[data-component]'
   const dataLineChart = 'line-chart'
-  const dataRadialChart = 'radial-chart'
+  const dataBarChart = 'bar-chart'
   const dataChips = 'chips'
   const dataControl = 'control'
   const dataPicker = 'picker'
@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
       new LineChart(component)
     }
 
-    if (component.dataset.component === dataRadialChart) {
-      new RadialChart(component)
+    if (component.dataset.component === dataBarChart) {
+      new BarChart(component)
     }
 
     if (component.dataset.component === dataChips) {

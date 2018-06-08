@@ -1,0 +1,27 @@
+/* chart tooltip
+   ========================================================================== */
+
+/* stylelint-disable selector-max-id */
+#chartjs-tooltip {
+  padding: rem(18px);
+  background-color: gray("100");
+  border-radius: rem(3px);
+
+  th {
+    font-weight: $font-weight-base;
+  }
+}
+
+.chartjs-tooltip-title {
+  padding-bottom: rem(2px);
+  color: gray("600");
+}
+
+.chartjs-tooltip-line-indicator {
+  display: inline-block;
+  width: rem(20px);
+  height: rem(3px);
+  margin-right: rem(8px);
+  margin-bottom: rem(2px);
+}
+/* stylelint-enable selector-max-id */

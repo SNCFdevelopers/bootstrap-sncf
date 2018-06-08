@@ -8,5 +8,12 @@ toc: true
 
 {% example html %}
 <canvas data-component="line-chart"></canvas>
-<div data-component="radial-chart"></div>
+{% endexample html %}
+
+{% example html %}
+<canvas data-component="line-chart" data-fill="true"></canvas>
+{% endexample html %}
+
+{% example html %}
+<canvas data-component="bar-chart"></canvas>
 {% endexample html %}
