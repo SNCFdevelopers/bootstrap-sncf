@@ -179,6 +179,11 @@
 }
 // stylelint-enable declaration-no-important
 
+.dropdown-header {
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+}
+
 // Dividers (basically an `<hr>`) within the dropdown
 .dropdown-divider {
   width: calc(100% - #{$dropdown-item-padding-x * 2});
