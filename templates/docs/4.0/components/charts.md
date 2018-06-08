@@ -17,3 +17,11 @@ toc: true
 {% example html %}
 <canvas data-component="bar-chart"></canvas>
 {% endexample html %}
+
+{% example html %}
+<canvas data-component="pie-chart"></canvas>
+{% endexample html %}
+
+{% example html %}
+<canvas data-component="pie-chart" data-cutoutpercentage="50"></canvas>
+{% endexample html %}

@@ -144,6 +144,33 @@ export class BarChart {
   }
 }
 
+export class PieChart {
+  constructor(element) {
+    const cutoutPercentage = element.dataset.cutoutpercentage || 0
+    var chartData = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      datasets: [{
+        label: 'Dataset 1',
+        backgroundColor: colors,
+        data: [580, 400, 500, 600, 700, 800],
+        borderWidth: 0,
+      }]
+    };
+
+    new Chart(element, {
+      type: 'pie',
+      data: chartData,
+      options: {
+        cutoutPercentage: cutoutPercentage,
+        responsive: true,
+        legend: {
+          display: false
+        }
+      }
+    });
+  }
+}
+
 function renderTooltip(tooltipModel, _this) {
   // Tooltip Element
   var tooltipEl = document.getElementById('chartjs-tooltip');

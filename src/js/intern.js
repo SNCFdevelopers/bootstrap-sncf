@@ -4,7 +4,8 @@ import './utils/polyfill.js'
 import './utils/stretchy.js'
 import {
   BarChart,
-  LineChart
+  LineChart,
+  PieChart
 } from './components/charts'
 import Chips from './components/chips'
 import Control from './components/control'
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataComponent = '[data-component]'
   const dataLineChart = 'line-chart'
   const dataBarChart = 'bar-chart'
+  const dataPieChart = 'pie-chart'
   const dataChips = 'chips'
   const dataControl = 'control'
   const dataPicker = 'picker'
@@ -51,6 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataBarChart) {
       new BarChart(component)
+    }
+
+    if (component.dataset.component === dataPieChart) {
+      new PieChart(component)
     }
 
     if (component.dataset.component === dataChips) {
