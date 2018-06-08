@@ -36,23 +36,23 @@ permalink: /docs/4.0/components/navbar
     </div>
   </div>
   <ul class="mastheader-toolbar toolbar mb-0">
-    <li class="toolbar-item d-none d-md-block">
+    <li class="toolbar-item separator-gray-500 d-none d-md-flex">
       <a href="#" class="btn btn-only-icon btn-notif toolbar-item-spacing">
         <span class="sr-only">Alert</span>
-        <i class="icons-alert-underline icons-size-1x25 icons-md-size-1x5"></i>
+        <i class="icons-alert-notification icons-size-1x25 icons-md-size-1x5"></i>
         <span class="notif">1</span>
       </a>
     </li>
-    <li class="toolbar-item no-separator d-block d-md-none">
+    <li class="toolbar-item separator-gray-500 no-separator d-flex d-md-none">
       <a href="#" class="btn btn-only-icon toolbar-item-spacing" data-component="searchbar-toggle">
         <span class="sr-only">Open search</span>
         <i class="icons-search icons-size-1x25 icons-md-size-1x5"></i>
       </a>
     </li>
-    <li class="toolbar-item">
+    <li class="toolbar-item separator-gray-500">
       <div class="btn-group dropdown">
         <button class="btn btn-transparent dropdown-toggle toolbar-item-spacing" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="icons-account-offline icons-size-1x25 icons-md-size-1x5 mr-xl-2"></i>
+          <i class="icons-menu-account icons-size-1x25 icons-md-size-1x5 mr-xl-2"></i>
           <span class="d-none d-xl-block">Pierre Dumont</span>
           <i class="icons-arrow-down d-none d-xl-block"></i>
         </button>

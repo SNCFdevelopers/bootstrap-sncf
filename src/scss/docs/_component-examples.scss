@@ -417,11 +417,17 @@
 
 .bd-example {
   .actionbar,
-  .mastheader {
+  .mastheader, {
     position: relative;
     top: 0;
     right: 0;
     width: 100%;
+  }
+
+  .mastnav {
+    position: relative;
+    top: 0;
+    right: 0;
   }
 
   .actionbar,
