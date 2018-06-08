@@ -42,10 +42,11 @@ const pointHoverConfig = {
 
 export class LineChart {
   constructor(element) {
+    const canvas = element.querySelector('canvas')
     const dataCounter = 0
     const fill = element.dataset.fill === "true" ? true : false
 
-    var ctx = element.getContext("2d")
+    var ctx = canvas.getContext("2d")
     var gradientStroke = ctx.createLinearGradient(0, 400, 0, 0)
     gradientStroke.addColorStop(0, 'rgba(255, 255, 255, 0)')
     gradientStroke.addColorStop(1, 'rgb(29, 136, 202)')
@@ -69,7 +70,7 @@ export class LineChart {
         tooltips: {
           enabled: false,
           custom: function(tooltipModel) {
-            renderTooltip(tooltipModel, this)
+            renderTooltip(tooltipModel, element, canvas)
           }
         }
       }
@@ -100,44 +101,46 @@ export class LineChart {
       data: data,
     }
 
-    new Chart(element, config)
+    new Chart(canvas, config)
   }
 }
 
 export class BarChart {
   constructor(element) {
+    const canvas = element.querySelector('canvas')
     var barChartData = {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      labels: month,
       datasets: [{
         label: 'Dataset 1',
-        backgroundColor: colors[2],
-        backgroundHoverColor: colors[0],
+        backgroundColor: colors[3],
+        hoverBackgroundColor: colors[0],
         borderWidth: 0,
-        data: multiData[0]
+        data: [400, 500, 250, 300, 700, 600, 100, 200, 700, 180, 300, 600]
       }, {
         label: 'Dataset 2',
-        backgroundColor: colors[3],
-        backgroundHoverColor: colors[1],
+        backgroundColor: colors[4],
+        hoverBackgroundColor: colors[2],
         borderWidth: 0,
-        data: multiData[1]
+        data: [400, 300, 550, 500, 100, 200, 700, 600, 100, 620, 500, 200]
       }]
     };
 
-    new Chart(element, {
+    new Chart(canvas, {
       type: 'bar',
       data: barChartData,
       options: {
         responsive: true,
-        legend: {
-          display: false
-        },
+        legend: { display: false },
         scales: {
-          xAxes: [{
-            stacked: true
-          }],
-          yAxes: [{
-            stacked: true
-          }]
+          xAxes: [{ stacked: true }],
+          yAxes: [{ stacked: true }]
+        },
+        tooltips: {
+          mode: 'index',
+          enabled: false,
+          custom: function(tooltipModel) {
+            renderTooltip(tooltipModel, element, canvas)
+          }
         }
       }
     });
@@ -146,6 +149,7 @@ export class BarChart {
 
 export class PieChart {
   constructor(element) {
+    const canvas = element.querySelector('canvas')
     const cutoutPercentage = element.dataset.cutoutpercentage || 0
     var chartData = {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -157,7 +161,7 @@ export class PieChart {
       }]
     };
 
-    new Chart(element, {
+    new Chart(canvas, {
       type: 'pie',
       data: chartData,
       options: {
@@ -171,16 +175,17 @@ export class PieChart {
   }
 }
 
-function renderTooltip(tooltipModel, _this) {
+function renderTooltip(tooltipModel, element, canvas) {
   // Tooltip Element
-  var tooltipEl = document.getElementById('chartjs-tooltip');
+  var tooltipEl = element.querySelector('#chartjs-tooltip');
+  console.log('tooltipModel: ', tooltipModel);
 
   // Create element on first render
   if (!tooltipEl) {
       tooltipEl = document.createElement('div');
       tooltipEl.id = 'chartjs-tooltip';
       tooltipEl.innerHTML = "<table></table>";
-      document.body.appendChild(tooltipEl);
+      element.appendChild(tooltipEl);
   }
 
   // Hide if no tooltip
@@ -197,7 +202,6 @@ function renderTooltip(tooltipModel, _this) {
   if (tooltipModel.body) {
       var titleLines = tooltipModel.title || [];
       var bodyLines = tooltipModel.body.map(getBody);
-      console.log('tooltipModel: ', tooltipModel);
 
       var innerHtml = '<thead>';
 
@@ -219,12 +223,16 @@ function renderTooltip(tooltipModel, _this) {
   }
 
   // `this` will be the overall tooltip
-  var position = _this._chart.canvas.getBoundingClientRect();
+  var position = canvas.getBoundingClientRect();
+
+  console.log('position: ', position);
+  console.log('tooltipModel.caretY: ', tooltipModel.caretY);
 
   // Display, position, and set styles for font
   tooltipEl.style.opacity = 1;
   tooltipEl.style.position = 'absolute';
-  tooltipEl.style.left = position.left + tooltipModel.caretX + 12 + 'px';
-  tooltipEl.style.top = position.top + tooltipModel.caretY + 40 + 'px';
+  tooltipEl.style.left = tooltipModel.caretX + 12 + 'px';
+  tooltipEl.style.top = tooltipModel.caretY + 40 + 'px';
+  console.log('tooltipEl.style.top: ', tooltipEl.style.top);
 }
 /* eslint-enable */

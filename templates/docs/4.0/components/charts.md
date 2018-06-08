@@ -7,21 +7,31 @@ toc: true
 ---
 
 {% example html %}
-<canvas data-component="line-chart"></canvas>
+<div class="position-relative" data-component="line-chart">
+    <canvas></canvas>
+</div>
 {% endexample html %}
 
 {% example html %}
-<canvas data-component="line-chart" data-fill="true"></canvas>
+<div class="position-relative" data-component="line-chart" data-fill="true">
+    <canvas></canvas>
+</div>
 {% endexample html %}
 
 {% example html %}
-<canvas data-component="bar-chart"></canvas>
+<div class="position-relative" data-component="bar-chart">
+    <canvas></canvas>
+</div>
 {% endexample html %}
 
 {% example html %}
-<canvas data-component="pie-chart"></canvas>
+<div class="position-relative" data-component="pie-chart">
+    <canvas></canvas>
+</div>
 {% endexample html %}
 
 {% example html %}
-<canvas data-component="pie-chart" data-cutoutpercentage="50"></canvas>
+<div class="position-relative" data-component="pie-chart" data-cutoutpercentage="50">
+    <canvas></canvas>
+</div>
 {% endexample html %}
