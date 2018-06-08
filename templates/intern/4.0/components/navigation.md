@@ -2,6 +2,7 @@
 layout: docs
 title: Navigation
 description: Navigation
+group: components
 toc: true
 permalink: /docs/4.0/components/navigation
 ---

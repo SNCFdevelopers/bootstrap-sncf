@@ -32,7 +32,7 @@
 .progress-label {
   position: absolute;
   bottom: calc(100% + #{rem(8px)});
-  left: 100%;
+  right: 0;
   font-size: rem(24px);
   font-weight: $font-weight-medium;
   // transform: translateX(50%);
