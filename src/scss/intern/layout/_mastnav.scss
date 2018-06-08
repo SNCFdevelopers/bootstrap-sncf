@@ -77,6 +77,10 @@ $mastnav-width-lg: rem(100px);
     font-size: rem(12px);
     color: color("white");
 
+    &:not(.active) {
+      border-bottom: 1px solid rgba(255, 255, 255, .2);
+    }
+
     @include hover-focus-active {
       color: color("white");
       background-color: #0074af;
