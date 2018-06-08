@@ -189,15 +189,17 @@
   font-weight: $font-weight-medium;
   color: gray("600");
 
-  &:focus,
-  &.active,
-  &:active {
-    color: theme-color("primary");
-    background-color: $dropdown-bg;
-  }
+  &:not(.disabled) {
+    &:focus,
+    &.active,
+    &:active {
+      color: theme-color("primary");
+      background-color: $dropdown-bg;
+    }
 
-  input:checked + & {
-    color: theme-color("primary");
+    input:checked + & {
+      color: theme-color("primary");
+    }
   }
 }
 
