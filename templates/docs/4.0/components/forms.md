@@ -101,32 +101,46 @@ Add a `stretchy` class on `textarea` element.
 {% example html %}
 <div class="form-group">
   <label for="exampleFormControlTextarea3">Example textarea</label>
-  <div class="form-toolbar mb-1">
-    <button type="button" class="form-toolbar-item">
-      <span class="sr-only">Bold</span>
-      B
-    </button>
-    <button type="button" class="form-toolbar-item">
-      <span class="sr-only">Italic</span>
-      I
-    </button>
-    <button type="button" class="form-toolbar-item">
-      <span class="sr-only">Italic</span>
-      U
-    </button>
-    <span class="form-toolbar-separator"></span>
-    <button type="button" class="form-toolbar-item">
-      <span class="sr-only">Underline</span>
-      <i class="icons-search"></i>
-    </button>
-    <button type="button" class="form-toolbar-item">
-      <span class="sr-only">Underline</span>
-      <i class="icons-search"></i>
-    </button>
-    <button type="button" class="form-toolbar-item">
-      <span class="sr-only">Underline</span>
-      <i class="icons-search"></i>
-    </button>
+  <div class="form-toolbar">
+    <div class="form-toolbar-content">
+      <button type="button" class="form-toolbar-item">
+        <span class="sr-only">Bold</span>
+        <i class="icons-toolbar-bold"></i>
+      </button>
+      <button type="button" class="form-toolbar-item">
+        <span class="sr-only">Italic</span>
+        <i class="icons-toolbar-italic"></i>
+      </button>
+      <button type="button" class="form-toolbar-item">
+        <span class="sr-only">Underline</span>
+        <i class="icons-toolbar-underline"></i>
+      </button>
+      <span class="form-toolbar-separator"></span>
+      <button type="button" class="form-toolbar-item">
+        <span class="sr-only">Text align left</span>
+        <i class="icons-toolbar-left icons-size-1x25"></i>
+      </button>
+      <button type="button" class="form-toolbar-item">
+        <span class="sr-only">Text align center</span>
+        <i class="icons-toolbar-center icons-size-1x25"></i>
+      </button>
+      <button type="button" class="form-toolbar-item">
+        <span class="sr-only">List</span>
+        <i class="icons-toolbar-list icons-size-1x25"></i>
+      </button>
+    </div>
+    <div class="form-toolbar-right">
+      <div class="btn-group dropdown">
+        <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="icons-options icons-size-1x75"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <button class="dropdown-item" type="button">Option 1</button>
+          <button class="dropdown-item" type="button">Option 2</button>
+          <button class="dropdown-item" type="button">Option 3</button>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="form-control-container">
     <textarea class="form-control" placeholder="Comment"></textarea>
