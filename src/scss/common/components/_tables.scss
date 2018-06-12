@@ -16,6 +16,12 @@ th {
   cursor: default;
 }
 
+/* stylelint-disable selector-no-qualifying-type */
+td[data-role="toggle-group-btn"] > * {
+  pointer-events: none;
+}
+/* stylelint-enable selector-no-qualifying-type */
+
 .table-wrapper {
   position: relative;
   width: 100%;

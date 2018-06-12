@@ -6,19 +6,16 @@
 
 class Table {
   constructor(element) {
-    const headGroups = element.querySelectorAll('[data-role=toggle-group-btn]')
-    const groupItems = element.querySelectorAll('[data-trgroup]')
-
-    headGroups.forEach((group) => {
-      group.addEventListener('click', (event) => {
-        const index = event.currentTarget.dataset.id
-        event.currentTarget.classList.toggle('active')
-        groupItems.forEach((item) => {
+    element.addEventListener('click', (event) => {
+      if (event.target.getAttribute('data-role') === 'toggle-group-btn') {
+        const index = event.target.dataset.id
+        event.target.classList.toggle('active')
+        element.querySelectorAll('[data-trgroup]').forEach((item) => {
           if (item.dataset.trgroup === index) {
             item.classList.toggle('active')
           }
         })
-      })
+      }
     })
   }
 }
