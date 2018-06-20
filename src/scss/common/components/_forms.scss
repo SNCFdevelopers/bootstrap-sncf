@@ -196,14 +196,14 @@ textarea.form-control {
     background-position: bottom 18px right 18px;
   }
 
-  .was-validated &:invalid,
-  &.is-invalid,
-  .form-control-container.is-invalid & {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cdefs%3E%3Cstyle%3E.a{fill:%23cd0037;}%3C/style%3E%3C/defs%3E%3Ctitle%3Ecircle-disruption%3C/title%3E%3Cpath class='a' d='M13,0A13,13,0,1,0,26,13,13,13,0,0,0,13,0Zm0,20.29a1.26,1.26,0,1,1,0-2.52A1.17,1.17,0,0,1,14.18,19,1.19,1.19,0,0,1,13,20.29Zm1-4H11.93L11.74,5.2h2.45Z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: bottom 18px right 18px;
-    background-size: 26px 26px;
-  }
+  // .was-validated &:invalid,
+  // &.is-invalid,
+  // .form-control-container.is-invalid & {
+  //   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cdefs%3E%3Cstyle%3E.a{fill:%23cd0037;}%3C/style%3E%3C/defs%3E%3Ctitle%3Ecircle-disruption%3C/title%3E%3Cpath class='a' d='M13,0A13,13,0,1,0,26,13,13,13,0,0,0,13,0Zm0,20.29a1.26,1.26,0,1,1,0-2.52A1.17,1.17,0,0,1,14.18,19,1.19,1.19,0,0,1,13,20.29Zm1-4H11.93L11.74,5.2h2.45Z'/%3E%3C/svg%3E");
+  //   background-repeat: no-repeat;
+  //   background-position: bottom 18px right 18px;
+  //   background-size: 26px 26px;
+  // }
 }
 
 .form-control-icon {

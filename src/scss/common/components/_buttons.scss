@@ -116,6 +116,10 @@ fieldset:disabled a.btn {
     color: $btn-link-disabled-color;
   }
 
+  [class^="icons-"] {
+    font-size: rem(13px);
+  }
+
   // No need for an active state here
 }
 
