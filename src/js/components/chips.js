@@ -43,12 +43,10 @@ class Chips {
     const chipsIcon = document.createElement('i')
 
     if (!optionNode) {
-      console.log(optionNode)
       optionNode = document.createElement('option')
       optionNode.value = value
       optionNode.text = value
       optionNode.selected = true
-      console.log(optionNode)
       this.inputNode.add(optionNode)
     }
 
@@ -74,7 +72,6 @@ class Chips {
   }
 
   _destroyChipsNode = (element, optionNode, chips) => {
-    console.log(optionNode)
     element.removeChild(chips)
     optionNode.selected = false
   }

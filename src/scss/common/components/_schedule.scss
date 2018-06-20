@@ -24,10 +24,24 @@
 }
 
 .schedule-daylabel {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   font-size: rem(14px);
   text-align: center;
+
+  &.current {
+    &::before {
+      display: inline-block;
+      width: rem(7px);
+      height: rem(7px);
+      margin-right: rem(10px);
+      content: "";
+      background-color: theme-color("primary");
+      border-radius: 50%;
+    }
+  }
 }
 
 .schedule-daynumber {
@@ -519,7 +533,7 @@
     width: rem(306px);
     padding: rem(30px);
     border-radius: rem(7px);
-    box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.18);
+    box-shadow: 0 8px 35px 0 rgba(0, 0, 0, .18);
 
     &.right {
       left: calc(100% + #{rem(16px)});
