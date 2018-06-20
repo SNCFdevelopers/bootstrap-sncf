@@ -375,9 +375,9 @@ We recommend using client side validation, but in case you require server side, 
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label class="font-weight-medium mb-2 required" for="validationCustom03">City</label>
+      <label class="font-weight-medium mb-2 required" for="validationCustom04">City</label>
       <div class="form-control-container is-invalid">
-        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+        <input type="text" class="form-control" id="validationCustom04" placeholder="City" required>
         <span class="form-control-state"></span>
       </div>
       <div class="invalid-feedback">
