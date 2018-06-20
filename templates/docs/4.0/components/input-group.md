@@ -108,7 +108,7 @@ toc: true
         <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
       </div>
       <div class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link">Sollicitudin Adipiscing Mattis</button>
+        <button type="button" class="btn btn-link"><span class="text-primary">Sollicitudin&#160;</span> Adipiscing Mattis</button>
         <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
       </div>
       <div class="advanced-search-menu-item advanced-search-menu-title">
