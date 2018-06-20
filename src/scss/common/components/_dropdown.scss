@@ -210,6 +210,12 @@
       color: theme-color("primary");
     }
   }
+
+  &.disabled {
+    color: gray("300");
+    pointer-events: none;
+    cursor: none;
+  }
 }
 
 .dropdown-menu-header {
