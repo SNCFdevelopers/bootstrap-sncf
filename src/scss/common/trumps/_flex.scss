@@ -9,5 +9,6 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     .flex#{$infix}-fluid          { flex: 1 1 auto !important; }
+    .flex#{$infix}-fixed          { flex: 0 0 auto !important; }
   }
 }

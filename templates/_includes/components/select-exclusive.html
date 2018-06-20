@@ -14,9 +14,13 @@
       </div>
     </div>
     <div class="select-menu" data-role="menu">
-      {% for item in include.items %}<button class="select-menu-item" data-role="value" data-target="{{ forloop.index }}">{{ item.name }}</button>
-      {% endfor %}
-      {{- include.content }}
+      <div class="d-flex flex-column">
+        <div class="flex-fluid overflow-y">
+          {% for item in include.items %}<button class="select-menu-item" data-role="value" data-target="{{ forloop.index }}">{{ item.name }}</button>
+          {% endfor %}
+        </div>
+        {{- include.content }}
+      </div>
     </div>
   </div>
 </div>

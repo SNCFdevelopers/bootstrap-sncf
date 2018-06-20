@@ -29,15 +29,15 @@ Custom `<select>` menus need a custom class and data attribute, `.select-improve
 ### Select menu with additional input
 
 {% capture input_add %}
-      <div class="d-flex pt-4 flex-column flex-sm-row" data-role="add">
-        <div class="form-control-container w-100">
-          <input type="text" class="form-control" data-role="add-input" placeholder="Ajouter un agent" value="John Doe">
-          <span class="form-control-state"></span>
+        <div class="d-flex pt-4 flex-column flex-sm-row flex-fixed" data-role="add">
+          <div class="form-control-container w-100">
+            <input type="text" class="form-control" data-role="add-input" placeholder="Ajouter un agent" value="John Doe">
+            <span class="form-control-state"></span>
+          </div>
+          <div class="pt-2 pt-sm-0 pl-sm-2">
+            <button type="button" class="btn btn-primary btn-block d-sm-inline-block" data-role="add-btn">Ajouter</button>
+          </div>
         </div>
-        <div class="pt-2 pt-sm-0 pl-sm-2">
-          <button type="button" class="btn btn-primary btn-block d-sm-inline-block" data-role="add-btn">Ajouter</button>
-        </div>
-      </div>
 {% endcapture %}
 {% example html %}
 <label for="select2">Additional input</label>

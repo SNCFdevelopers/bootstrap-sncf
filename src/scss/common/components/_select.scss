@@ -77,6 +77,8 @@ $select-scrollable-max-height: rem(360px);
   top: 100%;
   left: 0;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-height: $select-scrollable-max-height;
   padding: rem(20px);
@@ -95,6 +97,10 @@ $select-scrollable-max-height: rem(360px);
     border-bottom: none;
     border-radius: $border-radius $border-radius 0 0;
   }
+}
+
+.select-menu-inner {
+  flex: 1 1 auto;
 }
 
 .select-menu-item {
