@@ -390,7 +390,7 @@
   }
 
   &.active {
-    z-index: $zindex-modal;
+    z-index: $zindex-popover;
   }
 }
 
@@ -486,7 +486,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: $zindex-modal;
+    z-index: $zindex-popover;
     width: 100%;
     height: 100%;
   }
@@ -519,7 +519,7 @@
     width: rem(306px);
     padding: rem(30px);
     border-radius: rem(7px);
-    box-shadow: 0 0 35px 2px rgba(0, 0, 0, .1);
+    box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.18);
 
     &.right {
       left: calc(100% + #{rem(16px)});
