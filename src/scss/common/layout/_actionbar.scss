@@ -21,7 +21,7 @@ $actionbar-max-height-xl:   rem(105px);
 .actionbar {
   position: fixed;
   top: $mastheader-height;
-  z-index: $zindex-fixed;
+  z-index: $zindex-navigation;
   display: flex;
   flex-direction: column;
   justify-content: center;

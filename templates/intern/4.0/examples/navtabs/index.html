@@ -1,5 +1,5 @@
 ---
-permalink: /docs/4.0/examples/navtabs
+permalink: /docs/4.0/examples/modal
 ---
 
 <html lang="en">
@@ -9,7 +9,7 @@ permalink: /docs/4.0/examples/navtabs
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Navigation template</title>
+    <title>Modal template</title>
 
     <link href="{{ site.baseurl }}/main.css" rel="stylesheet">
   </head>
@@ -23,73 +23,39 @@ permalink: /docs/4.0/examples/navtabs
     {% include components/mastnav.html %}
     {% include components/mastheader.html %}
 
-    <div class="actionbar has-tabs">
+    <div class="actionbar">
       <div class="actionbar-head">
         <h1 class="mb-0">Titre section</h1>
-        <ul class="toolbar mb-0">
-          <li class="toolbar-item">
-            <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
-              <span class="sr-only">Edit</span>
-              <i class="icons-pencil icons-size-1x25"></i>
-            </button>
-          </li>
-          <li class="toolbar-item toolbar-item-spacing">
-            <div class="btn-group dropdown">
-              <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span>Primary</span>
-                <i class="icons-arrow-down"></i>
-              </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
-          </li>
-          <li class="toolbar-item">
-            <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
-              <span class="sr-only">List</span>
-              <i class="icons-list icons-size-1x25"></i>
-            </button>
-          </li>
-          <li class="toolbar-item">
-            <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
-              <span class="sr-only">Search</span>
-              <i class="icons-search icons-size-1x25"></i>
-            </button>
-          </li>
-          <li class="toolbar-item">
-            <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
-              <span class="sr-only">Filters</span>
-              <i class="icons-filters icons-size-1x25"></i>
-            </button>
-          </li>
-        </ul>
       </div>
-      <nav class="position-relative mt-2">
-        <ul class="navtabs mb-0 dragscroll">
-          <li class="navtabs-item pr-4">
-            <a href="#" class="active">Titre onglet</a>
-          </li>
-          <li class="navtabs-item pr-4">
-            <a href="#">Titre onglet</a>
-          </li>
-          <li class="navtabs-item pr-4">
-            <a href="#">Titre onglet</a>
-          </li>
-          <li class="navtabs-item pr-4">
-            <a href="#">Titre onglet</a>
-          </li>
-          <li class="navtabs-item pr-4">
-            <a href="#">Titre onglet</a>
-          </li>
-        </ul>
-      </nav>
     </div>
 
-    <main div class="mastcontainer">
+    <main class="mastcontainer">
+      <div class="pt-4 pl-4">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Launch demo modal
+        </button>
+      </div>
     </main>
 
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="h1 modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     {% include components/options-menu.html %}
 
     <script src="{{ site.baseurl }}/main.js"></script>

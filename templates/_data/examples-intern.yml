@@ -6,6 +6,12 @@
     - name: Navtabs
       description: "Actionbar with tabs navigation."
 
+- category: Modal
+  description: "Modal template"
+  examples:
+    - name: Modal
+      description: "Center modal"
+
 - category: Layouts
   description: "Layout templates"
   examples:

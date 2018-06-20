@@ -7,7 +7,7 @@ $mastnav-width-lg: rem(100px);
 .mastnav {
   position: fixed;
   left: 0;
-  z-index: $zindex-fixed;
+  z-index: $zindex-navigation;
   display: flex;
 }
 

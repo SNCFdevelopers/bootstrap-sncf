@@ -276,17 +276,19 @@
 }
 
 // Example modals
-.modal {
-  z-index: 1072;
+.bd-docs {
+  .modal {
+    z-index: 1072;
 
-  .tooltip,
-  .popover {
-    z-index: 1073;
+    .tooltip,
+    .popover {
+      z-index: 1073;
+    }
   }
-}
 
-.modal-backdrop {
-  z-index: 1071;
+  .modal-backdrop {
+    z-index: 1071;
+  }
 }
 
 .bd-example-modal {
