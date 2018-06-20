@@ -30,6 +30,17 @@ Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are st
 </form>
 {% endexample %}
 
+### Input small
+
+{% example html %}
+<form>
+  <div class="form-group">
+    <label for="inputSmall1">Small input</label>
+    {% include components/input.html type="email" id="inputSmall1" placeholder="Small input" class="form-control-sm" %}
+  </div>
+</form>
+{% endexample %}
+
 ### Inputs with icon
 
 Use `.has-left-icon` or `.has-right-icon` class on `.form-control` element. Then use `.form-control-icon` element with an fonticon element inside.
