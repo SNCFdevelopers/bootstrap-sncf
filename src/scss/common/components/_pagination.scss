@@ -5,10 +5,14 @@
   padding-right: rem(4px);
   padding-left: rem(4px);
   font-size: $font-size-base;
-  color: #808080;
+  color: #808080; // new color just for pagination...
 
   &.active .page-link {
     position: relative;
+
+    &:hover {
+      color: $link-hover-color;
+    }
 
     &::after {
       position: absolute;
@@ -17,7 +21,7 @@
       width: 100%;
       height: rem(2px);
       content: "";
-      background-color: theme-color("primary");
+      background-color: currentColor;
       border-radius: 2px;
     }
   }
@@ -39,6 +43,9 @@
 
   &:not(.disabled) .page-link {
     color: $link-color;
+    &:hover {
+      color: $link-hover-color;
+    }
   }
 
   + .page-item:not(.page-skip) {

@@ -772,12 +772,12 @@ $pagination-hover-color:            $link-hover-color;
 $pagination-hover-bg:               transparent;
 $pagination-hover-border-color:     transparent;
 
-$pagination-active-color:           $link-hover-color;
+$pagination-active-color:           $link-color;
 $pagination-active-bg:              transparent;
 $pagination-active-border-color:    transparent;
 
 $pagination-disabled-color:         $gray-600;
-$pagination-disabled-bg:            $white;
+$pagination-disabled-bg:            transparent;
 $pagination-disabled-border-color:  transparent;
 
 
