@@ -7,7 +7,7 @@ $mastheader-height:   rem(32px);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: $zindex-fixed;
+  z-index: ($zindex-fixed + 1);
   display: flex;
   align-items: center;
   width: 100%;
