@@ -21,6 +21,7 @@
 
 - title: Components
   pages:
+    - title: Anchor
     - title: Badge
     - title: Breadcrumb
     - title: Buttons
