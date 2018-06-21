@@ -324,6 +324,18 @@
   }
 }
 
+@include media-breakpoint-up(md) {
+  .schedule-planning {
+    .schedule-col-head:not(.schedule-col-hour) {
+      .schedule-daylabel {
+        &:first-child {
+          border-left: 1px solid gray("200");
+        }
+      }
+    }
+  }
+}
+
 /* day number in monthly cell
    -------------------------------------------------------------------------- */
 
