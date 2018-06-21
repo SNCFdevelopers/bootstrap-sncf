@@ -1,7 +1,6 @@
 import Chart from 'chart.js'
 
 /* eslint-disable */
-
 const month = [ 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre' ]
 const data = [580, 400, 500, 600, 700, 800, 480, 400, 520, 580, 500, 480]
 const multiData = [
@@ -73,7 +72,30 @@ export class LineChart {
             renderTooltip(tooltipModel, element, canvas)
           }
         }
-      }
+      },
+      plugins: [{
+        afterDatasetsDraw: function(chart) {
+          if (chart.tooltip._active && chart.tooltip._active.length) {
+            var activePoint = chart.tooltip._active[0],
+                ctx = chart.ctx,
+                y_axis = chart.scales['y-axis-0'],
+                x = activePoint.tooltipPosition().x,
+                topY = y_axis.top,
+                bottomY = y_axis.bottom;
+
+            // draw line
+            ctx.save();
+            ctx.beginPath();
+            ctx.moveTo(x, topY);
+            ctx.lineTo(x, bottomY);
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = '#1592d2';
+            ctx.setLineDash([4]);
+            ctx.stroke();
+            ctx.restore();
+          }
+        }
+      }]
     }
 
     if (fill) {
@@ -178,7 +200,7 @@ export class PieChart {
 function renderTooltip(tooltipModel, element, canvas) {
   // Tooltip Element
   var tooltipEl = element.querySelector('#chartjs-tooltip');
-  console.log('tooltipModel: ', tooltipModel);
+  // console.log('tooltipModel: ', tooltipModel);
 
   // Create element on first render
   if (!tooltipEl) {
@@ -225,14 +247,14 @@ function renderTooltip(tooltipModel, element, canvas) {
   // `this` will be the overall tooltip
   var position = canvas.getBoundingClientRect();
 
-  console.log('position: ', position);
-  console.log('tooltipModel.caretY: ', tooltipModel.caretY);
+  // console.log('position: ', position);
+  // console.log('tooltipModel.caretY: ', tooltipModel.caretY);
 
   // Display, position, and set styles for font
   tooltipEl.style.opacity = 1;
   tooltipEl.style.position = 'absolute';
   tooltipEl.style.left = tooltipModel.caretX + 12 + 'px';
   tooltipEl.style.top = tooltipModel.caretY + 40 + 'px';
-  console.log('tooltipEl.style.top: ', tooltipEl.style.top);
+  // console.log('tooltipEl.style.top: ', tooltipEl.style.top);
 }
 /* eslint-enable */
