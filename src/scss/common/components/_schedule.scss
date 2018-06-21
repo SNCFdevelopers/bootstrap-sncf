@@ -416,9 +416,11 @@
     }
   }
 
+  /* stylelint-disable declaration-no-important */
   &.active {
-    z-index: $zindex-popover;
+    z-index: $zindex-popover !important;
   }
+  /* stylelint-enable declaration-no-important */
 }
 
 .event-close {
