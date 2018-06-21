@@ -22,6 +22,34 @@ selected:
 Custom `<select>` menus need a custom class and data attribute, `.select-improved` to trigger the custom styles and `data-component="select-exclusive"` to trigger the custom javascript. Given the complexity and the different versions of the menu (simple, groups, input, etc), this one must be built in the markup.
 
 {% example html %}
+<div class="select-improved" data-component="select-exclusive">
+  <div class="select-control">
+    <div class="input-group" data-role="select-toggle">
+      <div class="form-control is-placeholder d-flex align-items-center" data-role="placeholder">Lorem ipsum</div>
+      <select class="sr-only" id="select1" data-role="input" tabindex="-1" aria-hidden="true">
+        {% for item in page.default %}<option data-id="{{ forloop.index0 }}" {{ item.attr }}>{{ item.name }}</option>
+        {% endfor %}
+      </select>
+      <div class="input-group-append input-group-last">
+        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
+          <i class="icons-arrow-down icons-size-x75"></i>
+        </button>
+      </div>
+    </div>
+    <div class="select-menu">
+      <div class="d-flex flex-column">
+        <div class="flex-fluid overflow-y" data-role="menu">
+          {% for item in page.default %}<button class="select-menu-item" data-role="value" data-target="{{ forloop.index0 }}">{{ item.name }}</button>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+### With default placeholder option
+{% example html %}
 <label for="select1">Example select</label>
 {% include components/select-exclusive.html id="select1" placeholder="Lorem ipsum" iconsize="icons-size-x75" placeholderAttr="selected" items=page.default %}
 {% endexample %}

@@ -3,7 +3,7 @@
     <div class="input-group" data-role="select-toggle">
       <div class="form-control is-placeholder {{ include.formcontrol }} d-flex align-items-center" data-role="placeholder">{{ include.placeholder }}</div>
       <select class="sr-only" id="{{ include.id }}" data-role="input" tabindex="-1" aria-hidden="true">
-        <option {{ include.placeholderAttr }} disabled hidden>{{ include.placeholder }}</option>
+        <option {{ include.placeholderAttr }} data-role="default-hidden-option" disabled hidden>{{ include.placeholder }}</option>
         {% for item in include.items %}<option data-id="{{ forloop.index }}" {{ item.attr }}>{{ item.name }}</option>
         {% endfor %}
       </select>
@@ -13,9 +13,9 @@
         </button>
       </div>
     </div>
-    <div class="select-menu" data-role="menu">
+    <div class="select-menu">
       <div class="d-flex flex-column">
-        <div class="flex-fluid overflow-y">
+        <div class="flex-fluid overflow-y" data-role="menu">
           {% for item in include.items %}<button class="select-menu-item" data-role="value" data-target="{{ forloop.index }}">{{ item.name }}</button>
           {% endfor %}
         </div>

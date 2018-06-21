@@ -14,6 +14,7 @@ class SelectExclusive {
     this.inputNode = element.querySelector('[data-role=input]') // select node
     this.placeholderNode = element.querySelector('[data-role=placeholder]') // placeholder
     this.menu = element.querySelector('[data-role=menu]')
+    this.defaultHiddenOption = element.querySelector('[data-role=default-hidden-option]')
     const optionsNode = element.querySelectorAll('[data-role=value]') // options
     this.currentValueNode = null
 
@@ -77,20 +78,17 @@ class SelectExclusive {
   _addOption(value) {
     const currentValueNode = this._createOptionBtn(value)
     this._updateOption(currentValueNode)
-    currentValueNode.addEventListener('click', (event) => {
-      this._onOptionChange(event)
-    })
-
     this.inputNode.add(this._createOption(value))
+    this.inputNode.selectedIndex = this.defaultHiddenOption ? this.inputNode.length - 1 : this.inputNode.length // added option is always the las
     this._updatePlaceholder(value)
 
-    this.menu.insertBefore(currentValueNode, this.addContainerNode)
+    this.menu.append(currentValueNode)
   }
 
   _createOption(value) {
     const option = document.createElement('option')
-    option.value = value
     option.text = value
+    option.dataset.id = this.defaultHiddenOption ? this.inputNode.length : this.inputNode.length + 1
 
     return option
   }
@@ -100,8 +98,14 @@ class SelectExclusive {
     const btnLabel = document.createTextNode(value)
     btn.setAttribute('class', 'select-menu-item active')
     btn.setAttribute('data-role', 'value')
-    btn.setAttribute('data-target', this.inputNode.length + 1)
+    btn.setAttribute('data-target', this.defaultHiddenOption ? this.inputNode.length : this.inputNode.length + 1)
     btn.appendChild(btnLabel)
+
+    btn.addEventListener('click', (event) => {
+      this._onOptionChange(event)
+      this.element.classList.toggle('active')
+      this.btnNode.classList.toggle('active')
+    })
 
     return btn
   }
