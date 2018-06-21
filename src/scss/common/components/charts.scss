@@ -16,15 +16,21 @@
 .chart-caption-item {
   display: flex;
   align-items: center;
-  &.line {
-    &::before {
-      display: block;
-      width: rem(25px);
-      height: rem(3px);
-      margin-right: rem(10px);
-      content: "";
-      background-color: theme-color("primary");
-    }
+
+  &::before {
+    display: block;
+    width: rem(25px);
+    height: rem(3px);
+    margin-right: rem(10px);
+    content: "";
+  }
+
+  &.line::before {
+    background-color: theme-color("primary");
+  }
+  &.dashed::before {
+    background: linear-gradient(to right, theme-color("primary") 50%, transparent 50%);
+    background-size: 4px;
   }
 
   &:not(:last-child) {

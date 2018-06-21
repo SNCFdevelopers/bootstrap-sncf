@@ -18,6 +18,7 @@
 }
 
 .chartjs-tooltip-line-indicator {
+  position: relative;
   display: inline-block;
   width: rem(20px);
   height: rem(3px);
