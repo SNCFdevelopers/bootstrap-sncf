@@ -24,11 +24,6 @@ export default class LineChart {
 
     let dataCounter = 0 // util to select the next color
 
-    // gradient
-    const gradientStroke = ctx.createLinearGradient(0, 400, 0, 0)
-    gradientStroke.addColorStop(0, 'rgba(255, 255, 255, 0)')
-    gradientStroke.addColorStop(1, 'rgb(29, 136, 202)')
-
     const config = {
       type: 'line',
       data: {
@@ -55,12 +50,16 @@ export default class LineChart {
 
     valuesArray.forEach((valueArray) => {
       if (fill) {
+        const gradientStroke = ctx.createLinearGradient(0, element.getBoundingClientRect().width, 0, 0)
+        gradientStroke.addColorStop(0.5, 'rgba(255, 255, 255, 0)')
+        gradientStroke.addColorStop(0.8, lineColors[dataCounter] ? lineColors[dataCounter] : ['rgb(29, 136, 202)'])
+
         config.data.datasets.push({
           ...pointHoverConfig,
           data: valueArray,
           backgroundColor: gradientStroke,
-          borderColor: valuesArray.length > 1 ? gradientStroke : [colors[0]],
-          borderWidth: valuesArray.length > 1 ? 1 : 3,
+          borderColor: valuesArray.length === 1 && lineTension ? [lineColors[dataCounter] ? lineColors[dataCounter] : ['rgb(29, 136, 202)']] : gradientStroke,
+          borderWidth: valuesArray.length === 1 && lineTension ? 3 : 1,
           pointRadius: 0,
           fill: true
         })

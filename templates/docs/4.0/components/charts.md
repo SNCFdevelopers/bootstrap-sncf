@@ -29,7 +29,7 @@ toc: true
     data-component="line-chart"
     data-straightlines="true"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]'
-    data-values="[[580, 400, 500, 600, 700, 800, 480, 400, 520, 580, 500, 480],[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280]]"
+    data-values="[[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280],[580, 400, 500, 600, 700, 800, 480, 400, 520, 580, 500, 480]]"
     data-line-styles='["unfilled", "dashed"]'>
     <div class="chart-head mb-4">
         <h2 class="font-weight-normal mb-0">Titre de la courbe</h2>
@@ -47,7 +47,41 @@ toc: true
     data-component="line-chart"
     data-fill="true"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]'
-    data-values="[[580, 400, 500, 600, 700, 800, 480, 400, 520, 580, 500, 480],[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280]]">
+    data-values="[[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280]]">
+    <canvas></canvas>
+</div>
+{% endexample html %}
+
+{% example html %}
+<div class="position-relative"
+    data-component="line-chart"
+    data-straightlines="true"
+    data-fill="true"
+    data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]'
+    data-values="[[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280]]">
+    <canvas></canvas>
+</div>
+{% endexample html %}
+
+{% example html %}
+<div class="position-relative"
+    data-component="line-chart"
+    data-fill="true"
+    data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]'
+    data-values="[[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280],[580, 400, 500, 600, 700, 800, 480, 400, 520, 580, 500, 480]]"
+    data-line-colors = '["rgb(7, 138, 206)", "rgb(67, 167, 219)"]'>
+    <canvas></canvas>
+</div>
+{% endexample html %}
+
+{% example html %}
+<div class="position-relative"
+    data-component="line-chart"
+    data-straightlines="true"
+    data-fill="true"
+    data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]'
+    data-values="[[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280],[580, 400, 500, 600, 700, 800, 480, 400, 520, 580, 500, 480]]"
+    data-line-colors = '["rgb(7, 138, 206)", "rgb(67, 167, 219)"]'>
     <canvas></canvas>
 </div>
 {% endexample html %}
