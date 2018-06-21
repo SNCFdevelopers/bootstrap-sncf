@@ -313,19 +313,36 @@
 }
 
 .options-links {
-  padding-top: rem(4px);
-  padding-right: rem(10px);
-  padding-bottom: rem(4px);
-  padding-left: rem(10px);
-  background-color: gray("100");
-  border-radius: $btn-border-radius;
+  border-bottom: 1px solid #ebebeb;
 
   .options-item {
-    margin-right: rem(10px);
-    margin-left: rem(10px);
+    position: relative;
+    display: inline-block;
+    padding-top: rem(6px);
+    padding-bottom: rem(6px);
     color: $body-color;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-left: rem(8px);
+    }
+    &:not(:last-child) {
+      margin-right: rem(8px);
+    }
+
     @include hover-focus-active {
       color: theme-color("primary");
+      &::after {
+        position: absolute;
+        bottom: rem(-1px);
+        left: 0;
+        display: block;
+        width: 100%;
+        height: rem(5px);
+        content: "";
+        background-color: theme-color("primary");
+        border-radius: rem(10px);
+      }
     }
   }
 }
