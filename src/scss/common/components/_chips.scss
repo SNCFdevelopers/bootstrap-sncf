@@ -65,7 +65,7 @@
 
   &:focus,
   &.focus {
-    outline: 0;
+    // outline: 0;
     box-shadow: $btn-focus-box-shadow;
   }
 }
@@ -87,7 +87,7 @@
   background-color: transparent;
   border: none;
 
-  &:focus {
-    outline: 0;
-  }
+  // &:focus {
+  //   outline: 0;
+  // }
 }
