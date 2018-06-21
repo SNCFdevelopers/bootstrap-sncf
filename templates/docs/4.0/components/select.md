@@ -161,8 +161,6 @@ TODO : description
 
 ## Multiple
 
-TODO : description
-
 {% example html %}
 <label for="exampleFormControlSelect1">Multi select</label>
 <div class="select-improved" data-component="select-multiple">
@@ -173,7 +171,47 @@ TODO : description
           <label data-role="placeholder" class="custom-control-label font-weight-medium">Tous les secteurs</label>
         </div>
       </div>
-      <select class="sr-only" id="exampleFormControlMultiSelect" data-role="input" tabindex="-1" aria-hidden="true" multiple>
+      <select class="sr-only" id="exampleFormControlMultiSelect1" data-role="input" tabindex="-1" aria-hidden="true" multiple>
+        <option data-id="0" selected>Sem Inceptos Tellus</option>
+        <option data-id="1" selected>Sem Inceptos Tellus</option>
+        <option data-id="2" selected>Sollicitudin Adipiscing Mattis</option>
+        <option data-id="3" selected>Amet Porta</option>
+      </select>
+      <div class="input-group-append input-group-last">
+        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
+          <i class="icons-arrow-down icons-size-x75"></i>
+        </button>
+      </div>
+    </div>
+    <div class="select-menu" data-role="menu">
+      <div class="select-group" data-role="group" data-id="0">
+        <div class="select-menu-item">
+          <div class="custom-control custom-checkbox">
+            <label data-role="value" data-target="2" class="custom-control-label font-weight-medium">Amet Porta</label>
+          </div>
+        </div>
+        <div class="select-menu-item">
+          <div class="custom-control custom-checkbox">
+            <label data-role="value" data-target="3" class="custom-control-label font-weight-medium">Pharetra Fusce Venenatis</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+{% example html %}
+<label for="exampleFormControlSelect2">Multi select</label>
+<div class="select-improved" data-component="select-multiple">
+  <div class="select-control">
+    <div class="input-group" data-role="select-toggle">
+      <div class="form-control">
+        <div class="custom-control custom-checkbox">
+          <label data-role="placeholder" class="custom-control-label font-weight-medium">Tous les secteurs</label>
+        </div>
+      </div>
+      <select class="sr-only" id="exampleFormControlMultiSelect2" data-role="input" tabindex="-1" aria-hidden="true" multiple>
         <option data-id="0" selected>Sem Inceptos Tellus</option>
         <option data-id="1" selected>Sem Inceptos Tellus</option>
         <option data-id="2" selected>Sollicitudin Adipiscing Mattis</option>
