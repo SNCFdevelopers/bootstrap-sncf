@@ -563,3 +563,28 @@
     }
   }
 }
+
+/* chip
+   -------------------------------------------------------------------------- */
+
+.schedule-chip {
+  &::after {
+    display: inline-block;
+    width: rem(7px);
+    height: rem(7px);
+    margin-left: rem(6px);
+    content: "";
+    background-color: rgb(97, 215, 31);
+    border-radius: 50%;
+  }
+
+  &-color1::after {
+    background-color: rgb(255, 185, 1);
+  }
+  &-color2::after {
+    background-color: rgb(161, 0, 107);
+  }
+  &-color3::after {
+    background-color: rgb(77, 79, 83);
+  }
+}
