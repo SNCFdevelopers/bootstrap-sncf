@@ -18,6 +18,7 @@ export default class LineChart {
     const labels = element.dataset.labels ? JSON.parse(element.dataset.labels) : []
     const valuesArray = element.dataset.values ? JSON.parse(element.dataset.values) : []
     const lineStyles = element.dataset.lineStyles ? JSON.parse(element.dataset.lineStyles) : []
+    const lineColors = element.dataset.lineColors ? JSON.parse(element.dataset.lineColors) : colors
     const fill = element.dataset.fill === 'true'
     const lineTension = element.dataset.straightlines === 'true'
 
@@ -68,7 +69,7 @@ export default class LineChart {
           ...pointHoverConfig,
           data: valueArray,
           backgroundColor: ['transparent'],
-          borderColor: [colors[0]],
+          borderColor: [lineColors[dataCounter] ? lineColors[dataCounter] : ['rgb(29, 136, 202)']],
           borderWidth: 3 // line width
         })
       }
