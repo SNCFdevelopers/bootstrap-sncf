@@ -47,9 +47,11 @@ class SelectMultiple {
         valueNodeList
       }
 
-      labelNode.addEventListener('click', () => {
-        this._onGroupChange(id, (id) => this._addCurrentValues(id), (id) => this._removeCurrentValues(id))
-      })
+      if (labelNode) {
+        labelNode.addEventListener('click', () => {
+          this._onGroupChange(id, (id) => this._addCurrentValues(id), (id) => this._removeCurrentValues(id))
+        })
+      }
 
       valueNodeList.forEach((value) => {
         this.store[id].values.push(value.dataset.target)
@@ -132,16 +134,18 @@ class SelectMultiple {
     const valuesLength = this.store[id].values.length
     const currentValuesLength = this.store[id].currentValues.length
 
-    if (currentValuesLength > 0) {
-      if (currentValuesLength === valuesLength) {
-        labelNode.classList.add(ACTIVE_CLASS)
-        labelNode.classList.remove(INDETERMINATE_CLASS)
+    if (labelNode) {
+      if (currentValuesLength > 0) {
+        if (currentValuesLength === valuesLength) {
+          labelNode.classList.add(ACTIVE_CLASS)
+          labelNode.classList.remove(INDETERMINATE_CLASS)
+        } else {
+          labelNode.classList.remove(ACTIVE_CLASS)
+          labelNode.classList.add(INDETERMINATE_CLASS)
+        }
       } else {
-        labelNode.classList.remove(ACTIVE_CLASS)
-        labelNode.classList.add(INDETERMINATE_CLASS)
+        labelNode.classList.remove(ACTIVE_CLASS, INDETERMINATE_CLASS)
       }
-    } else {
-      labelNode.classList.remove(ACTIVE_CLASS, INDETERMINATE_CLASS)
     }
   }
 
