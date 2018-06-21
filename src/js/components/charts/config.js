@@ -1,14 +1,5 @@
 import Chart from 'chart.js'
 Chart.defaults.global.legend.display = false
-Chart.defaults.global.scales = {
-  yAxes: [
-    {
-      ticks: {
-        beginAtZero:true
-      }
-    }
-  ]
-}
 
 export const month = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
 

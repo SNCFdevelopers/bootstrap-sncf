@@ -2,14 +2,12 @@ import 'bootstrap'
 import './utils/dragscroll.js'
 import './utils/polyfill.js'
 import './utils/stretchy.js'
-import {
-  BarChart,
-  PieChart
-} from './components/charts'
+import BarChart from './components/charts/barChart'
 import Chips from './components/chips'
 import Control from './components/control'
 import LineChart from './components/charts/lineChart'
 import Picker from './components/picker'
+import PieChart from './components/charts/pieChart'
 import RadialProgress from './components/progress'
 import RangeSlider from './components/rangeSliders'
 import Schedule from './components/schedule'

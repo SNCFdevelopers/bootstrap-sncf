@@ -1,8 +1,8 @@
 /* eslint-disable */
-export function renderTooltip(tooltipModel, element, canvas, lineStyles) {
+export function renderTooltip(tooltipModel, element, canvas, lineStyles = []) {
   // Tooltip Element
+  console.log('tooltipModel: ', tooltipModel)
   var tooltipEl = element.querySelector('#chartjs-tooltip');
-  // console.log('tooltipModel: ', tooltipModel);
 
   // Create element on first render
   if (!tooltipEl) {
@@ -35,8 +35,9 @@ export function renderTooltip(tooltipModel, element, canvas, lineStyles) {
       innerHtml += '</thead><tbody>';
 
       bodyLines.forEach(function(body, i) {
-          var colors = tooltipModel.labelColors[i];
-          const backgroundColor = `background: ${colors.borderColor};`
+          const colors = tooltipModel.labelColors[i];
+          console.log('colors: ', colors);
+          const backgroundColor = `background: ${lineStyles[i] ? colors.borderColor : colors.backgroundColor};`
           const backgroundGradient = `background: linear-gradient(to right, ${colors.borderColor} 50%, transparent 50%); background-size: 4px;`
           const style = lineStyles[i] && lineStyles[i] === 'dashed' ? backgroundGradient : backgroundColor
           

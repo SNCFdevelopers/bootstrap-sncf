@@ -30,6 +30,13 @@ export default class LineChart {
         datasets: []
       },
       options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero:true
+            }
+          }]
+        },
         hover: {
           intersect: false
         },
@@ -37,7 +44,7 @@ export default class LineChart {
           mode: 'index',
           enabled: false,
           custom: (tooltipModel) => {
-            renderTooltip(tooltipModel, element, canvas, lineStyles)
+            renderTooltip(tooltipModel, element, canvas, lineStyles, 'line')
           }
         }
       },

@@ -6,6 +6,60 @@ group: components
 toc: true
 ---
 
+## Pie charts
+
+{% example html %}
+<div class="position-relative"
+    data-component="pie-chart"
+    data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"]'
+    data-values='[580, 400, 500, 600, 700, 800]'>
+    <canvas></canvas>
+</div>
+{% endexample html %}
+
+
+## Donut charts
+
+{% example html %}
+<div class="position-relative"
+    data-component="pie-chart"
+    data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"]'
+    data-values='[580, 400, 500, 600, 700, 800]'
+    data-cutoutpercentage="50">
+    <canvas></canvas>
+</div>
+{% endexample html %}
+
+
+## Bar charts
+
+{% example html %}
+<div class="position-relative"
+    data-component="bar-chart"
+    data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]'
+    data-values="[[400, 500, 250, 300, 700, 600, 100, 200, 700, 180, 300, 600]]"
+    data-line-colors = '["rgb(29, 136, 202)", "rgb(29, 136, 202)"]'>
+    <div class="chart-head mb-4">
+        <h2 class="font-weight-normal mb-0">Titre de la courbe</h2>
+        <ul class="chart-caption">
+            <li class="chart-caption-item">Libellé 1</li>
+        </ul>
+    </div>
+    <canvas></canvas>
+</div>
+{% endexample html %}
+
+{% example html %}
+<div class="position-relative"
+    data-component="bar-chart"
+    data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]'
+    data-values="[[400, 500, 250, 300, 700, 600, 100, 200, 700, 180, 300, 600],[400, 300, 550, 500, 100, 200, 700, 600, 100, 620, 500, 200]]">
+    <canvas></canvas>
+</div>
+{% endexample html %}
+
+
+## Line charts
 {% example html %}
 <div class="charts position-relative"
     data-component="line-chart"

@@ -19,14 +19,17 @@
 
   &::before {
     display: block;
-    width: rem(25px);
-    height: rem(3px);
+    width: rem(19px);
+    height: rem(19px);
     margin-right: rem(10px);
     content: "";
+    background-color: theme-color("primary");
   }
 
-  &.line::before {
-    background-color: theme-color("primary");
+  &.line::before,
+  &.dashed::before {
+    width: rem(25px);
+    height: rem(3px);
   }
   &.dashed::before {
     background: linear-gradient(to right, theme-color("primary") 50%, transparent 50%);
