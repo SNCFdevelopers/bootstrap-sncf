@@ -29,6 +29,7 @@
 // layouts
 @import "extern/layout/mastheader";
 @import "extern/layout/actionbar";
+@import "extern/layout/menubar";
 @import "extern/layout/mastcontainer";
 @import "extern/layout/mastfooter";
 
@@ -78,6 +79,7 @@
 @import "common/components/chips";
 @import "common/components/toolbar";
 @import "common/components/navtabs";
+@import "extern/components/navtabs";
 @import "common/components/flatpickr";
 @import "common/components/form-toolbar";
 @import "common/components/range-slider";

@@ -34,9 +34,11 @@
     - title: Forms
     - title: Icons
     - title: Input group
-    - title: Tongues
     - title: Medias
+    - title: Navbar
+    - title: Navs
     - title: Select
+    - title: Tongues
 
 - title: Utilities
   pages:
