@@ -1,7 +1,7 @@
 /* navtabs
    ========================================================================== */
 
-// stylelint-disable selector-no-qualifying-type
+// stylelint-disable selector-no-qualifying-type, declaration-block-trailing-semicolon
 .navtabs {
   border-bottom: 1px solid theme-color("primary");
 }
@@ -46,4 +46,4 @@
     }
   }
 }
-// stylelint-enable selector-no-qualifying-type
+// stylelint-enable selector-no-qualifying-type, declaration-block-trailing-semicolon
