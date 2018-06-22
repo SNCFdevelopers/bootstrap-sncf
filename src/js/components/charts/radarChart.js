@@ -1,11 +1,8 @@
-import Chart from 'chart.js'
 import {
-  colors,
-  translucentColors
+  DEFAULT_COLORS,
+  TRANSLUCENT_DEFAULT_COLORS
 } from './config'
-import {
-  renderTooltip
-} from './utils'
+import Chart from 'chart.js'
 
 /* eslint-disable no-magic-numbers, no-new */
 export default class RadarChart {
@@ -14,7 +11,7 @@ export default class RadarChart {
 
     // data
     const labels = element.dataset.labels ? JSON.parse(element.dataset.labels) : []
-    const valuesArray = element.dataset.values ? JSON.parse(element.dataset.values) : []
+    const values = element.dataset.values ? JSON.parse(element.dataset.values) : []
 
     let dataCounter = 0
 
@@ -23,13 +20,13 @@ export default class RadarChart {
       datasets: []
     }
 
-    valuesArray.forEach((valueArray) => {
+    values.forEach((value) => {
       barChartData.datasets.push({
-        backgroundColor: translucentColors[dataCounter],
-        borderColor: colors[dataCounter],
+        backgroundColor: TRANSLUCENT_DEFAULT_COLORS[dataCounter],
+        borderColor: DEFAULT_COLORS[dataCounter],
         borderWidth: 2,
         pointRadius: 0,
-        data: valueArray
+        data: value
       })
       dataCounter += 1
     })

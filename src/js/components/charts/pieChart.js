@@ -1,9 +1,9 @@
 import Chart from 'chart.js'
 import {
-  colors
+  DEFAULT_COLORS
 } from './config'
 import {
-  renderPieTooltip
+  renderTooltip
 } from './utils'
 
 /* eslint-disable no-magic-numbers, no-new */
@@ -13,24 +13,22 @@ export default class PieChart {
 
     // data
     const labels = element.dataset.labels ? JSON.parse(element.dataset.labels) : []
-    const valuesArray = element.dataset.values ? JSON.parse(element.dataset.values) : []
+    const values = element.dataset.values ? JSON.parse(element.dataset.values) : []
     const cutoutPercentage = element.dataset.cutoutpercentage || 0
-
-    const chartData = {
-      datasets: [{
-        backgroundColor: colors,
-        hoverBackgroundColor: colors,
-        hoverBorderColor: colors,
-        data: valuesArray,
-        borderWidth: 0,
-        hoverBorderWidth: 4
-      }],
-      labels
-    }
 
     new Chart(canvas, {
       type: 'pie',
-      data: chartData,
+      data: {
+        labels,
+        datasets: [{
+          backgroundColor: DEFAULT_COLORS,
+          hoverBackgroundColor: DEFAULT_COLORS,
+          hoverBorderColor: DEFAULT_COLORS,
+          data: values,
+          borderWidth: 0,
+          hoverBorderWidth: 4
+        }]
+      },
       options: {
         cutoutPercentage,
         responsive: true,
@@ -41,7 +39,7 @@ export default class PieChart {
           mode: 'index',
           enabled: false,
           custom: (tooltipModel) => {
-            renderPieTooltip(tooltipModel, element, canvas, [], labels, valuesArray)
+            renderTooltip(tooltipModel, element, canvas, labels, values, DEFAULT_COLORS)
           }
         }
       }

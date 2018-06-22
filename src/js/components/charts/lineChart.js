@@ -1,5 +1,6 @@
 import {
-  colors,
+  DEFAULT_COLOR,
+  DEFAULT_COLORS,
   pointHoverConfig
 } from './config'
 import {
@@ -16,13 +17,15 @@ export default class LineChart {
 
     // data
     const labels = element.dataset.labels ? JSON.parse(element.dataset.labels) : []
-    const valuesArray = element.dataset.values ? JSON.parse(element.dataset.values) : []
-    const lineStyles = element.dataset.lineStyles ? JSON.parse(element.dataset.lineStyles) : []
-    const lineColors = element.dataset.lineColors ? JSON.parse(element.dataset.lineColors) : colors
+    const values = element.dataset.values ? JSON.parse(element.dataset.values) : []
+
+    // styles
+    const lineColors = element.dataset.colors ? JSON.parse(element.dataset.colors) : DEFAULT_COLORS // if more than 6 lines, we use the same color
+    const lineStyles = element.dataset.styles ? JSON.parse(element.dataset.styles) : []
     const fill = element.dataset.fill === 'true'
     const lineTension = element.dataset.straightlines === 'true'
 
-    let dataCounter = 0 // util to select the next color
+    let counter = 0
 
     const config = {
       type: 'line',
@@ -44,7 +47,7 @@ export default class LineChart {
           mode: 'index',
           enabled: false,
           custom: (tooltipModel) => {
-            renderTooltip(tooltipModel, element, canvas, lineStyles, 'line')
+            renderTooltip(tooltipModel, element, canvas, labels, values, lineColors, lineStyles)
           }
         }
       },
@@ -55,18 +58,18 @@ export default class LineChart {
       }]
     }
 
-    valuesArray.forEach((valueArray) => {
+    values.forEach((valueArray) => {
       if (fill) {
         const gradientStroke = ctx.createLinearGradient(0, element.getBoundingClientRect().width, 0, 0)
         gradientStroke.addColorStop(0.5, 'rgba(255, 255, 255, 0)')
-        gradientStroke.addColorStop(0.8, lineColors[dataCounter] ? lineColors[dataCounter] : ['rgb(29, 136, 202)'])
+        gradientStroke.addColorStop(0.8, lineColors[counter] ? lineColors[counter] : DEFAULT_COLOR)
 
         config.data.datasets.push({
           ...pointHoverConfig,
           data: valueArray,
           backgroundColor: gradientStroke,
-          borderColor: valuesArray.length === 1 && lineTension ? [lineColors[dataCounter] ? lineColors[dataCounter] : ['rgb(29, 136, 202)']] : gradientStroke,
-          borderWidth: valuesArray.length === 1 && lineTension ? 3 : 1,
+          borderColor: values.length === 1 && lineTension ? [lineColors[counter] ? lineColors[counter] : DEFAULT_COLOR] : gradientStroke,
+          borderWidth: values.length === 1 && lineTension ? 3 : 1,
           pointRadius: 0,
           fill: true
         })
@@ -75,20 +78,20 @@ export default class LineChart {
           ...pointHoverConfig,
           data: valueArray,
           backgroundColor: ['transparent'],
-          borderColor: [lineColors[dataCounter] ? lineColors[dataCounter] : ['rgb(29, 136, 202)']],
+          borderColor: [lineColors[counter] || DEFAULT_COLOR],
           borderWidth: 3 // line width
         })
       }
 
-      if (lineStyles[dataCounter] && lineStyles[dataCounter] === 'dashed') {
-        config.data.datasets[dataCounter].borderDash = [4]
+      if (lineStyles[counter] && lineStyles[counter] === 'dashed') {
+        config.data.datasets[counter].borderDash = [4]
       }
 
       if (lineTension) {
-        config.data.datasets[dataCounter].lineTension = 0
+        config.data.datasets[counter].lineTension = 0
       }
 
-      dataCounter += 1
+      counter += 1
     })
 
     config.data.labels = labels

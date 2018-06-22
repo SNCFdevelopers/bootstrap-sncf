@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
 import * as zoom from 'chartjs-plugin-zoom'
 /* eslint-enable no-unused-vars */
-import Chart from 'chart.js'
 import {
-  colors
+  DEFAULT_COLOR,
+  DEFAULT_COLORS
 } from './config'
+import Chart from 'chart.js'
 import {
   renderTooltip
 } from './utils'
@@ -16,8 +17,7 @@ export default class BarChart {
 
     // data
     const labels = element.dataset.labels ? JSON.parse(element.dataset.labels) : []
-    const valuesArray = element.dataset.values ? JSON.parse(element.dataset.values) : []
-
+    const values = element.dataset.values ? JSON.parse(element.dataset.values) : []
     let dataCounter = 0
 
     const barChartData = {
@@ -25,10 +25,10 @@ export default class BarChart {
       datasets: []
     }
 
-    valuesArray.forEach((valueArray) => {
+    values.forEach((valueArray) => {
       barChartData.datasets.push({
-        backgroundColor: colors[dataCounter],
-        hoverBackgroundColor: colors[dataCounter + 1],
+        backgroundColor: DEFAULT_COLORS[dataCounter] || DEFAULT_COLOR,
+        hoverBackgroundColor: DEFAULT_COLORS[dataCounter + 1] || DEFAULT_COLOR,
         borderWidth: 0,
         maxBarThickness: 40,
         data: valueArray
@@ -61,7 +61,7 @@ export default class BarChart {
           mode: 'index',
           enabled: false,
           custom: (tooltipModel) => {
-            renderTooltip(tooltipModel, element, canvas)
+            renderTooltip(tooltipModel, element, canvas, labels, values, DEFAULT_COLORS)
           }
         },
         pan: {

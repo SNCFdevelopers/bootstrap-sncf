@@ -1,115 +1,64 @@
+import {
+  DEFAULT_COLOR
+} from './config'
+const DASHED_LINE = 'dashed'
+
 /* eslint-disable */
-export function renderTooltip(tooltipModel, element, canvas, lineStyles = [], labels = []) {
-  // Tooltip Element
-  var tooltipEl = element.querySelector('#chartjs-tooltip');
+export function renderTooltip(
+  tooltipModel,
+  element,
+  canvas,
+  labels = [],
+  values = [],
+  colors = [],
+  lineStyles = []
+) {
+  let tooltipEl = element.querySelector('#chartjs-tooltip');
 
-  // Create element on first render
+  // create element on first render
   if (!tooltipEl) {
-      tooltipEl = document.createElement('div');
-      tooltipEl.id = 'chartjs-tooltip';
-      tooltipEl.innerHTML = "<table></table>";
-      element.appendChild(tooltipEl);
+    tooltipEl = document.createElement('div')
+    tooltipEl.id = 'chartjs-tooltip'
+    tooltipEl.innerHTML = "<table></table>"
+    element.appendChild(tooltipEl)
   }
 
   // Hide if no tooltip
   if (tooltipModel.opacity === 0) {
-      tooltipEl.style.opacity = 0;
-      return;
+    tooltipEl.style.opacity = 0
+    return
   }
 
   function getBody(bodyItem) {
-      return bodyItem.lines;
+    return bodyItem.lines;
   }
 
-  // Set Text
+  // set content
   if (tooltipModel.body) {
-      var titleLines = tooltipModel.title || [];
-      var bodyLines = tooltipModel.body.map(getBody);
+    const titleLines = tooltipModel.title.length > 0 ? tooltipModel.title : [labels[tooltipModel.dataPoints[0].index]]
+    const bodyLines = tooltipModel.body.map(getBody)
 
-      var innerHtml = '<thead>';
+    let innerHtml = '<thead>'
+    titleLines.forEach((title) => {
+      innerHtml += `<tr><th class="chartjs-tooltip-title">${title}</th></tr>`
+    })
+    innerHtml += '</thead><tbody>'
+    bodyLines.forEach((body, i) => {
+      const currentColor = colors[i] || DEFAULT_COLOR
+      const currentValue = tooltipModel.dataPoints[i].yLabel !== '' ? tooltipModel.dataPoints[i].yLabel : values[i]
 
-      titleLines.forEach(function(title) {
-          innerHtml += '<tr><th class="chartjs-tooltip-title">' + title + '</th></tr>';
-      });
-      innerHtml += '</thead><tbody>';
+      const backgroundColor = `background: ${currentColor};`
+      const backgroundGradient = `background: linear-gradient(to right, ${currentColor} 50%, transparent 50%); background-size: 4px;`
+      const style = lineStyles[i] && lineStyles[i] === DASHED_LINE ? backgroundGradient : backgroundColor
+      
+      var span = `<span class='chartjs-tooltip-line-indicator' style='${style}'></span>`
+      innerHtml += '<tr><td>' + span + currentValue + '</td></tr>'
+    })
+    innerHtml += '</tbody>';
 
-      bodyLines.forEach(function(body, i) {
-          const colors = tooltipModel.labelColors[i];
-          const backgroundColor = `background: ${lineStyles[i] ? colors.borderColor : colors.backgroundColor};`
-          const backgroundGradient = `background: linear-gradient(to right, ${colors.borderColor} 50%, transparent 50%); background-size: 4px;`
-          const style = lineStyles[i] && lineStyles[i] === 'dashed' ? backgroundGradient : backgroundColor
-          const label = labels.length > 0 ? labels[i] : tooltipModel.dataPoints[i].yLabel
-          
-          var span = `<span class='chartjs-tooltip-line-indicator' style='${style}'></span>`;
-          innerHtml += '<tr><td>' + span + label + '</td></tr>';
-      });
-      innerHtml += '</tbody>';
-
-      var tableRoot = tooltipEl.querySelector('table');
-      tableRoot.innerHTML = innerHtml;
+    let tableRoot = tooltipEl.querySelector('table');
+    tableRoot.innerHTML = innerHtml;
   }
-
-  // `this` will be the overall tooltip
-  var position = canvas.getBoundingClientRect();
-
-  // Display, position, and set styles for font
-  tooltipEl.style.opacity = 1;
-  tooltipEl.style.position = 'absolute';
-  tooltipEl.style.left = tooltipModel.caretX + 12 + 'px';
-  tooltipEl.style.top = tooltipModel.caretY + 40 + 'px';
-}
-
-export function renderPieTooltip(tooltipModel, element, canvas, lineStyles = [], labels = [], valueArray = []) {
-  // Tooltip Element
-  var tooltipEl = element.querySelector('#chartjs-tooltip');
-
-  // Create element on first render
-  if (!tooltipEl) {
-      tooltipEl = document.createElement('div');
-      tooltipEl.id = 'chartjs-tooltip';
-      tooltipEl.innerHTML = "<table></table>";
-      element.appendChild(tooltipEl);
-  }
-
-  // Hide if no tooltip
-  if (tooltipModel.opacity === 0) {
-      tooltipEl.style.opacity = 0;
-      return;
-  }
-
-  function getBody(bodyItem) {
-      return bodyItem.lines;
-  }
-
-  // Set Text
-  if (tooltipModel.body) {
-      var titleLines = tooltipModel.title || [];
-      var bodyLines = tooltipModel.body.map(getBody);
-
-      var innerHtml = '<thead>';
-
-      titleLines.forEach(function(title) {
-          innerHtml += '<tr><th class="chartjs-tooltip-title">' + title + '</th></tr>';
-      });
-      innerHtml += '</thead><tbody>';
-
-      bodyLines.forEach(function(body, i) {
-          const colors = tooltipModel.labelColors[i];
-          const style = `background: ${lineStyles[tooltipModel.dataPoints[i].index] ? colors.borderColor : colors.backgroundColor};`
-          const value = valueArray[tooltipModel.dataPoints[i].index]
-          const label = labels[tooltipModel.dataPoints[i].index]
-          
-          var span = `<span class='chartjs-tooltip-line-indicator' style='${style}'></span>`;
-          innerHtml += '<tr><td>' + label + '</td></tr><tr><td>' + span + value + '</td></tr>';
-      });
-      innerHtml += '</tbody>';
-
-      var tableRoot = tooltipEl.querySelector('table');
-      tableRoot.innerHTML = innerHtml;
-  }
-
-  // `this` will be the overall tooltip
-  var position = canvas.getBoundingClientRect();
 
   // Display, position, and set styles for font
   tooltipEl.style.opacity = 1;

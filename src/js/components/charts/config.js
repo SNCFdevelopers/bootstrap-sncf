@@ -3,7 +3,9 @@ Chart.defaults.global.legend.display = false
 
 export const month = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
 
-export const colors = [
+export const DEFAULT_COLOR = 'rgb(203, 2, 11)'
+
+export const DEFAULT_COLORS = [
   'rgb(29, 136, 202)',
   'rgb(45, 160, 217)',
   'rgb(114, 191, 230)',
@@ -12,7 +14,7 @@ export const colors = [
   'rgb(217, 238, 250)'
 ]
 
-export const translucentColors = [
+export const TRANSLUCENT_DEFAULT_COLORS = [
   'rgb(29, 136, 202, .2)',
   'rgb(45, 160, 217, .2)',
   'rgb(114, 191, 230, .2)',
