@@ -27,6 +27,7 @@ export default class BarChart {
         backgroundColor: colors[dataCounter],
         hoverBackgroundColor: colors[dataCounter + 1],
         borderWidth: 0,
+        maxBarThickness: 40,
         data: valueArray
       })
       dataCounter += 1
@@ -43,7 +44,8 @@ export default class BarChart {
         scales: {
           xAxes: [
             {
-              stacked: true
+              stacked: true,
+              maxBarThickness: 40
             }
           ],
           yAxes: [
