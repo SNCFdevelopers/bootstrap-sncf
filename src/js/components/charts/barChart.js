@@ -24,7 +24,6 @@ export default class BarChart {
 
     valuesArray.forEach((valueArray) => {
       barChartData.datasets.push({
-        label: `Dataset ${dataCounter}`,
         backgroundColor: colors[dataCounter],
         hoverBackgroundColor: colors[dataCounter + 1],
         borderWidth: 0,

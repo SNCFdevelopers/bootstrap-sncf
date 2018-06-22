@@ -4,6 +4,7 @@
 /* stylelint-disable selector-max-id */
 #chartjs-tooltip {
   padding: rem(18px);
+  pointer-events: none;
   background-color: gray("100");
   border-radius: rem(3px);
 

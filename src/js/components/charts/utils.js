@@ -1,7 +1,6 @@
 /* eslint-disable */
-export function renderTooltip(tooltipModel, element, canvas, lineStyles = []) {
+export function renderTooltip(tooltipModel, element, canvas, lineStyles = [], labels = []) {
   // Tooltip Element
-  console.log('tooltipModel: ', tooltipModel)
   var tooltipEl = element.querySelector('#chartjs-tooltip');
 
   // Create element on first render
@@ -36,13 +35,13 @@ export function renderTooltip(tooltipModel, element, canvas, lineStyles = []) {
 
       bodyLines.forEach(function(body, i) {
           const colors = tooltipModel.labelColors[i];
-          console.log('colors: ', colors);
           const backgroundColor = `background: ${lineStyles[i] ? colors.borderColor : colors.backgroundColor};`
           const backgroundGradient = `background: linear-gradient(to right, ${colors.borderColor} 50%, transparent 50%); background-size: 4px;`
           const style = lineStyles[i] && lineStyles[i] === 'dashed' ? backgroundGradient : backgroundColor
+          const label = labels.length > 0 ? labels[i] : tooltipModel.dataPoints[i].yLabel
           
           var span = `<span class='chartjs-tooltip-line-indicator' style='${style}'></span>`;
-          innerHtml += '<tr><td>' + span + tooltipModel.dataPoints[i].yLabel + '</td></tr>';
+          innerHtml += '<tr><td>' + span + label + '</td></tr>';
       });
       innerHtml += '</tbody>';
 
@@ -53,15 +52,70 @@ export function renderTooltip(tooltipModel, element, canvas, lineStyles = []) {
   // `this` will be the overall tooltip
   var position = canvas.getBoundingClientRect();
 
-  // console.log('position: ', position);
-  // console.log('tooltipModel.caretY: ', tooltipModel.caretY);
+  // Display, position, and set styles for font
+  tooltipEl.style.opacity = 1;
+  tooltipEl.style.position = 'absolute';
+  tooltipEl.style.left = tooltipModel.caretX + 12 + 'px';
+  tooltipEl.style.top = tooltipModel.caretY + 40 + 'px';
+}
+
+export function renderPieTooltip(tooltipModel, element, canvas, lineStyles = [], labels = [], valueArray = []) {
+  // Tooltip Element
+  var tooltipEl = element.querySelector('#chartjs-tooltip');
+
+  // Create element on first render
+  if (!tooltipEl) {
+      tooltipEl = document.createElement('div');
+      tooltipEl.id = 'chartjs-tooltip';
+      tooltipEl.innerHTML = "<table></table>";
+      element.appendChild(tooltipEl);
+  }
+
+  // Hide if no tooltip
+  if (tooltipModel.opacity === 0) {
+      tooltipEl.style.opacity = 0;
+      return;
+  }
+
+  function getBody(bodyItem) {
+      return bodyItem.lines;
+  }
+
+  // Set Text
+  if (tooltipModel.body) {
+      var titleLines = tooltipModel.title || [];
+      var bodyLines = tooltipModel.body.map(getBody);
+
+      var innerHtml = '<thead>';
+
+      titleLines.forEach(function(title) {
+          innerHtml += '<tr><th class="chartjs-tooltip-title">' + title + '</th></tr>';
+      });
+      innerHtml += '</thead><tbody>';
+
+      bodyLines.forEach(function(body, i) {
+          const colors = tooltipModel.labelColors[i];
+          const style = `background: ${lineStyles[tooltipModel.dataPoints[i].index] ? colors.borderColor : colors.backgroundColor};`
+          const value = valueArray[tooltipModel.dataPoints[i].index]
+          const label = labels[tooltipModel.dataPoints[i].index]
+          
+          var span = `<span class='chartjs-tooltip-line-indicator' style='${style}'></span>`;
+          innerHtml += '<tr><td>' + label + '</td></tr><tr><td>' + span + value + '</td></tr>';
+      });
+      innerHtml += '</tbody>';
+
+      var tableRoot = tooltipEl.querySelector('table');
+      tableRoot.innerHTML = innerHtml;
+  }
+
+  // `this` will be the overall tooltip
+  var position = canvas.getBoundingClientRect();
 
   // Display, position, and set styles for font
   tooltipEl.style.opacity = 1;
   tooltipEl.style.position = 'absolute';
   tooltipEl.style.left = tooltipModel.caretX + 12 + 'px';
   tooltipEl.style.top = tooltipModel.caretY + 40 + 'px';
-  // console.log('tooltipEl.style.top: ', tooltipEl.style.top);
 }
 /* eslint-enable */
 

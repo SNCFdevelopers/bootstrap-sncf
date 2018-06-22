@@ -3,7 +3,7 @@ import {
   colors
 } from './config'
 import {
-  renderTooltip
+  renderPieTooltip
 } from './utils'
 
 /* eslint-disable no-magic-numbers, no-new */
@@ -17,12 +17,15 @@ export default class PieChart {
     const cutoutPercentage = element.dataset.cutoutpercentage || 0
 
     const chartData = {
-      labels,
       datasets: [{
         backgroundColor: colors,
+        hoverBackgroundColor: colors,
+        hoverBorderColor: colors,
         data: valuesArray,
-        borderWidth: 0
-      }]
+        borderWidth: 0,
+        hoverBorderWidth: 4
+      }],
+      labels
     }
 
     new Chart(canvas, {
@@ -38,7 +41,7 @@ export default class PieChart {
           mode: 'index',
           enabled: false,
           custom: (tooltipModel) => {
-            renderTooltip(tooltipModel, element, canvas)
+            renderPieTooltip(tooltipModel, element, canvas, [], labels, valuesArray)
           }
         }
       }
