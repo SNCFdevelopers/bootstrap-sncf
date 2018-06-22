@@ -8,6 +8,7 @@ import Control from './components/control'
 import LineChart from './components/charts/lineChart'
 import Picker from './components/picker'
 import PieChart from './components/charts/pieChart'
+import RadarChart from './components/charts/radarChart'
 import RadialProgress from './components/progress'
 import RangeSlider from './components/rangeSliders'
 import Schedule from './components/schedule'
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataLineChart = 'line-chart'
   const dataBarChart = 'bar-chart'
   const dataPieChart = 'pie-chart'
+  const dataRadarChart = 'radar-chart'
   const dataChips = 'chips'
   const dataControl = 'control'
   const dataPicker = 'picker'
@@ -55,6 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataPieChart) {
       new PieChart(component)
+    }
+
+    if (component.dataset.component === dataRadarChart) {
+      new RadarChart(component)
     }
 
     if (component.dataset.component === dataChips) {

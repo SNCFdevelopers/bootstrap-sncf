@@ -12,6 +12,15 @@ export const colors = [
   'rgb(217, 238, 250)'
 ]
 
+export const translucentColors = [
+  'rgb(29, 136, 202, .2)',
+  'rgb(45, 160, 217, .2)',
+  'rgb(114, 191, 230, .2)',
+  'rgb(140, 202, 234, .2)',
+  'rgb(179, 221, 243, .2)',
+  'rgb(217, 238, 250, .2)'
+]
+
 export const pointConfig = {
   pointRadius: 7, // point size
   pointBorderColor: 'rgb(0, 136, 206)',

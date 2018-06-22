@@ -6,6 +6,18 @@ group: components
 toc: true
 ---
 
+## Radar charts
+
+{% example html %}
+<div class="position-relative"
+    data-component="radar-chart"
+    data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"]'
+    data-values='[[580, 400, 500, 600, 700, 800]]'>
+    <canvas></canvas>
+</div>
+{% endexample html %}
+
+
 ## Pie charts
 
 {% example html %}
