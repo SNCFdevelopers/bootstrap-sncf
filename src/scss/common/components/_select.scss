@@ -87,6 +87,10 @@ $select-scrollable-max-height: rem(360px);
   border-bottom-right-radius: $border-radius;
   border-bottom-left-radius: $border-radius;
 
+  > .d-flex {
+    min-height: 0;
+  }
+
   .select-improved-up & {
     top: auto;
     bottom: 100%;
