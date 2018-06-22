@@ -21,12 +21,12 @@ toc: true
 ## Donut charts
 
 {% example html %}
-<div class="position-relative"
+<div class="position-relative" style="width: 340px; height: 340px"
     data-component="pie-chart"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"]'
     data-values='[580, 400, 500, 600, 700, 800]'
-    data-cutoutpercentage="50">
-    <canvas></canvas>
+    data-cutoutpercentage="78">
+    <canvas width="340px" height="340px"></canvas>
 </div>
 {% endexample html %}
 
