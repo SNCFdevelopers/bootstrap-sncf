@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+import * as zoom from 'chartjs-plugin-zoom'
+/* eslint-enable no-unused-vars */
 import Chart from 'chart.js'
 import {
   colors
@@ -60,6 +63,14 @@ export default class BarChart {
           custom: (tooltipModel) => {
             renderTooltip(tooltipModel, element, canvas)
           }
+        },
+        pan: {
+          enabled: true,
+          mode: 'xy'
+        },
+        zoom: {
+          enabled: true,
+          mode: 'xy'
         }
       }
     })

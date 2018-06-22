@@ -1,15 +1,14 @@
 import 'bootstrap'
 import './utils/dragscroll.js'
 import './utils/stretchy.js'
-import {
-  LineChart,
-  RadialChart
-} from './components/charts'
+import BarChart from './components/charts/barChart'
 import Chips from './components/chips'
 import Control from './components/control'
 import Header from './components/header'
+import LineChart from './components/charts/lineChart'
 import Nav from './components/nav-extern'
 import Picker from './components/picker'
+import PieChart from './components/charts/pieChart'
 import RadialProgress from './components/progress'
 import RangeSlider from './components/rangeSliders'
 import Searchbar from './components/searchbar'
@@ -27,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // data components
   const dataComponent = '[data-component]'
   const dataLineChart = 'line-chart'
-  const dataRadialChart = 'radial-chart'
+  const dataBarChart = 'bar-chart'
+  const dataPieChart = 'pie-chart'
   const dataChips = 'chips'
   const dataControl = 'control'
   const dataMastheader = 'mastheader'
@@ -52,8 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
       new LineChart(component)
     }
 
-    if (component.dataset.component === dataRadialChart) {
-      new RadialChart(component)
+    if (component.dataset.component === dataBarChart) {
+      new BarChart(component)
+    }
+
+    if (component.dataset.component === dataPieChart) {
+      new PieChart(component)
     }
 
     if (component.dataset.component === dataChips) {
