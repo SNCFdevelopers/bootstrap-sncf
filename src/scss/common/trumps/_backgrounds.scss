@@ -6,7 +6,7 @@
 
 @each $color, $value in $colors {
   .text-#{$color} {
-    background-color: $value;
+    color: $value;
   }
 }
 
