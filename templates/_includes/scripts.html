@@ -1,1 +1,14 @@
 <script src="{{ site.baseurl }}/main.js"></script>
+
+<!-- Listener click event -->
+<script>
+$('header a.btn').on('click', function() {
+  dataLayer.push({ 
+    'event': 'telechargement',
+    'eventCategory': 'telechargement', 
+    'eventAction': 'framework',
+    'eventLabel': 'header'
+  });
+}); 
+</script>
+

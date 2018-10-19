@@ -14,7 +14,7 @@ module.exports = env => {
 
   if (!production) {
     entry.push(path.resolve(__dirname, 'src/js/docs.js'));
-    entry.push(path.resolve(__dirname, 'src/scss/docs.scss'));
+    entry.push(path.resolve(__dirname, `src/scss/docs-${theme}.scss`));
     outputPath = path.resolve(__dirname, '_gh_pages');
   }
 

@@ -8,7 +8,8 @@
   pages:
     - title: Grid
     - title: Utilities for layout
-    - title: Form
+    - title: Navbar
+    - title: Navs
 
 - title: Content
   pages:
@@ -22,23 +23,24 @@
 - title: Components
   pages:
     - title: Anchor
-    - title: Badge
     - title: Breadcrumb
     - title: Buttons
-    - title: Checkboxes and radios
     - title: Carousel
-    - title: Dropdowns
+    - title: Checkboxes and radios
     - title: Edito
     - title: Elements
-    - title: Footer pushes
+    - title: Footer
     - title: Forms
     - title: Icons
     - title: Input group
     - title: Medias
-    - title: Navbar
-    - title: Navs
+    - title: Modal
+    - title: Pagination
+    - title: Picker
+    - title: Progress
     - title: Select
     - title: Tongues
+    - title: Vignette
 
 - title: Utilities
   pages:

@@ -68,10 +68,6 @@ $mastnav-width-lg: rem(100px);
     flex-direction: column;
   }
 
-  .mastnav-bottom {
-    border-top: 1px solid rgba(255, 255, 255, .2);
-  }
-
   .mastnav-item {
     min-height: rem(80px);
     font-size: rem(12px);

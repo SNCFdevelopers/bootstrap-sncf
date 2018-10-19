@@ -2,6 +2,7 @@
 
 - [Quick start](#quick-start)
 - [Documentation](#documentation)
+- [Build](#build)
 
 ## Quick start
 

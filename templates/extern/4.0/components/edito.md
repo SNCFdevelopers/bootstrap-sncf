@@ -9,6 +9,8 @@ permalink: /docs/4.0/components/edito
 
 ## Accordion
 
+Accordions divide text content up to make reading easier and reduce page length. They give users a better overview of the content available to them.
+
 {% example html %}
 <div id="accordion" class="accordions">
   <div class="accordion">
@@ -46,6 +48,8 @@ permalink: /docs/4.0/components/edito
 
 ## Blockquotes
 
+Blockquotes highlight selected information and create flow within a content page.
+
 For quoting blocks of content from another source within your document. Wrap `<blockquote class="blockquote">` around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.
 
 {% example html %}
@@ -66,6 +70,8 @@ Add a `<footer class="blockquote-footer">` for identifying the source. Wrap the 
 {% endexample %}
 
 ## Proof block
+
+Proof blocks reinforce the key messages in body copy on text pages by providing “concrete proof” of the company’s high-quality offers or initiatives. Proof blocks should be concise, informative and neutral; they are written in a journalistic style.
 
 Use `is-gray` class or any `bg-{color}` classes available to change the `background-color` element. Use `text-{color}` to choose the text color.
 
@@ -95,7 +101,19 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
 
 ## Editorial block
 
+### Standard
+
+These banners are primarily used for content pages, for pages with articles (often news items), or pages that need a striking image to illustrate content.
+
+Text blocks are placed within text pages; they  offer additional content that may be of interest to users based on the page they are currently browsing.
+
+### Paragraph
+
+A paragraph block is the key focus of a content page.For optimum effect, designers can choose from two versions:- the “100% paragraph” block,  where sub-headings, text and images each span  the entire content grid, so the designer can incorporate large images into the page.- the “50% paragraph” block, where sub-headings, text and images are divided into two equal columns. Images can be placed to the right or left of text content.If image credits are required, these appear below the image. 
+
 ### Push
+
+A mid-page push highlights content linked closely to what the user is looking at on the rest of a page, thus improving the user experience. Mid-page pushes differ from footer pushes, which promote less closely related content.
 
 {% example html %}
 <div class="editorial" style="max-width: 41.000rem">
@@ -137,7 +155,76 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
 </div>
 {% endexample %}
 
+### Highlight
+
+Grey cards highlight a point from the preceding paragraph on a text page. Several types of grey cards exist, including one with an internal drop-down menu. A specific text or link appears depending on the option the user chooses for the drop-down list.
+
+We recommend only using one grey card per paragraph.
+
+{% example html %}
+<div class="editorial editorial-light">
+  <div class="editorial-content order-md-0">
+    <p class="text-primary display-3 mb-3">Choisissez votre région</p>
+    <p>Plus de 24000 places de stationnement vélo vous sont proposées dans les gares SNCF en région.</p>
+    <div class="select-improved" data-component="select-exclusive">
+      <div class="select-control">
+	<div class="input-group" data-role="select-toggle">
+	  <div class="form-control form-control-white is-placeholder  d-flex align-items-center" data-role="placeholder">Choisissez votre région...</div>
+	  <select class="sr-only" id="select1" data-role="input" tabindex="-1" aria-hidden="true">
+	    <option selected disabled hidden>Lorem ipsum</option>
+	    <option data-id="1">Occitanie</option>
+	    <option data-id="2">Grand-Est</option>
+	  </select>
+	  <div class="input-group-append input-group-last">
+	    <button class="btn btn-primary btn-only-icon " data-role="btn" type="button">
+	      <i class="icons-arrow-down icons-size-x75"></i>
+	    </button>
+	  </div>
+	</div>
+	<div class="select-menu" data-role="menu">
+          <button class="select-menu-item" data-role="value" data-target="1">Occitanie</button>
+          <button class="select-menu-item" data-role="value" data-target="2">Grand-Est</button>
+	</div>
+      </div>
+    </div>
+    <p class="mt-3">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio.</p>
+    <a href="#" class="btn btn-link">Lorem ipsum dolor <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+  </div>
+</div>
+{% endexample %}
+
+### Push highlight
+
+On text pages without anchor links, some components can be placed in a column to the right of the editorial content: a grey-card push can make navigating the website easier, while “Date” and “Place” grey cards can be used to provide information on events or news.
+
+{% example html %}
+<div class="row">
+  <div class="col-md-7">
+  </div>
+  <div class="col-md-5">
+    <div class="d-flex flex-column bg-light gx-3 gy-4 gx-md-4 rounded">
+      <div class="d-flex flex-column flex-fluid">
+	<h2 class="mb-5">Les derniers articles</h2>
+	<p class="display-5 text-uppercase text-primary">ÉVÈNEMENT</p>
+	<p class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</p>
+	<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio.</p>
+	<div class="d-flex align-items-end flex-fluid">
+	  <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+### Other grey blocks
+“Date” grey cards provide time-sensitive information on news or events.
+
+“Place” grey cards provide geographic information related to an event or news item. The link redirects users to an external page where they can find directions and itineraries.
+
 ### Bloc 1/3 2/3
+
+The 1/3 2/3 block improves page flow and illustrates a specific point in the body copy.These blocks appear in threes on a text page.Content editors can choose from the following options: illustrations, packshots and photo essays.
 
 {% example html %}
 <div style="max-width: 41.000rem">
@@ -182,6 +269,8 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
 
 ### Packshot
 
+Packshot blocks feature products or offers that need an illustration, where you can redirect users to a page or window with more detailed information.These blocks come in twos or fours in a text page.
+
 {% example html %}
 <div style="max-width: 41.000rem">
   <h2 class="display-3 text-primary mb-4">Titre bloc Packshot</h2>
@@ -216,6 +305,8 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
 
 ### Mosaic
 
+Like packshot blocks, mosaic (or tiled) blocks showcase products that need a visual, where users can be redirected to a page or window with more detailed information.Mosaic/tiled blocks come in twos or fours on an text page.Content editors can choose from the following options: illustrations, packshots and photo essays.
+
 {% example html %}
 <div style="max-width: 41.000rem">
   <h2 class="display-3 text-primary mb-4">Titre bloc Mosaïque</h2>
@@ -245,6 +336,8 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
 {% endexample %}
 
 ## Contact
+
+The “Contact” block—as its name suggests—lets users contact the company's customer service department by email to send content or exchange information.A mailto link can be inserted instead of an input field.
 
 {% example html %}
 <div style="max-width: 41.000rem">

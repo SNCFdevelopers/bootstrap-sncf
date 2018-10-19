@@ -58,6 +58,42 @@ All HTML headings, `<h1>` through `<h2>`, are available.
 <p class="h3">h3. Bootstrap heading</p>
 {% endexample %}
 
+## Colored headings
+
+Colours for article headlines and sub-headings can be adjusted:
+- if the website heading is a bright colour, headlines in the content section must replicate that colour. Use the same colour for all content pages in the website.
+- if the website’s heading is black or grey, the content editor can choose a colour for the headline and sub-headings in the text section as long as accessibility guidelines are respected (watch for sufficient contrast). This means headline colours can change from one content page to another, which can also help distinguish topics/categories.
+
+<div class="row">
+  <div class="col-sm-6">
+    <h2 class="text-primary">Beautiful colored heading</h2>
+  </div>
+  <div class="col-sm-6">
+    <h2 class="text-info">Beautiful colored heading</h2>
+  </div>
+  <div class="col-sm-6">
+    <h2 class="text-pink">Beautiful colored heading</h2>
+  </div>
+  <div class="col-sm-6">
+    <h2 class="text-danger">Beautiful colored heading</h2>
+  </div>
+  <div class="col-sm-6">
+    <h2 class="text-warning">Beautiful colored heading</h2>
+  </div>
+  <div class="col-sm-6">
+    <h2 class="text-purple">Beautiful colored heading</h2>
+  </div>
+</div>
+
+{% highlight html %}
+<h2 class="text-primary">Beautiful colored heading</h2>
+<h2 class="text-info">Beautiful colored heading</h2>
+<h2 class="text-pink">Beautiful colored heading</h2>
+<h2 class="text-danger">Beautiful colored heading</h2>
+<h2 class="text-warning">Beautiful colored heading</h2>
+<h2 class="text-purple">Beautiful colored heading</h2>
+{% endhighlight %}
+
 ## Display headings
 
 Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a **display heading**—a larger, slightly more opinionated heading style.

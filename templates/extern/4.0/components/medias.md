@@ -1,11 +1,45 @@
 ---
 layout: docs
 title: Medias
-description: Medias.
+description: Content pages can use different image formats. Content editors can choose from the following options > illustrations, packshots and photo essays produced by SNCF.
 group: components
 toc: true
 permalink: /docs/4.0/components/medias
 ---
+
+## Pictures
+
+{% example html %}
+<p class="text-center">13/5</p>
+<img class="w-100 rounded" src="https://dummyimage.com/656x253/000/fff" />
+{% endexample %}
+
+### 100% picture
+
+This image format has rounded edges and gets its name because it covers the entire content grid (width). This is true for all devices: computers, tablets in portrait mode, and mobiles. The image always takes up 100% of the content grid.
+
+{% example html %}
+<img class="img-fluid rounded" src="https://dummyimage.com/1920x1080/000/fff" />
+{% endexample %}
+
+### 50% picture
+
+This image format has rounded edges and gets it name because it covers “almost” half of the content grid on computers and tablets in portrait mode. It is used in “50% paragraph” blocks.
+
+In the mobile version, image size corresponds to the content grid (meaning 100% and 50% images are the same size).
+
+{% example html %}
+<div class="row">
+  <div class="col-sm-6">
+    <img class="img-fluid rounded" src="https://dummyimage.com/1920x1080/000/fff" />
+  </div>
+</div>
+{% endexample %}
+
+{% callout info %}
+Note the usage of `w-xxx` where xxx is the percentage of width for image, for all devices, and the usage of grid with `row` and `col-sm-6` combined with `img-fluid` class explained [here](broken link) for adaptative view.
+{% endcallout %}
+
 
 ## Slideshow
 

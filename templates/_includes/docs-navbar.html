@@ -1,18 +1,21 @@
 <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-  <a class="navbar-brand mr-0 mr-md-2" href="{{ site.baseurl }}/" aria-label="Bootstrap">
+  <a class="navbar-brand mr-0 mr-md-4" href="{{ site.baseurl }}/" aria-label="Bootstrap">
     <img alt="SNCF" src="{{ site.baseurl }}/assets/img/brand/sncf-logo.png" width="70" />
+    <span class="ml-2">{{ site.name }}</span>
   </a>
 
   <div class="navbar-nav-scroll">
     <ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item">
-        <a class="nav-link {% if page.layout == "home" %}active{% endif %}" href="{{ site.baseurl }}/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+        <a class="nav-link d-flex align-items-center {% if page.layout == "docs" %}active{% endif %}" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">
+	  Documentation	<i class="icons-arrow-next icons-size-x5 ml-2"></i>
+	</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link {% if page.layout == "docs" %}active{% endif %}" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link {% if page.title == "Examples" %}active{% endif %}" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
+        <a class="nav-link d-flex align-items-center {% if page.title == "Examples" %}active{% endif %}" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">
+	  Examples <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+
+	</a>
       </li>
     </ul>
   </div>
@@ -24,27 +27,9 @@
       </a>
       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
         <a class="dropdown-item active" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/">Latest (4.x)</a>
-        <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/3.3/">v3.3.7</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
       </div>
     </li>
 
-    <li class="nav-item">
-      <a class="nav-link p-2" href="{{ site.repo }}" target="_blank" rel="noopener" aria-label="GitHub">
-        {%- include icons/github.svg class="navbar-nav-svg" -%}
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
-        {%- include icons/twitter.svg class="navbar-nav-svg" -%}
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link p-2" href="{{ site.slack }}" target="_blank" rel="noopener" aria-label="Slack">
-        {%- include icons/slack.svg class="navbar-nav-svg" -%}
-      </a>
-    </li>
   </ul>
 
   <a class="btn btn-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="{{ site.download.source }}">Download</a>

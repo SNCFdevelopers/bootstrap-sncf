@@ -18,6 +18,7 @@ url:            "https://getbootstrap.com"
 encoding:       UTF-8
 exclude:
   - intern
+  - docs-intern
 
 keep_files:
   - assets
@@ -33,8 +34,8 @@ plugins:
   - jekyll-toc
 
 # Social
-title:              Bootstrap
-description:        "The most popular HTML, CSS, and JS library in the world."
+title:              Bootstrap Communication
+description:        ""
 twitter:            getbootstrap
 authors:            "Mark Otto, Jacob Thornton, and Bootstrap contributors"
 social_image_path:  /assets/brand/bootstrap-social.png
@@ -51,10 +52,11 @@ expo:                 "https://expo.getbootstrap.com"
 jobs:                 "https://jobs.getbootstrap.com"
 themes:               "https://themes.getbootstrap.com"
 doc_theme:            "extern"
+name:                 "DESIGN COMMUNICATION"
 
 download:
-  source:           "https://github.com/twbs/bootstrap/archive/v4.0.0.zip"
-  dist:             "https://github.com/twbs/bootstrap/releases/download/v4.0.0/bootstrap-4.0.0-dist.zip"
+  source:           "https://design-bootstrap.sncf.fr/dist.zip"
+  dist:             "https://design-bootstrap.sncf.fr/dist.zip"
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes

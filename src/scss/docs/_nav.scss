@@ -39,16 +39,33 @@
     .nav-link {
       padding-right: .5rem;
       padding-left: .5rem;
-      color: $bd-purple-light;
+      color: #fff;
 
       &.active,
       &:hover {
-        color: #fff;
+        color: rgba(255, 255, 255, .75);
         background-color: transparent;
       }
 
       &.active {
         font-weight: 500;
+      }
+    }
+  }
+
+  // Override extern SCSS
+  .nav-item {
+    width: 100%;
+    + .nav-item {
+      padding-left: 0;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .nav-item {
+      width: 100%;
+      + .nav-item {
+        margin-top: 0;
       }
     }
   }
