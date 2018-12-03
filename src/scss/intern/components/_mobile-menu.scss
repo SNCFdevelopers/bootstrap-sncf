@@ -9,14 +9,20 @@
   left: 0;
   z-index: $zindex-tooltip + 2;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, .6);
 }
 
 .mobile-menu-inner {
   position: relative;
+  flex: 0 1 auto;
   width: 100%;
+  overflow-y: auto;
   background-color: color("white");
+}
+
+.mobile-menu-content {
+  overflow-y: scroll;
 }
 
 .mobile-menu-close {
