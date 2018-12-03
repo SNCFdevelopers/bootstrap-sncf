@@ -11,6 +11,10 @@
 
 .flatpickr-wrapper {
   width: 100%;
+
+  .input-group {
+    cursor: pointer;
+  }
 }
 
 .flatpickr-calendar {
@@ -256,6 +260,7 @@
     width: rem(86px);
     height: rem(50px);
     font-size: rem(18px);
+    pointer-events: none;
     background-color: gray("100");
     border-radius: rem(7px);
 

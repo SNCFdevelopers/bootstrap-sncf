@@ -6,7 +6,11 @@ toc: true
 permalink: /docs/4.0/components/picker
 ---
 
-Pickers let users select a value from a set of pre-determined values with the help of visual and interactive aids. There are several types of pickers:- date-pickers- time-pickers- date-time-pickers- range-pickers
+Pickers let users select a value from a set of pre-determined values with the help of visual and interactive aids. There are several types of pickers:
+- date-pickers
+- time-pickers
+- date-time-pickers
+- range-pickers
 
 {% callout info %}
 ### How to use programmatic access ?
@@ -18,8 +22,8 @@ Please note that **you don't** have to load `flatpickr.js` since it's already in
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
 <div data-component="picker">
-  <div class="input-group" data-toggle>
-    <div class="form-control-container">
+  <div class="input-group input-group--flatpickr">
+    <div class="form-control-container" data-toggle>
       <input type="text" class="form-control" placeholder="Sélectionner une date" data-input>
       <span class="form-control-state"></span>
     </div>
@@ -39,8 +43,8 @@ Date-pickers let users select a date (in dd/mm/yyyy format) using a calendar vis
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
 <div data-component="picker" data-default-date="2017-02-26">
-  <div class="input-group" data-toggle>
-    <div class="form-control-container">
+  <div class="input-group input-group--flatpickr">
+    <div class="form-control-container" data-toggle>
       <input type="text" class="form-control" placeholder="Sélectionner une date" data-input>
       <span class="form-control-state"></span>
     </div>
@@ -60,8 +64,8 @@ The range-picker lets users select a start date and end date to define a period 
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
 <div data-component="picker" data-mode="range">
-  <div class="input-group" data-toggle>
-    <div class="form-control-container">
+  <div class="input-group input-group--flatpickr">
+    <div class="form-control-container" data-toggle>
       <input type="text" class="form-control" placeholder="Sélectionner une date" data-input>
       <span class="form-control-state"></span>
     </div>
@@ -80,9 +84,9 @@ Time-pickers let users select a time (in hh:mm format) using a clock visual. Be 
 
 {% example html %}
 <label class="font-weight-medium mb-2">Time</label>
-<div data-component="picker" data-mode="time" data-increment-hours-on-minutes-max>
-  <div class="input-group" data-toggle>
-    <div class="form-control-container">
+<div data-component="picker" data-timepicker="true" data-increment-hours-on-minutes-max="true">
+  <div class="input-group input-group--flatpickr">
+    <div class="form-control-container" data-toggle>
       <input type="text" class="form-control" placeholder="Sélectionner une heure" data-input>
       <span class="form-control-state"></span>
     </div>
@@ -102,7 +106,7 @@ Only use a date-time-picker when you need to optimize space and reduce the numbe
 {% example html %}
 <label class="font-weight-medium mb-2">Heure</label>
 <div data-component="picker" data-enable-time="true" data-increment-hours-on-minutes-max>
-  <div class="input-group" data-toggle>
+  <div class="input-group input-group--flatpickr" data-toggle>
     <div class="form-control-container">
       <input type="text" class="form-control" placeholder="JJ/MM/AAAA à HH:MM" data-input>
       <span class="form-control-state"></span>
