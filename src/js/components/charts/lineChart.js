@@ -59,6 +59,8 @@ export default class LineChart {
     }
 
     values.forEach((valueArray) => {
+      pointHoverConfig.pointHoverBorderColor = lineColors[counter] ? lineColors[counter] : DEFAULT_COLOR
+
       if (fill) {
         const gradientStroke = ctx.createLinearGradient(0, element.getBoundingClientRect().width, 0, 0)
         gradientStroke.addColorStop(0.5, 'rgba(255, 255, 255, 0)')
