@@ -70,7 +70,7 @@ export function renderTooltip(
 
 // draw vertical line at data point on chart on mouseover
 /* eslint-disable no-magic-numbers */
-export function renderVerticalLine(chart) {
+export function renderVerticalLine(chart, color) {
   if (chart.tooltip._active && chart.tooltip._active.length) {
     const activePoint = chart.tooltip._active[0]
     const ctx = chart.ctx
@@ -85,7 +85,7 @@ export function renderVerticalLine(chart) {
     ctx.moveTo(x, topY)
     ctx.lineTo(x, bottomY)
     ctx.lineWidth = 1
-    ctx.strokeStyle = '#1592d2'
+    ctx.strokeStyle = color || '#1592d2'
     ctx.setLineDash([4])
     ctx.stroke()
     ctx.restore()

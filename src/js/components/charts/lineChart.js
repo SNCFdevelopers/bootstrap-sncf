@@ -24,6 +24,7 @@ export default class LineChart {
     const lineStyles = element.dataset.styles ? JSON.parse(element.dataset.styles) : []
     const fill = element.dataset.fill === 'true'
     const lineTension = element.dataset.straightlines === 'true'
+    console.log('lineColors: ', lineColors);
 
     let counter = 0
 
@@ -46,6 +47,7 @@ export default class LineChart {
         tooltips: {
           mode: 'index',
           enabled: false,
+          intersect: false,
           custom: (tooltipModel) => {
             renderTooltip(tooltipModel, element, canvas, labels, values, lineColors, lineStyles)
           }
@@ -53,12 +55,13 @@ export default class LineChart {
       },
       plugins: [{
         afterDatasetsDraw: (chart) => {
-          renderVerticalLine(chart)
+          renderVerticalLine(chart, lineColors.length > 0 ? lineColors[0] : DEFAULT_COLORS)
         }
       }]
     }
 
     values.forEach((valueArray) => {
+      // pointHoverConfig.pointBorderColor = lineColors[counter] ? lineColors[counter] : DEFAULT_COLOR
       pointHoverConfig.pointHoverBorderColor = lineColors[counter] ? lineColors[counter] : DEFAULT_COLOR
 
       if (fill) {
