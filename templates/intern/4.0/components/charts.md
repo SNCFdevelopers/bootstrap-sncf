@@ -79,6 +79,9 @@ ee measurements per bar. In proportional bar graphs, all bars are the same size 
         </ul>
     </div>
     <canvas></canvas>
+    <button type="button" data-role="reset">Reset</button>
+    <button type="button" data-role="zoom-in">Zoom in</button>
+    <button type="button" data-role="zoom-out">Zoom out</button>
 </div>
 {% endexample html %}
 
