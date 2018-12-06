@@ -36,7 +36,7 @@ export default class BarChart {
       dataCounter += 1
     })
 
-    new Chart(canvas, {
+    element.chart = new Chart(canvas, {
       type: 'bar',
       data: barChartData,
       options: {
