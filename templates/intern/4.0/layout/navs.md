@@ -7,7 +7,8 @@ toc: true
 permalink: /docs/4.0/layout/navs
 ---
 
-Section header bars are displayed under the header and show the section header, and depending on use, the sub-menus as tabs, display modes, context search and other actions (edit, delete, filter, etc.).For mobiles, an arrow to the left of the section returns the reader to the previous page.  For tablets and desktops, breadcrumbs (see “Breadcrumb” section) should go above the section header. Tabs are placed under the section header so users can navigate in subsections. You can also add a set of steps when the user has to execute a series of tasks across multiple pages (to indicate  progress with each step).
+Section header bars are displayed under the header and show the section header, and depending on use, the sub-menus as tabs, display modes, context search and other actions (edit, delete, filter, etc.).
+For mobiles, an arrow to the left of the section returns the reader to the previous page.  For tablets and desktops, breadcrumbs (see “Breadcrumb” section) should go above the section header. Tabs are placed under the section header so users can navigate in subsections. You can also add a set of steps when the user has to execute a series of tasks across multiple pages (to indicate  progress with each step).
 
 ## Simple action bar
 
@@ -225,7 +226,7 @@ Section header bars are displayed under the header and show the section header, 
       <label class="font-weight-medium text-nowrap pr-3 mb-0">Sélectionner un plan de veille</label>
       <div class="input-group align-items-center">
         <div class="form-control-container" data-component="control" data-clear-option="true">
-          <input type="text" class="form-control clear-option" data-role="input" data-placeholder="Rechercher" />
+          <input role="search" type="search" class="form-control clear-option" data-role="input" data-placeholder="Rechercher" />
           <span class="form-control-state"></span>
           <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
             <span class="sr-only">Clear text</span>
@@ -234,10 +235,14 @@ Section header bars are displayed under the header and show the section header, 
         </div>
         <div class="input-group-append input-group-last">
           <button type="button" class="btn btn-primary btn-only-icon">
+            <span class="sr-only">Rechercher</span>
             <i class="icons-search"></i>
           </button>
         </div>
-        <button type="button" class="btn btn-only-icon btn-white d-block d-md-none" data-role="close"><i class="icons-close icon-size-1x25"></i></button>
+        <button type="button" class="btn btn-only-icon btn-white d-block d-md-none" data-role="close">
+          <span class="sr-only">Close search</span>
+          <i class="icons-close icon-size-1x25"></i>
+        </button>
       </div>
     </div>
   </div>
@@ -252,10 +257,10 @@ The contextual menu uses the dropdown component [described here]({{ site.baseurl
 
 {% example html %}
 <div class="btn-group dropdown">
-  <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
     <i class="pl-1 icons-options icon-size-1x75"></i>
   </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mycontrol">
     <a class="dropdown-item" href="#">Modifier la liste</a>
     <a class="dropdown-item" href="#">Dupliquer la liste</a>
     <a class="dropdown-item" href="#">Supprimer la liste</a>
@@ -266,7 +271,7 @@ The contextual menu uses the dropdown component [described here]({{ site.baseurl
 ### With icons
 
 {% example html %}
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mycontrol">
     <a class="dropdown-item" href="#"><i class="icons-pencil mr-3 icon-size-x75"></i> Modifier la liste</a>
     <a class="dropdown-item" href="#"><i class="icons-double mr-3 icon-size-x75"></i> Dupliquer la liste</a>
     <a class="dropdown-item" href="#"><i class="icons-close mr-3 icon-size-x75"></i> Supprimer la liste</a>

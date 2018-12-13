@@ -112,6 +112,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         Programme
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+        <span class="sr-only">Close search</span>
         <i class="icons-close icons-size-1x" aria-hidden="true"></i>
       </a>
     </div>
@@ -161,6 +162,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         Loisirs &amp; Tourisme
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+        <span class="sr-only">Close search</span>
         <i class="icons-close icons-size-1x" aria-hidden="true"></i>
       </a>
     </div>
@@ -195,6 +197,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         Toutes les lignes
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+        <span class="sr-only">Close search</span>
         <i class="icons-close icons-size-1x" aria-hidden="true"></i>
       </a>
     </div>
@@ -239,6 +242,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         Services mobiles
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+        <span class="sr-only">Close search</span>
         <i class="icons-close icons-size-1x" aria-hidden="true"></i>
       </a>
     </div>
@@ -273,6 +277,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         Au quotidien
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+        <span class="sr-only">Close search</span>
         <i class="icons-close icons-size-1x" aria-hidden="true"></i>
       </a>
     </div>
@@ -307,6 +312,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         Le réseau
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+        <span class="sr-only">Close search</span>
         <i class="icons-close icons-size-1x" aria-hidden="true"></i>
       </a>
     </div>
@@ -347,6 +353,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	    Programme
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+        <span class="sr-only">Close search</span>
 	    <i class="icons-close icons-size-1x" aria-hidden="true"></i>
 	  </a>
 	</div>
@@ -396,6 +403,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	    Loisirs &amp; Tourisme
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+      <span class="sr-only">Close search</span>
 	    <i class="icons-close icons-size-1x" aria-hidden="true"></i>
 	  </a>
 	</div>
@@ -430,6 +438,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	    Toutes les lignes
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+      <span class="sr-only">Close search</span>
 	    <i class="icons-close icons-size-1x" aria-hidden="true"></i>
 	  </a>
 	</div>
@@ -474,6 +483,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	    Services mobiles
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+      <span class="sr-only">Close search</span>
 	    <i class="icons-close icons-size-1x" aria-hidden="true"></i>
 	  </a>
 	</div>
@@ -508,6 +518,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	    Au quotidien
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+      <span class="sr-only">Close search</span>
 	    <i class="icons-close icons-size-1x" aria-hidden="true"></i>
 	  </a>
 	</div>
@@ -542,6 +553,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	    Le réseaux
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+      <span class="sr-only">Close search</span>
 	    <i class="icons-close icons-size-1x" aria-hidden="true"></i>
 	  </a>
 	</div>
@@ -583,7 +595,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
             <div class="d-md-none">
               <label for="search" class="h3">Rechercher</label>
               <div class="form-control-container has-left-icon">
-                <input type="" class="form-control " id="search">
+                <input role="search" type="" class="form-control" id="search">
                 <span class="form-control-state"></span>
                 <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
               </div>
@@ -730,6 +742,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Programme
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -781,6 +794,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Loisirs & Tourisme
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -815,6 +829,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Toutes les lignes
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -859,6 +874,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Services mobiles
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -893,6 +909,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Au quotidien
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -927,6 +944,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Le réseaux
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -962,6 +980,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Startup
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -993,6 +1012,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Startup catégorie
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -1028,6 +1048,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Store
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -1059,6 +1080,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Store catégorie
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -1094,6 +1116,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Resources
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -1125,6 +1148,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                     Resources catégorie
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>

@@ -131,7 +131,7 @@ permalink: /docs/4.0/examples/navigation
             <div class="d-md-none">
               <label for="search" class="h3">Rechercher</label>
               <div class="form-control-container has-left-icon">
-                <input type="" class="form-control " id="search">
+                <input role="search" type="search" class="form-control " id="search">
                 <span class="form-control-state"></span>
                 <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
               </div>
@@ -263,6 +263,7 @@ permalink: /docs/4.0/examples/navigation
                     {{ item.name }}
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -294,6 +295,7 @@ permalink: /docs/4.0/examples/navigation
                     {{ category.name }}
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
+                    <span class="sr-only">Close search</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>

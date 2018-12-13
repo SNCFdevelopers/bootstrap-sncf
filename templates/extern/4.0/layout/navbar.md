@@ -8,16 +8,17 @@ permalink: /docs/4.0/layout/navbar
 ---
 
 {% example html %}
-<header role="banner" class="mastheader">
+<div class="mastheader">
   <div class="container">
     <div class="d-flex align-items-center">
       <div class="mastheader-logo">
         <a href="/docs" class="d-block">
-          <span class="sr-only">SNCF</span>
           <img alt="SNCF" class="d-block" src="{{ site.baseurl }}/assets/img/brand/sncf-logo.png" width="34" />
         </a>
       </div>
-      <h1 class="mastheader-title">Les trains en Ile-de-France de SNCF</h1>
+      <header role="banner" class="mastheader-title">
+        <h1 class="text-white">Les trains en Ile-de-France de SNCF</h1>
+      </header>
     </div>
     <ul class="mastheader-toolbar mb-0 d-none d-md-flex">
       <li class="mastheader-toolbar-item">
@@ -31,5 +32,5 @@ permalink: /docs/4.0/layout/navbar
       </li>
     </ul>
   </div>
-</header>
+</div>
 {% endexample %}
