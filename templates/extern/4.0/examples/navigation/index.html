@@ -33,7 +33,7 @@ permalink: /docs/4.0/examples/navigation
         </div>
         <ul class="mastheader-toolbar mb-0 d-none d-md-flex">
           <li class="mastheader-toolbar-item dropdown dropdown-mastheader">
-            <button type="button" class="dropdown-toggle" data-toggle="dropdown" data-offset="68, 0" aria-haspopup="true" aria-expanded="false">Accessibilité <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>
+            <button type="button" class="dropdown-toggle" data-toggle="dropdown" data-offset="68, 0" aria-haspopup="true" aria-expanded="false">Accessibilité <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i></button>
             <div class="dropdown-menu dropdown-menu-right">
               <i class="dropdown-close icons-close icons-size-x5"></i>
               <div data-role="stop-propagation">
@@ -117,7 +117,7 @@ permalink: /docs/4.0/examples/navigation
             </div>
           </li>
           <li class="mastheader-toolbar-item mastheader-toolbar-item-lg">
-            <button type="button">Tout sncf <i class="icons-options ml-3"></i></button>
+            <button type="button">Tout sncf <i class="icons-options ml-3" aria-hidden="true"></i></button>
           </li>
         </ul>
       </div>
@@ -133,7 +133,7 @@ permalink: /docs/4.0/examples/navigation
               <div class="form-control-container has-left-icon">
                 <input type="" class="form-control " id="search">
                 <span class="form-control-state"></span>
-                <span class="form-control-icon"><i class="icons-search"></i></span>
+                <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
               </div>
             </div>
             <h3 class="gt-5 mb-3 d-md-none">Menu</h3>
@@ -141,7 +141,7 @@ permalink: /docs/4.0/examples/navigation
               {% for item in site.data.nav-fixtures %}
                 <button type="button" class="nav-item" data-role="main-toggle" data-target="#{{ item.name | slugify }}">
                   {{ item.name }}
-                  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                 </button>
               {% endfor %}
               <div class="dropdown dropdown-menubar gt-5 d-md-none">
@@ -232,13 +232,13 @@ permalink: /docs/4.0/examples/navigation
             <li class="toolbar-item d-none d-md-block">
               <a href="#" class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
                 <span class="sr-only">Search</span>
-                <i class="icons-menu-searchbar icons-size-30px"></i>
+                <i class="icons-menu-searchbar icons-size-30px" aria-hidden="true"></i>
               </a>
             </li>
             <li class="toolbar-item no-separator separator-md">
               <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
                 <span class="sr-only">Account</span>
-                <i class="icons-menu-account icons-size-30px"></i>
+                <i class="icons-menu-account icons-size-30px" aria-hidden="true"></i>
               </button>
             </li>
             <li class="toolbar-item no-separator-md d-md-none">
@@ -259,7 +259,7 @@ permalink: /docs/4.0/examples/navigation
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     {{ item.name }}
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -276,7 +276,7 @@ permalink: /docs/4.0/examples/navigation
                       {% for category in item.categories %}
                         <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#{{ category.name | slugify }}">
                           {{ category.name }}
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       {% endfor %}
                     </div>
@@ -290,7 +290,7 @@ permalink: /docs/4.0/examples/navigation
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     {{ category.name }}
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -302,7 +302,7 @@ permalink: /docs/4.0/examples/navigation
                       {% for subcategory in category.subcategories %}
                         <button type="button" class="subnav-item">
                           {{ subcategory.name }}
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       {% endfor %}
                   </nav>
@@ -329,10 +329,10 @@ permalink: /docs/4.0/examples/navigation
             <div class="col-12 col-md-6">
               <div class="d-flex align-items-end gr-md-4 gb-6">
                 <div class="gr-3 text-gray200 pb-2">
-                  <i class="icons-large-clock icons-size-66px"></i>
+                  <i class="icons-large-clock icons-size-66px" aria-hidden="true"></i>
                 </div>
                 <div>
-                  <h2 class="display-3 d-flex align-items-center text-primary">Itinéraires et Réservation <i class="icons-arrow-next icons-size-1x pl-2"></i></h2>
+                  <h2 class="display-3 d-flex align-items-center text-primary">Itinéraires et Réservation <i class="icons-arrow-next icons-size-1x pl-2" aria-hidden="true"></i></h2>
                   <p class="text-lg mb-0">Réservation, horaires des trains, trafic temps réel et trajet porte-à-porte.</p>
                 </div>
               </div>
@@ -340,10 +340,10 @@ permalink: /docs/4.0/examples/navigation
             <div class="col-12 col-md-6">
               <div class="d-flex align-items-end gl-md-4 gb-6">
                 <div class="gr-3 text-gray200 pb-2">
-                  <i class="icons-large-ticket icons-size-66px"></i>
+                  <i class="icons-large-ticket icons-size-66px" aria-hidden="true"></i>
                 </div>
                 <div>
-                  <h2 class="display-3 d-flex align-items-center text-primary">Voyager à petits prix <i class="icons-arrow-next icons-size-1x pl-2"></i></h2>
+                  <h2 class="display-3 d-flex align-items-center text-primary">Voyager à petits prix <i class="icons-arrow-next icons-size-1x pl-2" aria-hidden="true"></i></h2>
                   <p class="text-lg mb-0">Trains Grandes Lignes, TER, Transilien, Eurostar, Thalys, bus, voiture, vélo…</p>
                 </div>
               </div>
@@ -351,10 +351,10 @@ permalink: /docs/4.0/examples/navigation
             <div class="col-12 col-md-6">
               <div class="d-flex align-items-end gr-md-4 gb-6 gb-md-0">
                 <div class="gr-3 text-gray200 pb-2">
-                  <i class="icons-large-itinerary-train icons-size-66px"></i>
+                  <i class="icons-large-itinerary-train icons-size-66px" aria-hidden="true"></i>
                 </div>
                 <div>
-                  <h2 class="display-3 d-flex align-items-center text-primary">Itinéraires et Réservation <i class="icons-arrow-next icons-size-1x pl-2"></i></h2>
+                  <h2 class="display-3 d-flex align-items-center text-primary">Itinéraires et Réservation <i class="icons-arrow-next icons-size-1x pl-2" aria-hidden="true"></i></h2>
                   <p class="text-lg mb-0">Réservation, horaires des trains, trafic temps réel et trajet porte-à-porte.</p>
                 </div>
               </div>
@@ -365,7 +365,7 @@ permalink: /docs/4.0/examples/navigation
                   <i class="icons-large-group icons-size-66px"></i>
                 </div>
                 <div>
-                  <h2 class="display-3 d-flex align-items-center text-primary">Itinéraires et Réservation <i class="icons-arrow-next icons-size-1x pl-2"></i></h2>
+                  <h2 class="display-3 d-flex align-items-center text-primary">Itinéraires et Réservation <i class="icons-arrow-next icons-size-1x pl-2" aria-hidden="true"></i></h2>
                   <p class="text-lg mb-0">Réservation, horaires des trains, trafic temps réel et trajet porte-à-porte.</p>
                 </div>
               </div>
@@ -381,27 +381,27 @@ permalink: /docs/4.0/examples/navigation
       <div class="col-12 col-md-4 pb-3 pb-md-0">
 	<div class="d-flex align-items-center">
 	  <a href="#" class="text-white d-flex align-items-center">
-	    <i class="icons-large-mail icons-size-50px mr-2"></i>
+	    <i class="icons-large-mail icons-size-50px mr-2" aria-hidden="true"></i>
 	    S'abonner à la Newsletter
-	    <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+	    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 	  </a>
 	</div>
       </div>
       <div class="col-12 col-md-4 pb-3 pb-md-0">
 	<div class="d-flex align-items-center">
 	  <a href="#" class="text-white d-flex align-items-center">
-	    <i class="icons-large-information icons-size-50px mr-2"></i>
+	    <i class="icons-large-information icons-size-50px mr-2" aria-hidden="true"></i>
 	    Découvrir le programme
-	    <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+	    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 	  </a>
 	</div>
       </div>
       <div class="col-12 col-md-4">
 	<div class="d-flex align-items-center">
 	  <a href="#" class="text-white d-flex align-items-center">
-	    <i class="icons-large-warning icons-size-50px mr-2"></i>
+	    <i class="icons-large-warning icons-size-50px mr-2" aria-hidden="true"></i>
 	    Voir les actualités
-	    <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+	    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 	  </a>
 	</div>
       </div>
@@ -431,31 +431,31 @@ permalink: /docs/4.0/examples/navigation
 	  <div class="container d-flex flex-column">
 	    <div class="order-3 row text-sm gt-5 gb-6 font-weight-medium">
 	      <div class="col-12 col-md-3">
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-		<a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+		<a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+		<a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+		<a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
 	      </div>
 	      <div class="col-12 col-md-3">
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-		<a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+		<a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+		<a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+		<a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
 	      </div>
 	      <div class="col-12 col-md-3">
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-		<a href="#" class="d-flex align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+		<a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+		<a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+		<a href="#" class="d-flex align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
 	      </div>
 	      <div class="col-12 col-md-3 gt-5 gt-md-0">
 		<div class="pb-2 text-white">Suivez-nous :</div>
 		<div class="d-flex">
 		  <div class="pr-2">
-		    <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-twitter"></i></button>
+		    <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-twitter" aria-hidden="true"></i></button>
 		  </div>
 		  <div class="pr-2">
-		    <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-facebook"></i></button>
+		    <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-facebook" aria-hidden="true"></i></button>
 		  </div>
 		  <div>
-		    <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-circle-linkedin"></i></button>
+		    <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
 		  </div>
 		</div>
 	      </div>

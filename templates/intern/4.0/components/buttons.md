@@ -37,8 +37,8 @@ When using button classes on `<a>` elements that are used to trigger in-page fun
 These buttons are used for very minor actions.
 
 {% example html %}
-<a href="#" class="btn btn-link"><span>Link</span> <i class="icons-share icons-size-x75 ml-2"></i></a>
-<a href="#" class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share icons-size-x75 ml-2"></i></a>
+<a href="#" class="btn btn-link"><span>Link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></a>
+<a href="#" class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></a>
 {% endexample %}
 
 ## Icon Button
@@ -48,19 +48,19 @@ These buttons are used for a series of buttons placed next to each other; they a
 {% example html %}
 <button type="button" class="btn btn-only-icon btn-primary">
   <span class="sr-only">Search</span>
-  <i class="icons-search"></i>
+  <i class="icons-search" aria-hidden="true"></i>
 </button>
 <button type="button" class="btn btn-only-icon btn-primary" disabled>
   <span class="sr-only">Search</span>
-  <i class="icons-search"></i>
+  <i class="icons-search" aria-hidden="true"></i>
 </button>
 <button type="button" class="btn btn-only-icon btn-white">
   <span class="sr-only">Search</span>
-  <i class="icons-search"></i>
+  <i class="icons-search" aria-hidden="true"></i>
 </button>
 <button type="button" class="btn btn-only-icon btn-white" disabled>
   <span class="sr-only">Search</span>
-  <i class="icons-search"></i>
+  <i class="icons-search" aria-hidden="true"></i>
 </button>
 {% endexample %}
 
@@ -69,17 +69,17 @@ These buttons are used for a series of buttons placed next to each other; they a
 These buttons are used to move between different views or anchor points on a screen.
 
 {% example html %}
-<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-up"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-next"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-down"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-prev"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-up" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-next" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-down" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-prev" aria-hidden="true"></i></button>
 {% endexample %}
 
 {% example html %}
-<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-up"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-next"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-down"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-prev"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-up" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-next" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-down" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-prev" aria-hidden="true"></i></button>
 {% endexample %}
 
 ## Social Media Share Icon Button
@@ -87,11 +87,11 @@ These buttons are used to move between different views or anchor points on a scr
 These buttons are used to share a given page on social networks.
 
 {% example html %}
-<button type="button" class="btn-rounded btn-rounded-primary"><i class="icons-share"></i></button>
-<button type="button" class="btn-rounded btn-rounded-facebook"><i class="icons-facebook"></i></button>
-<button type="button" class="btn-rounded btn-rounded-twitter"><i class="icons-twitter"></i></button>
-<button type="button" class="btn-rounded btn-rounded-linkedin"><i class="icons-circle-linkedin"></i></button>
-<button type="button" class="btn-rounded btn-rounded-youtube"><i class="icons-youtube"></i></button>
+<button type="button" class="btn-rounded btn-rounded-primary"><i class="icons-share" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-facebook"><i class="icons-facebook" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-twitter"><i class="icons-twitter" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-linkedin"><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-youtube"><i class="icons-youtube" aria-hidden="true"></i></button>
 {% endexample %}
 
 {% example html %}
@@ -159,15 +159,15 @@ Large picture buttons are used when the options the buttons offer need a picture
 
 {% example html %}
 <button type="button" class="btn btn-card">
-  <i class="icons-large-france icons-size-90px"></i>
+  <i class="icons-large-france icons-size-90px" aria-hidden="true"></i>
   <span>Défaut</span>
 </button>
 <button type="button" class="btn btn-card active">
-  <i class="icons-large-france icons-size-90px"></i>
+  <i class="icons-large-france icons-size-90px" aria-hidden="true"></i>
   <span>Sélectionné</span>
 </button>
 <button type="button" class="btn btn-card" disabled>
-  <i class="icons-large-france icons-size-90px"></i>
+  <i class="icons-large-france icons-size-90px" aria-hidden="true"></i>
   <span>Inactif</span>
 </button>
 {% endexample %}

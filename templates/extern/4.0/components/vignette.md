@@ -16,7 +16,7 @@ Content editors can choose from the following options: illustrations, packshots 
   <div>
     <h3 class="text-gray500 mb-2">Toutes les applications</h3>
     <div class="mb-3">Lorem ipsum doloret fabdesignus classicum bossum erae taglio navus.</div>
-    <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+    <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
   </div>
 </div>
 </div>
@@ -28,7 +28,7 @@ Content editors can choose from the following options: illustrations, packshots 
   <div>
     <h3 class="text-gray500 mb-2">Toutes les applications</h3>
     <div class="mb-3">Lorem ipsum doloret fabdesignus classicum bossum erae taglio navus.</div>
-    <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+    <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
   </div>
 </div>
 {% endhighlight %}
@@ -41,7 +41,7 @@ Content editors can choose from the following options: illustrations, packshots 
       <h3 class="text-sm text-uppercase">du 16 au 19 février 2017</h3>
       <h2 class="display-2">Meetup Open Transformation</h2>
       <div class="mb-3"><i class="icons-localisation-pin"></i> Alsace</div>
-      <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+      <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
     </div>
   </div>
 </div>
@@ -53,8 +53,8 @@ Content editors can choose from the following options: illustrations, packshots 
     <div class="p-5 bg-white">
       <h3 class="text-sm text-uppercase">du 16 au 19 février 2017</h3>
       <h2 class="display-2">Meetup Open Transformation</h2>
-      <div class="mb-3"><i class="icons-localisation-pin"></i> Alsace</div>
-      <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+      <div class="mb-3"><i class="icons-localisation-pin" aria-hidden="true"></i> Alsace</div>
+      <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
     </div>
   </div>
 </div>
@@ -75,7 +75,7 @@ Event highlight vignettes showcase an event or a major news story and offer a di
       <h2 class="display-2">Meetup Open Transformation</h2>
       <p class="mb-3">Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.</p>
       <div class="mb-3">Dijon</div>
-      <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+      <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
     </div>
   </div>
 </div>
@@ -91,7 +91,7 @@ Social media vignettes display social network news feeds and are used in threes 
     <div class="p-5 bg-white">
       <h3 class="text-sm text-uppercase text-primary font-weight-medium">La transformation digitale par SNCF</h3>
       <p mb-5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit quam, mollis id porta eu, maximus eu diam. Vestibulum suscipit ligula neque, id finibus nibh egestas id.</p>
-      <div><i class="icons-twitter mr-2"></i> 16/06/2018 à 11:37</div>
+      <div><i class="icons-twitter mr-2" aria-hidden="true"></i> 16/06/2018 à 11:37</div>
     </div>
   </div>
 </div>
@@ -103,7 +103,7 @@ Social media vignettes display social network news feeds and are used in threes 
     <div class="p-5 bg-white">
       <h3 class="text-sm text-uppercase text-primary font-weight-medium">La transformation digitale par SNCF</h3>
       <p mb-5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit quam, mollis id porta eu, maximus eu diam. Vestibulum suscipit ligula neque, id finibus nibh egestas id.</p>
-      <div><i class="icons-twitter mr-2"></i> 16/06/2018 à 11:37</div>
+      <div><i class="icons-twitter mr-2" aria-hidden="true"></i> 16/06/2018 à 11:37</div>
     </div>
   </div>
 </div>

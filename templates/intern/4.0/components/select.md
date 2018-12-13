@@ -64,7 +64,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon " data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -73,7 +73,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
         <div class="form-control-container w-100 has-left-icon">
           <input type="" class="form-control form-control-sm" id="inputIcon1" placeholder="Example for auto-completion" >
           <span class="form-control-state"></span>
-          <span class="form-control-icon"><i class="icons-search"></i></span>
+          <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon " data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -103,7 +103,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
         <div class="form-control-container w-100 has-left-icon">
           <input type="" class="form-control" id="inputIcon1" placeholder="Example for auto-completion" >
           <span class="form-control-state"></span>
-          <span class="form-control-icon"><i class="icons-search"></i></span>
+          <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
         </div>
       </div>
       <div class="d-flex flex-column flex-sm-row" data-role="add">
@@ -144,7 +144,7 @@ When the list contains very different items, it may be a good idea to group them
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -190,7 +190,7 @@ When the list contains very different items, it may be a good idea to group them
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -201,7 +201,7 @@ When the list contains very different items, it may be a good idea to group them
           <div class="select-group-toggle text-primary">
             <span class="select-group-close font-weight-medium mr-2">Fermer</span>
             <span class="select-group-show font-weight-medium mr-2">Ouvrir</span>
-            <i class="icons-arrow-down icons-size-x75"></i>
+            <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
           </div>
         </div>
         <div id="collapseExample" class="collapse select-group-content">
@@ -216,7 +216,7 @@ When the list contains very different items, it may be a good idea to group them
           <div class="select-group-toggle text-primary">
             <span class="select-group-close font-weight-medium mr-2">Fermer</span>
             <span class="select-group-show font-weight-medium mr-2">Ouvrir</span>
-            <i class="icons-arrow-down icons-size-x75"></i>
+            <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
           </div>
         </div>
         <div id="collapseExample1" class="select-group-content">
@@ -251,7 +251,7 @@ Multi-select drop-down lists let users choose multiple options.
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -304,7 +304,7 @@ Multi-select drop-down lists let users choose multiple options.
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>

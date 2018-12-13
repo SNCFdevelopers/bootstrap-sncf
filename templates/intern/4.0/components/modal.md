@@ -179,7 +179,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body text-center">
-          <h2 class="h1 modal-title text-center mb-4" id="exampleModalLabel3"><i class="icons-download text-primary"></i></h2>
+          <h2 class="h1 modal-title text-center mb-4" id="exampleModalLabel3"><i class="icons-download text-primary" aria-hidden="true"></i></h2>
           <h1 class="text-center mb-4">Glissez et déposez le fichier ici</h1>
           <p class="text-center mb-4">ou</p>
           <button type="button" class="btn btn-primary">Parcourir les fichiers</button>
@@ -194,7 +194,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body text-center">
-        <h2 class="h1 modal-title text-center mb-4" id="exampleModalLabel3"><i class="icons-download text-primary"></i></h2>
+        <h2 class="h1 modal-title text-center mb-4" id="exampleModalLabel3"><i class="icons-download text-primary" aria-hidden="true"></i></h2>
         <h1 class="text-center mb-4">Glissez et déposez le fichier ici</h1>
         <p class="text-center mb-4">ou</p>
         <button type="button" class="btn btn-primary">Parcourir les fichiers</button>
@@ -232,7 +232,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
                 </select>
                 <div class="input-group-append input-group-last">
                   <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                  <i class="icons-arrow-down icon-size-x75"></i>
+                  <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -258,7 +258,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
                 </select>
                 <div class="input-group-append input-group-last">
                   <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                  <i class="icons-arrow-down icon-size-x75"></i>
+                  <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -312,7 +312,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
               </select>
               <div class="input-group-append input-group-last">
                 <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                <i class="icons-arrow-down icon-size-x75"></i>
+                <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
                 </button>
               </div>
             </div>
@@ -338,7 +338,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
               </select>
               <div class="input-group-append input-group-last">
                 <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                <i class="icons-arrow-down icon-size-x75"></i>
+                <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
                 </button>
               </div>
             </div>

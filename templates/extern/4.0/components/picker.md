@@ -20,7 +20,7 @@ Date pickers are often used for forms or for other functional purposes; they let
     </div>
     <div class="input-group-append">
       <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
-        <i class="icons-calendar"></i>
+        <i class="icons-calendar" aria-hidden="true"></i>
       </button>
     </div>
   </div>
@@ -39,7 +39,7 @@ Date pickers are often used for forms or for other functional purposes; they let
     </div>
     <div class="input-group-append">
       <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
-        <i class="icons-calendar"></i>
+        <i class="icons-calendar" aria-hidden="true"></i>
       </button>
     </div>
   </div>
@@ -58,7 +58,7 @@ Date pickers are often used for forms or for other functional purposes; they let
     </div>
     <div class="input-group-append">
       <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
-        <i class="icons-calendar"></i>
+        <i class="icons-calendar" aria-hidden="true"></i>
       </button>
     </div>
   </div>
@@ -82,7 +82,7 @@ The length of the time-picker field is not fixed, but it must respect the conten
     </div>
     <div class="input-group-append">
       <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
-        <i class="icons-calendar-time"></i>
+        <i class="icons-calendar-time" aria-hidden="true"></i>
       </button>
     </div>
   </div>
@@ -101,7 +101,7 @@ The length of the time-picker field is not fixed, but it must respect the conten
     </div>
     <div class="input-group-append">
       <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
-        <i class="icons-calendar-time"></i>
+        <i class="icons-calendar-time" aria-hidden="true"></i>
       </button>
     </div>
   </div>
@@ -122,7 +122,7 @@ The length of the time-picker field is not fixed, but it must respect the conten
           </div>
           <div class="input-group-append">
             <button type="button" class="btn btn-primary btn-only-icon" data-toggle>
-              <i class="icons-calendar"></i>
+              <i class="icons-calendar" aria-hidden="true"></i>
             </button>
           </div>
         </div>
@@ -138,7 +138,7 @@ The length of the time-picker field is not fixed, but it must respect the conten
         </div>
         <div class="input-group-append">
           <button type="button" class="btn btn-primary btn-only-icon" data-toggle>
-            <i class="icons-calendar"></i>
+            <i class="icons-calendar" aria-hidden="true"></i>
           </button>
         </div>
       </div>

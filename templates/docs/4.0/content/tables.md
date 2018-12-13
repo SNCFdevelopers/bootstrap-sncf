@@ -54,16 +54,16 @@ Using the most basic table markup, here's how `.table`-based tables look in SNCF
             <div class="cell-inner">
               <button class="btn btn-only-icon btn-transparent btn-favorite">
                 <span class="sr-only">Favorite</span>
-                <i class="icons-favorite-on icons-size-1x25"></i>
+                <i class="icons-favorite-on icons-size-1x25" aria-hidden="true"></i>
               </button>
               <button class="btn btn-only-icon btn-transparent btn-color-gray">
                 <span class="sr-only">Favorite</span>
-                <i class="icons-divers icons-size-1x25"></i>
+                <i class="icons-divers icons-size-1x25" aria-hidden="true"></i>
               </button>
               <div class="btn-group dropdown">
                 <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
                   <span class="sr-only">Favorite</span>
-                  <i class="icons-options icons-size-1x75"></i>
+                  <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
                   <button type="button" class="dropdown-item" href="#">Télécharger</button>
@@ -129,7 +129,7 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
             <div class="btn-group dropdown">
               <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
                 <span class="sr-only">Favorite</span>
-                <i class="icons-options icons-size-1x75"></i>
+                <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
               </button>
               <div class="dropdown-menu dropdown-menu-right">
                 <button type="button" class="dropdown-item" href="#">Télécharger</button>

@@ -31,7 +31,7 @@ Notification messages (confirming actions, messages related to deletions) are di
 
 {% example html %}
 <div class="text-primary pl-4 pt-2 pb-2 bg-light font-weight-medium">
-  <i class="icons-checked mr-2"></i> Votre texte a bien été ajouté au dossier SNCF_MATERIEL.
+  <i class="icons-checked mr-2" aria-hidden="true"></i> Votre texte a bien été ajouté au dossier SNCF_MATERIEL.
 </div>
 {% endexample %}
 

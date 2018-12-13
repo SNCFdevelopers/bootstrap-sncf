@@ -43,7 +43,7 @@ Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are st
 Use `.has-left-icon` or `.has-right-icon` class on `.form-control` element. Then use `.form-control-icon` element with an fonticon element inside.
 
 {% capture control_icon %}
-  <span class="form-control-icon"><i class="icons-search"></i></span>
+  <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
 {% endcapture %}
 
 {% example html %}
@@ -113,34 +113,34 @@ Add a `stretchy` class on `textarea` element.
     <div class="form-toolbar-content">
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Bold</span>
-        <i class="icons-toolbar-bold"></i>
+        <i class="icons-toolbar-bold" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Italic</span>
-        <i class="icons-toolbar-italic"></i>
+        <i class="icons-toolbar-italic" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Underline</span>
-        <i class="icons-toolbar-underline"></i>
+        <i class="icons-toolbar-underline" aria-hidden="true"></i>
       </button>
       <span class="form-toolbar-separator"></span>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Text align left</span>
-        <i class="icons-toolbar-left icons-size-1x25"></i>
+        <i class="icons-toolbar-left icons-size-1x25" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Text align center</span>
-        <i class="icons-toolbar-center icons-size-1x25"></i>
+        <i class="icons-toolbar-center icons-size-1x25" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">List</span>
-        <i class="icons-toolbar-list icons-size-1x25"></i>
+        <i class="icons-toolbar-list icons-size-1x25" aria-hidden="true"></i>
       </button>
     </div>
     <div class="form-toolbar-right">
       <div class="btn-group dropdown">
         <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="icons-options icons-size-1x25"></i>
+          <i class="icons-options icons-size-1x25" aria-hidden="true"></i>
         </button>
         <div class="dropdown-menu dropdown-menu-right">
           <button class="dropdown-item" type="button">Option 1</button>
@@ -161,10 +161,10 @@ Add a `stretchy` class on `textarea` element.
 
 {% example html %}
 <div class="range-slider" data-component="range-slider" data-target="#range_01">
-  <i class="icons-interrogation icons-size-1x25 pr-2"></i>
+  <i class="icons-interrogation icons-size-1x25 pr-2" aria-hidden="true"></i>
   <div id="range_01" data-min="25" data-max="125" data-hide-from-to="true">
   </div>
-  <i class="icons-interrogation icons-size-1x25 pl-2"></i>
+  <i class="icons-interrogation icons-size-1x25 pl-2" aria-hidden="true"></i>
 </div>
 {% endexample %}
 
@@ -193,7 +193,7 @@ Add a `stretchy` class on `textarea` element.
   <span class="chips chips-label">Mathéo Mercier</span>
   <button type="button" class="chips chips-btn chips-only-icon">
     <span class="sr-only">Remove</span>
-    <i class="icons-close"></i>
+    <i class="icons-close" aria-hidden="true"></i>
   </button>
 </div>
 {% endexample %}

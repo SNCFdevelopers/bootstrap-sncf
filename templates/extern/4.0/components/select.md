@@ -74,7 +74,7 @@ Custom `<select>` menus need a custom class and data attribute, `.select-improve
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -120,7 +120,7 @@ Custom `<select>` menus need a custom class and data attribute, `.select-improve
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -131,7 +131,7 @@ Custom `<select>` menus need a custom class and data attribute, `.select-improve
           <div class="select-group-toggle text-primary">
             <span class="select-group-close mr-2">Fermer</span>
             <span class="select-group-show mr-2">Ouvrir</span>
-            <i class="icons-arrow-down icons-size-x75"></i>
+            <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
           </div>
         </div>
         <div id="collapseExample" class="collapse select-group-content">
@@ -146,7 +146,7 @@ Custom `<select>` menus need a custom class and data attribute, `.select-improve
           <div class="select-group-toggle text-primary">
             <span class="select-group-close mr-2">Fermer</span>
             <span class="select-group-show mr-2">Ouvrir</span>
-            <i class="icons-arrow-down icons-size-x75"></i>
+            <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
           </div>
         </div>
         <div id="collapseExample1" class="select-group-content">
@@ -179,7 +179,7 @@ Custom `<select>` menus need a custom class and data attribute, `.select-improve
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>

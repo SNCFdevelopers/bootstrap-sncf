@@ -108,7 +108,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
   <div class="panel-inner">
     <div class="panel-head">
       <h5 class="h3 mb-0" data-role="prev">
-        <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+        <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
         Programme
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -125,27 +125,27 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           
             <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#loisirs-tourisme">
               Loisirs & Tourisme
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#toutes-les-lignes">
               Toutes les lignes
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#services-mobiles">
               Services mobiles
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#au-quotidien">
               Au quotidien
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#le-réseaux">
               Le réseau
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
         </div>
@@ -157,7 +157,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
   <div class="panel-inner">
     <div class="panel-head">
       <h5 class="h3 mb-0" data-role="prev">
-        <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+        <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
         Loisirs &amp; Tourisme
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -169,17 +169,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           
             <button type="button" class="subnav-item">
               Category 1
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Category 2
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Category 3
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
       </nav>
@@ -191,7 +191,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
   <div class="panel-inner">
     <div class="panel-head">
       <h5 class="h3 mb-0" data-role="prev">
-        <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+        <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
         Toutes les lignes
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -203,27 +203,27 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           
             <button type="button" class="subnav-item">
               RER &amp; Trains
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Noctilien
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Métro
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Tramways
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Le réseau
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
       </nav>
@@ -235,7 +235,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
   <div class="panel-inner">
     <div class="panel-head">
       <h5 class="h3 mb-0" data-role="prev">
-        <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+        <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
         Services mobiles
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -247,17 +247,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           
             <button type="button" class="subnav-item">
               Services mobiles 1
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Services mobiles 2
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Services mobiles 3
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
       </nav>
@@ -269,7 +269,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
   <div class="panel-inner">
     <div class="panel-head">
       <h5 class="h3 mb-0" data-role="prev">
-        <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+        <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
         Au quotidien
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -281,17 +281,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           
             <button type="button" class="subnav-item">
               Quotidien 1
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Quotidien 2
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Quotidien 3
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
       </nav>
@@ -303,7 +303,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
   <div class="panel-inner">
     <div class="panel-head">
       <h5 class="h3 mb-0" data-role="prev">
-        <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+        <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
         Le réseau
       </h5>
       <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -315,17 +315,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           
             <button type="button" class="subnav-item">
               Réseau 1
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Réseau 2
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
             <button type="button" class="subnav-item">
               Réseau 3
-              <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           
       </nav>
@@ -343,7 +343,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div class="panel-inner">
 	<div class="panel-head">
 	  <h3 class="h3 mb-0" data-role="prev">
-	    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+	    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
 	    Programme
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -360,27 +360,27 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	      
 		<button type="button" class="subnav-item" data-role="sub-toggle" data-target="#loisirs-tourisme">
 		  Loisirs & Tourisme
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item" data-role="sub-toggle" data-target="#toutes-les-lignes">
 		  Toutes les lignes
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item" data-role="sub-toggle" data-target="#services-mobiles">
 		  Services mobiles
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item" data-role="sub-toggle" data-target="#au-quotidien">
 		  Au quotidien
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item" data-role="sub-toggle" data-target="#le-réseaux">
 		  Le réseau
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 	    </div>
@@ -392,7 +392,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div class="panel-inner">
 	<div class="panel-head">
 	  <h3 class="h3 mb-0" data-role="prev">
-	    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+	    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
 	    Loisirs &amp; Tourisme
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -404,17 +404,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	      
 		<button type="button" class="subnav-item">
 		  Category 1
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Category 2
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Category 3
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 	  </nav>
@@ -426,7 +426,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div class="panel-inner">
 	<div class="panel-head">
 	  <h3 class="h3 mb-0" data-role="prev">
-	    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+	    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
 	    Toutes les lignes
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -438,27 +438,27 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	      
 		<button type="button" class="subnav-item">
 		  RER &amp; Trains
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Noctilien
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Métro
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Tramways
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Le réseau
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 	  </nav>
@@ -470,7 +470,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div class="panel-inner">
 	<div class="panel-head">
 	  <h3 class="h3 mb-0" data-role="prev">
-	    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+	    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
 	    Services mobiles
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -482,17 +482,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	      
 		<button type="button" class="subnav-item">
 		  Services mobiles 1
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Services mobiles 2
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Services mobiles 3
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 	  </nav>
@@ -504,7 +504,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div class="panel-inner">
 	<div class="panel-head">
 	  <h3 class="h3 mb-0" data-role="prev">
-	    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+	    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
 	    Au quotidien
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -516,17 +516,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	      
 		<button type="button" class="subnav-item">
 		  Quotidien 1
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Quotidien 2
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Quotidien 3
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 	  </nav>
@@ -538,7 +538,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div class="panel-inner">
 	<div class="panel-head">
 	  <h3 class="h3 mb-0" data-role="prev">
-	    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+	    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
 	    Le réseaux
 	  </h3>
 	  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -550,17 +550,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 	      
 		<button type="button" class="subnav-item">
 		  Réseaux 1
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Réseaux 2
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 		<button type="button" class="subnav-item">
 		  Réseaux 3
-		  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+		  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 		</button>
 	      
 	  </nav>
@@ -585,7 +585,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="form-control-container has-left-icon">
                 <input type="" class="form-control " id="search">
                 <span class="form-control-state"></span>
-                <span class="form-control-icon"><i class="icons-search"></i></span>
+                <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
               </div>
             </div>
             <h3 class="gt-5 mb-3 d-md-none">Menu</h3>
@@ -593,26 +593,26 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               
                 <button type="button" class="nav-item" data-role="main-toggle" data-target="#programme">
                   Programme
-                  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                 </button>
               
                 <button type="button" class="nav-item" data-role="main-toggle" data-target="#startup">
                   Startup
-                  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                 </button>
               
                 <button type="button" class="nav-item" data-role="main-toggle" data-target="#store">
                   Store
-                  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                 </button>
               
                 <button type="button" class="nav-item" data-role="main-toggle" data-target="#resources">
                   Resources
-                  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                 </button>
               
               <div class="dropdown dropdown-menubar gt-5 d-md-none">
-                <button type="button" class="btn w-100 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessibilité <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>
+                <button type="button" class="btn w-100 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessibilité <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i></button>
                 <div class="dropdown-menu">
                   <div data-role="stop-propagation">
                     <div class="mb-3">
@@ -675,7 +675,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                 </div>
               </div>
               <div class="dropdown dropdown-menubar gt-2 d-md-none">
-                <button type="button" class="btn w-100 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Langue : Fr <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>
+                <button type="button" class="btn w-100 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Langue : Fr <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i></button>
                 <div class="dropdown-menu">
                   <div class="pr-4">
                     <div class="dropdown-menu-lang-item gb-3 active">
@@ -699,13 +699,13 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
             <li class="toolbar-item d-none d-md-block">
               <a href="#" class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
                 <span class="sr-only">Search</span>
-                <i class="icons-menu-searchbar icons-size-30px"></i>
+                <i class="icons-menu-searchbar icons-size-30px" aria-hidden="true"></i>
               </a>
             </li>
             <li class="toolbar-item no-separator separator-md">
               <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
                 <span class="sr-only">Account</span>
-                <i class="icons-menu-account icons-size-30px"></i>
+                <i class="icons-menu-account icons-size-30px" aria-hidden="true"></i>
               </button>
             </li>
             <li class="toolbar-item no-separator-md d-md-none">
@@ -726,7 +726,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Programme
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -743,27 +743,27 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#loisirs-tourisme">
                           Loisirs & Tourisme
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#toutes-les-lignes">
                           Toutes les lignes
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#services-mobiles">
                           Services mobiles
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#au-quotidien">
                           Au quotidien
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#le-réseaux">
                           Le réseaux
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                     </div>
@@ -777,7 +777,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Loisirs & Tourisme
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -789,17 +789,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item">
                           Category 1
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Category 2
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Category 3
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                   </nav>
@@ -811,7 +811,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Toutes les lignes
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -823,27 +823,27 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item">
                           RER & Trains
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Noctilien
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Métro
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Tramways
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Le réseau
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                   </nav>
@@ -855,7 +855,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Services mobiles
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -867,17 +867,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item">
                           Services mobiles 1
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Services mobiles 2
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Services mobiles 3
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                   </nav>
@@ -889,7 +889,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Au quotidien
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -901,17 +901,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item">
                           Quotidien 1
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Quotidien 2
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Quotidien 3
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                   </nav>
@@ -923,7 +923,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Le réseaux
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -935,17 +935,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item">
                           Réseaux 1
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Réseaux 2
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Réseaux 3
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                   </nav>
@@ -958,7 +958,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Startup
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -975,7 +975,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#startup-catégorie">
                           Startup catégorie
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                     </div>
@@ -989,7 +989,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Startup catégorie
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -1001,17 +1001,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item">
                           Category 1
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Category 2
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Category 3
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                   </nav>
@@ -1024,7 +1024,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Store
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -1041,7 +1041,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#store-catégorie">
                           Store catégorie
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                     </div>
@@ -1055,7 +1055,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Store catégorie
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -1067,17 +1067,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item">
                           Category 1
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Category 2
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Category 3
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                   </nav>
@@ -1090,7 +1090,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Resources
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -1107,7 +1107,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#resources-catégorie">
                           Resources catégorie
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                     </div>
@@ -1121,7 +1121,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
-                    <i class="icons-arrow-prev icons-size-1x mr-3"></i>
+                    <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     Resources catégorie
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
@@ -1133,17 +1133,17 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
                       
                         <button type="button" class="subnav-item">
                           Category 1
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Category 2
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                         <button type="button" class="subnav-item">
                           Category 3
-                          <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
                       
                   </nav>

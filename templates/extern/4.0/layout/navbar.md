@@ -21,13 +21,13 @@ permalink: /docs/4.0/layout/navbar
     </div>
     <ul class="mastheader-toolbar mb-0 d-none d-md-flex">
       <li class="mastheader-toolbar-item">
-        <button type="button">Accessibilité <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>
+        <button type="button">Accessibilité <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i></button>
       </li>
       <li class="mastheader-toolbar-item">
-        <button type="button">Langue : Fr <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>
+        <button type="button">Langue : Fr <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i></button>
       </li>
       <li class="mastheader-toolbar-item mastheader-toolbar-item-lg">
-        <button type="button">Tout sncf <i class="icons-options ml-3"></i></button>
+        <button type="button">Tout sncf <i class="icons-options ml-3" aria-hidden="true"></i></button>
       </li>
     </ul>
   </div>

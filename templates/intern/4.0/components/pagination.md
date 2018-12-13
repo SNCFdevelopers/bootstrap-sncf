@@ -20,13 +20,13 @@ In addition, as pages likely have more than one such navigation section, it's ad
   <ul class="pagination">
     <li class="page-item page-skip">
       <a class="page-link" href="#">
-        <i class="icons-arrow-double icon-rotate-180 icons-size-x5"></i>
+        <i class="icons-arrow-double icon-rotate-180 icons-size-x5" aria-hidden="true"></i>
         <span class="d-none d-sm-inline ml-2">Début</span>
       </a>
     </li>
     <li class="page-item page-skip">
       <a class="page-link" href="#">
-        <i class="icons-arrow-prev icons-size-x5"></i>
+        <i class="icons-arrow-prev icons-size-x5" aria-hidden="true"></i>
         <span class="d-none d-sm-inline ml-2">Précédent</span>
       </a>
     </li>
@@ -36,13 +36,13 @@ In addition, as pages likely have more than one such navigation section, it's ad
     <li class="page-item page-skip">
       <a class="page-link" href="#">
         <span class="d-none d-sm-inline mr-2">Suivant</span>
-        <i class="icons-arrow-next icons-size-x5"></i>
+        <i class="icons-arrow-next icons-size-x5" aria-hidden="true"></i>
       </a>
     </li>
     <li class="page-item page-skip">
       <a class="page-link" href="#">
         <span class="d-none d-sm-inline mr-2">Fin</span>
-        <i class="icons-arrow-double icons-size-x5"></i>
+        <i class="icons-arrow-double icons-size-x5" aria-hidden="true"></i>
       </a>
     </li>
   </ul>
@@ -60,7 +60,7 @@ While the `.disabled` class uses `pointer-events: none` to _try_ to disable the 
   <ul class="pagination">
     <li class="page-item page-skip disabled">
       <a class="page-link" href="#" tabindex="-1">
-        <i class="icons-arrow-prev icons-size-x5"></i>
+        <i class="icons-arrow-prev icons-size-x5" aria-hidden="true"></i>
         <span class="d-none d-sm-inline ml-2">Précédent</span>
       </a>
     </li>
@@ -74,7 +74,7 @@ While the `.disabled` class uses `pointer-events: none` to _try_ to disable the 
     <li class="page-item page-skip">
       <a class="page-link" href="#">
         <span class="d-none d-sm-inline mr-2">Suivant</span>
-        <i class="icons-arrow-next icons-size-x5"></i>
+        <i class="icons-arrow-next icons-size-x5" aria-hidden="true"></i>
       </a>
     </li>
   </ul>
@@ -141,13 +141,13 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
   <ul class="pagination justify-content-center">
     <li class="page-item page-skip">
       <a class="page-link" href="#">
-        <i class="icons-arrow-double icon-rotate-180 icons-size-x5"></i>
+        <i class="icons-arrow-double icon-rotate-180 icons-size-x5" aria-hidden="true"></i>
         <span class="d-none d-sm-inline ml-2">Début</span>
       </a>
     </li>
     <li class="page-item page-skip">
       <a class="page-link" href="#">
-        <i class="icons-arrow-prev icons-size-x5"></i>
+        <i class="icons-arrow-prev icons-size-x5" aria-hidden="true"></i>
         <span class="d-none d-sm-inline ml-2">Précédent</span>
       </a>
     </li>
@@ -157,13 +157,13 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
     <li class="page-item page-skip">
       <a class="page-link" href="#">
         <span class="d-none d-sm-inline mr-2">Suivant</span>
-        <i class="icons-arrow-next icons-size-x5"></i>
+        <i class="icons-arrow-next icons-size-x5" aria-hidden="true"></i>
       </a>
     </li>
     <li class="page-item page-skip">
       <a class="page-link" href="#">
         <span class="d-none d-sm-inline mr-2">Fin</span>
-        <i class="icons-arrow-double icons-size-x5"></i>
+        <i class="icons-arrow-double icons-size-x5" aria-hidden="true"></i>
       </a>
     </li>
   </ul>
@@ -175,13 +175,13 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
   <ul class="pagination justify-content-end">
     <li class="page-item page-skip">
       <a class="page-link" href="#">
-        <i class="icons-arrow-double icon-rotate-180 icons-size-x5"></i>
+        <i class="icons-arrow-double icon-rotate-180 icons-size-x5" aria-hidden="true"></i>
         <span class="d-none d-sm-inline ml-2">Début</span>
       </a>
     </li>
     <li class="page-item page-skip">
       <a class="page-link" href="#">
-        <i class="icons-arrow-prev icons-size-x5"></i>
+        <i class="icons-arrow-prev icons-size-x5" aria-hidden="true"></i>
         <span class="d-none d-sm-inline ml-2">Précédent</span>
       </a>
     </li>
@@ -191,13 +191,13 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
     <li class="page-item page-skip">
       <a class="page-link" href="#">
         <span class="d-none d-sm-inline mr-2">Suivant</span>
-        <i class="icons-arrow-next icons-size-x5"></i>
+        <i class="icons-arrow-next icons-size-x5" aria-hidden="true"></i>
       </a>
     </li>
     <li class="page-item page-skip">
       <a class="page-link" href="#">
         <span class="d-none d-sm-inline mr-2">Fin</span>
-        <i class="icons-arrow-double icons-size-x5"></i>
+        <i class="icons-arrow-double icons-size-x5" aria-hidden="true"></i>
       </a>
     </li>
   </ul>

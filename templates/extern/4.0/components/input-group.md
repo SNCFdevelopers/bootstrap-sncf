@@ -15,7 +15,7 @@ permalink: /docs/4.0/components/input-group
     <div class="btn-group dropdown" data-component="select-radios">
       <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span data-role="placeholder">Tous ces mots</span>
-        <i class="icons-arrow-down"></i>
+        <i class="icons-arrow-down" aria-hidden="true"></i>
       </button>
       <div class="dropdown-menu">
         <input data-role="value" type="radio" name="keywordSearch" value="keywordSearch1" id="action1" class="sr-only"/>
@@ -45,7 +45,7 @@ permalink: /docs/4.0/components/input-group
   </div>
   <div class="input-group-append">
     <button type="button" class="btn btn-primary btn-only-icon">
-      <i class="icons-search"></i>
+      <i class="icons-search" aria-hidden="true"></i>
     </button>
   </div>
 </div>
@@ -59,7 +59,7 @@ permalink: /docs/4.0/components/input-group
     <div class="btn-group dropdown" data-component="select-radios">
       <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span data-role="placeholder">Tout</span>
-        <i class="icons-arrow-down"></i>
+        <i class="icons-arrow-down" aria-hidden="true"></i>
       </button>
       <div class="dropdown-menu">
         <input data-role="value" type="radio" name="keywordSearch" value="keywordSearch1" id="action1" class="sr-only"/>
@@ -77,7 +77,7 @@ permalink: /docs/4.0/components/input-group
   </div>
   <div class="input-group-append">
     <button type="button" class="btn btn-primary btn-only-icon">
-      <i class="icons-search"></i>
+      <i class="icons-search" aria-hidden="true"></i>
     </button>
   </div>
 </div>
@@ -96,7 +96,7 @@ permalink: /docs/4.0/components/input-group
       </div>
       <div class="input-group-append input-group-last">
         <button type="button" class="btn btn-primary btn-only-icon active">
-          <i class="icons-search"></i>
+          <i class="icons-search" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -106,11 +106,11 @@ permalink: /docs/4.0/components/input-group
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Sem Inceptos Tellus</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Sollicitudin Adipiscing Mattis</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item advanced-search-menu-title">
         <span>Recherche récentes</span>
@@ -118,11 +118,11 @@ permalink: /docs/4.0/components/input-group
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Amet Porta</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Pharetra Fusce Venenatis</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
     </div>
   </div>

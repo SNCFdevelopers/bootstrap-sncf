@@ -20,27 +20,27 @@ Subsections **must all be** contained in one unique section `<footer class="mast
       <div class="col-12 col-md-4 pb-3 pb-md-0">
 	<div class="d-flex align-items-center">
 	  <a href="#" class="text-white d-flex align-items-center">
-            <i class="icons-large-mail icons-size-50px mr-2"></i>
+            <i class="icons-large-mail icons-size-50px mr-2" aria-hidden="true"></i>
 	    S'abonner à la Newsletter
-	    <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+	    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
 	  </a>
 	</div>
       </div>
       <div class="col-12 col-md-4 pb-3 pb-md-0">
 	<div class="d-flex align-items-center">
 	  <a href="#" class="text-white d-flex align-items-center">
-	    <i class="icons-large-information icons-size-50px mr-2"></i>
+	    <i class="icons-large-information icons-size-50px mr-2" aria-hidden="true"></i>
 	    Découvrir le programme
-	    <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+	    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
           </a>
 	</div>
       </div>
       <div class="col-12 col-md-4">
 	<div class="d-flex align-items-center">
 	  <a href="#" class="text-white d-flex align-items-center">
-	    <i class="icons-large-warning icons-size-50px mr-2"></i>
+	    <i class="icons-large-warning icons-size-50px mr-2" aria-hidden="true"></i>
 	    Voir les actualités
-	    <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+	    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
           </a>
 	</div>
       </div>
@@ -109,31 +109,31 @@ Subsections **must all be** contained in one unique section `<footer class="mast
   <div class="container d-flex flex-column">
     <div class="order-3 row text-sm gt-5 gb-6 font-weight-medium">
       <div class="col-12 col-md-3">
-        <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-        <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-        <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+        <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+        <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+        <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
       </div>
       <div class="col-12 col-md-3">
-        <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-        <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-        <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+        <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+        <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+        <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
       </div>
       <div class="col-12 col-md-3">
-        <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-        <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-        <a href="#" class="d-flex align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+        <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+        <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+        <a href="#" class="d-flex align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
       </div>
       <div class="col-12 col-md-3 gt-5 gt-md-0">
         <div class="pb-2 text-white">Suivez-nous :</div>
         <div class="d-flex">
           <div class="pr-2">
-            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-twitter"></i></button>
+            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-twitter" aria-hidden="true"></i></button>
           </div>
           <div class="pr-2">
-            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-facebook"></i></button>
+            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-facebook" aria-hidden="true"></i></button>
           </div>
           <div>
-            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-circle-linkedin"></i></button>
+            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
           </div>
         </div>
       </div>
@@ -209,27 +209,27 @@ Subsections **must all be** contained in one unique section `<footer class="mast
             <div class="col-12 col-md-4 pb-3 pb-md-0">
               <div class="d-flex align-items-center">
 	        <a href="#" class="text-white d-flex align-items-center">
-                  <i class="icons-large-mail icons-size-50px mr-2"></i>
+                  <i class="icons-large-mail icons-size-50px mr-2" aria-hidden="true"></i>
                   S'abonner à la Newsletter
-                  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
             <div class="col-12 col-md-4 pb-3 pb-md-0">
               <div class="d-flex align-items-center">
 	        <a href="#" class="text-white d-flex align-items-center">
-                  <i class="icons-large-information icons-size-50px mr-2"></i>
+                  <i class="icons-large-information icons-size-50px mr-2" aria-hidden="true"></i>
                   Découvrir le programme
-                  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="d-flex align-items-center">
 	        <a href="#" class="text-white d-flex align-items-center">
-                  <i class="icons-large-warning icons-size-50px mr-2"></i>
+                  <i class="icons-large-warning icons-size-50px mr-2" aria-hidden="true"></i>
                   Voir les actualités
-                  <i class="icons-arrow-next icons-size-x5 ml-2"></i>
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -257,31 +257,31 @@ Subsections **must all be** contained in one unique section `<footer class="mast
 
           <div class="order-3 row text-sm gt-5 gb-6 font-weight-medium">
             <div class="col-12 col-md-3">
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+              <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
             </div>
             <div class="col-12 col-md-3">
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+              <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
             </div>
             <div class="col-12 col-md-3">
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
-              <a href="#" class="d-flex align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+              <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+              <a href="#" class="d-flex align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
             </div>
             <div class="col-12 col-md-3 gt-5 gt-md-0">
               <div class="pb-2 text-white">Suivez-nous :</div>
               <div class="d-flex">
                 <div class="pr-2">
-                  <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-twitter"></i></button>
+                  <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-twitter" aria-hidden="true"></i></button>
                 </div>
                 <div class="pr-2">
-                  <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-facebook"></i></button>
+                  <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-facebook" aria-hidden="true"></i></button>
                 </div>
                 <div>
-                  <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-circle-linkedin"></i></button>
+                  <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
                 </div>
               </div>
             </div>

@@ -17,7 +17,7 @@ Menu buttons (select radio add-ons) are used to define a search type.
     <div class="btn-group dropdown" data-component="select-radios">
       <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span data-role="placeholder">Tous ces mots</span>
-        <i class="icons-arrow-down"></i>
+        <i class="icons-arrow-down" aria-hidden="true"></i>
       </button>
       <div class="dropdown-menu dropdown-menu-right">
         <input data-role="value" type="radio" name="keywordSearch" value="keywordSearch1" id="action1" class="sr-only"/>
@@ -47,7 +47,7 @@ Menu buttons (select radio add-ons) are used to define a search type.
   </div>
   <div class="input-group-append">
     <button type="button" class="btn btn-primary btn-only-icon">
-      <i class="icons-search"></i>
+      <i class="icons-search" aria-hidden="true"></i>
     </button>
   </div>
 </div>
@@ -62,12 +62,12 @@ Menu buttons (select radio add-ons) are used to define a search type.
     <span class="form-control-state"></span>
     <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
       <span class="sr-only">Clear text</span>
-      <i class="icons-close"></i>
+      <i class="icons-close" aria-hidden="true"></i>
     </button>
   </div>
   <div class="input-group-append">
     <button type="button" class="btn btn-primary btn-only-icon">
-      <i class="icons-search"></i>
+      <i class="icons-search" aria-hidden="true"></i>
     </button>
   </div>
 </div>
@@ -81,7 +81,7 @@ Menu buttons (select radio add-ons) are used to define a search type.
     <div class="btn-group dropdown" data-component="select-radios">
       <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span data-role="placeholder">Tout</span>
-        <i class="icons-arrow-down"></i>
+        <i class="icons-arrow-down" aria-hidden="true"></i>
       </button>
       <div class="dropdown-menu dropdown-menu-right">
         <input data-role="value" type="radio" name="keywordSearch" value="keywordSearch1" id="action11" class="sr-only"/>
@@ -99,7 +99,7 @@ Menu buttons (select radio add-ons) are used to define a search type.
   </div>
   <div class="input-group-append">
     <button type="button" class="btn btn-primary btn-only-icon">
-      <i class="icons-search"></i>
+      <i class="icons-search" aria-hidden="true"></i>
     </button>
   </div>
 </div>
@@ -123,22 +123,22 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
       <div class="input-group-append input-group-last">
         <button type="button" class="btn btn-primary btn-only-icon active">
-          <i class="icons-search"></i>
+          <i class="icons-search" aria-hidden="true"></i>
         </button>
       </div>
     </div>
     <div class="advanced-search-menu" data-role="menu">
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link"><span class="text-primary">Gestionnaire</span>&#160;de portefeuille</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link"><span class="text-primary">Gestionnaire</span>&#160;de commande</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link"><span class="text-primary">Gestionnaire</span>&#160;de bureau</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
     </div>
   </div>
@@ -158,7 +158,7 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
       <div class="input-group-append input-group-last">
         <button type="button" class="btn btn-primary btn-only-icon active">
-          <i class="icons-search"></i>
+          <i class="icons-search" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -169,15 +169,15 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Amet Porta</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Pharetra Fusce Venenatis</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Essaincehef Digital</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
     </div>
   </div>
@@ -195,7 +195,7 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
       <div class="input-group-append input-group-last">
         <button type="button" class="btn btn-primary btn-only-icon active">
-          <i class="icons-search"></i>
+          <i class="icons-search" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -205,15 +205,15 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Sem Inceptos Tellus</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Sollicitudin Adipiscing Mattis</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Fabdesignus Lupus Maxima</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
     </div>
   </div>
@@ -233,7 +233,7 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
       <div class="input-group-append input-group-last">
         <button type="button" class="btn btn-primary btn-only-icon active">
-          <i class="icons-search"></i>
+          <i class="icons-search" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -243,11 +243,11 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Sem Inceptos Tellus</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Sollicitudin Adipiscing Mattis</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item advanced-search-menu-title">
         <span>Recherches récentes</span>
@@ -255,11 +255,11 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Amet Porta</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
       <div class="advanced-search-menu-item">
         <button type="button" class="btn btn-link">Pharetra Fusce Venenatis</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle"></i></button>
+        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
       </div>
     </div>
   </div>

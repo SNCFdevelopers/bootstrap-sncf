@@ -29,7 +29,7 @@ Content editors can choose from the following options: illustrations, packshots 
               <h3 class="text-sm font-weight-medium text-primary text-uppercase">Transformation Digitale, Événement, Open Innovation</h3>
               <h2>PITCHS STARTUPS AU MEETUP DEUTSCHE BAHN - SNCF</h2>
               <p class="mb-2">Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.</p>
-              <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+              <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -42,8 +42,8 @@ Content editors can choose from the following options: illustrations, packshots 
     <div class="col-12 col-md-6"></div>
     <div class="col-12 col-md-6 d-md-flex align-items-md-end justify-content-center justify-content-md-between">
       <div class="swiper-buttons d-none d-md-flex">
-        <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75"></i></div>
-        <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75"></i></div>
+        <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75" aria-hidden="true"></i></div>
+        <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75" aria-hidden="true"></i></div>
       </div>
       <div class="gr-md-5">
         <div class="swiper-pagination" data-role="pagination"></div>
@@ -73,7 +73,7 @@ Carousel footer pushes on text pages offer additional content of interest to use
               <div>
                 <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -83,7 +83,7 @@ Carousel footer pushes on text pages offer additional content of interest to use
               <div>
                 <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ Carousel footer pushes on text pages offer additional content of interest to use
               <div>
                 <div class="text-sm text-uppercase text-primary font-weight-medium mb-2">Internet industriel</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ Carousel footer pushes on text pages offer additional content of interest to use
               <div>
                 <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -111,8 +111,8 @@ Carousel footer pushes on text pages offer additional content of interest to use
       </div>
       <div class="swiper-pagination gt-5" data-role="pagination"></div>
       <div class="swiper-buttons">
-        <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75"></i></div>
-        <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75"></i></div>
+        <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75" aria-hidden="true"></i></div>
+        <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75" aria-hidden="true"></i></div>
       </div>
     </div>
   </div>
