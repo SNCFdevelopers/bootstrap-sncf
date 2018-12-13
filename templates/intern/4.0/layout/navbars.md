@@ -12,7 +12,7 @@ permalink: /docs/4.0/layout/navbars
 By default, the page has a header, a main navbar, a section header and a content area. The header contains the website’s logo, a search function, notifications and a user account menu. The user account menu lets the user manage account settings and/or preferences and log out.
 
 {% example html %}
-<header class="mastheader">
+<header role="banner" class="mastheader">
   <div class="mastheader-logo">
     <a href="/docs">
       <span class="sr-only">SNCF</span>
@@ -80,7 +80,7 @@ Pro-tip : reduce your browser's size or use mobile utilities to see the horizont
 {% endcallout %}
 
 {% example html %}
-<nav class="mastnav">
+<nav role="navigation" class="mastnav">
   <div class="mastnav-top">
     <a href="#" class="mastnav-item active">
       <i class="icons-bookmark icons-size-1x5" aria-hidden="true"></i>

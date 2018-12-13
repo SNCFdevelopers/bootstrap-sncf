@@ -8,7 +8,7 @@ permalink: /docs/4.0/layout/navbar
 ---
 
 {% example html %}
-<header class="mastheader">
+<header role="banner" class="mastheader">
   <div class="container">
     <div class="d-flex align-items-center">
       <div class="mastheader-logo">

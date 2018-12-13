@@ -8,7 +8,7 @@ permalink: /docs/4.0/layout/navigation
 ---
 
 {% example html %}
-<nav class="mastnav">
+<nav role="navigation" class="mastnav">
   <div class="mastnav-top">
     <a href="#" class="mastnav-item active">
       <i class="icons-bookmark icons-size-1x5" aria-hidden="true"></i>

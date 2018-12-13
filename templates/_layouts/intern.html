@@ -4,7 +4,7 @@
     {% include header.html %}
   </head>
   <body>
-    <header class="mastheader">
+    <header role="banner" class="mastheader">
       <div class="mastheader-logo">
         <a href="/docs">
           <span class="sr-only">SNCF</span>
@@ -61,7 +61,7 @@
         </li>
       </ul>
     </header>
-    <nav class="mastnav">
+    <nav role="navigation" class="mastnav">
       <div class="mastnav-top">
         <a href="#" class="mastnav-item active">
           <i class="icons-favorite-on icons-size-1x5" aria-hidden="true"></i>
@@ -91,7 +91,7 @@
         </a>
       </div>
     </nav>
-    <main div class="mastcontainer">
+    <main role="main" class="mastcontainer">
       {{ content }}
     </main>
     {% include scripts.html %}
