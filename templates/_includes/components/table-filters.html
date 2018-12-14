@@ -28,7 +28,7 @@
           <th scope="col"><div class="cell-inner">Vers</div></th>
           <th scope="col"><div class="cell-inner">Agent</div></th>
           <th scope="col"><div class="cell-inner cell-sort">Mise à jour <i class="ml-2 icons-sort"></i></div></th>
-          <th scope="col"></th>
+          <th scope="col"><span class="sr-only">Actions</span></th>
         </tr>
       </thead>
       <tbody class="tbody">
@@ -55,11 +55,11 @@
                 <i class="icons-circle-information icons-size-1x25" aria-hidden="true"></i>
               </button>
               <div class="btn-group dropdown">
-                <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
-                  <span class="sr-only">Favorite</span>
+                <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" aria-controls="toggle{{ forloop.index }}">
+                  <span class="sr-only">Actions</span>
                   <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
                 </button>
-                <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-menu dropdown-menu-right" id="toggle{{ forloop.index }}">
                   <button type="button" class="dropdown-item" href="#">Télécharger</button>
                   <button type="button" class="dropdown-item" href="#">Imprimer</button>
                   <button type="button" class="dropdown-item" href="#">Partager</button>
