@@ -14,10 +14,10 @@ permalink: /docs/4.0/layout/navs
   <div class="actionbar-head">
     <h1 class="h2 mb-0">Lorem Ipsum</h1>
   </div>
-  <nav class="position-relative mt-2">
+  <nav role="navigation" class="position-relative mt-2">
     <ul class="navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
-        <a href="#" class="active">Titre onglet</a>
+        <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
       <li class="navtabs-item pr-4">
         <a href="#">Titre onglet</a>
@@ -45,10 +45,10 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
   <div class="actionbar-head">
     <h1 class="h2 mb-0">Titre section</h1>
   </div>
-  <nav class="position-relative mt-2">
+  <nav role="navigation" class="position-relative mt-2">
     <ul class="navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
-        <a href="#" class="active">Titre onglet</a>
+        <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
       <li class="navtabs-item pr-4">
         <a href="#">Titre onglet</a>
@@ -72,10 +72,10 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
   <div class="actionbar-head">
     <h1 class="h2 mb-0">Titre section</h1>
   </div>
-  <nav class="position-relative mt-2">
+  <nav role="navigation" class="position-relative mt-2">
     <ul class="navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
-        <a href="#" class="active">Titre onglet</a>
+        <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
       <li class="navtabs-item pr-4">
         <a href="#">Titre onglet</a>

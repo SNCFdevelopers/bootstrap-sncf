@@ -40,9 +40,11 @@ Any single `.btn` can be turned into a dropdown toggle with some markup changes.
     <i class="icons-arrow-down"></i>
   </button>
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" id="mycontrol">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+    <ul>
+      <li class="dropdown-item"><a href="#">Action</a></li>
+      <li class="dropdown-item"><a href="#">Another action</a></li>
+      <li class="dropdown-item"><a href="#">Something else here</a></li>
+    </ul>
   </div>
 </div>
 {% endexample %}
@@ -61,9 +63,11 @@ We recommend usage of `dropdown-menu-right` **only**, although by default dropdo
     <i class="icons-arrow-down"></i>
   </button>
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" id="mycontrol">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+    <ul>
+      <li class="dropdown-item"><a href="#">Action</a></li>
+      <li class="dropdown-item"><a href="#">Another action</a></li>
+      <li class="dropdown-item"><a href="#">Something else here</a></li>
+    </ul>
   </div>
 </div>
 {% endexample %}
@@ -93,8 +97,10 @@ Add a header to label sections of actions in any dropdown menu.
 {% example html %}
 <div class="dropdown-menu">
   <h6 class="dropdown-header">Dropdown header</h6>
-  <a class="dropdown-item" href="#">Action</a>
-  <a class="dropdown-item" href="#">Another action</a>
+  <ul>
+    <li class="dropdown-item"><a href="#">Action</a></li>
+    <li class="dropdown-item"><a href="#">Another action</a></li>
+  </ul>
 </div>
 {% endexample %}
 
@@ -104,11 +110,15 @@ Separate groups of related menu items with a divider.
 
 {% example html %}
 <div class="dropdown-menu">
-  <a class="dropdown-item" href="#">Action</a>
-  <a class="dropdown-item" href="#">Another action</a>
-  <a class="dropdown-item" href="#">Something else here</a>
+  <ul>
+    <li class="dropdown-item"><a href="#">Action</a></li>
+    <li class="dropdown-item"><a href="#">Another action</a></li>
+    <li class="dropdown-item"><a href="#">Something else here</a></li>
+  </ul>
   <div class="dropdown-divider"></div>
-  <a class="dropdown-item" href="#">Separated link</a>
+  <ul>
+    <li class="dropdown-item"><a href="#">Separated link</a></li>
+  </ul>
 </div>
 {% endexample %}
 
@@ -143,9 +153,11 @@ Add `.active` to items in the dropdown to **style them as active**.
 
 {% example html %}
 <div class="dropdown-menu">
-  <a class="dropdown-item" href="#">Regular link</a>
-  <a class="dropdown-item active" href="#">Active link</a>
-  <a class="dropdown-item" href="#">Another link</a>
+  <ul>
+    <li class="dropdown-item"><a href="#">Action</a></li>
+    <li class="dropdown-item active"><a href="#">Active action</a></li>
+    <li class="dropdown-item"><a href="#">Something else here</a></li>
+  </ul>
 </div>
 {% endexample %}
 
@@ -155,9 +167,11 @@ Add `.disabled` to items in the dropdown to **style them as disabled**.
 
 {% example html %}
 <div class="dropdown-menu">
-  <a class="dropdown-item" href="#">Regular link</a>
-  <a class="dropdown-item disabled" href="#">Disabled link</a>
-  <a class="dropdown-item" href="#">Another link</a>
+  <ul>
+    <li class="dropdown-item"><a href="#">Action</a></li>
+    <li class="dropdown-item disabled"><a href="#">Disabled action</a></li>
+    <li class="dropdown-item"><a href="#">Something else here</a></li>
+  </ul>
 </div>
 {% endexample %}
 

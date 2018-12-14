@@ -9,7 +9,10 @@ permalink: /docs/4.0/components/progress
 
 ## Overview
 
-Progress bars display the progress of an operation, such as retrieving data.There are two types of progress bars:- Determinate indicators show the duration of an operation and may feature a percentage to show progress.- Indeterminate indicators display an unspecified wait time.
+Progress bars display the progress of an operation, such as retrieving data.
+There are two types of progress bars:
+- Determinate indicators show the duration of an operation and may feature a percentage to show progress.
+- Indeterminate indicators display an unspecified wait time.
 
 ## Progress bars, how it works ?
 
@@ -116,7 +119,7 @@ The logic of the component needs that **only steps before active step** are link
 {% endcallout %}
 
 {% example html %}
-<nav aria-label="breadcrumb">
+<nav role="navigation" aria-label="Vous êtes : ">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Step 1</a></li>
     <li class="breadcrumb-item"><a href="#">Step 2</a></li>

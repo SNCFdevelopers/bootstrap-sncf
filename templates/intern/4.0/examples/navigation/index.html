@@ -35,14 +35,16 @@ permalink: /docs/4.0/examples/navigation
           </li>
           <li class="toolbar-item toolbar-item-spacing">
             <div class="btn-group dropdown">
-              <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
                 <span>Primary</span>
                 <i class="icons-arrow-down" aria-hidden="true"></i>
               </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-menu dropdown-menu-right" id="mycontrol">
+                <ul>
+                  <li class="dropdown-item"><a href="#">Action</a></li>
+                  <li class="dropdown-item"><a href="#">Another action</a></li>
+                  <li class="dropdown-item"><a href="#">Something else here</a></li>
+                </ul>
               </div>
             </div>
           </li>

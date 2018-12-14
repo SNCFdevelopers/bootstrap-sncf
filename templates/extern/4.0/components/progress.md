@@ -113,7 +113,7 @@ The logic of the component needs that **only steps before active step** are link
 {% endcallout %}
 
 {% example html %}
-<nav aria-label="breadcrumb">
+<nav aria-label="Vous êtes : ">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Step 1</a></li>
     <li class="breadcrumb-item"><a href="#">Step 2</a></li>

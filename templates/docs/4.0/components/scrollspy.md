@@ -35,10 +35,14 @@ Scroll the area below the navbar and watch the active class change. The dropdown
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#one">one</a>
-          <a class="dropdown-item" href="#two">two</a>
+          <ul>
+            <li class="dropdown-item"><a href="#one">one</a></li>
+            <li class="dropdown-item"><a href="#two">two</a></li>
+          </ul>
           <div role="separator" class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#three">three</a>
+          <ul>
+            <li class="dropdown-item"><a href="#three">three</a></li>
+          </ul>
         </div>
       </li>
     </ul>
@@ -72,10 +76,14 @@ Scroll the area below the navbar and watch the active class change. The dropdown
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#one">one</a>
-        <a class="dropdown-item" href="#two">two</a>
-        <div role="separator" class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#three">three</a>
+          <ul>
+            <li class="dropdown-item"><a href="#one">one</a></li>
+            <li class="dropdown-item"><a href="#two">two</a></li>
+          </ul>
+          <div role="separator" class="dropdown-divider"></div>
+          <ul>
+            <li class="dropdown-item"><a href="#three">three</a></li>
+          </ul>
       </div>
     </li>
   </ul>

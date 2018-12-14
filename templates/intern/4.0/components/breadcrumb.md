@@ -13,14 +13,14 @@ Separators are automatically added in CSS through [`::before`](https://developer
 The breadcrumbs should not be used in mobile interfaces.
 
 {% example html %}
-<nav aria-label="breadcrumb">
+<nav aria-label="Vous êtes : ">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Library</li>
   </ol>
 </nav>
 
-<nav aria-label="breadcrumb">
+<nav aria-label="Vous êtes : ">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item"><a href="#">Library</a></li>
@@ -36,7 +36,7 @@ You will find steps indicator in the [progress components]({{ site.baseurl }}/do
 
 ## Accessibility
 
-Since breadcrumbs provide a navigation, it's a good idea to add a meaningful label such as `aria-label="breadcrumb"` to describe the type of navigation provided in the `<nav>` element, as well as applying an `aria-current="page"` to the last item of the set to indicate that it represents the current page.
+Since breadcrumbs provide a navigation, it's a good idea to add a meaningful label such as `aria-label="Vous êtes : "` to describe the type of navigation provided in the `<nav>` element, as well as applying an `aria-current="page"` to the last item of the set to indicate that it represents the current page.
 
 For more information, see the [WAI-ARIA Authoring Practices for the breadcrumb pattern](https://www.w3.org/TR/wai-aria-practices/#breadcrumb).
 
