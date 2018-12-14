@@ -478,8 +478,8 @@ If no tab was already active, then the `hide.bs.tab` and `hidden.bs.tab` events 
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th style="width: 150px;">Event Type</th>
-      <th>Description</th>
+      <th scope="col" style="width: 150px;">Event Type</th>
+      <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>

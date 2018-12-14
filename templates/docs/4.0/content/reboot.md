@@ -58,8 +58,8 @@ All heading elements—e.g., `<h1>`—and `<p>` are reset to have their `margin-
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th><div class="cell-inner">Heading</div></th>
-          <th><div class="cell-inner">Example</div></th>
+          <th scope="col"><div class="cell-inner">Heading</div></th>
+          <th scope="col"><div class="cell-inner">Example</div></th>
         </tr>
       </thead>
       <tbody>
@@ -67,13 +67,13 @@ All heading elements—e.g., `<h1>`—and `<p>` are reset to have their `margin-
           <td><div class="cell-inner">
             {% markdown %}`<h1></h1>`{% endmarkdown %}
           </div></td>
-          <td><div class="cell-inner"><span class="h1">h1. Bootstrap heading</span></div></td>
+          <td><div class="cell-inner"><span class="h1" role="heading" aria-level="1">h1. Bootstrap heading</span></div></td>
         </tr>
         <tr>
           <td><div class="cell-inner">
             {% markdown %}`<h2></h2>`{% endmarkdown %}
           </div></td>
-          <td><div class="cell-inner"><span class="h2">h2. Bootstrap heading</span></div></td>
+          <td><div class="cell-inner"><span class="h2" role="heading" aria-level="2">h2. Bootstrap heading</span></div></td>
         </tr>
         <tr>
           <td><div class="cell-inner">
@@ -175,10 +175,10 @@ Tables are slightly adjusted to style `<caption>`s, collapse borders, and ensure
     </caption>
     <thead>
       <tr>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
+        <th scope="col">Table heading</th>
+        <th scope="col">Table heading</th>
+        <th scope="col">Table heading</th>
+        <th scope="col">Table heading</th>
       </tr>
     </thead>
     <tbody>

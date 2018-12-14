@@ -798,7 +798,7 @@ Note the use of `no-gutters` class to stick the columns together.
     <div class="management-item-checkbox">
       <div class="custom-control custom-checkbox custom-checkbox-alone">
         <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-        <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
+        <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
       </div>
     </div>
     <div class="management-item-caret"></div>
@@ -816,7 +816,7 @@ Note the use of `no-gutters` class to stick the columns together.
         <div class="management-item-checkbox">
           <div class="custom-control custom-checkbox custom-checkbox-alone">
             <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-            <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
+            <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
           </div>
         </div>
         <div class="management-item-symbol management-item-spacing">

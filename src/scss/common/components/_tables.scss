@@ -146,6 +146,12 @@ td[data-role="toggle-group-btn"] > * {
   }
 }
 
+.thead-light {
+  color: gray("600");
+  background-color: gray("100");
+  border-color: $table-border-color;
+}
+
 .cell-sort {
   .icons-sort {
     transition: transform .15s ease;

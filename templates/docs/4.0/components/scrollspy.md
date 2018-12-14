@@ -299,10 +299,10 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th style="width: 100px;">Name</th>
-      <th style="width: 100px;">Type</th>
-      <th style="width: 50px;">Default</th>
-      <th>Description</th>
+      <th scope="col" style="width: 100px;">Name</th>
+      <th scope="col" style="width: 100px;">Type</th>
+      <th scope="col" style="width: 50px;">Default</th>
+      <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -320,8 +320,8 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th style="width: 150px;">Event Type</th>
-      <th>Description</th>
+      <th scope="col" style="width: 150px;">Event Type</th>
+      <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>

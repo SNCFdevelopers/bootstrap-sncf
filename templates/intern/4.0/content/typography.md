@@ -14,10 +14,11 @@ All HTML headings, `<h1>` through `<h2>`, are available.
 <div class="table-wrapper">
   <div class="table-scroller dragscroll">
     <table class="table table-bordered">
+      <caption class="sr-only">Aperçu des niveaux de titres</caption>
       <thead>
         <tr>
-          <th><div class="cell-inner">Heading</div></th>
-          <th><div class="cell-inner">Example</div></th>
+          <th scope="col"><div class="cell-inner">Heading</div></th>
+          <th scope="col"><div class="cell-inner">Example</div></th>
         </tr>
       </thead>
       <tbody>
@@ -25,13 +26,13 @@ All HTML headings, `<h1>` through `<h2>`, are available.
           <td><div class="cell-inner">
             {% markdown %}`<h1></h1>`{% endmarkdown %}
           </div></td>
-          <td><div class="cell-inner"><span class="h1">h1. Bootstrap heading</span></div></td>
+          <td><div class="cell-inner"><h1 aria-level="1">h1. Bootstrap heading</h1></div></td>
         </tr>
         <tr>
           <td><div class="cell-inner">
             {% markdown %}`<h2></h2>`{% endmarkdown %}
           </div></td>
-          <td><div class="cell-inner"><span class="h2">h2. Bootstrap heading</span></div></td>
+          <td><div class="cell-inner"><h2>h2. Bootstrap heading</h2></div></td>
         </tr>
       </tbody>
     </table>
@@ -46,8 +47,8 @@ All HTML headings, `<h1>` through `<h2>`, are available.
 `.h1` through `.h2` classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
 
 {% example html %}
-<p class="h1">h1. Bootstrap heading</p>
-<p class="h2">h2. Bootstrap heading</p>
+<p class="h1" role="heading" aria-level="1">h1. Bootstrap heading</p>
+<p class="h2" role="heading" aria-level="2">h2. Bootstrap heading</p>
 {% endexample %}
 
 ## Display headings
@@ -84,8 +85,7 @@ Styling for common inline HTML5 elements.
 
 {% example html %}
 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-<p><del>This line of text is meant to be treated as deleted text.</del></p>
-<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+<p><del><span class="sr-only">début du contenu effacé</span>This line of text is meant to be treated as deleted text.<span class="sr-only">fin du contenu effacé</span></del></p>
 <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
 <p><u>This line of text will render as underlined</u></p>
 <p><small>This line of text is meant to be treated as fine print.</small></p>
