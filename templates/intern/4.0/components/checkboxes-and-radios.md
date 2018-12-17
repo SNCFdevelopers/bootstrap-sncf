@@ -9,8 +9,12 @@ permalink: /docs/4.0/components/checkboxes-and-radios
 
 ## Checkboxes and radios
 
-There are several selection tools that let users choose from pre-defined options:- to make multiple selections: check boxes (or drop-down lists when there are many choices)- to make one selection: radio buttons, switch- to define a value or range: slider (see “Forms” section)
-When options need to be illustrated, use large picture buttons (see “Buttons” section).
+There are several selection tools that let users choose from pre-defined options:
+- to make multiple selections: check boxes (or drop-down lists when there are many choices)
+- to make one selection: radio buttons, switch
+- to define a value or range: slider (see “Forms” section)
+
+When options need to be illustrated, use large picture buttons (see “Buttons” section).
 We use the sibling selector (`~`) for all our `<input>` states—like `:checked`—to properly style our custom form indicator. When combined with the `.custom-control-label` class, we can also style the text for each item based on the `<input>`'s state.
 
 We hide the default `<input>` with `opacity` and use the `.custom-control-label` to build a new custom form indicator in its place with `::before` and `::after`. Unfortunately we can't build a custom one from just the `<input>` because CSS's `content` doesn't work on that element.
@@ -23,7 +27,7 @@ In the checked states, we use **base64 embedded SVG icons** from [Open Iconic](h
 {% include components/checkbox.html name="exampleCheckbox1" id="exampleCheckbox1" label="Custom checkbox" %}
 {% endexample %}
 
-Custom checkboxes can also utilize the `:indeterminate` pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).
+Custom checkboxes can also utilize the `:indeterminate` pseudo class and `aria-checked="mixed` for screen reader, when manually set via JavaScript (there is no available HTML attribute for specifying it).
 
 <div class="bd-example bd-example-indeterminate">
   <div class="custom-control custom-checkbox">
@@ -35,7 +39,8 @@ Custom checkboxes can also utilize the `:indeterminate` pseudo class when manual
 If you're using jQuery, something like this should suffice:
 
 {% highlight js %}
-$('.your-checkbox').prop('indeterminate', true)
+$('.your-checkbox').prop('indeterminate', true);
+$('.your-checkbox').attr('aria-checked', 'mixed');
 {% endhighlight %}
 
 ### Radios
@@ -56,13 +61,15 @@ $('.your-checkbox').prop('indeterminate', true)
 Switches turn a feature or option on or off. Labels can be applied when necessary.
 
 {% example html %}
-<label class="switch-control">
-  <input type="checkbox" class="sr-only">
+<label for="switch1" class="switch-control">
+  <span class="sr-only">On/Off switch</span>
+  <input id="switch1" type="checkbox" class="sr-only">
   <span class="switch-control-slider"></span>
 </label>
 
-<label class="switch-control">
-  <input type="checkbox" class="sr-only" checked>
+<label for="switch2" class="switch-control">
+  <span class="sr-only">On/Off switch</span>
+  <input id="switch2" type="checkbox" class="sr-only" checked>
   <span class="switch-control-slider"></span>
 </label>
 {% endexample %}
@@ -122,15 +129,15 @@ Custom checkboxes and radios can also be disabled. Add the `disabled` boolean at
 </div>
 
 <div class="mt-2">
-  <label class="switch-control">
-    <input type="checkbox" class="sr-only" disabled>
+  <label class="switch-control" for="customRadioDisabled1">
+    <input id="customRadioDisabled1" type="checkbox" class="sr-only" disabled>
     <span class="switch-control-slider"></span>
   </label>
 </div>
 
 <div class="mt-2">
-  <label class="switch-control">
-    <input type="checkbox" class="sr-only" checked disabled>
+  <label class="switch-control" for="customRadioDisabled2">
+    <input id="customRadioDisabled2" type="checkbox" class="sr-only" checked disabled>
     <span class="switch-control-slider"></span>
   </label>
 </div>

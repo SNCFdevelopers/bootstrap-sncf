@@ -1,4 +1,5 @@
 <div class="form-control-container {{ include.container }}">
+  <label for="{{ include.id }}" class="sr-only">{{ include.placeholder }}</label>
   <input type="{{ include.type }}" class="form-control {{ include.class }}" id="{{ include.id }}" placeholder="{{ include.placeholder }}" {{ include.attr }}>
   <span class="form-control-state"></span>
   {{- include.content }}

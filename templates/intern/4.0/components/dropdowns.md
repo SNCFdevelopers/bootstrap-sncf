@@ -17,9 +17,7 @@ If you're building our JavaScript from source, it [requires `util.js`]({{ site.b
 
 ## Accessibility
 
-The [<abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr>](https://www.w3.org/TR/wai-aria-1.1/) standard defines an actual [`role="menu"` widget](https://www.w3.org/TR/wai-aria-1.1/roles#menu), but this is specific to application-like menus which trigger actions or functions. <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus can only contain menu items, checkbox menu items, radio button menu items, radio button groups, and sub-menus.
-
-Bootstrap's dropdowns, on the other hand, are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create dropdowns that contain additional inputs and form controls, such as search fields or login forms. For this reason, Bootstrap does not expect (nor automatically add) any of the `role` and `aria-` attributes required for true <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus. Authors will have to include these more specific attributes themselves.
+Bootstrap's dropdowns, on the other hand, are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create dropdowns that contain additional inputs and form controls, such as search fields or login forms.
 
 However, Bootstrap does add built-in support for most standard keyboard menu interactions, such as the ability to move through individual `.dropdown-item` elements using the cursor keys and close the menu with the <kbd>ESC</kbd> key.
 
@@ -27,7 +25,7 @@ However, Bootstrap does add built-in support for most standard keyboard menu int
 
 Drop-down menu buttons are used when you want to offer several actions in a limited area.
 
-Wrap the dropdown's toggle (your button or link) and the dropdown menu within `.dropdown`, or another element that declares `position: relative;`. Dropdowns can be triggered from `<a>` or `<button>` elements to better fit your potential needs.
+Wrap the dropdown's toggle (your button or link) and the dropdown menu within `.dropdown`, or another element that declares `position: relative;`. Dropdowns can be triggered from `<button>` elements to better fit your potential needs.
 
 ### Single button dropdowns
 
@@ -35,11 +33,11 @@ Any single `.btn` can be turned into a dropdown toggle with some markup changes.
 
 {% example html %}
 <div class="btn-group dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol1">
     <span>Dropdown button</span>
     <i class="icons-arrow-down"></i>
   </button>
-  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" id="mycontrol">
+  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1" id="mycontrol1">
     <ul>
       <li class="dropdown-item"><a href="#">Action</a></li>
       <li class="dropdown-item"><a href="#">Another action</a></li>
@@ -58,11 +56,11 @@ We recommend usage of `dropdown-menu-right` **only**, although by default dropdo
 
 {% example html %}
 <div class="btn-group dropdown">
-  <button class="btn btn-primary dropdown-toggle disabled" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
+  <button class="btn btn-primary dropdown-toggle disabled" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol2">
     <span>Dropdown button</span>
     <i class="icons-arrow-down"></i>
   </button>
-  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" id="mycontrol">
+  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton2" id="mycontrol2">
     <ul>
       <li class="dropdown-item"><a href="#">Action</a></li>
       <li class="dropdown-item"><a href="#">Another action</a></li>
@@ -78,11 +76,11 @@ Historically dropdown menu contents *had* to be links, but that's no longer the 
 
 {% example html %}
 <div class="btn-group dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol3">
     <span>Dropdown</span>
     <i class="icons-arrow-down"></i>
   </button>
-  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2" id="mycontrol3">
     <button class="dropdown-item" type="button">Action</button>
     <button class="dropdown-item" type="button">Another action</button>
     <button class="dropdown-item" type="button">Something else here</button>
@@ -131,7 +129,7 @@ Put a form within a dropdown menu, or make it into a dropdown menu, and use [mar
   <form class="px-4 py-3">
     <div class="form-group">
       <label for="exampleDropdownFormEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" title="email@example.com">
     </div>
     <div class="form-group">
       <label for="exampleDropdownFormPassword1">Password</label>
@@ -143,7 +141,7 @@ Put a form within a dropdown menu, or make it into a dropdown menu, and use [mar
     </div>
     <button type="submit" class="btn btn-block btn-primary">Sign in</button>
   </form>
-  <a class="btn btn-link dropdown-item d-inline-flex align-items-center text-primary" href="#">Forgotten password ?<i class="ml-1 icons-arrow-next icons-size-x5"></i></a>
+  <a class="btn btn-link dropdown-item d-inline-flex align-items-center text-primary" href="#">Forgotten password ?<i class="ml-1 icons-arrow-next icons-size-x5" aria-hidden="true"></i></a>
 </div>
 {% endexample %}
 
@@ -155,7 +153,7 @@ Add `.active` to items in the dropdown to **style them as active**.
 <div class="dropdown-menu">
   <ul>
     <li class="dropdown-item"><a href="#">Action</a></li>
-    <li class="dropdown-item active"><a href="#">Active action</a></li>
+    <li class="dropdown-item active"><a href="#" title="Active link actif">Active action</a></li>
     <li class="dropdown-item"><a href="#">Something else here</a></li>
   </ul>
 </div>
@@ -169,7 +167,7 @@ Add `.disabled` to items in the dropdown to **style them as disabled**.
 <div class="dropdown-menu">
   <ul>
     <li class="dropdown-item"><a href="#">Action</a></li>
-    <li class="dropdown-item disabled"><a href="#">Disabled action</a></li>
+    <li class="dropdown-item disabled">Disabled action</li>
     <li class="dropdown-item"><a href="#">Something else here</a></li>
   </ul>
 </div>
@@ -185,14 +183,14 @@ On touch-enabled devices, opening a dropdown adds empty (`$.noop`) `mouseover` h
 
 ### Via data attributes
 
-Add `data-toggle="dropdown"` to a link or button to toggle a dropdown.
+Add `data-toggle="dropdown"` to a button to toggle a dropdown.
 
 {% highlight html %}
 <div class="dropdown">
-  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdownDataAttributes">
     Dropdown trigger
   </button>
-  <div class="dropdown-menu" aria-labelledby="dLabel">
+  <div class="dropdown-menu" aria-labelledby="dLabel" id="dropdownDataAttributes">
     ...
   </div>
 </div>

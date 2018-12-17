@@ -77,6 +77,7 @@ Add the `required` boolean attribute on an input.
 {% example html %}
 <label for="required1" class="required">Required input</label>
 {% include components/input.html type="text" id="required1" placeholder="Required input here..." attr="required" %}
+<p class="mt-3">* Champs obligatoire</p>
 {% endexample %}
 
 ### Input with clear option
@@ -85,7 +86,8 @@ The clear text behavior is made of `javascript`. Use `data-component="control"` 
 
 {% example html %}
 <div class="form-control-container" data-component="control" data-clear-option="true">
-  <input class="form-control clear-option " id="readonly2" placeholder="Search..." value="This text can be erased" data-role="input">
+  <label for="search2" class="sr-only">Rechercher<</label>
+  <input class="form-control clear-option " id="search2" placeholder="Search..." value="This text can be erased" data-role="input">
   <span class="form-control-state"></span>
   <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
     <span class="sr-only">Clear text</span>
@@ -99,20 +101,26 @@ The clear text behavior is made of `javascript`. Use `data-component="control"` 
 In some cases, fields can contain standardized data. Unmodifiable characters can be taken out of the input area, and the display varies depending on the data.
 
 {% example html %}
-<label class="font-weight-medium mb-2" for="exampleInputEmail1">Numéro de transfert</label>
-<div class="row align-items-center">
-  <div class="form-control-container col-4">
-    <input class="form-control" type="text" maxlength="4" placeholder="ABCD">
-    <span class="form-control-state"></span>
+<fieldset>
+  <legend class="text-base font-weight-medium mb-2">Numéro de transfert</legend>
+  <div class="row align-items-center">
+    <div class="col-4">
+      <div class="form-control-container">
+        <input class="form-control" type="text" maxlength="4" placeholder="ABCD" title="4 premiers caractères">
+        <span class="form-control-state"></span>
+      </div>
+    </div>
+    <div class="col-1 text-center font-weight-medium">
+      TX
+    </div>
+    <div class="col-4">
+      <div class="form-control-container">
+        <input class="form-control" type="text" maxlength="4" placeholder="1234" title="4 derniers caractères après TX">
+        <span class="form-control-state"></span>
+      </div>
+    </div>
   </div>
-  <div class="col-1 text-center font-weight-medium">
-    TX
-  </div>
-  <div class="form-control-container col-4">
-    <input class="form-control" type="text" maxlength="4" placeholder="1234">
-    <span class="form-control-state"></span>
-  </div>
-</div>
+</fieldset>
 {% endexample %}
 
 ## Textarea options
@@ -181,7 +189,8 @@ We recommend limiting toolbars to one line and putting secondary tools in a cont
     </div>
   </div>
   <div class="form-control-container">
-    <textarea class="form-control" placeholder="Comment"></textarea>
+    <label for="exampleFormControlTextarea3" class="sr-only">Comment</label>
+    <textarea id="exampleFormControlTextarea3" class="form-control" placeholder="Comment"></textarea>
     <span class="form-control-state"></span>
   </div>
 </div>
@@ -225,20 +234,23 @@ With a slider, users can choose an approximate value, i.e., a value considered t
 Chips are compact components that appear after entering or selecting items as tags in a field. They can be used for various item types (contacts, concepts, etc.) and are predefined or can be adjusted for specific needs.
 
 {% example html %}
-<div class="chips-group">
-  <span class="chips chips-label">Mathéo Mercier</span>
-  <button type="button" class="chips chips-btn chips-only-icon">
-    <span class="sr-only">Remove</span>
-    <i class="icons-close" aria-hidden="true"></i>
-  </button>
+<div role="list">
+  <div class="chips-group" role="listitem">
+    <span class="chips chips-label">Mathéo Mercier</span>
+    <button type="button" class="chips chips-btn chips-only-icon">
+      <span class="sr-only">Remove Mathéo Mercier</span>
+      <i class="icons-close" aria-hidden="true"></i>
+    </button>
+  </div>
 </div>
 {% endexample %}
 
 {% example html %}
-<label class="font-weight-medium mb-2">Receivers</label>
+<label class="font-weight-medium mb-2" for="addreceivers1">Add receivers</label>
 <div class="form-control-container form-chips-container" data-component="chips">
-  <input data-role="typewriter" type="text" class="chips-input stretchy" />
-  <select class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" multiple>
+  <input data-role="typewriter" type="text" class="chips-input stretchy" id="addreceivers1" />
+  <label class="font-weight-medium mb-2 sr-only" for="receivers1">Receivers</label>
+  <select class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" id="receivers1" multiple>
     <option selected>Sem Inceptos Tellus</option>
     <option>Amet Porta</option>
     <option selected>Pharetra Fusce Venenatis</option>
@@ -281,7 +293,7 @@ Help text below inputs can be styled with `.form-text`. This class includes `dis
 {% example html %}
 <label class="font-weight-medium mb-2" for="inputPassword5">Password</label>
 <div class="form-control-container">
-  <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+  <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" title="Password">
   <span class="form-control-state"></span>
 </div>
 <small id="passwordHelpBlock" class="form-text text-muted">
@@ -296,7 +308,7 @@ Inline text can use any typical inline HTML element (be it a `<small>`, `<span>`
   <div class="form-group">
     <label class="font-weight-medium" for="inputPassword6">Password</label>
     <div class="form-control-container mx-sm-3">
-      <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+      <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" title="Password">
       <span class="form-control-state"></span>
     </div>
     <small id="passwordHelpInline" class="text-muted">
@@ -345,7 +357,7 @@ We recommend using client side validation, but in case you require server side, 
         <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
         <span class="form-control-state"></span>
       </div>
-      <div class="invalid-feedback">
+      <div class="invalid-feedback" id="inputGroupPrepend">
         Please choose a username.
       </div>
     </div>
@@ -354,10 +366,10 @@ We recommend using client side validation, but in case you require server side, 
     <div class="col-md-6 mb-3">
       <label class="font-weight-medium mb-2 required" for="validationCustom03">City</label>
       <div class="form-control-container is-invalid">
-        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="City" aria-describedby="inputGroupPrepend2" required>
         <span class="form-control-state"></span>
       </div>
-      <div class="invalid-feedback">
+      <div class="invalid-feedback" id="inputGroupPrepend2">
         Please provide a valid city.
       </div>
     </div>
@@ -371,7 +383,7 @@ We recommend using client side validation, but in case you require server side, 
 {% example html %}
 <form class="needs-validation" novalidate>
   <div class="form-error mb-3">
-    <span class="h2 text-uppercase">Oouups ! Vous avez une erreur</span>
+    <h2 class="text-white text-uppercase">Oouups ! Vous avez une erreur</h2>
     <ul class="mt-1 mb-0">
       <li>Veuillez vérifier l'adresse email saisie</li>
     </ul>
@@ -380,10 +392,10 @@ We recommend using client side validation, but in case you require server side, 
     <div class="col-md-6 mb-3">
       <label class="font-weight-medium mb-2 required" for="validationCustom03">City</label>
       <div class="form-control-container is-invalid">
-        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="City" aria-describedby="iputGroupPrepend3" required>
         <span class="form-control-state"></span>
       </div>
-      <div class="invalid-feedback">
+      <div class="invalid-feedback" id="iputGroupPrepend3">
         Please provide a valid city.
       </div>
     </div>
@@ -418,7 +430,7 @@ While these feedback styles cannot be styled with CSS, you can still customize t
     <div class="col-md-4 mb-3">
       <label class="font-weight-medium mb-2 required" for="validationDefaultUsername">Username</label>
       <div class="form-control-container">
-        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" required>
         <span class="form-control-state"></span>
       </div>
     </div>
