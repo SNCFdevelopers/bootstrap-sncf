@@ -86,9 +86,9 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
 ### Without label
 {% example html %}
 <div class="progress-circle" data-component="radial-progress">
-    <svg class="progress-circle-figure" data-role="figure" width="120" height="120" viewBox="0 0 120 120">
-        <circle class="progress-circle-meter" cx="60" cy="60" r="54" stroke-width="12" />
-        <circle class="progress-circle-value" cx="60" cy="60" r="54" stroke-width="12" />
+    <svg class="progress-circle-figure" data-role="figure" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+      <circle class="progress-circle-meter" cx="60" cy="60" r="54" stroke-width="12" />
+      <circle class="progress-circle-value" cx="60" cy="60" r="54" stroke-width="12" />
     </svg>
     <input data-role="control" class="sr-only" type="range" value="20" />
 </div>
@@ -97,9 +97,9 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
 ### With label
 {% example html %}
 <div class="progress-circle" data-component="radial-progress">
-    <svg class="progress-circle-figure" data-role="figure" width="120" height="120" viewBox="0 0 120 120">
-        <circle class="progress-circle-meter" cx="60" cy="60" r="54" stroke-width="12" />
-        <circle class="progress-circle-value" cx="60" cy="60" r="54" stroke-width="12" />
+    <svg class="progress-circle-figure" data-role="figure" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+      <circle class="progress-circle-meter" cx="60" cy="60" r="54" stroke-width="12" />
+      <circle class="progress-circle-value" cx="60" cy="60" r="54" stroke-width="12" />
     </svg>
     <div class="progress-circle-label" data-role="label"><span><span data-role="labelvalue">0</span><sup>%</sup></span></div>
     <input data-role="control" class="sr-only" type="range" value="60" />
@@ -123,7 +123,7 @@ The logic of the component needs that **only steps before active step** are link
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Step 1</a></li>
     <li class="breadcrumb-item"><a href="#">Step 2</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Step 3</li>
+    <li class="breadcrumb-item active" aria-current="step">Step 3 <span class="sr-only">actif</span></li>
     <li class="breadcrumb-item">Step 4</li>
     <li class="breadcrumb-item">Step 5</li>
   </ol>

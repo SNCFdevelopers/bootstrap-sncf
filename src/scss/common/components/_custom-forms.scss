@@ -53,9 +53,13 @@
 // Build the custom controls out of psuedo-elements.
 
 .custom-control-label {
+  padding: 0;
   padding-top: rem(2px);
   margin-bottom: 0;
   color: gray("400");
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 
   // Background-color and (when enabled) gradient
   &::before {
