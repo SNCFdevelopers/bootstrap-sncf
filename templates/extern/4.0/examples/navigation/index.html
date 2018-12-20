@@ -20,17 +20,16 @@ permalink: /docs/4.0/examples/navigation
       </div>
     </a>
     
-    <header class="mastheader" data-component="mastheader">
+    <div class="mastheader" data-component="mastheader">
       <div class="container">
-        <div class="d-flex align-items-center">
+        <header role="banner" class="d-flex align-items-center">
           <div class="mastheader-logo">
             <a href="/docs" class="d-block">
-              <span class="sr-only">SNCF</span>
-              <img alt="SNCF" class="d-block" src="{{ site.baseurl }}/assets/img/brand/sncf-logo.png" width="34" />
+              <img alt="" class="d-block" src="{{ site.baseurl }}/assets/img/brand/sncf-logo.png" width="34" />
             </a>
           </div>
-          <h1 class="mastheader-title">Les trains en Ile-de-France de SNCF</h1>
-        </div>
+          <h1 class="mastheader-title flex-fluid text-white">Les trains en Ile-de-France de SNCF</h1>
+        </header>
         <ul class="mastheader-toolbar mb-0 d-none d-md-flex">
           <li class="mastheader-toolbar-item dropdown dropdown-mastheader">
             <button type="button" class="dropdown-toggle" data-toggle="dropdown" data-offset="68, 0" aria-haspopup="true" aria-expanded="false">Accessibilité <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i></button>
@@ -102,15 +101,15 @@ permalink: /docs/4.0/examples/navigation
               <i class="dropdown-close icons-close icons-size-6px"></i>
               <div class="pr-5">
                 <div class="dropdown-menu-lang-item active">
-                  <img src="https://dummyimage.com/30x30/000/fff" class="gr-3" />
+                  <img src="https://dummyimage.com/30x30/000/fff" alt="Drapeaux Français" class="gr-3" />
                   Français
                 </div>
                 <div class="dropdown-menu-lang-item">
-                  <img src="https://dummyimage.com/30x30/000/fff" class="gr-3" />
+                  <img src="https://dummyimage.com/30x30/000/fff" alt="Drapeaux Anglais" class="gr-3" />
                   English
                 </div>
                 <div class="dropdown-menu-lang-item">
-                  <img src="https://dummyimage.com/30x30/000/fff" class="gr-3" />
+                  <img src="https://dummyimage.com/30x30/000/fff" alt="Drapeaux Allemand" class="gr-3" />
                   Deutsch
                 </div>
               </div>
@@ -121,17 +120,17 @@ permalink: /docs/4.0/examples/navigation
           </li>
         </ul>
       </div>
-    </header>
+    </div>
 
     <div class="mastnav" data-component="mastnav">
       <div class="menubar">
         <div class="container">
           <h2 class="mb-0">#Digitalsncf</h2>
-          <div class="menubar-menu" data-role="menubar-menu">
+          <div class="menubar-menu" data-role="actionbar-menu">
             <div class="d-md-none">
               <label for="search" class="h3">Rechercher</label>
               <div class="form-control-container has-left-icon">
-                <input role="search" type="search" class="form-control " id="search">
+                <input role="search" type="search" class="form-control" id="search">
                 <span class="form-control-state"></span>
                 <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
               </div>
@@ -149,60 +148,68 @@ permalink: /docs/4.0/examples/navigation
                 <div class="dropdown-menu">
                   <div data-role="stop-propagation">
                     <div class="mb-3">
-                      <label class="w-100 font-weight-medium mb-2">Police (dyslexie)</label>
-                      <div class="options-control options-control-lg options-control-menubar">
-                        <div class="options-item">
-                          <input type="radio" name="typography" id="typography-default2" class="sr-only" checked/>
-                          <label class="options-btn font-weight-medium" for="typography-default2">Défaut</label>
+                      <fieldset>
+                        <label class="w-100 font-weight-medium mb-2">Police (dyslexie)</label>
+                        <div class="options-control options-control-lg options-control-menubar">
+                          <div class="options-item">
+                            <input type="radio" name="typography" id="typography-default2" class="sr-only" checked/>
+                            <label class="options-btn font-weight-medium" for="typography-default2">Défaut</label>
+                          </div>
+                          <div class="options-item">
+                            <input type="radio" name="typography" id="typography-adapted2" class="sr-only"/>
+                            <label class="options-btn font-weight-medium" for="typography-adapted2">Adaptée</label>
+                          </div>
                         </div>
-                        <div class="options-item">
-                          <input type="radio" name="typography" id="typography-adapted2" class="sr-only"/>
-                          <label class="options-btn font-weight-medium" for="typography-adapted2">Adaptée</label>
-                        </div>
-                      </div>
+                      </fieldset>
                     </div>
                     <div class="mb-3">
-                      <label class="w-100 font-weight-medium mb-2">Contrastes</label>
-                      <div class="options-control options-control-lg options-control-menubar">
-                        <div class="options-item">
-                          <input type="radio" name="contrast" id="contrast-default2" class="sr-only" checked/>
-                          <label class="options-btn font-weight-medium" for="contrast-default2">Défaut</label>
+                      <fieldset>
+                        <label class="w-100 font-weight-medium mb-2">Contrastes</label>
+                        <div class="options-control options-control-lg options-control-menubar">
+                          <div class="options-item">
+                            <input type="radio" name="contrast" id="contrast-default2" class="sr-only" checked/>
+                            <label class="options-btn font-weight-medium" for="contrast-default2">Défaut</label>
+                          </div>
+                          <div class="options-item">
+                            <input type="radio" name="contrast" id="contrast-strong2" class="sr-only"/>
+                            <label class="options-btn font-weight-medium" for="contrast-strong2">Renforcés</label>
+                          </div>
+                          <div class="options-item">
+                            <input type="radio" name="contrast" id="contrast-inverted2" class="sr-only"/>
+                            <label class="options-btn font-weight-medium" for="contrast-inverted2">Inversés</label>
+                          </div>
                         </div>
-                        <div class="options-item">
-                          <input type="radio" name="contrast" id="contrast-strong2" class="sr-only"/>
-                          <label class="options-btn font-weight-medium" for="contrast-strong2">Renforcés</label>
-                        </div>
-                        <div class="options-item">
-                          <input type="radio" name="contrast" id="contrast-inverted2" class="sr-only"/>
-                          <label class="options-btn font-weight-medium" for="contrast-inverted2">Inversés</label>
-                        </div>
-                      </div>
+                      </fieldset>
                     </div>
                     <div class="mb-3">
-                      <label class="w-100 font-weight-medium mb-2">Interlignage</label>
-                      <div class="options-control options-control-lg options-control-menubar">
-                        <div class="options-item">
-                          <input type="radio" name="lineheight" id="lineheight-default2" class="sr-only" checked/>
-                          <label class="options-btn font-weight-medium" for="lineheight-default2">Défaut</label>
+                      <fieldset>
+                        <label class="w-100 font-weight-medium mb-2">Interlignage</label>
+                        <div class="options-control options-control-lg options-control-menubar">
+                          <div class="options-item">
+                            <input type="radio" name="lineheight" id="lineheight-default2" class="sr-only" checked/>
+                            <label class="options-btn font-weight-medium" for="lineheight-default2">Défaut</label>
+                          </div>
+                          <div class="options-item">
+                            <input type="radio" name="lineheight" id="lineheight-increases2" class="sr-only"/>
+                            <label class="options-btn font-weight-medium" for="lineheight-increases2">Augmenté</label>
+                          </div>
                         </div>
-                        <div class="options-item">
-                          <input type="radio" name="lineheight" id="lineheight-increases2" class="sr-only"/>
-                          <label class="options-btn font-weight-medium" for="lineheight-increases2">Augmenté</label>
-                        </div>
-                      </div>
+                      </fieldset>
                     </div>
                     <div>
-                      <label class="w-100 font-weight-medium mb-2">Animations</label>
-                      <div class="options-control options-control-lg options-control-menubar">
-                        <div class="options-item">
-                          <input type="radio" name="animations" id="enabled2" class="sr-only" checked/>
-                          <label class="options-btn font-weight-medium" for="enabled2">Option 1</label>
+                      <fieldset>
+                        <label class="w-100 font-weight-medium mb-2">Animations</label>
+                        <div class="options-control options-control-lg options-control-menubar">
+                          <div class="options-item">
+                            <input type="radio" name="animations" id="enabled2" class="sr-only" checked/>
+                            <label class="options-btn font-weight-medium" for="enabled2">Option 1</label>
+                          </div>
+                          <div class="options-item">
+                            <input type="radio" name="animations" id="disabled2" class="sr-only"/>
+                            <label class="options-btn font-weight-medium" for="disabled2">Option 2</label>
+                          </div>
                         </div>
-                        <div class="options-item">
-                          <input type="radio" name="animations" id="disabled2" class="sr-only"/>
-                          <label class="options-btn font-weight-medium" for="disabled2">Option 2</label>
-                        </div>
-                      </div>
+                      </fieldset>
                     </div>
                   </div>
                 </div>
@@ -211,18 +218,18 @@ permalink: /docs/4.0/examples/navigation
                 <button type="button" class="btn w-100 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Langue : Fr <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>
                 <div class="dropdown-menu">
                   <div class="pr-4">
-                    <div class="dropdown-menu-lang-item gb-3 active">
+                    <button type="button" class="dropdown-menu-lang-item gb-3 active">
                       <img src="https://dummyimage.com/30x30/000/fff" class="pr-3" />
                       Français
-                    </div>
-                    <div class="dropdown-menu-lang-item gb-3">
+                    </button>
+                    <button type="button" class="dropdown-menu-lang-item gb-3">
                       <img src="https://dummyimage.com/30x30/000/fff" class="pr-3" />
                       English
-                    </div>
-                    <div class="dropdown-menu-lang-item">
+                    </button>
+                    <button type="button" class="dropdown-menu-lang-item">
                       <img src="https://dummyimage.com/30x30/000/fff" class="pr-3" />
                       Deutsch
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -230,10 +237,10 @@ permalink: /docs/4.0/examples/navigation
           </div>
           <ul class="toolbar mb-0">
             <li class="toolbar-item d-none d-md-block">
-              <a href="#" class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
+              <button type="button" class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
                 <span class="sr-only">Search</span>
                 <i class="icons-menu-searchbar icons-size-30px" aria-hidden="true"></i>
-              </a>
+              </button>
             </li>
             <li class="toolbar-item no-separator separator-md">
               <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
@@ -252,36 +259,38 @@ permalink: /docs/4.0/examples/navigation
         </div>
       </div>
 
-      <div class="menu" data-role="menu">
+      <nav class="menu" data-role="menu">
         <div class="container">
           {% for item in site.data.nav-fixtures %}
             <div id="{{ item.name | slugify }}" class="menu-item panel primary-panel">
               <div class="panel-inner">
                 <div class="panel-head">
-                  <h3 class="h3 mb-0" data-role="prev">
+                  <h3 class="mb-0" data-role="prev">
                     <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     {{ item.name }}
                   </h3>
-                  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
-                    <span class="sr-only">Close search</span>
+                  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+                    <span class="sr-only">Fermer</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
                 <div class="panel-content">
                   <div class="panel-lead">
-                    <div class="h3 mb-4 text-white">{{ item.name }}</div>
+                    <h3 class="mb-4 text-white">{{ item.name }}</h3>
                     <p>{{ item.description }}</p>
                   </div>
-                  <nav class="subnav">
-                    <div class="subnav-inner">
+                  <div class="subnav">
+                    <ul class="subnav-inner">
                       {% for category in item.categories %}
-                        <button type="button" class="subnav-item" data-role="sub-toggle" data-target="#{{ category.name | slugify }}">
-                          {{ category.name }}
-                          <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-                        </button>
+                        <li class="subnav-item">
+                          <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#{{ category.name | slugify }}" aria-expanded="false" aria-controls="{{ category.name | slugify }}">
+                            {{ category.name }}
+                            <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                          </button>
+                        </li>
                       {% endfor %}
-                    </div>
-                  </nav>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -294,8 +303,8 @@ permalink: /docs/4.0/examples/navigation
                     <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                     {{ category.name }}
                   </h3>
-                  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close" aria-label="Close">
-                    <span class="sr-only">Close search</span>
+                  <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+                    <span class="sr-only">Fermer</span>
                     <i class="icons-close icons-size-1x" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -314,7 +323,7 @@ permalink: /docs/4.0/examples/navigation
           {% endfor %}
           {% endfor %}
         </div>
-      </div>
+      </nav>
     </div>
 
     <main role="main" class="mastcontainer">
@@ -378,112 +387,113 @@ permalink: /docs/4.0/examples/navigation
 
       <footer class="mastfooter bg-gray">
         <div class="container d-flex flex-column">
-          
-    <div class="mastfooter-links order-2 order-md-1 row text-white gy-5">
-      <div class="col-12 col-md-4 pb-3 pb-md-0">
-	<div class="d-flex align-items-center">
-	  <a href="#" class="text-white d-flex align-items-center">
-	    <i class="icons-large-mail icons-size-50px mr-2" aria-hidden="true"></i>
-	    S'abonner à la Newsletter
-	    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-	  </a>
-	</div>
-      </div>
-      <div class="col-12 col-md-4 pb-3 pb-md-0">
-	<div class="d-flex align-items-center">
-	  <a href="#" class="text-white d-flex align-items-center">
-	    <i class="icons-large-information icons-size-50px mr-2" aria-hidden="true"></i>
-	    Découvrir le programme
-	    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-	  </a>
-	</div>
-      </div>
-      <div class="col-12 col-md-4">
-	<div class="d-flex align-items-center">
-	  <a href="#" class="text-white d-flex align-items-center">
-	    <i class="icons-large-warning icons-size-50px mr-2" aria-hidden="true"></i>
-	    Voir les actualités
-	    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-	  </a>
-	</div>
-      </div>
-
-	  <div class="container d-flex flex-column">
-	    <div class="order-1 order-md-2 row gy-5">
-	      <div class="col-12 col-md-6">
-		<p class="display-3 text-white mt-4">Inscrivez-vous à nos news pour être tenu informé Nibh Dolor Parturient Quam</p>
-	      </div>
-	      <form class="col-12 col-md-6">
-		<div class="form-row">
-		  <div class="col-12 col-sm-auto flex-sm-fluid gb-3 gb-sm-0">
-		    <label class="text-white" for="inputEmail1">Votre adresse email</label>
-		    <div class="form-control-container ">
-		      <input class="form-control form-control-white" id="inputEmail1" placeholder="Example input" type="email">
-		      <span class="form-control-state"></span>
-		    </div>
-		  </div>
-		  <div class="col-12 col-sm-auto d-flex align-items-end">
-		    <button type="submit" class="btn btn-primary w-100 w-sm-auto">Valider</button>
-		  </div>
-		</div>
-	      </form> 
-	    </div>
-	  </div>
-
-	  <div class="container d-flex flex-column">
-	    <div class="order-3 row text-sm gt-5 gb-6 font-weight-medium">
-	      <div class="col-12 col-md-3">
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
-		<a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
-	      </div>
-	      <div class="col-12 col-md-3">
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
-		<a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
-	      </div>
-	      <div class="col-12 col-md-3">
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
-		<a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
-		<a href="#" class="d-flex align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
-	      </div>
-	      <div class="col-12 col-md-3 gt-5 gt-md-0">
-		<div class="pb-2 text-white">Suivez-nous :</div>
-		<div class="d-flex">
-		  <div class="pr-2">
-		    <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-twitter" aria-hidden="true"></i></button>
-		  </div>
-		  <div class="pr-2">
-		    <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-facebook" aria-hidden="true"></i></button>
-		  </div>
-		  <div>
-		    <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
-		  </div>
-		</div>
-	      </div>
-	    </div>
-	  </div>
-
-          <div class="order-4 d-flex flex-column flex-md-row justify-content-between gb-6">
-            <div class="row flex-column flex-md-row">
-              <div class="col-auto pb-3 pb-md-0">
-                <a href="#" class="text-gray300">Contact</a>
-              </div>
-              <div class="col-auto pb-3 pb-md-0">
-                <a href="#" class="text-gray300">Plan du site</a>
-              </div>
-              <div class="col-auto pb-3 pb-md-0">
-                <a href="#" class="text-gray300">Mentions légales</a>
-              </div>
-              <div class="col-auto pb-3 pb-md-0">
-                <a href="#" class="text-gray300">Conditions d'utilisation</a>
+          <div class="mastfooter-links order-2 order-md-1 row text-white gy-5">
+            <div class="col-12 col-md-4 pb-3 pb-md-0">
+              <div class="d-flex align-items-center">
+                <a href="#" class="text-white d-flex align-items-center">
+                  <i class="icons-large-mail icons-size-50px mr-2" aria-hidden="true"></i>
+                  S'abonner à la Newsletter
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
-            <div class="mastfooter-lang pt-2 pt-md-0">
-              <a href="#" class="text-gray300 active"><img src="https://dummyimage.com/30x30/000/fff" class="gr-2" />Fr</a>
-              <a href="#" class="text-gray300"><img src="https://dummyimage.com/30x30/000/fff" class="d-none gr-3" />En</a>
-              <a href="#" class="text-gray300"><img src="https://dummyimage.com/30x30/000/fff" class="d-none gr-3" />De</a>
+            <div class="col-12 col-md-4 pb-3 pb-md-0">
+	            <div class="d-flex align-items-center">
+                <a href="#" class="text-white d-flex align-items-center">
+                  <i class="icons-large-information icons-size-50px mr-2" aria-hidden="true"></i>
+                  Découvrir le programme
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </a>
+	            </div>
             </div>
+            <div class="col-12 col-md-4">
+	            <div class="d-flex align-items-center">
+                <a href="#" class="text-white d-flex align-items-center">
+                  <i class="icons-large-warning icons-size-50px mr-2" aria-hidden="true"></i>
+                  Voir les actualités
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="container d-flex flex-column">
+              <div class="order-1 order-md-2 row gy-5">
+                <div class="col-12 col-md-6">
+		              <p class="display-3 text-white mt-4">Inscrivez-vous à nos news pour être tenu informé Nibh Dolor Parturient Quam</p>
+	              </div>
+	              <form class="col-12 col-md-6">
+                  <div class="form-row">
+                    <div class="col-12 col-sm-auto flex-sm-fluid gb-3 gb-sm-0">
+                      <label class="text-white" for="inputEmail1">Votre adresse email</label>
+                      <div class="form-control-container ">
+                        <input class="form-control form-control-white" id="inputEmail1" placeholder="Example input" type="email">
+                        <span class="form-control-state"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-auto d-flex align-items-end">
+                      <button type="submit" class="btn btn-primary w-100 w-sm-auto">Valider</button>
+                    </div>
+                  </div>
+                </form> 
+              </div>
+            </div>
+
+            <div class="container d-flex flex-column">
+              <div class="order-3 row text-sm gt-5 gb-6 font-weight-medium">
+                <div class="col-12 col-md-3">
+                  <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+                  <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+                  <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-12 col-md-3">
+                  <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+                  <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+                  <a href="#" class="d-flex pb-3 pb-md-0 align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-12 col-md-3">
+                  <a href="#" class="d-flex pb-3 align-items-center text-white">Tortor Ipsum <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+                  <a href="#" class="d-flex pb-3 align-items-center text-white">Porta Ullamcorper <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+                  <a href="#" class="d-flex align-items-center text-white">Euismod Tortor Amet <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-12 col-md-3 gt-5 gt-md-0">
+                  <div class="pb-2 text-white">Suivez-nous :</div>
+                  <div class="d-flex">
+                    <div class="pr-2">
+                      <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-twitter" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="pr-2">
+                      <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-facebook" aria-hidden="true"></i></button>
+                    </div>
+                    <div>
+                      <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="order-4 d-flex flex-column flex-md-row justify-content-between gb-6">
+              <div class="row flex-column flex-md-row">
+                <div class="col-auto pb-3 pb-md-0">
+                  <a href="#" class="text-gray300">Contact</a>
+                </div>
+                <div class="col-auto pb-3 pb-md-0">
+                  <a href="#" class="text-gray300">Plan du site</a>
+                </div>
+                <div class="col-auto pb-3 pb-md-0">
+                  <a href="#" class="text-gray300">Mentions légales</a>
+                </div>
+                <div class="col-auto pb-3 pb-md-0">
+                  <a href="#" class="text-gray300">Conditions d'utilisation</a>
+                </div>
+              </div>
+              <div class="mastfooter-lang pt-2 pt-md-0">
+                <a href="#" class="text-gray300 active"><img src="https://dummyimage.com/30x30/000/fff" alt="Drapeaux Français" class="gr-2" />Fr</a>
+                <a href="#" class="text-gray300"><img src="https://dummyimage.com/30x30/000/fff" alt="Drapeaux Anglais" class="d-none gr-3" />En</a>
+                <a href="#" class="text-gray300"><img src="https://dummyimage.com/30x30/000/fff" alt="Drapeaux Allemand" class="d-none gr-3" />De</a>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </main>

@@ -80,6 +80,29 @@ $menubar-height-md: rem(76px);
   // &:focus { outline: 0; }
 }
 
+.subnav-btn {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+
+  &.active {
+    &::after {
+      position: absolute;
+      left: 100%;
+      z-index: 2;
+      display: block;
+      width: rem(18px);
+      height: rem(18px);
+      margin-left: rem(-9px);
+      content: "";
+      background-color: theme-color("primary");
+      transform: rotate(45deg);
+    }
+  }
+}
+
 
 //
 // Mobile
@@ -309,23 +332,6 @@ $menubar-height-md: rem(76px);
       min-width: 0;
       padding-right: 12.904%;
       padding-left: 8.067%;
-    }
-
-    .subnav-item {
-      &.active {
-        &::after {
-          position: absolute;
-          left: 100%;
-          z-index: 2;
-          display: block;
-          width: rem(18px);
-          height: rem(18px);
-          margin-left: rem(-9px);
-          content: "";
-          background-color: theme-color("primary");
-          transform: rotate(45deg);
-        }
-      }
     }
   }
 
