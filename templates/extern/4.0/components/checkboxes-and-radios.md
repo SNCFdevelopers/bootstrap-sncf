@@ -17,13 +17,15 @@ In the checked states, we use **base64 embedded SVG icons** from [Open Iconic](h
 
 ### Checkboxes
 
-Check boxes are often used for forms or for other functions that let users select options from a multiple-choice format. With check boxes, users can choose several criteria or options, which is not possible with radio buttons. There are three selection states—deselected, selected, and undefined. The undefined state appears when a group of sub-selections contains deselected and selected states.
+Check boxes are often used for forms or for other functions that let users select options from a multiple-choice format. With check boxes, users can choose several criteria or options, which is not possible with radio buttons. 
+
+There are three selection states—deselected, selected, and undefined. The undefined state appears when a group of sub-selections contains deselected and selected states.
 
 {% example html %}
 {% include components/checkbox.html name="exampleCheckbox1" id="exampleCheckbox1" label="Custom checkbox" %}
 {% endexample %}
 
-Custom checkboxes can also utilize the `:indeterminate` pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).
+Custom checkboxes can also utilize the `:indeterminate` pseudo class and `aria-checked="mixed` for screen reader, when manually set via JavaScript (there is no available HTML attribute for specifying it).
 
 <div class="bd-example bd-example-indeterminate">
   <div class="custom-control custom-checkbox">
@@ -36,6 +38,7 @@ If you're using jQuery, something like this should suffice:
 
 {% highlight js %}
 $('.your-checkbox').prop('indeterminate', true)
+$('.your-checkbox').attr('aria-checked', 'mixed');
 {% endhighlight %}
 
 ### Radios
@@ -55,14 +58,18 @@ Radio buttons are often used in forms or for other functions that let users sele
 
 ### Switch
 
+Switches turn a feature or option on or off. Labels can be applied when necessary.
+
 {% example html %}
-<label class="switch-control">
-  <input type="checkbox" class="sr-only">
+<label for="switch1" class="switch-control">
+  <span class="sr-only">On/Off switch</span>
+  <input id="switch1" type="checkbox" class="sr-only">
   <span class="switch-control-slider"></span>
 </label>
 
-<label class="switch-control">
-  <input type="checkbox" class="sr-only" checked>
+<label for="switch2" class="switch-control">
+  <span class="sr-only">On/Off switch</span>
+  <input id="switch2" type="checkbox" class="sr-only" checked>
   <span class="switch-control-slider"></span>
 </label>
 {% endexample %}
