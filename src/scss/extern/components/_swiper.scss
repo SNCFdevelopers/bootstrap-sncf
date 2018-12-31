@@ -16,12 +16,19 @@
   color: theme-color("primary");
   background-color: color("white");
   background-image: none;
+  border: none;
   border-radius: 50%;
 
   &:not(.swiper-button-disabled):hover {
     color: color("white");
     background-color: theme-color("primary-dark");
   }
+
+  /* stylelint-disable declaration-no-important */
+  &.swiper-button-disabled {
+    pointer-events: none !important;
+  }
+  /* stylelint-enable declaration-no-important */
 }
 
 .swiper-pagination {
