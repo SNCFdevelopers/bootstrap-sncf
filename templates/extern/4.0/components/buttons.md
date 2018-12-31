@@ -27,7 +27,6 @@ The `.btn` classes are designed to be used with the `<button>` element. However,
 When using button classes on `<a>` elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a `role="button"` to appropriately convey their purpose to assistive technologies such as screen readers.
 
 {% example html %}
-<a class="btn btn-primary" href="#" role="button">Link</a>
 <button class="btn btn-primary" type="submit">Button</button>
 <input class="btn btn-primary" type="button" value="Input">
 <input class="btn btn-primary" type="submit" value="Submit">
@@ -36,7 +35,7 @@ When using button classes on `<a>` elements that are used to trigger in-page fun
 
 ## Button link
 
-TODO : description
+These buttons are used for very minor actions.
 
 <a href="#" class="btn btn-link mb-4"><span>Internal link</span> <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
 <br>
@@ -55,7 +54,7 @@ TODO : description
 
 ## Button icon
 
-TODO : description
+These buttons are used for a series of buttons placed next to each other; they allow a more compact design.
 
 {% example html %}
 <button type="button" class="btn btn-only-icon btn-primary">
@@ -76,28 +75,32 @@ TODO : description
 </button>
 {% endexample %}
 
-TODO : description
+These buttons are used to move between different views or anchor points on a screen.
 
 {% example html %}
-<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-up" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-next" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-down" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow"><i class="icons-arrow-prev" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><span class="sr-only">Haut</span><i class="icons-arrow-up" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><span class="sr-only">Suivant</span><i class="icons-arrow-next" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><span class="sr-only">Bas</span><i class="icons-arrow-down" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow"><span class="sr-only">Précédent</span><i class="icons-arrow-prev" aria-hidden="true"></i></button>
 {% endexample %}
 
 {% example html %}
-<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-up" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-next" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-down" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><i class="icons-arrow-prev" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><span class="sr-only">Haut</span><i class="icons-arrow-up" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><span class="sr-only">Suivant</span><i class="icons-arrow-next" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><span class="sr-only">Bas</span><i class="icons-arrow-down" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><span class="sr-only">Précédent</span><i class="icons-arrow-prev" aria-hidden="true"></i></button>
 {% endexample %}
 
+## Social Media Share Icon Button
+
+These buttons are used to share a given page on social networks.
+
 {% example html %}
-<button type="button" class="btn-rounded btn-rounded-primary"><i class="icons-share" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-facebook"><i class="icons-facebook" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-twitter"><i class="icons-twitter" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-linkedin"><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-youtube"><i class="icons-youtube" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-primary"><span class="sr-only">Partager</span><i class="icons-share" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-facebook"><span class="sr-only">Facebook</span><i class="icons-facebook" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-twitter"><span class="sr-only">Twitter</span><i class="icons-twitter" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-linkedin"><span class="sr-only">Linkedin</span><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-youtube"><span class="sr-only">YouTube</span><i class="icons-youtube" aria-hidden="true"></i></button>
 {% endexample %}
 
 {% example html %}
