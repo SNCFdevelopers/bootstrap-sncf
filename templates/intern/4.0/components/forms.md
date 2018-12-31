@@ -85,15 +85,7 @@ Add the `required` boolean attribute on an input.
 The clear text behavior is made of `javascript`. Use `data-component="control"` with `data-clear-option="true"` to enable it. Don't forget to add the `button` element.
 
 {% example html %}
-<div class="form-control-container" data-component="control" data-clear-option="true">
-  <label for="search2" class="sr-only">Rechercher<</label>
-  <input class="form-control clear-option " id="search2" placeholder="Search..." value="This text can be erased" data-role="input">
-  <span class="form-control-state"></span>
-  <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
-    <span class="sr-only">Clear text</span>
-    <i class="icons-close" aria-hidden="true"></i>
-  </button>
-</div>
+{% include components/input-clear-option.html type="text" id="readonly2" label="Rechercher" placeholder="Search..." %}
 {% endexample %}
 
 ### Input for standardized data

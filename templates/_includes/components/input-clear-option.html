@@ -1,4 +1,5 @@
 <div class="form-control-container" data-component="control" data-clear-option="true">
+  {% if include.label %}<label for="search2" class="sr-only">{{ include.label }}</label>{% endif %}
   <input class="form-control clear-option {{ include.class }}" id="{{ include.id }}" placeholder="{{ include.placeholder }}" data-role="input">
   <span class="form-control-state"></span>
   <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
