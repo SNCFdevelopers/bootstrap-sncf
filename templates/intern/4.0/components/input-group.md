@@ -81,10 +81,11 @@ Menu buttons (select radio add-ons) are used to define a search type.
 ## Button and select addons
 
 {% example html %}
+<label for="entertext3">Saisir les termes à rechercher</label>
 <div class="input-group">
   <div class="input-group-prepend">
     <div class="btn-group dropdown" data-component="select-radios">
-      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="actionsgroup2">>
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="actionsgroup2">
         <span data-role="placeholder">Tout</span>
         <i class="icons-arrow-down" aria-hidden="true"></i>
       </button>
@@ -99,7 +100,6 @@ Menu buttons (select radio add-ons) are used to define a search type.
     </div>
   </div>
   <div class="form-control-container">
-    <label for="entertext3">Saisir les termes à rechercher</label>
     <input id="entertext3" type="text" class="form-control text-right" placeholder="Recherche avancée">
     <span class="form-control-state"></span>
   </div>
@@ -120,12 +120,12 @@ Previous search history can be displayed by default when users click on the inpu
 {{ callout-include | markdownify }}
 
 {% example html %}
-<label class="font-weight-medium mb-2" for="entertext3">Saisir les termes à rechercher</label>
+<label class="font-weight-medium mb-2" for="entertext4">Saisir les termes à rechercher</label>
 <div class="advanced-search active">
   <div class="advanced-search-control">
     <div class="input-group">
       <div class="form-control-container">
-        <input id="entertext3" type="text" class="form-control" placeholder="Enter text" value="Gestionnaire">
+        <input id="entertext4" type="text" class="form-control" placeholder="Enter text" value="Gestionnaire">
         <span class="form-control-state"></span>
       </div>
       <div class="input-group-append input-group-last">
