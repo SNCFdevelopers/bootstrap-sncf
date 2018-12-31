@@ -37,7 +37,7 @@ All HTML headings, `<h1>` through `<h2>`, are available.
           <td><div class="cell-inner">
             {% markdown %}`<h3></h3>`{% endmarkdown %}
           </div></td>
-          <td><div class="cell-inner"><span class="h3">h3. Bootstrap heading</span></div></td>
+          <td><div class="cell-inner"><span class="h3" role="heading" aria-level="3">h3. Bootstrap heading</span></div></td>
         </tr>
       </tbody>
     </table>
@@ -55,7 +55,7 @@ All HTML headings, `<h1>` through `<h2>`, are available.
 {% example html %}
 <p class="h1" role="heading" aria-level="1">h1. Bootstrap heading</p>
 <p class="h2" role="heading" aria-level="2">h2. Bootstrap heading</p>
-<p class="h3">h3. Bootstrap heading</p>
+<p class="h3" role="heading" aria-level="3">h3. Bootstrap heading</p>
 {% endexample %}
 
 ## Colored headings

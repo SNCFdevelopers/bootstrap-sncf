@@ -69,7 +69,7 @@ Carousel footer pushes on text pages offer additional content of interest to use
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div>
-              <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
+              <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
               <div>
                 <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
@@ -79,7 +79,7 @@ Carousel footer pushes on text pages offer additional content of interest to use
           </div>
           <div class="swiper-slide">
             <div>
-              <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
+              <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
               <div>
                 <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
@@ -89,7 +89,7 @@ Carousel footer pushes on text pages offer additional content of interest to use
           </div>
           <div class="swiper-slide">
             <div>
-              <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
+              <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
               <div>
                 <div class="text-sm text-uppercase text-primary font-weight-medium mb-2">Internet industriel</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
@@ -99,7 +99,7 @@ Carousel footer pushes on text pages offer additional content of interest to use
           </div>
           <div class="swiper-slide">
             <div>
-              <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
+              <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
               <div>
                 <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
                 <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>

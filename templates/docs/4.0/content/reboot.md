@@ -67,37 +67,37 @@ All heading elements—e.g., `<h1>`—and `<p>` are reset to have their `margin-
           <td><div class="cell-inner">
             {% markdown %}`<h1></h1>`{% endmarkdown %}
           </div></td>
-          <td><div class="cell-inner"><span class="h1" role="heading" aria-level="1">h1. Bootstrap heading</span></div></td>
+          <td><div class="cell-inner"><h1>h1. Bootstrap heading</h1></div></td>
         </tr>
         <tr>
           <td><div class="cell-inner">
             {% markdown %}`<h2></h2>`{% endmarkdown %}
           </div></td>
-          <td><div class="cell-inner"><span class="h2" role="heading" aria-level="2">h2. Bootstrap heading</span></div></td>
+          <td><div class="cell-inner"><h2>h2. Bootstrap heading</h2></div></td>
         </tr>
         <tr>
           <td><div class="cell-inner">
             {% markdown %}`<h3></h3>`{% endmarkdown %}
           </div></td>
-          <td><div class="cell-inner"><span class="h3">h3. Bootstrap heading</span></div></td>
+          <td><div class="cell-inner"><h3>h3. Bootstrap heading</h3></div></td>
         </tr>
         <tr>
           <td><div class="cell-inner">
             {% markdown %}`<h4></h4>`{% endmarkdown %}
           </div></td>
-          <td><div class="cell-inner"><span class="h4">h4. Bootstrap heading</span></div></td>
+          <td><div class="cell-inner"><h4>h4. Bootstrap heading</h4></div></td>
         </tr>
         <tr>
           <td><div class="cell-inner">
             {% markdown %}`<h5></h5>`{% endmarkdown %}
           </div></td>
-          <td><div class="cell-inner"><span class="h5">h5. Bootstrap heading</span></div></td>
+          <td><div class="cell-inner"><h5>h5. Bootstrap heading</h5></div></td>
         </tr>
         <tr>
           <td><div class="cell-inner">
             {% markdown %}`<h6></h6>`{% endmarkdown %}
           </div></td>
-          <td><div class="cell-inner"><span class="h6">h6. Bootstrap heading</span></div></td>
+          <td><div class="cell-inner"><h6>h6. Bootstrap heading</h6></div></td>
         </tr>
       </tbody>
     </table>

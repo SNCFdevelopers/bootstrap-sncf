@@ -14,7 +14,7 @@ The breadcrumbs should not be used in mobile interfaces.
 
 {% example html %}
 
-<nav aria-label="Vous êtes : ">
+<nav aria-label="Vous êtes : " role="navigation">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Menu</a></li>
     <li class="breadcrumb-item"><a href="#">Offres voyageurs</a></li>
