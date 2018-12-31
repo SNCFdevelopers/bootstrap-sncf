@@ -26,6 +26,8 @@
   font-size: $font-size-base;
   font-weight: $font-weight-medium;
   color: theme-color("primary");
+  background-color: transparent;
+  border: none;
 
   [class^="icons-arrow-"] {
     display: inline-block;

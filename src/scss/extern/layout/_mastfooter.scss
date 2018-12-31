@@ -7,6 +7,11 @@
   }
 }
 .mastfooter-lang {
+  li {
+    display: inline-block;
+    padding-right: rem(2px);
+    padding-left: rem(2px);
+  }
   a {
     display: inline-block;
     @include hover-focus-active {
@@ -14,6 +19,11 @@
     }
     &:not(:last-child) { padding-right: rem(10px); }
   }
+}
+
+.mastfooter-links {
+  padding-left: 0;
+  list-style: none;
 }
 
 @include media-breakpoint-down(sm) {

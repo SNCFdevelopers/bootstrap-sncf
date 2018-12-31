@@ -16,11 +16,11 @@ Accordions divide text content up to make reading easier and reduce page length.
   <div class="accordion">
     <div class="accordion-head" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
       <h3 class="accordion-title mb-0">Collapsible Group Item #1</h3>
-      <div class="accordion-toggle">
+      <button type="button" class="accordion-toggle">
         <span class="accordion-toggle-close mr-2">Fermer</span>
         <span class="accordion-toggle-show mr-2">Ouvrir</span>
         <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
-      </div>
+      </button>
     </div>
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="accordion-body">
@@ -31,11 +31,11 @@ Accordions divide text content up to make reading easier and reduce page length.
   <div class="accordion">
     <div class="accordion-head" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
       <h3 class="accordion-title mb-0">Collapsible Group Item #2</h3>
-      <div class="accordion-toggle">
+      <button type="button" class="accordion-toggle">
         <span class="accordion-toggle-close mr-2">Fermer</span>
         <span class="accordion-toggle-show mr-2">Ouvrir</span>
         <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
-      </div>
+      </button>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="accordion-body">
@@ -168,12 +168,13 @@ We recommend only using one grey card per paragraph.
 {% example html %}
 <div class="editorial editorial-light">
   <div class="editorial-content order-md-0">
-    <p class="text-primary display-3 mb-3">Choisissez votre région</p>
+    <h1 class="text-primary display-3 mb-3">Choisissez votre région</h1>
     <p>Plus de 24000 places de stationnement vélo vous sont proposées dans les gares SNCF en région.</p>
     <div class="select-improved" data-component="select-exclusive">
       <div class="select-control">
 	<div class="input-group" data-role="select-toggle">
-	  <div class="form-control form-control-white is-placeholder  d-flex align-items-center" data-role="placeholder">Choisissez votre région...</div>
+	  <div class="form-control form-control-white is-placeholder d-flex align-items-center" data-role="placeholder">Choisissez votre région...</div>
+    <label for="select1" class="sr-only">Choisissez votre région</label>
 	  <select class="sr-only" id="select1" data-role="input" tabindex="-1" aria-hidden="true">
 	    <option selected disabled hidden>Lorem ipsum</option>
 	    <option data-id="1">Occitanie</option>
@@ -210,7 +211,7 @@ On text pages without anchor links, some components can be placed in a column to
       <div class="d-flex flex-column flex-fluid">
 	<h2 class="mb-5">Les derniers articles</h2>
 	<p class="display-5 text-uppercase text-primary">ÉVÈNEMENT</p>
-	<p class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</p>
+	<h3 class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</h3>
 	<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio.</p>
 	<div class="d-flex align-items-end flex-fluid">
 	  <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
@@ -241,7 +242,7 @@ Content editors can choose from the following options: illustrations, packshots 
     <li class="gb-4">
       <div class="d-flex flex-column flex-md-row">
         <div class="col-auto gr-md-4 px-0 pb-4 pb-md-0">
-          <img class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
+          <img alt="" class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
         </div>
         <div class="d-flex flex-column justify-content-center">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -252,7 +253,7 @@ Content editors can choose from the following options: illustrations, packshots 
     <li class="gb-4">
       <div class="d-flex flex-column flex-md-row">
         <div class="col-auto gr-md-4 px-0 pb-4 pb-md-0">
-          <img class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
+          <img alt="" class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
         </div>
         <div class="d-flex flex-column justify-content-center">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum ea distinctio, consequatur facilis repudiandae incidunt.</p>
@@ -263,7 +264,7 @@ Content editors can choose from the following options: illustrations, packshots 
     <li>
       <div class="d-flex flex-column flex-md-row">
         <div class="col-auto gr-md-4 px-0 pb-4 pb-md-0">
-          <img class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
+          <img alt="" class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
         </div>
         <div class="d-flex flex-column justify-content-center">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum ea distinctio.</p>
@@ -287,7 +288,7 @@ These blocks come in twos or fours in a text page.
   <div class="row">
     <div class="col-12 col-md-6 d-md-flex gb-5 gb-md-0">
       <div class="d-flex flex-column bg-light gx-3 gy-4 gx-md-4 rounded">
-        <img class="w-100" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
+        <img alt="" class="w-100" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
         <div class="d-flex flex-column flex-fluid">
           <h3 class="text-gray500 mb-3">-25% garantis* sur tous les trains TGV et Intercités <br/>
             <span class="text-base">à réservation obligatoire</span>
@@ -300,7 +301,7 @@ These blocks come in twos or fours in a text page.
     </div>
     <div class="col-12 col-md-6 d-md-flex gb-5 gb-md-0">
       <div class="d-flex flex-column bg-light gx-3 gy-4 gx-md-4 rounded">
-        <img class="w-100" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
+        <img alt="" class="w-100" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
         <div class="d-flex flex-column flex-fluid">
           <h3 class="text-gray500 mb-3">-10% supplémentaires sur les billets Prem’s*</h3>
           <div class="d-flex align-items-end flex-fluid">
@@ -326,7 +327,7 @@ Content editors can choose from the following options: illustrations, packshots 
   <div class="row">
     <div class="col-12 col-md-6 gb-5 gb-md-0">
       <div>
-        <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
+        <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
         <div>
           <h3 class="text-gray500 mb-2">Paris - Bordeaux</h3>
           <div class="mb-3">Lorem ipsum doloret</div>
@@ -336,7 +337,7 @@ Content editors can choose from the following options: illustrations, packshots 
     </div>
     <div class="col-12 col-md-6 gb-5 gb-md-0">
       <div>
-        <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
+        <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
         <div>
           <h3 class="text-gray500 mb-2">Paris - Nantes</h3>
           <div class="mb-3">Lorem ipsum doloret</div>
@@ -358,7 +359,7 @@ A mailto link can be inserted instead of an input field.
 <div style="max-width: 41.000rem">
   <div class="row no-gutters bg-light rounded gx-3 gb-4 g-md-5">
     <div class="col-12 col-md-6 order-md-1">
-      <img class="w-100" src="https://dummyimage.com/286x160/000/fff" />
+      <img alt="" class="w-100" src="https://dummyimage.com/286x160/000/fff" />
     </div>
     <div class="col-12 col-md-6 order-md-0 mb-1">
       <h3 class="display-3 text-primary">Lorem ipsum</h3>
@@ -372,7 +373,7 @@ A mailto link can be inserted instead of an input field.
             {% include components/input.html type="email" id="inputEmail1" placeholder="Example input" class="form-control-white" %}
           </div>
           <div class="col-12 col-sm-auto d-flex align-items-end">
-            <button type="submit" class="btn btn-primary w-100 w-sm-auto">Valider</button>
+            <button type="submit" class="btn btn-primary w-100 w-sm-auto">Valider mon inscription au magazine</button>
           </div>
         </div>
       </form>
