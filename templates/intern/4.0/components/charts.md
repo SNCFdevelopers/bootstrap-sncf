@@ -40,11 +40,11 @@ Radar charts show the values of different variables.
 Pie charts show the relative distribution of items in a group.
 
 {% example html %}
-<div class="position-relative"
+<div class="position-relative" style="width: 500px; height: 500px"
     data-component="pie-chart"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"]'
     data-values='[580, 400, 500, 600, 700, 800]'>
-    <canvas></canvas>
+    <canvas width="500px" height="500px"></canvas>
 </div>
 {% endexample html %}
 

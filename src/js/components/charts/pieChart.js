@@ -61,11 +61,10 @@ export default class PieChart {
       data: {
         labels,
         datasets: [{
-          backgroundColor: cutoutPercentage !== 0 ? createGrad(canvas, DEFAULT_HEX_COLORS) : DEFAULT_COLORS,
+          backgroundColor: createGrad(canvas, DEFAULT_HEX_COLORS),
           hoverBackgroundColor: DEFAULT_COLORS,
-          hoverBorderColor: DEFAULT_COLORS,
           data: values,
-          borderWidth: 1
+          borderWidth: 0
         }]
       },
       options: {
