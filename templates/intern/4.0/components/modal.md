@@ -272,11 +272,11 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
           </div>
         </div>
         <div class="modal-footer">
-          <div class="row">
-            <div class="col-6">
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
               <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Annuler</button>
             </div>
-            <div class="col-6">
+            <div class="col-6 pl-1">
               <button type="button" class="btn btn-primary btn-block">Continuer</button>
             </div>
           </div>
@@ -352,11 +352,11 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
         </div>
       </div>
       <div class="modal-footer">
-        <div class="row">
-          <div class="col-6">
+        <div class="row no-gutters">
+          <div class="col-6 pr-1">
             <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Annuler</button>
           </div>
-          <div class="col-6">
+          <div class="col-6 pl-1">
             <button type="button" class="btn btn-primary btn-block">Continuer</button>
           </div>
         </div>
