@@ -14,27 +14,6 @@ import {
 export default class BarChart {
   constructor(element) {
     const canvas = element.querySelector('canvas')
-    const resetBtn = element.querySelector('[data-role=reset]')
-    const zoomInBtn = element.querySelector('[data-role=zoom-in]')
-    const zoomOutBtn = element.querySelector('[data-role=zoom-out]')
-
-    if (resetBtn) {
-      resetBtn.addEventListener('click', () => {
-        ChartInstance.resetZoom()
-      })
-    }
-
-    if (zoomInBtn) {
-      zoomInBtn.addEventListener('click', () => {
-        ChartInstance.zoomIn()
-      })
-    }
-
-    if (zoomOutBtn) {
-      zoomOutBtn.addEventListener('click', () => {
-        ChartInstance.zoomOut()
-      })
-    }
 
     // data
     const labels = element.dataset.labels ? JSON.parse(element.dataset.labels) : []
@@ -57,7 +36,7 @@ export default class BarChart {
       dataCounter += 1
     })
 
-    const ChartInstance = new Chart(canvas, {
+    new Chart(canvas, {
       type: 'bar',
       data: barChartData,
       options: {
@@ -91,7 +70,6 @@ export default class BarChart {
         },
         zoom: {
           enabled: true,
-          drag: true,
           mode: 'xy'
         }
       }
