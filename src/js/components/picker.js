@@ -30,7 +30,10 @@ class Picker {
     const defaultDate = element.getAttribute('data-default-date')
     const mode = element.getAttribute('data-mode') || 'single'
     const enableTime = element.getAttribute('data-enable-time')
-    const dateFormat = this._getDateFormat(enableTime ? 'datetime' : mode)
+    const timePicker = element.getAttribute('data-timepicker')
+    /* eslint-disable no-nested-ternary */
+    const dateFormat = this._getDateFormat(timePicker ? 'time' : enableTime ? 'datetime' : mode)
+    /* eslint-enable no-nested-ternary */
     const secondRangeInput = element.getAttribute('data-second-range')
     const incrementHoursOnMinutesMax = element.getAttribute('data-increment-hours-on-minutes-max') || false
     const decrementHoursOnMinutesMin = element.getAttribute('data-decrement-hours-on-minutes-min') || false
@@ -53,8 +56,9 @@ class Picker {
       decrementHoursOnMinutesMin
     }
 
-    if (mode === 'time') {
+    if (timePicker) {
       options.enableTime = true
+      options.noCalendar = true
     }
 
     if (defaultDate) {

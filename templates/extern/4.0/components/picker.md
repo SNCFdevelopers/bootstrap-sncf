@@ -13,8 +13,8 @@ Date pickers are often used for forms or for other functional purposes; they let
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
 <div data-component="picker">
-  <div class="input-group" data-toggle>
-    <div class="form-control-container">
+  <div class="input-group input-group--flatpickr">
+    <div class="form-control-container" data-toggle>
       <input type="text" class="form-control" placeholder="Sélectionner une date" data-input>
       <span class="form-control-state"></span>
     </div>
@@ -32,8 +32,8 @@ Date pickers are often used for forms or for other functional purposes; they let
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
 <div data-component="picker" data-default-date="2017-02-26">
-  <div class="input-group" data-toggle>
-    <div class="form-control-container">
+  <div class="input-group input-group--flatpickr">
+    <div class="form-control-container" data-toggle>
       <input type="text" class="form-control" placeholder="Sélectionner une date" data-input>
       <span class="form-control-state"></span>
     </div>
@@ -51,8 +51,8 @@ Date pickers are often used for forms or for other functional purposes; they let
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
 <div data-component="picker" data-mode="range">
-  <div class="input-group" data-toggle>
-    <div class="form-control-container">
+  <div class="input-group input-group--flatpickr">
+    <div class="form-control-container" data-toggle>
       <input type="text" class="form-control" placeholder="Sélectionner une date" data-input>
       <span class="form-control-state"></span>
     </div>
@@ -74,9 +74,9 @@ The length of the time-picker field is not fixed, but it must respect the conten
 
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
-<div data-component="picker" data-mode="time">
-  <div class="input-group" data-toggle>
-    <div class="form-control-container">
+<div data-component="picker" data-timepicker="true" data-increment-hours-on-minutes-max="true">
+  <div class="input-group input-group--flatpickr">
+    <div class="form-control-container" data-toggle>
       <input type="text" class="form-control" placeholder="Sélectionner une heure" data-input>
       <span class="form-control-state"></span>
     </div>
@@ -94,8 +94,8 @@ The length of the time-picker field is not fixed, but it must respect the conten
 {% example html %}
 <label class="font-weight-medium mb-2">Date</label>
 <div data-component="picker" data-enable-time="true">
-  <div class="input-group" data-toggle>
-    <div class="form-control-container">
+  <div class="input-group input-group--flatpickr">
+    <div class="form-control-container" data-toggle>
       <input type="text" class="form-control" placeholder="Sélectionner une heure" data-input>
       <span class="form-control-state"></span>
     </div>
