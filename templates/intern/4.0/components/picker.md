@@ -105,7 +105,7 @@ Only use a date-time-picker when you need to optimize space and reduce the numbe
 
 {% example html %}
 <label class="font-weight-medium mb-2">Heure</label>
-<div data-component="picker" data-enable-time="true" data-increment-hours-on-minutes-max>
+<div data-component="picker" data-enable-time="true" data-increment-hours-on-minutes-max="true">
   <div class="input-group input-group--flatpickr">
     <div class="form-control-container" data-toggle>
       <input type="text" class="form-control" placeholder="JJ/MM/AAAA à HH:MM" data-input>

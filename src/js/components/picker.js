@@ -38,6 +38,7 @@ class Picker {
     const incrementHoursOnMinutesMax = element.getAttribute('data-increment-hours-on-minutes-max') || false
     const decrementHoursOnMinutesMin = element.getAttribute('data-decrement-hours-on-minutes-min') || false
     const plugins = []
+    const onOpen = []
 
     if (secondRangeInput) {
       /* eslint-disable new-cap */
@@ -61,16 +62,26 @@ class Picker {
       options.noCalendar = true
     }
 
+    if (enableTime) {
+      onOpen.push((selectedDates, dateStr, instance) => {
+        if (selectedDates.length === 0) {
+          instance.setDate(new Date())
+        }
+      })
+    }
+
     if (defaultDate) {
       options.defaultDate = defaultDate
     }
 
+    onOpen.push(
+      () => btnNode.classList.add('active')
+    )
+
     flatpickr(element, {
       ...DEFAULT_OPTIONS,
       ...options,
-      onOpen: () => {
-        btnNode.classList.add('active')
-      },
+      onOpen,
       onClose: () => {
         btnNode.classList.remove('active')
       }
