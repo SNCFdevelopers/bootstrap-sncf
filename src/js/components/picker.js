@@ -78,7 +78,7 @@ class Picker {
       () => btnNode.classList.add('active')
     )
 
-    flatpickr(element, {
+    element.flatpickr = flatpickr(element, {
       ...DEFAULT_OPTIONS,
       ...options,
       onOpen,

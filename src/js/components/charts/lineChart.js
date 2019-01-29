@@ -101,7 +101,7 @@ export default class LineChart {
 
     config.data.labels = labels
 
-    new Chart(canvas, config)
+    element.chart = new Chart(canvas, config)
   }
 }
 /* eslint-enable no-magic-numbers, no-new */

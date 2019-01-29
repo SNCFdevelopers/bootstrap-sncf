@@ -31,7 +31,7 @@ export default class RadarChart {
       dataCounter += 1
     })
 
-    new Chart(canvas, {
+    element.chart = new Chart(canvas, {
       type: 'radar',
       data: barChartData,
       options: {
