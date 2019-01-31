@@ -79,6 +79,15 @@ module.exports = env => {
           use: [{
             loader: 'expose-loader',
             options: '$'
+          },{
+            loader: 'expose-loader',
+            options: 'jQuery'
+          },{
+            loader: 'expose-loader',
+            options: 'window.jQuery'
+          },{
+            loader: 'expose-loader',
+            options: 'window.$'
           }]
         }
       ]

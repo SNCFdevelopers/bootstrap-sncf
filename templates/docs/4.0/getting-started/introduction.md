@@ -63,7 +63,8 @@ Be sure to have your pages set up with the latest design and development standar
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- Compatibilité IE 11 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="dist/main.css">
 
