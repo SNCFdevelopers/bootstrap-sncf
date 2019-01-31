@@ -24,7 +24,7 @@ export default class LineChart {
     const lineStyles = element.dataset.styles ? JSON.parse(element.dataset.styles) : []
     const fill = element.dataset.fill === 'true'
     const lineTension = element.dataset.straightlines === 'true'
-    console.log('lineColors: ', lineColors);
+    // no-console  -> comment console.log('lineColors: ', lineColors);
 
     let counter = 0
 
