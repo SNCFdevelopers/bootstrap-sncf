@@ -33,12 +33,12 @@ script:
   - tar -zcf bootstrap-sncf-extern_${TRAVIS_TAG}.snapshot.tar.gz dist/
 before_deploy:
   - export RELEASE_TAR_GZ_FILE=$(ls bootstrap-sncf*.snapshot.tar.gz)
-  - echo "deploying $RELEASE_PKG_FILE to GitHub releases"
+  - echo "deploying ${RELEASE_PKG_FILE} to GitHub releases"
 deploy:
   provider: releases
   skip_cleanup: true
   api-key: $GITHUB_OAUTH
-  file: "${RELEASE_TAR_GZ}"
+  file: $RELEASE_TAR_GZ
   file_glob: true
   
 
