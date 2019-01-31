@@ -7,7 +7,8 @@ toc: true
 permalink: /docs/4.0/layout/navs
 ---
 
-Section header bars are displayed under the header and show the section header, and depending on use, the sub-menus as tabs, display modes, context search and other actions (edit, delete, filter, etc.).For mobiles, an arrow to the left of the section returns the reader to the previous page.  For tablets and desktops, breadcrumbs (see “Breadcrumb” section) should go above the section header. Tabs are placed under the section header so users can navigate in subsections. You can also add a set of steps when the user has to execute a series of tasks across multiple pages (to indicate  progress with each step).
+Section header bars are displayed under the header and show the section header, and depending on use, the sub-menus as tabs, display modes, context search and other actions (edit, delete, filter, etc.).
+For mobiles, an arrow to the left of the section returns the reader to the previous page.  For tablets and desktops, breadcrumbs (see “Breadcrumb” section) should go above the section header. Tabs are placed under the section header so users can navigate in subsections. You can also add a set of steps when the user has to execute a series of tasks across multiple pages (to indicate  progress with each step).
 
 ## Simple action bar
 
@@ -43,10 +44,10 @@ Section header bars are displayed under the header and show the section header, 
 
 {% example html %}
 <div class="actionbar">
-  <nav class="position-relative mt-2">
+  <nav role="navigation" class="position-relative mt-2">
     <ul class="navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
-        <a href="#" class="active">Titre onglet</a>
+        <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
       <li class="navtabs-item pr-4">
         <a href="#">Titre onglet</a>
@@ -80,14 +81,16 @@ Section header bars are displayed under the header and show the section header, 
       </li>
       <li class="toolbar-item toolbar-item-spacing">
         <div class="btn-group dropdown">
-          <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
             <span>Primary</span>
             <i class="icons-arrow-down"></i>
           </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-menu dropdown-menu-right" id="mycontrol">
+            <ul>
+              <li class="dropdown-item"><a href="#">Action</a></li>
+              <li class="dropdown-item"><a href="#">Another action</a></li>
+              <li class="dropdown-item"><a href="#">Something else here</a></li>
+            </ul>
           </div>
         </div>
       </li>
@@ -111,10 +114,10 @@ Section header bars are displayed under the header and show the section header, 
       </li>
     </ul>
   </div>
-  <nav class="position-relative mt-2">
+  <nav role="navigation" class="position-relative mt-2">
     <ul class="navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
-        <a href="#" class="active">Titre onglet</a>
+        <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
       <li class="navtabs-item pr-4">
         <a href="#">Titre onglet</a>
@@ -148,7 +151,7 @@ Section header bars are displayed under the header and show the section header, 
 {% example html %}
 <div class="actionbar">
   <div class="actionbar-head">
-    <nav aria-label="breadcrumb">
+    <nav role="navigation" aria-label="Vous êtes : ">
       <ol class="breadcrumb breadcrumb-lg mb-0 p-0">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Library</li>
@@ -173,14 +176,16 @@ Section header bars are displayed under the header and show the section header, 
       </li>
       <li class="toolbar-item toolbar-item-spacing">
         <div class="btn-group dropdown">
-          <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
             <span>Primary</span>
             <i class="icons-arrow-down"></i>
           </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-menu dropdown-menu-right" id="mycontrol">
+            <ul>
+              <li class="dropdown-item"><a href="#">Action</a></li>
+              <li class="dropdown-item"><a href="#">Another action</a></li>
+              <li class="dropdown-item"><a href="#">Something else here</a></li>
+            </ul>
           </div>
         </div>
       </li>
@@ -204,10 +209,10 @@ Section header bars are displayed under the header and show the section header, 
       </li>
     </ul>
   </div>
-  <nav aria-label="breadcrumb" class="d-none d-md-flex">
+  <nav role="navigation" aria-label="Étapes" class="d-none d-md-flex">
     <ol class="breadcrumb mt-2 mb-0">
       <li class="breadcrumb-item"><a href="#">Step 1</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Step 2</li>
+      <li class="breadcrumb-item active" aria-current="step">Step 2</li>
       <li class="breadcrumb-item"><a href="#">Step 3</a></li>
       <li class="breadcrumb-item"><a href="#">Step 4</a></li>
     </ol>
@@ -222,10 +227,10 @@ Section header bars are displayed under the header and show the section header, 
   <div class="actionbar-head d-none d-md-flex">
     <h1 class="mb-0">Titre section</h1>
     <div class="d-flex align-items-center">
-      <label class="font-weight-medium text-nowrap pr-3 mb-0">Sélectionner un plan de veille</label>
+      <label for="rechercheveille" class="font-weight-medium text-nowrap pr-3 mb-0">Sélectionner un plan de veille</label>
       <div class="input-group align-items-center">
         <div class="form-control-container" data-component="control" data-clear-option="true">
-          <input type="text" class="form-control clear-option" data-role="input" data-placeholder="Rechercher" />
+          <input id="rechercheveille" role="search" type="search" class="form-control clear-option" data-role="input" data-placeholder="Rechercher" />
           <span class="form-control-state"></span>
           <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
             <span class="sr-only">Clear text</span>
@@ -234,10 +239,14 @@ Section header bars are displayed under the header and show the section header, 
         </div>
         <div class="input-group-append input-group-last">
           <button type="button" class="btn btn-primary btn-only-icon">
+            <span class="sr-only">Rechercher un plan</span>
             <i class="icons-search"></i>
           </button>
         </div>
-        <button type="button" class="btn btn-only-icon btn-white d-block d-md-none" data-role="close"><i class="icons-close icon-size-1x25"></i></button>
+        <button type="button" class="btn btn-only-icon btn-white d-block d-md-none" data-role="close">
+          <span class="sr-only">Close search</span>
+          <i class="icons-close icon-size-1x25"></i>
+        </button>
       </div>
     </div>
   </div>
@@ -252,13 +261,16 @@ The contextual menu uses the dropdown component [described here]({{ site.baseurl
 
 {% example html %}
 <div class="btn-group dropdown">
-  <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
+    <span class="sr-only">Nom du menu</span>
     <i class="pl-1 icons-options icon-size-1x75"></i>
   </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Modifier la liste</a>
-    <a class="dropdown-item" href="#">Dupliquer la liste</a>
-    <a class="dropdown-item" href="#">Supprimer la liste</a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mycontrol">
+    <ul>
+      <li class="dropdown-item"><a href="#">Modifier la liste</a></li>
+      <li class="dropdown-item"><a href="#">Dupliquer la liste</a></li>
+      <li class="dropdown-item"><a href="#">Supprimer la liste</a></li>
+    </ul>
   </div>
 </div>
 {% endexample %}
@@ -266,10 +278,12 @@ The contextual menu uses the dropdown component [described here]({{ site.baseurl
 ### With icons
 
 {% example html %}
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#"><i class="icons-pencil mr-3 icon-size-x75"></i> Modifier la liste</a>
-    <a class="dropdown-item" href="#"><i class="icons-double mr-3 icon-size-x75"></i> Dupliquer la liste</a>
-    <a class="dropdown-item" href="#"><i class="icons-close mr-3 icon-size-x75"></i> Supprimer la liste</a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mycontrol">
+    <ul>
+      <li class="dropdown-item"><a href="#"><i class="icons-pencil mr-3 icon-size-x75"></i> Modifier la liste</a></li>
+      <li class="dropdown-item"><a href="#"><i class="icons-add mr-3 icon-size-x75"></i> Dupliquer la liste</a></li>
+      <li class="dropdown-item"><a href="#"><i class="icons-close mr-3 icon-size-x75"></i> Supprimer la liste</a></li>
+    </ul>
   </div>
 {% endexample %}
 
@@ -297,7 +311,7 @@ Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, 
 
 <div class="bd-example">
 <div class="actionbar">
-  <nav class="position-relative mt-2">
+  <nav role="navigation" class="position-relative mt-2">
     <ul class="nav navtabs mb-0 dragscroll" role="tablist" id="listeTitreOnglets">
       <li class="navtabs-item pr-4">
         <a href="#onglet1" class="active" id="titreonglet1" data-toggle="tab" role="tab" aria-controls="onglet1" aria-selected="true">Titre onglet</a>
@@ -338,7 +352,7 @@ Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, 
 
 {% highlight html %}
 <div class="actionbar">
-  <nav class="position-relative mt-2">
+  <nav role="navigation" class="position-relative mt-2">
     <ul class="nav navtabs mb-0 dragscroll" role="tablist" id="listeTitreOnglets">
       <li class="navtabs-item pr-4">
         <a href="#onglet1" class="active" id="titreonglet1" data-toggle="tab" role="tab" aria-controls="onglet1" aria-selected="true">Titre onglet</a>
@@ -464,8 +478,8 @@ If no tab was already active, then the `hide.bs.tab` and `hidden.bs.tab` events 
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th style="width: 150px;">Event Type</th>
-      <th>Description</th>
+      <th scope="col" style="width: 150px;">Event Type</th>
+      <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>

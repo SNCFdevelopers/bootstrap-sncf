@@ -2,7 +2,13 @@
    ========================================================================== */
 
 .carousel-item-content {
+  display: flex;
+  flex-direction: column;
   padding: rem(30px) rem(25px) rem(60px);
+}
+
+.carousel-item-headtext {
+  order: -1;
 }
 
 .carousel-controls {

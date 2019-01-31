@@ -11,7 +11,8 @@ There are several performance indicators. The most common is:
 - Meets expectations
 - Improvement needed
 - Unsatisfactory.
-You can also use emoticons (to indicate satisfaction, quality, etc.). These components can be either clickable (if data must be entered) or unclickable if they are for display only.
+
+You can also use emoticons (to indicate satisfaction, quality, etc.). These components can be either clickable (if data must be entered) or unclickable if they are for display only.
 
 {% example html %}
 <span class="pr-3">Click me!</span>
@@ -34,7 +35,7 @@ There are several performance indicators. The most common is:
   <input type="checkbox" class="sr-only" id="smileys{{ color.name }}">
   <label for="smileys{{ color.name }}" class="sami sami-checkbox-{{ color.name }}">
     <span class="sr-only">{{ color.icon }}</span>
-    <i class="icons-sami-{{ color.icon }} icons-size-3x"></i>
+    <i class="icons-sami-{{ color.icon }} icons-size-3x" aria-hidden="true"></i>
   </label>
 {% endif %}
 {% endfor %}

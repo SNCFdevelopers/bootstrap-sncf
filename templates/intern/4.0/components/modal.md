@@ -36,11 +36,11 @@ Keep reading for demos and usage guidelines.
 Below is a _static_ modal example (meaning its `position` and `display` have been overridden). Included are the modal header, modal body (required for `padding`), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
 
 <div class="bd-example bd-example-modal">
-  <div class="modal" tabindex="-1" role="dialog">
+  <div class="modal" tabindex="-1" role="dialog" aria-labelledy="exampleModalLabel1">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="h1 modal-title">Modal title</h5>
+          <h5 class="h1 modal-title" id="exampleModalLabel1">Modal title</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -54,11 +54,11 @@ Below is a _static_ modal example (meaning its `position` and `display` have bee
 </div>
 
 {% highlight html %}
-<div class="modal" tabindex="-1" role="dialog">
+<div class="modal" tabindex="-1" role="dialog" aria-labelledy="exampleModalLabel2">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="h1 modal-title">Modal title</h5>
+        <h5 class="h1 modal-title" id="exampleModalLabel2">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -72,11 +72,11 @@ Below is a _static_ modal example (meaning its `position` and `display` have bee
 {% endhighlight %}
 
 <div class="bd-example bd-example-modal">
-  <div class="modal" tabindex="-1" role="dialog">
+  <div class="modal" tabindex="-1" role="dialog" aria-labelledy="exampleModalLabel3">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="h1 modal-title">Modal title</h5>
+          <h5 class="h1 modal-title" id="exampleModalLabel3">Modal title</h5>
         </div>
         <div class="modal-body">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse incidunt officia accusantium facilis dolorem maxime, id numquam, nulla itaque velit quos fugit non placeat laboriosam, doloremque quo earum repellendus nesciunt.</p>
@@ -91,11 +91,11 @@ Below is a _static_ modal example (meaning its `position` and `display` have bee
 </div>
 
 {% highlight html %}
-<div class="modal" tabindex="-1" role="dialog">
+<div class="modal" tabindex="-1" role="dialog" aria-labelledy="exampleModalLabel4">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="h1 modal-title">Modal title</h5>
+        <h5 class="h1 modal-title" id="exampleModalLabel4">Modal title</h5>
       </div>
       <div class="modal-body">
         <p>Modal body text goes here.</p>
@@ -175,12 +175,12 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
 ### Download a file
 
 <div class="bd-example bd-example-modal">
-  <div class="modal" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body text-center">
-          <h2 class="h1 modal-title text-center mb-4" id="exampleModalLabel3"><i class="icons-download text-primary"></i></h2>
-          <h1 class="text-center mb-4">Glissez et déposez le fichier ici</h1>
+          <div class="h1 modal-title text-center mb-4"><i class="icons-download text-primary" aria-hidden="true"></i></div>
+          <h1 id="exampleModalLabel5" class="text-center mb-4">Glissez et déposez le fichier ici</h1>
           <p class="text-center mb-4">ou</p>
           <button type="button" class="btn btn-primary">Parcourir les fichiers</button>
         </div>
@@ -190,12 +190,12 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
 </div>
 
 {% highlight html %}
-<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel6" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body text-center">
-        <h2 class="h1 modal-title text-center mb-4" id="exampleModalLabel3"><i class="icons-download text-primary"></i></h2>
-        <h1 class="text-center mb-4">Glissez et déposez le fichier ici</h1>
+        <div class="h1 modal-title text-center mb-4"><i class="icons-download text-primary" aria-hidden="true"></i></div>
+        <h1 id="exampleModalLabel6" class="text-center mb-4">Glissez et déposez le fichier ici</h1>
         <p class="text-center mb-4">ou</p>
         <button type="button" class="btn btn-primary">Parcourir les fichiers</button>
       </div>
@@ -207,11 +207,11 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
 ### Demo form
 
 <div class="bd-example bd-example-modal">
-  <div class="modal" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
     <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content">
         <div class="modal-body">
-          <h5 class="h1 modal-title" id="exampleModalLabel4">Action lorem ipsum</h5>
+          <h5 class="h1 modal-title" id="exampleModalLabel7">Action lorem ipsum</h5>
           <p>Détails pour paramétrer l'action</p>
           <label for="inputEmail1">Titre</label>
           <div class="form-control-container mb-4">
@@ -232,7 +232,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
                 </select>
                 <div class="input-group-append input-group-last">
                   <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                  <i class="icons-arrow-down icon-size-x75"></i>
+                  <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -258,7 +258,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
                 </select>
                 <div class="input-group-append input-group-last">
                   <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                  <i class="icons-arrow-down icon-size-x75"></i>
+                  <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -272,11 +272,11 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
           </div>
         </div>
         <div class="modal-footer">
-          <div class="row">
-            <div class="col-6">
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
               <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Annuler</button>
             </div>
-            <div class="col-6">
+            <div class="col-6 pl-1">
               <button type="button" class="btn btn-primary btn-block">Continuer</button>
             </div>
           </div>
@@ -312,7 +312,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
               </select>
               <div class="input-group-append input-group-last">
                 <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                <i class="icons-arrow-down icon-size-x75"></i>
+                <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
                 </button>
               </div>
             </div>
@@ -338,7 +338,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
               </select>
               <div class="input-group-append input-group-last">
                 <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                <i class="icons-arrow-down icon-size-x75"></i>
+                <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
                 </button>
               </div>
             </div>
@@ -352,11 +352,11 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
         </div>
       </div>
       <div class="modal-footer">
-        <div class="row">
-          <div class="col-6">
+        <div class="row no-gutters">
+          <div class="col-6 pr-1">
             <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Annuler</button>
           </div>
-          <div class="col-6">
+          <div class="col-6 pl-1">
             <button type="button" class="btn btn-primary btn-block">Continuer</button>
           </div>
         </div>
@@ -381,7 +381,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
       </div>
       <div class="modal-body">
         <h5>Popover in a modal</h5>
-        <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute." data-container="#exampleModalPopovers">button</a> triggers a popover on click.</p>
+        <p>This <button type="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute." data-container="#exampleModalPopovers">button</button> triggers a popover on click.</p>
         <hr>
         <h5>Tooltips in a modal</h5>
         <p><a href="#" class="tooltip-test" title="Tooltip" data-container="#exampleModalPopovers">This link</a> and <a href="#" class="tooltip-test" title="Tooltip" data-container="#exampleModalPopovers">that link</a> have tooltips on hover.</p>
@@ -660,10 +660,10 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th style="width: 100px;">Name</th>
-      <th style="width: 50px;">Type</th>
-      <th style="width: 50px;">Default</th>
-      <th>Description</th>
+      <th scope="col" style="width: 100px;">Name</th>
+      <th scope="col" style="width: 50px;">Type</th>
+      <th scope="col" style="width: 50px;">Default</th>
+      <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -744,8 +744,8 @@ Bootstrap's modal class exposes a few events for hooking into modal functionalit
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th style="width: 150px;">Event Type</th>
-      <th>Description</th>
+      <th scope="col" style="width: 150px;">Event Type</th>
+      <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>

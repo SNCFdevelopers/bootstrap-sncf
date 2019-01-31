@@ -357,3 +357,15 @@ input[type="button"] {
     }
   }
 }
+
+
+//
+// Button unstyled
+//
+
+.btn-unstyled {
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+}

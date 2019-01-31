@@ -41,6 +41,12 @@
     border: solid transparent;
   }
 
+  > ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
   &::after {
     border-color: rgba(255, 255, 255, 0);
     border-width: 9px;
@@ -215,6 +221,10 @@
     color: gray("300");
     pointer-events: none;
     cursor: none;
+  }
+
+  a {
+    color: currentColor;
   }
 }
 

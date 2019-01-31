@@ -15,7 +15,7 @@ Images in Bootstrap are made responsive with `.img-fluid`. `max-width: 100%;` an
 </div>
 
 {% highlight html %}
-<img src="..." class="img-fluid" alt="Responsive image">
+<img src="..." class="img-fluid">
 {% endhighlight %}
 
 {% callout warning %}
@@ -33,7 +33,7 @@ In addition to our [border-radius utilities]({{ site.baseurl }}/docs/{{ site.doc
 </div>
 
 {% highlight html %}
-<img src="..." alt="..." class="img-thumbnail">
+<img src="..." alt="...">
 {% endhighlight %}
 
 ## Aligning images
@@ -46,8 +46,8 @@ Align images with the [helper float classes]({{ site.baseurl }}/docs/{{ site.doc
 </div>
 
 {% highlight html %}
-<img src="..." class="rounded float-left" alt="...">
-<img src="..." class="rounded float-right" alt="...">
+<img src="..." class="rounded float-left">
+<img src="..." class="rounded float-right">
 {% endhighlight %}
 
 <div class="bd-example bd-example-images">
@@ -55,7 +55,7 @@ Align images with the [helper float classes]({{ site.baseurl }}/docs/{{ site.doc
 </div>
 
 {% highlight html %}
-<img src="..." class="rounded mx-auto d-block" alt="...">
+<img src="..." class="rounded mx-auto d-block">
 {% endhighlight %}
 
 <div class="bd-example bd-example-images">
@@ -66,7 +66,7 @@ Align images with the [helper float classes]({{ site.baseurl }}/docs/{{ site.doc
 
 {% highlight html %}
 <div class="text-center">
-  <img src="..." class="rounded" alt="...">
+  <img src="..." class="rounded">
 </div>
 {% endhighlight %}
 
@@ -78,6 +78,6 @@ If you are using the `<picture>` element to specify multiple `<source>` elements
 {% highlight html %}
 ​<picture>
   <source srcset="..." type="image/svg+xml">
-  <img src="..." class="img-fluid img-thumbnail" alt="...">
+  <img src="..." class="img-fluid img-thumbnail">
 </picture>
 {% endhighlight %}

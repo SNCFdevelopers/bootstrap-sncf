@@ -36,11 +36,12 @@ Users can be offered the option of adding a new item to the list, but we suggest
 {% capture input_add %}
       <div class="d-flex pt-4 flex-column flex-sm-row" data-role="add">
         <div class="form-control-container w-100">
-          <input type="text" class="form-control form-control-sm" data-role="add-input" placeholder="Ajouter un agent" value="John Doe">
+          <label for="addagent" class="sr-only">Saisir le nom d’un agent à ajouter</label>
+          <input id="addagent" type="text" class="form-control form-control-sm" data-role="add-input" placeholder="Ajouter un agent" value="John Doe">
           <span class="form-control-state"></span>
         </div>
         <div class="pt-2 pt-sm-0 pl-sm-2">
-          <button type="button" class="btn btn-primary btn-sm btn-block d-sm-inline-block" data-role="add-btn">Ajouter</button>
+          <button type="button" class="btn btn-primary btn-sm btn-block d-sm-inline-block" data-role="add-btn" title="Ajouter cet agent">Ajouter</button>
         </div>
       </div>
 {% endcapture %}
@@ -64,7 +65,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon " data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -73,7 +74,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
         <div class="form-control-container w-100 has-left-icon">
           <input type="" class="form-control form-control-sm" id="inputIcon1" placeholder="Example for auto-completion" >
           <span class="form-control-state"></span>
-          <span class="form-control-icon"><i class="icons-search"></i></span>
+          <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
         </div>
       </div>
     </div>
@@ -94,7 +95,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon " data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -103,7 +104,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
         <div class="form-control-container w-100 has-left-icon">
           <input type="" class="form-control" id="inputIcon1" placeholder="Example for auto-completion" >
           <span class="form-control-state"></span>
-          <span class="form-control-icon"><i class="icons-search"></i></span>
+          <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
         </div>
       </div>
       <div class="d-flex flex-column flex-sm-row" data-role="add">
@@ -132,7 +133,7 @@ When the list contains very different items, it may be a good idea to group them
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
-      <div class="form-control" data-role="placeholder">
+      <div class="form-control" data-role="placeholder" data-selected-prefix="Sélection actuelle">
         Sélectionner un secteur
       </div>
       <select class="sr-only" id="exampleFormControlSelect1" data-role="input" tabindex="-1" aria-hidden="true">
@@ -143,29 +144,29 @@ When the list contains very different items, it may be a good idea to group them
         <option data-id="4">Pharetra Fusce Venenatis</option>
       </select>
       <div class="input-group-append input-group-last">
-        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button" aria-expanded="false" aria-controls="selectgrouptoggle">
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
-    <div class="select-menu" data-role="menu">
-      <div class="select-group">
+    <div class="select-menu" role="list" data-role="menu" id="selectgrouptoggle">
+      <div role="listitem" class="select-group">
         <div class="select-group-head">
-          <button class="select-group-title text-uppercase">Unité 1</button>
+          <span class="select-group-title text-uppercase">Unité 1</span>
         </div>
-        <div class="select-group-content">
-          <button class="select-menu-item" data-role="value" data-target="0">Sem Inceptos Tellus</button>
-          <button class="select-menu-item" data-role="value" data-target="1">Sem Inceptos Tellus</button>
-          <button class="select-menu-item" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button>
+        <div class="select-group-content" role="list">
+          <button class="select-menu-item" role="listitem" data-role="value" data-target="0">Sem Inceptos Tellus</button>
+          <button class="select-menu-item" role="listitem" data-role="value" data-target="1">Sem Inceptos Tellus</button>
+          <button class="select-menu-item" role="listitem" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button>
         </div>
       </div>
-      <div class="select-group">
+      <div role="listitem" class="select-group">
         <div class="select-group-head">
-          <button class="select-group-title text-uppercase">Unité 2</button>
+          <span class="select-group-title text-uppercase">Unité 2</span>
         </div>
-        <div class="select-group-content">
-          <button class="select-menu-item" data-role="value" data-target="3">Amet Porta</button>
-          <button class="select-menu-item" data-role="value" data-target="4">Pharetra Fusce Venenatis</button>
+        <div class="select-group-content" role="list">
+          <button class="select-menu-item" role="listitem" data-role="value" data-target="3">Amet Porta</button>
+          <button class="select-menu-item" role="listitem" data-role="value" data-target="4">Pharetra Fusce Venenatis</button>
         </div>
       </div>
     </div>
@@ -178,7 +179,7 @@ When the list contains very different items, it may be a good idea to group them
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
-      <div class="form-control" data-role="placeholder">
+      <div class="form-control" data-role="placeholder" data-selected-prefix="Sélection actuelle">
         Sélectionner un secteur
       </div>
       <select class="sr-only" id="exampleFormControlSelect1" data-role="input" tabindex="-1" aria-hidden="true">
@@ -189,39 +190,39 @@ When the list contains very different items, it may be a good idea to group them
         <option data-id="4">Pharetra Fusce Venenatis</option>
       </select>
       <div class="input-group-append input-group-last">
-        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button" aria-expanded="false" aria-controls="selectgroup2toggle">
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
-    <div class="select-menu" data-role="menu">
-      <div class="select-group select-group-expand">
-        <div class="select-group-head" data-role="collapse" data-target="#collapseExample">
+    <div id="selectgroup2toggle" class="select-menu" role="list" data-role="menu">
+      <div class="select-group select-group-expand" role="listitem">
+        <button class="select-group-head" data-role="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
           <div class="select-group-title text-uppercase">Unité 1</div>
           <div class="select-group-toggle text-primary">
             <span class="select-group-close font-weight-medium mr-2">Fermer</span>
             <span class="select-group-show font-weight-medium mr-2">Ouvrir</span>
-            <i class="icons-arrow-down icons-size-x75"></i>
+            <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
           </div>
-        </div>
-        <div id="collapseExample" class="collapse select-group-content">
-          <button class="select-menu-item" data-role="value" data-target="0">Sem Inceptos Tellus</button>
-          <button class="select-menu-item" data-role="value" data-target="1">Sem Inceptos Tellus</button>
-          <button class="select-menu-item" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button>
+        </button>
+        <div id="collapseExample" role="list" class="collapse select-group-content">
+          <button class="select-menu-item" role="listitem" data-role="value" data-target="0">Sem Inceptos Tellus</button>
+          <button class="select-menu-item" role="listitem" data-role="value" data-target="1">Sem Inceptos Tellus</button>
+          <button class="select-menu-item" role="listitem" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button>
         </div>
       </div>
-      <div class="select-group select-group-expand">
-        <div class="select-group-head" data-role="collapse" data-target="#collapseExample1">
-          <button class="select-group-title text-uppercase">Unité 2</button>
+      <div class="select-group select-group-expand" role="listitem">
+        <button class="select-group-head" data-role="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+          <div class="select-group-title text-uppercase">Unité 2</div>
           <div class="select-group-toggle text-primary">
             <span class="select-group-close font-weight-medium mr-2">Fermer</span>
             <span class="select-group-show font-weight-medium mr-2">Ouvrir</span>
-            <i class="icons-arrow-down icons-size-x75"></i>
+            <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
           </div>
-        </div>
-        <div id="collapseExample1" class="select-group-content">
-          <button class="select-menu-item" data-role="value" data-target="3">Amet Porta</button>
-          <button class="select-menu-item" data-role="value" data-target="4">Pharetra Fusce Venenatis</button>
+        </button>
+        <div id="collapseExample1" role="list" class="collapse select-group-content">
+          <button class="select-menu-item" role="listitem" data-role="value" data-target="3">Amet Porta</button>
+          <button class="select-menu-item" role="listitem" data-role="value" data-target="4">Pharetra Fusce Venenatis</button>
         </div>
       </div>
     </div>
@@ -250,33 +251,33 @@ Multi-select drop-down lists let users choose multiple options.
         <option data-id="3" selected>Amet Porta</option>
       </select>
       <div class="input-group-append input-group-last">
-        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button" aria-expanded="false" aria-controls="multiselecttoggle">
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
-    <div class="select-menu" data-role="menu">
-      <div class="select-group" data-role="group" data-id="0">
-	<div class="select-menu-item">
-	  <div class="custom-control custom-checkbox">
-	    <label data-role="value" data-target="0" class="custom-control-label font-weight-medium">Sem Inceptos Tellus</label>
-	  </div>
-	</div>
-	<div class="select-menu-item">
-	  <div class="custom-control custom-checkbox">
-	    <label data-role="value" data-target="1" class="custom-control-label font-weight-medium">Sollicitudin Adipiscing Mattis</label>
-	  </div>
-	</div>
-	<div class="select-menu-item">
-	  <div class="custom-control custom-checkbox">
-	    <label data-role="value" data-target="2" class="custom-control-label font-weight-medium">Amet Porta</label>
-	  </div>
-	</div>
-	<div class="select-menu-item">
-	  <div class="custom-control custom-checkbox">
-	    <label data-role="value" data-target="3" class="custom-control-label font-weight-medium">Pharetra Fusce Venenatis</label>
-	  </div>
-	</div>
+    <div id="multiselecttoggle" class="select-menu" data-role="menu">
+      <div class="select-group" data-role="group" data-id="0" role="list">
+        <div class="select-menu-item" role="listitem">
+          <div class="custom-control custom-checkbox">
+            <button data-role="value" data-target="0" class="custom-control-label w-100 text-left font-weight-medium">Sem Inceptos Tellus</button>
+          </div>
+        </div>
+        <div class="select-menu-item" role="listitem">
+          <div class="custom-control custom-checkbox">
+            <button data-role="value" data-target="1" class="custom-control-label w-100 text-left font-weight-medium">Sollicitudin Adipiscing Mattis</button>
+          </div>
+        </div>
+        <div class="select-menu-item" role="listitem">
+          <div class="custom-control custom-checkbox">
+            <button data-role="value" data-target="2" class="custom-control-label w-100 text-left font-weight-medium">Amet Porta</button>
+          </div>
+        </div>
+        <div class="select-menu-item" role="listitem">
+          <div class="custom-control custom-checkbox">
+            <button data-role="value" data-target="3" class="custom-control-label w-100 text-left font-weight-medium">Pharetra Fusce Venenatis</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -303,60 +304,60 @@ Multi-select drop-down lists let users choose multiple options.
         <option data-id="4" selected>En plus</option>
       </select>
       <div class="input-group-append input-group-last">
-        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-          <i class="icons-arrow-down icons-size-x75"></i>
+        <button class="btn btn-primary btn-only-icon" data-role="btn" type="button" aria-expanded="false" aria-controls="multiselecttoggle2">
+          <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
         </button>
       </div>
     </div>
-    <div class="select-menu" data-role="menu">
-      <div class="select-group" data-role="group" data-id="0">
+    <div id="multiselecttoggle2" class="select-menu" data-role="menu" role="list">
+      <div class="select-group" data-role="group" data-id="0" role="listitem">
         <div class="select-group-head">
-          <div class="custom-control custom-checkbox">
-            <label data-role="counter" class="custom-control-label font-weight-medium text-uppercase">Unité 1</label>
+          <div class="custom-control custom-checkbox w-100">
+            <button data-role="counter" class="custom-control-label font-weight-medium w-100 text-left text-uppercase">Unité 1</button>
           </div>     
         </div>
-        <div class="select-group-content">
-          <div class="select-menu-item">
+        <div class="select-group-content" role="list">
+          <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
-              <label data-role="value" data-target="0" class="custom-control-label font-weight-medium">Sem Inceptos Tellus</label>
+              <button data-role="value" data-target="0" class="custom-control-label w-100 text-left font-weight-medium">Sem Inceptos Tellus</button>
             </div>
           </div>
-          <div class="select-menu-item">
+          <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
-              <label data-role="value" data-target="1" class="custom-control-label font-weight-medium">Sollicitudin Adipiscing Mattis</label>
+              <button data-role="value" data-target="1" class="custom-control-label w-100 text-left font-weight-medium">Sollicitudin Adipiscing Mattis</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="select-group" data-role="group" data-id="1">
+      <div class="select-group" data-role="group" data-id="1" role="listitem">
         <div class="select-group-head">
-          <div class="custom-control custom-checkbox">
-            <label data-role="counter" class="custom-control-label font-weight-medium text-uppercase">Unité 2</label>
+          <div class="custom-control custom-checkbox w-100">
+            <button data-role="counter" class="custom-control-label font-weight-medium w-100 text-left text-uppercase">Unité 2</button>
           </div>     
         </div>
-        <div class="select-group-content">
-          <div class="select-menu-item">
+        <div class="select-group-content" role="list">
+          <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
-              <label data-role="value" data-target="2" class="custom-control-label font-weight-medium">Amet Porta</label>
+              <button data-role="value" data-target="2" class="custom-control-label w-100 text-left font-weight-medium">Amet Porta</button>
             </div>
           </div>
-          <div class="select-menu-item">
+          <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
-              <label data-role="value" data-target="3" class="custom-control-label font-weight-medium">Pharetra Fusce Venenatis</label>
+              <button data-role="value" data-target="3" class="custom-control-label w-100 text-left font-weight-medium">Pharetra Fusce Venenatis</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="select-group" data-role="group" data-id="2">
+      <div class="select-group" data-role="group" data-id="2" role="listitem">
         <div class="select-group-head">
-          <div class="custom-control custom-checkbox">
-            <label data-role="counter" class="custom-control-label font-weight-medium text-uppercase">Unité 3</label>
+          <div class="custom-control custom-checkbox w-100">
+            <button data-role="counter" class="custom-control-label font-weight-medium w-100 text-left text-uppercase">Unité 3</button>
           </div>     
         </div>
-        <div class="select-group-content">
-          <div class="select-menu-item">
+        <div class="select-group-content" role="list">
+          <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
-              <label data-role="value" data-target="4" class="custom-control-label font-weight-medium">En plus</label>
+              <button data-role="value" data-target="4" class="custom-control-label w-100 text-left font-weight-medium">En plus</button>
             </div>
           </div>
         </div>

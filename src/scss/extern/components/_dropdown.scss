@@ -71,7 +71,12 @@
   }
 }
 
-.dropdown-actionbar {
+.dropdown-menu-lang-item {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown-menubar {
   .btn {
     justify-content: space-between;
     padding-left: rem(20px);

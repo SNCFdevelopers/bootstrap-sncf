@@ -43,7 +43,7 @@ Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are st
 Use `.has-left-icon` or `.has-right-icon` class on `.form-control` element. Then use `.form-control-icon` element with an fonticon element inside.
 
 {% capture control_icon %}
-  <span class="form-control-icon"><i class="icons-search"></i></span>
+  <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
 {% endcapture %}
 
 {% example html %}
@@ -75,6 +75,7 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
 Add the `required` boolean attribute on an input.
 
 {% example html %}
+<p>Les champs précédés d’une étoile sont obligatoires</p>
 <label for="required1">Required input</label>
 {% include components/input.html type="text" id="required1" placeholder="Required input here..." attr="required" %}
 {% endexample %}
@@ -84,7 +85,7 @@ Add the `required` boolean attribute on an input.
 The clear text behavior is made of `javascript`. Use `data-component="control"` with `data-clear-option="true"` to enable it. Don't forget to add the `button` element.
 
 {% example html %}
-{% include components/input-clear-option.html type="text" id="readonly2" placeholder="Search..." %}
+{% include components/input-clear-option.html type="text" id="readonly2" label="Rechercher" placeholder="Search..." %}
 {% endexample %}
 
 ## Textarea options
@@ -113,34 +114,34 @@ Add a `stretchy` class on `textarea` element.
     <div class="form-toolbar-content">
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Bold</span>
-        <i class="icons-toolbar-bold"></i>
+        <i class="icons-toolbar-bold" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Italic</span>
-        <i class="icons-toolbar-italic"></i>
+        <i class="icons-toolbar-italic" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Underline</span>
-        <i class="icons-toolbar-underline"></i>
+        <i class="icons-toolbar-underline" aria-hidden="true"></i>
       </button>
       <span class="form-toolbar-separator"></span>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Text align left</span>
-        <i class="icons-toolbar-left icons-size-1x25"></i>
+        <i class="icons-toolbar-left icons-size-1x25" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Text align center</span>
-        <i class="icons-toolbar-center icons-size-1x25"></i>
+        <i class="icons-toolbar-center icons-size-1x25" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">List</span>
-        <i class="icons-toolbar-list icons-size-1x25"></i>
+        <i class="icons-toolbar-list icons-size-1x25" aria-hidden="true"></i>
       </button>
     </div>
     <div class="form-toolbar-right">
       <div class="btn-group dropdown">
         <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="icons-options icons-size-1x25"></i>
+          <i class="icons-options icons-size-1x25" aria-hidden="true"></i>
         </button>
         <div class="dropdown-menu dropdown-menu-right">
           <button class="dropdown-item" type="button">Option 1</button>
@@ -161,10 +162,10 @@ Add a `stretchy` class on `textarea` element.
 
 {% example html %}
 <div class="range-slider" data-component="range-slider" data-target="#range_01">
-  <i class="icons-interrogation icons-size-1x25 pr-2"></i>
+  <i class="icons-interrogation icons-size-1x25 pr-2" aria-hidden="true"></i>
   <div id="range_01" data-min="25" data-max="125" data-hide-from-to="true">
   </div>
-  <i class="icons-interrogation icons-size-1x25 pl-2"></i>
+  <i class="icons-interrogation icons-size-1x25 pl-2" aria-hidden="true"></i>
 </div>
 {% endexample %}
 
@@ -189,20 +190,23 @@ Add a `stretchy` class on `textarea` element.
 ## Chips
 
 {% example html %}
-<div class="chips-group">
-  <span class="chips chips-label">Mathéo Mercier</span>
-  <button type="button" class="chips chips-btn chips-only-icon">
-    <span class="sr-only">Remove</span>
-    <i class="icons-close"></i>
-  </button>
+<div role="list">
+  <div class="chips-group" role="listitem">
+    <span class="chips chips-label">Mathéo Mercier</span>
+    <button type="button" class="chips chips-btn chips-only-icon">
+      <span class="sr-only">Remove Mathéo Mercier</span>
+      <i class="icons-close" aria-hidden="true"></i>
+    </button>
+  </div>
 </div>
 {% endexample %}
 
 {% example html %}
-<label class="font-weight-medium mb-2">Receivers</label>
+<label class="font-weight-medium mb-2" for="addreceivers1">Add receivers</label>
 <div class="form-control-container form-chips-container" data-component="chips">
-  <input data-role="typewriter" type="text" class="chips-input stretchy" />
-  <select class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" multiple>
+  <input data-role="typewriter" type="text" class="chips-input stretchy" id="addreceivers1" />
+  <label class="font-weight-medium mb-2 sr-only" for="receivers1">Receivers</label>
+  <select class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" id="receivers1" multiple>
     <option selected>Sem Inceptos Tellus</option>
     <option>Amet Porta</option>
     <option selected>Pharetra Fusce Venenatis</option>
@@ -211,10 +215,11 @@ Add a `stretchy` class on `textarea` element.
 {% endexample %}
 
 {% example html %}
-<label class="font-weight-medium mb-2">Receivers</label>
+<label class="font-weight-medium mb-2" for="addreceivers2">Receivers</label>
 <div class="form-control-container form-chips-container" data-component="chips">
-  <input data-role="typewriter" type="text" class="chips-input stretchy" />
-  <select class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" multiple>
+  <input id="addreceivers2" data-role="typewriter" type="text" class="chips-input stretchy" />
+  <label class="font-weight-medium mb-2 sr-only" for="receivers2">Receivers</label>
+  <select id="receivers2" class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" multiple>
   </select>
 </div>
 {% endexample %}
@@ -309,7 +314,11 @@ While Bootstrap will apply these styles in all browsers, Internet Explorer 11 an
 Provide valuable, actionable feedback to your users with HTML5 form validation–[available in all our supported browsers](https://caniuse.com/#feat=form-validation). Choose from the browser default validation feedback, or implement custom messages with our built-in classes and starter JavaScript.
 
 {% callout warning %}
-We **highly recommend** custom validation styles as native browser defaults are not announced to screen readers.
+We **highly recommend** pouet custom validation styles as native browser defaults are not announced to screen readers.
+{% endcallout %}
+
+{% callout info %}
+The checkmarks <i class="text-primary icons-check"></i> are not mandatory (and even not included in SNCF's guidelines), but it is a interesting way to show users that a field is validated. Use it if you want.
 {% endcallout %}
 
 ### Server side
@@ -339,7 +348,7 @@ We recommend using client side validation, but in case you require server side, 
         <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
         <span class="form-control-state"></span>
       </div>
-      <div class="invalid-feedback">
+      <div class="invalid-feedback" id="inputGroupPrepend">
         Please choose a username.
       </div>
     </div>
@@ -348,10 +357,10 @@ We recommend using client side validation, but in case you require server side, 
     <div class="col-md-6 mb-3">
       <label class="font-weight-medium mb-2 required" for="validationCustom03">City</label>
       <div class="form-control-container is-invalid">
-        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="City" aria-describedby="inputGroupPrepend2" required>
         <span class="form-control-state"></span>
       </div>
-      <div class="invalid-feedback">
+      <div class="invalid-feedback" id="inputGroupPrepend2">
         Please provide a valid city.
       </div>
     </div>
@@ -365,7 +374,7 @@ We recommend using client side validation, but in case you require server side, 
 {% example html %}
 <form class="needs-validation" novalidate>
   <div class="form-error mb-3">
-    <span class="h2 text-uppercase">Oouups ! Vous avez une erreur</span>
+    <h2 class="text-white text-uppercase">Oouups ! Vous avez une erreur</h2>
     <ul class="mt-1 mb-0">
       <li>Veuillez vérifier l'adresse email saisie</li>
     </ul>
@@ -374,10 +383,10 @@ We recommend using client side validation, but in case you require server side, 
     <div class="col-md-6 mb-3">
       <label class="font-weight-medium mb-2 required" for="validationCustom03">City</label>
       <div class="form-control-container is-invalid">
-        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="City" aria-describedby="iputGroupPrepend3" required>
         <span class="form-control-state"></span>
       </div>
-      <div class="invalid-feedback">
+      <div class="invalid-feedback" id="iputGroupPrepend3">
         Please provide a valid city.
       </div>
     </div>
@@ -412,7 +421,7 @@ While these feedback styles cannot be styled with CSS, you can still customize t
     <div class="col-md-4 mb-3">
       <label class="font-weight-medium mb-2 required" for="validationDefaultUsername">Username</label>
       <div class="form-control-container">
-        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" required>
         <span class="form-control-state"></span>
       </div>
     </div>

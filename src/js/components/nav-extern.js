@@ -119,6 +119,7 @@ class Nav {
   handleSubToggEvent = (event) => {
     if (this.currentSubToggle) {
       this.currentSubToggle.classList.remove('active')
+      this.currentSubToggle.setAttribute('aria-expanded', 'false')
     }
 
     if (this.currentSubTarget) {
@@ -130,6 +131,7 @@ class Nav {
     this.lastEntry = this.currentSubTarget
     this.currentSubToggle.classList.toggle('active')
     this.currentSubTarget.classList.toggle('active')
+    this.currentSubToggle.setAttribute('aria-expanded', 'true')
   }
 
   handleCloseEvent = () => {

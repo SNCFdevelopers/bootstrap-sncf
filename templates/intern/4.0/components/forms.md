@@ -77,6 +77,7 @@ Add the `required` boolean attribute on an input.
 {% example html %}
 <label for="required1" class="required">Required input</label>
 {% include components/input.html type="text" id="required1" placeholder="Required input here..." attr="required" %}
+<p class="mt-3">* Champs obligatoire</p>
 {% endexample %}
 
 ### Input with clear option
@@ -84,14 +85,7 @@ Add the `required` boolean attribute on an input.
 The clear text behavior is made of `javascript`. Use `data-component="control"` with `data-clear-option="true"` to enable it. Don't forget to add the `button` element.
 
 {% example html %}
-<div class="form-control-container" data-component="control" data-clear-option="true">
-  <input class="form-control clear-option " id="readonly2" placeholder="Search..." value="This text can be erased" data-role="input">
-  <span class="form-control-state"></span>
-  <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
-    <span class="sr-only">Clear text</span>
-    <i class="icons-close"></i>
-  </button>
-</div>
+{% include components/input-clear-option.html type="text" id="readonly2" label="Rechercher" placeholder="Search..." %}
 {% endexample %}
 
 ### Input for standardized data
@@ -99,20 +93,26 @@ The clear text behavior is made of `javascript`. Use `data-component="control"` 
 In some cases, fields can contain standardized data. Unmodifiable characters can be taken out of the input area, and the display varies depending on the data.
 
 {% example html %}
-<label class="font-weight-medium mb-2" for="exampleInputEmail1">Numéro de transfert</label>
-<div class="row align-items-center">
-  <div class="form-control-container col-4">
-    <input class="form-control" type="text" maxlength="4" placeholder="ABCD">
-    <span class="form-control-state"></span>
+<fieldset>
+  <legend class="text-base font-weight-medium mb-2">Numéro de transfert</legend>
+  <div class="row align-items-center">
+    <div class="col-4">
+      <div class="form-control-container">
+        <input class="form-control" type="text" maxlength="4" placeholder="ABCD" title="4 premiers caractères">
+        <span class="form-control-state"></span>
+      </div>
+    </div>
+    <div class="col-1 text-center font-weight-medium">
+      TX
+    </div>
+    <div class="col-4">
+      <div class="form-control-container">
+        <input class="form-control" type="text" maxlength="4" placeholder="1234" title="4 derniers caractères après TX">
+        <span class="form-control-state"></span>
+      </div>
+    </div>
   </div>
-  <div class="col-1 text-center font-weight-medium">
-    TX
-  </div>
-  <div class="form-control-container col-4">
-    <input class="form-control" type="text" maxlength="4" placeholder="1234">
-    <span class="form-control-state"></span>
-  </div>
-</div>
+</fieldset>
 {% endexample %}
 
 ## Textarea options
@@ -143,34 +143,34 @@ We recommend limiting toolbars to one line and putting secondary tools in a cont
     <div class="form-toolbar-content">
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Bold</span>
-        <i class="icons-toolbar-bold"></i>
+        <i class="icons-toolbar-bold" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Italic</span>
-        <i class="icons-toolbar-italic"></i>
+        <i class="icons-toolbar-italic" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Underline</span>
-        <i class="icons-toolbar-underline"></i>
+        <i class="icons-toolbar-underline" aria-hidden="true"></i>
       </button>
       <span class="form-toolbar-separator"></span>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Text align left</span>
-        <i class="icons-toolbar-left icons-size-1x25"></i>
+        <i class="icons-toolbar-left icons-size-1x25" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">Text align center</span>
-        <i class="icons-toolbar-center icons-size-1x25"></i>
+        <i class="icons-toolbar-center icons-size-1x25" aria-hidden="true"></i>
       </button>
       <button type="button" class="form-toolbar-item">
         <span class="sr-only">List</span>
-        <i class="icons-toolbar-list icons-size-1x25"></i>
+        <i class="icons-toolbar-list icons-size-1x25" aria-hidden="true"></i>
       </button>
     </div>
     <div class="form-toolbar-right">
       <div class="btn-group dropdown">
         <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="icons-options icons-size-1x75"></i>
+          <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
         </button>
         <div class="dropdown-menu dropdown-menu-right">
           <button class="dropdown-item" type="button">Option 1</button>
@@ -181,7 +181,8 @@ We recommend limiting toolbars to one line and putting secondary tools in a cont
     </div>
   </div>
   <div class="form-control-container">
-    <textarea class="form-control" placeholder="Comment"></textarea>
+    <label for="exampleFormControlTextarea3" class="sr-only">Comment</label>
+    <textarea id="exampleFormControlTextarea3" class="form-control" placeholder="Comment"></textarea>
     <span class="form-control-state"></span>
   </div>
 </div>
@@ -189,14 +190,16 @@ We recommend limiting toolbars to one line and putting secondary tools in a cont
 
 ## Range slider
 
-Sliders let users define and adjust a value or a range along a pre-defined span of values. There are two types of sliders: single-value and dual-point. When necessary, display a minimum and maximum value at each end of the line.With a slider, users can choose an approximate value, i.e., a value considered to be relative.
+Sliders let users define and adjust a value or a range along a pre-defined span of values. There are two types of sliders: single-value and dual-point. When necessary, display a minimum and maximum value at each end of the line.
+
+With a slider, users can choose an approximate value, i.e., a value considered to be relative.
 
 {% example html %}
 <div class="range-slider" data-component="range-slider" data-target="#range_01">
-  <i class="icons-interrogation icons-size-1x25 pr-2"></i>
+  <i class="icons-interrogation icons-size-1x25 pr-2" aria-hidden="true"></i>
   <div id="range_01" data-min="25" data-max="125" data-hide-from-to="true">
   </div>
-  <i class="icons-interrogation icons-size-1x25 pl-2"></i>
+  <i class="icons-interrogation icons-size-1x25 pl-2" aria-hidden="true"></i>
 </div>
 {% endexample %}
 
@@ -223,20 +226,23 @@ Sliders let users define and adjust a value or a range along a pre-defined span 
 Chips are compact components that appear after entering or selecting items as tags in a field. They can be used for various item types (contacts, concepts, etc.) and are predefined or can be adjusted for specific needs.
 
 {% example html %}
-<div class="chips-group">
-  <span class="chips chips-label">Mathéo Mercier</span>
-  <button type="button" class="chips chips-btn chips-only-icon">
-    <span class="sr-only">Remove</span>
-    <i class="icons-close"></i>
-  </button>
+<div role="list">
+  <div class="chips-group" role="listitem">
+    <span class="chips chips-label">Mathéo Mercier</span>
+    <button type="button" class="chips chips-btn chips-only-icon">
+      <span class="sr-only">Remove Mathéo Mercier</span>
+      <i class="icons-close" aria-hidden="true"></i>
+    </button>
+  </div>
 </div>
 {% endexample %}
 
 {% example html %}
-<label class="font-weight-medium mb-2">Receivers</label>
+<label class="font-weight-medium mb-2" for="addreceivers1">Add receivers</label>
 <div class="form-control-container form-chips-container" data-component="chips">
-  <input data-role="typewriter" type="text" class="chips-input stretchy" />
-  <select class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" multiple>
+  <input data-role="typewriter" type="text" class="chips-input stretchy" id="addreceivers1" />
+  <label class="font-weight-medium mb-2 sr-only" for="receivers1">Receivers</label>
+  <select class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" id="receivers1" multiple>
     <option selected>Sem Inceptos Tellus</option>
     <option>Amet Porta</option>
     <option selected>Pharetra Fusce Venenatis</option>
@@ -279,7 +285,7 @@ Help text below inputs can be styled with `.form-text`. This class includes `dis
 {% example html %}
 <label class="font-weight-medium mb-2" for="inputPassword5">Password</label>
 <div class="form-control-container">
-  <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+  <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" title="Password">
   <span class="form-control-state"></span>
 </div>
 <small id="passwordHelpBlock" class="form-text text-muted">
@@ -294,7 +300,7 @@ Inline text can use any typical inline HTML element (be it a `<small>`, `<span>`
   <div class="form-group">
     <label class="font-weight-medium" for="inputPassword6">Password</label>
     <div class="form-control-container mx-sm-3">
-      <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+      <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" title="Password">
       <span class="form-control-state"></span>
     </div>
     <small id="passwordHelpInline" class="text-muted">
@@ -343,7 +349,7 @@ We recommend using client side validation, but in case you require server side, 
         <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
         <span class="form-control-state"></span>
       </div>
-      <div class="invalid-feedback">
+      <div class="invalid-feedback" id="inputGroupPrepend">
         Please choose a username.
       </div>
     </div>
@@ -352,10 +358,10 @@ We recommend using client side validation, but in case you require server side, 
     <div class="col-md-6 mb-3">
       <label class="font-weight-medium mb-2 required" for="validationCustom03">City</label>
       <div class="form-control-container is-invalid">
-        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="City" aria-describedby="inputGroupPrepend2" required>
         <span class="form-control-state"></span>
       </div>
-      <div class="invalid-feedback">
+      <div class="invalid-feedback" id="inputGroupPrepend2">
         Please provide a valid city.
       </div>
     </div>
@@ -369,7 +375,7 @@ We recommend using client side validation, but in case you require server side, 
 {% example html %}
 <form class="needs-validation" novalidate>
   <div class="form-error mb-3">
-    <span class="h2 text-uppercase">Oouups ! Vous avez une erreur</span>
+    <h2 class="text-white text-uppercase">Oouups ! Vous avez une erreur</h2>
     <ul class="mt-1 mb-0">
       <li>Veuillez vérifier l'adresse email saisie</li>
     </ul>
@@ -378,10 +384,10 @@ We recommend using client side validation, but in case you require server side, 
     <div class="col-md-6 mb-3">
       <label class="font-weight-medium mb-2 required" for="validationCustom03">City</label>
       <div class="form-control-container is-invalid">
-        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="City" aria-describedby="iputGroupPrepend3" required>
         <span class="form-control-state"></span>
       </div>
-      <div class="invalid-feedback">
+      <div class="invalid-feedback" id="iputGroupPrepend3">
         Please provide a valid city.
       </div>
     </div>
@@ -416,7 +422,7 @@ While these feedback styles cannot be styled with CSS, you can still customize t
     <div class="col-md-4 mb-3">
       <label class="font-weight-medium mb-2 required" for="validationDefaultUsername">Username</label>
       <div class="form-control-container">
-        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" required>
         <span class="form-control-state"></span>
       </div>
     </div>

@@ -57,14 +57,14 @@ For all proposed examples, [specific markup](#dismiss-on-next-clik) is included,
 {% endcallout %}
 
 {% example html %}
-<a tabindex="0" role="button" class="btn btn-lg btn-primary" data-toggle="popover"  data-trigger="focus" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</a>
+<button type="button" tabindex="0" class="btn btn-lg btn-primary" data-toggle="popover" data-trigger="focus" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 {% endexample %}
 
 {% example html %}
-<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+<button type="button" tabindex="0" data-toggle="popover" data-trigger="focus" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
   <span class="sr-only">Click to toggle popover</span>
   <i class="icons-circle-tooltip"></i>
-</a>
+</button>
 {% endexample %}
 
 ### Four directions
@@ -73,38 +73,38 @@ Four options are available: top, right, bottom, and left aligned.
 
 <div class="bd-example popover-demo">
   <div class="bd-example-popovers">
-    <a tabindex="0" role="button" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
       Popover on top
-    </a>
-    <a tabindex="0" role="button" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    </button>
+    <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
       Popover on right
-    </a>
-    <a tabindex="0" role="button" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    </button>
+    <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
       Popover on bottom
-    </a>
-    <a tabindex="0" role="button" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    </button>
+    <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
       Popover on left
-    </a>
+    </button>
   </div>
 </div>
 
 {% highlight html %}
-<a tabindex="0" role="button" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+<button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
   Popover on top
-</a>
+</button>
 
-<a tabindex="0" role="button" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+<button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
   Popover on right
-</a>
+</button>
 
-<a tabindex="0" role="button" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+<button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
 sagittis lacus vel augue laoreet rutrum faucibus.">
   Popover on bottom
-</a>
+</button>
 
-<a tabindex="0" role="button" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+<button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
   Popover on left
-</a>
+</button>
 {% endhighlight %}
 
 ### Aligned with icon
@@ -112,18 +112,18 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 {% example html %}
 <div class="row">
   <div class="col-sm-6 text-right pt-5 pb-5">
-    <a href="#" data-trigger="focus" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="text-primary icons-circle-tooltip"></i></a>
+    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
   </div>
   <div class="col-sm-6 pt-5 pb-5">
-    <a href="#" data-trigger="focus" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="text-primary icons-circle-tooltip"></i></a>
+    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
   </div>
 </div>
 <div class="row">
   <div class="col-sm-6 text-right pt-5 pb-5">
-    <a href="#" data-trigger="focus" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="text-primary icons-pencil"></i></a>
+    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
   </div>
   <div class="col-sm-6 pt-5 pb-5">
-    <a href="#" data-trigger="focus" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="text-primary icons-pencil"></i></a>
+    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
   </div>
 </div>
 {% endexample %}
@@ -140,7 +140,7 @@ For proper cross-browser and cross-platform behavior, you must use the `<a>` tag
 {% endcallout %}
 
 {% example html %}
-<a tabindex="0" class="btn btn-lg btn-secondary" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+<button type="button" tabindex="0" class="btn btn-lg btn-secondary" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</button>
 {% endexample %}
 
 {% highlight js %}
@@ -156,7 +156,7 @@ Elements with the `disabled` attribute aren't interactive, meaning users cannot 
 For disabled popover triggers, you may also prefer `data-trigger="hover"` so that the popover appears as immediate visual feedback to your users as they may not expect to _click_ on a disabled element.
 
 {% example html %}
-<span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
+<span tabindex="0" class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
   <button class="btn btn-primary disabled" style="pointer-events: none;" type="button" disabled>Disabled button</button>
 </span>
 {% endexample %}
@@ -174,10 +174,10 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th style="width: 100px;">Name</th>
-      <th style="width: 100px;">Type</th>
-      <th style="width: 50px;">Default</th>
-      <th>Description</th>
+      <th scope="col" style="width: 100px;">Name</th>
+      <th scope="col" style="width: 100px;">Type</th>
+      <th scope="col" style="width: 50px;">Default</th>
+      <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -233,7 +233,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>selector</td>
       <td>string | false</td>
       <td>false</td>
-      <td>If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See <a href="https://github.com/twbs/bootstrap/issues/4215">this</a> and <a href="https://jsbin.com/zopod/1/edit">an informative example</a>.</td>
+      <td>If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See <a href="https://github.com/twbs/bootstrap/issues/4215">this</button> and <a href="https://jsbin.com/zopod/1/edit">an informative example</button>.</td>
     </tr>
     <tr>
       <td>template</td>
@@ -266,20 +266,20 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>offset</td>
       <td>number | string</td>
       <td>0</td>
-      <td>Offset of the popover relative to its target. For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..offset.offset">offset docs</a>.</td>
+      <td>Offset of the popover relative to its target. For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..offset.offset">offset docs</button>.</td>
     </tr>
     <tr>
       <td>fallbackPlacement</td>
       <td>string | array</td>
       <td>'flip'</td>
       <td>Allow to specify which position Popper will use on fallback. For more information refer to
-      Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..flip.behavior">behavior docs</a></td>
+      Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..flip.behavior">behavior docs</button></td>
     </tr>
     <tr>
       <td>boundary</td>
       <td>string | element</td>
       <td>'scrollParent'</td>
-      <td>Overflow constraint boundary of the popover. Accepts the values of <code>'viewport'</code>, <code>'window'</code>, <code>'scrollParent'</code>, or an HTMLElement reference (JavaScript only). For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..preventOverflow.boundariesElement">preventOverflow docs</a>.</td>
+      <td>Overflow constraint boundary of the popover. Accepts the values of <code>'viewport'</code>, <code>'window'</code>, <code>'scrollParent'</code>, or an HTMLElement reference (JavaScript only). For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..preventOverflow.boundariesElement">preventOverflow docs</button>.</td>
     </tr>
   </tbody>
 </table>
@@ -352,8 +352,8 @@ Updates the position of an element's popover.
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th style="width: 150px;">Event Type</th>
-      <th>Description</th>
+      <th scope="col" style="width: 150px;">Event Type</th>
+      <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>

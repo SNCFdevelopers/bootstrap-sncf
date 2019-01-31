@@ -22,7 +22,7 @@ Last option: use tiles for more eye-catching lists.
     <li class="list-group-item management-item">
       <div class="management-item-content">
         <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25"></i>
+          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
         </div>
         <div class="management-item-main">
           <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -38,7 +38,7 @@ Last option: use tiles for more eye-catching lists.
     <li class="list-group-item management-item">
       <div class="management-item-content">
       <div class="management-item-symbol">
-        <i class="icons-document icons-size-1x25"></i>
+        <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
       </div>
       <div class="management-item-main">
         <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -54,7 +54,7 @@ Last option: use tiles for more eye-catching lists.
     <li class="list-group-item management-item">
       <div class="management-item-content">
       <div class="management-item-symbol">
-        <i class="icons-document icons-size-1x25"></i>
+        <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
       </div>
       <div class="management-item-main">
         <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -70,7 +70,7 @@ Last option: use tiles for more eye-catching lists.
     <li class="list-group-item management-item">
       <div class="management-item-content">
         <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25"></i>
+          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
         </div>
         <div class="management-item-main">
           <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -91,7 +91,7 @@ Last option: use tiles for more eye-catching lists.
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-symbol">
-        <i class="icons-document icons-size-1x25"></i>
+        <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
       </div>
       <div class="management-item-main">
         <h2>Titre lorem ipsum dolor sit amet</h2>
@@ -120,7 +120,7 @@ Last option: use tiles for more eye-catching lists.
           </div>
         </div>
         <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25"></i>
+          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
         </div>
         <div class="management-item-main">
           <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -133,7 +133,8 @@ Last option: use tiles for more eye-catching lists.
         </div>
         <div class="management-item-action">
           <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="icons-download"></i>
+            <i class="icons-download" aria-hidden="true"></i>
+            <span class="sr-only" title="Télécharger (pdf 50mo)">Télécharger</span>
           </button>
         </div>
       </div>
@@ -147,7 +148,7 @@ Last option: use tiles for more eye-catching lists.
           </div>
         </div>
         <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25"></i>
+          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
         </div>
         <div class="management-item-main">
           <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -160,7 +161,8 @@ Last option: use tiles for more eye-catching lists.
         </div>
         <div class="management-item-action">
           <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="icons-download"></i>
+            <i class="icons-download" aria-hidden="true"></i>
+            <span class="sr-only" title="Télécharger (pdf 50mo)">Télécharger</span>
           </button>
         </div>
       </div>
@@ -174,7 +176,7 @@ Last option: use tiles for more eye-catching lists.
           </div>
         </div>
         <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25"></i>
+          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
         </div>
         <div class="management-item-main">
           <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -184,11 +186,12 @@ Last option: use tiles for more eye-catching lists.
             <li class="meta-list-item separator separator separator-sm-none separator-md-none">Agent : Marcel Patoulatchi</li>
           </ul>
           <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
-          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
         </div>
         <div class="management-item-action">
           <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="icons-download"></i>
+            <i class="icons-download" aria-hidden="true"></i>
+            <span class="sr-only" title="Télécharger (pdf 50mo)">Télécharger</span>
           </button>
         </div>
       </div>
@@ -202,7 +205,7 @@ Last option: use tiles for more eye-catching lists.
           </div>
         </div>
         <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25"></i>
+          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
         </div>
         <div class="management-item-main">
           <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -212,11 +215,12 @@ Last option: use tiles for more eye-catching lists.
             <li class="meta-list-item separator separator separator-sm-none separator-md-none">Agent : Magali Sondnach</li>
           </ul>
           <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
-          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
         </div>
         <div class="management-item-action">
           <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="icons-download"></i>
+            <i class="icons-download" aria-hidden="true"></i>
+            <span class="sr-only" title="Télécharger (pdf 50mo)">Télécharger</span>
           </button>
         </div>
       </div>
@@ -234,7 +238,7 @@ Last option: use tiles for more eye-catching lists.
       </div>
     </div>
     <div class="management-item-symbol">
-      <i class="icons-document icons-size-1x25"></i>
+      <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
     </div>
     <div class="management-item-main">
       <h2>Titre lorem ipsum dolor sit amet</h2>
@@ -247,7 +251,8 @@ Last option: use tiles for more eye-catching lists.
     </div>
     <div class="management-item-action">
       <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="icons-download"></i>
+        <i class="icons-download" aria-hidden="true"></i>
+        <span class="sr-only" title="Télécharger (pdf 50mo)">Télécharger</span>
       </button>
     </div>
   </li>
@@ -259,7 +264,7 @@ Last option: use tiles for more eye-catching lists.
       </div>
     </div>
     <div class="management-item-symbol">
-      <i class="icons-document icons-size-1x25"></i>
+      <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
     </div>
     <div class="management-item-main">
       <h2>Titre lorem ipsum dolor sit amet</h2>
@@ -272,7 +277,8 @@ Last option: use tiles for more eye-catching lists.
     </div>
     <div class="management-item-action">
       <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="icons-download"></i>
+        <i class="icons-download" aria-hidden="true"></i>
+        <span class="sr-only" title="Télécharger (pdf 50mo)">Télécharger</span>
       </button>
     </div>
   </li>
@@ -284,7 +290,7 @@ Last option: use tiles for more eye-catching lists.
       </div>
     </div>
     <div class="management-item-symbol">
-      <i class="icons-document icons-size-1x25"></i>
+      <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
     </div>
     <div class="management-item-main">
       <h2>Titre lorem ipsum dolor sit amet</h2>
@@ -294,11 +300,12 @@ Last option: use tiles for more eye-catching lists.
         <li class="meta-list-item separator separator separator-sm-none separator-md-none">Agent : Marcel Patoulatchi</li>
       </ul>
       <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
-      <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+      <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
     </div>
     <div class="management-item-action">
       <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="icons-download"></i>
+        <i class="icons-download" aria-hidden="true"></i>
+        <span class="sr-only" title="Télécharger (pdf 50mo)">Télécharger</span>
       </button>
     </div>
   </li>
@@ -310,7 +317,7 @@ Last option: use tiles for more eye-catching lists.
       </div>
     </div>
     <div class="management-item-symbol">
-      <i class="icons-document icons-size-1x25"></i>
+      <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
     </div>
     <div class="management-item-main">
       <h2>Titre lorem ipsum dolor sit amet</h2>
@@ -320,11 +327,12 @@ Last option: use tiles for more eye-catching lists.
         <li class="meta-list-item separator separator separator-sm-none separator-md-none">Agent : Magali Sondnach</li>
       </ul>
       <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
-      <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+      <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
     </div>
     <div class="management-item-action">
       <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="icons-download"></i>
+        <i class="icons-download" aria-hidden="true"></i>
+        <span class="sr-only" title="Télécharger (pdf 50mo)">Télécharger</span>
       </button>
     </div>
   </li>
@@ -344,7 +352,7 @@ Last option: use tiles for more eye-catching lists.
           </div>
         </div>
         <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25"></i>
+          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
         </div>
         <div class="management-item-main">
           <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -354,24 +362,25 @@ Last option: use tiles for more eye-catching lists.
             <li class="meta-list-item separator separator separator-sm-none separator-md-none">Agent : William Lemire</li>
           </ul>
           <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
-          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
         </div>
         <div class="management-item-action">
           <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-only-icon btn-favorite d-none d-lg-block active">
-              <input type="checkbox" autocomplete="off" checked>
+            <label for="inputFavListgroup1" class="btn btn-only-icon btn-favorite d-none d-lg-block active">
+              <input id="inputFavListgroup1" type="checkbox" autocomplete="off" checked>
               <span class="sr-only">Ajouter aux favoris</span>
-              <i class="icons-bookmark icons-size-1x25"></i>
+              <i class="icons-bookmark icons-size-1x25" aria-hidden="true"></i>
             </label>
           </div>
           <div class="btn-group dropdown">
-            <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="icons-options icons-size-1x75"></i>
+            <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown1">
+              <span class="sr-only">Actions</span>
+              <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
             </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <button class="dropdown-item" type="button">Déclencher le suivi</button>
-              <button class="dropdown-item" type="button">Télécharger</button>
-              <button class="dropdown-item" type="button">Supprimer</button>
+            <div id="dropdown1" class="dropdown-menu dropdown-menu-right">
+              <button role="listitem" class="dropdown-item" type="button">Déclencher le suivi</button>
+              <button role="listitem" class="dropdown-item" type="button" title="Télécharger (pdf 50mo)">Télécharger</button>
+              <button role="listitem" class="dropdown-item" type="button">Supprimer</button>
             </div>
           </div>
         </div>
@@ -386,7 +395,7 @@ Last option: use tiles for more eye-catching lists.
           </div>
         </div>
         <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25"></i>
+          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
         </div>
         <div class="management-item-main">
           <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -396,24 +405,25 @@ Last option: use tiles for more eye-catching lists.
             <li class="meta-list-item separator separator separator-sm-none separator-md-none">Agent : William Lemire</li>
           </ul>
           <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
-          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
         </div>
         <div class="management-item-action">
           <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-only-icon btn-favorite d-none d-lg-block">
-              <input type="checkbox" autocomplete="off">
+            <label for="inputFavListgroup2" class="btn btn-only-icon btn-favorite d-none d-lg-block">
+              <input id="inputFavListgroup2" type="checkbox" autocomplete="off">
               <span class="sr-only">Ajouter aux favoris</span>
-              <i class="icons-bookmark icons-size-1x25"></i>
+              <i class="icons-bookmark icons-size-1x25" aria-hidden="true"></i>
             </label>
           </div>
           <div class="btn-group dropdown">
-            <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="icons-options icons-size-1x75"></i>
+            <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown2">
+              <span class="sr-only">Actions</span>
+              <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
             </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <button class="dropdown-item" type="button">Déclencher le suivi</button>
-              <button class="dropdown-item" type="button">Télécharger</button>
-              <button class="dropdown-item" type="button">Supprimer</button>
+            <div id="dropdown2" class="dropdown-menu dropdown-menu-right">
+              <button role="listitem" class="dropdown-item" type="button">Déclencher le suivi</button>
+              <button role="listitem" class="dropdown-item" type="button" title="Télécharger (pdf 50mo)">Télécharger</button>
+              <button role="listitem" class="dropdown-item" type="button">Supprimer</button>
             </div>
           </div>
         </div>
@@ -428,7 +438,7 @@ Last option: use tiles for more eye-catching lists.
           </div>
         </div>
         <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25"></i>
+          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
         </div>
         <div class="management-item-main">
           <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -438,24 +448,25 @@ Last option: use tiles for more eye-catching lists.
             <li class="meta-list-item separator separator separator-sm-none separator-md-none">Agent : William Lemire</li>
           </ul>
           <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
-          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
         </div>
         <div class="management-item-action">
           <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-only-icon btn-favorite d-none d-lg-block">
-              <input type="checkbox" autocomplete="off">
+            <label for="inputFavListgroup3" class="btn btn-only-icon btn-favorite d-none d-lg-block">
+              <input id="inputFavListgroup3" type="checkbox" autocomplete="off">
               <span class="sr-only">Ajouter aux favoris</span>
-              <i class="icons-bookmark icons-size-1x25"></i>
+              <i class="icons-bookmark icons-size-1x25" aria-hidden="true"></i>
             </label>
           </div>
           <div class="btn-group dropdown">
-            <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="icons-options icons-size-1x75"></i>
+            <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown3">
+              <span class="sr-only">Actions</span>
+              <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
             </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <button class="dropdown-item" type="button">Déclencher le suivi</button>
-              <button class="dropdown-item" type="button">Télécharger</button>
-              <button class="dropdown-item" type="button">Supprimer</button>
+            <div id="dropdown3" class="dropdown-menu dropdown-menu-right">
+              <button role="listitem" class="dropdown-item" type="button">Déclencher le suivi</button>
+              <button role="listitem" class="dropdown-item" type="button" title="Télécharger (pdf 50mo)">Télécharger</button>
+              <button role="listitem" class="dropdown-item" type="button">Supprimer</button>
             </div>
           </div>
         </div>
@@ -470,7 +481,7 @@ Last option: use tiles for more eye-catching lists.
           </div>
         </div>
         <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25"></i>
+          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
         </div>
         <div class="management-item-main">
           <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -480,24 +491,25 @@ Last option: use tiles for more eye-catching lists.
             <li class="meta-list-item separator separator separator-sm-none separator-md-none">Agent : William Lemire</li>
           </ul>
           <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
-          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+          <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
         </div>
         <div class="management-item-action">
           <div class="btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-only-icon btn-favorite d-none d-lg-block">
-              <input type="checkbox" autocomplete="off">
+            <label for="inputFavListgroup4" class="btn btn-only-icon btn-favorite d-none d-lg-block">
+              <input id="inputFavListgroup4" type="checkbox" autocomplete="off">
               <span class="sr-only">Ajouter aux favoris</span>
-              <i class="icons-bookmark icons-size-1x25"></i>
+              <i class="icons-bookmark icons-size-1x25" aria-hidden="true"></i>
             </label>
           </div>
           <div class="btn-group dropdown">
-            <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="icons-options icons-size-1x75"></i>
+            <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown4">
+              <span class="sr-only">Actions</span>
+              <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
             </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <button class="dropdown-item" type="button">Déclencher le suivi</button>
-              <button class="dropdown-item" type="button">Télécharger</button>
-              <button class="dropdown-item" type="button">Supprimer</button>
+            <div id="dropdown4" class="dropdown-menu dropdown-menu-right">
+              <button role="listitem" class="dropdown-item" type="button">Déclencher le suivi</button>
+              <button role="listitem" class="dropdown-item" type="button" title="Télécharger (pdf 50mo)">Télécharger</button>
+              <button role="listitem" class="dropdown-item" type="button">Supprimer</button>
             </div>
           </div>
         </div>
@@ -517,7 +529,7 @@ Last option: use tiles for more eye-catching lists.
         </div>
       </div>
       <div class="management-item-symbol">
-        <i class="icons-document icons-size-1x25"></i>
+        <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
       </div>
       <div class="management-item-main">
         <h2>Titre lorem ipsum dolor sit amet</h2>
@@ -527,24 +539,25 @@ Last option: use tiles for more eye-catching lists.
           <li class="meta-list-item separator separator separator-sm-none separator-md-none">Agent : William Lemire</li>
         </ul>
         <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
-        <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+        <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
       </div>
       <div class="management-item-action">
         <div class="btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-only-icon btn-favorite d-none d-lg-block active">
-            <input type="checkbox" autocomplete="off" checked>
+          <label for="inputFavListgroup5" class="btn btn-only-icon btn-favorite d-none d-lg-block active">
+            <input id="inputFavListgroup5" type="checkbox" autocomplete="off" checked>
             <span class="sr-only">Ajouter aux favoris</span>
-            <i class="icons-bookmark icons-size-1x25"></i>
+            <i class="icons-bookmark icons-size-1x25" aria-hidden="true"></i>
           </label>
         </div>
         <div class="btn-group dropdown">
-          <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="icons-options icons-size-1x75"></i>
+          <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown5">
+            <span class="sr-only">Actions</span>
+            <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
           </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">Déclencher le suivi</button>
-            <button class="dropdown-item" type="button">Télécharger</button>
-            <button class="dropdown-item" type="button">Supprimer</button>
+          <div id="dropdown5" class="dropdown-menu dropdown-menu-right">
+            <button role="listitem" class="dropdown-item" type="button">Déclencher le suivi</button>
+            <button role="listitem" class="dropdown-item" type="button" title="Télécharger (pdf 50mo)">Télécharger</button>
+            <button role="listitem" class="dropdown-item" type="button">Supprimer</button>
           </div>
         </div>
       </div>
@@ -559,7 +572,7 @@ Last option: use tiles for more eye-catching lists.
         </div>
       </div>
       <div class="management-item-symbol">
-        <i class="icons-document icons-size-1x25"></i>
+        <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
       </div>
       <div class="management-item-main">
         <h2>Titre lorem ipsum dolor sit amet</h2>
@@ -569,24 +582,25 @@ Last option: use tiles for more eye-catching lists.
           <li class="meta-list-item separator separator separator-sm-none separator-md-none">Agent : William Lemire</li>
         </ul>
         <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
-        <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+        <a href="#" class="btn btn-link mt-2">Lien lorem <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
       </div>
       <div class="management-item-action">
         <div class="btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-only-icon btn-favorite d-none d-lg-block">
-            <input type="checkbox" autocomplete="off">
+          <label for="inputFavListgroup6" class="btn btn-only-icon btn-favorite d-none d-lg-block">
+            <input id="inputFavListgroup6" type="checkbox" autocomplete="off">
             <span class="sr-only">Ajouter aux favoris</span>
-            <i class="icons-bookmark icons-size-1x25"></i>
+            <i class="icons-bookmark icons-size-1x25" aria-hidden="true"></i>
           </label>
         </div>
         <div class="btn-group dropdown">
-          <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="icons-options icons-size-1x75"></i>
+          <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown6">
+            <span class="sr-only">Actions</span>
+            <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
           </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">Déclencher le suivi</button>
-            <button class="dropdown-item" type="button">Télécharger</button>
-            <button class="dropdown-item" type="button">Supprimer</button>
+          <div id="dropdown6" class="dropdown-menu dropdown-menu-right">
+            <button role="listitem" class="dropdown-item" type="button">Déclencher le suivi</button>
+            <button role="listitem" class="dropdown-item" type="button" title="Télécharger (pdf 50mo)">Télécharger</button>
+            <button role="listitem" class="dropdown-item" type="button">Supprimer</button>
           </div>
         </div>
       </div>
@@ -603,18 +617,18 @@ Note the use of `no-gutters` class to stick the columns together.
   <div class="row no-gutters">
     <div class="col-lg-5 col-md-6">
       <div class="d-flex align-items-center justify-content-between bg-light pl-4 pr-1">
-        <div>Lorem ipsum</div>
+        <h1 class="mb-0 text-base">Lorem ipsum</h1>
         <ul class="toolbar mb-0">
 	        <li class="toolbar-item">
 	          <button class="btn btn-only-icon btn-transparent btn-color-gray toolbar-item-spacing">
                     <span class="sr-only">Filters</span>
-                    <i class="icons-filters icons-size-1x25"></i>
+                    <i class="icons-filters icons-size-1x25" aria-hidden="true"></i>
                   </button>
 	        </li>
 	        <li class="toolbar-item">
 	          <button class="btn btn-only-icon btn-transparent btn-color-gray toolbar-item-spacing">
 	            <span class="sr-only">Sort</span>
-	            <i class="icons-sort icons-size-1x5"></i>
+	            <i class="icons-sort icons-size-1x5" aria-hidden="true"></i>
 	          </button>
 	        </li>
         </ul>
@@ -623,10 +637,10 @@ Note the use of `no-gutters` class to stick the columns together.
         <li class="list-group-item management-item">
           <div class="management-item-content">
 	          <div class="management-item-symbol">
-	            <i class="icons-document icons-size-1x25"></i>
+	            <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
 	          </div>
 	          <div class="management-item-main">
-	            <h5>Titre lorem ipsum dolor sit amet</h5>
+	            <h5 id="titreSelect">Titre lorem ipsum dolor sit amet</h5>
 	            <ul class="meta-list font-weight-medium">
 	              <li class="meta-list-item">Mise à jour le 4 avril 2017</li>
 	              <li class="meta-list-item separator">Site : Lorem ipsum</li>
@@ -639,7 +653,7 @@ Note the use of `no-gutters` class to stick the columns together.
         <li class="list-group-item management-item">
           <div class="management-item-content">
 	          <div class="management-item-symbol">
-	            <i class="icons-document icons-size-1x25"></i>
+	            <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
 	          </div>
 	          <div class="management-item-main">
 	            <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -655,7 +669,7 @@ Note the use of `no-gutters` class to stick the columns together.
         <li class="list-group-item management-item">
           <div class="management-item-content">
 	          <div class="management-item-symbol">
-	            <i class="icons-document icons-size-1x25"></i>
+	            <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
 	          </div>
 	          <div class="management-item-main">
 	            <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -671,7 +685,7 @@ Note the use of `no-gutters` class to stick the columns together.
         <li class="list-group-item management-item">
           <div class="management-item-content">
 	          <div class="management-item-symbol">
-	            <i class="icons-document icons-size-1x25"></i>
+	            <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
 	          </div>
 	          <div class="management-item-main">
 	            <h5>Titre lorem ipsum dolor sit amet</h5>
@@ -688,26 +702,26 @@ Note the use of `no-gutters` class to stick the columns together.
     </div>
     <div class="col-lg-7 col-md-6">
       <div class="d-flex align-items-center justify-content-between bg-light pl-4 pr-1">
-        <div>Content</div>
+        <h1 tabindex="-1" class="mb-0 text-base">Content</h1>
         <ul class="toolbar mb-0">
 	        <li class="toolbar-item">
 	          <div class="btn-group-toggle" data-toggle="buttons">
 	            <label class="btn btn-only-icon btn-favorite toolbar-item-spacing">
 	              <input type="checkbox" autocomplete="off">
 	              <span class="sr-only">Ajouter aux favoris</span>
-	              <i class="icons-bookmark icons-size-1x25"></i>
+	              <i class="icons-bookmark icons-size-1x25" aria-hidden="true"></i>
 	            </label>
 	          </div>
 	        </li>
 	        <li class="toolbar-item">
 	          <div class="btn-group dropdown">
-	            <button type="button" class="btn btn-only-icon btn-transparent btn-color-gray dropdown-toggle toolbar-item-spacing" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	              <i class="icons-options icons-size-1x75"></i>
+	            <button type="button" class="btn btn-only-icon btn-transparent btn-color-gray dropdown-toggle toolbar-item-spacing" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdownLsitGroup">
+	              <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
 	            </button>
-	            <div class="dropdown-menu dropdown-menu-right">
-	              <button class="dropdown-item" type="button">Déclencher le suivi</button>
-	              <button class="dropdown-item" type="button">Télécharger</button>
-	              <button class="dropdown-item" type="button">Supprimer</button>
+	            <div id="dropdownLsitGroup" role="list" class="dropdown-menu dropdown-menu-right">
+	              <button role="listitem" class="dropdown-item" type="button">Déclencher le suivi</button>
+	              <button role="listitem" class="dropdown-item" type="button" title="Télécharger (pdf 50mo)">Télécharger</button>
+	              <button role="listitem" class="dropdown-item" type="button">Supprimer</button>
 	            </div>
 	          </div>
 	        </li>
@@ -721,18 +735,18 @@ Note the use of `no-gutters` class to stick the columns together.
 <div class="row no-gutters">
   <div class="col-lg-5 col-md-6">
     <div class="d-flex align-items-center justify-content-between bg-light pl-4 pr-1">
-      <div>Lorem ipsum</div>
+      <h1 class="mb-0 text-base">Lorem ipsum</h1>
       <ul class="toolbar mb-0">
         <li class="toolbar-item">
           <button class="btn btn-only-icon btn-transparent btn-color-gray toolbar-item-spacing">
             <span class="sr-only">Filters</span>
-            <i class="icons-filters icons-size-1x25"></i>
+            <i class="icons-filters icons-size-1x25" aria-hidden="true"></i>
           </button>
         </li>
         <li class="toolbar-item">
           <button class="btn btn-only-icon btn-transparent btn-color-gray toolbar-item-spacing">
             <span class="sr-only">Sort</span>
-            <i class="icons-sort icons-size-1x5"></i>
+            <i class="icons-sort icons-size-1x5" aria-hidden="true"></i>
           </button>
         </li>
       </ul>
@@ -741,7 +755,7 @@ Note the use of `no-gutters` class to stick the columns together.
           <li class="list-group-item management-item">
             <div class="management-item-content">
             <div class="management-item-symbol">
-            <i class="icons-document icons-size-1x25"></i>
+            <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
           </div>
           <div class="management-item-main">
             <h2>Titre lorem ipsum dolor sit amet</h2>
@@ -759,29 +773,29 @@ Note the use of `no-gutters` class to stick the columns together.
   </div>
   <div class="col-lg-7 col-md-6">
     <div class="d-flex align-items-center justify-content-between bg-light pl-4 pr-1">
-      <div>Content</div>
+      <h1 tabindex="-1" class="mb-0 text-base">Content</h1>
       <ul class="toolbar mb-0">
-	<li class="toolbar-item">
-	  <div class="btn-group-toggle" data-toggle="buttons">
-	    <label class="btn btn-only-icon btn-favorite toolbar-item-spacing">
-	      <input type="checkbox" autocomplete="off">
-	      <span class="sr-only">Ajouter aux favoris</span>
-	      <i class="icons-bookmark icons-size-1x25"></i>
-	    </label>
-	  </div>
-	</li>
-	<li class="toolbar-item">
-	  <div class="btn-group dropdown">
-	    <button type="button" class="btn btn-only-icon btn-transparent btn-color-gray dropdown-toggle toolbar-item-spacing" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	      <i class="icons-options icons-size-1x75"></i>
-	    </button>
-	    <div class="dropdown-menu dropdown-menu-right">
-	      <button class="dropdown-item" type="button">Déclencher le suivi</button>
-	      <button class="dropdown-item" type="button">Télécharger</button>
-	      <button class="dropdown-item" type="button">Supprimer</button>
-	    </div>
-	  </div>
-	</li>
+        <li class="toolbar-item">
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-only-icon btn-favorite toolbar-item-spacing">
+              <input type="checkbox" autocomplete="off">
+              <span class="sr-only">Ajouter aux favoris</span>
+              <i class="icons-bookmark icons-size-1x25" aria-hidden="true"></i>
+            </label>
+          </div>
+        </li>
+        <li class="toolbar-item">
+          <div class="btn-group dropdown">
+            <button type="button" class="btn btn-only-icon btn-transparent btn-color-gray dropdown-toggle toolbar-item-spacing" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdownLsitGroup1">
+              <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
+            </button>
+            <div id="dropdownLsitGroup1" role="list" class="dropdown-menu dropdown-menu-right">
+              <button role="listitem" class="dropdown-item" type="button">Déclencher le suivi</button>
+              <button role="listitem" class="dropdown-item" type="button" title="Télécharger (pdf 50mo)">Télécharger</button>
+              <button role="listitem" class="dropdown-item" type="button">Supprimer</button>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -793,52 +807,56 @@ Note the use of `no-gutters` class to stick the columns together.
 <div class="bd-example">
   <ul class="list-group">
 {% for group in (1..3) %}
-<li id="group{{ forloop.index }}" class="list-group-item management-item management-item-group" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group{{ forloop.index }}">
-  <div class="management-item-content">
+<li id="group{{ forloop.index }}" class="list-group-item management-item management-item-group" >
+  <div class="management-item-content" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group{{ forloop.index }}">
     <div class="management-item-checkbox">
       <div class="custom-control custom-checkbox custom-checkbox-alone">
         <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-        <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
+        <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
       </div>
     </div>
     <div class="management-item-caret"></div>
     <div class="management-item-symbol">
-      <i class="icons-document icons-size-1x25"></i>
+      <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
     </div>
     <div class="management-item-main">
-      <h5 class="mb-0 font-weight-normal">Titre lorem ipsum dolor sit amet</h5>
+      <h2 class="mb-0 text-base font-weight-normal"><button class="btn-unstyled" aria-expanded="false" aria-controls="sublist{{ forloop.index }}">Titre lorem ipsum dolor sit amet</button></h2>
     </div>
   </div>
-  <ul class="management-item-grouplist">
+  <ul id="sublist{{ forloop.index }}" class="management-item-grouplist">
     {% for item in (1..4) %}
     <li class="management-item">
       <div class="management-item-content">
         <div class="management-item-checkbox">
           <div class="custom-control custom-checkbox custom-checkbox-alone">
             <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-            <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
+            <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
           </div>
         </div>
         <div class="management-item-symbol management-item-spacing">
-          <i class="icons-document icons-size-1x25"></i>
+          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
         </div>
         <div class="management-item-main">
           <h5 class="mb-0 font-weight-normal">Titre lorem ipsum dolor sit amet</h5>
         </div>
         <div class="management-item-action">
-          <div class="btn btn-only-icon btn-favorite active d-none d-lg-block">
-            <span class="sr-only">Ajouter aux favoris</span>
-            <i class="icons-bookmark icons-size-1x25"></i>
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label for="inputFavListgroup{{ forloop.index }}" class="btn btn-only-icon btn-favorite active d-none d-lg-block">
+              <input id="inputFavListgroup{{ forloop.index }}" type="checkbox" autocomplete="off">
+              <span class="sr-only">Ajouter aux favoris</span>
+              <i class="icons-bookmark icons-size-1x25" aria-hidden="true"></i>
+            </label>
           </div>
           <div class="btn-group dropdown">
-            <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="icons-options icons-size-1x75"></i>
+            <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdownGroupExemple">
+              <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
+              <span class="sr-only">Actions</span>
             </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <button class="dropdown-item" type="button">Rechercher dans la liste</button>
-              <button class="dropdown-item" type="button">Filtrer la liste</button>
-              <button class="dropdown-item" type="button">Trier la liste</button>
-              <button class="dropdown-item" type="button">Modifier la liste</button>
+            <div role="list" class="dropdown-menu dropdown-menu-right" id="dropdownGroupExemple">
+              <button role="listitem" class="dropdown-item" type="button">Rechercher dans la liste</button>
+              <button role="listitem" class="dropdown-item" type="button">Filtrer la liste</button>
+              <button role="listitem" class="dropdown-item" type="button">Trier la liste</button>
+              <button role="listitem" class="dropdown-item" type="button">Modifier la liste</button>
             </div>
           </div>
         </div>
@@ -852,64 +870,64 @@ Note the use of `no-gutters` class to stick the columns together.
 </div>
 
 {% highlight html %}
-  <ul class="list-group">
-      
-    <li id="group1" class="list-group-item management-item management-item-group" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group1">
-      <div class="management-item-content">
-        <div class="management-item-checkbox">
-          <div class="custom-control custom-checkbox custom-checkbox-alone">
-            <input type="checkbox" class="custom-control-input" id="cell1">
-            <label class="custom-control-label" for="cell1"></label>
-          </div>
-        </div>
-        <div class="management-item-caret"></div>
-        <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25"></i>
-        </div>
-        <div class="management-item-main">
-          <h2 class="mb-0 font-weight-normal">Titre lorem ipsum dolor sit amet</h2>
+<ul class="list-group">
+  <li id="group1" class="list-group-item management-item management-item-group active">
+    <div class="management-item-content" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group1">
+      <div class="management-item-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
+          <input type="checkbox" class="custom-control-input" id="cell1">
+          <label class="custom-control-label" for="cell1"><span class="sr-only">étiquette</span></label>
         </div>
       </div>
-      <ul class="management-item-grouplist">        
-      
-        <li class="management-item">
-          <div class="management-item-content">
-            <div class="management-item-checkbox">
-              <div class="custom-control custom-checkbox custom-checkbox-alone">
-                <input type="checkbox" class="custom-control-input" id="cell1">
-                <label class="custom-control-label" for="cell1"></label>
-              </div>
+      <div class="management-item-caret"></div>
+      <div class="management-item-symbol">
+        <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
+      </div>
+      <div class="management-item-main">
+        <h2 class="mb-0 text-base font-weight-normal"><button class="btn-unstyled" aria-expanded="false" aria-controls="sublist1">Titre lorem ipsum dolor sit amet</button></h2>
+      </div>
+    </div>
+    <ul id="sublist1" class="management-item-grouplist">
+      <li class="management-item">
+        <div class="management-item-content">
+          <div class="management-item-checkbox">
+            <div class="custom-control custom-checkbox custom-checkbox-alone">
+              <input type="checkbox" class="custom-control-input" id="cell1">
+              <label class="custom-control-label" for="cell1"><span class="sr-only">étiquette</span></label>
             </div>
-            <div class="management-item-symbol management-item-spacing">
-              <i class="icons-document icons-size-1x25"></i>
-            </div>
-            <div class="management-item-main">
-              <h2 class="mb-0 font-weight-normal">Titre lorem ipsum dolor sit amet</h2>
-            </div>
-            <div class="management-item-action">
-              <div class="btn btn-only-icon btn-favorite active d-none d-lg-block">
+          </div>
+          <div class="management-item-symbol management-item-spacing">
+            <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
+          </div>
+          <div class="management-item-main">
+            <h5 class="mb-0 font-weight-normal">Titre lorem ipsum dolor sit amet</h5>
+          </div>
+          <div class="management-item-action">
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label for="inputFavListgroup1" class="btn btn-only-icon btn-favorite d-none d-lg-block">
+                <input id="inputFavListgroup1" type="checkbox" autocomplete="off">
                 <span class="sr-only">Ajouter aux favoris</span>
-                <i class="icons-bookmark icons-size-1x25"></i>
-              </div>
-              <div class="btn-group dropdown">
-                <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="icons-options icons-size-1x75"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <button class="dropdown-item" type="button">Rechercher dans la liste</button>
-                  <button class="dropdown-item" type="button">Filtrer la liste</button>
-                  <button class="dropdown-item" type="button">Trier la liste</button>
-                  <button class="dropdown-item" type="button">Modifier la liste</button>
-                </div>
+                <i class="icons-bookmark icons-size-1x25" aria-hidden="true"></i>
+              </label>
+            </div>
+            <div class="btn-group dropdown">
+              <button type="button" class="btn btn-options dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdownGroupExemple">
+                <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
+                <span class="sr-only">Actions</span>
+              </button>
+              <div role="list" class="dropdown-menu dropdown-menu-right" id="dropdownGroupExemple">
+                <button role="listitem" class="dropdown-item" type="button">Rechercher dans la liste</button>
+                <button role="listitem" class="dropdown-item" type="button">Filtrer la liste</button>
+                <button role="listitem" class="dropdown-item" type="button">Trier la liste</button>
+                <button role="listitem" class="dropdown-item" type="button">Modifier la liste</button>
               </div>
             </div>
           </div>
-        </li>
-        ...  
-              
-      </ul>
-    </li>
-    ...
-    
-  </ul>
+        </div>
+      </li>
+      ...
+    </ul>
+  </li>
+  ...
+</ul>
 {% endhighlight %}

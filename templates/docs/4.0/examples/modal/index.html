@@ -30,46 +30,48 @@ permalink: /docs/4.0/examples/navtabs
           <li class="toolbar-item">
             <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
               <span class="sr-only">Edit</span>
-              <i class="icons-pencil icons-size-1x25"></i>
+              <i class="icons-pencil icons-size-1x25" aria-hidden="true"></i>
             </button>
           </li>
           <li class="toolbar-item toolbar-item-spacing">
             <div class="btn-group dropdown">
-              <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
                 <span>Primary</span>
-                <i class="icons-arrow-down"></i>
+                <i class="icons-arrow-down" aria-hidden="true"></i>
               </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-menu dropdown-menu-right" id="mycontrol">
+                <ul>
+                  <li class="dropdown-item"><a href="#">Action</a></li>
+                  <li class="dropdown-item"><a href="#">Another action</a></li>
+                  <li class="dropdown-item"><a href="#">Something else here</a></li>
+                </ul>
               </div>
             </div>
           </li>
           <li class="toolbar-item">
             <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
               <span class="sr-only">List</span>
-              <i class="icons-list icons-size-1x25"></i>
+              <i class="icons-list icons-size-1x25" aria-hidden="true"></i>
             </button>
           </li>
           <li class="toolbar-item">
             <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
               <span class="sr-only">Search</span>
-              <i class="icons-search icons-size-1x25"></i>
+              <i class="icons-search icons-size-1x25" aria-hidden="true"></i>
             </button>
           </li>
           <li class="toolbar-item">
             <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
               <span class="sr-only">Filters</span>
-              <i class="icons-filters icons-size-1x25"></i>
+              <i class="icons-filters icons-size-1x25" aria-hidden="true"></i>
             </button>
           </li>
         </ul>
       </div>
-      <nav class="position-relative mt-2">
+      <nav role="navigation" class="position-relative mt-2">
         <ul class="navtabs mb-0 dragscroll">
           <li class="navtabs-item pr-4">
-            <a href="#" class="active">Titre onglet</a>
+            <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
           </li>
           <li class="navtabs-item pr-4">
             <a href="#">Titre onglet</a>
@@ -87,7 +89,7 @@ permalink: /docs/4.0/examples/navtabs
       </nav>
     </div>
 
-    <main class="mastcontainer">
+    <main role="main" class="mastcontainer">
     </main>
 
     {% include components/options-menu.html %}

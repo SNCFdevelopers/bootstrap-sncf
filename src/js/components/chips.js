@@ -26,7 +26,9 @@ class Chips {
       this.typewriterNode.addEventListener('keyup', (e) => {
         /* eslint-disable no-magic-numbers */
         if (e.keyCode === 13) {
-          this._createChipsNode(element, e.target.value)
+          if (this.typewriterNode.value !== '') {
+            this._createChipsNode(element, e.target.value)
+          }
         }
         /* eslint-enable no-magic-numbers */
       })
@@ -50,7 +52,6 @@ class Chips {
       this.inputNode.add(optionNode)
     }
 
-
     groupNode.setAttribute('class', 'chips-group')
     groupNode.setAttribute('class', 'chips-group')
     chipsLabelNode.setAttribute('class', 'chips chips-label')
@@ -58,7 +59,10 @@ class Chips {
     chipsBtnRemove.setAttribute('class', 'sr-only')
     chipsIcon.setAttribute('class', 'icons-close')
 
-    chipsBtnNode.addEventListener('click', () => this._destroyChipsNode(element, optionNode, groupNode))
+    chipsBtnNode.addEventListener('click', (e) => {
+      e.preventDefault()
+      this._destroyChipsNode(element, optionNode, groupNode)
+    })
 
     chipsLabelNode.appendChild(chipsLabelContent)
     chipsBtnRemove.appendChild(chipsBtnRemoveContent)

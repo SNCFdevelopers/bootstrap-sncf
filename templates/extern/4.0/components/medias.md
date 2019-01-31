@@ -50,17 +50,21 @@ Note the usage of `w-xxx` where xxx is the percentage of width for image, for al
     <div class="swiper-wrapper">
       {% for i in (1..5) %}
       <div class="swiper-slide">
-        <img class="w-100 mb-4 rounded" src="https://dummyimage.com/656x394/000/fff" />
-        <p class="mb-2">Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.</p>
-        <p class="mb-0 text-xs">Crédits : Arnaud Février</p>
+        <figure role="group">
+          <img class="w-100 mb-4 rounded" src="https://dummyimage.com/656x394/000/fff" alt="image {{ forloop.index }}" />
+          <figcaption>
+            <p class="mb-2">Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.</p>
+            <p class="mb-0 text-xs">Crédits : Arnaud Février</p>
+          </figcaption>
+        </figure>
       </div>
       {% endfor %}     
     </div>
   </div>
   <div class="swiper-pagination mt-3 mt-md-4 text-primary" data-role="pagination"></div>
   <div class="swiper-buttons">
-    <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75"></i></div>
-    <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75"></i></div>
+    <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75" aria-hidden="true"></i></div>
+    <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75" aria-hidden="true"></i></div>
   </div>
 </div>
 {% endexample %}

@@ -13,6 +13,7 @@ class SelectExclusive {
     this.toggleNode = element.querySelector('[data-role=select-toggle]') // menu toggle trigger
     this.inputNode = element.querySelector('[data-role=input]') // select node
     this.placeholderNode = element.querySelector('[data-role=placeholder]') // placeholder
+    this.selectedPrefix = this.placeholderNode.getAttribute('data-selected-prefix')
     this.menu = element.querySelector('[data-role=menu]')
     this.defaultHiddenOption = element.querySelector('[data-role=default-hidden-option]')
     const optionsNode = element.querySelectorAll('[data-role=value]') // options
@@ -36,6 +37,7 @@ class SelectExclusive {
         this._onOptionChange(event)
         this.element.classList.toggle('active')
         this.btnNode.classList.toggle('active')
+        this.btnNode.setAttribute('aria-expanded', 'false')
       })
     })
 
@@ -55,6 +57,12 @@ class SelectExclusive {
       event.stopPropagation()
       this.element.classList.toggle('active')
       this.btnNode.classList.toggle('active')
+
+      if (this.btnNode.getAttribute('aria-expanded') === 'true') {
+        this.btnNode.setAttribute('aria-expanded', 'false')
+      } else {
+        this.btnNode.setAttribute('aria-expanded', 'true')
+      }
     })
 
     this.collapses.forEach((item) => {
@@ -72,6 +80,7 @@ class SelectExclusive {
     document.addEventListener('click', () => {
       this.element.classList.remove('active')
       this.btnNode.classList.remove('active')
+      this.btnNode.setAttribute('aria-expanded', 'false')
     })
   }
 
@@ -83,6 +92,7 @@ class SelectExclusive {
     this._updatePlaceholder(value)
 
     this.menu.append(currentValueNode)
+    currentValueNode.focus()
   }
 
   _createOption(value) {
@@ -112,7 +122,7 @@ class SelectExclusive {
 
   _updatePlaceholder(value) {
     this.placeholderNode.classList.remove('is-placeholder')
-    this.placeholderNode.innerHTML = value
+    this.placeholderNode.innerHTML = `<span class="sr-only">${this.selectedPrefix}</span> ${value}`
   }
 
   _updateSelect(event) {
@@ -122,9 +132,11 @@ class SelectExclusive {
   _updateOption(optionNode) {
     if (this.currentValueNode) {
       this.currentValueNode.classList.remove('active')
+      this.currentValueNode.removeAttribute('title')
     }
 
     optionNode.classList.add('active')
+    optionNode.setAttribute('title', `${optionNode.innerHTML} active`)
     this.currentValueNode = optionNode
   }
 

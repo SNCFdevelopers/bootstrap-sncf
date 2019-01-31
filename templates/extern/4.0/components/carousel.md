@@ -26,10 +26,10 @@ Content editors can choose from the following options: illustrations, packshots 
           </div>
           <div class="col-12 col-md-6">
             <div class="carousel-item-content">
+              <h2 class="carousel-item-headtext">PITCHS STARTUPS AU MEETUP DEUTSCHE BAHN - SNCF</h2>
               <h3 class="text-sm font-weight-medium text-primary text-uppercase">Transformation Digitale, Événement, Open Innovation</h3>
-              <h2>PITCHS STARTUPS AU MEETUP DEUTSCHE BAHN - SNCF</h2>
               <p class="mb-2">Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.</p>
-              <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+              <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -37,13 +37,13 @@ Content editors can choose from the following options: illustrations, packshots 
       {% endfor %}     
     </div>
   </div>
-  <div class="carousel-controls">
+  <div class="carousel-controls" aria-hidden="true">
     <div class="row">
     <div class="col-12 col-md-6"></div>
     <div class="col-12 col-md-6 d-md-flex align-items-md-end justify-content-center justify-content-md-between">
       <div class="swiper-buttons d-none d-md-flex">
-        <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75"></i></div>
-        <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75"></i></div>
+        <button type="button" class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75" aria-hidden="true"></i></button>
+        <button type="button" class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75" aria-hidden="true"></i></button>
       </div>
       <div class="gr-md-5">
         <div class="swiper-pagination" data-role="pagination"></div>
@@ -69,50 +69,50 @@ Carousel footer pushes on text pages offer additional content of interest to use
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div>
-              <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
+              <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
               <div>
-                <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
-                <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+                <h3 class="h2 mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h3>
+                <p class="carousel-item-headtext text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</p>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div>
-              <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
+              <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
               <div>
-                <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
-                <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+                <h3 class="h2 mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h3>
+                <p class="carousel-item-headtext text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</p>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div>
-              <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
+              <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
               <div>
-                <div class="text-sm text-uppercase text-primary font-weight-medium mb-2">Internet industriel</div>
-                <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+                <h3 class="h2 mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h3>
+                <p class="carousel-item-headtext text-sm text-uppercase text-primary font-weight-medium mb-2">Internet industriel</p>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div>
-              <img class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
+              <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
               <div>
-                <div class="text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</div>
-                <h2 class="mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h2>
-                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2"></i></a>
+                <h3 class="h2 mb-3">ATELIER 574 : LA CONQUÊTE DE L'ESPACE</h3>
+                <p class="carousel-item-headtext text-sm text-uppercase mb-2">05/01/2017 - La plaine Saint-Denis</p>
+                <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="swiper-pagination gt-5" data-role="pagination"></div>
-      <div class="swiper-buttons">
-        <div class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75"></i></div>
-        <div class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75"></i></div>
+      <div class="swiper-pagination gt-5" data-role="pagination" aria-hidden="true"></div>
+      <div class="swiper-buttons" aria-hidden="true">
+        <button type="button" class="swiper-button-prev" data-role="button-prev"><i class="icons-arrow-prev icons-size-x75" aria-hidden="true"></i></button>
+        <button type="button" class="swiper-button-next" data-role="button-next"><i class="icons-arrow-next icons-size-x75" aria-hidden="true"></i></button>
       </div>
     </div>
   </div>

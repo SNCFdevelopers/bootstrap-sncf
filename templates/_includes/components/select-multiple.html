@@ -13,25 +13,25 @@
         <option data-id="3" selected>Amet Porta</option>
       </select>
       <div class="input-group-append input-group-last">
-        <button class="btn btn-primary btn-only-icon {{ include.btn }}" data-role="btn" type="button">
-          <i class="icons-arrow-down {{ include.iconsize }}"></i>
+        <button class="btn btn-primary btn-only-icon {{ include.btn }}" data-role="btn" type="button" aria-expanded="false" aria-controls="multiselecttoggle">
+          <i class="icons-arrow-down {{ include.iconsize }}" aria-hidden="true"></i>
         </button>
       </div>
     </div>
-    <div class="select-menu" data-role="menu">
+    <div class="select-menu" data-role="menu" id="multiselecttoggle">
       <div class="select-group" data-role="group" data-id="0">
         <div class="select-group-head">
           <div class="custom-control custom-checkbox">
             <label data-role="counter" class="custom-control-label font-weight-medium text-uppercase">Unité 1</label>
           </div>     
         </div>
-        <div class="select-group-content">
-          <div class="select-menu-item">
+        <div class="select-group-content" role="list">
+          <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
               <label data-role="value" data-target="0" class="custom-control-label font-weight-medium">Sem Inceptos Tellus</label>
             </div>
           </div>
-          <div class="select-menu-item">
+          <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
               <label data-role="value" data-target="1" class="custom-control-label font-weight-medium">Sollicitudin Adipiscing Mattis</label>
             </div>

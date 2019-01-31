@@ -41,15 +41,21 @@ More complex forms can be built using our grid classes. Use these for form layou
 <form>
   <div class="row">
     <div class="col">
-      <div class="form-control-container">
-        <input type="text" class="form-control" placeholder="First name">
-        <span class="form-control-state"></span>
+      <div class="form-group">
+        <label class="font-weight-medium mb-2" for="firstname">Firstname</label>
+        <div class="form-control-container">
+          <input type="text" id="firstname" class="form-control" placeholder="Example Firstname">
+          <span class="form-control-state"></span>
+        </div>
       </div>
     </div>
     <div class="col">
-      <div class="form-control-container">
-        <input type="text" class="form-control" placeholder="Last name">
-        <span class="form-control-state"></span>
+      <div class="form-group">
+        <label class="font-weight-medium mb-2" for="lastname">Last name</label>
+        <div class="form-control-container">
+          <input type="text" id="lastname" class="form-control" placeholder="Example Lastname">
+          <span class="form-control-state"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -64,15 +70,21 @@ You may also swap `.row` for `.form-row`, a variation of our standard grid row t
 <form>
   <div class="form-row">
     <div class="col">
-      <div class="form-control-container">
-        <input type="text" class="form-control" placeholder="First name">
-        <span class="form-control-state"></span>
+      <div class="form-group">
+        <label class="font-weight-medium mb-2" for="firstname1">Firstname</label>
+        <div class="form-control-container">
+          <input type="text" id="firstname1" class="form-control" placeholder="Example Firstname">
+          <span class="form-control-state"></span>
+        </div>
       </div>
     </div>
     <div class="col">
-      <div class="form-control-container">
-        <input type="text" class="form-control" placeholder="Last name">
-        <span class="form-control-state"></span>
+      <div class="form-group">
+        <label class="font-weight-medium mb-2" for="lastname1">Last name</label>
+        <div class="form-control-container">
+          <input type="text" id="lastname1" class="form-control" placeholder="Example Lastname">
+          <span class="form-control-state"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -87,14 +99,14 @@ More complex layouts can also be created with the grid system.
     <div class="form-group col-md-6">
       <label class="font-weight-medium mb-2" for="inputEmail4">Email</label>
       <div class="form-control-container">
-        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Example email">
         <span class="form-control-state"></span>
       </div>
     </div>
     <div class="form-group col-md-6">
       <label class="font-weight-medium mb-2" for="inputPassword4">Password</label>
       <div class="form-control-container">
-        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Example password">
         <span class="form-control-state"></span>
       </div>
     </div>
@@ -117,7 +129,7 @@ More complex layouts can also be created with the grid system.
     <div class="form-group col-md-6">
       <label class="font-weight-medium mb-2" for="inputCity">City</label>
       <div class="form-control-container">
-        <input type="text" class="form-control" id="inputCity">
+        <input type="text" class="form-control" id="inputCity" placeholder="Example city">
         <span class="form-control-state"></span>
       </div>
     </div>
@@ -131,7 +143,7 @@ More complex layouts can also be created with the grid system.
     <div class="form-group col-md-2">
       <label class="font-weight-medium mb-2" for="inputZip">Zip</label>
       <div class="form-control-container">
-        <input type="text" class="form-control" id="inputZip">
+        <input type="text" class="form-control" id="inputZip" placeholder="Example zip">
         <span class="form-control-state"></span>
       </div>
     </div>
@@ -155,7 +167,7 @@ At times, you maybe need to use margin or padding utilities to create that perfe
 {% example html %}
 <form>
   <div class="form-group row">
-    <label class="font-weight-medium mb-2" for="inputEmail3" class="col-sm-2 col-form-label font-weight-medium">Email</label>
+    <label for="inputEmail3" class="col-sm-2 col-form-label font-weight-medium">Email</label>
     <div class="col-sm-10">
       <div class="form-control-container">
         <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
@@ -164,7 +176,7 @@ At times, you maybe need to use margin or padding utilities to create that perfe
     </div>
   </div>
   <div class="form-group row">
-    <label class="font-weight-medium mb-2" for="inputPassword3" class="col-sm-2 col-form-label font-weight-medium">Password</label>
+    <label for="inputPassword3" class="col-sm-2 col-form-label font-weight-medium">Password</label>
     <div class="col-sm-10">
       <div class="form-control-container">
         <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
@@ -216,21 +228,30 @@ As shown in the previous examples, our grid system allows you to place any numbe
 <form>
   <div class="form-row">
     <div class="col-7">
-      <div class="form-control-container">
-        <input type="text" class="form-control" placeholder="City">
-        <span class="form-control-state"></span>
+      <div class="form-group">
+        <label class="font-weight-medium mb-2" for="city">City</label>
+        <div class="form-control-container">
+          <input type="text" id="city" class="form-control" placeholder="Example city">
+          <span class="form-control-state"></span>
+        </div>
       </div>
     </div>
     <div class="col">
-      <div class="form-control-container">
-        <input type="text" class="form-control" placeholder="State">
-        <span class="form-control-state"></span>
+      <div class="form-group">
+        <label class="font-weight-medium mb-2" for="state">State</label>
+        <div class="form-control-container">
+          <input type="text" id="state" class="form-control" placeholder="Example state">
+          <span class="form-control-state"></span>
+        </div>
       </div>
     </div>
     <div class="col">
-      <div class="form-control-container">
-        <input type="text" class="form-control" placeholder="Zip">
-        <span class="form-control-state"></span>
+      <div class="form-group">
+        <label class="font-weight-medium mb-2" for="zip">Zip</label>
+        <div class="form-control-container">
+          <input type="text" id="zip" class="form-control" placeholder="Example zip">
+          <span class="form-control-state"></span>
+        </div>
       </div>
     </div>
   </div>

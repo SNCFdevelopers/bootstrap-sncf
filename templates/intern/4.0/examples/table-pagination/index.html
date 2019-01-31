@@ -70,19 +70,19 @@ table:
           <li class="toolbar-item">
             <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
               <span class="sr-only">Edit</span>
-              <i class="icons-pencil icons-size-1x25"></i>
+              <i class="icons-pencil icons-size-1x25" aria-hidden="true"></i>
             </button>
           </li>
           <li class="toolbar-item">
             <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
               <span class="sr-only">List</span>
-              <i class="icons-list icons-size-1x25"></i>
+              <i class="icons-list icons-size-1x25" aria-hidden="true"></i>
             </button>
           </li>
           <li class="toolbar-item d-none d-md-block">
             <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing collapseFiltersButton" data-component="state" data-state="active, active" data-behaviour="toggle, toggle" data-target="#collapseFiltersMenu, .collapseFiltersButton" data-closeonclickoutside="true, true">
               <span class="sr-only">Filters</span>
-              <i class="icons-filters icons-size-1x25"></i>
+              <i class="icons-filters icons-size-1x25" aria-hidden="true"></i>
             </button>
           </li>
         </ul>
@@ -100,7 +100,7 @@ table:
       </div>
     </div>
 
-    <main div class="mastcontainer">
+    <main role="main" class="mastcontainer">
       {% include components/table-pagination.html data=page.table %}
     </main>
 

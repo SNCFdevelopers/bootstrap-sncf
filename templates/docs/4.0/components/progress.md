@@ -7,6 +7,13 @@ toc: true
 permalink: /docs/4.0/components/progress
 ---
 
+## Overview
+
+Progress bars display the progress of an operation, such as retrieving data.
+There are two types of progress bars:
+- Determinate indicators show the duration of an operation and may feature a percentage to show progress.
+- Indeterminate indicators display an unspecified wait time.
+
 ## Progress bars, how it works ?
 
 Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don't use [the HTML5 `<progress>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress), ensuring you can stack progress bars, animate them, and place text labels over them.
@@ -79,23 +86,20 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
 ### Without label
 {% example html %}
 <div class="progress-circle" data-component="radial-progress">
-    <svg class="progress-circle-figure" data-role="figure" width="120" height="120" viewBox="0 0 120 120">
-        <circle class="progress-circle-meter" cx="60" cy="60" r="54" stroke-width="12" />
-        <circle class="progress-circle-value" cx="60" cy="60" r="54" stroke-width="12" />
+    <svg class="progress-circle-figure" data-role="figure" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+      <circle class="progress-circle-meter" cx="60" cy="60" r="54" stroke-width="12" />
+      <circle class="progress-circle-value" cx="60" cy="60" r="54" stroke-width="12" />
     </svg>
     <input data-role="control" class="sr-only" type="range" value="20" />
 </div>
 {% endexample %}
 
 ### With label
-
-The loader lets the user know that the page is loading. They can be determinate (featuring a percentage) or indeterminate (no percentage).
-
 {% example html %}
 <div class="progress-circle" data-component="radial-progress">
-    <svg class="progress-circle-figure" data-role="figure" width="120" height="120" viewBox="0 0 120 120">
-        <circle class="progress-circle-meter" cx="60" cy="60" r="54" stroke-width="12" />
-        <circle class="progress-circle-value" cx="60" cy="60" r="54" stroke-width="12" />
+    <svg class="progress-circle-figure" data-role="figure" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+      <circle class="progress-circle-meter" cx="60" cy="60" r="54" stroke-width="12" />
+      <circle class="progress-circle-value" cx="60" cy="60" r="54" stroke-width="12" />
     </svg>
     <div class="progress-circle-label" data-role="label"><span><span data-role="labelvalue">0</span><sup>%</sup></span></div>
     <input data-role="control" class="sr-only" type="range" value="60" />
@@ -103,6 +107,8 @@ The loader lets the user know that the page is loading. They can be determinate 
 {% endexample %}
 
 ## Steps indicator
+
+Steps indicators show the progress of steps in a process. Steps achieved remain active, which means users can return to previous steps. The step in progress is highlighted, and steps not yet completed must be inactive.
 
 {% callout info %}
 If you're looking for breadcrumbs (Fil d'ariane), there is a [dedicated component]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/breadcrumbs).
@@ -113,11 +119,11 @@ The logic of the component needs that **only steps before active step** are link
 {% endcallout %}
 
 {% example html %}
-<nav aria-label="breadcrumb">
+<nav role="navigation" aria-label="Vous êtes : ">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Step 1</a></li>
     <li class="breadcrumb-item"><a href="#">Step 2</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Step 3</li>
+    <li class="breadcrumb-item active" aria-current="step">Step 3 <span class="sr-only">actif</span></li>
     <li class="breadcrumb-item">Step 4</li>
     <li class="breadcrumb-item">Step 5</li>
   </ol>

@@ -16,8 +16,16 @@ $mastnav-width-lg: rem(100px);
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   text-align: center;
+  background-color: transparent;
+  border: none;
   @include transition($btn-transition);
+}
+
+.mastnav-top {
+  padding-left: 0;
+  list-style: none;
 }
 
 @include media-breakpoint-down(md) {
@@ -33,6 +41,10 @@ $mastnav-width-lg: rem(100px);
   .mastnav-top {
     display: flex;
     width: 100%;
+
+    > li {
+      flex: 1;
+    }
   }
 
   .mastnav-item {

@@ -81,6 +81,12 @@ class SelectMultiple {
       event.stopPropagation()
       this.element.classList.toggle(ACTIVE_CLASS)
       this.btn.classList.toggle(ACTIVE_CLASS)
+
+      if (this.btn.getAttribute('aria-expanded') === 'true') {
+        this.btn.setAttribute('aria-expanded', 'false')
+      } else {
+        this.btn.setAttribute('aria-expanded', 'true')
+      }
     })
 
     this.collapses.forEach((item) => {
@@ -98,6 +104,7 @@ class SelectMultiple {
     document.addEventListener('click', () => {
       this.element.classList.remove(ACTIVE_CLASS)
       this.btn.classList.remove(ACTIVE_CLASS)
+      this.btn.setAttribute('aria-expanded', 'false')
     })
   }
 
@@ -168,6 +175,7 @@ class SelectMultiple {
     this.store[id].valueNodeList.forEach((value) => {
       value.classList.add(ACTIVE_CLASS)
       value.classList.remove(INDETERMINATE_CLASS)
+      value.setAttribute('title', `${value.innerHTML} active`)
       this.input[value.dataset.target].selected = true
     })
   }
@@ -177,6 +185,7 @@ class SelectMultiple {
     this.store[id].currentValues = []
     this.store[id].valueNodeList.forEach((value) => {
       value.classList.remove(ACTIVE_CLASS, INDETERMINATE_CLASS)
+      value.removeAttribute('title')
       this.input[value.dataset.target].selected = false
     })
   }

@@ -13,10 +13,10 @@ permalink: /docs/4.0/layout/overview
 Layout with actionbar.
 
 {% highlight html %}
-<nav class="mastnav">...</nav>
-<header class="mastheader">...</header>
+<nav role="navigation" class="mastnav">...</nav>
+<header role="banner" class="mastheader">...</header>
 <div class="actionbar"></div>
-<main div class="mastcontainer">
+<main role="main" class="mastcontainer">
   <!-- Content here -->
 </main>
 {% endhighlight %}
@@ -24,10 +24,10 @@ Layout with actionbar.
 Layout with actionbar and tabs.
 
 {% highlight html %}
-<nav class="mastnav">...</nav>
-<header class="mastheader">...</header>
+<nav role="navigation" class="mastnav">...</nav>
+<header role="banner" class="mastheader">...</header>
 <div class="actionbar has-tabs"></div>
-<main div class="mastcontainer">
+<main role="main" class="mastcontainer">
   <!-- Content here -->
 </main>
 {% endhighlight %}
@@ -35,21 +35,21 @@ Layout with actionbar and tabs.
 Layout with a actionbar and controlbar.
 
 {% highlight html %}
-<nav class="mastnav">...</nav>
-<header class="mastheader">...</header>
+<nav role="navigation" class="mastnav">...</nav>
+<header role="banner" class="mastheader">...</header>
 <div class="actionbar">...</div>
 <div class="controlbar">...</div>
-<main div class="mastcontainer">
+<main role="main" class="mastcontainer">
   <!-- Content here -->
 </main>
 {% endhighlight %}
 
 {% highlight html %}
-<nav class="mastnav">...</nav>
-<header class="mastheader">...</header>
+<nav role="navigation" class="mastnav">...</nav>
+<header role="banner" class="mastheader">...</header>
 <div class="actionbar has-tabs"></div>
 <div class="controlbar">...</div>
-<main div class="mastcontainer">
+<main role="main" class="mastcontainer">
   <!-- Content here -->
 </main>
 {% endhighlight %}

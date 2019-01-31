@@ -136,7 +136,10 @@ $select-scrollable-max-height: rem(360px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 
   .select-group-close {
     display: none;
@@ -170,15 +173,24 @@ $select-scrollable-max-height: rem(360px);
   }
 }
 
+.select-group-head[data-role="collapse"] {
+  cursor: pointer;
+}
+
 .select-group-title {
   padding: 0;
   font-weight: $font-weight-medium;
   color: gray("500");
   text-align: left;
-  cursor: pointer;
   background: none;
   border: 0;
 }
+
+/* stylelint-disable selector-no-qualifying-type */
+button.select-group-title {
+  cursor: pointer;
+}
+/* stylelint-enable selector-no-qualifying-type */
 
 .select-group-content {
   padding-top: rem(14px);

@@ -58,7 +58,7 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th></th>
+      <th scope="col"></th>
       <th class="text-center">
         Extra small<br>
         <small>&lt;576px</small>
@@ -517,6 +517,8 @@ You may also apply this break at specific breakpoints with our [responsive displ
 ### Order classes
 
 Use `.order-` classes for controlling the **visual order** of your content. These classes are responsive, so you can set the `order` by breakpoint (e.g., `.order-1.order-md-2`). Includes support for `1` through `12` across all five grid tiers.
+
+Always be careful that the formatting does not give information and that the order of succession of elements in the source code allows to understand the information.
 
 <div class="bd-example-row">
 {% example html %}

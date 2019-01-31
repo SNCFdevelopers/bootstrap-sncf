@@ -15,23 +15,24 @@ Using the most basic table markup, here's how `.table`-based tables look in SNCF
 {% example html %}
 <div class="table-wrapper">
   <div class="table-scroller dragscroll">
+    <caption class="sr-only">Titre</caption>
     <table class="table">
       <thead class="thead thead-light">
         <tr>
-          <th>
+          <td>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
                 <input type="checkbox" class="custom-control-input" id="thead">
-                <label class="custom-control-label" for="thead"></label>
+                <label class="custom-control-label" for="thead"><span class="sr-only">Tout sélectionner</span></label>
               </div>
             </div>
-          </th>
-          <th><div class="cell-inner">Nom</div></th>
-          <th><div class="cell-inner">Type</div></th>
-          <th><div class="cell-inner">Vers</div></th>
-          <th><div class="cell-inner">Agent</div></th>
-          <th><div class="cell-inner">Mise à jour</div></th>
-          <th></th>
+          </td>
+          <th scope="col"><div class="cell-inner">Nom</div></th>
+          <th scope="col"><div class="cell-inner">Type</div></th>
+          <th scope="col"><div class="cell-inner">Vers</div></th>
+          <th scope="col"><div class="cell-inner">Agent</div></th>
+          <th scope="col"><div class="cell-inner">Mise à jour</div></th>
+          <th scope="col"><span class="sr-only">Actions</span></th>
         </tr>
       </thead>
       <tbody>
@@ -41,7 +42,7 @@ Using the most basic table markup, here's how `.table`-based tables look in SNCF
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
                 <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-                <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
+                <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">{{ item.name }}, type {{ item.type }}, ver {{ item.version }}</span></label>
               </div>
             </div>
           </td>
@@ -54,21 +55,21 @@ Using the most basic table markup, here's how `.table`-based tables look in SNCF
             <div class="cell-inner">
               <button class="btn btn-only-icon btn-transparent btn-favorite">
                 <span class="sr-only">Favorite</span>
-                <i class="icons-favorite-on icons-size-1x25"></i>
+                <i class="icons-favorite-on icons-size-1x25" aria-hidden="true"></i>
               </button>
               <button class="btn btn-only-icon btn-transparent btn-color-gray">
-                <span class="sr-only">Favorite</span>
-                <i class="icons-divers icons-size-1x25"></i>
+                <span class="sr-only">Divers</span>
+                <i class="icons-circle-information icons-size-1x25" aria-hidden="true"></i>
               </button>
               <div class="btn-group dropdown">
-                <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
-                  <span class="sr-only">Favorite</span>
-                  <i class="icons-options icons-size-1x75"></i>
+                <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" aria-controls="toggle{{ forloop.index }}">
+                  <span class="sr-only">Actions</span>
+                  <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
                 </button>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <button type="button" class="dropdown-item" href="#">Télécharger</button>
-                  <button type="button" class="dropdown-item" href="#">Imprimer</button>
-                  <button type="button" class="dropdown-item" href="#">Partager</button>
+                <div class="dropdown-menu dropdown-menu-right" id="toggle{{ forloop.index }}">
+                  <button type="button" class="dropdown-item">Télécharger</button>
+                  <button type="button" class="dropdown-item">Imprimer</button>
+                  <button type="button" class="dropdown-item">Partager</button>
                 </div>
               </div>
             </div>
@@ -89,23 +90,24 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
 <div class="table-wrapper">
   <div class="table-scroller last-cell-fixed dragscroll">
     <table class="table">
+      <caption class="sr-only">Titre</caption>
       <thead class="thead thead-light">
         <tr>
-          <th>
+          <td>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
                 <input type="checkbox" class="custom-control-input" id="thead">
-                <label class="custom-control-label" for="thead"></label>
+                <label class="custom-control-label" for="thead"><span class="sr-only">Tout sélectionner</span></label>
               </div>
             </div>
-          </th>
-          <th><div class="cell-inner">Nom</div></th>
-          <th><div class="cell-inner">Type</div></th>
-          <th><div class="cell-inner">Vers</div></th>
-          <th><div class="cell-inner">Agent</div></th>
-          <th><div class="cell-inner">Mise à jour</div></th>
-          <th class="cell-placeholder"><span></span></th>
-          <th class="cell-fixed"></th>
+          </td>
+          <th scope="col"><div class="cell-inner">Nom</div></th>
+          <th scope="col"><div class="cell-inner">Type</div></th>
+          <th scope="col"><div class="cell-inner">Vers</div></th>
+          <th scope="col"><div class="cell-inner">Agent</div></th>
+          <th scope="col"><div class="cell-inner">Mise à jour</div></th>
+          <td class="cell-placeholder" aria-hidden="true"><span></span></td>
+          <th class="cell-fixed"><span class="sr-only">Actions</span></th>
         </tr>
       </thead>
       <tbody class="tbody">
@@ -114,8 +116,8 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
           <td>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
-                <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-                <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
+                <input type="checkbox" class="custom-control-input" id="cell1{{ forloop.index }}">
+                <label class="custom-control-label" for="cell1{{ forloop.index }}"><span class="sr-only">{{ item.name }}, type {{ item.type }}, ver {{ item.version }}</span></label>
               </div>
             </div>
           </td>
@@ -127,14 +129,14 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
           <td class="cell-placeholder"><span></span></td>
           <td class="cell-fixed">
             <div class="btn-group dropdown">
-              <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
-                <span class="sr-only">Favorite</span>
-                <i class="icons-options icons-size-1x75"></i>
+              <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" aria-controls="toggle1{{ forloop.index }}">
+                <span class="sr-only">Actions</span>
+                <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
               </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                <button type="button" class="dropdown-item" href="#">Télécharger</button>
-                <button type="button" class="dropdown-item" href="#">Imprimer</button>
-                <button type="button" class="dropdown-item" href="#">Partager</button>
+              <div class="dropdown-menu dropdown-menu-right" id="toggle1{{ forloop.index }}">
+                <button type="button" class="dropdown-item">Télécharger</button>
+                <button type="button" class="dropdown-item">Imprimer</button>
+                <button type="button" class="dropdown-item">Partager</button>
               </div>
             </div>
           </td>
@@ -152,13 +154,14 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
 <div class="table-wrapper" data-component="table">
   <div class="table-scroller dragscroll">
     <table class="table">
+      <caption class="sr-only">Titre</caption>
       <thead class="thead thead-light">
         <tr>
-          <th><div class="cell-inner cell-inner-350">Nom</div></th>
-          <th><div class="cell-inner">Type</div></th>
-          <th><div class="cell-inner">Vers</div></th>
-          <th><div class="cell-inner">Agent</div></th>
-          <th><div class="cell-inner">Mise à jour</div></th>
+          <th scope="col"><div class="cell-inner cell-inner-350">Nom</div></th>
+          <th scope="col"><div class="cell-inner">Type</div></th>
+          <th scope="col"><div class="cell-inner">Vers</div></th>
+          <th scope="col"><div class="cell-inner">Agent</div></th>
+          <th scope="col"><div class="cell-inner">Mise à jour</div></th>
         </tr>
       </thead>
       <tbody class="tbody">
@@ -187,21 +190,22 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
 <div class="table-wrapper" data-component="table">
   <div class="table-scroller dragscroll">
     <table class="table">
+      <caption class="sr-only">Titre</caption>
       <thead class="thead thead-light">
         <tr>
-          <th>
+          <th scope="col">
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
                 <input type="checkbox" class="custom-control-input" id="thead">
-                <label class="custom-control-label" for="thead"></label>
+                <label class="custom-control-label" for="thead"><span class="sr-only">étiquette</span></label>
               </div>
             </div>
           </th>
-          <th><div class="cell-inner cell-inner-350">Nom</div></th>
-          <th><div class="cell-inner">Type</div></th>
-          <th><div class="cell-inner">Vers</div></th>
-          <th><div class="cell-inner">Agent</div></th>
-          <th><div class="cell-inner">Mise à jour</div></th>
+          <th scope="col"><div class="cell-inner cell-inner-350">Nom</div></th>
+          <th scope="col"><div class="cell-inner">Type</div></th>
+          <th scope="col"><div class="cell-inner">Vers</div></th>
+          <th scope="col"><div class="cell-inner">Agent</div></th>
+          <th scope="col"><div class="cell-inner">Mise à jour</div></th>
         </tr>
       </thead>
       <tbody class="tbody">
@@ -212,7 +216,7 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
                 <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-                <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
+                <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
               </div>
             </div>
           </td>
@@ -228,7 +232,7 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
               <div class="cell-inner">
                 <div class="custom-control custom-checkbox custom-checkbox-alone">
                   <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-                  <label class="custom-control-label" for="cell{{ forloop.index }}"></label>
+                  <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
                 </div>
               </div>
             </td>
@@ -248,6 +252,7 @@ Use `.table-striped` to add zebra-striping to any table row within the `<tbody>`
 
 {% example html %}
 <table class="table table-striped">
+  <caption class="sr-only">Titre</caption>
   <thead>
     <tr>
       <th scope="col"><div class="cell-inner">#</div></th>
@@ -285,11 +290,12 @@ Add `.table-bordered` for borders on all sides of the table and cells.
 
 {% example html %}
 <table class="table table-bordered">
+  <caption class="sr-only">Titre</caption>
   <thead>
     <tr>
       <th scope="col"><div class="cell-inner">#</div></th>
-      <th scope="col"><div class="cell-inner">First</div></th>
-      <th scope="col"><div class="cell-inner">Last</div></th>
+      <th scope="col" id="cellfirst-t5"><div class="cell-inner">First</div></th>
+      <th scope="col" id="celllast-t5"><div class="cell-inner">Last</div></th>
       <th scope="col"><div class="cell-inner">Handle</div></th>
     </tr>
   </thead>
@@ -308,7 +314,7 @@ Add `.table-bordered` for borders on all sides of the table and cells.
     </tr>
     <tr>
       <th scope="row"><div class="cell-inner">3</div></th>
-      <td colspan="2"><div class="cell-inner">Larry the Bird</div></td>
+      <td colspan="2" headers="cellfirst-t5 celllast-t5"><div class="cell-inner">Larry the Bird</div></td>
       <td><div class="cell-inner">@twitter</div></td>
     </tr>
   </tbody>
@@ -321,11 +327,12 @@ Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
 
 {% example html %}
 <table class="table table-hover">
+  <caption class="sr-only">Titre</caption>
   <thead>
     <tr>
       <th scope="col"><div class="cell-inner">#</div></th>
-      <th scope="col"><div class="cell-inner">First</div></th>
-      <th scope="col"><div class="cell-inner">Last</div></th>
+      <th scope="col" id="cellfirst-t6"><div class="cell-inner">First</div></th>
+      <th scope="col" id="celllast-t6"><div class="cell-inner">Last</div></th>
       <th scope="col"><div class="cell-inner">Handle</div></th>
     </tr>
   </thead>
@@ -344,7 +351,7 @@ Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
     </tr>
     <tr>
       <th scope="row"><div class="cell-inner">3</div></th>
-      <td colspan="2"><div class="cell-inner">Larry the Bird</div></td>
+      <td colspan="2" headers="cellfirst-t6 celllast-t6"><div class="cell-inner">Larry the Bird</div></td>
       <td><div class="cell-inner">@twitter</div></td>
     </tr>
   </tbody>
@@ -397,6 +404,7 @@ Across every breakpoint, use `.table-wrapper` and `table-scroller` container ele
 <div class="table-wrapper" data-component="table">
   <div class="table-scroller dragscroll">
     <table class="table">
+      <caption class="sr-only">Titre</caption>
       <thead>
         <tr>
           <th scope="col">#</th>
