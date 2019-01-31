@@ -14,6 +14,15 @@ export const DEFAULT_COLORS = [
   'rgb(217, 238, 250)'
 ]
 
+export const DEFAULT_HEX_COLORS = [
+  '#1D88CA',
+  '#2DA0D9',
+  '#72BFE6',
+  '#8CCAEA',
+  '#B3DDF3',
+  '#D9EEFA'
+]
+
 export const TRANSLUCENT_DEFAULT_COLORS = [
   'rgb(29, 136, 202, .2)',
   'rgb(45, 160, 217, .2)',

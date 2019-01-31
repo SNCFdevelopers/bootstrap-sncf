@@ -1,14 +1,11 @@
 /* options-menu
    ========================================================================== */
 
-/* table filters
-   ========================================================================== */
-
 .options-menu {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: $zindex-fixed + 2;
+  z-index: $zindex-navigation + 2;
   background-color: color("white");
 
   &:not(.active) {

@@ -24,6 +24,7 @@ export default class LineChart {
     const lineStyles = element.dataset.styles ? JSON.parse(element.dataset.styles) : []
     const fill = element.dataset.fill === 'true'
     const lineTension = element.dataset.straightlines === 'true'
+    // no-console  -> comment console.log('lineColors: ', lineColors);
 
     let counter = 0
 
@@ -46,6 +47,7 @@ export default class LineChart {
         tooltips: {
           mode: 'index',
           enabled: false,
+          intersect: false,
           custom: (tooltipModel) => {
             renderTooltip(tooltipModel, element, canvas, labels, values, lineColors, lineStyles)
           }
@@ -53,12 +55,15 @@ export default class LineChart {
       },
       plugins: [{
         afterDatasetsDraw: (chart) => {
-          renderVerticalLine(chart)
+          renderVerticalLine(chart, lineColors.length > 0 ? lineColors[0] : DEFAULT_COLORS)
         }
       }]
     }
 
     values.forEach((valueArray) => {
+      // pointHoverConfig.pointBorderColor = lineColors[counter] ? lineColors[counter] : DEFAULT_COLOR
+      pointHoverConfig.pointHoverBorderColor = lineColors[counter] ? lineColors[counter] : DEFAULT_COLOR
+
       if (fill) {
         const gradientStroke = ctx.createLinearGradient(0, element.getBoundingClientRect().width, 0, 0)
         gradientStroke.addColorStop(0.5, 'rgba(255, 255, 255, 0)')
@@ -96,7 +101,7 @@ export default class LineChart {
 
     config.data.labels = labels
 
-    new Chart(canvas, config)
+    element.chart = new Chart(canvas, config)
   }
 }
 /* eslint-enable no-magic-numbers, no-new */

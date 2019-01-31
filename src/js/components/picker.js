@@ -30,11 +30,15 @@ class Picker {
     const defaultDate = element.getAttribute('data-default-date')
     const mode = element.getAttribute('data-mode') || 'single'
     const enableTime = element.getAttribute('data-enable-time')
-    const dateFormat = this._getDateFormat(enableTime ? 'datetime' : mode)
+    const timePicker = element.getAttribute('data-timepicker')
+    /* eslint-disable no-nested-ternary */
+    const dateFormat = this._getDateFormat(timePicker ? 'time' : enableTime ? 'datetime' : mode)
+    /* eslint-enable no-nested-ternary */
     const secondRangeInput = element.getAttribute('data-second-range')
     const incrementHoursOnMinutesMax = element.getAttribute('data-increment-hours-on-minutes-max') || false
     const decrementHoursOnMinutesMin = element.getAttribute('data-decrement-hours-on-minutes-min') || false
     const plugins = []
+    const onOpen = []
 
     if (secondRangeInput) {
       /* eslint-disable new-cap */
@@ -53,20 +57,31 @@ class Picker {
       decrementHoursOnMinutesMin
     }
 
-    if (mode === 'time') {
+    if (timePicker) {
       options.enableTime = true
+      options.noCalendar = true
+    }
+
+    if (enableTime) {
+      onOpen.push((selectedDates, dateStr, instance) => {
+        if (selectedDates.length === 0) {
+          instance.setDate(new Date())
+        }
+      })
     }
 
     if (defaultDate) {
       options.defaultDate = defaultDate
     }
 
-    flatpickr(element, {
+    onOpen.push(
+      () => btnNode.classList.add('active')
+    )
+
+    element.flatpickr = flatpickr(element, {
       ...DEFAULT_OPTIONS,
       ...options,
-      onOpen: () => {
-        btnNode.classList.add('active')
-      },
+      onOpen,
       onClose: () => {
         btnNode.classList.remove('active')
       }
