@@ -39,5 +39,7 @@ deploy:
   provider: releases
   skip_cleanup: true
   api-key: $GITHUB_OAUTH
-  file: $RELEASE_TAR_GZ_FILE
+  file:
+    - "bootstrap-sncf-intern_${TRAVIS_TAG}.snapshot.tar.gz"
+    - "bootstrap-sncf-extern_${TRAVIS_TAG}.snapshot.tar.gz"
   file_glob: true
