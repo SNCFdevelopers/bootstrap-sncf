@@ -18,6 +18,8 @@ install:
 # see https://github.com/travis-ci/travis-ci/issues/8408
 before_script:
   - _JAVA_OPTIONS=
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
 cache:
   directories:
     - node_modules
@@ -25,3 +27,18 @@ cache:
 script:
   - npm run build-intern
   - npm run dist-intern
+  - tar -zcf bootstrap-sncf-intern_${TRAVIS_TAG}.snapshot.tar.gz dist/
+  - npm run build-extern
+  - npm run dist-extern
+  - tar -zcf bootstrap-sncf-extern_${TRAVIS_TAG}.snapshot.tar.gz dist/
+before_deploy:
+  - export RELEASE_TAR_GZ_FILE=$(ls bootstrap-sncf*.snapshot.tar.gz)
+  - echo "deploying $RELEASE_PKG_FILE to GitHub releases"
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api-key: $GITHUB_OAUTH
+  file: "${RELEASE_TAR_GZ}"
+  file_glob: true
+  
+
