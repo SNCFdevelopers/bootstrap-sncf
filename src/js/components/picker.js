@@ -14,8 +14,10 @@ const DEFAULT_OPTIONS = {
   wrap: true,
   static: true,
   /* eslint-disable camelcase */
-  time_24hr: true
+  time_24hr: true,
   /* eslint-enable camelcase */
+  /* Désactivation de l'appel au calendrier natif */
+  disableMobile:true
 }
 
 /**
