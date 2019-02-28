@@ -31,24 +31,24 @@ cache:
     - node_modules
     - vendor/bundle
 script:
-  - mkdir docs
+  - mkdir documentation
 
   # Intern / metier
   - npm run build-intern
   - npm run dist-intern
   - npm run docs-compile-intern
-  - mv gh_pages/ docs/intern
+  - mv _gh_pages documentation/intern
   - tar -zcf bootstrap-sncf-intern_${TRAVIS_TAG}.snapshot.tar.gz dist/
-  - zip -r docs/intern/dist.zip dist/
+  - zip -r documentation/intern/dist.zip dist/
   - rm -rf dist
 
   # Extern / communication
   - npm run build-extern
   - npm run dist-extern
   - npm run docs-compile-extern
-  - mv gh_pages/ docs/extern
+  - mv _gh_pages documentation/extern
   - tar -zcf bootstrap-sncf-extern_${TRAVIS_TAG}.snapshot.tar.gz dist/
-  - zip -r docs/extern/dist.zip dist/
+  - zip -r documentation/extern/dist.zip dist/
 deploy:
   provider: releases
   skip_cleanup: true
