@@ -4,7 +4,7 @@ title: Buttons
 description: Buttons have multiple uses—they can let a user trigger an action, respond to a question asked by a chatbot, activate or deactivate a state, increase or decrease a numerical value, etc. Note that menu buttons are shown in the “Drop-down” section.
 group: components
 toc: true
-permalink: /docs/4.0/components/buttons
+permalink: /docs/4.0/components/buttons/
 ---
 
 ## Examples

@@ -4,7 +4,7 @@ title: Pagination
 description: Page numbers guide users through multi-page content.  They appear at the bottom of the page.
 group: components
 toc: true
-permalink: /docs/4.0/components/pagination
+permalink: /docs/4.0/components/pagination/
 ---
 
 ## Overview

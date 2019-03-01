@@ -5,7 +5,7 @@ description: Use our powerful mobile-first flexbox grid to build layouts of all 
 group: layout
 redirect_from: "/docs/4.0/layout/"
 toc: true
-permalink: /docs/4.0/layout/grid
+permalink: /docs/4.0/layout/grid/
 ---
 
 ## How it works

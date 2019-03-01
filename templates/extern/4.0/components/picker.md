@@ -3,7 +3,7 @@ layout: docs
 title: Pickers
 group: components
 toc: true
-permalink: /docs/4.0/components/picker
+permalink: /docs/4.0/components/picker/
 ---
 
 ## Date picker

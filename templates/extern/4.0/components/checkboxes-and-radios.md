@@ -4,7 +4,7 @@ title: Checkboxes and radios
 description: Examples and usage guidelines for checkboxes and radios styles.
 group: components
 toc: true
-permalink: /docs/4.0/components/checkboxes-and-radios
+permalink: /docs/4.0/components/checkboxes-and-radios/
 ---
 
 ## Checkboxes and radios

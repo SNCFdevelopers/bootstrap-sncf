@@ -5,7 +5,7 @@ description: Components and options for laying out your SNCF project, including 
 group: layout
 redirect_from: "/docs/4.0/layout/"
 toc: true
-permalink: /docs/4.0/layout/overview
+permalink: /docs/4.0/layout/overview/
 ---
 
 ## Containers

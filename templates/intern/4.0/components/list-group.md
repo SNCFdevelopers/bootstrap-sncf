@@ -4,7 +4,7 @@ title: List group
 description: List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.
 group: components
 toc: true
-permalink: /docs/4.0/components/list-group
+permalink: /docs/4.0/components/list-group/
 ---
 
 ## Description

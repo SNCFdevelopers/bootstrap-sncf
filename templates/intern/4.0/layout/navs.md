@@ -4,7 +4,7 @@ title: Navs
 description: Documentation and examples for how to use Bootstrap's included navigation components.
 group: layout
 toc: true
-permalink: /docs/4.0/layout/navs
+permalink: /docs/4.0/layout/navs/
 ---
 
 Section header bars are displayed under the header and show the section header, and depending on use, the sub-menus as tabs, display modes, context search and other actions (edit, delete, filter, etc.).

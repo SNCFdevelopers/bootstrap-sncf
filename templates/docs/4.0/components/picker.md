@@ -3,7 +3,7 @@ layout: docs
 title: Pickers
 group: components
 toc: true
-permalink: /docs/4.0/components/picker
+permalink: /docs/4.0/components/picker/
 ---
 
 Pickers let users select a value from a set of pre-determined values with the help of visual and interactive aids. There are several types of pickers:

@@ -4,7 +4,7 @@ title: Design reference
 description: Dowload all components and layout in JPG or PSD formats, and UX guidelines.
 group: getting-started
 toc: true
-permalink: /docs/4.0/getting-started/design-reference
+permalink: /docs/4.0/getting-started/design-reference/
 ---
 
 

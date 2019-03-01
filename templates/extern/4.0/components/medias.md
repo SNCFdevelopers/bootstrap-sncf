@@ -4,7 +4,7 @@ title: Medias
 description: Content pages can use different image formats. Content editors can choose from the following options > illustrations, packshots and photo essays produced by SNCF.
 group: components
 toc: true
-permalink: /docs/4.0/components/medias
+permalink: /docs/4.0/components/medias/
 ---
 
 ## Pictures

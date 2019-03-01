@@ -4,7 +4,7 @@ title: Navs
 description: Documentation and examples for how to use Bootstrap's included navigation components.
 group: layout
 toc: true
-permalink: /docs/4.0/layout/navs
+permalink: /docs/4.0/layout/navs/
 ---
 
 ## Tabs

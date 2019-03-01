@@ -4,7 +4,7 @@ title: Navigation
 description: Navigation
 group: layout 
 toc: true
-permalink: /docs/4.0/layout/navigation
+permalink: /docs/4.0/layout/navigation/
 ---
 
 {% example html %}

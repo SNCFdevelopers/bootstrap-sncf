@@ -4,7 +4,7 @@ title: Input group
 description: Examples and usage guidelines for checkboxes and radios styles.
 group: components
 toc: true
-permalink: /docs/4.0/components/input-group
+permalink: /docs/4.0/components/input-group/
 ---
 
 ## Select radios addons
