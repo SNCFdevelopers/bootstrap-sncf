@@ -13,7 +13,7 @@ source:         ./templates
 destination:    ./_gh_pages
 host:           0.0.0.0
 port:           9001
-baseurl:        "https://sncfdevelopers.github.io/bootstrap-sncf/intern"
+baseurl:        "/bootstrap-sncf/intern"
 url:            "https://designmetier-bootstrap.sncf.fr"
 encoding:       UTF-8
 exclude:
