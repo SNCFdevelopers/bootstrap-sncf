@@ -25,7 +25,7 @@ sector:
 
     <title>Forms template</title>
 
-    <link href="{{ site.baseurl }}/main.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/bootstrap-sncf.min.css" rel="stylesheet">
   </head>
   <body style="background-color: #fff">
     <main class="container">
@@ -91,6 +91,6 @@ sector:
       </div>
     </main>
 
-    <script src="{{ site.baseurl }}/main.js"></script>
+    <script src="{{ site.baseurl }}/bootstrap-sncf.min.js"></script>
   </body>
 </html>

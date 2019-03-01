@@ -20,7 +20,7 @@ Looking to quickly add Bootstrap to your project? Just download and unzip SNCF's
 Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
 
 {% highlight html %}
-<link rel="stylesheet" href="dist/main.css">
+<link rel="stylesheet" href="dist/bootstrap-sncf.min.css">
 {% endhighlight %}
 
 ### JS
@@ -28,11 +28,11 @@ Copy-paste the stylesheet `<link>` into your `<head>` before all other styleshee
 Many of our components require the use of JavaScript to function. Specifically, they require [jQuery](https://jquery.com), [Popper.js](https://popper.js.org/), and our own JavaScript plugins.
 
 {% callout info %}
-For commodity reasons, we have integrated jQuery and popper inside `main.js`. We will soon propose cherry-picking for JS libraries in multiple versions.
+For commodity reasons, we have integrated jQuery and popper inside `bootstrap-sncf.min.js`. We will soon propose cherry-picking for JS libraries in multiple versions.
 {% endcallout %}
 
 {% highlight html %}
-<script src="dist/main.js"></script>
+<script src="dist/bootstrap-sncf.min.js"></script>
 {% endhighlight %}
 
 Curious which components explicitly require jQuery, our JS, and Popper.js? Click the show components link below. If you're at all unsure about the general page structure, keep reading for an example page template.
@@ -66,14 +66,14 @@ Be sure to have your pages set up with the latest design and development standar
     <!-- Compatibilité IE 11 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="dist/main.css">
+    <link rel="stylesheet" href="dist/bootstrap-sncf.min.css">
 
     <title>Hello, world!</title>
   </head>
   <body>
     <h1>Hello, world!</h1>
 
-    <script src="dist/main.js"></script>
+    <script src="dist/bootstrap-sncf.min.js"></script>
   </body>
 </html>
 {% endhighlight %}

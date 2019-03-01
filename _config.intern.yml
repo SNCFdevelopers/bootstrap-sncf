@@ -13,7 +13,7 @@ source:         ./templates
 destination:    ./_gh_pages
 host:           0.0.0.0
 port:           9001
-baseurl:        ""
+baseurl:        "https://sncfdevelopers.github.io/bootstrap-sncf/intern"
 url:            "https://designmetier-bootstrap.sncf.fr"
 encoding:       UTF-8
 exclude:
@@ -22,23 +22,22 @@ exclude:
 
 keep_files:
   - assets
-  - main.js
-  - main.js.map
-  - main.css
-  - main.css.map
+  - bootstrap-sncf.min.js
+  - bootstrap-sncf.min.js.map
+  - bootstrap-sncf.min.css
+  - bootstrap-sncf.min.css.map
   - vendor
 
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-toc
-# - jekyll-lunr-js-search
 
 # Social
 title:              Bootstrap Métier
 description:        ""
 twitter:            getbootstrap
-authors:            "Mark Otto, Jacob Thornton, and Bootstrap contributors"
+authors:            "SNCF Fab Design, Mark Otto, Jacob Thornton, and Bootstrap contributors"
 social_image_path:  /assets/brand/bootstrap-social.png
 social_logo_path:   /assets/brand/bootstrap-social-logo.png
 
@@ -56,8 +55,8 @@ doc_theme:            "intern"
 name:                 "DESIGN MÉTIER"
 
 download:
-  source:           "https://bootstrap-int.fd.sncf.fr/dist.zip"
-  dist:             "https://bootstrap-int.fd.sncf.fr/dist.zip"
+  source:           "https://designmetier-bootstrap.sncf.fr/dist.zip"
+  dist:             "https://designmetier-bootstrap.sncf.fr/dist.zip"
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes

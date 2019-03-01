@@ -18,7 +18,7 @@ Our SNCF design system has 7 types of charts:
 {% callout info %}
 ### How to use programmatic access ?
 Our charts are based upon [ChartJS library](http://www.chartjs.org/docs/latest/) and you can use all the fonctions included and described in their documentation.
-Please note that **you don't** have to load `chart.js` since it's already included in bootstrap's `main.js`.
+Please note that **you don't** have to load `chart.js` since it's already included in bootstrap's `bootstrap-sncf.min.js`.
 {% endcallout %}
 
 ## Radar charts

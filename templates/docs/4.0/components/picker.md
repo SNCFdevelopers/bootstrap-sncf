@@ -15,7 +15,7 @@ Pickers let users select a value from a set of pre-determined values with the he
 {% callout info %}
 ### How to use programmatic access ?
 Our pickers are based upon [Flatpickr library](https://flatpickr.js.org/) and you can use all the fonctions included and described in their documentation.
-Please note that **you don't** have to load `flatpickr.js` since it's already included in bootstrap's `main.js`.
+Please note that **you don't** have to load `flatpickr.js` since it's already included in bootstrap's `bootstrap-sncf.min.js`.
 {% endcallout %}
 
 ## Date
