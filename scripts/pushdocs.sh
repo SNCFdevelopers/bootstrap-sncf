@@ -12,7 +12,7 @@ git add . && \
 git commit -m "Deploy to GitHub Pages - Metier" && \
 git push --force "${GIT_DEPLOY_DOC_INT}" master:gh-pages
 
-cd documentation/extern && \
+cd ../extern && \
 git init && \
 git config user.name "Travis CI" && \
 git config user.email "github@travis-ci.org" && \
