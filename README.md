@@ -1,7 +1,7 @@
 ## Builds status
 
 ### Master Branch
-[![MASTER Build Status](https://travis-ci.com/SNCFdevelopers/bootstrap-sncf.svg?branch=master)](https://travis-ci.com/SNCFdevelopers/bootstrap-sncf) This is the branch you'll see on documentations sites [sn.cf/socledesign](https://sn.cf/socledesign)
+[![MASTER Build Status](https://travis-ci.com/SNCFdevelopers/bootstrap-sncf.svg?branch=master)](https://travis-ci.com/SNCFdevelopers/bootstrap-sncf) This is the branch you'll see on documentations sites [sn.cf/socledesign](http://sn.cf/socledesign)
 
 ### Dev Branch
 [![DEV Build Status](https://travis-ci.com/SNCFdevelopers/bootstrap-sncf.svg?branch=dev)](https://travis-ci.com/SNCFdevelopers/bootstrap-sncf) This is developement branch, be careful, it could destroy your computer and burn your mouse.
