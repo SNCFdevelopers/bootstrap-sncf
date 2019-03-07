@@ -11,7 +11,7 @@ git config user.name "Travis CI" && \
 git config user.email "github@travis-ci.org" && \
 git add . && \
 git commit -m "Deploy to GitHub Pages - Metier" && \
-git push --force "${GIT_DEPLOY_DOC_INT}" gh-pages
+git push --force "${GIT_DEPLOY_DOC_INT}" gh-pages:gh-pages
 
 cd ../extern && \
 echo "bootstrap-ext.fd.sncf.fr" > CNAME \
@@ -20,4 +20,4 @@ git config user.name "Travis CI" && \
 git config user.email "github@travis-ci.org" && \
 git add . && \
 git commit -m "Deploy to GitHub Pages - Communication" && \
-git push --force "${GIT_DEPLOY_DOC_EXT}" gh-pages
+git push --force "${GIT_DEPLOY_DOC_EXT}" gh-pages:gh-pages
