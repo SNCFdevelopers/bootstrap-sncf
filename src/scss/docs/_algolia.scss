@@ -2,17 +2,26 @@
 .algolia-autocomplete {
   display: block;
   flex: 1;
+  width: 100%;
 }
 
 /* Main dropdown wrapper */
 .algolia-autocomplete .ds-dropdown-menu {
+  margin-top: 1rem;
   background-color: color("white");
-  border-right: gray("200") solid 1px;
-  border-bottom: gray("200") solid 1px;
-  border-left: gray("200") solid 1px;
-  border-bottom-right-radius: $border-radius;
-  border-bottom-left-radius: $border-radius;
+  border: gray("200") solid 1px;
+  border-radius: $border-radius;
   box-shadow: none;
+}
+.algolia-autocomplete .ds-dropdown-menu [class^="ds-dataset-"] {
+  border: none;
+  border-radius: $border-radius;
+  box-shadow: none;
+}
+@include media-breakpoint-down(sm) {
+  .algolia-autocomplete .ds-dropdown-menu {
+    min-width: 0;
+  }
 }
 
 /* Main category (eg. Getting Started) */
@@ -41,7 +50,7 @@
 /* Description description (eg. Bootstrap currently works...) */
 .algolia-autocomplete .algolia-docsearch-suggestion--text {
   font-size: .9rem;
-  font-weight: 500;
+  font-weight: 400;
   color: gray("400");
 }
 
