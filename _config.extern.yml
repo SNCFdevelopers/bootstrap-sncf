@@ -55,8 +55,8 @@ doc_theme:            "extern"
 name:                 "DESIGN COMMUNICATION"
 
 download:
-  source:           "https://design-bootstrap.sncf.fr/dist.zip"
-  dist:             "https://design-bootstrap.sncf.fr/dist.zip"
+  source:           "https://github.com/SNCFdevelopers/bootstrap-sncf/archive/master.zip"
+  dist:             "/dist.zip"
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
