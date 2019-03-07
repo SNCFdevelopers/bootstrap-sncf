@@ -111,8 +111,8 @@ import Clipboard from './vendor/clipboard.min.js'
     // Search
     if (window.docsearch) {
       window.docsearch({
-        apiKey: '48cb48b22351bc71ea5f12f4d1ede198',
-        indexName: 'bootstrap-v4',
+        apiKey: '0596a97fca2db2e3d9ad5178032d774f',
+        indexName: 'sncf_designmetier-bootstrap',
         inputSelector: '#search-input',
         handleSelected: function (input, event, suggestion) {
           var url = suggestion.url
@@ -122,11 +122,11 @@ import Clipboard from './vendor/clipboard.min.js'
         },
         transformData: function (hits) {
           return hits.map(function (hit) {
-            hit.url = hit.url.replace('https://v4-alpha.getbootstrap.com', '/docs/4.0')
+            hit.url = hit.url.replace('https://designmetier-bootstrap.sncf.fr/', '/')
             return hit
           })
         },
-        debug: false // Set debug to true if you want to inspect the dropdown
+        debug: true // Set debug to true if you want to inspect the dropdown
       })
     }
 

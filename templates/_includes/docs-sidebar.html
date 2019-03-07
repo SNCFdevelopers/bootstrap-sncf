@@ -1,6 +1,8 @@
-<form class="bd-search d-flex align-items-center">
-  <input role="search" type="search" class="form-control" id="search-input" placeholder="Search... (soon !)" aria-label="Search for..." autocomplete="off" disabled>
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+<form class="bd-search d-flex align-items-center form-control-container has-left-icon">
+  <input role="search" type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+  <span class="form-control-state"></span>
+  <span class="form-control-icon ml-2"><i class="icons-search"></i></span>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3 mr-2" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
     {%- include icons/menu.svg width="30" height="30" -%}
   </button>
 </form>
