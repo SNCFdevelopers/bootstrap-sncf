@@ -11,7 +11,7 @@ toc: true
 Images in Bootstrap are made responsive with `.img-fluid`. `max-width: 100%;` and `height: auto;` are applied to the image so that it scales with the parent element.
 
 <div class="bd-example">
-  <img data-src="holder.js/100px250" class="img-fluid" alt="Generic responsive image">
+  <img src="http://placebeard.it/1000/250" class="img-fluid" alt="Generic responsive image">
 </div>
 
 {% highlight html %}
@@ -29,7 +29,7 @@ In Internet Explorer 10, SVG images with `.img-fluid` are disproportionately siz
 In addition to our [border-radius utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/borders/), you can use `.img-thumbnail` to give an image a rounded 1px border appearance.
 
 <div class="bd-example bd-example-images">
-  <img data-src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
+  <img src="http://placebeard.it/200/200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
 </div>
 
 {% highlight html %}
@@ -41,8 +41,8 @@ In addition to our [border-radius utilities]({{ site.baseurl }}/docs/{{ site.doc
 Align images with the [helper float classes]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/float) or [text alignment classes]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/text/#text-alignment). `block`-level images can be centered using [the `.mx-auto` margin utility class]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/spacing/#horizontal-centering).
 
 <div class="bd-example bd-example-images">
-  <img data-src="holder.js/200x200" class="rounded float-left" alt="A generic square placeholder image with rounded corners">
-  <img data-src="holder.js/200x200" class="rounded float-right" alt="A generic square placeholder image with rounded corners">
+  <img src="http://placebeard.it/200/200" class="rounded float-left" alt="A generic square placeholder image with rounded corners">
+  <img src="http://placebeard.it/200/200" class="rounded float-right" alt="A generic square placeholder image with rounded corners">
 </div>
 
 {% highlight html %}
@@ -51,7 +51,7 @@ Align images with the [helper float classes]({{ site.baseurl }}/docs/{{ site.doc
 {% endhighlight %}
 
 <div class="bd-example bd-example-images">
-  <img data-src="holder.js/200x200" class="rounded mx-auto d-block" alt="A generic square placeholder image with rounded corners">
+  <img src="http://placebeard.it/200/200" class="rounded mx-auto d-block" alt="A generic square placeholder image with rounded corners">
 </div>
 
 {% highlight html %}
@@ -60,7 +60,7 @@ Align images with the [helper float classes]({{ site.baseurl }}/docs/{{ site.doc
 
 <div class="bd-example bd-example-images">
   <div class="text-center">
-    <img data-src="holder.js/200x200" class="rounded" alt="A generic square placeholder image with rounded corners">
+    <img src="http://placebeard.it/200/200" class="rounded" alt="A generic square placeholder image with rounded corners">
   </div>
 </div>
 
@@ -76,7 +76,7 @@ Align images with the [helper float classes]({{ site.baseurl }}/docs/{{ site.doc
 If you are using the `<picture>` element to specify multiple `<source>` elements for a specific `<img>`, make sure to add the `.img-*` classes to the `<img>` and not to the `<picture>` tag.
 
 {% highlight html %}
-​<picture>
+<picture>
   <source srcset="..." type="image/svg+xml">
   <img src="..." class="img-fluid img-thumbnail">
 </picture>
