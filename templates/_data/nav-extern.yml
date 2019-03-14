@@ -3,6 +3,7 @@
     - title: Introduction
     - title: Download
     - title: Accessibility
+    - title: How to contribute
 
 - title: Layout
   pages:
@@ -72,6 +73,7 @@
 - title: About
   pages:
     - title: Overview
+    - title: Versions
     - title: Brand
     - title: License
     - title: Translations
