@@ -17,10 +17,10 @@ toc: true
 
 ## v4.0.0
 
-### Revision 2 _14/03/2019_
+### Revision 2 _18/03/2019_
 
 General
-- Lots of minors corrections for accessibility
+- Lots (LOTS !) of minors corrections & enhancements for accessibility
 
 Docs
 - Search activated (by [Algolia](https://www.algolia.com/))
@@ -28,8 +28,14 @@ Docs
 - [Favicon](/docs/4.0/content/favicon/) & how to use added
 
 Corrections
-- Line-chart : vertical line on hover
+- Charts : vertical line on hover, and many others improvements
 - DateTime Picker : Time is visible with date when popup fired
+- Design Métier : Mastheader dropdown : mobile version corrected
+- IE11 compatibility fixed
+- Select : asynchrone loading fixed
+- Design Métier : Tabs : mobile version fixed
+
+And many other minor corrections (please consult [list of closed issues](https://github.com/SNCFdevelopers/bootstrap-sncf/issues?q=is%3Aissue+is%3Aclosed) or [commits](https://github.com/SNCFdevelopers/bootstrap-sncf/commits/master) for more details).
 
 
 ### Revision 1 _27/06/2018_
