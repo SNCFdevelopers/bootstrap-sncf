@@ -17,7 +17,7 @@ const DEFAULT_OPTIONS = {
   time_24hr: true,
   /* eslint-enable camelcase */
   /* Désactivation de l'appel au calendrier natif */
-  disableMobile:true
+  disableMobile: true
 }
 
 /**
@@ -59,7 +59,7 @@ class Picker {
       decrementHoursOnMinutesMin
     }
 
-    if (timePicker) {
+    if (mode === 'time' || timePicker) {
       options.enableTime = true
       options.noCalendar = true
     }
