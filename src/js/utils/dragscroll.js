@@ -80,7 +80,8 @@ function fixTouches(e) {
                                 lastClientX = e.clientX;
                                 lastClientY = e.clientY;
 
-                                e.preventDefault();
+                                // Causing problems with navtabs on Chrome mobile, no side effect reported ?
+                                // e.preventDefault();
                             }
                         }, 0
                     );
