@@ -5,8 +5,8 @@ GIT_DEPLOY_DOC_INT=${GIT_DEPLOY_DOC_INT}
 GIT_DEPLOY_DOC_EXT=${GIT_DEPLOY_DOC_EXT}
 
 # For Github's pages reverse proxy
-echo "bootstrap-int.fd.sncf.fr" > documentation/intern/CNAME
-echo "bootstrap-ext.fd.sncf.fr" > documentation/extern/CNAME
+echo "designmetier-bootstrap.sncf.fr" > documentation/intern/CNAME
+echo "design-bootstrap.sncf.fr" > documentation/extern/CNAME
 
 # INTERN
 cd documentation/intern && \
