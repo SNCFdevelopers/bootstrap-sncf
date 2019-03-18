@@ -46,11 +46,11 @@ current_version:      4.0.0
 current_ruby_version: 4.0.0
 docs_version:         4.0
 sncf_version:         2
-repo:                 "https://github.com/twbs/bootstrap"
+repo:                 "https://github.com/SNCFdevelopers/bootstrap-sncf"
 slack:                "https://bootstrap-slack.herokuapp.com"
-blog:                 "https://blog.getbootstrap.com"
-expo:                 "https://expo.getbootstrap.com"
-jobs:                 "https://jobs.getbootstrap.com"
+blog:                 "https://www.digital.sncf.com"
+expo:                 "https://www.digital.sncf.com"
+jobs:                 "https://www.digital.sncf.com"
 themes:               "https://themes.getbootstrap.com"
 doc_theme:            "intern"
 name:                 "DESIGN MÉTIER"

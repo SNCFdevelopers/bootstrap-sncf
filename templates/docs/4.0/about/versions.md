@@ -25,6 +25,12 @@ General
 Docs
 - Search activated (by [Algolia](https://www.algolia.com/))
 - Lots of minors corrections for accessibility
+- [Favicon](/docs/4.0/content/favicon/) & how to use added
+
+Corrections
+- Line-chart : vertical line on hover
+- DateTime Picker : Time is visible with date when popup fired
+
 
 ### Revision 1 _27/06/2018_
 
