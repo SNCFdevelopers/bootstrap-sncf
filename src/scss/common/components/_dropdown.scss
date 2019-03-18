@@ -245,7 +245,7 @@
 
   // The dropdown menu
   // stylelint-disable declaration-no-important
-  .dropdown-menu {
+  .dropdown-menu:not(.dropdown-menu-mastheader) {
     .dropdown &,
     .dropup & {
       width: 100%;
