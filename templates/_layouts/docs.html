@@ -28,6 +28,9 @@
           <h1 class="bd-title" id="content">{{ page.title | smartify }}</h1>
           <p class="bd-lead">{{ page.description | smartify }}</p>
           {{ content }}
+          {% if page.title != "How to contribute" %}
+            {% include insert-howtocontribute.html %}
+          {% endif %}
         </main>
       </div>
     </div>
