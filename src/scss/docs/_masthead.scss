@@ -9,7 +9,7 @@
     line-height: 1;
   }
 
-  .btn {
+  .btn:not(.btn-link) {
     width: 100%;
     padding: .8rem 2rem;
     font-size: 1.25rem;
