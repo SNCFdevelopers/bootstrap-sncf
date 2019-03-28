@@ -81,11 +81,11 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
       </li>
       <li class="toolbar-item toolbar-item-spacing">
         <div class="btn-group dropdown">
-          <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
+          <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol-actionbar1">
             <span>Primary</span>
             <i class="icons-arrow-down"></i>
           </button>
-          <div class="dropdown-menu dropdown-menu-right" id="mycontrol">
+          <div class="dropdown-menu dropdown-menu-right" id="mycontrol-actionbar1">
             <ul>
               <li class="dropdown-item"><a href="#">Action</a></li>
               <li class="dropdown-item"><a href="#">Another action</a></li>
@@ -176,11 +176,11 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
       </li>
       <li class="toolbar-item toolbar-item-spacing">
         <div class="btn-group dropdown">
-          <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
+          <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol-actionbar2">
             <span>Primary</span>
             <i class="icons-arrow-down"></i>
           </button>
-          <div class="dropdown-menu dropdown-menu-right" id="mycontrol">
+          <div class="dropdown-menu dropdown-menu-right" id="mycontrol-actionbar2">
             <ul>
               <li class="dropdown-item"><a href="#">Action</a></li>
               <li class="dropdown-item"><a href="#">Another action</a></li>
@@ -230,7 +230,7 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
       <label for="rechercheveille" class="font-weight-medium text-nowrap pr-3 mb-0">Sélectionner un plan de veille</label>
       <div class="input-group align-items-center">
         <div class="form-control-container" data-component="control" data-clear-option="true">
-          <input id="rechercheveille" role="search" type="search" class="form-control clear-option" data-role="input" data-placeholder="Rechercher" />
+          <input id="rechercheveille" type="search" class="form-control clear-option" data-role="input" data-placeholder="Rechercher" />
           <span class="form-control-state"></span>
           <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
             <span class="sr-only">Clear text</span>
@@ -261,11 +261,11 @@ The contextual menu uses the dropdown component [described here]({{ site.baseurl
 
 {% example html %}
 <div class="btn-group dropdown">
-  <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
+  <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol-contextmenu">
     <span class="sr-only">Nom du menu</span>
     <i class="pl-1 icons-options icon-size-1x75"></i>
   </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mycontrol">
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mycontrol-contextmenu">
     <ul>
       <li class="dropdown-item"><a href="#">Modifier la liste</a></li>
       <li class="dropdown-item"><a href="#">Dupliquer la liste</a></li>
@@ -278,7 +278,7 @@ The contextual menu uses the dropdown component [described here]({{ site.baseurl
 ### With icons
 
 {% example html %}
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mycontrol">
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mycontrol-icons">
     <ul>
       <li class="dropdown-item"><a href="#"><i class="icons-pencil mr-3 icon-size-x75"></i> Modifier la liste</a></li>
       <li class="dropdown-item"><a href="#"><i class="icons-add mr-3 icon-size-x75"></i> Dupliquer la liste</a></li>

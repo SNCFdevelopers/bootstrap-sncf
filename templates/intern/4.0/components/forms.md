@@ -98,7 +98,7 @@ In some cases, fields can contain standardized data. Unmodifiable characters can
   <div class="row align-items-center">
     <div class="col-4">
       <div class="form-control-container">
-        <input class="form-control" type="text" maxlength="4" placeholder="ABCD" title="4 premiers caractères">
+        <input class="form-control" type="text" maxlength="4" title="4 premiers caractères">
         <span class="form-control-state"></span>
       </div>
     </div>
@@ -107,7 +107,7 @@ In some cases, fields can contain standardized data. Unmodifiable characters can
     </div>
     <div class="col-4">
       <div class="form-control-container">
-        <input class="form-control" type="text" maxlength="4" placeholder="1234" title="4 derniers caractères après TX">
+        <input class="form-control" type="text" maxlength="4" title="4 derniers caractères après TX">
         <span class="form-control-state"></span>
       </div>
     </div>
@@ -123,13 +123,13 @@ Add a `stretchy` class on `textarea` element.
 
 {% example html %}
 <label for="stretchyTextarea1">Auto sizing textarea</label>
-{% include components/textarea.html id="stretchyTextarea1" class="stretchy" placeholder="Auto sizing..." %}
+{% include components/textarea.html id="stretchyTextarea1" class="stretchy" placeholder="Auto sizing" %}
 {% endexample %}
 
 ### Textarea with counter
 
 {% example html %}
-{% include components/textarea-counter.html id="countTextarea1" placeholder="Character counter..." %}
+{% include components/textarea-counter.html id="countTextarea1" placeholder="Character counter" %}
 {% endexample %}
 
 ### Multi-line text field with a toolbar
@@ -181,8 +181,7 @@ We recommend limiting toolbars to one line and putting secondary tools in a cont
     </div>
   </div>
   <div class="form-control-container">
-    <label for="exampleFormControlTextarea3" class="sr-only">Comment</label>
-    <textarea id="exampleFormControlTextarea3" class="form-control" placeholder="Comment"></textarea>
+    <textarea id="exampleFormControlTextarea3" class="form-control" title="Comment" placeholder="Comment"></textarea>
     <span class="form-control-state"></span>
   </div>
 </div>
@@ -263,9 +262,9 @@ You can precise what do you expect directly inside the input field with `placeho
 The placeholder disappear when you enter a character.
 
 {% example html %}
-<label class="font-weight-medium mb-2" for="inputPassword5">Password</label>
+<label class="font-weight-medium mb-2" for="inputPassword4">Password</label>
 <div class="form-control-container">
-  <input type="password" id="inputPassword5" class="form-control" placeholder="Password must be 50 characters long, and contain emojis">
+  <input type="password" id="inputPassword4" class="form-control" title="Password must be 50 characters long, and contain emojis"  placeholder="Password must be 50 characters long, and contain emojis">
   <span class="form-control-state"></span>
 </div>
 {% endexample %}

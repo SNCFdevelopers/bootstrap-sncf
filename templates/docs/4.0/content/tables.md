@@ -15,15 +15,15 @@ Using the most basic table markup, here's how `.table`-based tables look in SNCF
 {% example html %}
 <div class="table-wrapper">
   <div class="table-scroller dragscroll">
-    <caption class="sr-only">Titre</caption>
     <table class="table">
+      <caption class="sr-only">Titre</caption>
       <thead class="thead thead-light">
         <tr>
           <td>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
-                <input type="checkbox" class="custom-control-input" id="thead">
-                <label class="custom-control-label" for="thead"><span class="sr-only">Tout sélectionner</span></label>
+                <input type="checkbox" class="custom-control-input" id="examples-thead">
+                <label class="custom-control-label" for="examples-thead"><span class="sr-only">Tout sélectionner</span></label>
               </div>
             </div>
           </td>
@@ -41,8 +41,8 @@ Using the most basic table markup, here's how `.table`-based tables look in SNCF
           <td>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
-                <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-                <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">{{ item.name }}, type {{ item.type }}, ver {{ item.version }}</span></label>
+                <input type="checkbox" class="custom-control-input" id="examples-cell{{ forloop.index }}">
+                <label class="custom-control-label" for="examples-cell{{ forloop.index }}"><span class="sr-only">{{ item.name }}, type {{ item.type }}, ver {{ item.version }}</span></label>
               </div>
             </div>
           </td>
@@ -66,7 +66,7 @@ Using the most basic table markup, here's how `.table`-based tables look in SNCF
                   <span class="sr-only">Actions</span>
                   <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
                 </button>
-                <div class="dropdown-menu dropdown-menu-right" id="toggle{{ forloop.index }}">
+                <div class="dropdown-menu dropdown-menu-right" id="examples-toggle{{ forloop.index }}">
                   <button type="button" class="dropdown-item">Télécharger</button>
                   <button type="button" class="dropdown-item">Imprimer</button>
                   <button type="button" class="dropdown-item">Partager</button>
@@ -96,8 +96,8 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
           <td>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
-                <input type="checkbox" class="custom-control-input" id="thead">
-                <label class="custom-control-label" for="thead"><span class="sr-only">Tout sélectionner</span></label>
+                <input type="checkbox" class="custom-control-input" id="fixedlastrow-thead">
+                <label class="custom-control-label" for="fixedlastrow-thead"><span class="sr-only">Tout sélectionner</span></label>
               </div>
             </div>
           </td>
@@ -116,8 +116,8 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
           <td>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
-                <input type="checkbox" class="custom-control-input" id="cell1{{ forloop.index }}">
-                <label class="custom-control-label" for="cell1{{ forloop.index }}"><span class="sr-only">{{ item.name }}, type {{ item.type }}, ver {{ item.version }}</span></label>
+                <input type="checkbox" class="custom-control-input" id="fixedlastrow-cell{{ forloop.index }}">
+                <label class="custom-control-label" for="fixedlastrow-cell{{ forloop.index }}"><span class="sr-only">{{ item.name }}, type {{ item.type }}, ver {{ item.version }}</span></label>
               </div>
             </div>
           </td>
@@ -133,7 +133,7 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
                 <span class="sr-only">Actions</span>
                 <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
               </button>
-              <div class="dropdown-menu dropdown-menu-right" id="toggle1{{ forloop.index }}">
+              <div class="dropdown-menu dropdown-menu-right" id="fixedlastrow-toggle{{ forloop.index }}">
                 <button type="button" class="dropdown-item">Télécharger</button>
                 <button type="button" class="dropdown-item">Imprimer</button>
                 <button type="button" class="dropdown-item">Partager</button>
@@ -196,8 +196,8 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
           <th scope="col">
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
-                <input type="checkbox" class="custom-control-input" id="thead">
-                <label class="custom-control-label" for="thead"><span class="sr-only">étiquette</span></label>
+                <input type="checkbox" class="custom-control-input" id="tablegroups-thead">
+                <label class="custom-control-label" for="tablegroups-thead"><span class="sr-only">étiquette</span></label>
               </div>
             </div>
           </th>
@@ -215,8 +215,8 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
           <td>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
-                <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-                <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
+                <input type="checkbox" class="custom-control-input" id="tablegroups-cell{{ forloop.index }}">
+                <label class="custom-control-label" for="tablegroups-cell{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
               </div>
             </div>
           </td>
@@ -231,8 +231,8 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
             <td>
               <div class="cell-inner">
                 <div class="custom-control custom-checkbox custom-checkbox-alone">
-                  <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-                  <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
+                  <input type="checkbox" class="custom-control-input" id="tablegroups-cell2{{ forloop.index }}">
+                  <label class="custom-control-label" for="tablegroups-cell2{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
                 </div>
               </div>
             </td>
