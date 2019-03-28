@@ -1,12 +1,16 @@
 <footer class="bd-footer text-muted">
   <div class="container-fluid p-3 p-md-5">
     <ul class="bd-footer-links">
-      <li><a href="{{ site.repo }}">GitHub</a></li>
-      <li><a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/">Examples</a></li>
-      <li><a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/about/overview/">About</a></li>
+      <li>
+        <p>
+          <a class="btn btn-link" href="{{ site.repo }}"><span>GitHub</span><i class="icons-external-link icons-size-x75 ml-2"></i></a>
+        </p>
+      </li>
+      <li><a class="btn btn-link" href="{{ site.urlother }}"><span>Link to {{ site.titleother }}</span><i class="icons-external-link icons-size-x75 ml-2"></i></a></li>
+      <li><a class="btn btn-link" href="https://digital.sncf.com"><span>Digital SNCF</span><i class="icons-external-link icons-size-x75 ml-2"></i></a></li>
     </ul>
-    <p>Forked by <a href="https://www.digital.sncf.com">Fab Design SNCF</a>, with all our love.</p>
-    <p>Designed and built with all the love in the world by, <a href="https://twitter.com/mdo" target="_blank" rel="noopener">@mdo</a> and <a href="https://twitter.com/fat" target="_blank" rel="noopener">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
-    <p>Currently <a href="">v{{ site.current_version }} r{{ site.sncf_version }}</a>. Code licensed <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
+    <p>Forked by <a class="btn btn-link" href="https://www.digital.sncf.com"><span>Fab Design SNCF</span><i class="icons-external-link icons-size-x75 ml-2"></i></a>, with all our love.</p>
+    <p>Designed and built with all the love in the world by, <a href="https://twitter.com/mdo" target="_blank" rel="noopener">@mdo</a> and <a href="https://twitter.com/fat" target="_blank" rel="noopener">@fat</a>. Maintained by the <a class="btn btn-link" href="https://github.com/orgs/twbs/people"><span>core team</span><i class="icons-external-link icons-size-x75 ml-2"></i></a> with the help of <a class="btn btn-link" href="https://github.com/twbs/bootstrap/graphs/contributors"><span>our contributors</span><i class="icons-external-link icons-size-x75 ml-2"></i></a>.</p>
+    <p>Currently <a class="btn btn-link" href="/docs/{{ site.current_version }}/about/versions"><span>v{{ site.current_version }} r{{ site.sncf_version }}</span><i class="icons-arrow-next icons-size-x75 ml-2"></i></a>. Code licensed <a class="btn btn-link" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank" rel="license noopener"><span>MIT</span><i class="icons-external-link icons-size-x75 ml-2"></i></a>, docs <a class="btn btn-link" href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener"><span>CC BY 3.0</span><i class="icons-external-link icons-size-x75 ml-2"></i></a>.</p>
   </div>
 </footer>

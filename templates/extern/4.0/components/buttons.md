@@ -37,20 +37,22 @@ When using button classes on `<a>` elements that are used to trigger in-page fun
 
 These buttons are used for very minor actions.
 
-<a href="#" class="btn btn-link mb-4"><span>Internal link</span> <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
-<br>
-<a href="#" class="btn btn-link mb-4"><span>Share link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></a>
-<br>
-<a href="#" class="btn btn-link mb-4"><span>Download link</span> <i class="icons-download icons-size-x75 ml-2" aria-hidden="true"></i></a>
-<br>
-<a href="#" class="btn btn-link mb-4"><span>External link</span> <i class="icons-external-link icons-size-x75 ml-2" aria-hidden="true"></i></a>
+<p><a href="#" class="btn btn-link"><span>Internal link</span> <i class="icons-arrow-next icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
+<p><a href="#" class="btn btn-link"><span>Share link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
+<p><a href="#" class="btn btn-link"><span>Download link</span> <i class="icons-download icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
+<p><a href="#" class="btn btn-link"><span>External link</span> <i class="icons-external-link icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
 
 {% highlight html %}
-<a href="#" class="btn btn-link"><span>Internal link</span> <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
-<a href="#" class="btn btn-link"><span>Share link</span> <i class="icons-share icons-size-x5 ml-2" aria-hidden="true"></i></a>
-<a href="#" class="btn btn-link"><span>Download link</span> <i class="icons-download icons-size-x5 ml-2" aria-hidden="true"></i></a>
-<a href="#" class="btn btn-link"><span>External link</span> <i class="icons-external-link icons-size-x5 ml-2" aria-hidden="true"></i></a>
+<a href="#" class="btn btn-link"><span>Internal link</span> <i class="icons-arrow-next icons-size-x75 ml-2" aria-hidden="true"></i></a>
+<a href="#" class="btn btn-link"><span>Share link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></a>
+<a href="#" class="btn btn-link"><span>Download link</span> <i class="icons-download icons-size-x75 ml-2" aria-hidden="true"></i></a>
+<a href="#" class="btn btn-link"><span>External link</span> <i class="icons-external-link icons-size-x75 ml-2" aria-hidden="true"></i></a>
 {% endhighlight %}
+
+### Disabled state
+{% example html %}
+<p><span class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></span></p>
+{% endexample %}
 
 ## Button icon
 
