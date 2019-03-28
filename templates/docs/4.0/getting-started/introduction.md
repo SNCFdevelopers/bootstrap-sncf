@@ -54,17 +54,23 @@ Curious which components explicitly require jQuery, our JS, and Popper.js? Click
 
 ## Starter template
 
+{% callout warning %}
+### IE11 Compatibility
+To ensure IE11 compatibility you have to put this string `<meta http-equiv="X-UA-Compatible" content="IE=edge">` immediatly after `<head>`.
+Moreover, SNCF's IE11 configuration uses IE7 compatibility mode by default, put this on IE11 mode.
+{% endcallout %}
+
 Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
 
 {% highlight html %}
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- IE 11 compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- IE 11 compatibility-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="dist/bootstrap-sncf.min.css">
 
