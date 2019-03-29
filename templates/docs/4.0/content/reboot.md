@@ -55,6 +55,7 @@ All heading elements—e.g., `<h1>`—and `<p>` are reset to have their `margin-
 
 <div class="table-wrapper">
   <div class="table-scroller dragscroll">
+    <caption class="sr-only">Headings preview table</caption>
     <table class="table table-bordered">
       <thead>
         <tr>

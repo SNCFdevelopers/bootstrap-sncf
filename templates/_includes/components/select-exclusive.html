@@ -14,7 +14,7 @@
         </button>
       </div>
     </div>
-    <div class="select-menu" id="selecttoggle">
+    <div class="select-menu" id="{{ item.id }}-selecttoggle">
       <div class="d-flex flex-column">
         <div class="flex-fluid overflow-y" role="list" data-role="menu">
           {% for item in include.items %}<button class="select-menu-item" role="listitem" data-role="value" data-target="{{ forloop.index }}">{{ item.name }}</button>

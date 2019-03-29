@@ -32,7 +32,7 @@ When using button classes on `<a>` elements that are used to trigger in-page fun
 <input class="btn btn-primary" type="reset" value="Reset">
 {% endexample %}
 
-## Button link
+## Button links
 
 These buttons are used for very minor actions.
 

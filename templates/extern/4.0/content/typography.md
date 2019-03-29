@@ -66,22 +66,22 @@ Colours for article headlines and sub-headings can be adjusted:
 
 <div class="row">
   <div class="col-sm-6">
-    <h2 class="text-primary">Beautiful colored heading</h2>
+    <span class="h2 text-primary">Beautiful colored heading</span>
   </div>
   <div class="col-sm-6">
-    <h2 class="text-info">Beautiful colored heading</h2>
+    <span class="h2 text-info">Beautiful colored heading</span>
   </div>
   <div class="col-sm-6">
-    <h2 class="text-pink">Beautiful colored heading</h2>
+    <span class="h2 text-pink">Beautiful colored heading</span>
   </div>
   <div class="col-sm-6">
-    <h2 class="text-danger">Beautiful colored heading</h2>
+    <span class="h2 text-danger">Beautiful colored heading</span>
   </div>
   <div class="col-sm-6">
-    <h2 class="text-warning">Beautiful colored heading</h2>
+    <span class="h2 text-warning">Beautiful colored heading</span>
   </div>
   <div class="col-sm-6">
-    <h2 class="text-purple">Beautiful colored heading</h2>
+    <span class="h2 text-purple">Beautiful colored heading</span>
   </div>
 </div>
 

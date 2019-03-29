@@ -55,12 +55,12 @@ Users can be offered the option of adding a new item to the list, but we suggest
 When a list is very long and scrolling through all the options becomes fussy, a search bar can be added to allow users to search for a specific item or eliminate some options.
 
 {% example html %}
-<label for="select2">Search</label>
+<label for="select3">Search</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <div class="form-control is-placeholder  d-flex align-items-center" data-role="placeholder">Lorem ipsum</div>
-      <select class="sr-only" id="select2" data-role="input" tabindex="-1" aria-hidden="true">
+      <select class="sr-only" id="select3" data-role="input" tabindex="-1" aria-hidden="true">
         <option selected disabled hidden>Lorem ipsum</option>
       </select>
       <div class="input-group-append input-group-last">
@@ -72,7 +72,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
     <div class="select-menu" data-role="menu">
       <div class="d-flex flex-column flex-sm-row" data-role="add">
         <div class="form-control-container w-100 has-left-icon">
-          <input type="" class="form-control form-control-sm" id="inputIcon1" placeholder="Example for auto-completion" >
+          <input type="" class="form-control form-control-sm" id="inputIcon3" placeholder="Example for auto-completion" >
           <span class="form-control-state"></span>
           <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
         </div>
@@ -85,12 +85,12 @@ When a list is very long and scrolling through all the options becomes fussy, a 
 ### Select with search field and additional input
 
 {% example html %}
-<label for="select2">Search</label>
+<label for="select4">Search</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <div class="form-control is-placeholder  d-flex align-items-center" data-role="placeholder">Lorem ipsum</div>
-      <select class="sr-only" id="select2" data-role="input" tabindex="-1" aria-hidden="true">
+      <select class="sr-only" id="select4" data-role="input" tabindex="-1" aria-hidden="true">
         <option selected disabled hidden>Lorem ipsum</option>
       </select>
       <div class="input-group-append input-group-last">
@@ -102,7 +102,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
     <div class="select-menu" data-role="menu">
       <div class="d-flex flex-column flex-sm-row mb-2" data-role="add">
         <div class="form-control-container w-100 has-left-icon">
-          <input type="" class="form-control" id="inputIcon1" placeholder="Example for auto-completion" >
+          <input type="" class="form-control" id="inputIcon4" placeholder="Example for auto-completion" >
           <span class="form-control-state"></span>
           <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
         </div>
@@ -120,8 +120,8 @@ When a list is very long and scrolling through all the options becomes fussy, a 
 ### Select with default select value
 
 {% example html %}
-<label for="select3">Option selected by default</label>
-{% include components/select-exclusive.html id="select3" placeholder="Lorem ipsum" iconsize="icons-size-x75" items=page.selected %}
+<label for="select5">Option selected by default</label>
+{% include components/select-exclusive.html id="select5" placeholder="Lorem ipsum" iconsize="icons-size-x75" items=page.selected %}
 {% endexample %}
 
 ## By group
@@ -175,14 +175,14 @@ When the list contains very different items, it may be a good idea to group them
 {% endexample %}
 
 {% example html %}
-<label for="exampleFormControlSelect1">Example select</label>
+<label for="exampleFormControlSelect2">Example select</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <div class="form-control" data-role="placeholder" data-selected-prefix="Sélection actuelle">
         Sélectionner un secteur
       </div>
-      <select class="sr-only" id="exampleFormControlSelect1" data-role="input" tabindex="-1" aria-hidden="true">
+      <select class="sr-only" id="exampleFormControlSelect2" data-role="input" tabindex="-1" aria-hidden="true">
         <option data-id="0">Sem Inceptos Tellus</option>
         <option data-id="1">Sem Inceptos Tellus</option>
         <option data-id="2">Sollicitudin Adipiscing Mattis</option>
@@ -287,7 +287,7 @@ Multi-select drop-down lists let users choose multiple options.
 ### With groups
 
 {% example html %}
-<label for="exampleFormControlMultiSelect2">Multi select</label>
+<label for="exampleFormControlMultiSelect3">Multi select</label>
 <div class="select-improved" data-component="select-multiple">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
@@ -296,7 +296,7 @@ Multi-select drop-down lists let users choose multiple options.
           <label data-role="placeholder" class="custom-control-label font-weight-medium">Tous les secteurs</label>
         </div>
       </div>
-      <select class="sr-only" id="exampleFormControlMultiSelect2" data-role="input" tabindex="-1" aria-hidden="true" multiple>
+      <select class="sr-only" id="exampleFormControlMultiSelect3" data-role="input" tabindex="-1" aria-hidden="true" multiple>
         <option data-id="0" selected>Sem Inceptos Tellus</option>
         <option data-id="1" selected>Sem Inceptos Tellus</option>
         <option data-id="2" selected>Sollicitudin Adipiscing Mattis</option>

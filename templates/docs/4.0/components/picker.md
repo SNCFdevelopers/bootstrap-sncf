@@ -200,10 +200,10 @@ Only use a date-time-picker when you need to optimize space and reduce the numbe
   </div>
 
   <div class="pt-3">
-    <button class="btn-link" aria-controls="inputrange" data-component="state" data-state="d-none" data-behaviour="toggle" data-target=".range-inputs">
+    <button class="btn-link" aria-controls="inputrange2" data-component="state" data-state="d-none" data-behaviour="toggle" data-target=".range-inputs">
       Saisir une plage de date
     </button>
-    <div class="row pt-2 range-inputs d-none" id="inputrange">
+    <div class="row pt-2 range-inputs d-none" id="inputrange2">
       <div class="col">
         <div class="form-group">
           <label for="range1">Date d’arrivée (jj/mm/aaaa)</label>

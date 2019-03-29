@@ -6,7 +6,7 @@ group: about
 toc: true
 ---
 
-{% callout-info %}
+{% callout info %}
   Versions numbers will follow original Bootstrap versions, followed by SNCF's revision of this same version.<br>
   For example, _v4.0.0 r2_ is :
   - SNCF revision 2

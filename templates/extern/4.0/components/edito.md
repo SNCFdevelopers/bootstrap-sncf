@@ -181,7 +181,8 @@ We recommend only using one grey card per paragraph.
 	    <option data-id="2">Grand-Est</option>
 	  </select>
 	  <div class="input-group-append input-group-last">
-	    <button class="btn btn-primary btn-only-icon " data-role="btn" type="button">
+	    <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
+              <span class="sr-only">Choisissez votre région</span>
 	      <i class="icons-arrow-down icons-size-x75"></i>
 	    </button>
 	  </div>
@@ -209,11 +210,11 @@ On text pages without anchor links, some components can be placed in a column to
   <div class="col-md-5">
     <div class="d-flex flex-column bg-light gx-3 gy-4 gx-md-4 rounded">
       <div class="d-flex flex-column flex-fluid">
-	<h2 class="mb-5">Les derniers articles</h2>
-	<p class="display-5 text-uppercase text-primary">ÉVÈNEMENT</p>
-	<h3 class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</h3>
-	<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio.</p>
-	<div class="d-flex align-items-end flex-fluid">
+	<h2 class="order-0 mb-5">Les derniers articles</h2>
+	<h3 class="order-2 display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</h3>
+	<p class="order-1 display-5 text-uppercase text-primary">ÉVÈNEMENT</p>
+	<p class="order-3">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio.</p>
+	<div class="order-4 d-flex align-items-end flex-fluid">
 	  <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
 	</div>
       </div>

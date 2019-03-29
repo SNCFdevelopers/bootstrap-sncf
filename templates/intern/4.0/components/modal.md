@@ -36,7 +36,7 @@ Keep reading for demos and usage guidelines.
 Below is a _static_ modal example (meaning its `position` and `display` have been overridden). Included are the modal header, modal body (required for `padding`), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
 
 <div class="bd-example bd-example-modal">
-  <div class="modal" tabindex="-1" role="dialog" aria-labelledy="exampleModalLabel1">
+  <div class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -54,7 +54,7 @@ Below is a _static_ modal example (meaning its `position` and `display` have bee
 </div>
 
 {% highlight html %}
-<div class="modal" tabindex="-1" role="dialog" aria-labelledy="exampleModalLabel2">
+<div class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -72,7 +72,7 @@ Below is a _static_ modal example (meaning its `position` and `display` have bee
 {% endhighlight %}
 
 <div class="bd-example bd-example-modal">
-  <div class="modal" tabindex="-1" role="dialog" aria-labelledy="exampleModalLabel3">
+  <div class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -91,7 +91,7 @@ Below is a _static_ modal example (meaning its `position` and `display` have bee
 </div>
 
 {% highlight html %}
-<div class="modal" tabindex="-1" role="dialog" aria-labelledy="exampleModalLabel4">
+<div class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -175,7 +175,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
 ### Download a file
 
 <div class="bd-example bd-example-modal">
-  <div class="modal" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+  <div class="modal" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body text-center">
@@ -207,11 +207,11 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
 ### Demo form
 
 <div class="bd-example bd-example-modal">
-  <div class="modal" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+  <div class="modal" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4">
     <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content">
         <div class="modal-body">
-          <h5 class="h1 modal-title" id="exampleModalLabel7">Action lorem ipsum</h5>
+          <h5 class="h1 modal-title" id="exampleModalLabel4">Action lorem ipsum</h5>
           <p>Détails pour paramétrer l'action</p>
           <label for="inputEmail1">Titre</label>
           <div class="form-control-container mb-4">
@@ -287,7 +287,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
 </div>
 
 {% highlight html %}
-<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-body">

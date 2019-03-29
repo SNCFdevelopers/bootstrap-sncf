@@ -13,7 +13,7 @@ permalink: /docs/4.0/layout/navbar/
     <header role="banner" class="d-flex align-items-center">
       <div class="mastheader-logo">
         <a href="/docs" class="d-block">
-          <img alt="" class="d-block" src="{{ site.baseurl }}/assets/img/brand/sncf-logo.png" width="34" />
+          <img alt="SNCF" class="d-block" src="{{ site.baseurl }}/assets/img/brand/sncf-logo.png" width="34" />
         </a>
       </div>
       <h1 class="mastheader-title flex-fluid text-white">Les trains en Ile-de-France de SNCF</h1>

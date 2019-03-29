@@ -103,7 +103,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 ### Menu example
 
 <div class="bd-example">
-  <nav class="menu" data-role="menu" style="position: relative;">
+  <nav class="menu" data-role="menu" style="position: relative;" role="navigation">
     <div class="container">
       <div id="programme" class="menu-item panel primary-panel active">
         <div class="panel-inner">
@@ -502,404 +502,402 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
 </div>
 
 {% highlight html %}
-<div class="bd-example">
-  <nav class="menu" data-role="menu">
-    <div class="container">
-      <div id="programme" class="menu-item panel primary-panel active">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Programme
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="panel-content">
-            <div class="panel-lead">
-              <h3 class="mb-4 text-white">Programme</h3>
-              <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            </div>
-            <div class="subnav">
-              <ul class="subnav-inner">
-                <li class="subnav-item">
-                  <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#loisirs-tourisme" aria-expanded="false" aria-controls="loisirs-tourisme">
-                    Loisirs &amp; Tourisme
-                    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-                  </button>
-                </li>
-                <li class="subnav-item">
-                  <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#toutes-les-lignes" aria-expanded="false" aria-controls="toutes-les-lignes">
-                    Toutes les lignes
-                    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-                  </button>
-                </li>
-                <li class="subnav-item">
-                  <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#services-mobiles" aria-expanded="false" aria-controls="services-mobiles">
-                    Services mobiles
-                    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-                  </button>
-                </li>
-                <li class="subnav-item">
-                  <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#au-quotidien" aria-expanded="false" aria-controls="au-quotidien">
-                    Au quotidien
-                    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-                  </button>
-                </li>
-                <li class="subnav-item">
-                  <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#le-réseaux" aria-expanded="false" aria-controls="le-réseaux">
-                    Le réseaux
-                    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
+<nav class="menu" data-role="menu" role="navigation">
+  <div class="container">
+    <div id="programme" class="menu-item panel primary-panel active">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Programme
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
         </div>
-      </div>
-      <div id="loisirs-tourisme" class="menu-item panel secondary-panel">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="h3 mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Loisirs &amp; Tourisme
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
+        <div class="panel-content">
+          <div class="panel-lead">
+            <h3 class="mb-4 text-white">Programme</h3>
+            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
           </div>
-          <div class="panel-content">
-            <nav class="subnav">
-              <button type="button" class="subnav-item">
-                Category 1
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Category 2
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Category 3
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div id="toutes-les-lignes" class="menu-item panel secondary-panel">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="h3 mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Toutes les lignes
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="panel-content">
-            <nav class="subnav">
-              <button type="button" class="subnav-item">
-                RER &amp; Trains
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Noctilien
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Métro
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Tramways
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Le réseau
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div id="services-mobiles" class="menu-item panel secondary-panel">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="h3 mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Services mobiles
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="panel-content">
-            <nav class="subnav">
-              <button type="button" class="subnav-item">
-                Services mobiles 1
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Services mobiles 2
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Services mobiles 3
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div id="au-quotidien" class="menu-item panel secondary-panel">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="h3 mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Au quotidien
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="panel-content">
-            <nav class="subnav">
-              <button type="button" class="subnav-item">
-                Quotidien 1
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Quotidien 2
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Quotidien 3
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div id="le-réseaux" class="menu-item panel secondary-panel">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="h3 mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Le réseaux
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="panel-content">
-            <nav class="subnav">
-              <button type="button" class="subnav-item">
-                Réseaux 1
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Réseaux 2
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Réseaux 3
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div id="startup" class="menu-item panel primary-panel">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Startup
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="panel-content">
-            <div class="panel-lead">
-              <h3 class="mb-4 text-white">Startup</h3>
-              <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            </div>
-            <div class="subnav">
-              <ul class="subnav-inner">
-                <li class="subnav-item">
-                  <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#startup-catégorie" aria-expanded="false" aria-controls="startup-catégorie">
-                    Startup catégorie
-                    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="startup-catégorie" class="menu-item panel secondary-panel">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="h3 mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Startup catégorie
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="panel-content">
-            <nav class="subnav">
-              <button type="button" class="subnav-item">
-                Category 1
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Category 2
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Category 3
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div id="store" class="menu-item panel primary-panel">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Store
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="panel-content">
-            <div class="panel-lead">
-              <h3 class="mb-4 text-white">Store</h3>
-              <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            </div>
-            <div class="subnav">
-              <div class="subnav-inner">
-                <li class="subnav-item">
-                  <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#store-catégorie" aria-expanded="false" aria-controls="store-catégorie">
-                    Store catégorie
-                    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-                  </button>
-                </li>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="store-catégorie" class="menu-item panel secondary-panel">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="h3 mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Store catégorie
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="panel-content">
-            <nav class="subnav">
-              <button type="button" class="subnav-item">
-                Category 1
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Category 2
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Category 3
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div id="resources" class="menu-item panel primary-panel">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Resources
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="panel-content">
-            <div class="panel-lead">
-              <h3 class="mb-4 text-white">Resources</h3>
-              <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            </div>
-            <div class="subnav">
-              <ul class="subnav-inner">
-                <li class="subnav-item">
-                  <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#resources-catégorie" aria-expanded="false" aria-controls="resources-catégorie">
-                    Resources catégorie
-                    <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="resources-catégorie" class="menu-item panel secondary-panel">
-        <div class="panel-inner">
-          <div class="panel-head">
-            <h3 class="h3 mb-0" data-role="prev">
-              <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-              Resources catégorie
-            </h3>
-            <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
-              <span class="sr-only">Fermer</span>
-              <i class="icons-close icons-size-1x" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="panel-content">
-            <nav class="subnav">
-              <button type="button" class="subnav-item">
-                Category 1
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Category 2
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-              <button type="button" class="subnav-item">
-                Category 3
-                <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-              </button>
-            </nav>
+          <div class="subnav">
+            <ul class="subnav-inner">
+              <li class="subnav-item">
+                <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#loisirs-tourisme" aria-expanded="false" aria-controls="loisirs-tourisme">
+                  Loisirs &amp; Tourisme
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li class="subnav-item">
+                <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#toutes-les-lignes" aria-expanded="false" aria-controls="toutes-les-lignes">
+                  Toutes les lignes
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li class="subnav-item">
+                <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#services-mobiles" aria-expanded="false" aria-controls="services-mobiles">
+                  Services mobiles
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li class="subnav-item">
+                <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#au-quotidien" aria-expanded="false" aria-controls="au-quotidien">
+                  Au quotidien
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li class="subnav-item">
+                <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#le-réseaux" aria-expanded="false" aria-controls="le-réseaux">
+                  Le réseaux
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </nav>
-</div>
+    <div id="loisirs-tourisme" class="menu-item panel secondary-panel">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="h3 mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Loisirs &amp; Tourisme
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="panel-content">
+          <nav class="subnav">
+            <button type="button" class="subnav-item">
+              Category 1
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Category 2
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Category 3
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="toutes-les-lignes" class="menu-item panel secondary-panel">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="h3 mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Toutes les lignes
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="panel-content">
+          <nav class="subnav">
+            <button type="button" class="subnav-item">
+              RER &amp; Trains
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Noctilien
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Métro
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Tramways
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Le réseau
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="services-mobiles" class="menu-item panel secondary-panel">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="h3 mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Services mobiles
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="panel-content">
+          <nav class="subnav">
+            <button type="button" class="subnav-item">
+              Services mobiles 1
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Services mobiles 2
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Services mobiles 3
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="au-quotidien" class="menu-item panel secondary-panel">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="h3 mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Au quotidien
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="panel-content">
+          <nav class="subnav">
+            <button type="button" class="subnav-item">
+              Quotidien 1
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Quotidien 2
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Quotidien 3
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="le-réseaux" class="menu-item panel secondary-panel">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="h3 mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Le réseaux
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="panel-content">
+          <nav class="subnav">
+            <button type="button" class="subnav-item">
+              Réseaux 1
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Réseaux 2
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Réseaux 3
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="startup" class="menu-item panel primary-panel">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Startup
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="panel-content">
+          <div class="panel-lead">
+            <h3 class="mb-4 text-white">Startup</h3>
+            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          </div>
+          <div class="subnav">
+            <ul class="subnav-inner">
+              <li class="subnav-item">
+                <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#startup-catégorie" aria-expanded="false" aria-controls="startup-catégorie">
+                  Startup catégorie
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="startup-catégorie" class="menu-item panel secondary-panel">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="h3 mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Startup catégorie
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="panel-content">
+          <nav class="subnav">
+            <button type="button" class="subnav-item">
+              Category 1
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Category 2
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Category 3
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="store" class="menu-item panel primary-panel">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Store
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="panel-content">
+          <div class="panel-lead">
+            <h3 class="mb-4 text-white">Store</h3>
+            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          </div>
+          <div class="subnav">
+            <div class="subnav-inner">
+              <li class="subnav-item">
+                <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#store-catégorie" aria-expanded="false" aria-controls="store-catégorie">
+                  Store catégorie
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </button>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="store-catégorie" class="menu-item panel secondary-panel">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="h3 mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Store catégorie
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="panel-content">
+          <nav class="subnav">
+            <button type="button" class="subnav-item">
+              Category 1
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Category 2
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Category 3
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="resources" class="menu-item panel primary-panel">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Resources
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="panel-content">
+          <div class="panel-lead">
+            <h3 class="mb-4 text-white">Resources</h3>
+            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          </div>
+          <div class="subnav">
+            <ul class="subnav-inner">
+              <li class="subnav-item">
+                <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#resources-catégorie" aria-expanded="false" aria-controls="resources-catégorie">
+                  Resources catégorie
+                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="resources-catégorie" class="menu-item panel secondary-panel">
+      <div class="panel-inner">
+        <div class="panel-head">
+          <h3 class="h3 mb-0" data-role="prev">
+            <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
+            Resources catégorie
+          </h3>
+          <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
+            <span class="sr-only">Fermer</span>
+            <i class="icons-close icons-size-1x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="panel-content">
+          <nav class="subnav">
+            <button type="button" class="subnav-item">
+              Category 1
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Category 2
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="subnav-item">
+              Category 3
+              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 {% endhighlight %}
 
 ### Complete example
@@ -912,14 +910,14 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div class="menubar-menu" data-role="actionbar-menu">
         <div class="d-md-none">
           <label for="search" class="h3">Rechercher</label>
-          <div class="form-control-container has-left-icon">
-            <input role="search" type="search" class="form-control" id="search">
+          <div role="search" class="form-control-container has-left-icon">
+            <input type="search" class="form-control" id="search">
             <span class="form-control-state"></span>
             <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
           </div>
         </div>
         <h3 class="gt-5 mb-3 d-md-none">Menu</h3>
-        <nav class="nav">
+        <nav class="nav" role="navigation">
             <button type="button" class="nav-item" data-role="main-toggle" data-target="#programme">
               Programme
               <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
@@ -1012,15 +1010,15 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
             <div class="dropdown-menu">
               <div class="pr-4">
                 <button type="button" class="dropdown-menu-lang-item gb-3 active">
-                  <img src="https://dummyimage.com/30x30/000/fff" class="pr-3">
+                  <img alt="dummy image" src="https://dummyimage.com/30x30/000/fff" class="pr-3">
                   Français
                 </button>
                 <button type="button" class="dropdown-menu-lang-item gb-3">
-                  <img src="https://dummyimage.com/30x30/000/fff" class="pr-3">
-                  English
+                  <img alt="dummy image" src="https://dummyimage.com/30x30/000/fff" class="pr-3">
+                  English 
                 </button>
                 <button type="button" class="dropdown-menu-lang-item">
-                  <img src="https://dummyimage.com/30x30/000/fff" class="pr-3">
+                  <img alt="dummy image" src="https://dummyimage.com/30x30/000/fff" class="pr-3">
                   Deutsch
                 </button>
               </div>
