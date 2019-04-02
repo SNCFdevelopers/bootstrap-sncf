@@ -17,6 +17,17 @@ toc: true
 
 ## v4.0.0
 
+### Revision 3 _02/04/2019_
+
+General
+- Once again, lots of minors corrections & enhancements for accessibility
+- Minor cosmetics or docs updates
+
+Corrections
+- Added IE11 compatibility fix and howto
+- Vertical alignement of icons in Buttons Links
+- Translation of Graphic Boards
+
 ### Revision 2 _18/03/2019_
 
 General
