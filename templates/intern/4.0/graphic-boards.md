@@ -4,7 +4,7 @@ title: Graphic boards
 description: Dowload all components and layout in JPG or PSD formats, and UX guidelines.
 group: components
 toc: true
-permalink: /docs/4.0/graphic-boards
+permalink: /docs/4.0/graphic-boards/
 ---
 
 <a class="btn btn-primary mr-2" href="https://sources.fd.sncf.fr/designsystem//designsystem.zip">Download</a>
