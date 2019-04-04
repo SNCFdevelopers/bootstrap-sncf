@@ -38,6 +38,7 @@ script:
   - mv _gh_pages documentation/intern
   - tar -zcf bootstrap-sncf-intern_${TRAVIS_TAG}.snapshot.tar.gz dist/
   - zip -r documentation/intern/dist.zip dist/
+  - zip -r bootstrap-sncf-intern_${BOOTSTRAP_VERSION}.zip dist/
   - rm -rf dist
 
   # Extern / communication
@@ -47,6 +48,7 @@ script:
   - mv _gh_pages documentation/extern
   - tar -zcf bootstrap-sncf-extern_${TRAVIS_TAG}.snapshot.tar.gz dist/
   - zip -r documentation/extern/dist.zip dist/
+  - zip -r bootstrap-sncf-extern_${BOOTSTRAP_VERSION}.zip dist/
 deploy:
   provider: releases
   skip_cleanup: true
@@ -60,11 +62,10 @@ deploy:
 deploy:
   provider: releases
   skip_cleanup: true
-  prerelease: false
   api-key: $GITHUB_OAUTH
   file:
-    - "bootstrap-sncf-intern_${TRAVIS_TAG}.zip"
-    - "bootstrap-sncf-extern_${TRAVIS_TAG}.zip"
+    - "bootstrap-sncf-intern_${BOOTSTRAP_VERSION}.zip"
+    - "bootstrap-sncf-extern_${BOOTSTRAP_VERSION}.zip"
   on:
     branch: master
 deploy:
