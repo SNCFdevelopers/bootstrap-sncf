@@ -8,9 +8,9 @@ toc: true
 
 {% callout info %}
   Versions numbers will follow original Bootstrap versions, followed by SNCF's revision of this same version.<br>
-  For example, _v4.0.0 r2_ is :
-  - SNCF revision 2
-  - of Bootstrap v4.0.0.
+  For example, **v{{ site.current_version }} r{{ site.sncf_version }}** is :
+  - SNCF's **revision {{ site.sncf_version }}**
+  - of Bootstrap **v{{ site.current_version }}**
 
   When changing Bootstrap version, SNCF revision will always reset to r1.
 {% endcallout %}
