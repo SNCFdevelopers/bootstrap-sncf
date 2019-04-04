@@ -23,7 +23,6 @@ before_script:
   - _JAVA_OPTIONS=
   - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')}
   - git tag $TRAVIS_TAG
-  - export BOOTSTRAP_VERSION=`git describe --tags`
 cache:
   directories:
     - node_modules
@@ -38,7 +37,6 @@ script:
   - mv _gh_pages documentation/intern
   - tar -zcf bootstrap-sncf-intern_${TRAVIS_TAG}.snapshot.tar.gz dist/
   - zip -r documentation/intern/dist.zip dist/
-  - zip -r bootstrap-sncf-intern_${BOOTSTRAP_VERSION}.zip dist/
   - rm -rf dist
 
   # Extern / communication
@@ -48,7 +46,6 @@ script:
   - mv _gh_pages documentation/extern
   - tar -zcf bootstrap-sncf-extern_${TRAVIS_TAG}.snapshot.tar.gz dist/
   - zip -r documentation/extern/dist.zip dist/
-  - zip -r bootstrap-sncf-extern_${BOOTSTRAP_VERSION}.zip dist/
 deploy:
   provider: releases
   skip_cleanup: true
@@ -59,15 +56,6 @@ deploy:
     - "bootstrap-sncf-extern_${TRAVIS_TAG}.snapshot.tar.gz"
   on:
     branch: disabled
-deploy:
-  provider: releases
-  skip_cleanup: true
-  api-key: $GITHUB_OAUTH
-  file:
-    - "bootstrap-sncf-intern_${BOOTSTRAP_VERSION}.zip"
-    - "bootstrap-sncf-extern_${BOOTSTRAP_VERSION}.zip"
-  on:
-    branch: master
 deploy:
   skip-cleanup: true
   provider: script
