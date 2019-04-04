@@ -57,6 +57,16 @@ deploy:
   on:
     branch: disabled
 deploy:
+  provider: releases
+  skip_cleanup: true
+  prerelease: false
+  api-key: $GITHUB_OAUTH
+  file:
+    - "bootstrap-sncf-intern.zip"
+    - "bootstrap-sncf-extern.zip"
+  on:
+    branch: disabled
+deploy:
   skip-cleanup: true
   provider: script
   script: ./scripts/pushdocs.sh

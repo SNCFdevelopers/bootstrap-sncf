@@ -1,9 +1,24 @@
 {
-  "name": "sncf",
+  "name": "@sncf/bootstrap-sncf",
   "description": "SNCF frontend framework",
-  "version": "1.0.0",
+  "version": "1.0.3-r1",
   "sideEffects": false,
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SNCFdevelopers/bootstrap-sncf"
+  },
+  "homepage": "http://sn.cf/socledesign",
+  "keywords": ["bootstrap","sncf","design","framework","css"],
+  "license": "MIT",
+  "author": {
+    "name": "Fab Design SNCF",
+    "email": "design.fab@sncf.fr"
+  },
+  "files": [
+    "dist/",
+    "src/"
+  ],
   "scripts": {
     "watch-intern": "webpack --env.documentation --env.theme=intern --watch",
     "watch-extern": "webpack --env.documentation --env.theme=extern --watch",
