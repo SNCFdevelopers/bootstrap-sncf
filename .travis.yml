@@ -23,6 +23,7 @@ before_script:
   - _JAVA_OPTIONS=
   - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')}
   - git tag $TRAVIS_TAG
+  - export BOOTSTRAP_VERSION=`git describe --tags`
 cache:
   directories:
     - node_modules
@@ -62,10 +63,10 @@ deploy:
   prerelease: false
   api-key: $GITHUB_OAUTH
   file:
-    - "bootstrap-sncf-intern.zip"
-    - "bootstrap-sncf-extern.zip"
+    - "bootstrap-sncf-intern_${TRAVIS_TAG}.zip"
+    - "bootstrap-sncf-extern_${TRAVIS_TAG}.zip"
   on:
-    branch: disabled
+    branch: master
 deploy:
   skip-cleanup: true
   provider: script
