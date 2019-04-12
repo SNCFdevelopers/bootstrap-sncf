@@ -102,8 +102,8 @@ These buttons are used to share a given page on social networks.
 <button type="button" class="btn-rounded btn-rounded-primary"><span class="sr-only">Partager</span><i class="icons-share" aria-hidden="true"></i></button>
 <button type="button" class="btn-rounded btn-rounded-facebook"><span class="sr-only">Facebook</span><i class="icons-facebook" aria-hidden="true"></i></button>
 <button type="button" class="btn-rounded btn-rounded-twitter"><span class="sr-only">Twitter</span><i class="icons-twitter" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-linkedin"><span class="sr-only">Linkedin</span><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-youtube"><span class="sr-only">YouTube</span><i class="icons-youtube" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-linkedin"><span class="sr-only">Linkedin</span><i class="icons-linkedin" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-instagram"><span class="sr-only">Instagram</span><i class="icons-instagram" aria-hidden="true"></i></button>
 {% endexample %}
 
 {% example html %}
