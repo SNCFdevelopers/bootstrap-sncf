@@ -108,7 +108,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div id="programme" class="menu-item panel primary-panel active">
         <div class="panel-inner">
           <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
+            <h3 class="h3 mb-0" data-role="prev">
               <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
               Programme
             </h3>
@@ -320,7 +320,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div id="startup" class="menu-item panel primary-panel">
         <div class="panel-inner">
           <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
+            <h3 class="h3 mb-0" data-role="prev">
               <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
               Startup
             </h3>
@@ -380,7 +380,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div id="store" class="menu-item panel primary-panel">
         <div class="panel-inner">
           <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
+            <h3 class="h3 mb-0" data-role="prev">
               <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
               Store
             </h3>
@@ -440,7 +440,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div id="resources" class="menu-item panel primary-panel">
         <div class="panel-inner">
           <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
+            <h3 class="h3 mb-0" data-role="prev">
               <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
               Resources
             </h3>
@@ -507,7 +507,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
     <div id="programme" class="menu-item panel primary-panel active">
       <div class="panel-inner">
         <div class="panel-head">
-          <h3 class="mb-0" data-role="prev">
+          <h3 class="h3 mb-0" data-role="prev">
             <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
             Programme
           </h3>
@@ -719,7 +719,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
     <div id="startup" class="menu-item panel primary-panel">
       <div class="panel-inner">
         <div class="panel-head">
-          <h3 class="mb-0" data-role="prev">
+          <h3 class="h3 mb-0" data-role="prev">
             <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
             Startup
           </h3>
@@ -779,7 +779,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
     <div id="store" class="menu-item panel primary-panel">
       <div class="panel-inner">
         <div class="panel-head">
-          <h3 class="mb-0" data-role="prev">
+          <h3 class="h3 mb-0" data-role="prev">
             <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
             Store
           </h3>
@@ -839,7 +839,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
     <div id="resources" class="menu-item panel primary-panel">
       <div class="panel-inner">
         <div class="panel-head">
-          <h3 class="mb-0" data-role="prev">
+          <h3 class="h3 mb-0" data-role="prev">
             <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
             Resources
           </h3>
@@ -1054,7 +1054,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         <div id="programme" class="menu-item panel primary-panel">
           <div class="panel-inner">
             <div class="panel-head">
-              <h3 class="mb-0" data-role="prev">
+              <h3 class="h3 mb-0" data-role="prev">
                 <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                 Programme
               </h3>
@@ -1266,7 +1266,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         <div id="startup" class="menu-item panel primary-panel">
           <div class="panel-inner">
             <div class="panel-head">
-              <h3 class="mb-0" data-role="prev">
+              <h3 class="h3 mb-0" data-role="prev">
                 <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                 Startup
               </h3>
@@ -1326,7 +1326,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         <div id="store" class="menu-item panel primary-panel">
           <div class="panel-inner">
             <div class="panel-head">
-              <h3 class="mb-0" data-role="prev">
+              <h3 class="h3 mb-0" data-role="prev">
                 <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                 Store
               </h3>
@@ -1386,7 +1386,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         <div id="resources" class="menu-item panel primary-panel">
           <div class="panel-inner">
             <div class="panel-head">
-              <h3 class="mb-0" data-role="prev">
+              <h3 class="h3 mb-0" data-role="prev">
                 <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                 Resources
               </h3>

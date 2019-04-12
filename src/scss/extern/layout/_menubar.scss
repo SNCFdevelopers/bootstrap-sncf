@@ -152,7 +152,7 @@ $menubar-height-md: rem(76px);
 
   .menu {
     position: fixed;
-    top: 0;
+    //top: 0; Seems to create some problems ?
     left: 0;
     width: 100%;
     > .container {
