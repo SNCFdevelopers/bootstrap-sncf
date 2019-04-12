@@ -133,7 +133,7 @@ Subsections **must all be** contained in one unique section `<footer class="mast
             <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><span class="sr-only">Share with FaceBook</span><i class="icons-facebook" aria-hidden="true"></i></button>
           </li>
           <li>
-            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><span class="sr-only">Share with LinkedIn</span><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
+            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><span class="sr-only">Share with LinkedIn</span><i class="icons-instagram" aria-hidden="true"></i></button>
           </li>
         </ul>
       </div>

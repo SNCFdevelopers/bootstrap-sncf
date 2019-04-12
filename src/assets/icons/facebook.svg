@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230.87 491.64"><defs><style>.a{fill:#0088ce;}</style></defs><title>facebook</title><path class="a" d="M239.63,497H342.48V251.18h68.44l10.42-86.53h-79V108c0-11.8,10.42-19.28,22.42-19.28h53.68V5.36H327.54c-53.69,4.53-92.43,50.74-87.91,102.85v56.64H190.47v86.33h49.16Z" transform="translate(-190.47 -5.36)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="20" viewBox="0 0 10 20">
+    <defs>
+        <path id="a" d="M14.464 10.006h-2.767V20h-4.12v-9.994H5.6V6.49h1.976V4.2C7.411 2.054 8.997.18 11.12.012c.202-.016.404-.016.606 0h3.044v3.419h-2.213a.843.843 0 0 0-.88.999v2.069H14.8l-.336 3.507z"/>
+    </defs>
+    <use fill="#0088CE" fill-rule="evenodd" transform="translate(-5)" xlink:href="#a"/>
+</svg>
