@@ -74,10 +74,14 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
 
 Add the `required` boolean attribute on an input.
 
+{% callout warning %}
+For accessibility reasons, you **have to** put indication on `*` signification **before** any occurence of required fields.
+{% endcallout %}
+
 {% example html %}
+<p class="mt-3">Fields marqued with * are required.</p>
 <label for="required1" class="required">Required input</label>
 {% include components/input.html type="text" id="required1" placeholder="Required input here..." attr="required" %}
-<p class="mt-3">* Champs obligatoire</p>
 {% endexample %}
 
 ### Input with clear option
