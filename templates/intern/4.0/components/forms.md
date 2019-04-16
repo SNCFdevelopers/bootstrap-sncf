@@ -79,7 +79,7 @@ For accessibility reasons, you **have to** put indication on `*` signification *
 {% endcallout %}
 
 {% example html %}
-<p class="mt-3">Fields marqued with * are required.</p>
+<p class="mt-3">Fields marked with * are required.</p>
 <label for="required1" class="required">Required input</label>
 {% include components/input.html type="text" id="required1" placeholder="Required input here..." attr="required" %}
 {% endexample %}
