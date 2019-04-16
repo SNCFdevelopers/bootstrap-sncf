@@ -52,7 +52,6 @@ Do not hesitate to write to us on [design.fab@sncf.fr](mailto:design.fab@sncf.fr
 {% endmarkdown %}
 </details>
 
-### [GitHub project page](https://github.com/SNCFdevelopers/bootstrap-sncf)
-
-### [Travis project page](https://travis-ci.com/SNCFdevelopers/bootstrap-sncf/branches) (continuous integration)
+<h3><a target="_blank" href="https://github.com/SNCFdevelopers/bootstrap-sncf" class="btn btn-link">GitHub project page<i class="icons-external-link icons-size-x75 ml-2"></i></a></h3>
+<h3><a target="_blank" href="https://travis-ci.com/SNCFdevelopers/bootstrap-sncf/branches" class="btn btn-link">Travis project page<i class="icons-external-link icons-size-x75 ml-2"></i></a> <small>(Continuous Integration)</small></h3>
 
