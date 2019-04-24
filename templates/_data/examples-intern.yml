@@ -21,6 +21,8 @@
       description: "Demonstration of all responsive and container options for the table."
     - name: Table filters 
       description: "Table with filters and sorts"
+    - name: Table fixed head
+      description: "Table with fixed head."
     - name: Table fixed 
       description: "Table with fixed column."
     - name: Table pagination 
