@@ -93,6 +93,7 @@ input {
 
 .form-control {
   min-height: $input-min-height; // for IE11
+  padding: .65625rem 1.25rem;
   font-weight: $font-weight-medium;
 
   &::placeholder {
