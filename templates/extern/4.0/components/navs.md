@@ -23,7 +23,7 @@ permalink: /docs/4.0/components/navs/
     <h1 class="h2 mb-0">Titre section</h1>
   </div>
   <nav role="navigation" class="position-relative mt-2">
-    <ul class="navtabs mb-0 dragscroll">
+    <ul class="nav navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
         <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
@@ -50,7 +50,7 @@ permalink: /docs/4.0/components/navs/
     <h1 class="h2 mb-0">Titre section</h1>
   </div>
   <nav role="navigation" class="position-relative mt-2">
-    <ul class="navtabs mb-0 dragscroll">
+    <ul class="nav navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
         <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
@@ -77,7 +77,7 @@ permalink: /docs/4.0/components/navs/
     <h1 class="h2 mb-0">Titre section</h1>
   </div>
   <nav role="navigation" class="position-relative mt-2">
-    <ul class="navtabs mb-0 dragscroll">
+    <ul class="nav navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
         <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
