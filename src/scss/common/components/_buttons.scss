@@ -351,11 +351,13 @@ input[type="button"] {
   &:not(:disabled):not(.disabled) {
     @include hover-focus-active { color: theme-color("primary"); }
   }
+}
 
-  &.btn-rounded-white {
-    &:not(:disabled):not(.disabled) {
-      @include hover-focus-active { background-color: color("white"); }
-    }
+.btn-color-footer {
+  color: gray("600");
+  background-color: color("white");
+  &:not(:disabled):not(.disabled) {
+    @include hover-focus-active { background-color: #b9b9b9; }
   }
 }
 
