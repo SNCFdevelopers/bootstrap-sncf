@@ -45,7 +45,7 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
 {% example html %}
 <div class="actionbar">
   <nav role="navigation" class="position-relative mt-2">
-    <ul class="navtabs mb-0 dragscroll">
+    <ul class="nav navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
         <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
@@ -115,7 +115,7 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
     </ul>
   </div>
   <nav role="navigation" class="position-relative mt-2">
-    <ul class="navtabs mb-0 dragscroll">
+    <ul class="nav navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
         <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
@@ -312,7 +312,7 @@ Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, 
 <div class="bd-example">
 <div class="actionbar">
   <nav role="navigation" class="position-relative mt-2">
-    <ul class="nav navtabs mb-0 dragscroll" role="tablist" id="listeTitreOnglets">
+    <ul class="nav nav navtabs mb-0 dragscroll" role="tablist" id="listeTitreOnglets">
       <li class="navtabs-item pr-4">
         <a href="#onglet1" class="active" id="titreonglet1" data-toggle="tab" role="tab" aria-controls="onglet1" aria-selected="true">Titre onglet</a>
       </li>
@@ -353,7 +353,7 @@ Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, 
 {% highlight html %}
 <div class="actionbar">
   <nav role="navigation" class="position-relative mt-2">
-    <ul class="nav navtabs mb-0 dragscroll" role="tablist" id="listeTitreOnglets">
+    <ul class="nav nav navtabs mb-0 dragscroll" role="tablist" id="listeTitreOnglets">
       <li class="navtabs-item pr-4">
         <a href="#onglet1" class="active" id="titreonglet1" data-toggle="tab" role="tab" aria-controls="onglet1" aria-selected="true">Titre onglet</a>
       </li>
