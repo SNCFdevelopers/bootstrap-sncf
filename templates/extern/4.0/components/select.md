@@ -87,9 +87,9 @@ When the list contains very different items, it may be a good idea to group them
           <span class="select-group-title text-uppercase">Unité 1</span>
         </div>
         <div class="select-group-content" role="list">
-          <button class="select-menu-item" role="listitem" data-role="value" data-target="0">Sem Inceptos Tellus</button>
-          <button class="select-menu-item" role="listitem" data-role="value" data-target="1">Sem Inceptos Tellus</button>
-          <button class="select-menu-item" role="listitem" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button>
+          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="0">Sem Inceptos Tellus</button></span>
+          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
+          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
         </div>
       </div>
       <div role="listitem" class="select-group">
@@ -97,8 +97,8 @@ When the list contains very different items, it may be a good idea to group them
           <span class="select-group-title text-uppercase">Unité 2</span>
         </div>
         <div class="select-group-content" role="list">
-          <button class="select-menu-item" role="listitem" data-role="value" data-target="3">Amet Porta</button>
-          <button class="select-menu-item" role="listitem" data-role="value" data-target="4">Pharetra Fusce Venenatis</button>
+          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="3">Amet Porta</button></span>
+          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
         </div>
       </div>
     </div>
@@ -138,9 +138,9 @@ When the list contains very different items, it may be a good idea to group them
           </div>
         </button>
         <div id="collapseExample" role="list" class="collapse select-group-content">
-          <button class="select-menu-item" role="listitem" data-role="value" data-target="0">Sem Inceptos Tellus</button>
-          <button class="select-menu-item" role="listitem" data-role="value" data-target="1">Sem Inceptos Tellus</button>
-          <button class="select-menu-item" role="listitem" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button>
+          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="0">Sem Inceptos Tellus</button></span>
+          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
+          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
         </div>
       </div>
       <div class="select-group select-group-expand" role="listitem">
@@ -153,8 +153,8 @@ When the list contains very different items, it may be a good idea to group them
           </div>
         </button>
         <div id="collapseExample1" role="list" class="collapse select-group-content">
-          <button class="select-menu-item" role="listitem" data-role="value" data-target="3">Amet Porta</button>
-          <button class="select-menu-item" role="listitem" data-role="value" data-target="4">Pharetra Fusce Venenatis</button>
+          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="3">Amet Porta</button></span>
+          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
         </div>
       </div>
     </div>
@@ -192,22 +192,22 @@ Multi-select drop-down lists let users choose multiple options.
       <div class="select-group" data-role="group" data-id="0" role="list">
         <div class="select-menu-item" role="listitem">
           <div class="custom-control custom-checkbox">
-            <button data-role="value" data-target="0" class="custom-control-label w-100 text-left font-weight-medium">Sem Inceptos Tellus</button>
+            <button data-role="value" data-target="0" role="checkbox" aria-checked="false" tabindex="0" class="custom-control-label w-100 text-left font-weight-medium">Sem Inceptos Tellus</button>
           </div>
         </div>
         <div class="select-menu-item" role="listitem">
           <div class="custom-control custom-checkbox">
-            <button data-role="value" data-target="1" class="custom-control-label w-100 text-left font-weight-medium">Sollicitudin Adipiscing Mattis</button>
+            <button data-role="value" data-target="1" role="checkbox" aria-checked="false" tabindex="0" class="custom-control-label w-100 text-left font-weight-medium">Sollicitudin Adipiscing Mattis</button>
           </div>
         </div>
         <div class="select-menu-item" role="listitem">
           <div class="custom-control custom-checkbox">
-            <button data-role="value" data-target="2" class="custom-control-label w-100 text-left font-weight-medium">Amet Porta</button>
+            <button data-role="value" data-target="2" role="checkbox" aria-checked="false" tabindex="0" class="custom-control-label w-100 text-left font-weight-medium">Amet Porta</button>
           </div>
         </div>
         <div class="select-menu-item" role="listitem">
           <div class="custom-control custom-checkbox">
-            <button data-role="value" data-target="3" class="custom-control-label w-100 text-left font-weight-medium">Pharetra Fusce Venenatis</button>
+            <button data-role="value" data-target="3" role="checkbox" aria-checked="false" tabindex="0" class="custom-control-label w-100 text-left font-weight-medium">Pharetra Fusce Venenatis</button>
           </div>
         </div>
       </div>
