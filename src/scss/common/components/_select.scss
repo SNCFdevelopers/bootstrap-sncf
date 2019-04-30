@@ -105,15 +105,21 @@ $select-scrollable-max-height: rem(360px);
 }
 
 .select-menu-item {
+  display: block;
   width: 100%;
-  padding: 0;
+  padding: 0; // legacy
   font-weight: $font-weight-medium;
   color: gray("500");
   text-align: left;
   cursor: pointer;
-  background: none;
-  border: 0;
+  background: none; // legacy
+  border: 0; // legacy
 
+  + .select-menu-item {
+    margin-top: rem(14px);
+  }
+
+  // legacy
   &:hover,
   &:focus,
   &:active,
@@ -121,9 +127,26 @@ $select-scrollable-max-height: rem(360px);
     color: theme-color("primary");
   }
 
-  + .select-menu-item {
-    margin-top: rem(14px);
+  // stylelint-disable selector-no-qualifying-type
+  > button,
+  > a {
+    display: block;
+    width: 100%;
+    padding: 0;
+    font-weight: $font-weight-medium;
+    color: currentColor;
+    text-align: left;
+    background: none;
+    border: 0;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: theme-color("primary");
+    }
   }
+  // stylelint-enable selector-no-qualifying-type
 }
 
 .select-group {
