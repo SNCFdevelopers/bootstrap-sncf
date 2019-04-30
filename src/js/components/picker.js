@@ -17,7 +17,7 @@ const DEFAULT_OPTIONS = {
   time_24hr: true,
   /* eslint-enable camelcase */
   /* Désactivation de l'appel au calendrier natif */
-  disableMobile: true
+  disableMobile: false
 }
 
 /**
