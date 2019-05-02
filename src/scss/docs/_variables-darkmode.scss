@@ -1,0 +1,17 @@
+// Local docs variables
+$doc-body-bg:               $black;
+$doc-highlight-color:       $gray-100;
+$doc-highlight-bg:          $carbon;
+$doc-bd-border-color:       $carbon;
+
+$doc-callout-border-color:  $carbon;
+$doc-callout-bg:            $carbon;
+
+$bd-purple:        $purple !default;
+$bd-purple-bright: lighten(saturate($bd-purple, 5%), 15%) !default;
+$bd-purple-light:  lighten(saturate($bd-purple, 5%), 45%) !default;
+$bd-dark:          $carbon !default;
+$bd-download:      #ffe484 !default;
+$bd-info:          $cyan !default;
+$bd-warning:       $orange !default;
+$bd-danger:        $red !default;

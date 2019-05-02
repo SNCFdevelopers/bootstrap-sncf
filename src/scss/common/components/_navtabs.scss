@@ -43,7 +43,7 @@
 
   a {
     display: block;
-    color: gray("400");
+    color: $nav-tabs-color;
 
     @include hover-focus-active {
       position: relative;

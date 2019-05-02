@@ -34,7 +34,7 @@ $mastnav-width-lg: rem(100px);
     bottom: 0;
     width: 100%;
     height: $mastnav-height-sm;
-    background-color: color("white");
+    background-color: $body-bg;
     border-top: 1px solid #d8d8d8;
   }
 
@@ -83,14 +83,14 @@ $mastnav-width-lg: rem(100px);
   .mastnav-item {
     min-height: rem(80px);
     font-size: rem(12px);
-    color: color("white");
+    color: $mastnav-color-lg;
 
     &:not(.active) {
       border-bottom: 1px solid rgba(255, 255, 255, .2);
     }
 
     @include hover-focus-active {
-      color: color("white");
+      color: $mastnav-color-lg;
       background-color: #0074af;
     }
 

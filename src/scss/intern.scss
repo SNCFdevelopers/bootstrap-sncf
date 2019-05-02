@@ -1,9 +1,11 @@
 /* imports
    ========================================================================== */
 
-@import "~bootstrap/scss/functions";
-@import "common/tools/functions";
-@import "common/settings/variables";
+// Light/Dark mode modifications
+//@import "~bootstrap/scss/functions";
+//@import "common/tools/functions";
+//@import "common/settings/variables-lightmode";
+
 @import "common/tools/mixins";
 @import "common/tools/colors";
 

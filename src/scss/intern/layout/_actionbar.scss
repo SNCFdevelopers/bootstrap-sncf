@@ -27,7 +27,7 @@ $actionbar-max-height-xl:   rem(105px);
   height: $actionbar-min-height;
   padding-right: rem(20px);
   padding-left: rem(20px);
-  background-color: color("white");
+  background-color: $nav-tabs-bg;
 
   > nav .breadcrumb {
     padding-top: rem(3px);

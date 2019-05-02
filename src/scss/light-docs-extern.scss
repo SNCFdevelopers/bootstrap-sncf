@@ -1,0 +1,12 @@
+// Load Bootstrap variables and mixins
+@import "~bootstrap/scss/functions";
+@import "common/settings/variables-lightmode";
+@import "~bootstrap/scss/mixins";
+
+// Load bootstrap components
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+
+// Load docs components
+@import "docs/variables-lightmode";
+@import "docs-extern";

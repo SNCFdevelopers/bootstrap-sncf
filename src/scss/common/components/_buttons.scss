@@ -347,14 +347,14 @@ input[type="button"] {
 //
 
 .btn-color-gray {
-  color: gray("600");
+  color: $btn-color-gray;
   &:not(:disabled):not(.disabled) {
     @include hover-focus-active { color: theme-color("primary"); }
   }
 }
 
 .btn-color-footer {
-  color: gray("600");
+  color: $btn-color-gray;
   background-color: color("white");
   &:not(:disabled):not(.disabled) {
     @include hover-focus-active { background-color: #b9b9b9; }

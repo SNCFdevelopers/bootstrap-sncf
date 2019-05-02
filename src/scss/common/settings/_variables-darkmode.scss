@@ -34,7 +34,8 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:    #0088ce;
+// $blue:    #0088ce;
+$blue:    #00a1ff;
 // $indigo:  #6610f2;
 $purple:  #6e1e78;
 $pink:    #a1006b;
@@ -44,6 +45,7 @@ $yellow:  #ffb612;
 $green:   #82be00;
 $teal:    #d2e100;
 $cyan:    #009aa6;
+$carbon:  #333;
 
 $colors: ();
 $colors: map-merge((
@@ -58,13 +60,14 @@ $colors: map-merge((
   "teal":       $teal,
   "cyan":       $cyan,
   "white":      $white,
+  "black":      $black,
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 ), $colors);
 
 $primary:       $blue;
 $primary-dark:  #0074af;
-$secondary:     $gray-500;
+$secondary:     $gray-100;
 $success:       $green;
 $info:          $cyan;
 $warning:       $yellow;
@@ -89,14 +92,14 @@ $theme-colors: map-merge((
 $btn-colors: ();
 $btn-colors: map-merge((
   "primary":    (
-    theme-color("primary"), theme-color("primary"), color("white"),
-    #0074af, #0074af, color("white"),
-    #0074af, #0074af, color("white")
+    theme-color("primary"), theme-color("primary"), color("black"),
+    #0074af, #0074af, color("black"),
+    #0074af, #0074af, color("black")
   ),
   "secondary":  (
-    $secondary, $secondary, color("white"),
-    #333333, #333333, color("white"),
-    #333333, #333333, color("white")
+    $secondary, $secondary, color("black"),
+    #333333, #333333, color("black"),
+    #333333, #333333, color("black")
   ),
   "success":    $success,
   "info":       $info,
@@ -115,6 +118,8 @@ $btn-colors: map-merge((
     transparent, transparent, color("primary"),
   )
 ), $btn-colors);
+
+$btn-color-gray: $gray-200;
 
 $btn-rounded-colors: ();
 $btn-rounded-colors: map-merge((
@@ -233,9 +238,9 @@ $sizes: map-merge((
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $gray-100;
+$body-bg:                   $black;
 $body-bg-lg:                $gray-100;
-$body-color:                $gray-500;
+$body-color:                $gray-100;
 
 // Links
 //
@@ -356,7 +361,7 @@ $headings-margin-bottom:      ($spacer / 2);
 $headings-font-family:        inherit;
 $headings-font-weight:        500;
 $headings-line-height:        1.2;
-$headings-color:              $gray-600;
+$headings-color:              $gray-100;
 
 $display1-size:               $h1-font-size;
 $display2-size:               $h2-font-size;
@@ -506,8 +511,8 @@ $input-padding-y-lg:                    $input-btn-padding-y-lg;
 $input-padding-x-lg:                    $input-btn-padding-x-lg;
 $input-line-height-lg:                  $input-btn-line-height-lg;
 
-$input-bg:                              $gray-100;
-$input-disabled-bg:                     $gray-100;
+$input-bg:                              $carbon;
+$input-disabled-bg:                     $carbon;
 $input-disabled-color:                  $gray-500;
 
 $input-color:                           $primary;
@@ -519,13 +524,13 @@ $input-border-radius:                   $border-radius;
 $input-border-radius-lg:                $border-radius-lg;
 $input-border-radius-sm:                $border-radius-sm;
 
-$input-focus-bg:                        $gray-100;
+$input-focus-bg:                        $carbon;
 $input-focus-border-color:              lighten($component-active-bg, 25%) !default;
 $input-focus-color:                     $input-color;
 $input-focus-width:                     $input-btn-focus-width;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow;
 
-$input-placeholder-color:               $gray-400;
+$input-placeholder-color:               $gray-300;
 
 $input-height-border:                   $input-border-width * 2;
 
@@ -723,6 +728,9 @@ $nav-pills-border-radius:           $border-radius;
 $nav-pills-link-active-color:       $component-active-color;
 $nav-pills-link-active-bg:          $component-active-bg;
 
+$nav-tabs-bg:                       $black;
+$nav-tabs-color:                    $gray-100;
+
 // Navbar
 
 $navbar-padding-y:                  ($spacer / 2);
@@ -754,6 +762,12 @@ $navbar-light-active-color:         rgba($black, .9);
 $navbar-light-disabled-color:       rgba($black, .3);
 $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
 $navbar-light-toggler-border-color: rgba($black, .1);
+
+// Mastnav
+$mastnav-color-lg:                  $black;
+
+// Actionbar
+$bg-actionbar:                      $black;
 
 // Pagination
 
@@ -800,7 +814,7 @@ $card-border-radius:                $border-radius;
 $card-border-color:                 rgba($black, .125);
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width});
 $card-cap-bg:                       rgba($black, .03);
-$card-bg:                           $white;
+$card-bg:                           $carbon;
 
 $card-img-overlay-padding:          1.25rem;
 
@@ -982,8 +996,8 @@ $breadcrumb-item-padding:           1rem;
 
 $breadcrumb-margin-bottom:          1rem;
 
-$breadcrumb-bg:                     $white;
-$breadcrumb-divider-color:          $gray-600;
+$breadcrumb-bg:                     $black;
+$breadcrumb-divider-color:          $gray-100 !default;
 $breadcrumb-active-color:           $primary;
 $breadcrumb-active-divider:         str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%230088ce' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
 $breadcrumb-current-divider:        str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%333333' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
@@ -1037,3 +1051,4 @@ $pre-scrollable-max-height:         340px;
 // Printing
 $print-page-size:                   a3;
 $print-body-min-width:              map-get($grid-breakpoints, "lg");
+

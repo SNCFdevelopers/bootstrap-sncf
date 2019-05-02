@@ -5,19 +5,21 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = env => {
   const theme = env.theme;
+  const mode = env.mode;
   const production = env.production;
   const documentation = env.documentation;
   //const externals = ['flatpickr','jquery','popper.js','chart.js'];
   const entry = [
     path.resolve(__dirname, `src/js/${theme}.js`),
-    path.resolve(__dirname, `src/scss/${theme}.scss`)
+    path.resolve(__dirname, `src/scss/${mode}-${theme}.scss`)
   ];
   let outputPath = path.resolve(__dirname, 'dist');
+
 
   if (documentation) {
     entry.push(path.resolve(__dirname, 'src/js/docs.js'));
     entry.push(path.resolve(__dirname, `src/js/docs/search-${theme}.js`));
-    entry.push(path.resolve(__dirname, `src/scss/docs-${theme}.scss`));
+    entry.push(path.resolve(__dirname, `src/scss/${mode}-docs-${theme}.scss`));
     outputPath = path.resolve(__dirname, '_gh_pages');
   }
 
