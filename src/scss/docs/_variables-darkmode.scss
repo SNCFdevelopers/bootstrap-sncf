@@ -4,8 +4,12 @@ $doc-highlight-color:       $gray-100;
 $doc-highlight-bg:          $carbon;
 $doc-bd-border-color:       $carbon;
 
+$doc-masthead-bg:           $black;
+
 $doc-callout-border-color:  $carbon;
 $doc-callout-bg:            $carbon;
+
+$doc-sidebar-color:         $black;
 
 $bd-purple:        $purple !default;
 $bd-purple-bright: lighten(saturate($bd-purple, 5%), 15%) !default;
@@ -15,3 +19,6 @@ $bd-download:      #ffe484 !default;
 $bd-info:          $cyan !default;
 $bd-warning:       $orange !default;
 $bd-danger:        $red !default;
+
+$doc-footer-bg:    $carbon;
+$doc-footer-color: $body-color;

@@ -40,11 +40,11 @@ $blue:    #00a1ff;
 $purple:  #6e1e78;
 $pink:    #a1006b;
 $red:     #cd0037;
-$orange:  #e05206;
+$orange:  #ff6e20;
 $yellow:  #ffb612;
 $green:   #82be00;
 $teal:    #d2e100;
-$cyan:    #009aa6;
+$cyan:    #00abb9;
 $carbon:  #333;
 
 $colors: ();
@@ -98,8 +98,8 @@ $btn-colors: map-merge((
   ),
   "secondary":  (
     $secondary, $secondary, color("black"),
-    #333333, #333333, color("black"),
-    #333333, #333333, color("black")
+    $gray-300, $gray-300, color("black"),
+    $gray-300, $gray-300, color("black")
   ),
   "success":    $success,
   "info":       $info,
@@ -241,6 +241,7 @@ $sizes: map-merge((
 $body-bg:                   $black;
 $body-bg-lg:                $gray-100;
 $body-color:                $gray-100;
+$background:                $body-bg;
 
 // Links
 //
@@ -311,7 +312,7 @@ $border-radius:               .4375rem;
 $border-radius-lg:            $border-radius;
 $border-radius-sm:            $border-radius;
 
-$component-active-color:      $white;
+$component-active-color:      $black;
 $component-active-bg:         theme-color("primary");
 
 $caret-width:                 .375em;
@@ -556,6 +557,9 @@ $form-check-inline-input-margin-x:      .3125rem;
 
 $form-group-margin-bottom:              $spacer * 1.5;
 
+$form-toolbar-border-color:             $carbon;
+$form-toolbar-color:                    $body-color;
+
 $input-group-addon-color:               $input-color;
 $input-group-addon-bg:                  $gray-200;
 $input-group-addon-border-color:        $input-border-color;
@@ -564,7 +568,7 @@ $custom-control-gutter:                 1.5rem;
 $custom-control-spacer-x:               1rem;
 
 $custom-control-indicator-size:         1.125rem; // 18px
-$custom-control-indicator-bg:           $white;
+$custom-control-indicator-bg:           $black;
 $custom-control-indicator-bg-size:      50% 50%;
 $custom-control-indicator-box-shadow:   inset 0 .25rem .25rem rgba($black, .1);
 
@@ -601,6 +605,7 @@ $switch-control-width:              48px;
 $switch-control-height:             24px;
 $switch-control-slider-size:        14px;
 $switch-control-slider-translate:   24px;
+$switch-control-slider-bg:          $carbon;
 // REFACTORING
 
 $custom-checkbox-indicator-border-radius:       3px;
@@ -638,6 +643,12 @@ $custom-select-height-sm:           $input-height-sm;
 
 $custom-select-font-size-lg:        125%;
 $custom-select-height-lg:           $input-height-lg;
+
+$select-improved-border-color:      $carbon;
+$select-improved-menu-item-color:   $gray-100;
+$select-improved-menu-bg:           $black;
+$select-improved-menu-border-color: $carbon;
+$select-improved-group-title:       $gray-100;
 
 $custom-file-height:                $input-height;
 $custom-file-focus-border-color:    $input-focus-border-color;
@@ -1036,7 +1047,7 @@ $close-text-shadow:                 0 1px 0 $white;
 // Code
 
 $code-font-size:                    87.5%;
-$code-color:                        $pink;
+$code-color:                        $yellow;
 
 $kbd-padding-y:                     .2rem;
 $kbd-padding-x:                     .4rem;

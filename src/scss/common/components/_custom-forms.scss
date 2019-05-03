@@ -209,7 +209,7 @@
       background-color: theme-color("primary");
 
       &::before {
-        background-color: color("white");
+        background-color: $component-active-color;
       }
     }
   }
@@ -222,7 +222,7 @@
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background-color: gray("100");
+  background-color: $switch-control-slider-bg;
   border-radius: rem(12px);
   transition: all .15s ease-out;
 
@@ -248,7 +248,7 @@
     background-color: theme-color("primary");
 
     &::before {
-      background-color: color("white");
+      background-color: $component-active-color;
     }
   }
 

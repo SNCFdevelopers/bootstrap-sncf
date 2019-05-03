@@ -30,13 +30,13 @@ For compatibility reasons, `alert-xxx` from Twitter Bootstrap are still presents
 Notification messages (confirming actions, messages related to deletions) are displayed at the top of the page.
 
 {% example html %}
-<p class="text-primary pl-4 pt-2 pb-2 bg-light font-weight-medium">
+<p class="text-primary pl-4 pt-2 pb-2 font-weight-medium">
   <i class="icons-checked mr-2" aria-hidden="true"></i> Votre texte a bien été ajouté au dossier SNCF_MATERIEL.
 </p>
 {% endexample %}
 
 {% example html %}
-<p class="text-danger pl-4 pt-2 pb-2 bg-light font-weight-medium">
+<p class="text-danger pl-4 pt-2 pb-2 font-weight-medium">
   Votre texte a bien été supprimé du dossier SNCF_MATERIEL.
 </p>
 {% endexample %}

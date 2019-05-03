@@ -52,19 +52,19 @@ $select-scrollable-max-height: rem(360px);
   // stylelint-disable selector-max-class, no-duplicate-selectors
   .select-control > .input-group & {
     position: relative;
-    border: 1px solid gray("100");
+    border: 1px solid $select-improved-border-color;
     transition: none;
   }
 
   .select-improved.active > .select-control > .input-group & {
-    border-top-color: gray("200");
-    border-left-color: gray("200");
+    border-top-color: $select-improved-menu-border-color;
+    border-left-color: $select-improved-menu-border-color;
   }
 
   .select-improved-up.active > .select-control > .input-group & {
     border-top-color: gray("100");
-    border-bottom-color: gray("200");
-    border-left-color: gray("200");
+    border-bottom-color: $select-improved-menu-border-color;
+    border-left-color: $select-improved-menu-border-color;
   }
   // stylelint-enable selector-max-class, no-duplicate-selectors
 }
@@ -80,10 +80,10 @@ $select-scrollable-max-height: rem(360px);
   max-height: $select-scrollable-max-height;
   padding: rem(20px);
   overflow-y: auto;
-  background-color: color("white");
-  border-right: gray("200") solid 1px;
-  border-bottom: gray("200") solid 1px;
-  border-left: gray("200") solid 1px;
+  background-color: $select-improved-menu-bg;
+  border-right: $select-improved-menu-border-color solid 1px;
+  border-bottom: $select-improved-menu-border-color solid 1px;
+  border-left: $select-improved-menu-border-color solid 1px;
   border-bottom-right-radius: $border-radius;
   border-bottom-left-radius: $border-radius;
 
@@ -109,7 +109,7 @@ $select-scrollable-max-height: rem(360px);
   width: 100%;
   padding: 0; // legacy
   font-weight: $font-weight-medium;
-  color: gray("500");
+  color: $select-improved-menu-item-color;
   text-align: left;
   cursor: pointer;
   background: none; // legacy
@@ -203,7 +203,7 @@ $select-scrollable-max-height: rem(360px);
 .select-group-title {
   padding: 0;
   font-weight: $font-weight-medium;
-  color: gray("500");
+  color: $select-improved-group-title;
   text-align: left;
   background: none;
   border: 0;

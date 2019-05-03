@@ -15,7 +15,6 @@ module.exports = env => {
   ];
   let outputPath = path.resolve(__dirname, 'dist');
 
-
   if (documentation) {
     entry.push(path.resolve(__dirname, 'src/js/docs.js'));
     entry.push(path.resolve(__dirname, `src/js/docs/search-${theme}.js`));

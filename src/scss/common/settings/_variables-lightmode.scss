@@ -239,6 +239,7 @@ $sizes: map-merge((
 $body-bg:                   $gray-100;
 $body-bg-lg:                $gray-100;
 $body-color:                $gray-500;
+$background:                $body-bg;
 
 // Links
 //
@@ -554,6 +555,9 @@ $form-check-inline-input-margin-x:      .3125rem;
 
 $form-group-margin-bottom:              $spacer * 1.5;
 
+$form-toolbar-border-color:             $gray-100;
+$form-toolbar-color:                    $body-color;
+
 $input-group-addon-color:               $input-color;
 $input-group-addon-bg:                  $gray-200;
 $input-group-addon-border-color:        $input-border-color;
@@ -599,6 +603,7 @@ $switch-control-width:              48px;
 $switch-control-height:             24px;
 $switch-control-slider-size:        14px;
 $switch-control-slider-translate:   24px;
+$switch-control-slider-bg:          $gray-100;
 // REFACTORING
 
 $custom-checkbox-indicator-border-radius:       3px;
@@ -636,6 +641,12 @@ $custom-select-height-sm:           $input-height-sm;
 
 $custom-select-font-size-lg:        125%;
 $custom-select-height-lg:           $input-height-lg;
+
+$select-improved-border-color:      $gray-100;
+$select-improved-menu-item-color:   $gray-500;
+$select-improved-menu-bg:           $white;
+$select-improved-menu-border-color: $gray-200;
+$select-improved-group-title:       $gray-500;
 
 $custom-file-height:                $input-height;
 $custom-file-focus-border-color:    $input-focus-border-color;
