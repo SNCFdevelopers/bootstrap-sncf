@@ -17,6 +17,19 @@ toc: true
 
 ## v4.0.0
 
+### Revision 4 _09/05/2019_
+
+General
+- Added [NPM Package](https://www.npmjs.com/org/sncf) automatic delivery
+- Added [GitHub Release](https://github.com/SNCFdevelopers/bootstrap-sncf/releases) automatic delivery
+- End of accessibility corrections
+
+Corrections
+- Restored datetimepicker native on portable devices
+- Dropdown menu forced down on mobile breakpoints
+- Some security corrections on dependencies
+- As usual, lots of minor corrections and minor doc updates (see issues)
+
 ### Revision 3 _02/04/2019_
 
 General

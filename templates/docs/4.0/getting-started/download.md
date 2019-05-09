@@ -28,38 +28,14 @@ Should you require [build tools]({{ site.baseurl }}/docs/{{ site.docs_version }}
 
 <a href="{{ site.download.source }}" class="btn btn-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download source');">Download source</a>
 
-## Package managers
+## npm
 
-Pull in Bootstrap's **source files** into nearly any project with some of the most popular package managers. No matter the package manager, Bootstrap will **require a Sass compiler and [Autoprefixer](https://github.com/postcss/autoprefixer)** for a setup that matches our official compiled versions.
-
-### npm _to be updated - don't use it yet_ 
-
-Install Bootstrap in your Node.js powered apps with [the npm package](https://www.npmjs.com/package/bootstrap):
+Install Bootstrap in your Node.js powered apps with the npm package. Choose one of theses packages depending on the purpose of your project.
 
 {% highlight sh %}
-npm install bootstrap
+npm install @sncf/bootstrap-sncf.metier
 {% endhighlight %}
-
-`require('bootstrap')` will load all of Bootstrap's jQuery plugins onto the jQuery object. The `bootstrap` module itself does not export anything. You can manually load Bootstrap's jQuery plugins individually by loading the `/js/*.js` files under the package's top-level directory.
-
-Bootstrap's `package.json` contains some additional metadata under the following keys:
-
-- `sass` - path to Bootstrap's main [Sass](http://sass-lang.com/) source file
-- `style` - path to Bootstrap's non-minified CSS that's been precompiled using the default settings (no customization)
-
-### RubyGems
-
-Install Bootstrap in your Ruby apps using [Bundler](https://bundler.io/) (**recommended**) and [RubyGems](https://rubygems.org/) by adding the following line to your [`Gemfile`](https://bundler.io/gemfile.html):
-
-{% highlight ruby %}
-gem 'bootstrap', '~> {{ site.current_ruby_version }}'
-{% endhighlight %}
-
-Alternatively, if you're not using Bundler, you can install the gem by running this command:
-
 {% highlight sh %}
-gem install bootstrap -v {{ site.current_ruby_version }}
+npm install @sncf/bootstrap-sncf.communication
 {% endhighlight %}
-
-[See the gem's README](https://github.com/twbs/bootstrap-rubygem/blob/master/README.md) for further details.
 
