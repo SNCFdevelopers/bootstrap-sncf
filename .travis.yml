@@ -58,6 +58,19 @@ deploy:
     tag_name: $VERSION
     name: $VERSION
     skip_cleanup: true
+    prerelease: false
+    api-key: $GITHUB_TOKEN
+    overwrite: true
+    file:
+      - "documentation/intern/bootstrap-sncf.metier.${VERSION}.zip"
+      - "documentation/extern/bootstrap-sncf.communication.${VERSION}.zip"
+    on:
+      branch: master
+      tags: true
+  - provider: releases
+    tag_name: $VERSION
+    name: $VERSION
+    skip_cleanup: true
     prerelease: true
     api-key: $GITHUB_TOKEN
     overwrite: true
@@ -65,7 +78,7 @@ deploy:
       - "documentation/intern/bootstrap-sncf.metier.${VERSION}.zip"
       - "documentation/extern/bootstrap-sncf.communication.${VERSION}.zip"
     on:
-      branch: dev-travis
+      branch: disabled
       tags: true
   - provider: script
     skip-cleanup: true
