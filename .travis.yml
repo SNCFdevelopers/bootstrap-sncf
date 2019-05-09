@@ -22,7 +22,8 @@ install:
 before_script:
   - _JAVA_OPTIONS=
   - export VERSION=v$(node -e "console.log(require('./package.json').version);")-test
-  - git tag $VERSION
+  - export TRAVIS_TAG=$VERSION
+  - echo $VERSION
 cache:
   directories:
     - node_modules
@@ -44,8 +45,14 @@ script:
   - npm run docs-compile-extern
   - mv _gh_pages documentation/extern
   - zip -r documentation/extern/bootstrap-sncf.communication.${VERSION}.zip dist/
+before_deploy:
+  - git config --local user.name "Fab Design"
+  - git config --local user.email "nicolas.wurtz@sncf.fr"
+  - git tag "$VERSION" "Travis generation"
 deploy:
   - provider: releases
+    tag_name: $VERSION
+    name: $VERSION
     skip_cleanup: true
     prerelease: true
     api-key: $GITHUB_OAUTH
