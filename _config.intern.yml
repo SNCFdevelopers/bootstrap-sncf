@@ -55,6 +55,7 @@ expo:                 "https://www.digital.sncf.com"
 jobs:                 "https://www.digital.sncf.com"
 themes:               "https://themes.getbootstrap.com"
 doc_theme:            "intern"
+flavor:               "metier"
 name:                 "DESIGN MÉTIER"
 
 download:

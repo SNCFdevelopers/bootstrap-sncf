@@ -15,7 +15,7 @@ Download ready-to-use compiled code for **Bootstrap SNCF v{{ site.current_versio
 
 This doesn't include documentation and source files.
 
-<a href="{{ site.download.dist }}" class="btn btn-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download Bootstrap');">Download</a>
+<a href="/bootstrap-sncf.{{ site.flavor }}.v{{ site.current_version }}-r{{ site.sncf_version }}.zip" class="btn btn-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download Bootstrap');">Download</a>
 
 ## Source files
 
