@@ -23,6 +23,9 @@ before_script:
   - export VERSION=v$(node -e "console.log(require('./package.json').version);")
   - export TRAVIS_TAG=$VERSION
   - echo $VERSION
+  - git config --local user.name "nicolaswurtz"
+  - git config --local user.email "nicolas.wurtz@sncf.fr"
+  - git tag $VERSION
 cache:
   directories:
     - node_modules
@@ -50,14 +53,8 @@ script:
   - cd dist/
   - zip -r ../documentation/extern/bootstrap-sncf.communication.${VERSION}.zip *
   - cd ..
-before_deploy:
-  - git config --local user.name "nicolaswurtz"
-  - git config --local user.email "nicolas.wurtz@sncf.fr"
-  - git tag $VERSION
 deploy:
   - provider: releases
-    tag_name: $VERSION
-    name: $VERSION
     skip_cleanup: true
     api-key: $GITHUB_TOKEN
     overwrite: true
