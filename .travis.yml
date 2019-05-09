@@ -1,7 +1,6 @@
 branches:
   only:
     - master
-    - dev-travis
 sudo: required
 dist: trusty
 language: node_js
