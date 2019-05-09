@@ -48,7 +48,7 @@ script:
 before_deploy:
   - git config --local user.name "Fab Design"
   - git config --local user.email "nicolas.wurtz@sncf.fr"
-  - git tag "$VERSION" "Travis generation"
+  - git tag $VERSION
 deploy:
   - provider: releases
     tag_name: $VERSION
