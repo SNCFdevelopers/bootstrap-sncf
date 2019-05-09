@@ -1,30 +1,40 @@
-## Table of contents
+## Builds status
 
-- [Quick start](#quick-start)
-- [Documentation](#documentation)
-- [Build](#build)
+### Master Branch
+[![MASTER Build Status](https://travis-ci.com/SNCFdevelopers/bootstrap-sncf.svg?branch=master)](https://travis-ci.com/SNCFdevelopers/bootstrap-sncf) This is the branch you'll see on documentations sites [sn.cf/socledesign](http://sn.cf/socledesign)
 
-## Quick start
+### Dev Branch
+[![DEV Build Status](https://travis-ci.com/SNCFdevelopers/bootstrap-sncf.svg?branch=dev)](https://travis-ci.com/SNCFdevelopers/bootstrap-sncf) This is developement branch, be careful, it could destroy your computer and burn your mouse.
 
+## Requirements
 
-## Documentation
+- npm 5.6.0
+- yarn 1.15.2
+- node v8.10.0
 
-Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://getbootstrap.com/>. The docs may also be run locally.
+## How to build
 
-Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in the `_scripts.html` include.
+First steps, install dependencies, go inside bootstrap-sncf directory, then :
+
+1. `yarn install` to install Node.js dependencies.
+2. _Documentation building only_ Run through the [tooling setup](https://getbootstrap.com/docs/4.0/getting-started/build-tools/#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
+
+To compile Bootstrap-SNCF you will have to :
+
+1. Decide which version you need (intern or extern, cf. [SNCF Digital resources](http://sn.cf/socledesign))
+2. Run `yarn run build-intern` or `yarn run build-extern` to build all the project, including distributed CSS and JavaScript files, as well as our docs assets.
+3. Run `yarn run dist-intern` or `yarn run dist-extern` to generate `dist/` folder with minified css & js, and assets (icons & fonts).
 
 ### Running documentation locally
 
-1. Run through the [tooling setup](https://getbootstrap.com/docs/4.0/getting-started/build-tools/#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
-2. Run `npm install` to install Node.js dependencies.
-3. Run `npm run test` (or a specific NPM script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
-4. From the root `/sncf-bootstrap` directory, run `npm run docs-serve` in the command line.
-5. Open `http://localhost:9001` in your browser, and voilà.
+Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://getbootstrap.com/>. The docs may also be run locally.
+
+Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/).
+
+1. From the root `/bootstrap-sncf` directory, run `yarn run docs-serve-intern` or `docs-serve-extern` in the command line **after building the version you want**
+2. Open `http://localhost:9001` in your browser, and voilà. Modifications in `template` folder will force regenerating.
 
 Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
-
-
-## Build
 
 ### Icofont
 

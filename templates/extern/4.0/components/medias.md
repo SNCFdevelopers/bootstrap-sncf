@@ -53,6 +53,7 @@ Note the usage of `w-xxx` where xxx is the percentage of width for image, for al
         <figure role="group">
           <img class="w-100 mb-4 rounded" src="https://dummyimage.com/656x394/000/fff" alt="image {{ forloop.index }}" />
           <figcaption>
+            <span class="sr-only">image {{ forloop.index }}</span>
             <p class="mb-2">Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.</p>
             <p class="mb-0 text-xs">Crédits : Arnaud Février</p>
           </figcaption>

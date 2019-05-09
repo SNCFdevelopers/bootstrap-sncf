@@ -32,13 +32,25 @@ When using button classes on `<a>` elements that are used to trigger in-page fun
 <input class="btn btn-primary" type="reset" value="Reset">
 {% endexample %}
 
-## Button link
+## Button links
 
 These buttons are used for very minor actions.
 
+<p><a href="#" class="btn btn-link"><span>Internal link</span> <i class="icons-arrow-next icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
+<p><a href="#" class="btn btn-link"><span>Share link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
+<p><a href="#" class="btn btn-link"><span>Download link</span> <i class="icons-download icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
+<p><a href="#" class="btn btn-link"><span>External link</span> <i class="icons-external-link icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
+
+{% highlight html %}
+<a href="#" class="btn btn-link"><span>Internal link</span> <i class="icons-arrow-next icons-size-x75 ml-2" aria-hidden="true"></i></a>
+<a href="#" class="btn btn-link"><span>Share link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></a>
+<a href="#" class="btn btn-link"><span>Download link</span> <i class="icons-download icons-size-x75 ml-2" aria-hidden="true"></i></a>
+<a href="#" class="btn btn-link"><span>External link</span> <i class="icons-external-link icons-size-x75 ml-2" aria-hidden="true"></i></a>
+{% endhighlight %}
+
+### Disabled state
 {% example html %}
-<a href="#" class="btn btn-link"><span>Link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></a>
-<span class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></span>
+<p><span class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></span></p>
 {% endexample %}
 
 ## Icon Button
@@ -90,8 +102,8 @@ These buttons are used to share a given page on social networks.
 <button type="button" class="btn-rounded btn-rounded-primary"><span class="sr-only">Partager</span><i class="icons-share" aria-hidden="true"></i></button>
 <button type="button" class="btn-rounded btn-rounded-facebook"><span class="sr-only">Facebook</span><i class="icons-facebook" aria-hidden="true"></i></button>
 <button type="button" class="btn-rounded btn-rounded-twitter"><span class="sr-only">Twitter</span><i class="icons-twitter" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-linkedin"><span class="sr-only">Linkedin</span><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
-<button type="button" class="btn-rounded btn-rounded-youtube"><span class="sr-only">YouTube</span><i class="icons-youtube" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-linkedin"><span class="sr-only">Linkedin</span><i class="icons-linkedin" aria-hidden="true"></i></button>
+<button type="button" class="btn-rounded btn-rounded-instagram"><span class="sr-only">Instagram</span><i class="icons-instagram" aria-hidden="true"></i></button>
 {% endexample %}
 
 {% example html %}

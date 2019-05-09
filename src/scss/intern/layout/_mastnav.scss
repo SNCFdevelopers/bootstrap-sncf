@@ -33,7 +33,7 @@ $mastnav-width-lg: rem(100px);
     position: fixed;
     bottom: 0;
     width: 100%;
-    min-height: $mastnav-height-sm;
+    height: $mastnav-height-sm;
     background-color: color("white");
     border-top: 1px solid #d8d8d8;
   }
@@ -50,7 +50,7 @@ $mastnav-width-lg: rem(100px);
   .mastnav-item {
     display: flex;
     flex: 1;
-    min-height: $mastnav-height-sm;
+    height: $mastnav-height-sm;
     font-size: rem(10px);
     color: $body-color;
 

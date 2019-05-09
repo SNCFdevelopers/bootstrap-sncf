@@ -16,8 +16,7 @@ const DEFAULT_OPTIONS = {
   /* eslint-disable camelcase */
   time_24hr: true,
   /* eslint-enable camelcase */
-  /* Désactivation de l'appel au calendrier natif */
-  disableMobile:true
+  disableMobile: false
 }
 
 /**
@@ -41,6 +40,7 @@ class Picker {
     const decrementHoursOnMinutesMin = element.getAttribute('data-decrement-hours-on-minutes-min') || false
     const plugins = []
     const onOpen = []
+    const onReady = []
 
     if (secondRangeInput) {
       /* eslint-disable new-cap */
@@ -59,9 +59,15 @@ class Picker {
       decrementHoursOnMinutesMin
     }
 
-    if (timePicker) {
+    if (mode === 'time' || timePicker) {
       options.enableTime = true
       options.noCalendar = true
+      onReady.push(
+        () => {
+          element.nextSibling.querySelector('.flatpickr-hour').setAttribute('title', 'Sélectionnez l\'heure')
+          element.nextSibling.querySelector('.flatpickr-minute').setAttribute('title', 'Sélectionnez la minute')
+        }
+      )
     }
 
     if (enableTime) {
@@ -77,7 +83,10 @@ class Picker {
     }
 
     onOpen.push(
-      () => btnNode.classList.add('active')
+      () => {
+        btnNode.classList.add('active')
+        btnNode.setAttribute('aria-expanded', 'true')
+      }
     )
 
     element.flatpickr = flatpickr(element, {
@@ -86,7 +95,9 @@ class Picker {
       onOpen,
       onClose: () => {
         btnNode.classList.remove('active')
-      }
+        btnNode.setAttribute('aria-expanded', 'false')
+      },
+      onReady
     })
   }
 

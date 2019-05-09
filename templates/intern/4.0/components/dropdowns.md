@@ -81,9 +81,11 @@ Historically dropdown menu contents *had* to be links, but that's no longer the 
     <i class="icons-arrow-down"></i>
   </button>
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2" id="mycontrol3">
-    <button class="dropdown-item" type="button">Action</button>
-    <button class="dropdown-item" type="button">Another action</button>
-    <button class="dropdown-item" type="button">Something else here</button>
+    <ul>
+      <li class="dropdown-item"><a href="#">Action</a></li>
+      <li class="dropdown-item"><a href="#">Another action</a></li>
+      <li class="dropdown-item"><a href="#">Something else here</a></li>
+    </ul>
   </div>
 </div>
 {% endexample %}

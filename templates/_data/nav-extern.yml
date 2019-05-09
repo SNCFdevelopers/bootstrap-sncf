@@ -3,6 +3,7 @@
     - title: Introduction
     - title: Download
     - title: Accessibility
+    - title: How to contribute
 
 - title: Layout
   pages:
@@ -17,7 +18,6 @@
     - title: Typography
     - title: Code
     - title: Images
-    - title: Tables
     - title: Figures
     - title: Favicon
 
@@ -29,7 +29,6 @@
     - title: Carousel
     - title: Checkboxes and radios
     - title: Edito
-    - title: Elements
     - title: Footer
     - title: Forms
     - title: Icons
@@ -65,13 +64,13 @@
 - title: Extend
   pages:
     - title: Approach
-    - title: Icons
 
 - title: Migration
 
 - title: About
   pages:
     - title: Overview
+    - title: Versions
     - title: Brand
     - title: License
     - title: Translations

@@ -1,9 +1,13 @@
-<form class="bd-search d-flex align-items-center">
-  <input role="search" type="search" class="form-control" id="search-input" placeholder="Search... (soon !)" aria-label="Search for..." autocomplete="off" disabled>
+<div class="bd-search d-flex align-items-center">
+  <form class="form-control-container has-left-icon">
+    <input role="search" type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+    <span class="form-control-state"></span>
+    <span class="form-control-icon"><i class="icons-search"></i></span>
+  </form>
   <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
-    {%- include icons/menu.svg width="30" height="30" -%}
+      {%- include icons/menu.svg width="30" height="30" -%}
   </button>
-</form>
+</div>
 
 <nav class="collapse bd-links" id="bd-docs-nav">
   {%- if site.doc_theme == 'extern' -%}

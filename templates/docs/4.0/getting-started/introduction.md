@@ -54,17 +54,23 @@ Curious which components explicitly require jQuery, our JS, and Popper.js? Click
 
 ## Starter template
 
+{% callout warning %}
+### IE11 Compatibility
+To ensure IE11 compatibility you have to put this string `<meta http-equiv="X-UA-Compatible" content="IE=edge">` immediatly after `<head>`.
+Moreover, SNCF's IE11 configuration uses IE7 compatibility mode by default, put this on IE11 mode.
+{% endcallout %}
+
 Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
 
 {% highlight html %}
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- IE 11 compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Compatibilité IE 11 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="dist/bootstrap-sncf.min.css">
 
@@ -129,7 +135,12 @@ For improved cross-browser rendering, we use [Reboot]({{ site.baseurl }}/docs/{{
 
 Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
 
-- Share & learn with the others developers of SNCF [lien à définir](lien)
+Contact the humans at [Fab Design](mailto:design.fab@sncf.fr) for more informations & how to.
+
+- Share & learn with the others developers of SNCF on [GitHub]({{ site.github }})
+
+For original Bootstrap :
+
 - Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).
 - Read and subscribe to [The Official Bootstrap Blog]({{ site.blog }}).
 - Join [the official Slack room]({{ site.slack }}).
@@ -139,4 +150,3 @@ Stay up to date on the development of Bootstrap and reach out to the community w
 
 You can also follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap) for the latest gossip and awesome music videos.
 
-Contact the humans at [Fab Design](mailto:design.fab@sncf.fr) for more informations & how to.

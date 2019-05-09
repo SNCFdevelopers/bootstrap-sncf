@@ -22,10 +22,10 @@ By default, the page has a header, a main navbar, a section header and a content
     <h1 class="text-uppercase text-white pt-2 pl-3 mb-0">Nom application</h1>
   </header>
   <div class="mastheader-search pr-md-4 pl-md-4" data-component="searchbar">
-    <label class="font-weight-medium text-white pr-3 mb-0">Rechercher</label>
+    <label for="galacticbar-search-input" class="font-weight-medium text-white pr-3 mb-0">Rechercher</label>
     <div class="input-group align-items-center">
-      <div class="form-control-container" data-component="control" data-clear-option="true">
-        <input role="search" type="search" class="form-control clear-option" data-role="input" data-placeholder="Rechercher" />
+      <div class="form-control-container" data-component="control" data-clear-option="true" role="search">
+        <input id="galacticbar-search-input" type="search" class="form-control clear-option" data-role="input" data-placeholder="Rechercher" />
         <span class="form-control-state"></span>
         <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
           <span class="sr-only">Clear text</span>

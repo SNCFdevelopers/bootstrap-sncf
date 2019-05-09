@@ -245,7 +245,7 @@
 
   // The dropdown menu
   // stylelint-disable declaration-no-important
-  .dropdown-menu {
+  .dropdown-menu:not(.dropdown-menu-mastheader) {
     .dropdown &,
     .dropup & {
       width: 100%;
@@ -263,21 +263,29 @@
     .dropdown &[x-placement="bottom-start"],
     .dropdown &[x-placement="bottom-end"],
     .dropup &[x-placement="bottom-start"],
-    .dropup &[x-placement="bottom-end"] {
-      top: 0 !important;
+    .dropup &[x-placement="bottom-end"],
+    .dropdown &[x-placement="top-start"],
+    .dropdown &[x-placement="top-end"],
+    .dropup &[x-placement="top-start"],
+    .dropup &[x-placement="top-end"] {
       border-top: none;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
+    }
+
+    .dropdown &[x-placement="bottom-start"],
+    .dropdown &[x-placement="bottom-end"],
+    .dropup &[x-placement="bottom-start"],
+    .dropup &[x-placement="bottom-end"] {
+      top: 0 !important;
     }
 
     .dropdown &[x-placement="top-start"],
     .dropdown &[x-placement="top-end"],
     .dropup &[x-placement="top-start"],
     .dropup &[x-placement="top-end"] {
-      top: 0 !important;
-      border-bottom: none;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
+      top: 100% !important;
+      transform: initial !important;
     }
   }
 

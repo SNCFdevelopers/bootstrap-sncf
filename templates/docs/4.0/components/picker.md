@@ -20,15 +20,15 @@ Please note that **you don't** have to load `flatpickr.js` since it's already in
 
 ## Date
 {% example html %}
-<label for="dateselect1" class="font-weight-medium mb-2">Date (jj/mm/aaaa)</label>
+<label for="date" class="font-weight-medium mb-2">Date (jj/mm/aaaa)</label>
 <div data-component="picker">
   <div class="input-group" data-toggle>
     <div class="form-control-container">
-      <input id="dateselect1" type="text" class="form-control" placeholder="Sélectionner une date" data-input>
+      <input id="date" type="text" class="form-control" placeholder="Sélectionner une date" data-input>
       <span class="form-control-state"></span>
     </div>
     <div class="input-group-append">
-      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn" tabindex="-1">
+      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn" tabindex="-1" aria-expanded="false">
         <i class="icons-calendar" aria-hidden="true"></i>
       </button>
     </div>
@@ -41,15 +41,15 @@ Please note that **you don't** have to load `flatpickr.js` since it's already in
 Date-pickers let users select a date (in dd/mm/yyyy format) using a calendar visual. Be sure to visually differentiate the current date (selected by default), the date the user selects, and dates that cannot be selected.
 
 {% example html %}
-<label for="dateselect2" class="font-weight-medium mb-2">Date (jj/mm/aaaa)</label>
+<label for="defaultdate" class="font-weight-medium mb-2">Date (jj/mm/aaaa)</label>
 <div data-component="picker" data-default-date="2017-02-26">
   <div class="input-group" data-toggle>
     <div class="form-control-container">
-      <input id="dateselect2" type="text" class="form-control" placeholder="Sélectionner une date" data-input>
+      <input id="defaultdate" type="text" class="form-control" placeholder="Sélectionner une date" data-input>
       <span class="form-control-state"></span>
     </div>
     <div class="input-group-append">
-      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn" tabindex="-1">
+      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn" tabindex="-1" aria-expanded="false">
         <i class="icons-calendar" aria-hidden="true"></i>
       </button>
     </div>
@@ -63,15 +63,15 @@ The range-picker lets users select a start date and end date to define a period 
 
 {% example html %}
 <div aria-hidden="true">
-  <label class="font-weight-medium mb-2">Date</label>
+  <label for="range" class="font-weight-medium mb-2">Date</label>
   <div data-component="picker" data-mode="range">
     <div class="input-group" data-toggle>
       <div class="form-control-container">
-        <input tabindex="-1" type="text" class="form-control" placeholder="Sélectionner une date" data-input>
+        <input id="range" tabindex="-1" type="text" class="form-control" placeholder="Sélectionner une date" data-input>
         <span class="form-control-state"></span>
       </div>
       <div class="input-group-append">
-        <button tabindex="-1" type="button" class="btn btn-primary btn-only-icon" data-role="btn">
+        <button tabindex="-1" type="button" class="btn btn-primary btn-only-icon" data-role="btn" aria-expanded="false">
           <i class="icons-calendar" aria-hidden="true"></i>
         </button>
       </div>
@@ -82,7 +82,7 @@ The range-picker lets users select a start date and end date to define a period 
   <button class="btn-link" aria-controls="inputrange" data-component="state" data-state="d-none" data-behaviour="toggle" data-target=".range-inputs">
     Saisir une plage de date
   </button>
-  <div class="row pt-2 range-inputs d-none" id="inputrange">
+  <div class="row pt-2 range-inputs d-none" id="inputrange" aria-expanded="false">
     <div class="col">
       <div class="form-group">
         <label for="date1">Date d’arrivée (jj/mm/aaaa)</label>
@@ -112,7 +112,7 @@ Time-pickers let users select a time (in hh:mm format) using a clock visual. Be 
       <span class="form-control-state"></span>
     </div>
     <div class="input-group-append">
-      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
+      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn" aria-expanded="false">
         <span class="sr-only">Saisir l’heure</span>
         <i class="icons-calendar-time" aria-hidden="true"></i>
       </button>
@@ -134,7 +134,7 @@ Only use a date-time-picker when you need to optimize space and reduce the numbe
       <span class="form-control-state"></span>
     </div>
     <div class="input-group-append">
-      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
+      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn" aria-expanded="false">
         <i class="icons-calendar-time" aria-hidden="true"></i>
       </button>
     </div>
@@ -200,10 +200,10 @@ Only use a date-time-picker when you need to optimize space and reduce the numbe
   </div>
 
   <div class="pt-3">
-    <button class="btn-link" aria-controls="inputrange" data-component="state" data-state="d-none" data-behaviour="toggle" data-target=".range-inputs">
+    <button class="btn-link" aria-controls="inputrange2" data-component="state" data-state="d-none" data-behaviour="toggle" data-target=".range-inputs">
       Saisir une plage de date
     </button>
-    <div class="row pt-2 range-inputs d-none" id="inputrange">
+    <div class="row pt-2 range-inputs d-none" id="inputrange2">
       <div class="col">
         <div class="form-group">
           <label for="range1">Date d’arrivée (jj/mm/aaaa)</label>

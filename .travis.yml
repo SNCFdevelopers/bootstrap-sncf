@@ -1,9 +1,6 @@
 branches:
   only:
     - master
-    - dev
-    - dev-travis
-    - documentation
 sudo: required
 dist: trusty
 language: node_js
@@ -58,13 +55,13 @@ deploy:
     - "bootstrap-sncf-intern_${TRAVIS_TAG}.snapshot.tar.gz"
     - "bootstrap-sncf-extern_${TRAVIS_TAG}.snapshot.tar.gz"
   on:
-    branch: master
+    branch: disabled
 deploy:
   skip-cleanup: true
   provider: script
   script: ./scripts/pushdocs.sh
   on:
-    branch: dev-travis
+    branch: master
 env:
   global:
     - secure: fJWAJnjxe9zphe+yXjoBlPmizHZ+vaLy2AFOqsmCNN7JAvWwwZMxua2ChjwY3V16ZkOM4lzmuutNgscSLpQ9mFhjXqGxKoHjLiPjROk9Ip0LfnXyNU6Dm+6IoC+eHDhaNT8rK2g4WLs91Idl1aNLjjWuLHPDhgvn9QFks1CdhxPF/nj3MDcinzIcBF1lQZEdbTkSjnp2MtVYRHMnKdk6jlTmHOLHYRN8ByqRCtt0jaQPfbh5H9ndnowUiqUgbbb/BTTiIorV9IfgsNLy6lKsMwuOCeb5G9QsWeNQH4+hQ+O8QVAyJcm6B/jCwxwkOaKW+N2IYoNfyCpZflpAIZ5ObesUDhAuTBAoPmwAcbf4Xh+WLcpVRsRkS4ssM0lP2ffYHt/k2XmFvK8zN/ddsA6M97xxkCr7ARcVz7YGHU3Yo98uoG0mmYUccJgKy1PODx8rYqUQakRbxIlYy8krJzD/2WoP20oAwK4PTSLBbORufLz3JPUJgYQeLnbe2kojB8JJxCHaLx6WEwR7FKPIHW0WFIuhyjr7bvHftuzpIuA2sOkVgqWGoFGoKCrhwLlWvwNJkXCwUOIqO+WcOp80rxRv5d1BtYElXHPHu05VFAB8SrVoYeKuCJYbOE8MuqtqXq+up4PMNdjR0IgWK+Kk59w3vRNJ/H7CGetpVm5OB9xAn5s=

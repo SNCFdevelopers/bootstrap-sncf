@@ -109,21 +109,23 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 
 ### Aligned with icon
 
+Use `data-placement` to choose one direction (top, right, bottom or left).
+
 {% example html %}
 <div class="row">
   <div class="col-sm-6 text-right pt-5 pb-5">
-    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
   </div>
   <div class="col-sm-6 pt-5 pb-5">
-    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
   </div>
 </div>
 <div class="row">
   <div class="col-sm-6 text-right pt-5 pb-5">
-    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="left" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
   </div>
   <div class="col-sm-6 pt-5 pb-5">
-    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="bottom" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
   </div>
 </div>
 {% endexample %}

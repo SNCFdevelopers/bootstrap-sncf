@@ -41,7 +41,7 @@ class Chips {
     const chipsLabelContent = document.createTextNode(value)
     const chipsBtnNode = document.createElement('button')
     const chipsBtnRemove = document.createElement('span')
-    const chipsBtnRemoveContent = document.createTextNode('Remove')
+    const chipsBtnRemoveContent = document.createTextNode(`Remove ${value}`)
     const chipsIcon = document.createElement('i')
 
     if (!optionNode) {
@@ -58,6 +58,7 @@ class Chips {
     chipsBtnNode.setAttribute('class', 'chips chips-btn chips-only-icon')
     chipsBtnRemove.setAttribute('class', 'sr-only')
     chipsIcon.setAttribute('class', 'icons-close')
+    chipsIcon.setAttribute('aria-hidden', 'true')
 
     chipsBtnNode.addEventListener('click', (e) => {
       e.preventDefault()

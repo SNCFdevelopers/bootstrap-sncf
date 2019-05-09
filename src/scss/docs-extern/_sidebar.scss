@@ -94,16 +94,21 @@
   margin-right: -15px;
   margin-left: -15px;
   border-bottom: 1px solid rgba(0, 0, 0, .05);
-
-  .form-control:focus {
-    border-color: $bd-purple-bright;
-    box-shadow: 0 0 0 3px rgba($bd-purple-bright, .25);
-  }
 }
 
 .bd-search-docs-toggle {
   line-height: 1;
   color: $gray-900;
+}
+
+.bd-search input,
+.bd-search input:focus {
+  background-color: rgba(255, 255, 255, 1); // White because on gray background
+}
+
+.bd-search .form-control-container {
+  display: block;
+  width: 100%;
 }
 
 .bd-sidenav {

@@ -13,14 +13,14 @@ Separators are automatically added in CSS through [`::before`](https://developer
 The breadcrumbs should not be used in mobile interfaces.
 
 {% example html %}
-<nav aria-label="Vous êtes : ">
+<nav aria-label="Vous êtes : " role="navigation">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Library</li>
   </ol>
 </nav>
 
-<nav aria-label="Vous êtes : ">
+<nav aria-label="Vous êtes : " role="navigation">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item"><a href="#">Library</a></li>

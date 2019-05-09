@@ -142,6 +142,10 @@ $btn-rounded-colors: map-merge((
     gray("400"), gray("400"), color("white"),
     #007bb6, #007bb6, color("white")
   ),
+  "instagram": (
+    gray("400"), gray("400"), color("white"),
+    #c32aa3, #c32aa3, color("white")
+  ),
   "youtube": (
     gray("400"), gray("400"), color("white"),
     #bb0000, #bb0000, color("white")
@@ -474,7 +478,7 @@ $btn-focus-box-shadow:        $input-btn-focus-box-shadow;
 $btn-disabled-opacity:        1; // .65;
 $btn-active-box-shadow:       0; // inset 0 3px 5px rgba($black, .125);
 
-$btn-link-disabled-color:     $gray-600;
+$btn-link-disabled-color:     $gray-300;
 
 $btn-block-spacing-y:         .5rem;
 

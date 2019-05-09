@@ -45,7 +45,7 @@ Pie charts show the relative distribution of items in a group.
     data-component="pie-chart"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"]'
     data-values='[580, 400, 500, 600, 700, 800]'>
-    <canvas>Graphique B</canvas>
+    <canvas width="500px" height="500px">Graphique B</canvas>
     <a href="#">Description détaillée du graphique B</a>
 </div>
 {% endexample html %}

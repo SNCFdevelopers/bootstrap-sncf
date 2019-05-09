@@ -90,7 +90,7 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
       <circle class="progress-circle-meter" cx="60" cy="60" r="54" stroke-width="12" />
       <circle class="progress-circle-value" cx="60" cy="60" r="54" stroke-width="12" />
     </svg>
-    <input data-role="control" class="sr-only" type="range" value="20" />
+    <input data-role="control" class="sr-only" type="progressbar" value="20" />
 </div>
 {% endexample %}
 
@@ -102,7 +102,7 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
       <circle class="progress-circle-value" cx="60" cy="60" r="54" stroke-width="12" />
     </svg>
     <div class="progress-circle-label" data-role="label"><span><span data-role="labelvalue">0</span><sup>%</sup></span></div>
-    <input data-role="control" class="sr-only" type="range" value="60" />
+    <input data-role="control" class="sr-only" type="progressbar" value="60" />
 </div>
 {% endexample %}
 

@@ -106,6 +106,7 @@ Switches turn a feature or option on or off. Labels can be applied when necessar
 
 Custom checkboxes and radios can also be disabled. Add the `disabled` boolean attribute to the `<input>` and the custom indicator and label description will be automatically styled.
 
+{% example html %}
 <div class="custom-control custom-checkbox">
   <input type="checkbox" class="custom-control-input" id="customCheckDisabled1" disabled>
   <label class="custom-control-label font-weight-medium" for="customCheckDisabled1">Check this custom checkbox</label>
@@ -129,7 +130,8 @@ Custom checkboxes and radios can also be disabled. Add the `disabled` boolean at
 </div>
 
 <div class="mt-2">
-  <label class="switch-control" for="customRadioDisabled1">
+  <label class="switch-control" for="customRadioDisabled1">    
+    <span class="sr-only">On/Off switch</span>
     <input id="customRadioDisabled1" type="checkbox" class="sr-only" disabled>
     <span class="switch-control-slider"></span>
   </label>
@@ -137,6 +139,7 @@ Custom checkboxes and radios can also be disabled. Add the `disabled` boolean at
 
 <div class="mt-2">
   <label class="switch-control" for="customRadioDisabled2">
+    <span class="sr-only">On/Off switch</span>
     <input id="customRadioDisabled2" type="checkbox" class="sr-only" checked disabled>
     <span class="switch-control-slider"></span>
   </label>
@@ -152,3 +155,4 @@ Custom checkboxes and radios can also be disabled. Add the `disabled` boolean at
     <label class="options-btn font-weight-medium" for="optionsRadio4">Option 2</label>
   </div>
 </div>
+{% endexample %}

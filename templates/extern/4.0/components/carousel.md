@@ -22,7 +22,7 @@ Content editors can choose from the following options: illustrations, packshots 
       <div class="swiper-slide">
         <div class="row bg-light">
           <div class="col-12 col-md-6">
-            <img class="w-100" src="https://dummyimage.com/640x383/000/fff" />
+            <img alt="" class="w-100" src="https://dummyimage.com/640x383/000/fff" />
           </div>
           <div class="col-12 col-md-6">
             <div class="carousel-item-content">

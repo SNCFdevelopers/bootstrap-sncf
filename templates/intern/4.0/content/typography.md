@@ -85,8 +85,8 @@ Styling for common inline HTML5 elements.
 
 {% example html %}
 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-<p><del><span class="sr-only">début du contenu effacé</span>This line of text is meant to be treated as deleted text.<span class="sr-only">fin du contenu effacé</span></del></p>
-<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+<p><del><span class="sr-only">start of deleted content</span>This line of text is meant to be treated as deleted text.<span class="sr-only">end of deleted content</span></del></p>
+<p><ins><span class="sr-only">This content is an addition to the document</span>This line of text is meant to be treated as an addition to the document.</ins></p>
 <p><u>This line of text will render as underlined</u></p>
 <p><small>This line of text is meant to be treated as fine print.</small></p>
 <p><strong>This line rendered as bold text.</strong></p>

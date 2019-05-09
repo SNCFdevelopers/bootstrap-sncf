@@ -3,6 +3,7 @@
     - title: Introduction
     - title: Download
     - title: Accessibility
+    - title: How to contribute
 
 - title: Graphic boards
 
@@ -11,7 +12,6 @@
     - title: Overview
     - title: Grid
     - title: Utilities for layout
-    - title: Form
     - title: Navbars
     - title: Navs
 
@@ -76,6 +76,7 @@
 - title: About
   pages:
     - title: Overview
+    - title: Versions
     - title: Brand
     - title: License
     - title: Translations

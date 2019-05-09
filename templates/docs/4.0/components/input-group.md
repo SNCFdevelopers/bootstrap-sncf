@@ -31,8 +31,7 @@ Menu buttons (select radio add-ons) are used to define a search type.
     </div>
   </div>
   <div class="form-control-container">
-    <label for="entertext" class="sr-only">Saisir les termes à rechercher</label>
-    <input id="entertext" type="text" class="form-control" placeholder="Enter text">
+    <input id="entertext" type="text" class="form-control" title="Enter text" placeholder="Enter text">
     <span class="form-control-state"></span>
   </div>
 </div>
@@ -43,8 +42,7 @@ Menu buttons (select radio add-ons) are used to define a search type.
 {% example html %}
 <div class="input-group">
   <div class="form-control-container">
-    <label for="entertext2">Saisir les termes à rechercher</label>
-    <input id="entertext2" type="text" class="form-control" placeholder="Enter text">
+    <input id="entertext2" type="text" class="form-control" title="Enter text" placeholder="Enter text">
     <span class="form-control-state"></span>
   </div>
   <div class="input-group-append">
@@ -136,18 +134,20 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
     </div>
     <div role="list" class="advanced-search-menu" data-role="menu">
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link"><span class="text-primary">Gestionnaire</span>&#160;de portefeuille</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link"><span class="text-primary">Gestionnaire</span>&#160;de commande</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link"><span class="text-primary">Gestionnaire</span>&#160;de bureau</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
+      <ul class="list-unstyled mb-0">
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link"><span class="text-primary">Gestionnaire</span>&#160;de portefeuille</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link"><span class="text-primary">Gestionnaire</span>&#160;de commande</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link"><span class="text-primary">Gestionnaire</span>&#160;de bureau</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -156,12 +156,12 @@ Previous search history can be displayed by default when users click on the inpu
 ### Variations
 
 {% example html %}
-<label class="font-weight-medium mb-2" for="entertext4">Saisir les termes à rechercher</label>
+<label class="font-weight-medium mb-2" for="entertext41">Saisir les termes à rechercher</label>
 <div class="advanced-search active">
   <div class="advanced-search-control">
     <div class="input-group">
       <div class="form-control-container">
-        <input id="entertext4" type="text" class="form-control" placeholder="Enter text">
+        <input id="entertext41" type="text" class="form-control" placeholder="Enter text">
         <span class="form-control-state"></span>
       </div>
       <div class="input-group-append input-group-last">
@@ -172,22 +172,24 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
     </div>
     <div role="list" class="advanced-search-menu" data-role="menu">
-      <div role="listitem" class="advanced-search-menu-item advanced-search-menu-title">
-        <span>Recherches récentes</span>
-        <button type="button" class="btn btn-link">Tout effacer</button>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link">Amet Porta</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link">Pharetra Fusce Venenatis</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link">Essaincehef Digital</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
+      <ul class="list-unstyled mb-0">
+        <li role="listitem" class="advanced-search-menu-item advanced-search-menu-title">
+          <span>Recherches récentes</span>
+          <button type="button" class="btn btn-link">Tout effacer</button>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link">Amet Porta</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link">Pharetra Fusce Venenatis</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link">Essaincehef Digital</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -210,21 +212,23 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
     </div>
     <div role="list" class="advanced-search-menu" data-role="menu">
-      <div role="listitem" class="advanced-search-menu-item advanced-search-menu-title">
-        <span>Recherches enregistrées</span>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link">Sem Inceptos Tellus</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link">Sollicitudin Adipiscing Mattis</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link">Fabdesignus Lupus Maxima</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
+      <ul class="list-unstyled mb-0">
+        <li role="listitem" class="advanced-search-menu-item advanced-search-menu-title">
+          <span>Recherches enregistrées</span>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link">Sem Inceptos Tellus</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link">Sollicitudin Adipiscing Mattis</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link">Fabdesignus Lupus Maxima</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -248,29 +252,31 @@ Previous search history can be displayed by default when users click on the inpu
       </div>
     </div>
     <div role="list" class="advanced-search-menu" data-role="menu">
-      <div role="listitem" class="advanced-search-menu-item advanced-search-menu-title">
-        <span>Recherches enregistrées</span>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link">Sem Inceptos Tellus</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link">Sollicitudin Adipiscing Mattis</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item advanced-search-menu-title">
-        <span>Recherches récentes</span>
-        <button type="button" class="btn btn-link">Tout effacer</button>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link">Amet Porta</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
-      <div role="listitem" class="advanced-search-menu-item">
-        <button type="button" class="btn btn-link">Pharetra Fusce Venenatis</button>
-        <button type="button" class="btn btn-link"><i class="icons-close-circle" aria-hidden="true"></i></button>
-      </div>
+      <ul class="list-unstyled mb-0">
+        <li role="listitem" class="advanced-search-menu-item advanced-search-menu-title">
+          <span>Recherches enregistrées</span>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link">Sem Inceptos Tellus</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link">Sollicitudin Adipiscing Mattis</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item advanced-search-menu-title">
+          <span>Recherches récentes</span>
+          <button type="button" class="btn btn-link">Tout effacer</button>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link">Amet Porta</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+        <li role="listitem" class="advanced-search-menu-item">
+          <button type="button" class="btn btn-link">Pharetra Fusce Venenatis</button>
+          <button type="button" class="btn btn-link"><span class="sr-only">Supprimer</span><i class="icons-close-circle" aria-hidden="true"></i></button>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
