@@ -20,7 +20,7 @@ install:
 # see https://github.com/travis-ci/travis-ci/issues/8408
 before_script:
   - _JAVA_OPTIONS=
-  - export VERSION=v$(node -e "console.log(require('./package.json').version);")-test
+  - export VERSION=v$(node -e "console.log(require('./package.json').version);")
   - export TRAVIS_TAG=$VERSION
   - echo $VERSION
 cache:
