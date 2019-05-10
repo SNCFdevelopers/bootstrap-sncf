@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Adjusts git deploy repo
+# Adjusts git deploy repo for documentation
 GIT_DEPLOY_DOC_INT=${GIT_DEPLOY_DOC_INT}
 GIT_DEPLOY_DOC_EXT=${GIT_DEPLOY_DOC_EXT}
 
