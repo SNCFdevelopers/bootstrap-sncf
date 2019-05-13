@@ -47,7 +47,7 @@ social_logo_path:   /assets/brand/bootstrap-social-logo.png
 current_version:      4.0.0
 current_ruby_version: 4.0.0
 docs_version:         4.0
-sncf_version:         4
+sncf_version:         5
 repo:                 "https://github.com/twbs/bootstrap"
 slack:                "https://bootstrap-slack.herokuapp.com"
 blog:                 "https://blog.getbootstrap.com"
@@ -55,6 +55,7 @@ expo:                 "https://expo.getbootstrap.com"
 jobs:                 "https://jobs.getbootstrap.com"
 themes:               "https://themes.getbootstrap.com"
 doc_theme:            "extern"
+flavor:               "communication"
 name:                 "DESIGN COMMUNICATION"
 
 download:

@@ -36,6 +36,10 @@ Documentation search is powered by [Algolia's DocSearch](https://community.algol
 
 Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
 
+### NPM
+
+Simply use `npm install @sncf/bootstrap-sncf.metier` or `npm install @sncf/bootstrap-sncf.communication` depending on the purpose of your project.
+
 ### Icofont
 
 1. Run `yarn run icofont`
