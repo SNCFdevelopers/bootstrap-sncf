@@ -257,3 +257,11 @@ label.required {
     padding-left: rem(16px);
   }
 }
+
+//
+// Input search mastheader
+//
+
+.mastheader-search input {
+  background-color: $input-bg-mastheader;
+}

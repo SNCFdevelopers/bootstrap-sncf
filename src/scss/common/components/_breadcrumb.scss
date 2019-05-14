@@ -22,7 +22,7 @@
   }
 
   &.active {
-    color: gray("600");
+    color: $breadcrumb-color;
 
     & ~ .breadcrumb-item {
       &::before {

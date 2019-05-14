@@ -264,6 +264,7 @@ input[type="button"] {
 .btn-options {
   min-width: rem(55px);
   padding: 0;
+  color: $body-color;
   background-color: transparent;
 
   &[aria-expanded="true"],
@@ -328,6 +329,7 @@ input[type="button"] {
   min-width: rem(145px);
   min-height: rem(145px);
   font-weight: $font-weight-normal;
+  border-color: $btn-card-bg;
 
   span {
     display: block;
@@ -335,9 +337,9 @@ input[type="button"] {
   }
 
   @include button-variant(
-    color("white"), gray("400"), gray("400"),
-    theme-color("primary-dark"), theme-color("primary-dark"), color("white"),
-    theme-color("primary"), theme-color("primary"), color("white")
+    $btn-card-bg, $btn-card-border, $btn-card-color,
+    theme-color("primary-dark"), theme-color("primary-dark"), $btn-card-active-color,
+    $btn-card-active-bg, $btn-card-active-border, $btn-card-active-color
   );
 }
 

@@ -27,6 +27,8 @@ keep_files:
   - bootstrap-sncf.min.js.map
   - bootstrap-sncf.min.css
   - bootstrap-sncf.min.css.map
+  - bootstrap-sncf.darkmode.min.css
+  - bootstrap-sncf.darkmode.min.css.map
   - vendor
 
 plugins:

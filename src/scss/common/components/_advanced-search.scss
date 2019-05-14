@@ -50,10 +50,10 @@
   max-height: $select-scrollable-max-height;
   padding: rem(20px);
   overflow-y: auto;
-  background-color: color("white");
-  border-right: gray("200") solid 1px;
-  border-bottom: gray("200") solid 1px;
-  border-left: gray("200") solid 1px;
+  background-color: $advanced-search-bg;
+  border-right: $advanced-search-border-color solid 1px;
+  border-bottom: $advanced-search-border-color solid 1px;
+  border-left: $advanced-search-border-color solid 1px;
   border-bottom-right-radius: $border-radius;
   border-bottom-left-radius: $border-radius;
 }
@@ -70,7 +70,7 @@
   border: 0;
 
   .btn-link:not(:hover):first-child {
-    color: gray("500");
+    color: $advanced-search-color;
   }
 
   + .advanced-search-menu-item {
@@ -82,7 +82,7 @@
   align-items: center;
   margin-bottom: rem(14px);
   font-size: $font-size-xs;
-  color: gray("400");
+  color: $advanced-search-menu-title-color;
   text-transform: uppercase;
 
   .btn-link {

@@ -5,7 +5,7 @@
   padding-right: rem(4px);
   padding-left: rem(4px);
   font-size: $font-size-base;
-  color: #808080; // new color just for pagination...
+  color: $pagination-disabled-color;
 
   &.active .page-link {
     position: relative;

@@ -447,7 +447,7 @@ Note the use of `no-gutters` class to stick the columns together.
 {% example html %}
 <div class="row no-gutters">
   <div class="col-lg-5 col-md-6">
-    <div class="d-flex align-items-center justify-content-between bg-light pl-4 pr-1">
+    <div class="list-group-double-panel-title d-flex align-items-center justify-content-between pl-4 pr-1">
       <h1 class="mb-0 text-base">Lorem ipsum</h1>
       <ul class="toolbar mb-0">
         <li class="toolbar-item">
@@ -532,7 +532,7 @@ Note the use of `no-gutters` class to stick the columns together.
     </ul>
   </div>
   <div class="col-lg-7 col-md-6">
-    <div class="d-flex align-items-center justify-content-between bg-light pl-4 pr-1">
+    <div class="list-group-double-panel-title d-flex align-items-center justify-content-between pl-4 pr-1">
       <h1 tabindex="-1" class="mb-0 text-base">Content</h1>
       <ul class="toolbar mb-0">
         <li class="toolbar-item">
