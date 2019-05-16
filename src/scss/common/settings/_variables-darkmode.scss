@@ -934,9 +934,9 @@ $modal-dialog-margin-y-sm-up: 1.75rem;
 
 $modal-title-line-height:           $line-height-base;
 
-$modal-content-bg:               $white;
-$modal-content-border-color:     rgba($black, .2);
-$modal-content-border-width:     0;
+$modal-content-bg:               $black;
+$modal-content-border-color:     $carbon;
+$modal-content-border-width:     1px;
 $modal-content-box-shadow-xs:    0 .25rem .5rem rgba($black, .5);
 $modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($black, .5);
 
@@ -944,8 +944,8 @@ $modal-backdrop-bg:           $black;
 $modal-backdrop-opacity:      .5;
 $modal-header-border-color:   $gray-200;
 $modal-footer-border-color:   $modal-header-border-color;
-$modal-header-border-width:   $modal-content-border-width;
-$modal-footer-border-width:   $modal-header-border-width;
+$modal-header-border-width:   0;
+$modal-footer-border-width:   0;
 $modal-header-padding:        1rem;
 
 $modal-lg:                          800px;
@@ -1072,8 +1072,8 @@ $carousel-transition:               transform .6s ease;
 
 $close-font-size:                   $font-size-base * 1.2;
 $close-font-weight:                 $font-weight-bold;
-$close-color:                       #4c4f54;
-$close-text-shadow:                 0 1px 0 $white;
+$close-color:                       $body-color;
+$close-text-shadow:                 none;
 
 // Code
 
