@@ -902,6 +902,7 @@ $popover-arrow-height:              .5rem;
 $popover-arrow-color:               $popover-bg;
 
 $popover-arrow-outer-color:         fade-in($popover-border-color, .05);
+$popover-close-svg:                 str-replace(url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3ctitle%3eclose%3c/title%3e%3cpath fill='#{$popover-body-color}' d='M7.91,6l3.71-3.71a1.37,1.37,0,0,0,0-1.9,1.38,1.38,0,0,0-1.91,0L6,4.09,2.29.38A1.38,1.38,0,0,0,.38.38a1.4,1.4,0,0,0,0,1.91L4.09,6,.38,9.71a1.38,1.38,0,0,0,0,1.91,1.38,1.38,0,0,0,1.91,0L6,7.91l3.71,3.71a1.38,1.38,0,0,0,1.91,0,1.4,1.4,0,0,0,0-1.91Z' transform='translate(0 0)'/%3e%3c/svg%3e"), "#", "%23");
 
 
 // Badges
@@ -974,8 +975,8 @@ $alert-color-level:                 6;
 
 $progress-height:                   .625rem; // 10px
 $progress-font-size:                ($font-size-base * .75);
-$progress-bg:                       $carbon;
-$progress-bg-gradient:              linear-gradient(90deg, $gray-500 50%, transparent 50%);
+$progress-bg:                       $black;
+$progress-bg-gradient:              linear-gradient(90deg, $carbon 50%, transparent 50%);
 $progress-border-radius:            .3125rem; // 5px
 $progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1);
 $progress-bar-color:                $body-color;
@@ -1097,3 +1098,18 @@ $print-body-min-width:              map-get($grid-breakpoints, "lg");
 // Flatpickr
 //
 $flatpickr-bg:                      $carbon;
+$flatpickr-day-color:               $body-color;
+$flatpickr-day-othermonth-color:    $gray-300;
+$flatpickr-weekday-color:           $gray-200;
+$flatpickr-today-color:             $white;
+$flatpickr-today-bg:                $gray-500;
+$flatpickr-day-focus-color:         $black;
+$flatpickr-day-focus-bg:            $primary;
+$flatpickr-day-hover-color:         $black;
+$flatpickr-day-hover-bg:            theme-color("primary-dark");
+
+$flatpickr-time-color:              $body-color;
+$flatpickr-time-input-bg:           $carbon;
+$flatpickr-time-focus-bg:           $gray-500;
+
+$flatpickr-range-bg:                $gray-500;

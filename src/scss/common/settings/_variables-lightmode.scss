@@ -897,6 +897,7 @@ $popover-arrow-height:              .5rem;
 $popover-arrow-color:               $popover-bg;
 
 $popover-arrow-outer-color:         fade-in($popover-border-color, .05);
+$popover-close-svg:                 str-replace(url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3ctitle%3eclose%3c/title%3e%3cpath fill='#{$popover-body-color}' d='M7.91,6l3.71-3.71a1.37,1.37,0,0,0,0-1.9,1.38,1.38,0,0,0-1.91,0L6,4.09,2.29.38A1.38,1.38,0,0,0,.38.38a1.4,1.4,0,0,0,0,1.91L4.09,6,.38,9.71a1.38,1.38,0,0,0,0,1.91,1.38,1.38,0,0,0,1.91,0L6,7.91l3.71,3.71a1.38,1.38,0,0,0,1.91,0,1.4,1.4,0,0,0,0-1.91Z' transform='translate(0 0)'/%3e%3c/svg%3e"), "#", "%23");
 
 
 // Badges
@@ -1092,3 +1093,18 @@ $print-body-min-width:              map-get($grid-breakpoints, "lg");
 // Flatpickr
 //
 $flatpickr-bg:                      $white;
+$flatpickr-day-color:               $body-color;
+$flatpickr-day-othermonth-color:    $carbon;
+$flatpickr-weekday-color:           $gray-600;
+$flatpickr-today-color:             $white;
+$flatpickr-today-bg:                $gray-500;
+$flatpickr-day-focus-color:         $white;
+$flatpickr-day-focus-bg:            $primary;
+$flatpickr-day-hover-color:         $white;
+$flatpickr-day-hover-bg:            theme-color("primary-dark");
+
+$flatpickr-time-color:              $gray-400;
+$flatpickr-time-input-bg:           $gray-100;
+$flatpickr-time-focus-bg:           $gray-200;
+
+$flatpickr-range-bg:                #e5f3fa;
