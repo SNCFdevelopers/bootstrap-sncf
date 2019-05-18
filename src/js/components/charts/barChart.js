@@ -3,7 +3,8 @@ import * as zoom from 'chartjs-plugin-zoom'
 /* eslint-enable no-unused-vars */
 import {
   DEFAULT_COLOR,
-  DEFAULT_COLORS
+  DEFAULT_COLORS,
+  DEFAULT_GRIDCOLOR
 } from './config'
 import Chart from 'chart.js'
 import {
@@ -19,6 +20,8 @@ export default class BarChart {
     const labels = element.dataset.labels ? JSON.parse(element.dataset.labels) : []
     const values = element.dataset.values ? JSON.parse(element.dataset.values) : []
     let dataCounter = 0
+
+    const gridColor = element.dataset.gridcolor ? element.dataset.gridcolor : DEFAULT_GRIDCOLOR
 
     const barChartData = {
       labels,
@@ -48,12 +51,18 @@ export default class BarChart {
           xAxes: [
             {
               stacked: true,
-              maxBarThickness: 40
+              maxBarThickness: 40,
+              gridLines: {
+                color: gridColor
+              }
             }
           ],
           yAxes: [
             {
-              stacked: true
+              stacked: true,
+              gridLines: {
+                color: gridColor
+              }
             }
           ]
         },

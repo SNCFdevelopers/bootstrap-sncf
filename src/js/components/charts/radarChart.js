@@ -1,5 +1,6 @@
 import {
   DEFAULT_COLORS,
+  DEFAULT_GRIDCOLOR,
   TRANSLUCENT_DEFAULT_COLORS
 } from './config'
 import Chart from 'chart.js'
@@ -12,6 +13,8 @@ export default class RadarChart {
     // data
     const labels = element.dataset.labels ? JSON.parse(element.dataset.labels) : []
     const values = element.dataset.values ? JSON.parse(element.dataset.values) : []
+
+    const gridColor = element.dataset.gridcolor ? element.dataset.gridcolor : DEFAULT_GRIDCOLOR
 
     let dataCounter = 0
 
@@ -38,6 +41,14 @@ export default class RadarChart {
         responsive: true,
         legend: {
           display: false
+        },
+        scale: {
+          gridLines: {
+            color: gridColor
+          },
+          angleLines: {
+            color: gridColor
+          }
         }
       }
     })

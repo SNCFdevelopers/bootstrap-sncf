@@ -29,7 +29,8 @@ Radar charts show the values of different variables.
 <div class="position-relative"
     data-component="radar-chart"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"]'
-    data-values='[[580, 400, 500, 600, 700, 800]]'>
+    data-values='[[580, 400, 500, 600, 700, 800]]'
+    data-gridcolor="rgb(51,51,51,1)">
     <canvas>Graphique A</canvas>
     <a href="#">Description détaillée du graphique A</a>
 </div>
@@ -74,7 +75,8 @@ ee measurements per bar. In proportional bar graphs, all bars are the same size 
 <div class="position-relative"
     data-component="bar-chart"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août"]'
-    data-values="[[400, 500, 250, 300, 700, 600, 100, 200]]">
+    data-values="[[400, 500, 250, 300, 700, 600, 100, 200]]"
+    data-gridcolor="rgb(51,51,51,1)">
     <div class="chart-head mb-4">
         <h2 class="font-weight-normal mb-0">Titre de la courbe</h2>
         <ul class="chart-caption">
@@ -110,7 +112,8 @@ Options:
 <div class="charts position-relative"
     data-component="line-chart"
     data-labels='["Janvier", "Février", "Mars"]'
-    data-values="[[280, 400, 550]]">
+    data-values="[[280, 400, 550]]"
+    data-gridcolor="rgb(255,200,0,1)">
     <div class="chart-head mb-4">
         <h2 class="font-weight-normal mb-0">Titre de la courbe</h2>
         <ul class="chart-caption">

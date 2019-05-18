@@ -1,6 +1,7 @@
 import {
   DEFAULT_COLOR,
   DEFAULT_COLORS,
+  DEFAULT_GRIDCOLOR,
   pointHoverConfig
 } from './config'
 import {
@@ -24,6 +25,7 @@ export default class LineChart {
     const lineStyles = element.dataset.styles ? JSON.parse(element.dataset.styles) : []
     const fill = element.dataset.fill === 'true'
     const lineTension = element.dataset.straightlines === 'true'
+    const gridColor = element.dataset.gridcolor ? element.dataset.gridcolor : DEFAULT_GRIDCOLOR
     // no-console  -> comment console.log('lineColors: ', lineColors);
 
     let counter = 0
@@ -38,6 +40,14 @@ export default class LineChart {
           yAxes: [{
             ticks: {
               beginAtZero:true
+            },
+            gridLines: {
+              color: gridColor
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              color: gridColor
             }
           }]
         },
