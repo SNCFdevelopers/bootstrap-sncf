@@ -11,6 +11,12 @@ $doc-callout-bg:            transparent;
 
 $doc-sidebar-color:         $white;
 
+// Extern only
+$bd-sidebar-bg:             inherit;
+$bd-links-color:            rgba(0, 0, 0, .85);
+$bd-links-color-light:      rgba(0, 0, 0, .65);
+$bd-search-bg:              $white;
+
 $bd-example-modal-bg:       $gray-300;
 
 $bd-purple:        $purple !default;

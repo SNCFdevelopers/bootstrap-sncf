@@ -87,6 +87,8 @@ $theme-colors: map-merge((
   "white":        $white
 ), $theme-colors);
 
+$required-asterix:  $danger;
+
 $btn-colors: ();
 $btn-colors: map-merge((
   "primary":    (
@@ -378,6 +380,7 @@ $display-line-height:         $headings-line-height;
 
 $display1-color:              $primary;
 
+$lead-color:                  $body-color;
 $lead-font-size:              ($font-size-base * 1.25);
 $lead-font-weight:            300;
 
@@ -568,6 +571,8 @@ $form-group-margin-bottom:              $spacer * 1.5;
 
 $form-toolbar-border-color:             $gray-100;
 $form-toolbar-color:                    $body-color;
+
+$form-control-white:                    $white; // Only useful for darkmode
 
 $input-group-addon-color:               $input-color;
 $input-group-addon-bg:                  $gray-200;
@@ -795,12 +800,48 @@ $navbar-light-toggler-border-color: rgba($black, .1);
 
 // Mastnav
 $mastnav-color-lg:                  $white;
+$mastcontent-bg:                    $white;
 
 // Actionbar
-$bg-actionbar:                      $white;
+$actionbar-bg:                      $white;
+
+// Menus, panels
+$menubar-color:                     $gray-600;
+$menubar-bg:                        $white;
+$menu-color:                        $white;
+$menu-secondary-color:              $white;
+
+// Anchor
+$anchor-gradient-color:             $gray-200;
+$anchor-item-color:                 $gray-400;
+$anchor-item-bg:                    $white;
+
+// Accordion
+$accordion-bg:                      $gray-100;
+
+// Proof
+$proof-gray-bg:                     $gray-100;
+$proof-strip-color:                 $gray-200;
+
+// Editorial
+$editorial-color:                   $carbon;
+$editorial-bg:                      $gray-100;
+$edito-push-highlight-bg:           $gray-100;
+
+// Packshot
+$packshot-color:                    $carbon;
+$packshot-bg:                       $gray-100;
+
+// Contact
+$edito-contact-bg:                  $gray-100;
+
+// Tongues
+$tongues-point:                     $white;
+
+// Vignettes
+$vignette-bg:                      $white;
 
 // Pagination
-
 $pagination-padding-y:              .125rem;
 $pagination-padding-x:              .313rem;
 $pagination-padding-y-sm:           .25rem;
@@ -1062,6 +1103,7 @@ $carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;charset=
 
 $carousel-transition:               transform .6s ease;
 
+$carousel-bg:                       $gray-100;
 
 // Close
 

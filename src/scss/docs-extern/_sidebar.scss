@@ -51,7 +51,7 @@
 
 .bd-sidebar {
   order: 0;
-  // background-color: #f5f2f9;
+  background-color: $bd-sidebar-bg;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
 
   @include media-breakpoint-up(md) {
@@ -103,7 +103,7 @@
 
 .bd-search input,
 .bd-search input:focus {
-  background-color: rgba(255, 255, 255, 1); // White because on gray background
+  background-color: $bd-search-bg;
 }
 
 .bd-search .form-control-container {
@@ -119,10 +119,10 @@
   display: block;
   padding: .25rem 1.5rem;
   font-weight: 500;
-  color: rgba(0, 0, 0, .65);
+  color: $bd-links-color-light;
 
   &:hover {
-    color: rgba(0, 0, 0, .85);
+    color: $bd-links-color;
     text-decoration: none;
   }
 }
@@ -136,7 +136,7 @@
     }
 
     > .bd-toc-link {
-      color: rgba(0, 0, 0, .85);
+      color: $bd-links-color;
 
       &:hover {
         background-color: transparent;
@@ -154,11 +154,11 @@
   display: block;
   padding: .25rem 1.5rem;
   font-size: 90%;
-  color: rgba(0, 0, 0, .65);
+  color: $bd-links-color-light;
 }
 
 .bd-sidebar .nav > li > a:hover {
-  color: rgba(0, 0, 0, .85);
+  color: $bd-links-color;
   text-decoration: none;
   background-color: transparent;
 }
@@ -166,6 +166,6 @@
 .bd-sidebar .nav > .active > a,
 .bd-sidebar .nav > .active:hover > a {
   font-weight: 500;
-  color: rgba(0, 0, 0, .85);
+  color: $bd-links-color;
   background-color: transparent;
 }

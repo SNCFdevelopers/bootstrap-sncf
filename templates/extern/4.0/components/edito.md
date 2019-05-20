@@ -208,7 +208,7 @@ On text pages without anchor links, some components can be placed in a column to
   <div class="col-md-7">
   </div>
   <div class="col-md-5">
-    <div class="d-flex flex-column bg-light gx-3 gy-4 gx-md-4 rounded">
+    <div class="d-flex flex-column edito-push-highlight-bg gx-3 gy-4 gx-md-4 rounded">
       <div class="d-flex flex-column flex-fluid">
 	<h2 class="order-0 mb-5">Les derniers articles</h2>
 	<h3 class="order-2 display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</h3>
@@ -243,7 +243,7 @@ Content editors can choose from the following options: illustrations, packshots 
     <li class="gb-4">
       <div class="d-flex flex-column flex-md-row">
         <div class="col-auto gr-md-4 px-0 pb-4 pb-md-0">
-          <img alt="" class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
+          <img alt="" class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/d7d7d7/333" />
         </div>
         <div class="d-flex flex-column justify-content-center">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -254,7 +254,7 @@ Content editors can choose from the following options: illustrations, packshots 
     <li class="gb-4">
       <div class="d-flex flex-column flex-md-row">
         <div class="col-auto gr-md-4 px-0 pb-4 pb-md-0">
-          <img alt="" class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
+          <img alt="" class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/d7d7d7/333" />
         </div>
         <div class="d-flex flex-column justify-content-center">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum ea distinctio, consequatur facilis repudiandae incidunt.</p>
@@ -265,7 +265,7 @@ Content editors can choose from the following options: illustrations, packshots 
     <li>
       <div class="d-flex flex-column flex-md-row">
         <div class="col-auto gr-md-4 px-0 pb-4 pb-md-0">
-          <img alt="" class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/000/fff" />
+          <img alt="" class="w-100 w-md-auto rounded" width="221" src="https://dummyimage.com/221x133/d7d7d7/333" />
         </div>
         <div class="d-flex flex-column justify-content-center">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum ea distinctio.</p>
@@ -288,10 +288,10 @@ These blocks come in twos or fours in a text page.
   <h2 class="display-3 text-primary mb-4">Titre bloc Packshot</h2>
   <div class="row">
     <div class="col-12 col-md-6 d-md-flex gb-5 gb-md-0">
-      <div class="d-flex flex-column bg-light gx-3 gy-4 gx-md-4 rounded">
-        <img alt="" class="w-100" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
+      <div class="d-flex flex-column edito-packshot gx-3 gy-4 gx-md-4 rounded">
+        <img alt="" class="w-100 mb-4" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
         <div class="d-flex flex-column flex-fluid">
-          <h3 class="text-gray500 mb-3">-25% garantis* sur tous les trains TGV et Intercités <br/>
+          <h3 class="mb-3">-25% garantis* sur tous les trains TGV et Intercités <br/>
             <span class="text-base">à réservation obligatoire</span>
           </h3>
           <div class="d-flex align-items-end flex-fluid">
@@ -301,10 +301,10 @@ These blocks come in twos or fours in a text page.
       </div>
     </div>
     <div class="col-12 col-md-6 d-md-flex gb-5 gb-md-0">
-      <div class="d-flex flex-column bg-light gx-3 gy-4 gx-md-4 rounded">
-        <img alt="" class="w-100" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
+      <div class="d-flex flex-column edito-packshot gx-3 gy-4 gx-md-4 rounded">
+        <img alt="" class="w-100 mb-4" width="240" src="https://dummyimage.com/240x158/f2f2f2/000" />
         <div class="d-flex flex-column flex-fluid">
-          <h3 class="text-gray500 mb-3">-10% supplémentaires sur les billets Prem’s*</h3>
+          <h3 class="mb-3">-10% supplémentaires sur les billets Prem’s*</h3>
           <div class="d-flex align-items-end flex-fluid">
             <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
           </div>
@@ -330,7 +330,7 @@ Content editors can choose from the following options: illustrations, packshots 
       <div>
         <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
         <div>
-          <h3 class="text-gray500 mb-2">Paris - Bordeaux</h3>
+          <h3 class="mb-2">Paris - Bordeaux</h3>
           <div class="mb-3">Lorem ipsum doloret</div>
           <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
         </div>
@@ -340,7 +340,7 @@ Content editors can choose from the following options: illustrations, packshots 
       <div>
         <img alt="" class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
         <div>
-          <h3 class="text-gray500 mb-2">Paris - Nantes</h3>
+          <h3 class="mb-2">Paris - Nantes</h3>
           <div class="mb-3">Lorem ipsum doloret</div>
           <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
         </div>
@@ -358,7 +358,7 @@ A mailto link can be inserted instead of an input field.
 
 {% example html %}
 <div style="max-width: 41.000rem">
-  <div class="row no-gutters bg-light rounded gx-3 gb-4 g-md-5">
+  <div class="row no-gutters edito-contact-bg rounded gx-3 gb-4 g-md-5">
     <div class="col-12 col-md-6 order-md-1">
       <img alt="" class="w-100" src="https://dummyimage.com/286x160/000/fff" />
     </div>

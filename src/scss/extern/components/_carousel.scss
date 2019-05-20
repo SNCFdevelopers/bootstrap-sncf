@@ -1,6 +1,10 @@
 /* carousel
    ========================================================================== */
 
+.bg-carousel {
+  background-color: $carousel-bg;
+}
+
 .carousel-item-content {
   display: flex;
   flex-direction: column;

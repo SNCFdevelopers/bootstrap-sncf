@@ -30,6 +30,10 @@
   }
 
   &.dark {
+    .h2 {
+      color: gray("600");
+    }
+
     .navtabs {
       border-bottom: 1px solid gray("600");
     }

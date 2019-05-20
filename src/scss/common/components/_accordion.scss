@@ -11,7 +11,7 @@
   justify-content: space-between;
   padding: rem(16px) rem(20px);
   cursor: pointer;
-  background-color: gray("100");
+  background-color: $accordion-bg;
   border-radius: $border-radius;
 }
 

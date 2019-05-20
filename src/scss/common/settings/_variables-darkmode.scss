@@ -89,6 +89,8 @@ $theme-colors: map-merge((
   "white":        $white
 ), $theme-colors);
 
+$required-asterix:  $orange;
+
 $btn-colors: ();
 $btn-colors: map-merge((
   "primary":    (
@@ -381,6 +383,7 @@ $display-line-height:         $headings-line-height;
 
 $display1-color:              $primary;
 
+$lead-color:                  $body-color;
 $lead-font-size:              ($font-size-base * 1.25);
 $lead-font-weight:            300;
 
@@ -388,7 +391,7 @@ $small-font-size:             .75rem;
 
 $text-muted:                  $gray-200;
 
-$blockquote-small-color:      $gray-400;
+$blockquote-small-color:      $gray-200;
 $blockquote-font-size:        ($font-size-base * 1.25);
 
 $hr-border-color:             rgba($black, .1);
@@ -572,6 +575,8 @@ $form-group-margin-bottom:              $spacer * 1.5;
 
 $form-toolbar-border-color:             $carbon;
 $form-toolbar-color:                    $body-color;
+
+$form-control-white:                    $black; // Only useful for darkmode
 
 $input-group-addon-color:               $input-color;
 $input-group-addon-bg:                  $gray-200;
@@ -800,12 +805,48 @@ $navbar-light-toggler-border-color: rgba($black, .1);
 
 // Mastnav
 $mastnav-color-lg:                  $black;
+$mastcontent-bg:                    $black;
 
 // Actionbar
-$bg-actionbar:                      $black;
+$actionbar-bg:                      $black;
+
+// Menus, panels
+$menubar-color:                     $gray-100;
+$menubar-bg:                        $carbon;
+$menu-color:                        $carbon;
+$menu-secondary-color:              $gray-100;
+
+// Anchor
+$anchor-gradient-color:             $gray-400;
+$anchor-item-color:                 $gray-100;
+$anchor-item-bg:                    $body-bg;
+
+// Accordion
+$accordion-bg:                      $carbon;
+
+// Proof
+$proof-gray-bg:                     $carbon;
+$proof-strip-color:                 $gray-500;
+
+// Editorial
+$editorial-color:                   $gray-100;
+$editorial-bg:                      $carbon;
+$edito-push-highlight-bg:           $carbon;
+
+// Packshot
+$packshot-color:                    $gray-100;
+$packshot-bg:                       $carbon;
+
+// Contact
+$edito-contact-bg:                  $carbon;
+
+// Tongues
+$tongues-point:                     $black;
+
+// Vignettes
+$vignette-bg:                      $black;
 
 // Pagination
-
 $pagination-padding-y:              .125rem;
 $pagination-padding-x:              .313rem;
 $pagination-padding-y-sm:           .25rem;
@@ -1066,6 +1107,8 @@ $carousel-control-prev-icon-bg:     str-replace(url("data:image/svg+xml;charset=
 $carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"), "#", "%23");
 
 $carousel-transition:               transform .6s ease;
+
+$carousel-bg:                       $carbon;
 
 
 // Close

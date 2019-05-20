@@ -12,8 +12,8 @@
 }
 
 .editorial-light {
-  color: gray("600");
-  background-color: gray("100");
+  color: $editorial-color;
+  background-color: $editorial-bg;
 }
 
 @include media-breakpoint-down(sm) {
@@ -44,4 +44,17 @@
     justify-content: center;
     padding-left: rem(40px);
   }
+}
+
+.edito-push-highlight-bg {
+  background-color: $edito-push-highlight-bg;
+}
+
+.edito-packshot {
+  color: $packshot-color;
+  background-color: $packshot-bg;
+}
+
+.edito-contact-bg {
+  background-color: $edito-contact-bg;
 }
