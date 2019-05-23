@@ -15,7 +15,7 @@ So if you are in one of the following cases, don’t hesitate to consult the ins
 This component may exist in another topic. Links allow you to move from one topic to another related topic (for example for checkbox and radio buttons, a link allows you to find them from the forms section).
 If you definitely can not find it, contact us :
 - **You have a GitHub account :** Feel free to browse the [Github project](https://github.com/SNCFdevelopers/bootstrap-sncf), an issue may have already been created on this topic (you can subscribe to notifications to track its progress). If not, don’t hesitate to create one.
-- **You don’t have a GitHub account :** Write us on [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Composant) with the following object : « Bootstrap - Composant » by specifying your need.
+- **You don’t have a GitHub account :** Write us on [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Composant) with the following object : "Bootstrap - Composant"  by specifying your need.
 {% endmarkdown %}
 </details>
 
@@ -24,7 +24,7 @@ If you definitely can not find it, contact us :
 {% markdown %}
 Feel free to contact us. Either this component exists, but we have not yet integrated it in the Bootstrap, or this component does not exist, we will study with you the need that will allow the use of another component or create a new component with you.
 - **You have a GitHub account :** Feel free to browse the [Github project](https://github.com/SNCFdevelopers/bootstrap-sncf), an issue may have already been created on this topic (you can subscribe to notifications to track its progress). If not, don’t hesitate to create one.
-- **You don’t have a GitHub account :** Write us on [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Composant) with the following object : « Bootstrap - Composant » by specifying your need.
+- **You don’t have a GitHub account :** Write us on [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Composant) with the following object : "Bootstrap - Composant" by specifying your need.
 {% endmarkdown %}
 </details>
 
@@ -48,7 +48,7 @@ We will study your component, study its design, and if it is in accordance with 
 <details class="mb-3">
 <summary class="text-primary text-lg mb-2">You are in none of the cases mentioned above ?</summary>
 {% markdown %}
-Do not hesitate to write to us on [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Autre demande) with the following subject: « Bootstrap - Autre demande »  by specifying your need.
+Do not hesitate to write to us on [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Autre demande) with the following subject: "Bootstrap - Autre demande"  by specifying your need.
 {% endmarkdown %}
 </details>
 
