@@ -13,7 +13,7 @@ Form error messages are displayed as an alert at the top of the page.
 
 {% example html %}
 <div class="form-error mb-3">
-  <h2 class="text-uppercase text-white">Ooops ! There is an error</h2>
+  <h2 class="text-uppercase">Ooops ! There is an error</h2>
   <ul class="mt-1 mb-0">
     <li>Please check mail address</li>
     <li>Your SNCF ID doesn't exist</li>

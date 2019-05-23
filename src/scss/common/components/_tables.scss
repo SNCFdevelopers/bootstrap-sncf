@@ -46,7 +46,7 @@ td[data-role="toggle-group-btn"] > * {
   &.scroll-left-max {
     &::before {
       left: 0;
-      background: linear-gradient(to right, #fff 2%, rgba(255, 255, 255, 0) 98%);
+      background: $table-scroll-max-to-right;
     }
   }
 
@@ -65,7 +65,7 @@ td[data-role="toggle-group-btn"] > * {
     &.scroll-left-min {
       &::after {
         right: 0;
-        background: linear-gradient(to left, #fff 2%, rgba(255, 255, 255, 0) 98%);
+        background: $table-scroll-max-to-left;
       }
     }
   }
@@ -85,7 +85,7 @@ td[data-role="toggle-group-btn"] > * {
     &.scroll-left-min .tbody .cell-fixed {
       &::after {
         right: 100%;
-        background: linear-gradient(to left, #fff 2%, rgba(255, 255, 255, 0) 98%);
+        background: $table-scroll-max-to-left;
       }
     }
     /* stylelint-enable selector-max-class */
@@ -116,7 +116,7 @@ td[data-role="toggle-group-btn"] > * {
   td {
     position: relative;
     font-weight: $font-weight-normal;
-    color: gray("600");
+    color: $table-head-color;
     vertical-align: middle;
     border: none;
 
@@ -257,7 +257,7 @@ td[data-role="toggle-group-btn"] > * {
     min-height: rem(52px);
     padding-right: 0;
     padding-left: 0;
-    background-color: color("white");
+    background-color: $table-bg;
     border-top: none;
 
     /* stylelint-disable declaration-no-important */

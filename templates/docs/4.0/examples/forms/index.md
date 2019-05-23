@@ -25,9 +25,9 @@ sector:
 
     <title>Forms template</title>
 
-    <link href="{{ site.baseurl }}/bootstrap-sncf.min.css" rel="stylesheet">
+    {% include darkmode-js-header.html %}
   </head>
-  <body style="background-color: #fff">
+  <body>
     <main class="container">
       <h1 class="display-1 pt-5">Formulaire empilé (e.g. E-isolement : Ajouter un agent)</h1>
       <div class="row justify-content-center pt-5 pb-5">

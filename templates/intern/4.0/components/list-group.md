@@ -575,12 +575,12 @@ Note the use of `no-gutters` class to stick the columns together.
 <div class="bd-example">
   <ul class="list-group">
 {% for group in (1..3) %}
-<li id="group{{ forloop.index }}" class="list-group-item management-item management-item-group" >
-  <div class="management-item-content" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group{{ forloop.index }}">
+<li id="group{{ group }}" class="list-group-item management-item management-item-group" >
+  <div class="management-item-content" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group{{ group }}">
     <div class="management-item-checkbox">
       <div class="custom-control custom-checkbox custom-checkbox-alone">
-        <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-        <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
+        <input type="checkbox" class="custom-control-input" id="cell{{ group }}">
+        <label class="custom-control-label" for="cell{{ group }}"><span class="sr-only">étiquette</span></label>
       </div>
     </div>
     <div class="management-item-caret"></div>
@@ -591,14 +591,14 @@ Note the use of `no-gutters` class to stick the columns together.
       <h2 class="mb-0 text-base font-weight-normal"><button class="btn-unstyled" aria-expanded="false" aria-controls="sublist{{ forloop.index }}">Titre lorem ipsum dolor sit amet</button></h2>
     </div>
   </div>
-  <ul id="sublist{{ forloop.index }}" class="management-item-grouplist">
+  <ul id="sublist{{ group }}" class="management-item-grouplist">
     {% for item in (1..4) %}
     <li class="management-item">
       <div class="management-item-content">
         <div class="management-item-checkbox">
           <div class="custom-control custom-checkbox custom-checkbox-alone">
-            <input type="checkbox" class="custom-control-input" id="cell{{ forloop.index }}">
-            <label class="custom-control-label" for="cell{{ forloop.index }}"><span class="sr-only">étiquette</span></label>
+            <input type="checkbox" class="custom-control-input" id="sublist{{ group }}-cell{{ item }}">
+            <label class="custom-control-label" for="sublist{{ group }}-cell{{ item }}"><span class="sr-only">étiquette</span></label>
           </div>
         </div>
         <div class="management-item-symbol management-item-spacing">
@@ -609,8 +609,8 @@ Note the use of `no-gutters` class to stick the columns together.
         </div>
         <div class="management-item-action">
           <div class="btn-group-toggle" data-toggle="buttons">
-            <label for="inputFavListgroup{{ forloop.index }}" class="btn btn-only-icon btn-favorite active d-none d-lg-block">
-              <input id="inputFavListgroup{{ forloop.index }}" type="checkbox" autocomplete="off">
+            <label for="inputFavListgroup{{ item }}" class="btn btn-only-icon btn-favorite active d-none d-lg-block">
+              <input id="inputFavListgroup{{ item }}" type="checkbox" autocomplete="off">
               <span class="sr-only">Ajouter aux favoris</span>
               <i class="icons-bookmark icons-size-1x25" aria-hidden="true"></i>
             </label>

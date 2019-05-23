@@ -21,6 +21,14 @@ Our charts are based upon [ChartJS library](http://www.chartjs.org/docs/latest/)
 Please note that **you don't** have to load `chart.js` since it's already included in bootstrap's `bootstrap-sncf.min.js`.
 {% endcallout %}
 
+{% callout warning %}
+### Using darkmode ?
+Global colors will be adjusted but not gridcolor. This one is a parameter `data-gridcolor="rgb(215,215,215,1)"` you should change when changing from classic mode to [darkmode]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/darkmode/). \\
+Corrects values are gray levels from [colors]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/colors/), for example :
+- `rgb(215,215,215,1)` for classic, original mode
+- `rgb(51,51,51,1)` for darkmode
+{% endcallout %}
+
 ## Radar charts
 
 Radar charts show the values of different variables.
@@ -30,7 +38,7 @@ Radar charts show the values of different variables.
     data-component="radar-chart"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"]'
     data-values='[[580, 400, 500, 600, 700, 800]]'
-    data-gridcolor="rgb(51,51,51,1)">
+    data-gridcolor="rgb(215,215,215,1)">
     <canvas>Graphique A</canvas>
     <a href="#">Description détaillée du graphique A</a>
 </div>
@@ -76,7 +84,7 @@ ee measurements per bar. In proportional bar graphs, all bars are the same size 
     data-component="bar-chart"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août"]'
     data-values="[[400, 500, 250, 300, 700, 600, 100, 200]]"
-    data-gridcolor="rgb(51,51,51,1)">
+    data-gridcolor="rgb(215,215,215,1)">
     <div class="chart-head mb-4">
         <h2 class="font-weight-normal mb-0">Titre de la courbe</h2>
         <ul class="chart-caption">
@@ -92,7 +100,8 @@ ee measurements per bar. In proportional bar graphs, all bars are the same size 
 <div class="position-relative"
     data-component="bar-chart"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août"]'
-    data-values="[[400, 500, 250, 300, 700, 600, 100, 200],[400, 300, 550, 500, 100, 200, 700, 600]]">
+    data-values="[[400, 500, 250, 300, 700, 600, 100, 200],[400, 300, 550, 500, 100, 200, 700, 600]]"
+    data-gridcolor="rgb(215,215,215,1)">
     <canvas>Graphique E</canvas>
     <a href="#">Description détaillée du graphique E</a>
 </div>
@@ -113,7 +122,7 @@ Options:
     data-component="line-chart"
     data-labels='["Janvier", "Février", "Mars"]'
     data-values="[[280, 400, 550]]"
-    data-gridcolor="rgb(255,200,0,1)">
+    data-gridcolor="rgb(215,215,215,1)">
     <div class="chart-head mb-4">
         <h2 class="font-weight-normal mb-0">Titre de la courbe</h2>
         <ul class="chart-caption">
@@ -130,7 +139,8 @@ Options:
 <div class="charts position-relative"
     data-component="line-chart"
     data-labels='["Janvier", "Février", "Mars"]'
-    data-values="[[280, 400, 550],[200, 380, 430]]">
+    data-values="[[280, 400, 550],[200, 380, 430]]"
+    data-gridcolor="rgb(215,215,215,1)">
     <div class="chart-head mb-4">
         <h2 class="font-weight-normal mb-0">Titre de la courbe</h2>
         <ul class="chart-caption">
@@ -150,7 +160,8 @@ Options:
     data-straightlines="true"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août"]'
     data-values="[[500, 380, 460, 520, 650, 700, 380, 400],[580, 400, 500, 600, 700, 800, 480, 400]]"
-    data-styles='["unfilled", "dashed"]'>
+    data-styles='["unfilled", "dashed"]'
+    data-gridcolor="rgb(215,215,215,1)">
     <div class="chart-head mb-4">
         <h2 class="font-weight-normal mb-0">Titre de la courbe</h2>
         <ul class="chart-caption">
@@ -171,7 +182,8 @@ Warning : don't forget to update the legend with your own color
     data-component="line-chart"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août"]'
     data-values="[[580, 400, 500, 600, 700, 800, 480, 400],[500, 380, 460, 520, 650, 700, 380, 300]]"
-    data-colors='["rgb(203, 2, 11)", "rgb(199, 87, 147)"]'>
+    data-colors='["rgb(203, 2, 11)", "rgb(199, 87, 147)"]'
+    data-gridcolor="rgb(215,215,215,1)">
     <canvas>Graphique I</canvas>
     <a href="#">Description détaillée du graphique I</a>
 </div>
@@ -188,7 +200,8 @@ Use data-fill="true"
     data-component="line-chart"
     data-fill="true"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]'
-    data-values="[[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280]]">
+    data-values="[[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280]]"
+    data-gridcolor="rgb(215,215,215,1)">
     <canvas> Graphique J</canvas>
     <a href="#">Description détaillée du graphique J</a>
 </div>
@@ -203,7 +216,8 @@ Use data-straightlines="true"
     data-straightlines="true"
     data-fill="true"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]'
-    data-values="[[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280]]">
+    data-values="[[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280]]"
+    data-gridcolor="rgb(215,215,215,1)">
     <canvas>Graphique K</canvas>
     <a href="#">Description détaillée du graphique K</a>
 </div>
@@ -216,7 +230,8 @@ Use data-straightlines="true"
     data-fill="true"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]'
     data-values="[[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280],[580, 400, 500, 600, 700, 800, 480, 400, 520, 580, 500, 480]]"
-    data-colors='["rgb(203, 2, 11)", "rgb(199, 87, 147)"]'>
+    data-colors='["rgb(203, 2, 11)", "rgb(199, 87, 147)"]'
+    data-gridcolor="rgb(215,215,215,1)">
     <canvas>Graphique L</canvas>
     <a href="#">Description détaillée du graphique L</a>
 </div>
@@ -229,7 +244,8 @@ Use data-straightlines="true"
     data-fill="true"
     data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]'
     data-values="[[500, 380, 460, 520, 650, 700, 380, 300, 480, 460, 400, 280],[580, 400, 500, 600, 700, 800, 480, 400, 520, 580, 500, 480]]"
-    data-line-colors = '["rgb(7, 138, 206)", "rgb(67, 167, 219)"]'>
+    data-line-colors = '["rgb(7, 138, 206)", "rgb(67, 167, 219)"]'
+    data-gridcolor="rgb(215,215,215,1)">
     <canvas>Graphique M</canvas>
     <a href="#">Description détaillée du graphique M</a>
 </div>

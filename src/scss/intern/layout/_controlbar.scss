@@ -11,7 +11,7 @@ $controlbar-height:   rem(40px);
   align-items: center;
   width: 100%;
   height: $controlbar-height;
-  background-color: gray("100");
+  background-color: $controlbar-bg;
 }
 
 @include media-breakpoint-down(sm) {

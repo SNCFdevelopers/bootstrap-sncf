@@ -18,7 +18,7 @@
   flex: 0 1 auto;
   width: 100%;
   overflow-y: auto;
-  background-color: color("white");
+  background-color: $mobile-menu-bg;
 }
 
 .mobile-menu-content {
@@ -29,7 +29,7 @@
   position: absolute;
   top: rem(20px);
   right: rem(20px);
-  color: color("dark");
+  color: $mobile-menu-close-color;
   background: transparent;
   border: none;
 

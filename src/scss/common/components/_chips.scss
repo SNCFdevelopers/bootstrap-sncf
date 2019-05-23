@@ -38,7 +38,7 @@
 .chips {
   display: inline-block;
   font-weight: $btn-font-weight;
-  color: color("white");
+  color: $chips-color;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -60,6 +60,7 @@
 .chips-btn {
   @include hover-focus {
     text-decoration: none;
+    cursor: pointer;
     background-color: theme-color("primary-dark");
   }
 
@@ -84,6 +85,7 @@
   padding-right: 5px;
   padding-bottom: rem(5px);
   padding-left: rem(18px);
+  color: $chips-input-color;
   background-color: transparent;
   border: none;
 

@@ -1,6 +1,6 @@
 <div class="row no-gutters ">
   <div class="col col-md-7 col-lg-4">
-    <div class="d-flex align-items-center justify-content-between bg-light pl-4 pr-1">
+    <div class="list-group-double-panel-title d-flex align-items-center justify-content-between pl-4 pr-1">
       <div>Lorem ipsum</div>
       <ul class="toolbar mb-0">
         <li class="toolbar-item">
@@ -20,21 +20,26 @@
     <ul class="list-group">
       {% for i in (1..20) %}
       <li class="list-group-item management-item">
-        <div class="management-item-symbol">
-          <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
-        </div>
         <div class="management-item-content">
-          <h2 class="mb-0">Titre lorem ipsum dolor sit amet</h2>
-          <div><span class="font-weight-medium">Mise à jour</span> le 4 avril 2017</div>
-          <div><span class="font-weight-medium">Site :</span> Lorem ipsum</div>
-          <div><span class="font-weight-medium">Agent :</span> William Lemire</div>
+          <div class="management-item-symbol">
+            <i class="icons-document icons-size-1x25" aria-hidden="true"></i>
+          </div>
+          <div class="management-item-main">
+            <h5>Titre lorem ipsum dolor sit amet</h5>
+            <ul class="meta-list font-weight-medium">
+              <li class="meta-list-item">Mise à jour le 5 mai 2017</li>
+              <li class="meta-list-item separator">Site : Lorem ipsum</li>
+              <li class="meta-list-item separator separator separator-sm-none separator-md-none">Agent : Marcel Patoulatchi</li>
+            </ul>
+            <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
+          </div>
         </div>
       </li>
       {% endfor %}
     </ul>
   </div>
   <div class="col col-md-5 col-lg-8">
-    <div class="d-flex align-items-center justify-content-between bg-light pl-4 pr-2">
+    <div class="list-group-double-panel-title d-flex align-items-center justify-content-between pl-4 pr-2">
       <div>Lorem ipsum</div>
       <ul class="toolbar mb-0">
         <li class="toolbar-item">

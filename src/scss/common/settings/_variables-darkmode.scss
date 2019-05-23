@@ -71,7 +71,7 @@ $secondary:     $gray-100;
 $success:       $green;
 $info:          $cyan;
 $warning:       $yellow;
-$danger:        $red;
+$danger:        $orange;
 $light:         $gray-100;
 $dark:          $gray-800;
 
@@ -110,9 +110,9 @@ $btn-colors: map-merge((
   "light":      $light,
   "dark":       $dark,
   "white":      (
-    color("white"), color("white"), theme-color("primary"),
-    color("white"), color("white"), #0074af,
-    color("white"), color("white"), #0074af
+    $carbon, $carbon, $primary,
+    $carbon, $carbon, $primary-dark,
+    $carbon, $carbon, $primary-dark
   ),
   "transparent": (
     transparent, transparent, color("white"),
@@ -123,6 +123,10 @@ $btn-colors: map-merge((
 
 $btn-color-gray: $gray-200;
 
+$btn-disabled-color:        $gray-300;
+$btn-disabled-bg:           $carbon;
+$btn-disabled-border-color: $carbon;
+
 $btn-rounded-colors: ();
 $btn-rounded-colors: map-merge((
   "primary":    (
@@ -130,8 +134,8 @@ $btn-rounded-colors: map-merge((
     #0074af, #0074af, color("white")
   ),
   "white": (
-    color("white"), color("white"), theme-color("primary"),
-    theme-color("primary"), theme-color("primary"), color("white")
+    $carbon, $carbon, $primary,
+    $primary, $primary, $black
   ),
   "gray": (
     gray("300"), gray("300"), color("white"),
@@ -410,6 +414,9 @@ $mark-bg:                     #fcf8e3;
 
 $hr-margin-y:                 $spacer;
 
+// ControlBar
+//
+$controlbar-bg:               $carbon;
 
 // Tables
 //
@@ -438,6 +445,17 @@ $table-dark-color:            $body-bg;
 $table-striped-order:         odd;
 
 $table-caption-color:         $text-muted;
+
+$table-scroll-max-to-right:   linear-gradient(to right, #fff 2%, rgba(255, 255, 255, 0) 98%);
+$table-scroll-max-to-left:    linear-gradient(to left, #fff 2%, rgba(255, 255, 255, 0) 98%);
+
+// Table Filters
+
+$table-filters-color:             $body-color;
+$table-filters-title-color:       $gray-200;
+$table-filters-item-color:        $gray-100;
+$table-filters-group-title-color: $gray-200;
+$table-filters-bg:                $carbon;
 
 // Buttons + Forms
 //
@@ -513,6 +531,8 @@ $btn-card-active-color:       $black;
 
 // Forms
 
+$textarea-form-control-color:           $body-color;
+
 $input-padding-y:                       .65625rem; // 10.5px
 $input-padding-x:                       1.25rem;
 $input-line-height:                     $input-btn-line-height;
@@ -578,9 +598,19 @@ $form-toolbar-color:                    $body-color;
 
 $form-control-white:                    $black; // Only useful for darkmode
 
+$form-error-color:                      $black;
+
 $input-group-addon-color:               $input-color;
 $input-group-addon-bg:                  $gray-200;
 $input-group-addon-border-color:        $input-border-color;
+
+//
+// Chips
+//
+
+$chips-color:                           $black;
+$chips-input-color:                     $body-color;
+
 
 $custom-control-gutter:                 1.5rem;
 $custom-control-spacer-x:               1rem;
@@ -592,6 +622,7 @@ $custom-control-indicator-box-shadow:   inset 0 .25rem .25rem rgba($black, .1);
 
 $custom-control-indicator-disabled-bg:    $gray-200;
 $custom-control-label-disabled-color:     $gray-600;
+$custom-control-label-color:              $gray-200;
 
 $custom-control-indicator-checked-color:        $component-active-color;
 $custom-control-indicator-checked-bg:           $component-active-bg;
@@ -1039,7 +1070,7 @@ $list-group-item-padding-x:         1.25rem;
 
 $list-group-hover-bg:               $gray-500;
 $list-group-active-color:           $body-color;
-$list-group-active-bg:              $carbon;
+$list-group-active-bg:              $black;
 $list-group-active-border-color:    $border-color;
 
 $list-group-disabled-color:         $gray-200;
@@ -1086,6 +1117,11 @@ $breadcrumb-active-divider:         str-replace(url("data:image/svg+xml;charset=
 $breadcrumb-current-divider:        str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%333333' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
 $breadcrumb-divider:                str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%23b9b9b9' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
 
+//
+// Mobile menu
+//
+$mobile-menu-bg:                    $carbon;
+$mobile-menu-close-color:           $white;
 
 // Carousel
 

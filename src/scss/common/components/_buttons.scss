@@ -187,9 +187,10 @@ input[type="button"] {
 
   &.btn-white.disabled,
   &.btn-white:disabled {
-    color: gray("300");
-    background-color: color("white");
-    border-color: color("white");
+    color: $btn-disabled-color;
+    cursor: not-allowed;
+    background-color: $btn-disabled-bg;
+    border-color: $btn-disabled-border-color;
   }
 
   &.btn-sm {
@@ -224,9 +225,10 @@ input[type="button"] {
 
   &.disabled,
   &:disabled {
-    color: gray("300");
-    background-color: gray("100");
-    border-color: gray("100");
+    color: $btn-disabled-color;
+    cursor: not-allowed;
+    background-color: $btn-disabled-bg;
+    border-color: $btn-disabled-border-color;
   }
 
   &:not(:disabled):not(.disabled).box-shadow {
