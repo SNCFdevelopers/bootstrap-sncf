@@ -1,0 +1,17 @@
+<script>
+
+  initDarkmode()
+
+  function initDarkmode() {
+    const mode = localStorage.getItem('bootstrap-sncf-css-name')
+    if (mode === 'dark') {
+      document.write('<link rel="stylesheet" type="text/css" title="Mode sombre" name="dark" href="/bootstrap-sncf.darkmode.min.css" id="activecss">')
+      document.write('<link rel="stylesheet alternate" type="text/css" title="Style classique" name="light" href="/bootstrap-sncf.min.css" id="inactivecss">')
+    }
+    else {
+      document.write('<link rel="stylesheet" type="text/css" title="Style classique" name="light" href="/bootstrap-sncf.min.css" id="activecss">')
+      document.write('<link rel="stylesheet alternate" type="text/css" title="Mode sombre" name="dark" href="/bootstrap-sncf.darkmode.min.css" id="inactivecss">')
+    }
+  }
+
+</script>

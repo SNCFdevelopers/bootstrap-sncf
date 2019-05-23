@@ -356,7 +356,7 @@ input[type="button"] {
 }
 
 .btn-color-footer {
-  color: $btn-color-gray;
+  color: $carbon;
   background-color: color("white");
   &:not(:disabled):not(.disabled) {
     @include hover-focus-active { background-color: #b9b9b9; }

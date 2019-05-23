@@ -17,7 +17,18 @@ toc: true
 
 ## v4.0.0
 
-### Revision 5 _date_
+### Revision 5 _24/05/2019_
+
+General
+- Added [Darkmode](/docs/4.0/layout/darkmode)
+
+Documentation
+- Communication's Footer is in layout tab
+
+**Migration guide**
+Some of markup has to be changed, please follow thoses simples indications (we've essentially changed `bg-light` or `text-white` for some components to ensure that color will change with each of CSS files, so you won't have to change your HTML markup when going between light or dark modes)
+- first step
+- second step
 
 ### Revision 4 _09/05/2019_
 

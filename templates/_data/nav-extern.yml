@@ -8,9 +8,11 @@
 - title: Layout
   pages:
     - title: Grid
+    - title: Darkmode
     - title: Utilities for layout
     - title: Navbar
     - title: Navs
+    - title: Footer
 
 - title: Content
   pages:
@@ -29,7 +31,6 @@
     - title: Carousel
     - title: Checkboxes and radios
     - title: Edito
-    - title: Footer
     - title: Forms
     - title: Icons
     - title: Input group
