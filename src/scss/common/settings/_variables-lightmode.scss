@@ -1144,6 +1144,12 @@ $carousel-transition:               transform .6s ease;
 
 $carousel-bg:                       $gray-100;
 
+// Swiper for carousel
+$swiper-btn-color:                  $primary;
+$swiper-btn-bg:                     $white;
+$swiper-btn-disabled-color:         $white;
+$swiper-btn-disabled-bg:            $primary-dark;
+
 // Close
 
 $close-font-size:                   $font-size-base * 1.2;
