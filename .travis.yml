@@ -32,6 +32,7 @@ cache:
     - vendor/bundle
 script:
   - mkdir documentation
+  - cp scripts/dirtytempfix-index.js node_modules/mini-css-extract-plugin/dist/index.js # Dirty fix waiting for lib update
 
   # Intern / metier
   - npm run build-intern
