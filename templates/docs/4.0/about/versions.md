@@ -19,7 +19,7 @@ toc: true
 
 ### Revision 5 _24/05/2019_
 General
-- Added [Dark mode](/docs/4.0/layout/darkmode)
+- Added [Dark mode]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/dark-mode/)
 
 Documentation
 - Communication's Footer is in layout tab
