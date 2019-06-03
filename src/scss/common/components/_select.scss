@@ -52,6 +52,7 @@ $select-scrollable-max-height: rem(360px);
   // stylelint-disable selector-max-class, no-duplicate-selectors
   .select-control > .input-group & {
     position: relative;
+    cursor: pointer;
     border: 1px solid $select-improved-border-color;
     transition: none;
   }
@@ -136,6 +137,7 @@ $select-scrollable-max-height: rem(360px);
     font-weight: $font-weight-medium;
     color: currentColor;
     text-align: left;
+    cursor: pointer;
     background: none;
     border: 0;
 

@@ -87,7 +87,7 @@ SNCF's logo should be used by default for all "métier" applications, especially
 
 You could use SNCF's logos with "métier" signature. In this case, please use monochromatic logo versions for accessibility reasons. Indeed, "métier" signature is violet colored and will not be visible on carbon background.
 
-For reference, you can consult all the rules about logos [on this site](https://www.sncf.com/fr/groupe/marques/sncf/logo-sncf), and [here](https://www.sncf.com/fr/groupe/marques/sncf/signatures-metiers) for "métier" signatures.
+For reference, you can consult all the rules about using logos [on this page](https://www.sncf.com/fr/groupe/marques/sncf/logo-sncf), and [here](https://www.sncf.com/fr/groupe/marques/sncf/signatures-metiers) for "métier" signatures.
 
 We've added "métier" signatures logos to perfectly fit into `mastheader` navbar :
 

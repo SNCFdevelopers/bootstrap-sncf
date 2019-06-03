@@ -213,8 +213,8 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
     <ol class="breadcrumb mt-2 mb-0">
       <li class="breadcrumb-item"><a href="#">Step 1</a></li>
       <li class="breadcrumb-item active" aria-current="step">Step 2</li>
-      <li class="breadcrumb-item"><a href="#">Step 3</a></li>
-      <li class="breadcrumb-item"><a href="#">Step 4</a></li>
+      <li class="breadcrumb-item disabled"><a href="#">Step 3</a></li>
+      <li class="breadcrumb-item disabled"><a href="#">Step 4</a></li>
     </ol>
   </nav>
 </div>
