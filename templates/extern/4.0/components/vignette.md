@@ -12,9 +12,9 @@ Content editors can choose from the following options: illustrations, packshots 
 <div class="bd-example">
 <div class="row">
 <div class="col-sm-4">
-  <img alt=""  class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
+  <img alt=""  class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/333/fff" />
   <div>
-    <h3 class="text-gray500 mb-2">Toutes les applications</h3>
+    <h3 class="mb-2">Toutes les applications</h3>
     <p class="mb-3">Lorem ipsum doloret fabdesignus classicum bossum erae taglio navus.</p>
     <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
   </div>
@@ -26,7 +26,7 @@ Content editors can choose from the following options: illustrations, packshots 
 <div>
   <img alt=""  class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
   <div>
-    <h3 class="text-gray500 mb-2">Toutes les applications</h3>
+    <h3 class="mb-2">Toutes les applications</h3>
     <p class="mb-3">Lorem ipsum doloret fabdesignus classicum bossum erae taglio navus.</p>
     <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
   </div>
@@ -37,7 +37,7 @@ Content editors can choose from the following options: illustrations, packshots 
 <div class="bd-example bg-light">
 <div class="row">
   <div class="col-12 col-md-4">
-    <div class="p-5 bg-white d-flex flex-column">
+    <div class="p-5 vignette-bg d-flex flex-column">
       <h2 class="display-2">Meetup Open Transformation</h2>
       <p class="order-0 mb-1 text-sm text-uppercase">du 16 au 19 février 2017</p>
       <p class="mb-3"><i class="icons-localisation-pin"></i> Alsace</p>
@@ -50,7 +50,7 @@ Content editors can choose from the following options: illustrations, packshots 
 {% highlight html %}
 <div class="row">
   <div class="col-12 col-md-4">
-    <div class="p-5 bg-white d-flex flex-column">
+    <div class="p-5 vignette-bg d-flex flex-column">
       <h2 class="display-2">Meetup Open Transformation</h2>
       <p class="order-0 mb-1 text-sm text-uppercase">du 16 au 19 février 2017</p>
       <p class="mb-3"><i class="icons-localisation-pin"></i> Alsace</p>
@@ -88,7 +88,7 @@ Social media vignettes display social network news feeds and are used in threes 
 <div class="bd-example bg-light">
 <div class="row">
   <div class="col-12 col-md-4">
-    <div class="p-5 bg-white">
+    <div class="p-5 vignette-bg">
       <h3 class="text-sm text-uppercase text-primary font-weight-medium">La transformation digitale par SNCF</h3>
       <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit quam, mollis id porta eu, maximus eu diam. Vestibulum suscipit ligula neque, id finibus nibh egestas id.</p>
       <p class="mb-0"><i class="icons-twitter mr-2" aria-hidden="true"></i> 16/06/2018 à 11:37</p>
@@ -100,7 +100,7 @@ Social media vignettes display social network news feeds and are used in threes 
 {% highlight html %}
 <div class="row">
   <div class="col-12 col-md-4">
-    <div class="p-5 bg-white">
+    <div class="p-5 vignette-bg">
       <h3 class="text-sm text-uppercase text-primary font-weight-medium">La transformation digitale par SNCF</h3>
       <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit quam, mollis id porta eu, maximus eu diam. Vestibulum suscipit ligula neque, id finibus nibh egestas id.</p>
       <p class="mb-0"><i class="icons-twitter mr-2" aria-hidden="true"></i> 16/06/2018 à 11:37</p>

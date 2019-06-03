@@ -19,14 +19,14 @@ Using the most basic table markup, here's how `.table`-based tables look in SNCF
       <caption class="sr-only">Titre</caption>
       <thead class="thead thead-light">
         <tr>
-          <td>
+          <th>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
                 <input type="checkbox" class="custom-control-input" id="examples-thead">
                 <label class="custom-control-label" for="examples-thead"><span class="sr-only">Tout sélectionner</span></label>
               </div>
             </div>
-          </td>
+          </th>
           <th scope="col"><div class="cell-inner">Nom</div></th>
           <th scope="col"><div class="cell-inner">Type</div></th>
           <th scope="col"><div class="cell-inner">Vers</div></th>
@@ -93,14 +93,14 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
       <caption class="sr-only">Titre</caption>
       <thead class="thead thead-light">
         <tr>
-          <td>
+          <th>
             <div class="cell-inner">
               <div class="custom-control custom-checkbox custom-checkbox-alone">
                 <input type="checkbox" class="custom-control-input" id="fixedlastrow-thead">
                 <label class="custom-control-label" for="fixedlastrow-thead"><span class="sr-only">Tout sélectionner</span></label>
               </div>
             </div>
-          </td>
+          </th>
           <th scope="col"><div class="cell-inner">Nom</div></th>
           <th scope="col"><div class="cell-inner">Type</div></th>
           <th scope="col"><div class="cell-inner">Vers</div></th>

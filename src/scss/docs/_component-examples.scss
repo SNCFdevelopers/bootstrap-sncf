@@ -118,7 +118,7 @@
   position: relative;
   padding: 1rem;
   margin: 1rem (-$grid-gutter-width / 2) 0;
-  border: solid #f7f7f9;
+  border: solid $doc-bd-border-color;
   border-width: .2rem 0 0;
   @include clearfix();
 
@@ -292,7 +292,7 @@
 }
 
 .bd-example-modal {
-  background-color: #b2b2b2;
+  background-color: $bd-example-modal-bg;
 
   .modal {
     position: relative;
@@ -380,7 +380,7 @@
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: #f7f7f9;
+  background-color: $doc-highlight-bg;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 
   @include media-breakpoint-up(sm) {
@@ -408,7 +408,7 @@
   }
   pre code {
     font-size: inherit;
-    color: $gray-900; // Effectively the base text color
+    color: $doc-highlight-color; // Effectively the base text color
   }
 }
 

@@ -5,7 +5,7 @@
 #chartjs-tooltip {
   padding: rem(18px);
   pointer-events: none;
-  background-color: gray("100");
+  background-color: $charts-tooltip-bg;
   border-radius: rem(3px);
 
   th {
@@ -15,7 +15,7 @@
 
 .chartjs-tooltip-title {
   padding-bottom: rem(2px);
-  color: gray("600");
+  color: $charts-tooltip-title-color;
 }
 
 .chartjs-tooltip-line-indicator {

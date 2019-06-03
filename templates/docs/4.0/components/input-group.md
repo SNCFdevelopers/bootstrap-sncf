@@ -60,7 +60,7 @@ Menu buttons (select radio add-ons) are used to define a search type.
 <div class="input-group">
   <div class="form-control-container" data-component="control" data-clear-option="true">
     <label for="entertext21" class="sr-only">Saisir les termes à rechercher</label>
-    <input id="entertext21" class="form-control clear-option " id="readonly2" placeholder="Search..." value="This text can be erased" data-role="input">
+    <input id="entertext21" class="form-control clear-option" id="readonly2" placeholder="Search..." value="This text can be erased" data-role="input">
     <span class="form-control-state"></span>
     <button type="button" class="btn-clear btn-primary d-none" data-btn="clear">
       <span class="sr-only">Clear text</span>
@@ -98,7 +98,7 @@ Menu buttons (select radio add-ons) are used to define a search type.
     </div>
   </div>
   <div class="form-control-container">
-    <input id="entertext3" type="text" class="form-control text-right" placeholder="Recherche avancée">
+    <input id="entertext3" type="text" class="form-control" placeholder="Recherche avancée">
     <span class="form-control-state"></span>
   </div>
   <div class="input-group-append">

@@ -23,17 +23,20 @@
 //
 // Happy Bootstrapping!
 
+// Begin light/Dark mode modifications
 // Load Bootstrap variables and mixins
-@import "~bootstrap/scss/functions";
-@import "common/settings/variables";
-@import "~bootstrap/scss/mixins";
+//@import "~bootstrap/scss/functions";
+//@import "common/settings/variables";
+//@import "~bootstrap/scss/mixins";
 
 // Load bootstrap components
-@import "~bootstrap/scss/nav";
-@import "~bootstrap/scss/navbar";
+//@import "~bootstrap/scss/nav";
+//@import "~bootstrap/scss/navbar";
 
 // Load docs components
-@import "docs/variables";
+//@import "docs/variables";
+// Ending light/Dark mode modifications
+
 @import "docs/nav";
 @import "docs/masthead";
 @import "docs/ads";

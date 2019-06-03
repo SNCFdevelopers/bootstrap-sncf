@@ -19,8 +19,11 @@ Looking to quickly add Bootstrap to your project? Just download and unzip SNCF's
 
 Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
 
+Alternate CSS is optional, use it if your project needs a [dark mode]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/darkmode/).
+
 {% highlight html %}
-<link rel="stylesheet" href="dist/bootstrap-sncf.min.css">
+<link rel="stylesheet" href="/bootstrap-sncf.min.css">
+<link rel="stylesheet alternate" href="/bootstrap-sncf.darkmode.min.css">
 {% endhighlight %}
 
 ### JS
@@ -32,7 +35,7 @@ For commodity reasons, we have integrated jQuery and popper inside `bootstrap-sn
 {% endcallout %}
 
 {% highlight html %}
-<script src="dist/bootstrap-sncf.min.js"></script>
+<script src="/bootstrap-sncf.min.js"></script>
 {% endhighlight %}
 
 Curious which components explicitly require jQuery, our JS, and Popper.js? Click the show components link below. If you're at all unsure about the general page structure, keep reading for an example page template.

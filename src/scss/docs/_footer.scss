@@ -4,12 +4,13 @@
 
 .bd-footer {
   font-size: 85%;
+  color: $doc-footer-color;
   text-align: center;
-  background-color: #f7f7f7;
+  background-color: $doc-footer-bg;
 
   a {
     font-weight: 500;
-    color: $gray-700;
+    color: $doc-footer-color;
 
     &:hover,
     &:focus {

@@ -187,9 +187,10 @@ input[type="button"] {
 
   &.btn-white.disabled,
   &.btn-white:disabled {
-    color: gray("300");
-    background-color: color("white");
-    border-color: color("white");
+    color: $btn-disabled-color;
+    cursor: not-allowed;
+    background-color: $btn-disabled-bg;
+    border-color: $btn-disabled-border-color;
   }
 
   &.btn-sm {
@@ -224,9 +225,10 @@ input[type="button"] {
 
   &.disabled,
   &:disabled {
-    color: gray("300");
-    background-color: gray("100");
-    border-color: gray("100");
+    color: $btn-disabled-color;
+    cursor: not-allowed;
+    background-color: $btn-disabled-bg;
+    border-color: $btn-disabled-border-color;
   }
 
   &:not(:disabled):not(.disabled).box-shadow {
@@ -264,6 +266,7 @@ input[type="button"] {
 .btn-options {
   min-width: rem(55px);
   padding: 0;
+  color: $body-color;
   background-color: transparent;
 
   &[aria-expanded="true"],
@@ -328,6 +331,7 @@ input[type="button"] {
   min-width: rem(145px);
   min-height: rem(145px);
   font-weight: $font-weight-normal;
+  border-color: $btn-card-bg;
 
   span {
     display: block;
@@ -335,9 +339,9 @@ input[type="button"] {
   }
 
   @include button-variant(
-    color("white"), gray("400"), gray("400"),
-    theme-color("primary-dark"), theme-color("primary-dark"), color("white"),
-    theme-color("primary"), theme-color("primary"), color("white")
+    $btn-card-bg, $btn-card-border, $btn-card-color,
+    theme-color("primary-dark"), theme-color("primary-dark"), $btn-card-active-color,
+    $btn-card-active-bg, $btn-card-active-border, $btn-card-active-color
   );
 }
 
@@ -347,14 +351,14 @@ input[type="button"] {
 //
 
 .btn-color-gray {
-  color: gray("600");
+  color: $btn-color-gray;
   &:not(:disabled):not(.disabled) {
     @include hover-focus-active { color: theme-color("primary"); }
   }
 }
 
 .btn-color-footer {
-  color: gray("600");
+  color: $carbon;
   background-color: color("white");
   &:not(:disabled):not(.disabled) {
     @include hover-focus-active { background-color: #b9b9b9; }

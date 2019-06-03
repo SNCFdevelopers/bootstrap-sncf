@@ -6,7 +6,8 @@
   padding: 1.25rem;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  border: 1px solid #eee;
+  background-color: $doc-callout-bg;
+  border: 1px solid $doc-callout-border-color;
   border-left-width: .25rem;
   border-radius: .25rem;
 }

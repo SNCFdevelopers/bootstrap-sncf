@@ -5,6 +5,8 @@ export const month = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Ju
 
 export const DEFAULT_COLOR = 'rgb(203, 2, 11)'
 
+export const DEFAULT_GRIDCOLOR = 'rgb(215, 215, 215)'
+
 export const DEFAULT_COLORS = [
   'rgb(29, 136, 202)',
   'rgb(45, 160, 217)',

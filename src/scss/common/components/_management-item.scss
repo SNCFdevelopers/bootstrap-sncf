@@ -13,7 +13,7 @@
   padding-left: rem(8px);
 
   &:hover {
-    background-color: gray("100");
+    background-color: $list-group-hover-bg;
   }
 
   .custom-control {

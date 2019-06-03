@@ -24,7 +24,13 @@
 <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
 {% endif %}
 
-<link href="{{ site.baseurl }}/bootstrap-sncf.min.css" rel="stylesheet">
+<!-- Manual include of css / disabled, using JS instead for darkmode switching
+  <link rel="stylesheet" type="text/css" title="Mode sombre" name="dark" href="/bootstrap-sncf.darkmode.min.css" id="activecss">
+  <link rel="stylesheet alternate" type="text/css" title="Style classique" name="light" href="/bootstrap-sncf.min.css" id="inactivecss">
+-->
 
+<!-- Include css using JS for darkmode switching -->
+{% include darkmode-js-header.html %}
+
+<!-- Favicons -->
 {% include favicons.html %}
-

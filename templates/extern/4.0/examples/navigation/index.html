@@ -11,7 +11,7 @@ permalink: /docs/4.0/examples/navigation/
 
     <title>Navigation template</title>
 
-    <link href="{{ site.baseurl }}/bootstrap-sncf.min.css" rel="stylesheet">
+    {% include darkmode-js-header.html %}
   </head>
   <body>
     <a id="skippy" class="sr-only sr-only-focusable" href="#content">
@@ -276,7 +276,7 @@ permalink: /docs/4.0/examples/navigation/
                 </div>
                 <div class="panel-content">
                   <div class="panel-lead">
-                    <h3 class="mb-4 text-white">{{ item.name }}</h3>
+                    <h3 class="mb-4">{{ item.name }}</h3>
                     <p>{{ item.description }}</p>
                   </div>
                   <div class="subnav">
@@ -327,7 +327,7 @@ permalink: /docs/4.0/examples/navigation/
     </div>
 
     <main role="main" class="mastcontainer">
-      <div class="mastcontent bg-white">
+      <div class="mastcontent">
         <article class="container">
           <h1 class="display-1 gt-7">Toutes les offres & produits SNCF</h1>
           <nav aria-label="Vous êtes : ">
@@ -465,7 +465,7 @@ permalink: /docs/4.0/examples/navigation/
                       <button type="button" class="btn-rounded btn-color-footer"><i class="icons-facebook" aria-hidden="true"></i></button>
                     </div>
                     <div>
-                      <button type="button" class="btn-rounded btn-color-footer"><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
+                      <button type="button" class="btn-rounded btn-color-footer"><i class="icons-linkedin" aria-hidden="true"></i></button>
                     </div>
                   </div>
                 </div>

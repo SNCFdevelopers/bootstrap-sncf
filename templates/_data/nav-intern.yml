@@ -11,6 +11,7 @@
   pages:
     - title: Overview
     - title: Grid
+    - title: Dark mode
     - title: Utilities for layout
     - title: Navbars
     - title: Navs

@@ -21,25 +21,25 @@ Below is an example of a basic card with mixed content and a fixed width. Cards 
 <div class="row">
   <div class="col-md-4">
     <a href="#" class="card overflow-hidden">
-      <img class="card-img-top" alt="" src="https://placebeard.it/267/128" />
+      <img class="card-img-top" alt="" src="https://placekitten.com/267/128" />
       <div class="card-body text-center">
-        <h5 class="card-title mb-0 text-base text-gray500 font-weight-normal">Titre lorem ipsum dolor sit amet</h5>
+        <h5 class="card-title mb-0 text-base font-weight-normal">Titre lorem ipsum dolor sit amet</h5>
       </div>
     </a>
   </div>
   <div class="col-md-4">
     <a href="#" class="card overflow-hidden">
-      <img class="card-img-top" alt="" src="http://placebeard.it/267/128" />
+      <img class="card-img-top" alt="" src="http://placekitten.com/267/128" />
       <div class="card-body text-center">
-        <h5 class="card-title mb-0 text-base text-gray500 font-weight-normal">Titre lorem ipsum dolor sit amet</h5>
+        <h5 class="card-title mb-0 text-base font-weight-normal">Titre lorem ipsum dolor sit amet</h5>
       </div>
     </a>
   </div>
   <div class="col-md-4">
     <a href="#" class="card overflow-hidden">
-      <img class="card-img-top" alt="" src="http://placebeard.it/267/128" />
+      <img class="card-img-top" alt="" src="http://placekitten.com/267/128" />
       <div class="card-body text-center">
-        <h5 class="card-title mb-0 text-base text-gray500 font-weight-normal">Titre lorem ipsum dolor sit amet</h5>
+        <h5 class="card-title mb-0 text-base font-weight-normal">Titre lorem ipsum dolor sit amet</h5>
       </div>
     </a>
   </div>

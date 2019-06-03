@@ -20,7 +20,7 @@ Content editors can choose from the following options: illustrations, packshots 
     <div class="swiper-wrapper">
       {% for i in (1..5) %}
       <div class="swiper-slide">
-        <div class="row bg-light">
+        <div class="row bg-carousel">
           <div class="col-12 col-md-6">
             <img alt="" class="w-100" src="https://dummyimage.com/640x383/000/fff" />
           </div>
@@ -61,7 +61,7 @@ Content editors can choose from the following options: illustrations, packshots 
 Carousel footer pushes on text pages offer additional content of interest to users based on the page they are currently browsing. They make navigating a website easier. Content editors can choose from the following options: illustrations, packshots and photo essays.
 
 {% example html %}
-<div class="bg-light">
+<div class="bg-carousel">
   <div class="container gt-8 gb-5">
     <h2 class="h1 mb-5">À découvrir également</h2>
     <div class="swiper multi-slideshow" data-component="multi-slideshow">

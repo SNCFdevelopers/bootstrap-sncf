@@ -38,7 +38,7 @@ permalink: /docs/4.0/layout/navs/
 
 ### Colored tabs
 
-Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
+Just add `bg-colorname` to `<div class="actionbar">` to use colored tabs
 
 <div class="bd-example">
 <div class="actionbar dark bg-teal has-tabs">
@@ -119,7 +119,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           </div>
           <div class="panel-content">
             <div class="panel-lead">
-              <h3 class="mb-4 text-white">Programme</h3>
+              <h3 class="mb-4">Programme</h3>
               <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
             <div class="subnav">
@@ -331,7 +331,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           </div>
           <div class="panel-content">
             <div class="panel-lead">
-              <h3 class="mb-4 text-white">Startup</h3>
+              <h3 class="mb-4">Startup</h3>
               <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
             <div class="subnav">
@@ -391,7 +391,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           </div>
           <div class="panel-content">
             <div class="panel-lead">
-              <h3 class="mb-4 text-white">Store</h3>
+              <h3 class="mb-4">Store</h3>
               <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
             <div class="subnav">
@@ -451,7 +451,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           </div>
           <div class="panel-content">
             <div class="panel-lead">
-              <h3 class="mb-4 text-white">Resources</h3>
+              <h3 class="mb-4">Resources</h3>
               <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
             <div class="subnav">
@@ -518,7 +518,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         </div>
         <div class="panel-content">
           <div class="panel-lead">
-            <h3 class="mb-4 text-white">Programme</h3>
+            <h3 class="mb-4">Programme</h3>
             <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
           </div>
           <div class="subnav">
@@ -730,7 +730,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         </div>
         <div class="panel-content">
           <div class="panel-lead">
-            <h3 class="mb-4 text-white">Startup</h3>
+            <h3 class="mb-4">Startup</h3>
             <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
           </div>
           <div class="subnav">
@@ -790,7 +790,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         </div>
         <div class="panel-content">
           <div class="panel-lead">
-            <h3 class="mb-4 text-white">Store</h3>
+            <h3 class="mb-4">Store</h3>
             <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
           </div>
           <div class="subnav">
@@ -850,7 +850,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         </div>
         <div class="panel-content">
           <div class="panel-lead">
-            <h3 class="mb-4 text-white">Resources</h3>
+            <h3 class="mb-4">Resources</h3>
             <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
           </div>
           <div class="subnav">
@@ -1065,7 +1065,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
             </div>
             <div class="panel-content">
               <div class="panel-lead">
-                <h3 class="mb-4 text-white">Programme</h3>
+                <h3 class="mb-4">Programme</h3>
                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               </div>
               <div class="subnav">
@@ -1277,7 +1277,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
             </div>
             <div class="panel-content">
               <div class="panel-lead">
-                <h3 class="mb-4 text-white">Startup</h3>
+                <h3 class="mb-4">Startup</h3>
                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               </div>
               <div class="subnav">
@@ -1337,7 +1337,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
             </div>
             <div class="panel-content">
               <div class="panel-lead">
-                <h3 class="mb-4 text-white">Store</h3>
+                <h3 class="mb-4">Store</h3>
                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               </div>
               <div class="subnav">
@@ -1397,7 +1397,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
             </div>
             <div class="panel-content">
               <div class="panel-lead">
-                <h3 class="mb-4 text-white">Resources</h3>
+                <h3 class="mb-4">Resources</h3>
                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               </div>
               <div class="subnav">
