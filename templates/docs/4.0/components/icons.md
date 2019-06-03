@@ -85,3 +85,17 @@ permalink: /docs/4.0/components/icons/
 <i class="icons-checked icons-size-140px" aria-hidden="true"></i>
 {% endexample %}
 
+## Rotation
+
+{% callout warning %}
+_Rotation_ should only be used when stricly unavoidable, for example, when you want to signal inverse sort order of a list in a table.
+Each use case has to be carefully weighted before using rotation.
+
+_Pro tip_ : in case of doubt, don't rotate it ! [Contact us](mailto:design.fab@sncf.fr) for any advice.
+{% endcallout %}
+
+{% example html %}
+<i class="icons-sort" aria-hidden="true"></i>
+<i class="icons-sort icons-rotate-180" aria-hidden="true"></i>
+{% endexample %}
+

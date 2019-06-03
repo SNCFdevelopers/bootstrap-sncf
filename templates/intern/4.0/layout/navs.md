@@ -20,19 +20,19 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Edit</span>
-          <i class="icons-pencil icon-size-1x25"></i>
+          <i class="icons-pencil icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">List</span>
-          <i class="icons-list icon-size-1x25"></i>
+          <i class="icons-list icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Search</span>
-          <i class="icons-search icon-size-1x25"></i>
+          <i class="icons-search icons-size-1x25"></i>
         </button>
       </li>
     </ul>
@@ -76,7 +76,7 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Edit</span>
-          <i class="icons-pencil icon-size-1x25"></i>
+          <i class="icons-pencil icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item toolbar-item-spacing">
@@ -97,19 +97,19 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">List</span>
-          <i class="icons-list icon-size-1x25"></i>
+          <i class="icons-list icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Search</span>
-          <i class="icons-search icon-size-1x25"></i>
+          <i class="icons-search icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Filters</span>
-          <i class="icons-filters icon-size-1x25"></i>
+          <i class="icons-filters icons-size-1x25"></i>
         </button>
       </li>
     </ul>
@@ -141,7 +141,7 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
 {% example html %}
 <div class="actionbar">
   <div class="actionbar-head">
-    <h1 class="mb-0"><a href="#"><i class="icons-arrow-prev icon-size-x75 mr-2"></i>Titre section</a></h1>
+    <h1 class="mb-0"><a href="#"><i class="icons-arrow-prev icons-size-x75 mr-2"></i>Titre section</a></h1>
   </div>
 </div>
 {% endexample %}
@@ -171,7 +171,7 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Edit</span>
-          <i class="icons-pencil icon-size-1x25"></i>
+          <i class="icons-pencil icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item toolbar-item-spacing">
@@ -192,19 +192,19 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">List</span>
-          <i class="icons-list icon-size-1x25"></i>
+          <i class="icons-list icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Search</span>
-          <i class="icons-search icon-size-1x25"></i>
+          <i class="icons-search icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
           <span class="sr-only">Filters</span>
-          <i class="icons-filters icon-size-1x25"></i>
+          <i class="icons-filters icons-size-1x25"></i>
         </button>
       </li>
     </ul>
@@ -245,7 +245,7 @@ For mobiles, an arrow to the left of the section returns the reader to the previ
         </div>
         <button type="button" class="btn btn-only-icon btn-white d-block d-md-none" data-role="close">
           <span class="sr-only">Close search</span>
-          <i class="icons-close icon-size-1x25"></i>
+          <i class="icons-close icons-size-1x25"></i>
         </button>
       </div>
     </div>
@@ -263,7 +263,7 @@ The contextual menu uses the dropdown component [described here]({{ site.baseurl
 <div class="btn-group dropdown">
   <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol-contextmenu">
     <span class="sr-only">Nom du menu</span>
-    <i class="pl-1 icons-options icon-size-1x75"></i>
+    <i class="pl-1 icons-options icons-size-1x75"></i>
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mycontrol-contextmenu">
     <ul>
@@ -280,9 +280,9 @@ The contextual menu uses the dropdown component [described here]({{ site.baseurl
 {% example html %}
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mycontrol-icons">
     <ul>
-      <li class="dropdown-item"><a href="#"><i class="icons-pencil mr-3 icon-size-x75"></i> Modifier la liste</a></li>
-      <li class="dropdown-item"><a href="#"><i class="icons-add mr-3 icon-size-x75"></i> Dupliquer la liste</a></li>
-      <li class="dropdown-item"><a href="#"><i class="icons-close mr-3 icon-size-x75"></i> Supprimer la liste</a></li>
+      <li class="dropdown-item"><a href="#"><i class="icons-pencil mr-3 icons-size-x75"></i> Modifier la liste</a></li>
+      <li class="dropdown-item"><a href="#"><i class="icons-add mr-3 icons-size-x75"></i> Dupliquer la liste</a></li>
+      <li class="dropdown-item"><a href="#"><i class="icons-close mr-3 icons-size-x75"></i> Supprimer la liste</a></li>
     </ul>
   </div>
 {% endexample %}

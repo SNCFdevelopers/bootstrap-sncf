@@ -20,7 +20,7 @@ In addition, as pages likely have more than one such navigation section, it's ad
   <ul class="pagination">
     <li class="page-item page-skip">
       <a class="page-link" href="#">
-        <i class="icons-arrow-double icon-rotate-180 icons-size-x5" aria-hidden="true"></i>
+        <i class="icons-arrow-double icons-rotate-180 icons-size-x5" aria-hidden="true"></i>
         <span class="d-none d-sm-inline ml-2">Début</span>
       </a>
     </li>
@@ -116,7 +116,7 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
   <ul class="pagination justify-content-center">
     <li class="page-item page-skip">
       <a class="page-link" href="#">
-        <i class="icons-arrow-double icon-rotate-180 icons-size-x5" aria-hidden="true"></i>
+        <i class="icons-arrow-double icons-rotate-180 icons-size-x5" aria-hidden="true"></i>
         <span class="d-none d-sm-inline ml-2">Début</span>
       </a>
     </li>
@@ -150,7 +150,7 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
   <ul class="pagination justify-content-end">
     <li class="page-item page-skip">
       <a class="page-link" href="#">
-        <i class="icons-arrow-double icon-rotate-180 icons-size-x5" aria-hidden="true"></i>
+        <i class="icons-arrow-double icons-rotate-180 icons-size-x5" aria-hidden="true"></i>
         <span class="d-none d-sm-inline ml-2">Début</span>
       </a>
     </li>

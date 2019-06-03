@@ -233,7 +233,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
                 </select>
                 <div class="input-group-append input-group-last">
                   <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                  <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
+                  <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -259,7 +259,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
                 </select>
                 <div class="input-group-append input-group-last">
                   <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                  <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
+                  <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -313,7 +313,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
               </select>
               <div class="input-group-append input-group-last">
                 <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
+                <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
                 </button>
               </div>
             </div>
@@ -339,7 +339,7 @@ You have to add `.modal-dialog-centered` to `.modal-dialog` to vertically center
               </select>
               <div class="input-group-append input-group-last">
                 <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
-                <i class="icons-arrow-down icon-size-x75" aria-hidden="true"></i>
+                <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
                 </button>
               </div>
             </div>
