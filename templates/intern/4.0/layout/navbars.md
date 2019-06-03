@@ -15,7 +15,7 @@ By default, the page has a header, a main navbar, a section header and a content
 <div class="mastheader">
   <div class="mastheader-logo">
     <a href="/docs">
-      <img alt="SNCF" src="{{ site.baseurl }}/assets/img/brand/sncf-logo.png" width="70" />
+      <img alt="SNCF" src="{{ site.baseurl }}/assets/img/brand/sncf-logo.png" />
     </a>
   </div>
   <header role="banner" class="mastheader-title d-none d-xl-block">
@@ -53,7 +53,7 @@ By default, the page has a header, a main navbar, a section header and a content
       </a>
     </li>
     <li class="toolbar-item separator-gray-500 no-separator d-flex d-md-none">
-      <button type="button class="btn btn-only-icon toolbar-item-spacing" data-component="searchbar-toggle">
+      <button type="button" class="btn btn-only-icon toolbar-item-spacing" data-component="searchbar-toggle">
         <span class="sr-only">Open search</span>
         <i class="icons-search icons-size-1x25 icons-md-size-1x5" aria-hidden="true"></i>
       </button>
@@ -65,10 +65,11 @@ By default, the page has a header, a main navbar, a section header and a content
           <span class="d-none d-xl-block">Pierre Dumont</span>
           <i class="icons-arrow-down d-none d-xl-block" aria-hidden="true"></i>
         </button>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" id="mycontrol">
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-mastheader" aria-labelledby="dropdownMenuButton" id="mycontrol">
           <ul>
             <li class="dropdown-item"><a href="#">Paramètre du compte</a></li>
             <li class="dropdown-item"><a href="#">Préférences</a></li>
+            <li id="darkmode-btn" class="dropdown-item darkmode-btn"><a href="#">Mode sombre/clair</a></li>
             <li class="dropdown-item"><a href="#">Se déconnecter</a></li>
           </ul>
         </div>
@@ -77,6 +78,81 @@ By default, the page has a header, a main navbar, a section header and a content
   </ul>
 </div>
 {% endexample %}
+
+### Use "métier" signature logos
+
+{% callout warning %}
+SNCF's logo should be used by default for all "métier" applications, especially for _SNCF Mobilités_.
+{% endcallout %}
+
+You could use SNCF's logos with "métier" signature. In this case, please use monochromatic logo versions for accessibility reasons. Indeed, "métier" signature is violet colored and will not be visible on carbon background.
+
+For reference, you can consult all the rules about logos [on this site](https://www.sncf.com/fr/groupe/marques/sncf/logo-sncf), and [here](https://www.sncf.com/fr/groupe/marques/sncf/signatures-metiers) for "métier" signatures.
+
+We've added "métier" signatures logos to perfectly fit into `mastheader` navbar :
+
+<div class="bd-example">
+  <div class="row">
+    <div class="col-md-4 col-sm-6 mb-2">
+      <label for="mastheader-immobilier">SNCF Immobilier</label>
+      <div class="mastheader" id="mastheader-immobilier">
+        <div class="mastheader-logo">
+          <a href="/docs">
+            <img alt="SNCF" src="{{ site.baseurl }}/assets/img/brand/sncf-immobilier-logo.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 mb-2">
+      <label for="mastheader-logistics">SNCF Logistics</label>
+      <div class="mastheader" id="mastheader-logistics">
+        <div class="mastheader-logo">
+          <a href="/docs">
+            <img alt="SNCF" src="{{ site.baseurl }}/assets/img/brand/sncf-logistics-logo.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 mb-2">
+      <label for="mastheader-reseau">SNCF Réseau</label>
+      <div class="mastheader" id="mastheader-reseau">
+        <div class="mastheader-logo">
+          <a href="/docs">
+            <img alt="SNCF" src="{{ site.baseurl }}/assets/img/brand/sncf-reseau-logo.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% highlight html %}
+<div class="mastheader">
+  <div class="mastheader-logo">
+    <a href="/docs">
+      <img alt="SNCF" src="{{ site.baseurl }}/assets/img/brand/sncf-immobilier-logo.png" />
+    </a>
+  </div>
+  ...
+</div>
+
+<div class="mastheader">
+  <div class="mastheader-logo">
+    <a href="/docs">
+      <img alt="SNCF" src="{{ site.baseurl }}/assets/img/brand/sncf-logistics-logo.png" />
+    </a>
+  </div>
+  ...
+</div>
+
+<div class="mastheader">
+  <div class="mastheader-logo">
+    <a href="/docs">
+      <img alt="SNCF" src="{{ site.baseurl }}/assets/img/brand/sncf-reseau-logo.png" />
+    </a>
+  </div>
+  ...
+</div>
+{% endhighlight %}
 
 ## Vertical Nav
 
