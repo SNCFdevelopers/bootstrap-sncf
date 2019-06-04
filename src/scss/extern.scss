@@ -7,6 +7,8 @@
 //@import "common/settings/variables";
 
 @import "extern/settings/variables";
+@import "~bootstrap/scss/vendor/rfs";
+@import "~bootstrap/scss/mixins/deprecate";
 @import "common/tools/mixins";
 @import "common/tools/colors";
 

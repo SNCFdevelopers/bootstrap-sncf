@@ -6,6 +6,8 @@
 //@import "common/tools/functions";
 //@import "common/settings/variables-lightmode";
 
+@import "~bootstrap/scss/vendor/rfs";
+@import "~bootstrap/scss/mixins/deprecate";
 @import "common/tools/mixins";
 @import "common/tools/colors";
 
