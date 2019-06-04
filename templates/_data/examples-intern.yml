@@ -1,0 +1,49 @@
+- category: Navigation
+  description: "Navigation template"
+  examples:
+    - name: Navigation
+      description: "Demonstration of all responsive and container options for the navbar."
+    - name: Navtabs
+      description: "Actionbar with tabs navigation."
+    - name: Mobile menu
+      description: "Mobile menu"
+
+- category: Modal
+  description: "Modal template"
+  examples:
+    - name: Modal
+      description: "Center modal"
+
+- category: Layouts
+  description: "Layout templates"
+  examples:
+    - name: Table
+      description: "Demonstration of all responsive and container options for the table."
+    - name: Table filters 
+      description: "Table with filters and sorts"
+    - name: Table fixed 
+      description: "Table with fixed column."
+    - name: Table pagination 
+      description: "Table with pagination."
+    - name: List double columns 
+      description: "List with double columns."
+    - name: Table group
+      description: "List with group and search menu"
+
+- category: Forms
+  description: "Form components"
+  examples:
+    - name: Forms
+      description: "Demonstration of all responsive and container options for forms."
+
+- category: Calendars
+  description: "Calendar layouts"
+  examples:
+    - name: Calendar monthly
+      description: "Weekly calendar layout."
+    - name: Calendar weekly
+      description: "Monthly calendar layout."
+    - name: Calendar daily
+      description: "Daily calendar layout."
+    - name: Calendar planning
+      description: "Planning calendar layout."

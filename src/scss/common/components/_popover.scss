@@ -1,0 +1,51 @@
+/* popover
+   ========================================================================== */
+
+.bs-popover-top {
+  margin-bottom: calc(#{$popover-arrow-height} + 5px);
+}
+
+.bs-popover-right {
+  margin-left: calc(#{$popover-arrow-height} + 5px);
+}
+
+.bs-popover-bottom {
+  margin-top: calc(#{$popover-arrow-height} + 5px);
+}
+
+.bs-popover-left {
+  margin-right: calc(#{$popover-arrow-height} + 5px);
+}
+
+// Offset the popover to account for the popover arrow
+.popover-header {
+  padding-bottom: 0;
+  border: 0;
+
+  &:not(:empty) + .popover-body {
+    padding-top: rem(2px);
+  }
+}
+
+.popover {
+  width: 100%;
+
+  &::before {
+    position: absolute;
+    top: rem(25px);
+    right: rem(25px);
+    display: block;
+    width: rem(12px);
+    height: rem(12px);
+    cursor: pointer;
+    content: "";
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3ctitle%3eclose%3c/title%3e%3cpath d='M7.91,6l3.71-3.71a1.37,1.37,0,0,0,0-1.9,1.38,1.38,0,0,0-1.91,0L6,4.09,2.29.38A1.38,1.38,0,0,0,.38.38a1.4,1.4,0,0,0,0,1.91L4.09,6,.38,9.71a1.38,1.38,0,0,0,0,1.91,1.38,1.38,0,0,0,1.91,0L6,7.91l3.71,3.71a1.38,1.38,0,0,0,1.91,0,1.4,1.4,0,0,0,0-1.91Z' transform='translate(0 0)'/%3e%3c/svg%3e");
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .popover-header,
+  .popover-body {
+    padding: rem(18px) rem(14px);
+  }
+}

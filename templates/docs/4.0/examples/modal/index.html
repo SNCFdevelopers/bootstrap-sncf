@@ -1,0 +1,99 @@
+---
+permalink: /docs/4.0/examples/navtabs/
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Navigation template</title>
+
+    <link href="{{ site.baseurl }}/bootstrap-sncf.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    {% include components/mastnav.html %}
+    {% include components/mastheader.html %}
+
+    <div class="actionbar has-tabs">
+      <div class="actionbar-head">
+        <h1 class="mb-0">Titre section</h1>
+        <ul class="toolbar mb-0">
+          <li class="toolbar-item">
+            <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
+              <span class="sr-only">Edit</span>
+              <i class="icons-pencil icons-size-1x25" aria-hidden="true"></i>
+            </button>
+          </li>
+          <li class="toolbar-item toolbar-item-spacing">
+            <div class="btn-group dropdown">
+              <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
+                <span>Primary</span>
+                <i class="icons-arrow-down" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right" id="mycontrol">
+                <ul>
+                  <li class="dropdown-item"><a href="#">Action</a></li>
+                  <li class="dropdown-item"><a href="#">Another action</a></li>
+                  <li class="dropdown-item"><a href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="toolbar-item">
+            <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
+              <span class="sr-only">List</span>
+              <i class="icons-list icons-size-1x25" aria-hidden="true"></i>
+            </button>
+          </li>
+          <li class="toolbar-item">
+            <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
+              <span class="sr-only">Search</span>
+              <i class="icons-search icons-size-1x25" aria-hidden="true"></i>
+            </button>
+          </li>
+          <li class="toolbar-item">
+            <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
+              <span class="sr-only">Filters</span>
+              <i class="icons-filters icons-size-1x25" aria-hidden="true"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <nav role="navigation" class="position-relative mt-2">
+        <ul class="navtabs mb-0 dragscroll">
+          <li class="navtabs-item pr-4">
+            <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
+          </li>
+          <li class="navtabs-item pr-4">
+            <a href="#">Titre onglet</a>
+          </li>
+          <li class="navtabs-item pr-4">
+            <a href="#">Titre onglet</a>
+          </li>
+          <li class="navtabs-item pr-4">
+            <a href="#">Titre onglet</a>
+          </li>
+          <li class="navtabs-item pr-4">
+            <a href="#">Titre onglet</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main role="main" class="mastcontainer">
+    </main>
+
+    {% include components/options-menu.html %}
+
+    <script src="{{ site.baseurl }}/bootstrap-sncf.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+---
+permalink: /docs/4.0/examples/calendar-planning/
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Planning calendar layout</title>
+
+    <link href="{{ site.baseurl }}/bootstrap-sncf.min.css" rel="stylesheet">
+  </head>
+  <body>
+    {% include components/mastnav.html %}
+    {% include components/mastheader.html %}
+
+    {% include components/schedule-daily-actionbar.html %}
+
+    <main class="mastcontainer h-100 d-flex flex-column">
+      <div class="schedule-grid">
+        <div class="schedule-sidebar schedule-sidebar-planning bg-white border-top border-right border-light">
+          {% include components/schedule-planning-menu.html %}
+        </div>
+        <div class="schedule-maincontent scrollable border-top border-light">
+          {% include components/schedule-planning.html %}
+        </div>
+      </div>
+    </main>
+
+    <script src="{{ site.baseurl }}/bootstrap-sncf.min.js"></script>
+  </body>
+</html>

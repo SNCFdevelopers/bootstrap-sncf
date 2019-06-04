@@ -1,0 +1,10 @@
+---
+layout: home
+---
+
+{%- if site.doc_theme == 'extern' -%}
+  {% include index-extern.html %}
+{% else %}
+  {% include index-intern.html %}
+{%- endif -%}
+    

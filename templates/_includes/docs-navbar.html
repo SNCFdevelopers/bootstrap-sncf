@@ -1,0 +1,32 @@
+<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+  <a class="navbar-brand mr-0 mr-md-4" href="{{ site.baseurl }}/" aria-label="Bootstrap">
+    <img alt="SNCF" src="{{ site.baseurl }}/assets/img/brand/sncf-logo.png" width="70" />
+    <span class="ml-2">{{ site.name }}</span>
+  </a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link d-flex align-items-center {% if page.layout == "docs" %}active{% endif %}" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">
+	  Documentation	<i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+	</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-flex align-items-center {% if page.title == "Examples" %}active{% endif %}" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">
+	  Examples <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+
+	</a>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+    <li class="nav-item">
+      <a class="nav-item nav-link mr-md-2" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/about/versions/" id="bd-versions">
+        v{{ site.current_version }} r{{ site.sncf_version }}
+      </a>
+    </li>
+  </ul>
+
+  <a class="btn btn-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="{{ site.download.dist }}">Download</a>
+</header>

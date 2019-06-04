@@ -1,0 +1,198 @@
+/* select
+   ========================================================================== */
+
+$select-scrollable-max-height: rem(360px);
+
+.select-improved {
+  &:not(.active) {
+    .select-menu {
+      display: none;
+    }
+  }
+
+  .form-control.is-placeholder {
+    color: $input-placeholder-color;
+  }
+}
+
+.select-control {
+  position: relative;
+
+  .select-improved.active > & {
+    // stylelint-disable selector-max-class
+    > .input-group .form-control {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .input-group-last > .btn {
+      border-bottom-right-radius: 0;
+    }
+    // stylelint-enable selector-max-class
+  }
+
+  .select-improved-up.active > & {
+    // stylelint-disable selector-max-class
+    > .input-group .form-control {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    .input-group-last > .btn {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: $border-radius;
+    }
+    // stylelint-enable selector-max-class
+  }
+}
+
+.form-control {
+  // stylelint-disable selector-max-class, no-duplicate-selectors
+  .select-control > .input-group & {
+    position: relative;
+    border: 1px solid gray("100");
+    transition: none;
+  }
+
+  .select-improved.active > .select-control > .input-group & {
+    border-top-color: gray("200");
+    border-left-color: gray("200");
+  }
+
+  .select-improved-up.active > .select-control > .input-group & {
+    border-top-color: gray("100");
+    border-bottom-color: gray("200");
+    border-left-color: gray("200");
+  }
+  // stylelint-enable selector-max-class, no-duplicate-selectors
+}
+
+.select-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: $select-scrollable-max-height;
+  padding: rem(20px);
+  overflow-y: auto;
+  background-color: color("white");
+  border-right: gray("200") solid 1px;
+  border-bottom: gray("200") solid 1px;
+  border-left: gray("200") solid 1px;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+
+  > .d-flex {
+    min-height: 0;
+  }
+
+  .select-improved-up & {
+    top: auto;
+    bottom: 100%;
+    border-top: gray("200") solid 1px;
+    border-bottom: none;
+    border-radius: $border-radius $border-radius 0 0;
+  }
+}
+
+.select-menu-inner {
+  flex: 1 1 auto;
+}
+
+.select-menu-item {
+  width: 100%;
+  padding: 0;
+  font-weight: $font-weight-medium;
+  color: gray("500");
+  text-align: left;
+  cursor: pointer;
+  background: none;
+  border: 0;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: theme-color("primary");
+  }
+
+  + .select-menu-item {
+    margin-top: rem(14px);
+  }
+}
+
+.select-group {
+  + .select-group {
+    margin-top: rem(18px);
+  }
+}
+
+.select-group-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  .select-group-close {
+    display: none;
+  }
+
+  .select-group-show {
+    display: inline-block;
+  }
+
+  [class^="icons-arrow-"] {
+    display: inline-block;
+    transition: transform .15s ease-out;
+  }
+
+  &[data-role="collapse"] > * {
+    pointer-events: none;
+  }
+
+  &.active {
+    .select-group-close {
+      display: inline-block;
+    }
+
+    .select-group-show {
+      display: none;
+    }
+
+    [class^="icons-arrow-"] {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.select-group-head[data-role="collapse"] {
+  cursor: pointer;
+}
+
+.select-group-title {
+  padding: 0;
+  font-weight: $font-weight-medium;
+  color: gray("500");
+  text-align: left;
+  background: none;
+  border: 0;
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+button.select-group-title {
+  cursor: pointer;
+}
+/* stylelint-enable selector-no-qualifying-type */
+
+.select-group-content {
+  padding-top: rem(14px);
+  padding-left: rem(28px);
+}

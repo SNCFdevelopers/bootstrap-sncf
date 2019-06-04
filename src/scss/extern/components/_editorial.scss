@@ -1,0 +1,47 @@
+/* editorial
+   ========================================================================== */
+
+.editorial {
+  color: color("white");
+  background-color: gray("600");
+  border-radius: $border-radius;
+
+  .display-3 {
+    color: currentColor;
+  }
+}
+
+.editorial-light {
+  color: gray("600");
+  background-color: gray("100");
+}
+
+@include media-breakpoint-down(sm) {
+  .editorial {
+    padding: rem(20px) rem(20px);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .editorial {
+    display: flex;
+    align-items: center;
+    padding-top: rem(40px);
+    padding-bottom: rem(40px);
+  }
+
+  .editorial-icon {
+    display: flex;
+    flex: 0 0 40%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .editorial-content {
+    display: flex;
+    flex: 0 0 60%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: rem(40px);
+  }
+}
