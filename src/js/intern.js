@@ -19,10 +19,8 @@ import SelectRadios from './components/selectRadios'
 import Table from './components/table'
 import state from './components/states'
 
-document.addEventListener('DOMContentLoaded', () => {
+function initializeComponents(componentsToInit) {
   /* eslint-disable no-console */
-  console.log('Hello from the Fab Design.')
-  /* eslint-enable no-console */
 
   // data components
   const dataComponent = '[data-component]'
@@ -43,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataRadialProgress = 'radial-progress'
   const dataSchedule = 'schedule'
 
-  const components = document.querySelectorAll(dataComponent)
+  const components = componentsToInit ? componentsToInit : document.querySelectorAll(dataComponent)
 
   components.forEach((component) => {
     /* eslint-disable no-new */
@@ -112,4 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* eslint-enable no-new */
   })
-})
+}
+window.fabDesign = {}
+window.fabDesign.initializeComponents = initializeComponents

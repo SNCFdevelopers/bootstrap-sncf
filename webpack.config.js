@@ -101,7 +101,6 @@ module.exports = env => {
       new MiniCssExtractPlugin({
         filename: 'bootstrap-sncf.min.css'
       }),
-      new StyleLintPlugin(),
       new CopyWebpackPlugin([
         { 
           from: '**/*',
