@@ -11,15 +11,15 @@ permalink: /docs/4.0/components/picker/
 Date pickers are often used for forms or for other functional purposes; they let users select a date. The default value is the current date at the time the user opens the calendar. The length of the date-picker field is not fixed, but it must respect the grid.
 
 {% example html %}
-<label class="font-weight-medium mb-2">Date</label>
+<label for="date" class="font-weight-medium mb-2">Date</label>
 <div data-component="picker">
   <div class="input-group input-group--flatpickr">
     <div class="form-control-container" data-toggle>
-      <input type="text" class="form-control" placeholder="Sélectionner une date" data-input>
+      <input id="date" type="text" class="form-control" placeholder="Sélectionner une date" data-input>
       <span class="form-control-state"></span>
     </div>
     <div class="input-group-append">
-      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
+      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn" aria-expanded="false">
         <i class="icons-calendar"></i>
       </button>
     </div>
@@ -30,15 +30,15 @@ Date pickers are often used for forms or for other functional purposes; they let
 ## Default date
 
 {% example html %}
-<label class="font-weight-medium mb-2">Date</label>
+<label for="defaultdate" class="font-weight-medium mb-2">Date</label>
 <div data-component="picker" data-default-date="2017-02-26">
   <div class="input-group input-group--flatpickr">
     <div class="form-control-container" data-toggle>
-      <input type="text" class="form-control" placeholder="Sélectionner une date" data-input>
+      <input id="defaultdate" type="text" class="form-control" placeholder="Sélectionner une date" data-input>
       <span class="form-control-state"></span>
     </div>
     <div class="input-group-append">
-      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
+      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn" aria-expanded="false">
         <i class="icons-calendar"></i>
       </button>
     </div>
@@ -49,17 +49,38 @@ Date pickers are often used for forms or for other functional purposes; they let
 ## Range
 
 {% example html %}
-<label class="font-weight-medium mb-2">Date</label>
-<div data-component="picker" data-mode="range">
-  <div class="input-group input-group--flatpickr">
-    <div class="form-control-container" data-toggle>
-      <input type="text" class="form-control" placeholder="Sélectionner une date" data-input>
-      <span class="form-control-state"></span>
+<div aria-hidden="true">
+  <label for="range" class="font-weight-medium mb-2">Date</label>
+  <div data-component="picker" data-mode="range">
+    <div class="input-group input-group--flatpickr">
+      <div class="form-control-container" data-toggle>
+        <input id="range" type="text" class="form-control" placeholder="Sélectionner une date" data-input>
+        <span class="form-control-state"></span>
+      </div>
+      <div class="input-group-append">
+        <button type="button" class="btn btn-primary btn-only-icon" data-role="btn" aria-expanded="false">
+          <i class="icons-calendar"></i>
+        </button>
+      </div>
     </div>
-    <div class="input-group-append">
-      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
-        <i class="icons-calendar"></i>
-      </button>
+  </div>
+</div>
+<div class="pt-3">
+  <button class="btn-link" aria-controls="inputrange" data-component="state" data-state="d-none" data-behaviour="toggle" data-target=".range-inputs">
+    Saisir une plage de date
+  </button>
+  <div class="row pt-2 range-inputs d-none" id="inputrange" aria-expanded="false">
+    <div class="col">
+      <div class="form-group">
+        <label for="date1">Date d’arrivée (jj/mm/aaaa)</label>
+        {% include components/input.html type="text" id="date1" class="form-control" %}
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-group">
+        <label for="date2">Date de départ (jj/mm/aaaa)</label>
+        {% include components/input.html type="text" id="date2" class="form-control" %}
+      </div>
     </div>
   </div>
 </div>
@@ -73,15 +94,15 @@ Time pickers are often used for forms or for other functional purposes; they let
 The length of the time-picker field is not fixed, but it must respect the content grid.
 
 {% example html %}
-<label class="font-weight-medium mb-2">Date</label>
+<label for="timepicker" class="font-weight-medium mb-2">Date</label>
 <div data-component="picker" data-timepicker="true" data-increment-hours-on-minutes-max="true">
   <div class="input-group input-group--flatpickr">
     <div class="form-control-container" data-toggle>
-      <input type="text" class="form-control" placeholder="Sélectionner une heure" data-input>
+      <input id="timepicker" type="text" class="form-control" placeholder="Sélectionner une heure" data-input>
       <span class="form-control-state"></span>
     </div>
     <div class="input-group-append">
-      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
+      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn" aria-expanded="false">
         <i class="icons-calendar-time"></i>
       </button>
     </div>
@@ -92,15 +113,15 @@ The length of the time-picker field is not fixed, but it must respect the conten
 ## DateTime picker
 
 {% example html %}
-<label class="font-weight-medium mb-2">Date</label>
+<label for="datetimepicker" class="font-weight-medium mb-2">Date</label>
 <div data-component="picker" data-enable-time="true">
   <div class="input-group input-group--flatpickr">
     <div class="form-control-container" data-toggle>
-      <input type="text" class="form-control" placeholder="Sélectionner une heure" data-input>
+      <input id="datetimepicker" type="text" class="form-control" placeholder="Sélectionner une heure" data-input>
       <span class="form-control-state"></span>
     </div>
     <div class="input-group-append">
-      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn">
+      <button type="button" class="btn btn-primary btn-only-icon" data-role="btn" aria-expanded="false">
         <i class="icons-calendar-time"></i>
       </button>
     </div>

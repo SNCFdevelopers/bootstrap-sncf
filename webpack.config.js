@@ -5,26 +5,35 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = env => {
   const theme = env.theme;
+  const thememode = env.darkmode ? 'dark' : 'light';
   const production = env.production;
   const documentation = env.documentation;
   //const externals = ['flatpickr','jquery','popper.js','chart.js'];
-  const entry = [
-    path.resolve(__dirname, `src/js/${theme}.js`),
-    path.resolve(__dirname, `src/scss/${theme}.scss`)
-  ];
+  const entry = {
+    normal: [
+        path.resolve(__dirname, `src/js/${theme}.js`),
+        path.resolve(__dirname, `src/scss/${thememode}-${theme}.scss`)
+    ],
+    darkmode: [
+        path.resolve(__dirname, `src/scss/dark-${theme}.scss`)
+    ]
+  };
   let outputPath = path.resolve(__dirname, 'dist');
 
   if (documentation) {
-    entry.push(path.resolve(__dirname, 'src/js/docs.js'));
-    entry.push(path.resolve(__dirname, `src/js/docs/search-${theme}.js`));
-    entry.push(path.resolve(__dirname, `src/scss/docs-${theme}.scss`));
+    entry.normal.push(path.resolve(__dirname, 'src/js/docs.js'));
+    entry.normal.push(path.resolve(__dirname, `src/js/docs/search-${theme}.js`));
+    entry.normal.push(path.resolve(__dirname, `src/scss/${thememode}-docs-${theme}.scss`));
+    entry.darkmode.push(path.resolve(__dirname, `src/scss/dark-docs-${theme}.scss`));
     outputPath = path.resolve(__dirname, '_gh_pages');
   }
 
   return {
     entry,
     output: {
-      filename: 'bootstrap-sncf.min.js',
+      filename: (chunkData) => {
+        return chunkData.chunk.name === 'normal' ? 'bootstrap-sncf.min.js': '.generated-by-webpack'
+      },
       path: outputPath
     },
     devtool: production ? 'none' : 'source-map',
@@ -99,7 +108,7 @@ module.exports = env => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: 'bootstrap-sncf.min.css'
+        moduleFilename: ({ name }) => (name === 'normal') ? 'bootstrap-sncf.min.css' : 'bootstrap-sncf.darkmode.min.css'
       }),
       new CopyWebpackPlugin([
         { 

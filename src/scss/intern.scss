@@ -1,9 +1,11 @@
 /* imports
    ========================================================================== */
 
-@import "~bootstrap/scss/functions";
-@import "common/tools/functions";
-@import "common/settings/variables";
+// Light/Dark mode modifications
+//@import "~bootstrap/scss/functions";
+//@import "common/tools/functions";
+//@import "common/settings/variables-lightmode";
+
 @import "common/tools/mixins";
 @import "common/tools/colors";
 
@@ -63,6 +65,7 @@
 @import "~bootstrap/scss/media";
 @import "common/components/lists";
 @import "~bootstrap/scss/list-group";
+@import "common/components/list-group";
 @import "~bootstrap/scss/close";
 @import "common/components/close";
 @import "~bootstrap/scss/modal";

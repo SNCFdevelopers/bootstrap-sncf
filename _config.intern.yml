@@ -27,6 +27,8 @@ keep_files:
   - bootstrap-sncf.min.js.map
   - bootstrap-sncf.min.css
   - bootstrap-sncf.min.css.map
+  - bootstrap-sncf.darkmode.min.css
+  - bootstrap-sncf.darkmode.min.css.map
   - vendor
 
 plugins:
@@ -47,7 +49,7 @@ social_logo_path:   /assets/brand/bootstrap-social-logo.png
 current_version:      4.0.0
 current_ruby_version: 4.0.0
 docs_version:         4.0
-sncf_version:         3
+sncf_version:         5
 repo:                 "https://github.com/SNCFdevelopers/bootstrap-sncf"
 slack:                "https://bootstrap-slack.herokuapp.com"
 blog:                 "https://www.digital.sncf.com"
@@ -55,6 +57,7 @@ expo:                 "https://www.digital.sncf.com"
 jobs:                 "https://www.digital.sncf.com"
 themes:               "https://themes.getbootstrap.com"
 doc_theme:            "intern"
+flavor:               "metier"
 name:                 "DESIGN MÉTIER"
 
 download:

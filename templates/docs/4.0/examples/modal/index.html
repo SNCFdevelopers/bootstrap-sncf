@@ -11,7 +11,7 @@ permalink: /docs/4.0/examples/navtabs/
 
     <title>Navigation template</title>
 
-    <link href="{{ site.baseurl }}/bootstrap-sncf.min.css" rel="stylesheet">
+    {% include darkmode-js-header.html %}
   </head>
   <body>
     <a id="skippy" class="sr-only sr-only-focusable" href="#content">
@@ -69,7 +69,7 @@ permalink: /docs/4.0/examples/navtabs/
         </ul>
       </div>
       <nav role="navigation" class="position-relative mt-2">
-        <ul class="navtabs mb-0 dragscroll">
+        <ul class="nav navtabs mb-0 dragscroll">
           <li class="navtabs-item pr-4">
             <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
           </li>

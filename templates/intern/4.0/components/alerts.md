@@ -13,7 +13,7 @@ Form error messages are displayed as an alert at the top of the page.
 
 {% example html %}
 <div class="form-error mb-3">
-  <h2 class="text-uppercase text-white">Ooops ! There is an error</h2>
+  <h2 class="text-uppercase">Ooops ! There is an error</h2>
   <ul class="mt-1 mb-0">
     <li>Please check mail address</li>
     <li>Your SNCF ID doesn't exist</li>
@@ -30,13 +30,13 @@ For compatibility reasons, `alert-xxx` from Twitter Bootstrap are still presents
 Notification messages (confirming actions, messages related to deletions) are displayed at the top of the page.
 
 {% example html %}
-<p class="text-primary pl-4 pt-2 pb-2 bg-light font-weight-medium">
+<p class="text-primary pl-4 pt-2 pb-2 font-weight-medium">
   <i class="icons-checked mr-2" aria-hidden="true"></i> Votre texte a bien été ajouté au dossier SNCF_MATERIEL.
 </p>
 {% endexample %}
 
 {% example html %}
-<p class="text-danger pl-4 pt-2 pb-2 bg-light font-weight-medium">
+<p class="text-danger pl-4 pt-2 pb-2 font-weight-medium">
   Votre texte a bien été supprimé du dossier SNCF_MATERIEL.
 </p>
 {% endexample %}

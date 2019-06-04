@@ -61,7 +61,7 @@ For all proposed examples, [specific markup](#dismiss-on-next-clik) is included,
 {% endexample %}
 
 {% example html %}
-<button type="button" tabindex="0" data-toggle="popover" data-trigger="focus" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+<button class="btn btn-link" tabindex="0" data-toggle="popover" data-trigger="focus" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
   <span class="sr-only">Click to toggle popover</span>
   <i class="icons-circle-tooltip"></i>
 </button>
@@ -109,21 +109,23 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 
 ### Aligned with icon
 
+Use `data-placement` to choose one direction (top, right, bottom or left).
+
 {% example html %}
 <div class="row">
   <div class="col-sm-6 text-right pt-5 pb-5">
-    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
   </div>
   <div class="col-sm-6 pt-5 pb-5">
-    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
   </div>
 </div>
 <div class="row">
   <div class="col-sm-6 text-right pt-5 pb-5">
-    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="left" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
   </div>
   <div class="col-sm-6 pt-5 pb-5">
-    <button type="button" data-trigger="focus" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="bottom" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
   </div>
 </div>
 {% endexample %}
@@ -233,7 +235,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>selector</td>
       <td>string | false</td>
       <td>false</td>
-      <td>If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See <a href="https://github.com/twbs/bootstrap/issues/4215">this</button> and <a href="https://jsbin.com/zopod/1/edit">an informative example</button>.</td>
+      <td>If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See <a href="https://github.com/twbs/bootstrap/issues/4215">this</a> and <a href="https://jsbin.com/zopod/1/edit">an informative example</a>.</td>
     </tr>
     <tr>
       <td>template</td>
@@ -266,20 +268,19 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>offset</td>
       <td>number | string</td>
       <td>0</td>
-      <td>Offset of the popover relative to its target. For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..offset.offset">offset docs</button>.</td>
+      <td>Offset of the popover relative to its target. For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..offset.offset">offset docs</a>.</td>
     </tr>
     <tr>
       <td>fallbackPlacement</td>
       <td>string | array</td>
       <td>'flip'</td>
-      <td>Allow to specify which position Popper will use on fallback. For more information refer to
-      Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..flip.behavior">behavior docs</button></td>
+      <td>Allow to specify which position Popper will use on fallback. For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..flip.behavior">behavior docs</a></td>
     </tr>
     <tr>
       <td>boundary</td>
       <td>string | element</td>
       <td>'scrollParent'</td>
-      <td>Overflow constraint boundary of the popover. Accepts the values of <code>'viewport'</code>, <code>'window'</code>, <code>'scrollParent'</code>, or an HTMLElement reference (JavaScript only). For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..preventOverflow.boundariesElement">preventOverflow docs</button>.</td>
+      <td>Overflow constraint boundary of the popover. Accepts the values of <code>'viewport'</code>, <code>'window'</code>, <code>'scrollParent'</code>, or an HTMLElement reference (JavaScript only). For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..preventOverflow.boundariesElement">preventOverflow docs</a>.</td>
     </tr>
   </tbody>
 </table>

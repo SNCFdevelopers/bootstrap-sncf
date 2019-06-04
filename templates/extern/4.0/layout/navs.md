@@ -15,7 +15,7 @@ permalink: /docs/4.0/layout/navs/
     <h1 class="h2 mb-0">Lorem Ipsum</h1>
   </div>
   <nav role="navigation" class="position-relative mt-2">
-    <ul class="navtabs mb-0 dragscroll">
+    <ul class="nav navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
         <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
@@ -38,7 +38,7 @@ permalink: /docs/4.0/layout/navs/
 
 ### Colored tabs
 
-Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
+Just add `bg-colorname` to `<div class="actionbar">` to use colored tabs
 
 <div class="bd-example">
 <div class="actionbar dark bg-teal has-tabs">
@@ -46,7 +46,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
     <h1 class="h2 mb-0">Titre section</h1>
   </div>
   <nav role="navigation" class="position-relative mt-2">
-    <ul class="navtabs mb-0 dragscroll">
+    <ul class="nav navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
         <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
@@ -73,7 +73,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
     <h1 class="h2 mb-0">Titre section</h1>
   </div>
   <nav role="navigation" class="position-relative mt-2">
-    <ul class="navtabs mb-0 dragscroll">
+    <ul class="nav navtabs mb-0 dragscroll">
       <li class="navtabs-item pr-4">
         <a href="#" class="active" title="Titre onglet actif">Titre onglet</a>
       </li>
@@ -108,7 +108,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div id="programme" class="menu-item panel primary-panel active">
         <div class="panel-inner">
           <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
+            <h3 class="h3 mb-0" data-role="prev">
               <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
               Programme
             </h3>
@@ -119,7 +119,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           </div>
           <div class="panel-content">
             <div class="panel-lead">
-              <h3 class="mb-4 text-white">Programme</h3>
+              <h3 class="mb-4">Programme</h3>
               <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
             <div class="subnav">
@@ -320,7 +320,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div id="startup" class="menu-item panel primary-panel">
         <div class="panel-inner">
           <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
+            <h3 class="h3 mb-0" data-role="prev">
               <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
               Startup
             </h3>
@@ -331,7 +331,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           </div>
           <div class="panel-content">
             <div class="panel-lead">
-              <h3 class="mb-4 text-white">Startup</h3>
+              <h3 class="mb-4">Startup</h3>
               <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
             <div class="subnav">
@@ -380,7 +380,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div id="store" class="menu-item panel primary-panel">
         <div class="panel-inner">
           <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
+            <h3 class="h3 mb-0" data-role="prev">
               <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
               Store
             </h3>
@@ -391,7 +391,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           </div>
           <div class="panel-content">
             <div class="panel-lead">
-              <h3 class="mb-4 text-white">Store</h3>
+              <h3 class="mb-4">Store</h3>
               <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
             <div class="subnav">
@@ -440,7 +440,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
       <div id="resources" class="menu-item panel primary-panel">
         <div class="panel-inner">
           <div class="panel-head">
-            <h3 class="mb-0" data-role="prev">
+            <h3 class="h3 mb-0" data-role="prev">
               <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
               Resources
             </h3>
@@ -451,7 +451,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
           </div>
           <div class="panel-content">
             <div class="panel-lead">
-              <h3 class="mb-4 text-white">Resources</h3>
+              <h3 class="mb-4">Resources</h3>
               <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
             <div class="subnav">
@@ -507,7 +507,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
     <div id="programme" class="menu-item panel primary-panel active">
       <div class="panel-inner">
         <div class="panel-head">
-          <h3 class="mb-0" data-role="prev">
+          <h3 class="h3 mb-0" data-role="prev">
             <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
             Programme
           </h3>
@@ -518,7 +518,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         </div>
         <div class="panel-content">
           <div class="panel-lead">
-            <h3 class="mb-4 text-white">Programme</h3>
+            <h3 class="mb-4">Programme</h3>
             <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
           </div>
           <div class="subnav">
@@ -719,7 +719,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
     <div id="startup" class="menu-item panel primary-panel">
       <div class="panel-inner">
         <div class="panel-head">
-          <h3 class="mb-0" data-role="prev">
+          <h3 class="h3 mb-0" data-role="prev">
             <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
             Startup
           </h3>
@@ -730,7 +730,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         </div>
         <div class="panel-content">
           <div class="panel-lead">
-            <h3 class="mb-4 text-white">Startup</h3>
+            <h3 class="mb-4">Startup</h3>
             <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
           </div>
           <div class="subnav">
@@ -779,7 +779,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
     <div id="store" class="menu-item panel primary-panel">
       <div class="panel-inner">
         <div class="panel-head">
-          <h3 class="mb-0" data-role="prev">
+          <h3 class="h3 mb-0" data-role="prev">
             <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
             Store
           </h3>
@@ -790,7 +790,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         </div>
         <div class="panel-content">
           <div class="panel-lead">
-            <h3 class="mb-4 text-white">Store</h3>
+            <h3 class="mb-4">Store</h3>
             <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
           </div>
           <div class="subnav">
@@ -839,7 +839,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
     <div id="resources" class="menu-item panel primary-panel">
       <div class="panel-inner">
         <div class="panel-head">
-          <h3 class="mb-0" data-role="prev">
+          <h3 class="h3 mb-0" data-role="prev">
             <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
             Resources
           </h3>
@@ -850,7 +850,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         </div>
         <div class="panel-content">
           <div class="panel-lead">
-            <h3 class="mb-4 text-white">Resources</h3>
+            <h3 class="mb-4">Resources</h3>
             <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
           </div>
           <div class="subnav">
@@ -1054,7 +1054,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         <div id="programme" class="menu-item panel primary-panel">
           <div class="panel-inner">
             <div class="panel-head">
-              <h3 class="mb-0" data-role="prev">
+              <h3 class="h3 mb-0" data-role="prev">
                 <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                 Programme
               </h3>
@@ -1065,7 +1065,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
             </div>
             <div class="panel-content">
               <div class="panel-lead">
-                <h3 class="mb-4 text-white">Programme</h3>
+                <h3 class="mb-4">Programme</h3>
                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               </div>
               <div class="subnav">
@@ -1266,7 +1266,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         <div id="startup" class="menu-item panel primary-panel">
           <div class="panel-inner">
             <div class="panel-head">
-              <h3 class="mb-0" data-role="prev">
+              <h3 class="h3 mb-0" data-role="prev">
                 <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                 Startup
               </h3>
@@ -1277,7 +1277,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
             </div>
             <div class="panel-content">
               <div class="panel-lead">
-                <h3 class="mb-4 text-white">Startup</h3>
+                <h3 class="mb-4">Startup</h3>
                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               </div>
               <div class="subnav">
@@ -1326,7 +1326,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         <div id="store" class="menu-item panel primary-panel">
           <div class="panel-inner">
             <div class="panel-head">
-              <h3 class="mb-0" data-role="prev">
+              <h3 class="h3 mb-0" data-role="prev">
                 <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                 Store
               </h3>
@@ -1337,7 +1337,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
             </div>
             <div class="panel-content">
               <div class="panel-lead">
-                <h3 class="mb-4 text-white">Store</h3>
+                <h3 class="mb-4">Store</h3>
                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               </div>
               <div class="subnav">
@@ -1386,7 +1386,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
         <div id="resources" class="menu-item panel primary-panel">
           <div class="panel-inner">
             <div class="panel-head">
-              <h3 class="mb-0" data-role="prev">
+              <h3 class="h3 mb-0" data-role="prev">
                 <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
                 Resources
               </h3>
@@ -1397,7 +1397,7 @@ Just add `bg-colorname`to `<div class="actionbar">` to use colored tabs
             </div>
             <div class="panel-content">
               <div class="panel-lead">
-                <h3 class="mb-4 text-white">Resources</h3>
+                <h3 class="mb-4">Resources</h3>
                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               </div>
               <div class="subnav">

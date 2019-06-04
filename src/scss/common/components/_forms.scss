@@ -167,10 +167,10 @@ input {
 }
 
 .form-control-white {
-  background-color: $white;
+  background-color: $form-control-white;
   &:focus,
   &:active {
-    background-color: $white;
+    background-color: $form-control-white;
   }
 }
 
@@ -178,10 +178,10 @@ textarea.form-control {
   min-height: rem(160px);
   padding-top: rem(20px);
   padding-bottom: rem(20px);
-  color: gray("500");
+  color: $textarea-form-control-color;
 
   &:focus {
-    color: gray("500");
+    color: $textarea-form-control-color;
   }
 
   &.stretchy {
@@ -189,7 +189,7 @@ textarea.form-control {
   }
 
   .form-control-container.is-invalid & {
-    color: gray("500");
+    color: $textarea-form-control-color;
   }
 
   &[readonly] {
@@ -233,7 +233,7 @@ textarea.form-control {
 
 label.required {
   &::after {
-    color: theme-color("danger");
+    color: $required-asterix;
     content: "*";
   }
 }
@@ -245,15 +245,25 @@ label.required {
 
 .form-error {
   padding: rem(26px) rem(30px);
-  color: color("white");
+  color: $form-error-color;
   background-color: theme-color("danger");
   border-radius: rem(5px);
 
-  .h2 {
-    color: inherit;
+  .h2,
+  h2 {
+    color: $form-error-color;
   }
 
   ul {
     padding-left: rem(16px);
   }
+}
+
+//
+// Input search mastheader
+//
+
+.mastheader-search input,
+.mastheader-search input:focus {
+  background-color: $input-bg-mastheader;
 }

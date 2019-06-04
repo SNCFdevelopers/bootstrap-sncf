@@ -32,6 +32,10 @@
       background: linear-gradient(to left, #fff 2%, rgba(255, 255, 255, 0) 98%);
     }
   }
+
+  &.nav {
+    flex-wrap: initial;
+  }
 }
 
 .navtabs-item {
@@ -39,7 +43,7 @@
 
   a {
     display: block;
-    color: gray("400");
+    color: $nav-tabs-color;
 
     @include hover-focus-active {
       position: relative;

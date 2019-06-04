@@ -8,9 +8,11 @@
 - title: Layout
   pages:
     - title: Grid
+    - title: Dark mode
     - title: Utilities for layout
     - title: Navbar
     - title: Navs
+    - title: Footer
 
 - title: Content
   pages:
@@ -18,7 +20,6 @@
     - title: Typography
     - title: Code
     - title: Images
-    - title: Tables
     - title: Figures
     - title: Favicon
 
@@ -30,7 +31,6 @@
     - title: Carousel
     - title: Checkboxes and radios
     - title: Edito
-    - title: Footer
     - title: Forms
     - title: Icons
     - title: Input group
@@ -65,7 +65,6 @@
 - title: Extend
   pages:
     - title: Approach
-    - title: Icons
 
 - title: Migration
 

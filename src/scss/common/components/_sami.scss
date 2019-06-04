@@ -7,9 +7,9 @@
   justify-content: center;
   width: rem(50px);
   height: rem(50px);
-  color: color("white");
+  color: $sami-color;
   text-transform: uppercase;
-  background-color: gray("300");
+  background-color: $sami-bg;
   border-radius: $border-radius;
 }
 

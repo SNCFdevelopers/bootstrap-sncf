@@ -46,7 +46,7 @@ td[data-role="toggle-group-btn"] > * {
   &.scroll-left-max {
     &::before {
       left: 0;
-      background: linear-gradient(to right, #fff 2%, rgba(255, 255, 255, 0) 98%);
+      background: $table-scroll-max-to-right;
     }
   }
 
@@ -65,7 +65,7 @@ td[data-role="toggle-group-btn"] > * {
     &.scroll-left-min {
       &::after {
         right: 0;
-        background: linear-gradient(to left, #fff 2%, rgba(255, 255, 255, 0) 98%);
+        background: $table-scroll-max-to-left;
       }
     }
   }
@@ -85,7 +85,7 @@ td[data-role="toggle-group-btn"] > * {
     &.scroll-left-min .tbody .cell-fixed {
       &::after {
         right: 100%;
-        background: linear-gradient(to left, #fff 2%, rgba(255, 255, 255, 0) 98%);
+        background: $table-scroll-max-to-left;
       }
     }
     /* stylelint-enable selector-max-class */
@@ -116,7 +116,7 @@ td[data-role="toggle-group-btn"] > * {
   td {
     position: relative;
     font-weight: $font-weight-normal;
-    color: gray("600");
+    color: $table-head-color;
     vertical-align: middle;
     border: none;
 
@@ -144,6 +144,12 @@ td[data-role="toggle-group-btn"] > * {
       color: theme-color("primary");
     }
   }
+}
+
+.thead.thead.thead-fixed th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .thead-light {
@@ -251,7 +257,7 @@ td[data-role="toggle-group-btn"] > * {
     min-height: rem(52px);
     padding-right: 0;
     padding-left: 0;
-    background-color: color("white");
+    background-color: $table-bg;
     border-top: none;
 
     /* stylelint-disable declaration-no-important */
@@ -315,3 +321,89 @@ td[data-role="toggle-group-btn"] > * {
     }
   }
 }
+
+/* stylelint-disable selector-max-class, selector-max-compound-selectors */
+@include media-breakpoint-down(sm) {
+  .mastcontainer .table-vh {
+    .mastheader + & {
+      height: calc(100vh - $mastheader-height);
+    }
+
+    .mastheader + .actionbar + & {
+      height: calc(100vh - ($mastheader-height + $actionbar-min-height));
+    }
+
+    .mastheader + .actionbar.has-tabs + & {
+      height: calc(100vh - ($mastheader-height + $actionbar-max-height));
+    }
+
+    .mastheader + .actionbar + .controlbar + & {
+      height: calc(100vh - ($mastheader-height + $actionbar-min-height + $controlbar-height));
+    }
+
+    .mastheader + .actionbar.has-tabs + .controlbar + & {
+      height: calc(100vh - ($mastheader-height + $actionbar-max-height + $controlbar-height));
+    }
+  }
+}
+
+// @include media-breakpoint-down(md) {
+//   .mastcontainer .table-vh {
+//     bottom: $mastnav-height-sm;
+//   }
+// }
+
+@include media-breakpoint-up(md) {
+  .mastcontainer .table-vh {
+    .mastheader + & {
+      height: calc(100vh - #{$mastheader-height-md});
+    }
+
+    .mastheader + .actionbar + &,
+    .mastheader + .actionbar + .controlbar + & {
+      height: calc(100vh - #{$mastheader-height-md + $actionbar-min-height-md});
+    }
+
+    .mastheader + .actionbar.has-tabs + &,
+    .mastheader + .actionbar.has-tabs + .controlbar + & {
+      height: calc(100vh - #{$mastheader-height-md + $actionbar-max-height-md});
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .mastcontainer .table-vh {
+    .mastheader + & {
+      height: calc(100vh - #{$mastheader-height-lg});
+    }
+
+    .mastheader + .actionbar + &,
+    .mastheader + .actionbar + .controlbar + & {
+      height: calc(100vh - #{$mastheader-height-lg + $actionbar-min-height-lg});
+    }
+
+    .mastheader + .actionbar.has-tabs + &,
+    .mastheader + .actionbar.has-tabs + .controlbar + & {
+      height: calc(100vh - #{$mastheader-height-lg + $actionbar-max-height-lg});
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .mastcontainer .table-vh {
+    .mastheader + & {
+      height: calc(100vh - #{$mastheader-height-xl});
+    }
+
+    .mastheader + .actionbar + &,
+    .mastheader + .actionbar + .controlbar + & {
+      height: calc(100vh - #{$mastheader-height-xl + $actionbar-min-height-xl});
+    }
+
+    .mastheader + .actionbar.has-tabs + &,
+    .mastheader + .actionbar.has-tabs + .controlbar + & {
+      height: calc(100vh - #{$mastheader-height-xl + $actionbar-max-height-xl});
+    }
+  }
+}
+/* stylelint-enable selector-max-class, selector-max-compound-selectors */

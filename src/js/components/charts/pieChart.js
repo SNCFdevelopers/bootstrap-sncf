@@ -17,7 +17,7 @@ function hexToRgb(hex) {
   } : null
 }
 
-function createGrad(canvas, colorsOne = '#62D7FA', opacityOne = 1, colorTwo = '#ffffff', opacityTwo = 1, colorStop = 95) {
+function createGrad(canvas, colorsOne = '#62D7FA', opacityOne = 1, colorTwo = '#ffffff', opacityTwo = 0, colorStop = 95) {
   const colors = []
   const {
     width : canvasWidth,

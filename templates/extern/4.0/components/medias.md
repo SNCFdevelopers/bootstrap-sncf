@@ -11,7 +11,7 @@ permalink: /docs/4.0/components/medias/
 
 {% example html %}
 <p class="text-center">13/5</p>
-<img class="w-100 rounded" src="https://dummyimage.com/656x253/000/fff" />
+<img class="w-100 rounded" src="https://dummyimage.com/656x253/333/fff" />
 {% endexample %}
 
 ### 100% picture
@@ -19,7 +19,7 @@ permalink: /docs/4.0/components/medias/
 This image format has rounded edges and gets its name because it covers the entire content grid (width). This is true for all devices: computers, tablets in portrait mode, and mobiles. The image always takes up 100% of the content grid.
 
 {% example html %}
-<img class="img-fluid rounded" src="https://dummyimage.com/1920x1080/000/fff" />
+<img class="img-fluid rounded" src="https://dummyimage.com/1920x1080/333/fff" />
 {% endexample %}
 
 ### 50% picture
@@ -31,7 +31,7 @@ In the mobile version, image size corresponds to the content grid (meaning 100% 
 {% example html %}
 <div class="row">
   <div class="col-sm-6">
-    <img class="img-fluid rounded" src="https://dummyimage.com/1920x1080/000/fff" />
+    <img class="img-fluid rounded" src="https://dummyimage.com/1920x1080/333/fff" />
   </div>
 </div>
 {% endexample %}
@@ -51,7 +51,7 @@ Note the usage of `w-xxx` where xxx is the percentage of width for image, for al
       {% for i in (1..5) %}
       <div class="swiper-slide">
         <figure role="group">
-          <img class="w-100 mb-4 rounded" src="https://dummyimage.com/656x394/000/fff" alt="image {{ forloop.index }}" />
+          <img class="w-100 mb-4 rounded" src="https://dummyimage.com/656x394/333/fff" alt="image {{ forloop.index }}" />
           <figcaption>
             <span class="sr-only">image {{ forloop.index }}</span>
             <p class="mb-2">Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.</p>

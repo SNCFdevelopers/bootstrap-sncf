@@ -6,7 +6,8 @@
   top: 0;
   right: 0;
   z-index: $zindex-fixed + 2;
-  background-color: color("white");
+  color: $table-filters-color;
+  background-color: $table-filters-bg;
 
   &:not(.active) {
     display: none;
@@ -25,7 +26,7 @@
 
 .table-filters-title {
   font-weight: $font-weight-medium;
-  color: gray("600");
+  color: $table-filters-title-color;
 }
 
 .table-filters-menu {
@@ -37,7 +38,7 @@
   width: 100%;
   padding: 0;
   font-weight: $font-weight-medium;
-  color: gray("500");
+  color: $table-filters-item-color;
   text-align: left;
   cursor: pointer;
   background: none;
@@ -84,7 +85,7 @@
 .filters-group-title {
   padding: 0;
   font-weight: $font-weight-medium;
-  color: gray("500");
+  color: $table-filters-group-title-color;
   text-align: left;
   cursor: pointer;
   background: none;

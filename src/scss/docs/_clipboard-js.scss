@@ -20,15 +20,15 @@
   display: block;
   padding: .25rem .5rem;
   font-size: 75%;
-  color: #818a91;
+  color: $body-color;
   cursor: pointer;
   background-color: transparent;
   border: 0;
   border-radius: .25rem;
 
   &:hover {
-    color: #fff;
-    background-color: #027de7;
+    color: $body-color;
+    background-color: $primary;
   }
 }
 

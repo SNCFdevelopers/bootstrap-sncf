@@ -126,10 +126,12 @@ class SelectMultiple {
       this.store[groupId].currentValues.push(valueId)
       this.count.currentValues += 1
       valueNode.classList.add(ACTIVE_CLASS)
+      valueNode.setAttribute('aria-checked', 'true')
     } else {
       pull(this.store[groupId].currentValues, valueId)
       this.count.currentValues -= 1
       valueNode.classList.remove(ACTIVE_CLASS)
+      valueNode.setAttribute('aria-checked', 'false')
     }
 
     this._updatePlaceholderNodeStyle()

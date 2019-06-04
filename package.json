@@ -1,7 +1,7 @@
 {
   "name": "@sncf/bootstrap-sncf",
   "description": "SNCF frontend framework",
-  "version": "4.0.0-r3",
+  "version": "4.0.0-r5",
   "sideEffects": false,
   "main": "index.js",
   "repository": {
@@ -9,7 +9,13 @@
     "url": "https://github.com/SNCFdevelopers/bootstrap-sncf"
   },
   "homepage": "http://sn.cf/socledesign",
-  "keywords": ["bootstrap","sncf","design","framework","css"],
+  "keywords": [
+    "bootstrap",
+    "sncf",
+    "design",
+    "framework",
+    "css"
+  ],
   "license": "MIT",
   "author": {
     "name": "Fab Design SNCF",
@@ -23,15 +29,19 @@
     "watch-intern": "webpack --env.documentation --env.theme=intern --watch",
     "watch-extern": "webpack --env.documentation --env.theme=extern --watch",
     "build-intern": "webpack --env.documentation --env.theme=intern",
+    "build-intern-dark": "webpack --env.documentation --env.theme=intern --env.darkmode",
     "build-extern": "webpack --env.documentation --env.theme=extern",
+    "build-extern-dark": "webpack --env.documentation --env.theme=extern --env.darkmode",
     "dist-intern": "webpack -p --env.production --env.theme=intern",
+    "dist-intern-dark": "webpack -p --env.production --env.theme=intern --env.darkmode",
     "dist-extern": "webpack -p --env.production --env.theme=extern",
+    "dist-extern-dark": "webpack -p --env.production --env.theme=extern --env.darkmode",
     "docs-compile-intern": "bundle exec jekyll build --config _config.intern.yml",
     "docs-compile-extern": "bundle exec jekyll build --config _config.extern.yml",
     "docs-lint-htmllint": "htmllint --rc build/.htmllintrc \"_gh_pages/**/*.html\" \"src/js/tests/**/*.html\"",
     "docs-serve-intern": "bundle exec jekyll serve --config _config.intern.yml",
     "docs-serve-extern": "bundle exec jekyll serve --config _config.extern.yml",
-    "icofont": "icon-font-generator src/assets/icons/*.svg -o src/assets/fonts/icons --csspath src/scss/common/generic/_icons.css --fontspath ../assets/fonts/icons/ --html false -j false"
+    "icofont": "icon-font-generator src/assets/icons/*.svg -o src/assets/fonts/icons --csspath src/scss/common/generic/_icons.css --prefix icons --fontspath ../assets/fonts/icons/ --html false -j false"
   },
   "devDependencies": {
     "ajv": "^6.7.0",
@@ -51,15 +61,15 @@
     "expose-loader": "^0.7.5",
     "file-loader": "^1.1.11",
     "htmllint-cli": "0.0.6",
-    "icon-font-generator": "^1.1.1",
-    "mini-css-extract-plugin": "^0.4.0",
+    "icon-font-generator": "^1.1.2",
+    "mini-css-extract-plugin": "^0.6.0",
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.2",
     "postcss-loader": "^2.1.3",
     "precss": "^3.1.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
-    "stylelint": "^8.4.0",
+    "stylelint": "^10.0.1",
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^0.8.1",
@@ -72,10 +82,11 @@
     "bootstrap": "4.0.0",
     "chart.js": "^2.7.2",
     "chartjs-plugin-zoom": "^0.6.3",
-    "flatpickr": "https://github.com/vdesdoigts/flatpickr.git#dist",
+    "flatpickr": "git+https://github.com/vdesdoigts/flatpickr.git#dist",
     "ion-rangeslider": "^2.2.0",
     "jquery": "^3.3.1",
     "lodash": "^4.17.11",
+    "null-loader": "^1.0.0",
     "popper.js": "^1.14.1",
     "swiper": "^4.2.2",
     "yarn": "^1.7.0"

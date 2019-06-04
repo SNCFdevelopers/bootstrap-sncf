@@ -1,0 +1,167 @@
+---
+permalink: /docs/4.0/examples/table-fixed-head/
+table:
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 1
+    agent: Léon MICHEL
+    update: 4 Avril 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 2
+    agent: Léon MICHEL
+    update: 18 Mars 2017
+    subrows:
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 1
+    agent: Léon MICHEL
+    update: 4 Avril 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 2
+    agent: Léon MICHEL
+    update: 18 Mars 2017
+    subrows:
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 1
+    agent: Léon MICHEL
+    update: 4 Avril 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 2
+    agent: Léon MICHEL
+    update: 18 Mars 2017
+    subrows:
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 3
+    agent: Léon MICHEL
+    update: 10 Mars 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 1
+    agent: Léon MICHEL
+    update: 4 Avril 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 2
+    agent: Léon MICHEL
+    update: 18 Mars 2017
+    subrows:
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 3
+    agent: Léon MICHEL
+    update: 10 Mars 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 1
+    agent: Léon MICHEL
+    update: 4 Avril 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 2
+    agent: Léon MICHEL
+    update: 18 Mars 2017
+    subrows:
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 3
+    agent: Léon MICHEL
+    update: 10 Mars 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 3
+    agent: Léon MICHEL
+    update: 10 Mars 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 3
+    agent: Léon MICHEL
+    update: 10 Mars 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 3
+    agent: Léon MICHEL
+    update: 10 Mars 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 3
+    agent: Léon MICHEL
+    update: 10 Mars 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 3
+    agent: Léon MICHEL
+    update: 10 Mars 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 3
+    agent: Léon MICHEL
+    update: 10 Mars 2017
+  - name: Aorem ipsum dolor sit amet
+    type: Aenean commodo
+    version: 3
+    agent: Léon MICHEL
+    update: 10 Mars 2017
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Forms template</title>
+
+    {% include darkmode-js-header.html %}
+  </head>
+  <body>
+    {% include components/mastnav.html %}
+    {% include components/mastheader.html %}
+    <div class="actionbar">
+      <div class="actionbar-head">
+        <h1 class="mb-0">Titre tableau</h1>
+        <ul class="toolbar mb-0">
+          <li class="toolbar-item">
+            <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
+              <span class="sr-only">Edit</span>
+              <i class="icons-pencil icons-size-1x25" aria-hidden="true"></i>
+            </button>
+          </li>
+          <li class="toolbar-item">
+            <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
+              <span class="sr-only">List</span>
+              <i class="icons-list icons-size-1x25" aria-hidden="true"></i>
+            </button>
+          </li>
+          <li class="toolbar-item d-none d-md-block">
+            <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing collapseFiltersButton" data-component="state" data-state="active, active" data-behaviour="toggle, toggle" data-target="#collapseFiltersMenu, .collapseFiltersButton" data-closeonclickoutside="true, true">
+              <span class="sr-only">Filters</span>
+              <i class="icons-filters icons-size-1x25" aria-hidden="true"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="controlbar">
+      <div class="toolbar w-100">
+        <div class="w-50 toolbar-item separator-gray-200">
+          <button type="button" class="btn btn-block btn-link justify-content-center btn-color-gray collapseFiltersButton" data-component="state" data-state="active, active" data-behaviour="toggle, toggle" data-target="#collapseFiltersMenu, .collapseFiltersButton" data-closeonclickoutside="true, true">Filtrer</button>
+        </div>
+        <div class="w-50 toolbar-item separator-gray-200 w-50">
+          <button type="button" class="btn btn-block btn-link justify-content-center btn-color-gray collapseSortsButton" data-component="state" data-state="active, active" data-behaviour="toggle, toggle" data-target="#collapseSortsMenu, .collapseSortsButton">Trier</button>
+        </div>
+      </div>
+    </div>
+    <main role="main" class="mastcontainer">
+      {% include components/table-fixed-head.html data=page.table %}
+    </main>
+    {% include components/table-filters-menu.html %}
+    {% include components/table-sorts-menu.html %}
+    <script src="{{ site.baseurl }}/bootstrap-sncf.min.js"></script>
+  </body>
+</html>

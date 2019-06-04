@@ -28,5 +28,14 @@
     </li>
   </ul>
 
-  <a class="btn btn-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="{{ site.download.dist }}">Download</a>
+  <span class="navbar-nav">
+    <span class="text-gray100 mr-2">Darkmode</span>
+    <label for="darkmode-btn" class="switch-control">
+      <span class="sr-only">Darkmode switch</span>
+      <input id="darkmode-btn" type="checkbox" class="sr-only darkmode-btn">
+      <span class="switch-control-slider"></span>
+    </label>
+  </span>
+
+  <a class="btn btn-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/bootstrap-sncf.{{ site.flavor }}.v{{ site.current_version }}-r{{ site.sncf_version }}.zip">Download</a>
 </header>

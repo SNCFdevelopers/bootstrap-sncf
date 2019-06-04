@@ -1,9 +1,11 @@
 /* imports
    ========================================================================== */
 
-@import "~bootstrap/scss/functions";
-@import "common/tools/functions";
-@import "common/settings/variables";
+// Light/Dark mode modifications
+//@import "~bootstrap/scss/functions";
+//@import "common/tools/functions";
+//@import "common/settings/variables";
+
 @import "extern/settings/variables";
 @import "common/tools/mixins";
 @import "common/tools/colors";
@@ -92,6 +94,7 @@
 @import "extern/components/carousel";
 @import "extern/components/tongues";
 @import "extern/components/anchor";
+@import "extern/components/vignettes";
 
 // trumps
 @import "~bootstrap/scss/utilities";

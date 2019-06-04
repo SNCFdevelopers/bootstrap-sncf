@@ -5,7 +5,7 @@
   border-radius: $border-radius;
 
   &.is-gray {
-    background-color: gray("100");
+    background-color: $proof-gray-bg;
   }
 
   .display-3 {
@@ -32,7 +32,7 @@
     padding-bottom: rem(40px);
 
     &.has-strip {
-      background-image: linear-gradient(gray("200") 50%, transparent 50%);
+      background-image: linear-gradient($proof-strip-color 50%, transparent 50%);
       background-repeat: repeat-y;
       background-position: top right;
       background-size: rem(44px) rem(38px);

@@ -2,9 +2,9 @@
 layout: docs
 title: Footer
 description: Footers are composed by four sub-sections.
-group: components
+group: layout
 toc: true
-permalink: /docs/4.0/components/footer/
+permalink: /docs/4.0/layout/footer/
 ---
 
 {% callout warning %}
@@ -127,13 +127,13 @@ Subsections **must all be** contained in one unique section `<footer class="mast
         <div class="pb-2 text-white">Suivez-nous :</div>
         <ul class="d-flex list-unstyled mb-0">
           <li class="pr-2">
-            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><span class="sr-only">Share with Twitter</span><i class="icons-twitter" aria-hidden="true"></i></button>
+            <button type="button" class="btn-rounded btn-color-footer"><span class="sr-only">Share with Twitter</span><i class="icons-twitter" aria-hidden="true"></i></button>
           </li>
           <li class="pr-2">
-            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><span class="sr-only">Share with FaceBook</span><i class="icons-facebook" aria-hidden="true"></i></button>
+            <button type="button" class="btn-rounded btn-color-footer"><span class="sr-only">Share with FaceBook</span><i class="icons-facebook" aria-hidden="true"></i></button>
           </li>
           <li>
-            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><span class="sr-only">Share with LinkedIn</span><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
+            <button type="button" class="btn-rounded btn-color-footer"><span class="sr-only">Share with LinkedIn</span><i class="icons-instagram" aria-hidden="true"></i></button>
           </li>
         </ul>
       </div>
@@ -245,13 +245,13 @@ Subsections **must all be** contained in one unique section `<footer class="mast
         <div class="pb-2 text-white">Suivez-nous :</div>
         <ul class="d-flex list-unstyled mb-0">
           <li class="pr-2">
-            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><span class="sr-only">Share with Twitter</span><i class="icons-twitter" aria-hidden="true"></i></button>
+            <button type="button" class="btn-rounded btn-color-footer"><span class="sr-only">Share with Twitter</span><i class="icons-twitter" aria-hidden="true"></i></button>
           </li>
           <li class="pr-2">
-            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><span class="sr-only">Share with FaceBook</span><i class="icons-facebook" aria-hidden="true"></i></button>
+            <button type="button" class="btn-rounded btn-color-footer"><span class="sr-only">Share with FaceBook</span><i class="icons-facebook" aria-hidden="true"></i></button>
           </li>
           <li>
-            <button type="button" class="btn-rounded btn-rounded-white btn-color-gray"><span class="sr-only">Share with LinkedIn</span><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
+            <button type="button" class="btn-rounded btn-color-footer"><span class="sr-only">Share with LinkedIn</span><i class="icons-circle-linkedin" aria-hidden="true"></i></button>
           </li>
         </ul>
       </div>
