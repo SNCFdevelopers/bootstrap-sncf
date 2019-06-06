@@ -3,7 +3,7 @@ layout: docs
 title: Tongues
 group: components
 toc: true
-permalink: /docs/4.0/components/tongues/
+permalink: /docs/4.3/components/tongues/
 ---
 
 Tongues indicate time-sensitive information related to an offer, a news item or a new development. Examples: “Since November”, “from 12 - 22 January”, “Coming soon”, or “New”. They can be used for the following home page components: carousels, event highlight vignettes, and classic vignettes.

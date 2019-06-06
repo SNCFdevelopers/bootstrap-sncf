@@ -4,7 +4,7 @@ title: Progress
 description: Documentation and examples for steps indicator, and progress bars featuring support for stacked bars, animated backgrounds, and text labels.
 group: components
 toc: true
-permalink: /docs/4.0/components/progress/
+permalink: /docs/4.3/components/progress/
 ---
 
 ## Overview

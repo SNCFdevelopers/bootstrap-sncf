@@ -4,7 +4,7 @@ title: Charts
 description: Charts
 group: components
 toc: true
-permalink: /docs/4.0/components/charts/
+permalink: /docs/4.3/components/charts/
 ---
 Our SNCF design system has 7 types of charts: 
 - curved line charts 

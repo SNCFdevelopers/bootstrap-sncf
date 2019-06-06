@@ -4,7 +4,7 @@ title: Editorial
 description: Editorial formatting elements.
 group: components
 toc: true
-permalink: /docs/4.0/components/edito/
+permalink: /docs/4.3/components/edito/
 ---
 
 ## Accordion

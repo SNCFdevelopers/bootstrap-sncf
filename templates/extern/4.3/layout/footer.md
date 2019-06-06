@@ -4,7 +4,7 @@ title: Footer
 description: Footers are composed by four sub-sections.
 group: layout
 toc: true
-permalink: /docs/4.0/layout/footer/
+permalink: /docs/4.3/layout/footer/
 ---
 
 {% callout warning %}

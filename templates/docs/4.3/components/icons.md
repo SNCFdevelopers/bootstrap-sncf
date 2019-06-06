@@ -4,7 +4,7 @@ title: Icons
 description: Examples and usage guidelines for icons.
 group: components
 toc: true
-permalink: /docs/4.0/components/icons/
+permalink: /docs/4.3/components/icons/
 ---
 
 ## Markup

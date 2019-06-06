@@ -4,7 +4,7 @@ title: Popovers
 description: Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
 group: components
 toc: true
-permalink: /docs/4.0/components/popovers/
+permalink: /docs/4.3/components/popovers/
 ---
 
 ## Overview

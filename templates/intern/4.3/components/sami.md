@@ -3,7 +3,7 @@ layout: docs
 title: Sami
 group: components
 toc: true
-permalink: /docs/4.0/components/sami/
+permalink: /docs/4.3/components/sami/
 ---
 
 There are several performance indicators. The most common is: 

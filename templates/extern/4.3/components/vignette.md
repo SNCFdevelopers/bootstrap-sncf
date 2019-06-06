@@ -3,7 +3,7 @@ layout: docs
 title: Vignettes
 group: components
 toc: true
-permalink: /docs/4.0/components/vignette/
+permalink: /docs/4.3/components/vignette/
 ---
 
 Classic vignettes highlight content and are used in threes on the homepage. They take users directly to a page located deeper in the website’s tree structure.

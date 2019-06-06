@@ -3,9 +3,9 @@ layout: docs
 title: Overview
 description: Components and options for laying out your SNCF project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.
 group: layout
-redirect_from: "/docs/4.0/layout/"
+redirect_from: "/docs/4.3/layout/"
 toc: true
-permalink: /docs/4.0/layout/overview/
+permalink: /docs/4.3/layout/overview/
 ---
 
 ## Containers

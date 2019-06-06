@@ -4,7 +4,7 @@ title: Navbars
 description: Documentation and examples for Bootstrap's powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.
 group: layout
 toc: true
-permalink: /docs/4.0/layout/navbars/
+permalink: /docs/4.3/layout/navbars/
 ---
 
 ## Galactic bar

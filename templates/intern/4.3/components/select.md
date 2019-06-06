@@ -15,7 +15,7 @@ selected:
     attr: selected
   - name: Amet Porta
   - name: Pharetra Fusce Venenatis
-permalink: /docs/4.0/components/select/
+permalink: /docs/4.3/components/select/
 ---
 
 ## Default

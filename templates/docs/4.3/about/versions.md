@@ -15,7 +15,7 @@ toc: true
   When changing Bootstrap version, SNCF revision will always reset to r1.
 {% endcallout %}
 
-## v4.0.0
+## v4.3.0
 
 ### Revision 5 _24/05/2019_
 General
@@ -82,7 +82,7 @@ General
 Docs
 - Search activated (by [Algolia](https://www.algolia.com/))
 - Lots of minors corrections for accessibility
-- [Favicon](/docs/4.0/content/favicon/) & how to use added
+- [Favicon](/docs/4.3/content/favicon/) & how to use added
 
 Corrections
 - Charts : vertical line on hover, and many others improvements

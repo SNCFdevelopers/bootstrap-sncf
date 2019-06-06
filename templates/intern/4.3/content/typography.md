@@ -4,7 +4,7 @@ title: Typography
 description: Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
 group: content
 toc: true
-permalink: /docs/4.0/content/typography/
+permalink: /docs/4.3/content/typography/
 ---
 
 ## Headings
