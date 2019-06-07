@@ -12,10 +12,16 @@ toc: true
   - SNCF's **revision {{ site.sncf_version }}**
   - of Bootstrap **v{{ site.current_version }}**
 
-  When changing Bootstrap version, SNCF revision will always reset to r1.
+  When changing Bootstrap version, SNCF revision will always reset to r0.
 {% endcallout %}
 
-## v4.3.0
+
+## v4.3.1
+
+### Revision 0 _00/06/2019_
+
+
+## v4.0.0
 
 ### Revision 5 _24/05/2019_
 General
