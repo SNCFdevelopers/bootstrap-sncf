@@ -20,6 +20,27 @@ toc: true
 
 ### Revision 0 _00/06/2019_
 
+### Bootstrap original patches
+Major overhaul with original Bootstrap's patches. Here is a non-exhaustive list with major features/corrections, compatibles with SNCF's Design (although all code is always present for compatibility issues).
+
+- Security fixes (see ship lists below for more details)
+- Added new `.flex-fill`, `.flex-grow-*`, and `.flex-shrink-*` utilities.
+- Added new `.text-monospace` utility.
+- `.form-controls` now have a fixed height to compensate for differences in computed height across different types. This also fixes some IE alignment issues.
+- Added new negative margin utility classes (e.g., `.mb-n3`). These rad new classes not only allow you more control over your general spacing needs, but also allow you to create responsive grid gutters at each breakpoint.
+- Added `.modal-xl` modifier class for our modals.
+- Added `.text-break` utility for applying `word-break: break-word`
+- Added `.modal-dialog-scrollable` modifier class for scrolling content within a modal.
+- img-retina, invisible, float, and size mixins are now deprecated and will be removed in v5.
+
+**Original Bootstrap's incremental ship lists**
+- [v4.3.1](https://github.com/twbs/bootstrap/issues/27893)
+- [v4.2.0](https://github.com/twbs/bootstrap/issues/26952)
+- [v4.1.3](https://github.com/twbs/bootstrap/issues/26867)
+- [v4.1.2](https://github.com/twbs/bootstrap/issues/26423)
+- [v4.1.1](https://github.com/twbs/bootstrap/issues/25971)
+- [v4.1.0](https://github.com/twbs/bootstrap/issues/25375)
+
 
 ## v4.0.0
 
