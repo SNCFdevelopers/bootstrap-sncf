@@ -21,7 +21,7 @@ toc: true
 ### Revision 0 _00/06/2019_
 
 ### Bootstrap original patches
-Major overhaul with original Bootstrap's patches. Here is a non-exhaustive list with major features/corrections, compatibles with SNCF's Design (although all code is always present for compatibility issues).
+Major overhaul with original Bootstrap's patches. Here is a non-exhaustive list with major features/corrections, only thoses compatibles with SNCF's Design (although all code is always present for compatibility issues).
 
 - Security fixes (see ship lists below for more details)
 - Added new `.flex-fill`, `.flex-grow-*`, and `.flex-shrink-*` utilities.

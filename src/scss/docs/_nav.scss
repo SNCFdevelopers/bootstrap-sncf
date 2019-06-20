@@ -91,3 +91,55 @@
     background-size: .75rem .75rem;
   }
 }
+
+.dropdown-doc-navbar {
+  .dropdown-menu {
+    top: 150%;
+    padding: 1.875rem;
+    background-color: gray("600");
+    border-color: gray("600");
+
+    &::before,
+    &::after {
+      top: -1.2rem;
+      right: 1.4rem;
+      border-bottom-color: gray("600");
+    }
+  }
+
+  &.dropdown .dropdown-menu[x-placement="bottom-start"],
+  &.dropdown .dropdown-menu[x-placement="bottom-end"],
+  &.dropup .dropdown-menu[x-placement="bottom-start"],
+  &.dropup .dropdown-menu[x-placement="bottom-end"] {
+    &::after {
+      border-bottom-color: gray("600");
+    }
+
+    &::before {
+      border-bottom-color: gray("600");
+    }
+  }
+
+  &.dropdown .dropdown-menu[x-placement="top-start"],
+  &.dropdown .dropdown-menu[x-placement="top-end"],
+  &.dropup .dropdown-menu[x-placement="top-start"],
+  &.dropup .dropdown-menu[x-placement="top-end"] {
+    &::after {
+      border-top-color: gray("600");
+    }
+
+    &::before {
+      border-top-color: gray("600");
+    }
+  }
+
+  .dropdown-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    color: color("white");
+    cursor: pointer;
+  }
+
+}
+

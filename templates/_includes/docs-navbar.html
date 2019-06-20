@@ -20,22 +20,56 @@
     </ul>
   </div>
 
-  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+  <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
     <li class="nav-item">
-      <a class="nav-item nav-link mr-md-2" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/about/versions/" id="bd-versions">
+      <a class="nav-item nav-link mr-md-2 text-nowrap" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/about/versions/" id="bd-versions">
         v{{ site.current_version }} r{{ site.sncf_version }}
       </a>
     </li>
-  </ul>
+    <li class="nav-item">
+      <div class="btn-group dropdown dropdown-doc-navbar">
+        <button class="btn btn-transparent dropdown-toggle toolbar-item-spacing" type="button" id="dropdownSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
+          <i class="icons-admin icons-size-1x25 icons-md-size-1x5 mr-xl-2" aria-hidden="true"></i>
+          <span class="d-none d-xl-block">Settings</span>
+          <i class="icons-arrow-down d-none d-lg-block" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-mastheader" aria-labelledby="dropdownSettings" id="dropdownSettingsMenu">
+          <i class="dropdown-close icons-close icons-size-x5"></i>
+          <div data-role="stop-propagation">
+            
+            <div class="mb-3">
+              <label class="w-100 text-white font-weight-medium mb-2">Dark mode</label>
+              <div class="options-control">
+                <div class="options-item">
+                  <input type="radio" name="darkmodeSwitch" id="darkmode-btn-off" class="sr-only" value="disabled" checked />
+                  <label class="options-btn font-weight-medium" for="darkmode-btn-off">Disabled</label>
+                </div>
+                <div class="options-item">
+                  <input type="radio" name="darkmodeSwitch" id="darkmode-btn" class="sr-only" value="enabled" />
+                  <label class="options-btn font-weight-medium" for="darkmode-btn">Enabled</label>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <label class="w-100 text-white font-weight-medium mb-2">Hide source code</label>
+              <div class="options-control">
+                <div class="options-item">
+                  <input type="radio" name="hidesourceSwitch" id="hidesource-btn-off" class="sr-only" value="disabled" checked />
+                  <label class="options-btn font-weight-medium" for="hidesource-btn-off">Disabled</label>
+                </div>
+                <div class="options-item">
+                  <input type="radio" name="hidesourceSwitch" id="hidesource-btn" class="sr-only" value="enabled" />
+                  <label class="options-btn font-weight-medium" for="hidesource-btn">Enabled</label>
+                </div>
+              </div>
+            </div>
 
-  <span class="navbar-nav">
-    <span class="text-gray100 mr-2">Darkmode</span>
-    <label for="darkmode-btn" class="switch-control">
-      <span class="sr-only">Darkmode switch</span>
-      <input id="darkmode-btn" type="checkbox" class="sr-only darkmode-btn">
-      <span class="switch-control-slider"></span>
-    </label>
-  </span>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
 
   <a class="btn btn-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/bootstrap-sncf.{{ site.flavor }}.v{{ site.current_version }}-r{{ site.sncf_version }}.zip">Download</a>
 </header>
