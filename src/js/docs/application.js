@@ -1,16 +1,21 @@
+/* eslint-disable */
+import jQuery from 'jquery'
+import Anchors from './vendor/anchor.min.js'
+import Clipboard from './vendor/clipboard.min.js'
+
 // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
 // IT'S ALL JUST JUNK FOR OUR DOCS!
 // ++++++++++++++++++++++++++++++++++++++++++
 
 /*!
- * JavaScript for Bootstrap's docs (https://getbootstrap.com/)
+ * JavaScript for Bootstrap's docs (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under the Creative Commons Attribution 3.0 Unported License. For
  * details, see https://creativecommons.org/licenses/by/3.0/.
  */
 
-/* global ClipboardJS: false, anchors: false, bsCustomFileInput: false */
+/* global Clipboard: false, anchors: false, Holder: false */
 
 (function ($) {
   'use strict'
@@ -26,7 +31,7 @@
 
     $('.toast')
       .toast({
-        autohide: false
+         autohide: false
       })
       .toast('show')
 
@@ -58,9 +63,9 @@
       $(this).siblings('.progress').find('.progress-bar-striped').toggleClass('progress-bar-animated')
     })
 
-    // Insert copy to clipboard button before .highlight
+    // Insert hide & copy to clipboard button before .highlight
     $('figure.highlight, div.highlight').each(function () {
-      var btnHtml = '<div class="bd-clipboard"><button type="button" class="btn-clipboard" title="Copy to clipboard">Copy</button></div>'
+      var btnHtml = '<div class="bd-clipboard bg-light d-flex"><button class="btn-show-source d-none mr-auto align-items-center" title="Show the source code">Show source code <i class="icons-arrow-down icons-size-x5 ml-2"></i></button><button class="btn-hide-source mr-auto d-none d-flex align-items-center" title="Hide the source code">Hide source code <i class="icons-arrow-up icons-size-x5 ml-2"></i></button><button class="btn-clipboard btn-secondary" title="Copy to clipboard">Copy</button></div>'
       $(this).before(btnHtml)
       $('.btn-clipboard')
         .tooltip()
@@ -70,9 +75,36 @@
           // remain visible until focus is moved away
           $(this).tooltip('hide')
         })
+      $('.btn-hide-source')
+        .tooltip()
+        .on('click', function () {
+          var bdClipboard = $(this).closest('.bd-clipboard')
+          $(this).prev('.btn-show-source').addClass('d-flex')
+          bdClipboard.next().addClass('d-none') // Highlight div hiding
+          bdClipboard.find('.btn-clipboard').addClass('d-none') // Copy bouton
+          bdClipboard.removeClass('bg-light')
+          $(this).removeClass('d-flex')
+        })
+        .on('mouseleave', function () {
+          $(this).tooltip('hide')
+        })
+      $('.btn-show-source')
+        .tooltip()
+        .on('click', function () {
+          var bdClipboard = $(this).closest('.bd-clipboard')
+          $(this).next('.btn-hide-source').addClass('d-flex')
+          bdClipboard.next().removeClass('d-none') // Highlight div hiding
+          bdClipboard.find('.btn-clipboard').removeClass('d-none') // Copy bouton
+          bdClipboard.addClass('bg-light')
+          $(this).removeClass('d-flex')
+        })
+        .on('mouseleave', function () {
+          $(this).tooltip('hide')
+        })
+
     })
 
-    var clipboard = new ClipboardJS('.btn-clipboard', {
+    var clipboard = new Clipboard('.btn-clipboard', {
       target: function (trigger) {
         return trigger.parentNode.nextElementSibling
       }
@@ -101,12 +133,24 @@
         .tooltip('_fixTitle')
     })
 
+    var anchors = new Anchors()
+
     anchors.options = {
       icon: '#'
     }
     anchors.add('.bd-content > h2, .bd-content > h3, .bd-content > h4, .bd-content > h5')
-    $('.bd-content').children('h2, h3, h4, h5').wrapInner('<span class="bd-content-title"></span>')
+    $('.bd-content > h2, .bd-content > h3, .bd-content > h4, .bd-content > h5').wrapInner('<div></div>')
 
-    bsCustomFileInput.init()
+    // Search
+    // Splitted into intern & extern versions
+
+    // Holder
+    // Holder.addTheme('gray', {
+    //   bg: '#777',
+    //   fg: 'rgba(255,255,255,.75)',
+    //   font: 'Helvetica',
+    //   fontweight: 'normal'
+    // })
   })
 }(jQuery))
+/* eslint-enable */
