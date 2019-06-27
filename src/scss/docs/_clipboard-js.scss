@@ -1,35 +1,44 @@
 // clipboard.js
 //
-// JS-based `Copy` buttons for code snippets.
+// JS-based `Copy` & `Hide source` buttons for code snippets
 
 .bd-clipboard {
   position: relative;
   display: none;
-  float: right;
+  padding: .5rem;
+  text-align: right;
 
   + .highlight {
     margin-top: 0;
   }
 }
 
-.btn-clipboard {
-  position: absolute;
-  top: .5rem;
-  right: .5rem;
+.btn-hide-source,
+.btn-show-source {
+  position: relative;
   z-index: 1;
-  display: block;
-  padding: .25rem .5rem;
+  display: inline-block;
+  padding: .25rem 1rem;
   font-size: 75%;
   color: $body-color;
   cursor: pointer;
   background-color: transparent;
   border: 0;
-  border-radius: .25rem;
 
   &:hover {
-    color: $body-color;
-    background-color: $primary;
+    opacity: .7;
   }
+
+}
+.btn-clipboard {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: .25rem 1rem;
+  font-size: 75%;
+  cursor: pointer;
+  border: 0;
+  border-radius: .25rem;
 }
 
 @media (min-width: 768px) {
