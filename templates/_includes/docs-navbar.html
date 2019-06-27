@@ -14,7 +14,6 @@
       <li class="nav-item">
         <a class="nav-link d-flex align-items-center {% if page.title == "Examples" %}active{% endif %}" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">
 	  Examples <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
-
 	</a>
       </li>
     </ul>
@@ -22,16 +21,16 @@
 
   <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
     <li class="nav-item">
-      <a class="nav-link mr-md-2 text-nowrap" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/about/versions/" id="bd-versions">
+      <a class="btn btn-transparent text-nowrap" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/about/versions/" id="bd-versions">
         v{{ site.current_version }} r{{ site.sncf_version }}
       </a>
     </li>
     <li class="nav-item">
       <div class="btn-group dropdown dropdown-doc-navbar">
         <button class="btn btn-transparent dropdown-toggle toolbar-item-spacing" type="button" id="dropdownSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
-          <i class="icons-admin icons-size-1x25 icons-md-size-1x5 mr-xl-2" aria-hidden="true"></i>
-          <span class="d-none d-xl-block">Settings</span>
-          <i class="icons-arrow-down d-none d-lg-block" aria-hidden="true"></i>
+          <i class="icons-admin icons-size-1x25 icons-md-size-1x5 mr-2" aria-hidden="true"></i>
+          <span class="d-xl-block d-sm-block d-block d-lg-none d-md-none mr-2">Settings</span>
+          <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i>
         </button>
         <div class="dropdown-menu dropdown-menu-right dropdown-menu-mastheader" aria-labelledby="dropdownSettings" id="dropdownSettingsMenu">
           <i class="dropdown-close icons-close icons-size-x5"></i>
@@ -42,11 +41,11 @@
               <div class="options-control">
                 <div class="options-item">
                   <input type="radio" name="darkmodeSwitch" id="darkmode-btn-off" class="sr-only" value="disabled" checked />
-                  <label class="options-btn font-weight-medium" for="darkmode-btn-off">Disabled</label>
+                  <label class="options-btn font-weight-medium darkmode-btn" for="darkmode-btn-off">Disabled</label>
                 </div>
                 <div class="options-item">
                   <input type="radio" name="darkmodeSwitch" id="darkmode-btn" class="sr-only" value="enabled" />
-                  <label class="options-btn font-weight-medium" for="darkmode-btn">Enabled</label>
+                  <label class="options-btn font-weight-medium darkmode-btn" for="darkmode-btn">Enabled</label>
                 </div>
               </div>
             </div>
