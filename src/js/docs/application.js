@@ -65,7 +65,7 @@ import Clipboard from './vendor/clipboard.min.js'
 
     // Insert hide & copy to clipboard button before .highlight
     $('figure.highlight, div.highlight').each(function () {
-      var btnHtml = '<div class="bd-clipboard bg-light d-flex"><button class="btn-show-source d-none mr-auto align-items-center" title="Show the source code">Show source code <i class="icons-arrow-down icons-size-x5 ml-2"></i></button><button class="btn-hide-source mr-auto d-none d-flex align-items-center" title="Hide the source code">Hide source code <i class="icons-arrow-up icons-size-x5 ml-2"></i></button><button class="btn-clipboard btn-secondary" title="Copy to clipboard">Copy</button></div>'
+      var btnHtml = '<div class="bd-clipboard bd-clipboard-bg-light d-flex"><button class="btn-show-source d-none mr-auto align-items-center" title="Show the source code">Show source code <i class="icons-arrow-down icons-size-x5 ml-2"></i></button><button class="btn-hide-source mr-auto d-none d-flex align-items-center" title="Hide the source code">Hide source code <i class="icons-arrow-up icons-size-x5 ml-2"></i></button><button class="btn-clipboard btn-secondary" title="Copy to clipboard">Copy</button></div>'
       $(this).before(btnHtml)
       $('.btn-clipboard')
         .tooltip()
@@ -82,7 +82,7 @@ import Clipboard from './vendor/clipboard.min.js'
           $(this).prev('.btn-show-source').addClass('d-flex')
           bdClipboard.next().addClass('d-none') // Highlight div hiding
           bdClipboard.find('.btn-clipboard').addClass('d-none') // Copy bouton
-          bdClipboard.removeClass('bg-light')
+          bdClipboard.removeClass('bd-clipboard-bg-light')
           $(this).removeClass('d-flex')
         })
         .on('mouseleave', function () {
@@ -95,7 +95,7 @@ import Clipboard from './vendor/clipboard.min.js'
           $(this).next('.btn-hide-source').addClass('d-flex')
           bdClipboard.next().removeClass('d-none') // Highlight div hiding
           bdClipboard.find('.btn-clipboard').removeClass('d-none') // Copy bouton
-          bdClipboard.addClass('bg-light')
+          bdClipboard.addClass('bd-clipboard-bg-light')
           $(this).removeClass('d-flex')
         })
         .on('mouseleave', function () {
