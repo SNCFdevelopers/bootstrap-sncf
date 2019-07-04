@@ -163,9 +163,9 @@ Subsections **must all be** contained in one unique section `<footer class="mast
         </li>
       </ul>
       <ul class="mastfooter-lang pt-2 pt-md-0 mb-0 list-unstyled">
-        <li><a href="#" class="text-gray300 active" title="Fr langue active"><img alt="" src="https://dummyimage.com/30x30/000/fff" class="gr-2">Fr</a></li>
-        <li><a href="#" class="text-gray300" title="En langue"><img alt="" src="https://dummyimage.com/30x30/000/fff" class="d-none gr-3">En</a></li>
-        <li><a href="#" class="text-gray300" title="De langue"><img alt="" src="https://dummyimage.com/30x30/000/fff" class="d-none gr-3">De</a></li>
+        <li><a href="#" class="text-gray300 active" title="Fr langue active"><img alt="" src="/assets/img/flags/french.svg" class="gr-2">Fr</a></li>
+        <li><a href="#" class="text-gray300" title="En langue"><img alt="" src="/assets/img/flags/english.svg" class="d-none gr-3">En</a></li>
+        <li><a href="#" class="text-gray300" title="De langue"><img alt="" src="/assets/img/flags/german.svg" class="d-none gr-3">De</a></li>
       </ul>
     </div>
   </div>
@@ -272,9 +272,9 @@ Subsections **must all be** contained in one unique section `<footer class="mast
         </li>
       </ul>
       <ul class="mastfooter-lang pt-2 pt-md-0 mb-0 list-unstyled">
-        <li><a href="#" class="text-gray300 active" title="Fr langue active"><img alt="" src="https://dummyimage.com/30x30/000/fff" class="gr-2">Fr</a></li>
-        <li><a href="#" class="text-gray300" title="En langue"><img alt="" src="https://dummyimage.com/30x30/000/fff" class="d-none gr-3">En</a></li>
-        <li><a href="#" class="text-gray300" title="De langue"><img alt="" src="https://dummyimage.com/30x30/000/fff" class="d-none gr-3">De</a></li>
+        <li><a href="#" class="text-gray300 active" title="Fr langue active"><img alt="" src="/assets/img/flags/french.svg" class="gr-2">Fr</a></li>
+        <li><a href="#" class="text-gray300" title="En langue"><img alt="" src="/assets/img/flags/english.svg" class="d-none gr-3">En</a></li>
+        <li><a href="#" class="text-gray300" title="De langue"><img alt="" src="/assets/img/flags/german.svg" class="d-none gr-3">De</a></li>
       </ul>
     </div>
   </div>

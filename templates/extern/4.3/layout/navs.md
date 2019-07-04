@@ -920,19 +920,19 @@ Just add `bg-colorname` to `<div class="actionbar">` to use colored tabs
         <nav class="nav" role="navigation">
             <button type="button" class="nav-item" data-role="main-toggle" data-target="#programme">
               Programme
-              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+              <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
             <button type="button" class="nav-item" data-role="main-toggle" data-target="#startup">
               Startup
-              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+              <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
             <button type="button" class="nav-item" data-role="main-toggle" data-target="#store">
               Store
-              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+              <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
             <button type="button" class="nav-item" data-role="main-toggle" data-target="#resources">
               Resources
-              <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+              <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i>
             </button>
           <div class="dropdown dropdown-menubar gt-5 d-md-none">
             <button type="button" class="btn w-100 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessibilité <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>

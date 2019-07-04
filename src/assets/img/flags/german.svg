@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Langages/deutsch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons/Langages/deutsch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,13 C0,14.637 0.313,16.195 0.861,17.636 L25.14,17.636 C25.687,16.195 26,14.637 26,13 C26,11.363 25.687,9.805 25.14,8.364 L0.861,8.364 C0.313,9.805 0,11.363 0,13" id="Fill-1" fill="#FF0000"></path>
+        <path d="M13,26 C18.562,26 23.277,22.531 25.14,17.636 L0.861,17.636 C2.723,22.531 7.437,26 13,26" id="Fill-3" fill="#FECE00"></path>
+        <path d="M13,0 C7.437,0 2.723,3.469 0.861,8.364 L25.14,8.364 C23.277,3.469 18.562,0 13,0" id="Fill-5" fill="#000000"></path>
+    </g>
+</svg>
