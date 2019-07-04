@@ -572,7 +572,7 @@ $btn-card-active-color:       $black;
 
 $label-margin-bottom:                   .5rem !default;
 
-$textarea-form-control-color:           $body-color;
+$textarea-form-control-color:           $primary;
 
 $input-padding-y:                       .65625rem; // 10.5px
 $input-padding-x:                       1.25rem;
@@ -662,7 +662,7 @@ $custom-forms-transition:               background-color .15s ease-in-out, borde
 //
 
 $chips-color:                           $black;
-$chips-input-color:                     $body-color;
+$chips-input-color:                     $primary;
 
 
 $custom-control-gutter:                 1.5rem;
