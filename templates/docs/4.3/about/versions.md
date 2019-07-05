@@ -19,6 +19,10 @@ toc: true
 ## v4.3.1
 
 ### Revision 0 _00/06/2019_
+- Added flags pictures (svg) for languages links (french, english & german)
+- Added switches for hiding source code + global switch
+- Added new settings menu for darkmode & hidesource
+- Some very minors corrections & adjustements
 
 ### Bootstrap original patches
 Major overhaul with original Bootstrap's patches. Here is a non-exhaustive list with major features/corrections, only thoses compatibles with SNCF's Design (although all code is always present for compatibility issues).
