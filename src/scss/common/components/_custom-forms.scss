@@ -191,7 +191,8 @@
   .custom-control-label {
     &::before,
     &::after {
-      top: 0;
+      top: -.5rem;
+      left: 0;
     }
   }
 }

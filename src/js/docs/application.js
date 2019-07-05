@@ -64,8 +64,12 @@ import Clipboard from './vendor/clipboard.min.js'
     })
 
     // Insert hide & copy to clipboard button before .highlight
-    $('figure.highlight, div.highlight').each(function () {
+    if (localStorage.getItem('bootstrap-sncf-hidesource') === 'true') {
+      var btnHtml = '<div class="bd-clipboard d-flex"><button class="btn-show-source d-none d-flex mr-auto align-items-center" title="Show the source code">Show source code <i class="icons-arrow-down icons-size-x5 ml-2"></i></button><button class="btn-hide-source mr-auto d-none align-items-center" title="Hide the source code">Hide source code <i class="icons-arrow-up icons-size-x5 ml-2"></i></button><button class="btn-clipboard btn-secondary d-none" title="Copy to clipboard">Copy</button></div>'
+    } else {
       var btnHtml = '<div class="bd-clipboard bd-clipboard-bg-light d-flex"><button class="btn-show-source d-none mr-auto align-items-center" title="Show the source code">Show source code <i class="icons-arrow-down icons-size-x5 ml-2"></i></button><button class="btn-hide-source mr-auto d-none d-flex align-items-center" title="Hide the source code">Hide source code <i class="icons-arrow-up icons-size-x5 ml-2"></i></button><button class="btn-clipboard btn-secondary" title="Copy to clipboard">Copy</button></div>'
+    }
+    $('figure.highlight, div.highlight').each(function () {
       $(this).before(btnHtml)
       $('.btn-clipboard')
         .tooltip()

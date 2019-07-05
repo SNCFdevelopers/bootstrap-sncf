@@ -1,17 +1,20 @@
 // Toggle switch along localstorage value
-if (localStorage.getItem('bootstrap-sncf-hide-source') === 1) {
-  document.getElementById('hidesource-btn').checked = 1
+
+if (localStorage.getItem('bootstrap-sncf-hidesource') === 'true') {
+  // Active switch in NavBar
+  document.getElementById('hidesource-btn').checked = true
+  toggleHideSource(true)
 }
 
 document.getElementById('hidesource-btn').addEventListener('click', () => {
-  toggleHideSource(1)
+  toggleHideSource(true)
 })
 document.getElementById('hidesource-btn-off').addEventListener('click', () => {
-  toggleHideSource(0)
+  toggleHideSource(false)
 })
 
 function toggleHideSource(bool) {
-  if (bool === 0) {
+  if (bool === false) {
     localStorage.setItem('bootstrap-sncf-hidesource', 'false')
     Array.from(document.getElementsByClassName('btn-clipboard')).forEach((item) => {
       item.classList.remove('d-none')
