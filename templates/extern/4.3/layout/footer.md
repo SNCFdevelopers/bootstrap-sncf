@@ -54,10 +54,10 @@ Subsections **must all be** contained in one unique section `<footer class="mast
 <footer class="mastfooter bg-gray">
   <div class="container d-flex flex-column">
     <div class="order-1 order-md-2 row gy-5">
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-lg-6">
         <p class="display-3 text-white mt-4">Inscrivez-vous à nos news pour être tenu informé Nibh Dolor Parturient Quam</p>
       </div>
-      <form class="col-12 col-md-6">
+      <form class="col-12 col-lg-6">
         <div class="form-row">
           <div class="col-12 col-sm-auto flex-sm-fluid gb-3 gb-sm-0">
             <label class="text-white" for="inputEmail1">Votre adresse email (jeandupont@sncf.fr)</label>
@@ -80,10 +80,10 @@ Subsections **must all be** contained in one unique section `<footer class="mast
 <footer class="mastfooter bg-gray">
   <div class="container d-flex flex-column">
     <div class="order-1 order-md-2 row gt-5">
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-lg-6">
         <p class="display-3 text-white mt-4">Inscrivez-vous à nos news pour être tenu informé Nibh Dolor Parturient Quam</p>
       </div>
-      <form class="col-12 col-md-6">
+      <form class="col-12 col-lg-6">
         <div class="form-row">
           <div class="col-12 col-sm-auto flex-sm-fluid gb-3 gb-sm-0">
             <label class="text-white" for="inputEmail1">Votre adresse email</label>
@@ -207,10 +207,10 @@ Subsections **must all be** contained in one unique section `<footer class="mast
       </li>
     </ul>
     <div class="order-1 order-md-2 row gy-5">
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-lg-6">
         <p class="display-3 text-white mt-4">Inscrivez-vous à nos news pour être tenu informé Nibh Dolor Parturient Quam</p>
       </div>
-      <form class="col-12 col-md-6">
+      <form class="col-12 col-lg-6">
         <div class="form-row">
           <div class="col-12 col-sm-auto flex-sm-fluid gb-3 gb-sm-0">
             <label class="text-white" for="inputEmail2">Votre adresse email (jeandupont@sncf.fr)</label>
