@@ -48,6 +48,14 @@ Major overhaul with original Bootstrap's patches. Here is a non-exhaustive list 
 
 ## v4.0.0
 
+### Revision 6 _06/06/2019_
+General
+- Added [Métier's signatures]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/navbars/#use-métier-signature-logos) for navbar
+- Added [icons-rotate]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/icons/#rotation) for correct alignement of sort icon in table heading
+- Updated [colors page]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/colors/) with all variants
+- Corrected lots of cursors issues
+
+
 ### Revision 5 _24/05/2019_
 General
 - Added [Dark mode]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/dark-mode/)
