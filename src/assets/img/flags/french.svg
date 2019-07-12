@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Langages/french</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons/Langages/french" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M13,26 C14.637,26 16.195,25.688 17.636,25.14 L17.636,0.861 C16.195,0.313 14.637,0 13,0 C11.363,0 9.805,0.313 8.364,0.861 L8.364,25.14 C9.805,25.688 11.363,26 13,26" id="Fill-1" fill="#FFFFFF"></path>
+        <path d="M26,13 C26,7.437 22.531,2.723 17.636,0.861 L17.636,25.14 C22.531,23.277 26,18.562 26,13" id="Fill-3" fill="#FF0000"></path>
+        <path d="M0,13 C0,18.562 3.469,23.277 8.364,25.14 L8.364,0.861 C3.469,2.723 0,7.437 0,13" id="Fill-5" fill="#0088CE"></path>
+    </g>
+</svg>

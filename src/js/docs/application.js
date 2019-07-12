@@ -29,6 +29,12 @@ import Clipboard from './vendor/clipboard.min.js'
 
     $('[data-toggle="popover"]').popover()
 
+    $('.toast')
+      .toast({
+         autohide: false
+      })
+      .toast('show')
+
     // Demos within modals
     $('.tooltip-test').tooltip()
     $('.popover-test').popover()
@@ -57,9 +63,13 @@ import Clipboard from './vendor/clipboard.min.js'
       $(this).siblings('.progress').find('.progress-bar-striped').toggleClass('progress-bar-animated')
     })
 
-    // Insert copy to clipboard button before .highlight
+    // Insert hide & copy to clipboard button before .highlight
+    if (localStorage.getItem('bootstrap-sncf-hidesource') === 'true') {
+      var btnHtml = '<div class="bd-clipboard d-flex"><button class="btn-show-source d-none d-flex mr-auto align-items-center" title="Show the source code">Show source code <i class="icons-arrow-down icons-size-x5 ml-2"></i></button><button class="btn-hide-source mr-auto d-none align-items-center" title="Hide the source code">Hide source code <i class="icons-arrow-up icons-size-x5 ml-2"></i></button><button class="btn-clipboard btn-secondary d-none" title="Copy to clipboard">Copy</button></div>'
+    } else {
+      var btnHtml = '<div class="bd-clipboard bd-clipboard-bg-light d-flex"><button class="btn-show-source d-none mr-auto align-items-center" title="Show the source code">Show source code <i class="icons-arrow-down icons-size-x5 ml-2"></i></button><button class="btn-hide-source mr-auto d-none d-flex align-items-center" title="Hide the source code">Hide source code <i class="icons-arrow-up icons-size-x5 ml-2"></i></button><button class="btn-clipboard btn-secondary" title="Copy to clipboard">Copy</button></div>'
+    }
     $('figure.highlight, div.highlight').each(function () {
-      var btnHtml = '<div class="bd-clipboard"><button class="btn-clipboard" title="Copy to clipboard">Copy</button></div>'
       $(this).before(btnHtml)
       $('.btn-clipboard')
         .tooltip()
@@ -69,6 +79,33 @@ import Clipboard from './vendor/clipboard.min.js'
           // remain visible until focus is moved away
           $(this).tooltip('hide')
         })
+      $('.btn-hide-source')
+        .tooltip()
+        .on('click', function () {
+          var bdClipboard = $(this).closest('.bd-clipboard')
+          $(this).prev('.btn-show-source').addClass('d-flex')
+          bdClipboard.next().addClass('d-none') // Highlight div hiding
+          bdClipboard.find('.btn-clipboard').addClass('d-none') // Copy bouton
+          bdClipboard.removeClass('bd-clipboard-bg-light')
+          $(this).removeClass('d-flex')
+        })
+        .on('mouseleave', function () {
+          $(this).tooltip('hide')
+        })
+      $('.btn-show-source')
+        .tooltip()
+        .on('click', function () {
+          var bdClipboard = $(this).closest('.bd-clipboard')
+          $(this).next('.btn-hide-source').addClass('d-flex')
+          bdClipboard.next().removeClass('d-none') // Highlight div hiding
+          bdClipboard.find('.btn-clipboard').removeClass('d-none') // Copy bouton
+          bdClipboard.addClass('bd-clipboard-bg-light')
+          $(this).removeClass('d-flex')
+        })
+        .on('mouseleave', function () {
+          $(this).tooltip('hide')
+        })
+
     })
 
     var clipboard = new Clipboard('.btn-clipboard', {

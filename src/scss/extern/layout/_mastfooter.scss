@@ -15,9 +15,10 @@
   a {
     display: inline-block;
     @include hover-focus-active {
-      text-decoration: underline;
+      text-decoration: none;
     }
     &:not(:last-child) { padding-right: rem(10px); }
+    font-weight: 500;
   }
 }
 

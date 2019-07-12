@@ -28,7 +28,8 @@ $mastheader-height-xl:   rem(65px);
 }
 
 .mastheader-logo img {
-  width: rem(50px);
+  width: auto;
+  height: rem(26px);
 }
 
 .mastheader-toolbar {
@@ -117,7 +118,7 @@ $mastheader-height-xl:   rem(65px);
   }
 
   .mastheader-logo img {
-    width: rem(70px);
+    height: rem(36px);
   }
 
   .mastheader-search {

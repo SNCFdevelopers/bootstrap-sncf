@@ -95,15 +95,15 @@ For _Design Communication_, the darkmode switch should be inside _accessibility 
             <i class="dropdown-close icons-close icons-size-6px"></i>
             <div class="pr-5">
               <div class="dropdown-menu-lang-item active">
-                <img src="https://dummyimage.com/30x30/000/fff" alt="Drapeaux Français" class="gr-3" />
+                <img src="/assets/img/flags/french.svg" alt="Drapeau Français" class="gr-3" />
                 Français
               </div>
               <div class="dropdown-menu-lang-item">
-                <img src="https://dummyimage.com/30x30/000/fff" alt="Drapeaux Anglais" class="gr-3" />
+                <img src="/assets/img/flags/english.svg" alt="Drapeau Anglais" class="gr-3" />
                 English
               </div>
               <div class="dropdown-menu-lang-item">
-                <img src="https://dummyimage.com/30x30/000/fff" alt="Drapeaux Allemand" class="gr-3" />
+                <img src="/assets/img/flags/german.svg" alt="Drapeau Allemand" class="gr-3" />
                 Deutsch
               </div>
             </div>

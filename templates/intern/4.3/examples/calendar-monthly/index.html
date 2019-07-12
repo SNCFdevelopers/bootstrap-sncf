@@ -1,0 +1,46 @@
+---
+permalink: /docs/4.3/examples/calendar-monthly/
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Monthly calendar layout</title>
+
+    {% include darkmode-js-header.html %}
+  </head>
+  <body>
+    {% include components/mastnav.html %}
+    {% include components/mastheader.html %}
+
+    {% include components/schedule-monthly-actionbar.html %}
+
+    <main class="mastcontainer h-100 d-flex flex-column">
+      <div class="schedule-grid" data-component="schedule">
+        <div class="schedule-sidebar schedule-sidebar-filters bg-white border-top border-right border-light">
+          {% include components/schedule-filters-menu.html %}
+        </div>
+        <div class="schedule-maincontent">
+          <div class="d-flex d-md-none align-items-center justify-content-between px-4 py-4">
+            <button type="button" class="btn btn-only-icon btn-white">
+              <span class="sr-only">Juin 2017 .Sem 20</span>
+              <i class="icons-arrow-prev icons-size-1x text-primary pb-1" aria-hidden="true"></i>
+            </button>
+            <div class="mb-0 h1 font-weight-medium text-primary pr-3 pl-3">Juin 2017 <small class="lead d-none d-lg-inline">.Sem 21</small></div>
+            <button type="button" class="btn btn-only-icon btn-white">
+              <span class="sr-only">Juin 2017 .Sem 22</span>
+              <i class="icons-arrow-next icons-size-1x text-primary pb-1" aria-hidden="true"></i>
+            </button>
+          </div>
+          {% include components/schedule-monthly.html %}
+        </div>
+      </div>
+    </main>
+
+    <script src="{{ site.baseurl }}/bootstrap-sncf.min.js"></script>
+  </body>
+</html>

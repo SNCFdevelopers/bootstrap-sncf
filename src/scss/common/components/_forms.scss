@@ -27,11 +27,6 @@ input {
   }
 
   &.is-invalid {
-    .form-control,
-    ~ div[data-role="counter"] {
-      color: theme-color("danger");
-    }
-
     + .invalid-feedback {
       display: block;
     }

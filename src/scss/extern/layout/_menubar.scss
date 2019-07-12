@@ -276,7 +276,7 @@ $menubar-height-md: rem(76px);
 
     &.active {
       [class^="icons-arrow-"] {
-        transform: rotate(90deg);
+        transform: rotate(180deg);
       }
     }
   }

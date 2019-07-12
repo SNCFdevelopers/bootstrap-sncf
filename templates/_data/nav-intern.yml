@@ -51,7 +51,6 @@
 
 - title: Utilities
   pages:
-    - title: Borders
     - title: Clearfix
     - title: Close icon
     - title: Colors
@@ -78,6 +77,5 @@
   pages:
     - title: Overview
     - title: Versions
-    - title: Brand
     - title: License
     - title: Translations

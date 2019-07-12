@@ -6,6 +6,8 @@
 //@import "common/tools/functions";
 //@import "common/settings/variables-lightmode";
 
+@import "~bootstrap/scss/vendor/rfs";
+@import "~bootstrap/scss/mixins/deprecate";
 @import "common/tools/mixins";
 @import "common/tools/colors";
 
@@ -68,12 +70,14 @@
 @import "common/components/list-group";
 @import "~bootstrap/scss/close";
 @import "common/components/close";
+@import "~bootstrap/scss/toasts";
 @import "~bootstrap/scss/modal";
 @import "common/components/modal";
 @import "~bootstrap/scss/tooltip";
 @import "~bootstrap/scss/popover";
 @import "common/components/popover";
 @import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
 @import "common/components/management-item";
 @import "common/components/chips";
 @import "common/components/accordion";

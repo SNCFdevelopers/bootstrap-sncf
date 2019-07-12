@@ -37,13 +37,16 @@
       &::before {
         border-color: $custom-control-indicator-checked-disabled-bg !important;
       }
+      cursor: default;
     }
 
     &:checked ~ .custom-control-label {
       &::before {
         background-color: $custom-control-indicator-checked-disabled-bg !important;
       }
+      cursor: default;
     }
+    cursor: default;
   }
   /* stylelint-enable declaration-no-important */
 }
@@ -188,7 +191,8 @@
   .custom-control-label {
     &::before,
     &::after {
-      top: 0;
+      top: -.5rem;
+      left: 0;
     }
   }
 }
@@ -295,11 +299,13 @@
   margin-bottom: 0;
   color: color("white");
   white-space: nowrap;
+  cursor: pointer;
   border-radius: $btn-border-radius;
 
   // stylelint-disable selector-no-qualifying-type
   input[disabled] + & {
     color: gray("300");
+    cursor: default;
   }
 
   input:checked + &,

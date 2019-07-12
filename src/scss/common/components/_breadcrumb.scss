@@ -39,6 +39,9 @@
       background-image: $breadcrumb-current-divider;
     }
   }
+  &.disabled a {
+    cursor: default;
+  }
 }
 
 .breadcrumb-lg {

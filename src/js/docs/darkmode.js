@@ -1,6 +1,6 @@
 // Toggle switch along localstorage value
 if (localStorage.getItem('bootstrap-sncf-css-name') === 'dark') {
-  document.getElementById('darkmode-btn').checked =  true
+  document.getElementById('darkmode-btn').checked = true
 }
 
 document.querySelectorAll('.darkmode-btn').forEach((item) => {

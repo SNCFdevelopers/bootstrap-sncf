@@ -173,7 +173,7 @@ input[type="button"] {
   justify-content: center;
   min-width: rem(50px);
   min-height: $input-btn-height;
-  padding: 0;
+  padding: $btn-only-icon-padding;
 
   &.active {
     [class^="icons-arrow-"] {
