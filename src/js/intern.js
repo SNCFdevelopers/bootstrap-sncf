@@ -23,7 +23,7 @@ function initializeComponents(componentsToInit) {
   /* eslint-disable no-console */
 
   // data components
-  const dataComponent = '[data-component]'
+  const dataComponent = '[data-component]:not([fabdesigninitialized="true"])'
   const dataLineChart = 'line-chart'
   const dataBarChart = 'bar-chart'
   const dataPieChart = 'pie-chart'
@@ -40,7 +40,6 @@ function initializeComponents(componentsToInit) {
   const dataTable = 'table'
   const dataRadialProgress = 'radial-progress'
   const dataSchedule = 'schedule'
-
   const components = componentsToInit ? componentsToInit : document.querySelectorAll(dataComponent)
 
   components.forEach((component) => {
@@ -108,6 +107,8 @@ function initializeComponents(componentsToInit) {
     if (component.dataset.component === dataSchedule) {
       new Schedule(component)
     }
+
+    component.setAttribute('fabdesigninitialized', true)
     /* eslint-enable no-new */
   })
 }
