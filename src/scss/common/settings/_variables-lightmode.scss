@@ -663,10 +663,12 @@ $chips-color:                           $white;
 $chips-input-color:                     $primary;
 
 
-$custom-control-gutter:                 1.5rem;
+//$custom-control-gutter:                 1.5rem;
+$custom-control-gutter:                 .5rem;
 $custom-control-spacer-x:               1rem;
 
-$custom-control-indicator-size:         1.125rem; // 18px
+//$custom-control-indicator-size:         1.125rem; // 18px
+$custom-control-indicator-size:         1rem; // 18px
 $custom-control-indicator-bg:           $white;
 
 $custom-control-indicator-bg-size:      50% 50%;
