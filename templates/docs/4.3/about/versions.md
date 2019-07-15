@@ -18,7 +18,13 @@ toc: true
 
 ## v4.3.1
 
-### Revision 0 _00/06/2019_
+### Revision 1 _18/07/2019_
+- Added SNCF's guidelines on Accessibility page
+- Added SNCF's guidelines on new Analytics page
+- Added unminified versions of CSS & JS in releases (zip, npm)
+- Corrected `.min` for documentation's CSS & JS
+
+### Revision 0 _08/07/2019_
 - Added flags pictures (svg) for languages links (french, english & german)
 - Added switches for hiding source code + global switch
 - Added new settings menu for darkmode & hidesource
