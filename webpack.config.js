@@ -7,6 +7,7 @@ module.exports = env => {
   const theme = env.theme;
   const thememode = env.darkmode ? 'dark' : 'light';
   const production = env.production;
+  const willMinify = production ? '.min' : '';
   const documentation = env.documentation;
   //const externals = ['flatpickr','jquery','popper.js','chart.js'];
   const entry = {
@@ -32,7 +33,7 @@ module.exports = env => {
     entry,
     output: {
       filename: (chunkData) => {
-        return chunkData.chunk.name === 'normal' ? 'bootstrap-sncf.min.js': '.generated-by-webpack'
+        return chunkData.chunk.name === 'normal' ? `bootstrap-sncf${willMinify}.js` : '.generated-by-webpack'
       },
       path: outputPath
     },
@@ -108,7 +109,7 @@ module.exports = env => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        moduleFilename: ({ name }) => (name === 'normal') ? 'bootstrap-sncf.min.css' : 'bootstrap-sncf.darkmode.min.css'
+        moduleFilename: ({ name }) => (name === 'normal') ? `bootstrap-sncf${willMinify}.css` : `bootstrap-sncf.darkmode${willMinify}.css`
       }),
       new StyleLintPlugin(),
       new CopyWebpackPlugin([
