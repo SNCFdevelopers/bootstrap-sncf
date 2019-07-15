@@ -19,7 +19,16 @@ import SelectRadios from './components/selectRadios'
 import Table from './components/table'
 import state from './components/states'
 
-function initializeComponents(componentsToInit) {
+let callbackTimeout = null
+const mainNode = document.body
+const timeoutDelay = 500
+const mutationObserverConfig = {
+  attributes: true,
+  childList: true,
+  subtree: true
+}
+
+function initializeComponents() {
   /* eslint-disable no-console */
 
   // data components
@@ -40,7 +49,7 @@ function initializeComponents(componentsToInit) {
   const dataTable = 'table'
   const dataRadialProgress = 'radial-progress'
   const dataSchedule = 'schedule'
-  const components = componentsToInit ? componentsToInit : document.querySelectorAll(dataComponent)
+  const components = document.querySelectorAll(dataComponent)
 
   components.forEach((component) => {
     /* eslint-disable no-new */
@@ -111,6 +120,20 @@ function initializeComponents(componentsToInit) {
     component.setAttribute('fabdesigninitialized', true)
     /* eslint-enable no-new */
   })
+
+  if (components.length > 0) {
+    console.log(`FabDesign initialized ${components.length} components`)
+  }
 }
-window.fabDesign = {}
-window.fabDesign.initializeComponents = initializeComponents
+
+function mutationObserverCallback() {
+  if (callbackTimeout) {
+    clearTimeout(callbackTimeout)
+  }
+  callbackTimeout = setTimeout(() => {
+    initializeComponents()
+  }, timeoutDelay)
+}
+
+const mutationObserver = new MutationObserver(mutationObserverCallback)
+mutationObserver.observe(mainNode, mutationObserverConfig)
