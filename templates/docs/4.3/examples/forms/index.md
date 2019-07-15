@@ -91,6 +91,6 @@ sector:
       </div>
     </main>
 
-    <script src="{{ site.baseurl }}/bootstrap-sncf.min.js"></script>
+    <script src="{{ site.baseurl }}/bootstrap-sncf.js"></script>
   </body>
 </html>

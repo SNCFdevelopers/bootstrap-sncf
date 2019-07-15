@@ -12,15 +12,17 @@ Analytics tools are already used by _B2C_ entities.
 We need to create this maturity and behaviour around performance management with _B2E_ entities and agents working with digital tools.
 When you have a traffic monitoring by user actions tracking, you’ll stock datas in the aim of making evolve your agent interfaces, looking at insights gave by tools
 
-For internal data security and _GDPR_ compliance reasons, SNCF Group chose an _open source_ analytics solution : [Matomo Analytics](https://matomo.org/).
+For internal projects (production app and webapps) SNCF Group chose a _GDPR_ compliant _open source_ analytics solution : [Matomo Analytics](https://matomo.org/).
 This tool will collect datas and will send it to SNCF secured servers that will be treated by internal Analysts : **every informations will stay in SNCF environment**.
  
 We can provide you this integrated solution that is central to each SNCF entity.
 
 Linked with Customer Knowledge central team, we’ll also provide advices about setting up your KPIs (Key Performance Indicators), according to your business needs and your goals to offer the best tracking that you need.
 
-Please send an email to [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Analytics) with the object “Bootstrap Métier - Analytics”.\\
-We are here to help each team growing up on Data subjects & to generate qualified datas on a qualified tracking.
+So, please feel free to contact us by email on [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap Métier - Analytics) with the object “Bootstrap Métier – Analytics”.\\
+We will open access to make you autonomous on your tracking.
+
+However, if you are not comfortable with this subject, the “Customer Knowledge” team can occasionally advise you to define your KPIs according to your business needs, and guide you in the design of your tracking.
 
 Do not hesitate to read technical informations wrote down or read official documentation of Matomo.
 
