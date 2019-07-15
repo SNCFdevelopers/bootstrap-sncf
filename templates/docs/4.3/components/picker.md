@@ -12,6 +12,11 @@ Pickers let users select a value from a set of pre-determined values with the he
 - date-time-pickers
 - range-pickers
 
+{% callout warning %}
+### Accessibility
+This components, and the library which it's based on, needs to automatically add `readonly` on input tag to ensure correct working.
+{% endcallout %}
+
 {% callout info %}
 ### How to use programmatic access ?
 Our pickers are based upon [Flatpickr library](https://flatpickr.js.org/) and you can use all the fonctions included and described in their documentation.

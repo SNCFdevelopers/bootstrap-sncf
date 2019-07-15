@@ -108,11 +108,11 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
 
 ## Steps indicator
 
-Steps indicators show the progress of steps in a process. Steps achieved remain active, which means users can return to previous steps. The step in progress is highlighted, and steps not yet completed must be inactive.
-
 {% callout info %}
 If you're looking for breadcrumbs (Fil d'ariane), there is a [dedicated component]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/breadcrumb).
 {% endcallout %}
+
+Steps indicators show the progress of steps in a process. Steps achieved remain active, which means users can return to previous steps. The step in progress is highlighted, and steps not yet completed must be inactive.
 
 {% callout warning %}
 The logic of the component needs that **only steps before active step** are links or buttons.

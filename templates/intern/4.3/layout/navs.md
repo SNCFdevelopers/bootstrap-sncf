@@ -309,6 +309,11 @@ Dynamic tabbed interfaces, as described in the [<abbr title="Web Accessibility I
 
 Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, as this causes both usability and accessibility issues. From a usability perspective, the fact that the currently displayed tab's trigger element is not immediately visible (as it's inside the closed dropdown menu) can cause confusion. From an accessibility point of view, there is currently no sensible way to map this sort of construct to a standard WAI ARIA pattern, meaning that it cannot be easily made understandable to users of assistive technologies.
 
+{% callout warning %}
+### Accessibility
+This components does not permit to navigate with keyboard arrow's, you have to use _[TAB]_ or _[SHIFT+TAB]_ and then _[ENTER]_ to select a tab.
+{% endcallout %}
+
 <div class="bd-example">
 <div class="actionbar">
   <nav role="navigation" class="position-relative mt-2">
