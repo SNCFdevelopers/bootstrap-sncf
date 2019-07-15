@@ -110,6 +110,7 @@ module.exports = env => {
       new MiniCssExtractPlugin({
         moduleFilename: ({ name }) => (name === 'normal') ? 'bootstrap-sncf.min.css' : 'bootstrap-sncf.darkmode.min.css'
       }),
+      new StyleLintPlugin(),
       new CopyWebpackPlugin([
         { 
           from: '**/*',
