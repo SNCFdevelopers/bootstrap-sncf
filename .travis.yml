@@ -36,6 +36,7 @@ script:
   # Intern / metier
   - npm run build-intern
   - npm run dist-intern
+  - npm run dist-intern-full
   - scripts/pushnpm.sh metier
   - npm run docs-compile-intern
   - mv _gh_pages documentation/intern
@@ -47,6 +48,7 @@ script:
   # Extern / communication
   - npm run build-extern
   - npm run dist-extern
+  - npm run dist-extern-full
   - scripts/pushnpm.sh communication
   - npm run docs-compile-extern
   - mv _gh_pages documentation/extern
