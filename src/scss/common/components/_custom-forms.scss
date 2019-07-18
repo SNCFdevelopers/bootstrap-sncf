@@ -66,8 +66,7 @@
 
   // Background-color and (when enabled) gradient
   &::before {
-    position: relative;
-    left: 0;
+    left: -.625rem;
     border: $custom-control-indicator-border-size solid $custom-control-indicator-border-color;
   }
 
