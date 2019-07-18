@@ -22,6 +22,7 @@ toc: true
 - Added SNCF's guidelines on [Accessibility page]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/accessibility/)
 - Added SNCF's guidelines on [new Analytics page]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/analytics-tracking/)
 - Added unminified versions of CSS & JS in releases (zip, npm)
+- Added "no external" version of JS bundle
 - Corrected `.min.` filename for documentation's CSS & JS
 - Some other minor corrections
 
