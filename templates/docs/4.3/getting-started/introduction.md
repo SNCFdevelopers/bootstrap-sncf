@@ -31,29 +31,32 @@ Alternate CSS is optional, use it if your project needs a [dark mode]({{ site.ba
 Many of our components require the use of JavaScript to function. Specifically, they require [jQuery](https://jquery.com), [Popper.js](https://popper.js.org/), and our own JavaScript plugins.
 
 {% callout info %}
-For commodity reasons, we have integrated jQuery and popper inside `bootstrap-sncf.min.js`. We will soon propose cherry-picking for JS libraries in multiple versions.
+For commodity reasons, **we have integrated** jQuery and popper inside `bootstrap-sncf.min.js`. We will soon propose cherry-picking for JS libraries in multiple versions.
 {% endcallout %}
 
 {% highlight html %}
 <script src="/bootstrap-sncf.min.js"></script>
 {% endhighlight %}
 
-Curious which components explicitly require jQuery, our JS, and Popper.js? Click the show components link below. If you're at all unsure about the general page structure, keep reading for an example page template.
+Curious which components explicitly require jQuery, our JS, Popper.js or other libs? Here's a list of those components. \\
+Please remember that **all these libs are already included** in ours main releases, by default. You'll soon find some lightened versions.
 
-<details>
-<summary class="text-primary mb-3">Show components requiring JavaScript</summary>
-{% markdown %}
 - Alerts for dismissing
 - Buttons for toggling states and checkbox/radio functionality
 - Carousel for all slide behaviors, controls, and indicators
+- Charts (also requires [Chart.js](https://www.chartjs.org/))
+- Chips for input & delete elements
 - Collapse for toggling visibility of content
 - Dropdowns for displaying and positioning (also requires [Popper.js](https://popper.js.org/))
 - Modals for displaying, positioning, and scroll behavior
 - Navbar for extending our Collapse plugin to implement responsive behavior
-- Tooltips and popovers for displaying and positioning (also requires [Popper.js](https://popper.js.org/))
+- Pickers (also requires [Flatpickrjs](https://flatpickr.js.org/))
+- Progress & range sliders
 - Scrollspy for scroll behavior and navigation updates
-{% endmarkdown %}
-</details>
+- Searchbar (for erasing with button)
+- Select for all elements
+- Tables
+- Tooltips and popovers for displaying and positioning (also requires [Popper.js](https://popper.js.org/))
 
 ## Starter template
 

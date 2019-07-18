@@ -10,8 +10,8 @@ toc: true
 
 Download ready-to-use compiled code for **Bootstrap SNCF v{{ site.current_version}} r{{ site.sncf_version}}** to easily drop into your project, which includes:
 
-- Compiled and minified CSS bundles (see [CSS files comparison]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/contents/#comparison-of-css-files))
-- Compiled and minified JavaScript plugins
+- Compiled and standard or minified CSS bundles
+- Compiled and standard or minified JavaScript plugins
 
 This doesn't include documentation and source files.
 

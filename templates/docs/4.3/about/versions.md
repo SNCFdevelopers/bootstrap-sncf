@@ -19,10 +19,11 @@ toc: true
 ## v4.3.1
 
 ### Revision 1 _18/07/2019_
-- Added SNCF's guidelines on Accessibility page
-- Added SNCF's guidelines on new Analytics page
+- Added SNCF's guidelines on [Accessibility page]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/accessibility/)
+- Added SNCF's guidelines on [new Analytics page]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/analytics-tracking/)
 - Added unminified versions of CSS & JS in releases (zip, npm)
-- Corrected `.min` for documentation's CSS & JS
+- Corrected `.min.` filename for documentation's CSS & JS
+- Some other minor corrections
 
 ### Revision 0 _08/07/2019_
 - Added flags pictures (svg) for languages links (french, english & german)
