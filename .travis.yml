@@ -1,6 +1,7 @@
 branches:
   only:
     - master
+    - dev-travis
 sudo: required
 dist: trusty
 language: node_js
@@ -9,23 +10,19 @@ git:
 node_js:
   - "8"
 before_install:
-  # Remove ./node_modules/.bin from PATH so node-which doesn't replace Unix which and cause RVM to barf. See https://github.com/travis-ci/travis-ci/issues/5092
   - export PATH=$(python -c 'from sys import argv;from collections import OrderedDict as od;print(":".join(od((p,None) for p in argv[1].split(":") if p.startswith("/")).keys()))' "$PATH")
   - rvm install 2.5.1
   - rvm use 2.5.1 --fuzzy
 install:
   - bundle install --deployment --jobs=1
   - npm install
-# Undo `_JAVA_OPTIONS` environment variable;
-# see https://github.com/travis-ci/travis-ci/issues/8408
 before_script:
-  - _JAVA_OPTIONS=
   - export VERSION=v$(node -e "console.log(require('./package.json').version);")
   - export TRAVIS_TAG=$VERSION
   - echo $VERSION
   - git config --local user.name "nicolaswurtz"
   - git config --local user.email "nicolas.wurtz@sncf.fr"
-  - git tag $VERSION
+  - if [ $TRAVIS_BRANCH = 'master' ]; git tag $VERSION; fi
 cache:
   directories:
     - node_modules
@@ -37,7 +34,7 @@ script:
   - npm run build-intern
   - npm run dist-intern
   - npm run dist-intern-full
-  - scripts/pushnpm.sh metier
+  - if [ $TRAVIS_BRANCH = 'master' ]; scripts/pushnpm.sh metier; fi
   - npm run docs-compile-intern
   - mv _gh_pages documentation/intern
   - cd dist/
@@ -49,7 +46,7 @@ script:
   - npm run build-extern
   - npm run dist-extern
   - npm run dist-extern-full
-  - scripts/pushnpm.sh communication
+  - if [ $TRAVIS_BRANCH = 'master' ]; scripts/pushnpm.sh communication; fi
   - npm run docs-compile-extern
   - mv _gh_pages documentation/extern
   - cd dist/

@@ -10,8 +10,17 @@ toc: true
 
 Download ready-to-use compiled code for **Bootstrap SNCF v{{ site.current_version}} r{{ site.sncf_version}}** to easily drop into your project, which includes:
 
-- Compiled and standard or minified CSS bundles
-- Compiled and standard or minified JavaScript plugins
+- `assets` All pictures, logos & fonts
+- `bootstrap-sncf.css` Unminified CSS stylesheet original version
+- `bootstrap-sncf.css.map`
+- `bootstrap-sncf.darkmode.css` Unminified CSS stylesheet "dark mode" version
+- `bootstrap-sncf.darkmode.css.map`
+- `bootstrap-sncf.js` Unminified JS, with [all needed externals libs]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/#js) inside
+- `bootstrap-sncf.js.map`
+- `bootstrap-sncf.min.css` Minified CSS stylesheet original version
+- `bootstrap-sncf.darkmode.min.css` Minified CSS stylesheet "dark mode" version
+- `bootstrap-sncf.min.js` Minified JS, with all libs inside
+- `bootstrap-sncf-noext.min.js` Minified JS, without [externals libs]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/#js)
 
 This doesn't include documentation and source files.
 

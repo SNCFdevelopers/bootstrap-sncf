@@ -28,10 +28,16 @@ Alternate CSS is optional, use it if your project needs a [dark mode]({{ site.ba
 
 ### JS
 
-Many of our components require the use of JavaScript to function. Specifically, they require [jQuery](https://jquery.com), [Popper.js](https://popper.js.org/), and our own JavaScript plugins.
+Many of our components require the use of JavaScript to function. Specifically, they require:
+- [jQuery](https://jquery.com)
+- [Popper.js](https://popper.js.org/)
+- [Flatpickrjs](https://flatpickr.js.org/)
+- [Chart.js](https://www.chartjs.org/)
+- and our own JavaScript plugins (included in all .js files)
 
 {% callout info %}
-For commodity reasons, **we have integrated** jQuery and popper inside `bootstrap-sncf.min.js`. We will soon propose cherry-picking for JS libraries in multiple versions.
+For commodity reasons, **we have integrated** jQuery and popper inside `bootstrap-sncf.min.js`. \\
+However, we propose a "no-externals" (without extra libs) version named `bootstrap-sncf-noext.min.js` (you'll need to add extra libs before loading this version).
 {% endcallout %}
 
 {% highlight html %}
@@ -39,7 +45,7 @@ For commodity reasons, **we have integrated** jQuery and popper inside `bootstra
 {% endhighlight %}
 
 Curious which components explicitly require jQuery, our JS, Popper.js or other libs? Here's a list of those components. \\
-Please remember that **all these libs are already included** in ours main releases, by default. You'll soon find some lightened versions.
+Please remember that **all these libs are already included** in ours main releases, by default (except if you're using `-noext` lightened version).
 
 - Alerts for dismissing
 - Buttons for toggling states and checkbox/radio functionality
