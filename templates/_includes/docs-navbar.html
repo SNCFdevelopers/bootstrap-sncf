@@ -21,17 +21,17 @@
 
   <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
     <li class="nav-item">
-      <a class="btn nav-link text-nowrap" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/about/versions/" id="bd-versions">
+      <a class="nav-link text-nowrap" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/about/versions/" id="bd-versions">
         v{{ site.current_version }} r{{ site.sncf_version }}
       </a>
     </li>
     <li class="nav-item">
       <div class="btn-group dropdown dropdown-doc-navbar">
-        <button class="btn btn-transparent dropdown-toggle toolbar-item-spacing" type="button" id="dropdownSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
+        <a class="nav-link d-flex align-items-center dropdown-toggle toolbar-item-spacing" type="button" id="dropdownSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
           <i class="icons-admin icons-size-1x25 icons-md-size-1x5 mr-2" aria-hidden="true"></i>
           <span class="d-xl-block d-sm-block d-block d-lg-none d-md-none mr-2">Settings</span>
           <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i>
-        </button>
+        </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-menu-mastheader" aria-labelledby="dropdownSettings" id="dropdownSettingsMenu">
           <i class="dropdown-close icons-close icons-size-x5"></i>
           <div data-role="stop-propagation">
