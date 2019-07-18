@@ -34,6 +34,7 @@ script:
   - npm run build-intern
   - npm run dist-intern
   - npm run dist-intern-full
+  - npm run dist-intern-noext
   - if [ $TRAVIS_BRANCH = 'master' ]; scripts/pushnpm.sh metier; fi
   - npm run docs-compile-intern
   - mv _gh_pages documentation/intern
@@ -46,6 +47,7 @@ script:
   - npm run build-extern
   - npm run dist-extern
   - npm run dist-extern-full
+  - npm run dist-extern-noext
   - if [ $TRAVIS_BRANCH = 'master' ]; scripts/pushnpm.sh communication; fi
   - npm run docs-compile-extern
   - mv _gh_pages documentation/extern
