@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Anchor
+title: Ancres
 description: Anchor links make vertical navigation easier by taking users directly to a specific location on a text page.
 group: components
 toc: true
