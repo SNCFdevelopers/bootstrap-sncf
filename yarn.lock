@@ -2634,7 +2634,7 @@ flat-cache@^1.2.1:
 
 "flatpickr@https://github.com/vdesdoigts/flatpickr.git#dist":
   version "4.4.7"
-  resolved "https://github.com/vdesdoigts/flatpickr.git#76ac404d1d128d6224b92b1a91358180ad171dd8"
+  resolved "https://github.com/vdesdoigts/flatpickr.git#839cace1ef1a6f6880fa265d74312491df201555"
 
 flatten@^1.0.2:
   version "1.0.2"

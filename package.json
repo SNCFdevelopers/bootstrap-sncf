@@ -9,7 +9,13 @@
     "url": "https://github.com/SNCFdevelopers/bootstrap-sncf"
   },
   "homepage": "http://sn.cf/socledesign",
-  "keywords": ["bootstrap","sncf","design","framework","css"],
+  "keywords": [
+    "bootstrap",
+    "sncf",
+    "design",
+    "framework",
+    "css"
+  ],
   "license": "MIT",
   "author": {
     "name": "Fab Design SNCF",
