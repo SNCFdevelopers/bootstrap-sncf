@@ -66,7 +66,7 @@
 
 .flatpickr-months {
   position: relative;
-  padding-bottom: rem(30px);
+  padding-bottom: rem(10px);
   color: theme-color("primary");
   fill: theme-color("primary");
 
@@ -82,15 +82,70 @@
       fill: theme-color("primary-dark");
     }
   }
+
+  .flatpickr-prev-month,
+  .flatpickr-next-month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span.arrowDown,
+  span.arrowUp {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(20px);
+    height: rem(20px);
+    padding: 0;
+    line-height: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    opacity: 1;
+    &::after { opacity: 0; }
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  span.arrowDown {
+    bottom: 0;
+    right: 0;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 2'%3e%3cdefs%3e%3cstyle%3e.a%7bfill:%230088ce;%7d%3c/style%3e%3c/defs%3e%3ctitle%3eSans titre - 1%3c/title%3e%3crect class='a' width='12' height='2'/%3e%3c/svg%3e");
+    background-size: 12px 2px;
+  }
+  span.arrowUp {
+    top: 0;
+    right: 0;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3cdefs%3e%3cstyle%3e.a%7bfill:%230088ce;%7d%3c/style%3e%3c/defs%3e%3ctitle%3eSans titre - 1%3c/title%3e%3crect class='a' y='5' width='12' height='2'/%3e%3crect class='a' y='5' width='12' height='2' transform='translate(0 12) rotate(-90)'/%3e%3c/svg%3e");
+    background-size: 12px 12px;
+  }
 }
 
 .flatpickr-current-month {
-  pointer-events: none;
+  left: rem(34px);
+  display: flex;
+  justify-content: space-around;
+  width: calc(100% - #{rem(68px)});
+  padding-top: 0;
+  font-size: rem(16px);
 
-  .cur-month.cur-month,
-  .cur-year.cur-year {
-    font-size: rem(20px);
-    font-weight: $font-weight-medium;
+  .numInputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding-bottom: rem(1px);
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  
+  input.cur-year {
+    padding-left: rem(14px);
   }
 }
 
@@ -286,7 +341,7 @@
   .numInput {
     width: rem(86px);
     height: rem(50px);
-    font-size: rem(18px);
+    font-size: rem(16px);
     pointer-events: none;
     background-color: $flatpickr-time-input-bg;
     border-radius: rem(7px);
@@ -313,3 +368,8 @@
   }
 }
 /* stylelint-enable selector-max-class, no-duplicate-selectors */
+
+.flatpickr-monthDropdown-months {
+  font-size: rem(16px);
+  text-transform: capitalize;
+}

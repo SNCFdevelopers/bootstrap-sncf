@@ -3024,9 +3024,10 @@ flat-cache@^2.0.1:
     rimraf "2.6.3"
     write "1.0.3"
 
-"flatpickr@git+https://github.com/vdesdoigts/flatpickr.git#dist":
-  version "4.4.7"
-  resolved "git+https://github.com/vdesdoigts/flatpickr.git#839cace1ef1a6f6880fa265d74312491df201555"
+flatpickr@^4.6.2:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.6.2.tgz#50e1b4fc84fbf67c5b0919ba3ddc330221f126da"
+  integrity sha512-bRfBPyxohUQWgCTg6jPALUO1t/x+sRJ/S/RVti/NzYvHqGRpCAesKSWKLzOuLmpu+vGHfXBld4SXvOCLFgYb+g==
 
 flatted@^2.0.0:
   version "2.0.0"
