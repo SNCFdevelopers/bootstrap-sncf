@@ -26,25 +26,6 @@ class SelectExclusive {
 
     this._addEventListeners() // ui event listeners
 
-    element.addEventListener('focusin', (masterEvent) => { // force parse options (useful when using asynchrone loading of options)
-      const optionsNode = element.querySelectorAll('[data-role=value]') // options
-      masterEvent.stopPropagation()
-
-      optionsNode.forEach((option) => {
-        if (this.inputNode.selectedIndex === Number(option.dataset.target)) {
-          this._updatePlaceholder(option.innerHTML)
-          this._updateOption(option)
-        }
-
-        option.addEventListener('click', (event) => {
-          this._onOptionChange(event)
-          this.element.classList.toggle('active')
-          this.btnNode.classList.toggle('active')
-          this.btnNode.setAttribute('aria-expanded', 'false')
-        })
-      })
-    })
-
     if (addBtn && this.addInput) {
       addBtn.addEventListener('click', (event) => {
         event.stopPropagation()
@@ -66,6 +47,7 @@ class SelectExclusive {
         this.btnNode.setAttribute('aria-expanded', 'false')
       } else {
         this.btnNode.setAttribute('aria-expanded', 'true')
+        this._refreshOptionsNode()
       }
     })
 
@@ -75,10 +57,6 @@ class SelectExclusive {
         // bootstrap jQuery collapse
         $(event.target.dataset.target).collapse('toggle')
       })
-    })
-
-    this.element.addEventListener('click', (event) => {
-      event.stopPropagation()
     })
 
     document.addEventListener('click', () => {
@@ -97,6 +75,7 @@ class SelectExclusive {
 
     this.menu.append(currentValueNode)
     currentValueNode.focus()
+    this._refreshOptionsNode()
   }
 
   _createOption(value) {
@@ -149,6 +128,24 @@ class SelectExclusive {
     this._updateSelect(event)
     this._updatePlaceholder(event.target.innerHTML)
     this._updateOption(event.target)
+  }
+
+  _refreshOptionsNode() {
+    const optionsNode = this.element.querySelectorAll('[data-role=value]') // options
+
+    optionsNode.forEach((option) => {
+      if (this.inputNode.selectedIndex === Number(option.dataset.target)) {
+        this._updatePlaceholder(option.innerHTML)
+        this._updateOption(option)
+      }
+
+      option.addEventListener('click', (event) => {
+        this._onOptionChange(event)
+        this.element.classList.remove('active')
+        this.btnNode.classList.remove('active')
+        this.btnNode.setAttribute('aria-expanded', 'false')
+      })
+    })
   }
 }
 
