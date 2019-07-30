@@ -1,0 +1,49 @@
+<div class="bd-search d-flex align-items-center">
+  <form class="form-control-container has-left-icon">
+    <input role="search" type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+    <span class="form-control-state"></span>
+    <span class="form-control-icon"><i class="icons-search"></i></span>
+  </form>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+    {{ partial "icons/menu.svg" (dict "width" "30" "height" "30") }}
+  </button>
+</div>
+
+<nav class="collapse bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  {{- $url := split .Permalink "/" -}}
+  {{- $page_slug := index $url (sub (len $url) 2) -}}
+
+  <ul class="list-unstyled">
+  {{- range $group := .Site.Data.nav_intern -}}
+    {{- $link := $group.title -}}
+    {{- $link_slug := $link | urlize -}}
+
+    {{- if $group.pages -}}
+      {{- $link = index $group.pages 0 -}}
+      {{- $link_slug = $link.title | urlize -}}
+    {{- end -}}
+
+    {{- $group_slug := $group.title | urlize -}}
+    {{- $active_group := eq $.Page.Params.group $group_slug }}
+
+      <li class="bd-sidenav-group my-1{{ if $active_group }} active{{ end }} js-sidenav-group{{ if $group.pages }} has-children{{ end }}">
+        <a class="d-inline-flex align-items-center bd-sidenav-group-link" href="/docs/{{ $.Site.Params.docs_version }}/{{ $group_slug }}/{{ if $group.pages }}{{ $link_slug }}/{{ end }}">
+          <div>{{- $group.title -}}</div>
+        </a>
+
+        {{- if $group.pages }}
+        <ul class="nav bd-sidenav flex-column mb-2">
+          {{- range $doc := $group.pages -}}
+            {{- $doc_slug := $doc.title | urlize }}
+            <li{{ if and $active_group (eq $page_slug $doc_slug) }} class="active bd-sidenav-active"{{ end }}>
+              <a href="/docs/{{ $.Site.Params.docs_version }}/{{ $group_slug }}/{{ $doc_slug }}/">
+                {{- $doc.title -}}
+              </a>
+            </li>
+          {{- end }}
+        </ul>
+        {{- end }}
+      </li>
+    {{- end }}
+  </ul>
+</nav>

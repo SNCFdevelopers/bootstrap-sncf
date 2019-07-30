@@ -1,0 +1,75 @@
+- title: Getting started
+  pages:
+    - title: Introduction
+    - title: Download
+    - title: Accessibility
+    - title: How to contribute
+
+- title: Layout
+  pages:
+    - title: Grid
+    - title: Dark mode
+    - title: Utilities for layout
+    - title: Navbar
+    - title: Navs
+    - title: Footer
+
+- title: Content
+  pages:
+    - title: Reboot
+    - title: Typography
+    - title: Code
+    - title: Images
+    - title: Figures
+    - title: Favicon
+
+- title: Components
+  pages:
+    - title: Anchor
+    - title: Breadcrumb
+    - title: Buttons
+    - title: Carousel
+    - title: Checkboxes and radios
+    - title: Edito
+    - title: Forms
+    - title: Icons
+    - title: Input group
+    - title: Medias
+    - title: Modal
+    - title: Pagination
+    - title: Picker
+    - title: Progress
+    - title: Select
+    - title: Tongues
+    - title: Vignette
+
+- title: Utilities
+  pages:
+    - title: Clearfix
+    - title: Close icon
+    - title: Colors
+    - title: Display
+    - title: Embed
+    - title: Flex
+    - title: Float
+    - title: Image replacement
+    - title: Position
+    - title: Screenreaders
+    - title: Sizing
+    - title: Spacing
+    - title: Text
+    - title: Vertical align
+    - title: Visibility
+
+- title: Extend
+  pages:
+    - title: Approach
+
+- title: Migration
+
+- title: About
+  pages:
+    - title: Overview
+    - title: Versions
+    - title: License
+    - title: Translations
