@@ -18,6 +18,13 @@ selected:
 permalink: /docs/4.0/components/select/
 ---
 
+## Standard
+
+{% example html %}
+<label for="select0">Example select</label>
+{% include components/select-default.html id="select0" placeholder="Lorem ipsum" iconsize="icons-size-x75" placeholderAttr="selected" items=page.default %}
+{% endexample %}
+
 ## Default
 
 A drop-down is a list of options for users to choose from. Such menus are often used in forms or for functional purposes.

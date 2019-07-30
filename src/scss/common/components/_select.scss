@@ -3,6 +3,37 @@
 
 $select-scrollable-max-height: rem(360px);
 
+select {
+  width: 100%;
+  min-height: $input-min-height;
+  padding: $input-padding-y $input-padding-x;
+  line-height: $input-line-height;
+  background-color: gray("100");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Earrow-down%3C/title%3E%3Cpath class='a' d='M25,40.42,1.15,17a4.69,4.69,0,0,1,0-6.15A5.15,5.15,0,0,1,4.23,9.65a4.38,4.38,0,0,1,3.08,1.16L25,28.12,42.69,10.81a4.6,4.6,0,0,1,6.93.77,5.39,5.39,0,0,1-1.16,5.77Z'/%3E%3C/svg%3E"), linear-gradient(to left, theme-color("primary") rem(50px), gray("100") rem(50px));
+  background-repeat: no-repeat;
+  background-position: center right rem(19px), top left;
+  background-size: rem(13px), 100%;
+  border: 1px solid gray("100");
+  border-radius: $border-radius;
+  appearance: none;
+
+  &:focus {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Earrow-up%3C/title%3E%3Cpath class='a' d='M25,9.58,48.85,33a4.69,4.69,0,0,1,0,6.15,5.15,5.15,0,0,1-3.08,1.16,4.38,4.38,0,0,1-3.08-1.16L25,21.88,7.31,39.19a4.6,4.6,0,0,1-6.93-.77,5.39,5.39,0,0,1,1.16-5.77Z'/%3E%3C/svg%3E"), linear-gradient(to left, theme-color("primary-dark") rem(50px), gray("100") rem(50px));
+    border: 1px solid gray("200");
+    border-bottom-color: theme-color("primary");
+    outline: 0;
+  }
+}
+
+select::-ms-expand {
+  display: none; /* remove default arrow on ie10 and ie11 */
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
 .select-improved {
   &:not(.active) {
     .select-menu {

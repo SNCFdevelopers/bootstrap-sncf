@@ -18,6 +18,13 @@ selected:
 permalink: /docs/4.0/components/select/
 ---
 
+## Standard
+
+{% example html %}
+<label for="select0">Example select</label>
+{% include components/select-default.html id="select0" placeholder="Lorem ipsum" iconsize="icons-size-x75" placeholderAttr="selected" items=page.default %}
+{% endexample %}
+
 ## Default
 
 Drop-down lists let readers choose one or more options in a pre-defined list, using single selection or multiple selection. We recommend replacing radio buttons (single select) and check boxes (multiple select) with drop-down lists when there are many items to choose from. Items must appear in a logical order for readers (e.g., alphabetical or numerical order).
