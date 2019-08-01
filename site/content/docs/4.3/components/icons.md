@@ -1,21 +1,102 @@
 ---
 layout: docs
 title: Icons
-description: Custom icons for Bootstrap components.
+description: Examples and usage guidelines for icons.
 group: components
 toc: true
 ---
 
-<div class="booticons-list">
-<svg class="booticon booticon-chevron-left" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" stroke-width="2" d="M11 2L5 8l6 6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<svg class="booticon booticon-chevron-right" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" stroke-width="2" d="M5 14l6-6-6-6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<svg class="booticon booticon-chevron-up" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" stroke-width="2" d="M2 11l6-6 6 6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<svg class="booticon booticon-chevron-down" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" stroke-width="2" d="M2 5l6 6 6-6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<svg class="booticon booticon-chevron-condensed-left" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" stroke-width="2" d="M9 2L6 8l3 6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<svg class="booticon booticon-chevron-condensed-right" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" stroke-width="2" d="M7 14l3-6-3-6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<svg class="booticon booticon-check" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" stroke-width="2" d="M4 8.5L6.5 11l6-6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<svg class="booticon booticon-x" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 8l-3 3 3-3 3 3-3-3zm0 0l3-3-3 3-3-3 3 3z" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<svg class="booticon booticon-dash" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5 8h6" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<svg class="booticon booticon-circle" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm0-2a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" fill="currentColor" fill-rule="nonzero"/></svg>
-<svg class="booticon booticon-dot" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 8v.082" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/></svg>
+## Markup
+{{% example html %}}
+<i class="icons-checked icons-size-30px" aria-hidden="true"></i>
+{{% /example %}}
+
+## List
+
+<div class="row mt-4">
+{{< icons.inline >}}
+{{- range (index .Site.Data "icons") -}}
+  <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+    <div class="text-center mb-2">
+      <i class="icons-{{ . }} icons-size-50px" aria-hidden="true"></i>
+    </div>
+    <p class="text-center">icons-{{ . }}</p>
+  </div>
+{{- end -}}
+{{< /icons.inline >}}
 </div>
+
+## Sizing based on base font-size
+
+{{% example html %}}
+<i class="icons-checked icons-size-x5" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-x75" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-1x" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-1x25" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-1x5" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-1x75" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-2x" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-3x" aria-hidden="true"></i>
+{{% /example %}}
+
+## Specifics sizes
+
+{{% example html %}}
+<i class="icons-checked icons-size-30px" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-50px" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-66px" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-90px" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-96px" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-140px" aria-hidden="true"></i>
+{{% /example %}}
+
+## Rotation
+
+{{% callout warning %}}
+_Rotation_ should only be used when stricly unavoidable, for example, when you want to signal inverse sort order of a list in a table.
+Each use case has to be carefully weighted before using rotation.
+
+_Pro tip_ : in case of doubt, don't rotate it ! [Contact us](mailto:design.fab@sncf.fr) for any advice.
+{{% /callout %}}
+
+{{% example html %}}
+<i class="icons-sort" aria-hidden="true"></i>
+<i class="icons-sort icons-rotate-180" aria-hidden="true"></i>
+{{% /example %}}
+

@@ -1,1 +1,6 @@
-{{- relref . ((printf "docs/%s%s" $.Site.Params.docs_version (.Get 0)) | relURL) -}}
+{{- $realLink := ((printf "%s/%s%s" $.Site.Params.doc_flavour $.Site.Params.docs_version (.Get 0)) | relURL) -}}
+{{- if fileExists (printf "%s%s" $realLink ".md") -}}
+  {{- relref . (printf "%s%s" $realLink (.Get 1)) -}}
+{{- else -}}
+  {{- relref . ((printf "docs/%s%s%s" $.Site.Params.docs_version (.Get 0) (.Get 1)) | relURL) -}}
+{{- end -}}

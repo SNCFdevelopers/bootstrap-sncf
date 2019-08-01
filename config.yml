@@ -25,6 +25,11 @@ dataDir:                "site/data"
 layoutDir:              "site/layouts"
 staticDir:              "_gh_pages"
 
+permalinks:
+  intern:               "/docs"
+
+ignoreFiles:            "extern"
+
 params:
   description:          "SNCF Design's system integration, based on Bootstrap, the most popular HTML, CSS, and JS library in the world."
   authors:              "SNCF Fab Design, Mark Otto, Jacob Thornton, and Bootstrap contributors"
@@ -35,6 +40,7 @@ params:
   docs_version:         "4.3"
   sncf_version:         "2"
   repo:                 "https://github.com/SNCFdevelopers/bootstrap-sncf"
+  doc_flavour:          "intern"
   doc_theme:            "metier"
   name:                 "DESIGN MÉTIER"
   url:                  "https://designmetier-bootstrap.sncf.fr"
@@ -42,5 +48,4 @@ params:
   titleother:           "Bootstrap Communication"
 
   download:
-    source:           "https://github.com/SNCFdevelopers/bootstrap-sncf/archive/master.zip"
-    dist:             "/dist.zip"
+    source:             "https://github.com/SNCFdevelopers/bootstrap-sncf/archive/master.zip"

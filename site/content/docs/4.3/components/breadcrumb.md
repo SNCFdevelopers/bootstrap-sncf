@@ -1,57 +1,102 @@
 ---
 layout: docs
-title: Breadcrumb
-description: Indicate the current page's location within a navigational hierarchy that automatically adds separators via CSS.
+title: Icons
+description: Examples and usage guidelines for icons.
 group: components
+toc: true
 ---
 
-## Example
+## Markup
+{{% example html %}}
+<i class="icons-checked icons-size-30px" aria-hidden="true"></i>
+{{% /example %}}
 
-{{< example >}}
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page">Home</li>
-  </ol>
-</nav>
+## List
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Library</li>
-  </ol>
-</nav>
+<div class="row mt-4">
+{{< icons.inline >}}
+{{- range (index .Site.Data "icons") -}}
+  <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+    <div class="text-center mb-2">
+      <i class="icons-{{ . }} icons-size-50px" aria-hidden="true"></i>
+    </div>
+    <p class="text-center">icons-{{ . }}</p>
+  </div>
+{{- end -}}
+{{< /icons.inline >}}
+</div>
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item"><a href="#">Library</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Data</li>
-  </ol>
-</nav>
-{{< /example >}}
+## Sizing based on base font-size
 
-## Changing the separator
+{{% example html %}}
+<i class="icons-checked icons-size-x5" aria-hidden="true"></i>
+{{% /example %}}
 
-Separators are automatically added in CSS through [`::before`](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) and [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content). They can be changed by changing `$breadcrumb-divider`. The [quote](https://sass-lang.com/documentation/Sass/Script/Functions.html#quote-instance_method) function is needed to generate the quotes around a string, so if you want `>` as separator, you can use this:
+{{% example html %}}
+<i class="icons-checked icons-size-x75" aria-hidden="true"></i>
+{{% /example %}}
 
-```scss
-$breadcrumb-divider: quote(">");
-```
+{{% example html %}}
+<i class="icons-checked icons-size-1x" aria-hidden="true"></i>
+{{% /example %}}
 
-It's also possible to use an **embedded SVG icon**:
+{{% example html %}}
+<i class="icons-checked icons-size-1x25" aria-hidden="true"></i>
+{{% /example %}}
 
-```scss
-$breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E");
-```
+{{% example html %}}
+<i class="icons-checked icons-size-1x5" aria-hidden="true"></i>
+{{% /example %}}
 
-The separator can be removed by setting `$breadcrumb-divider` to `none`:
+{{% example html %}}
+<i class="icons-checked icons-size-1x75" aria-hidden="true"></i>
+{{% /example %}}
 
-```scss
-$breadcrumb-divider: none;
-```
+{{% example html %}}
+<i class="icons-checked icons-size-2x" aria-hidden="true"></i>
+{{% /example %}}
 
-## Accessibility
+{{% example html %}}
+<i class="icons-checked icons-size-3x" aria-hidden="true"></i>
+{{% /example %}}
 
-Since breadcrumbs provide a navigation, it's a good idea to add a meaningful label such as `aria-label="breadcrumb"` to describe the type of navigation provided in the `<nav>` element, as well as applying an `aria-current="page"` to the last item of the set to indicate that it represents the current page.
+## Specifics sizes
 
-For more information, see the [WAI-ARIA Authoring Practices for the breadcrumb pattern](https://www.w3.org/TR/wai-aria-practices/#breadcrumb).
+{{% example html %}}
+<i class="icons-checked icons-size-30px" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-50px" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-66px" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-90px" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-96px" aria-hidden="true"></i>
+{{% /example %}}
+
+{{% example html %}}
+<i class="icons-checked icons-size-140px" aria-hidden="true"></i>
+{{% /example %}}
+
+## Rotation
+
+{{% callout warning %}}
+_Rotation_ should only be used when stricly unavoidable, for example, when you want to signal inverse sort order of a list in a table.
+Each use case has to be carefully weighted before using rotation.
+
+_Pro tip_ : in case of doubt, don't rotate it ! [Contact us](mailto:design.fab@sncf.fr) for any advice.
+{{% /callout %}}
+
+{{% example html %}}
+<i class="icons-sort" aria-hidden="true"></i>
+<i class="icons-sort icons-rotate-180" aria-hidden="true"></i>
+{{% /example %}}
+

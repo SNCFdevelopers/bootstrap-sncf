@@ -48,26 +48,22 @@ import Clipboard from './vendor/clipboard.min.js'
     })
 
   // Tooltip and popover demos
-  makeArray(document.querySelectorAll('.tooltip-demo'))
-    .forEach(function (tooltip) {
-      new bootstrap.Tooltip(tooltip, {
-        selector: '[data-toggle="tooltip"]'
-      })
-    })
+  $('.tooltip-demo').tooltip({
+    selector: '[data-toggle="tooltip"]',
+    container: 'body'
+  })
 
-  makeArray(document.querySelectorAll('[data-toggle="popover"]'))
-    .forEach(function (popover) {
-      new bootstrap.Popover(popover)
-    })
+  $('[data-toggle="popover"]').popover()
 
-  makeArray(document.querySelectorAll('.toast'))
-    .forEach(function (toastNode) {
-      var toast = new bootstrap.Toast(toastNode, {
-        autohide: false
-      })
-
-      toast.show()
+  $('.toast')
+    .toast({
+       autohide: false
     })
+    .toast('show')
+
+  // Demos within modals
+  $('.tooltip-test').tooltip()
+  $('.popover-test').popover()
 
   // Demos within modals
   makeArray(document.querySelectorAll('.tooltip-test'))

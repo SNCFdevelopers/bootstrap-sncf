@@ -29,6 +29,7 @@ Alternate CSS is optional, use it if your project needs a [dark mode]({{< docsre
 ### JS
 
 Many of our components require the use of JavaScript to function. Specifically, they require:
+
 - [jQuery](https://jquery.com)
 - [Popper.js](https://popper.js.org/)
 - [Flatpickrjs](https://flatpickr.js.org/)
@@ -149,7 +150,7 @@ Stay up to date on the development of Bootstrap and reach out to the community w
 
 Contact the humans at [Fab Design](mailto:design.fab@sncf.fr) for more informations & how to.
 
-- Share & learn with the others developers of SNCF on [GitHub]({{ site.github }})
+- Share & learn with the others developers of SNCF on [GitHub]({{< param repo >}})
 
 For original Bootstrap :
 

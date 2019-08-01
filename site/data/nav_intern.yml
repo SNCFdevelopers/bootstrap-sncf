@@ -2,6 +2,7 @@
   pages:
     - title: Introduction
     - title: Download
+    - title: Javascript
     - title: Accessibility
     - title: Analytics tracking
     - title: How to contribute
@@ -24,7 +25,6 @@
     - title: Code
     - title: Images
     - title: Tables
-    - title: Figures
     - title: Favicon
 
 - title: Components
@@ -52,6 +52,7 @@
 
 - title: Utilities
   pages:
+    - title: Api
     - title: Clearfix
     - title: Close icon
     - title: Colors
