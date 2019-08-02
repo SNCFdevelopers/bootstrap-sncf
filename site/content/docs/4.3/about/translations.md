@@ -5,4 +5,4 @@ description: Links to community-translated Bootstrap documentation sites.
 group: about
 ---
 
-Une traduction française bientôt !
+Soon you'll see french translation !

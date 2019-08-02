@@ -1,4 +1,13 @@
-languageCode:           "en"
+languages:
+  en:
+    languageName: English
+    description:  "SNCF Design's system integration, based on Bootstrap, the most popular HTML, CSS, and JS library in the world."
+    weight: 1
+  fr:
+    languageName: Français
+    description:  "Intégration du Design System SNCF, basé sur Bootstrap, la librairie HTML, CSS et JS la plus populaire du monde."
+    weight: 2
+
 BaseURL:                ""
 enableInlineShortcodes: true
 
@@ -25,7 +34,6 @@ layoutDir:              "site/layouts"
 staticDir:              "_gh_pages"
 
 params:
-  description:          "SNCF Design's system integration, based on Bootstrap, the most popular HTML, CSS, and JS library in the world."
   authors:              "SNCF Fab Design, Mark Otto, Jacob Thornton, and Bootstrap contributors"
   social_image_path:    /docs/4.3/assets/brand/bootstrap-social.png
   social_logo_path:     /docs/4.3/assets/brand/bootstrap-social-logo.png
