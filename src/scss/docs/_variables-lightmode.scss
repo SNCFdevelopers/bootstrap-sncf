@@ -10,6 +10,9 @@ $doc-callout-border-color:  $gray-100;
 $doc-callout-bg:            transparent;
 
 $doc-sidebar-color:         $white;
+$doc-sidebar-stroke:        "white";
+$bd-toc-border-color:       transparent;
+$bd-toc-color:              $carbon;
 
 $btn-clipboard-color-hover: $white;
 $bd-clipboard-bg-light:     $gray-100;
@@ -19,6 +22,7 @@ $bd-sidebar-bg:             inherit;
 $bd-links-color:            rgba(0, 0, 0, .85);
 $bd-links-color-light:      rgba(0, 0, 0, .65);
 $bd-search-bg:              $white;
+$doc-sidebar-stroke-ext:    "black";
 
 $bd-example-modal-bg:       $gray-300;
 

@@ -30,25 +30,6 @@
   }
 }
 
-.toc-entry {
-  display: block;
-
-  a {
-    display: block;
-    padding: .125rem 1.5rem;
-    color: #99979c;
-
-    &:hover {
-      color: $blue;
-      text-decoration: none;
-    }
-  }
-}
-
-//
-// Left side navigation
-//
-
 .bd-sidebar {
   order: 0;
   color: #fff;
@@ -107,43 +88,46 @@
   color: #fff;
 }
 
-.bd-sidenav {
+:not(.active) > .bd-sidenav {
   display: none;
 }
 
-.bd-toc-link {
-  display: block;
-  padding: .25rem 1.5rem;
+.bd-sidenav-group-link {
+  padding: .25rem .625rem .25rem 1rem;
   font-weight: 500;
-  // color: rgba(0, 0, 0, .65);
   color: $doc-sidebar-color;
+  @include border-radius(.25rem);
 
-  &:hover {
-    // color: rgba(0, 0, 0, .85);
+  > * { pointer-events: none; }
+
+  &:hover,
+  &:focus {
     color: #004468;
     text-decoration: none;
   }
 }
 
-.bd-toc-item {
+.bd-sidenav-group {
+  &.has-children .bd-sidenav-group-link::after {
+    display: inline-block;
+    width: .875rem;
+    height: .875rem;
+    margin-left: .5rem;
+    color: $doc-sidebar-color;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='#{$doc-sidebar-stroke}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(90deg);
+  }
+
   &.active {
-    margin-bottom: 1rem;
-
-    &:not(:first-child) {
-      margin-top: 1rem;
+    .bd-sidenav-group-link::after {
+      transform: rotate(-90deg);
     }
 
-    > .bd-toc-link {
-      // color: rgba(0, 0, 0, .85);
+    > .bd-sidenav-group-link {
       color: $doc-sidebar-color;
-
-      &:hover {
-        background-color: transparent;
-      }
-    }
-
-    > .bd-sidenav {
-      display: block;
     }
   }
 }
@@ -151,14 +135,12 @@
 // All levels of nav
 .bd-sidebar .nav > li > a {
   display: block;
-  padding: .25rem 1.5rem;
+  padding: .25rem 1.5rem .25rem 2rem;
   font-size: 90%;
-  // color: rgba(0, 0, 0, .65);
   color: $doc-sidebar-color;
 }
 
 .bd-sidebar .nav > li > a:hover {
-  // color: rgba(0, 0, 0, .85);
   color: #004468;
   text-decoration: none;
   background-color: transparent;
@@ -167,7 +149,6 @@
 .bd-sidebar .nav > .active > a,
 .bd-sidebar .nav > .active:hover > a {
   font-weight: 500;
-  // color: rgba(0, 0, 0, .85);
   color: #004468;
   background-color: transparent;
 }

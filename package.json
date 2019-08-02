@@ -41,8 +41,8 @@
     "docs-compile-intern": "bundle exec jekyll build --config _config.intern.yml",
     "docs-compile-extern": "bundle exec jekyll build --config _config.extern.yml",
     "docs-lint-htmllint": "htmllint --rc build/.htmllintrc \"_gh_pages/**/*.html\" \"src/js/tests/**/*.html\"",
-    "docs-serve-intern": "bundle exec jekyll serve --config _config.intern.yml",
-    "docs-serve-extern": "bundle exec jekyll serve --config _config.extern.yml",
+    "docs-serve-intern": "hugo server --port 9001 --disableFastRender --config config.yml,config.intern.yml",
+    "docs-serve-extern": "hugo server --port 9001 --disableFastRender --config config.yml,config.extern.yml",
     "icofont": "icon-font-generator src/assets/icons/*.svg -o src/assets/fonts/icons --csspath src/scss/common/generic/_icons.css --prefix icons --fontspath ../assets/fonts/icons/ --html false -j false"
   },
   "devDependencies": {
@@ -85,6 +85,7 @@
     "chart.js": "^2.7.2",
     "chartjs-plugin-zoom": "^0.6.3",
     "flatpickr": "git+https://github.com/vdesdoigts/flatpickr.git#dist",
+    "hugo-bin": "^0.44.1",
     "ion-rangeslider": "^2.2.0",
     "jquery": "^3.3.1",
     "lodash": "^4.17.11",

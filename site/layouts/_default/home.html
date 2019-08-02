@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{ partial "header" . }}
+  </head>
+  <body>
+
+    {{ partial "docs-navbar" . }}
+
+    {{- if eq .Site.Params.doc_flavour "extern" -}}
+      {{ partial "index-extern" . }}
+    {{- else -}}
+      {{ partial "index-intern" . }}
+    {{- end -}}
+
+    {{ .Content }}
+
+    {{ partial "footer" . }}
+    {{ partial "scripts" . }}
+  </body>
+</html>

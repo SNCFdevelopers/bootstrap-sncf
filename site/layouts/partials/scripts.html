@@ -1,0 +1,16 @@
+<script src="{{ .Site.BaseURL }}/bootstrap-sncf.js"></script>
+
+<!-- Algolia search -->
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+
+<!-- Listener click event -->
+<script>
+$('header a.btn').on('click', function() {
+  dataLayer.push({ 
+    'event': 'telechargement',
+    'eventCategory': 'telechargement', 
+    'eventAction': 'framework',
+    'eventLabel': 'header'
+  });
+}); 
+</script>
