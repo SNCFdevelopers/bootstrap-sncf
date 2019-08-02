@@ -118,10 +118,10 @@ On Opera, Internet Explorer and Firefox you can find the styles under the “Vie
 Yes, as simple as it sounds !
 
 ### JS
-{% callout info %}
+{{% callout info %}}
 The following approach is not a reference but a proposal for implementing dark mode switching in your project.
 Especially if you design with _single page_ model, you could not need to save value of dark mode switch.
-{% endcallout %}
+{{% /callout %}}
 
 First, we have to init and choose which CSS file we've to load and test if dark mode has been chosen by the past.
 If note, the default value will be classic version. Please note that the following code needs to be placed inside `<head>` tags to not suffer from [FOUC](https://en.wikipedia.org/wiki/Flash_of_unstyled_content).
