@@ -21,9 +21,9 @@ Check boxes are often used for forms or for other functions that let users selec
 
 There are three selection states—deselected, selected, and undefined. The undefined state appears when a group of sub-selections contains deselected and selected states.
 
-{% example html %}
-{% include components/checkbox.html name="exampleCheckbox1" id="exampleCheckbox1" label="Custom checkbox" %}
-{% endexample %}
+{{< example html >}}
+{{< checkbox name="exampleCheckbox1" id="exampleCheckbox1" label="Custom checkbox" >}}
+{{< /example >}}
 
 Custom checkboxes can also utilize the `:indeterminate` pseudo class and `aria-checked="mixed` for screen reader, when manually set via JavaScript (there is no available HTML attribute for specifying it).
 
@@ -36,16 +36,16 @@ Custom checkboxes can also utilize the `:indeterminate` pseudo class and `aria-c
 
 If you're using jQuery, something like this should suffice:
 
-{% highlight js %}
+{{% highlight js %}}
 $('.your-checkbox').prop('indeterminate', true)
 $('.your-checkbox').attr('aria-checked', 'mixed');
-{% endhighlight %}
+{{% /highlight %}}
 
 ### Radios
 
 Radio buttons are often used in forms or for other functions that let users select only one option from a list. With radio buttons, users cannot make multiple selections from options suggested (as they can with check boxes).
 
-{% example html %}
+{{% example html %}}
 <div class="custom-control custom-radio">
   <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
   <label class="custom-control-label font-weight-medium" for="customRadio1">Toggle this custom radio</label>
@@ -54,13 +54,13 @@ Radio buttons are often used in forms or for other functions that let users sele
   <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
   <label class="custom-control-label font-weight-medium" for="customRadio2">Or toggle this other custom radio</label>
 </div>
-{% endexample %}
+{{% /example %}}
 
 ### Switch
 
 Switches turn a feature or option on or off. Labels can be applied when necessary.
 
-{% example html %}
+{{% example html %}}
 <label for="switch1" class="switch-control">
   <span class="sr-only">On/Off switch</span>
   <input id="switch1" type="checkbox" class="sr-only">
@@ -72,11 +72,11 @@ Switches turn a feature or option on or off. Labels can be applied when necessar
   <input id="switch2" type="checkbox" class="sr-only" checked>
   <span class="switch-control-slider"></span>
 </label>
-{% endexample %}
+{{% /example %}}
 
 ### Options
 
-{% example html %}
+{{% example html %}}
 <div class="options-control">
   <div class="options-item">
     <input type="radio" name="optionsRadio" id="optionsRadio1" class="sr-only" checked/>
@@ -87,11 +87,11 @@ Switches turn a feature or option on or off. Labels can be applied when necessar
     <label class="options-btn font-weight-medium" for="optionsRadio2">Option 2</label>
   </div>
 </div>
-{% endexample %}
+{{% /example %}}
 
 ### Inline
 
-{% example html %}
+{{% example html %}}
 <div class="custom-control custom-radio custom-control-inline">
   <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
   <label class="custom-control-label font-weight-medium" for="customRadioInline1">Toggle this custom radio</label>
@@ -100,7 +100,7 @@ Switches turn a feature or option on or off. Labels can be applied when necessar
   <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
   <label class="custom-control-label font-weight-medium" for="customRadioInline2">Or toggle this other custom radio</label>
 </div>
-{% endexample %}
+{{% /example %}}
 
 ### Disabled
 

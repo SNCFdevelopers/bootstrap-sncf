@@ -23,19 +23,19 @@ All HTML headings, `<h1>` through `<h2>`, are available.
       <tbody>
         <tr>
           <td><div class="cell-inner">
-            {% markdown %}`<h1></h1>`{% endmarkdown %}
+            {{% markdown %}}`<h1></h1>`{{% /markdown %}}
           </div></td>
           <td><div class="cell-inner"><span class="h1" role="heading" aria-level="1">h1. Bootstrap heading</span></div></td>
         </tr>
         <tr>
           <td><div class="cell-inner">
-            {% markdown %}`<h2></h2>`{% endmarkdown %}
+            {{% markdown %}}`<h2></h2>`{{% /markdown %}}
           </div></td>
           <td><div class="cell-inner"><span class="h2" role="heading" aria-level="2">h2. Bootstrap heading</span></div></td>
         </tr>
         <tr>
           <td><div class="cell-inner">
-            {% markdown %}`<h3></h3>`{% endmarkdown %}
+            {{% markdown %}}`<h3></h3>`{{% /markdown %}}
           </div></td>
           <td><div class="cell-inner"><span class="h3" role="heading" aria-level="3">h3. Bootstrap heading</span></div></td>
         </tr>
@@ -44,19 +44,19 @@ All HTML headings, `<h1>` through `<h2>`, are available.
   </div>
 </div>
 
-{% highlight html %}
+{{% highlight html %}}
 <h1>h1. Bootstrap heading</h1>
 <h2>h2. Bootstrap heading</h2>
 <h3>h3. Bootstrap heading</h2>
-{% endhighlight %}
+{{% /highlight %}}
 
 `.h1` through `.h2` classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
 
-{% example html %}
+{{% example html %}}
 <p class="h1" role="heading" aria-level="1">h1. Bootstrap heading</p>
 <p class="h2" role="heading" aria-level="2">h2. Bootstrap heading</p>
 <p class="h3" role="heading" aria-level="3">h3. Bootstrap heading</p>
-{% endexample %}
+{{% /example %}}
 
 ## Colored headings
 
@@ -85,14 +85,14 @@ Colours for article headlines and sub-headings can be adjusted:
   </div>
 </div>
 
-{% highlight html %}
+{{% highlight html %}}
 <h2 class="text-primary">Beautiful colored heading</h2>
 <h2 class="text-info">Beautiful colored heading</h2>
 <h2 class="text-pink">Beautiful colored heading</h2>
 <h2 class="text-danger">Beautiful colored heading</h2>
 <h2 class="text-warning">Beautiful colored heading</h2>
 <h2 class="text-purple">Beautiful colored heading</h2>
-{% endhighlight %}
+{{% /highlight %}}
 
 ## Display headings
 
@@ -114,27 +114,27 @@ Traditional heading elements are designed to work best in the meat of your page 
   </table>
 </div>
 
-{% highlight html %}
+{{% highlight html %}}
 <h1 class="display-1 text-primary">Display 1</h1>
 <h1 class="display-2">Display 2</h1>
 <h1 class="display-3 text-primary">Display 3</h1>
-{% endhighlight %}
+{{% /highlight %}}
 
 ## Lead
 
 Make a paragraph stand out by adding `.lead`.
 
-{% example html %}
+{{% example html %}}
 <p class="lead">
   Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
 </p>
-{% endexample %}
+{{% /example %}}
 
 ## Inline text elements
 
 Styling for common inline HTML5 elements.
 
-{% example html %}
+{{% example html %}}
 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
 <p><del><span class="sr-only">start of deleted content</span>This line of text is meant to be treated as deleted text.<span class="sr-only">end of deleted content</span></del></p>
 <p><ins><span class="sr-only">This content is an addition to the document</span>This line of text is meant to be treated as an addition to the document.</ins></p>
@@ -142,7 +142,7 @@ Styling for common inline HTML5 elements.
 <p><small>This line of text is meant to be treated as fine print.</small></p>
 <p><strong>This line rendered as bold text.</strong></p>
 <p><em>This line rendered as italicized text.</em></p>
-{% endexample %}
+{{% /example %}}
 
 `.mark` and `.small` classes are also available to apply the same styles as `<mark>` and `<small>` while avoiding any unwanted semantic implications that the tags would bring.
 
@@ -150,7 +150,7 @@ While not shown above, feel free to use `<b>` and `<i>` in HTML5. `<b>` is meant
 
 ## Text utilities
 
-Change text alignment, transform, style, weight, and color with our [text utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/text/) and [color utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/colors/).
+Change text alignment, transform, style, weight, and color with our [text utilities]({{< docsref "/utilities/text" >}}) and [color utilities]({{< docsref "/utilities/colors" >}}).
 
 ## Abbreviations
 
@@ -158,49 +158,49 @@ Stylized implementation of HTML's `<abbr>` element for abbreviations and acronym
 
 Add `.initialism` to an abbreviation for a slightly smaller font-size.
 
-{% example html %}
+{{% example html %}}
 <p><abbr title="attribute">attr</abbr></p>
 <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
-{% endexample %}
+{{% /example %}}
 
 ## Blockquotes
 
 For quoting blocks of content from another source within your document. Wrap `<blockquote class="blockquote">` around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.
 
-{% example html %}
+{{% example html %}}
 <blockquote class="blockquote">
   <p class="blockquote-decoration mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 </blockquote>
-{% endexample %}
+{{% /example %}}
 
 ### Naming a source
 
 Add a `<footer class="blockquote-footer">` for identifying the source. Wrap the name of the source work in `<cite>`.
 
-{% example html %}
+{{% example html %}}
 <blockquote class="blockquote">
   <p class="blockquote-decoration mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
 </blockquote>
-{% endexample %}
+{{% /example %}}
 
 ### Alignment
 
 Use text utilities as needed to change the alignment of your blockquote.
 
-{% example html %}
+{{% example html %}}
 <blockquote class="blockquote text-center">
   <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
 </blockquote>
-{% endexample %}
+{{% /example %}}
 
-{% example html %}
+{{% example html %}}
 <blockquote class="blockquote text-right">
   <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
 </blockquote>
-{% endexample %}
+{{% /example %}}
 
 ## Lists
 
@@ -208,7 +208,7 @@ Use text utilities as needed to change the alignment of your blockquote.
 
 Remove the default `list-style` and left margin on list items (immediate children only). **This only applies to immediate children list items**, meaning you will need to add the class for any nested lists as well.
 
-{% example html %}
+{{% example html %}}
 <ul class="list-unstyled">
   <li>Lorem ipsum dolor sit amet</li>
   <li>Consectetur adipiscing elit</li>
@@ -226,25 +226,25 @@ Remove the default `list-style` and left margin on list items (immediate childre
   <li>Aenean sit amet erat nunc</li>
   <li>Eget porttitor lorem</li>
 </ul>
-{% endexample %}
+{{% /example %}}
 
 ### Inline
 
 Remove a list's bullets and apply some light `margin` with a combination of two classes, `.list-inline` and `.list-inline-item`.
 
-{% example html %}
+{{% example html %}}
 <ul class="list-inline">
   <li class="list-inline-item">Lorem ipsum</li>
   <li class="list-inline-item">Phasellus iaculis</li>
   <li class="list-inline-item">Nulla volutpat</li>
 </ul>
-{% endexample %}
+{{% /example %}}
 
 ### Description list alignment
 
 Align terms and descriptions horizontally by using our grid system's predefined classes (or semantic mixins). For longer terms, you can optionally add a `.text-truncate` class to truncate the text with an ellipsis.
 
-{% example html %}
+{{% example html %}}
 <dl class="row">
   <dt class="col-sm-3">Description lists</dt>
   <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
@@ -269,7 +269,7 @@ Align terms and descriptions horizontally by using our grid system's predefined 
     </dl>
   </dd>
 </dl>
-{% endexample %}
+{{% /example %}}
 
 ## Responsive typography
 
@@ -277,7 +277,7 @@ Align terms and descriptions horizontally by using our grid system's predefined 
 
 Here's an example of it in practice. Choose whatever `font-size`s and media queries you wish.
 
-{% highlight scss %}
+{{% highlight scss %}}
 html {
   font-size: 1rem;
 }
@@ -299,4 +299,4 @@ html {
     font-size: 1.6rem;
   }
 }
-{% endhighlight %}
+{{% /highlight %}}

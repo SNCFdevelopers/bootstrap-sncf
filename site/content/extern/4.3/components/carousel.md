@@ -13,12 +13,13 @@ Carousels offer a slideshow of trending news on a homepage. They always appear a
 
 Content editors can choose from the following options: illustrations, packshots and photo essays produced by SNCF.
 
-{% example html %}
+{{< example html >}}
 <div class="swiper carousel" data-component="carousel">
   <div class="swiper-container" data-role="container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-      {% for i in (1..5) %}
+      {{< carousel.inline >}}
+      {{- range (seq 5) -}}
       <div class="swiper-slide">
         <div class="row bg-carousel">
           <div class="col-12 col-md-6">
@@ -34,7 +35,8 @@ Content editors can choose from the following options: illustrations, packshots 
           </div>
         </div>
       </div>
-      {% endfor %}     
+      {{- end -}}
+      {{< /carousel.inline >}}
     </div>
   </div>
   <div class="carousel-controls" aria-hidden="true">
@@ -52,7 +54,7 @@ Content editors can choose from the following options: illustrations, packshots 
     </div>
   </div>
 </div>
-{% endexample %}
+{{< /example >}}
 
 ## Footer-pushes
 
@@ -60,7 +62,7 @@ Content editors can choose from the following options: illustrations, packshots 
 
 Carousel footer pushes on text pages offer additional content of interest to users based on the page they are currently browsing. They make navigating a website easier. Content editors can choose from the following options: illustrations, packshots and photo essays.
 
-{% example html %}
+{{% example html %}}
 <div class="bg-carousel">
   <div class="container gt-8 gb-5">
     <h2 class="h1 mb-5">À découvrir également</h2>
@@ -117,5 +119,5 @@ Carousel footer pushes on text pages offer additional content of interest to use
     </div>
   </div>
 </div>
-{% endexample %}
+{{% /example %}}
 

@@ -4,17 +4,6 @@ title: Select
 description: Examples and usage guidelines for select.
 group: components
 toc: true
-default:
-  - name: Sem Inceptos Tellus
-  - name: Sollicitudin Adipiscing Mattis
-  - name: Amet Porta
-  - name: Pharetra Fusce Venenatis
-selected:
-  - name: Sem Inceptos Tellus
-  - name: Sollicitudin Adipiscing Mattis
-    attr: selected
-  - name: Amet Porta
-  - name: Pharetra Fusce Venenatis
 url: /docs/4.3/components/select/
 ---
 

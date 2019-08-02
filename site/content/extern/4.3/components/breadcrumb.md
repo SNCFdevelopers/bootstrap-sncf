@@ -12,7 +12,7 @@ Separators are automatically added in CSS through [`::before`](https://developer
 
 The breadcrumbs should not be used in mobile interfaces.
 
-{% example html %}
+{{% example html %}}
 
 <nav aria-label="Vous êtes : " role="navigation">
   <ol class="breadcrumb">
@@ -21,7 +21,7 @@ The breadcrumbs should not be used in mobile interfaces.
     <li class="breadcrumb-item active" aria-current="page">Voyager à petits prix</li>
   </ol>
 </nav>
-{% endexample %}
+{{% /example %}}
 
 ## Accessibility
 

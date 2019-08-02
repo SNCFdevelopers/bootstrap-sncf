@@ -97,6 +97,11 @@ You can _switch_ between the two versions with native method (Firefox only) or a
 ### CSS, HTML
 
 {{< includenav.inline >}}
+{{- if eq .Site.Params.doc_flavour "extern" -}}
+  For <em>Design Communication</em>, the darkmode switch should be inside <em>accessibility component</em> with others switches. This navbar example contains a working link, try it now !
+{{- else -}}
+  For <em>Design Métier</em> The switch should be inside dropdown menu in top right corner from the navbar, in the personal menu. This navbar example contains a working link, try it now !
+{{- end -}}
 {{- $navHTML := (printf "%s%s%s" "darkmode-" .Site.Params.doc_flavour "-navbar-example.html") -}}
 {{ partial $navHTML }}
 {{< /includenav.inline >}}

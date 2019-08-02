@@ -7,13 +7,13 @@ toc: true
 url: /docs/4.3/layout/footer/
 ---
 
-{% callout warning %}
-Subsections **must all be** contained in one unique section `<footer class="mastfooter bg-gray"></footer>`, see [final example](#complete-example) for complete implementation.
-{% endcallout %}
+{{% callout warning %}}
+Subsections **must** all be contained in one unique section `<footer class="mastfooter bg-gray"></footer>`, see [final example](#complete-example) for complete implementation.
+{{% /callout %}}
 
 ### Links
 
-{% example html %}
+{{% example html %}}
 <footer class="mastfooter bg-gray">
   <div class="container d-flex flex-column">
     <ul class="mastfooter-links order-2 order-md-1 row text-white gy-5 mb-0">
@@ -47,7 +47,7 @@ Subsections **must all be** contained in one unique section `<footer class="mast
     </ul>
   </div>
 </footer>
-{% endexample %}
+{{% /example %}}
 
 ### Newsletter inscription
 <div class="bd-example">
@@ -76,7 +76,7 @@ Subsections **must all be** contained in one unique section `<footer class="mast
 </footer>
 </div>
 
-{% highlight html %}
+{{% highlight html %}}
 <footer class="mastfooter bg-gray">
   <div class="container d-flex flex-column">
     <div class="order-1 order-md-2 row gt-5">
@@ -100,11 +100,11 @@ Subsections **must all be** contained in one unique section `<footer class="mast
     </div>
   </div>
 </footer>
-{% endhighlight %}
+{{% /highlight %}}
 
 ### Site plan
 
-{% example html %}
+{{% example html %}}
 <footer class="mastfooter bg-gray">
   <div class="container d-flex flex-column">
     <div class="order-3 row text-sm gt-5 gb-6 font-weight-medium">
@@ -140,11 +140,11 @@ Subsections **must all be** contained in one unique section `<footer class="mast
     </div>
   </div>
 </footer>
-{% endexample %}
+{{% /example %}}
 
 ### CGUs, Contacts
 
-{% example html %}
+{{% example html %}}
 <footer class="mastfooter bg-gray" role="contentinfo">
   <div class="container d-flex flex-column">
     <div class="order-4 d-flex flex-column flex-md-row justify-content-between gy-4">
@@ -170,11 +170,11 @@ Subsections **must all be** contained in one unique section `<footer class="mast
     </div>
   </div>
 </footer>
-{% endexample %}
+{{% /example %}}
 
 ## Complete Example
 
-{% example html %}
+{{% example html %}}
 <footer class="mastfooter bg-gray" role="contentinfo">
   <div class="container d-flex flex-column">
     <ul class="mastfooter-links order-2 order-md-1 row text-white gy-5 mb-0">
@@ -279,4 +279,4 @@ Subsections **must all be** contained in one unique section `<footer class="mast
     </div>
   </div>
 </footer>
-{% endexample %}
+{{% /example %}}

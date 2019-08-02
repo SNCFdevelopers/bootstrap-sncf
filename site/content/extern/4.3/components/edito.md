@@ -11,7 +11,7 @@ url: /docs/4.3/components/edito/
 
 Accordions divide text content up to make reading easier and reduce page length. They give users a better overview of the content available to them.
 
-{% example html %}
+{{% example html %}}
 <div id="accordion" class="accordions">
   <div class="accordion">
     <div class="accordion-head" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -44,7 +44,7 @@ Accordions divide text content up to make reading easier and reduce page length.
     </div>
   </div>
 </div>
-{% endexample %}
+{{% /example %}}
 
 ## Blockquotes
 
@@ -52,22 +52,22 @@ Blockquotes highlight selected information and create flow within a content page
 
 For quoting blocks of content from another source within your document. Wrap `<blockquote class="blockquote">` around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.
 
-{% example html %}
+{{< example html >}}
 <blockquote class="blockquote">
   <p class="blockquote-decoration mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 </blockquote>
-{% endexample %}
+{{< /example >}}
 
 ### Naming a source
 
 Add a `<footer class="blockquote-footer">` for identifying the source. Wrap the name of the source work in `<cite>`.
 
-{% example html %}
+{{< example html >}}
 <blockquote class="blockquote">
   <p class="blockquote-decoration mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
 </blockquote>
-{% endexample %}
+{{< /example >}}
 
 ## Proof block
 
@@ -75,7 +75,7 @@ Proof blocks reinforce the key messages in body copy on text pages by providing 
 
 Use `is-gray` class or any `bg-{color}` classes available to change the `background-color` element. Use `text-{color}` to choose the text color.
 
-{% example html %}
+{{< example html >}}
 <div class="proof is-gray has-strip text-primary" style="max-width: 41.000rem">
   <div class="proof-icon pb-4 pb-md-0">
     <i class="icons-admin icons-size-96px icons-md-size-140px" aria-hidden="true"></i>
@@ -85,9 +85,9 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
     <p class="mb-0">En 2016, SNCF fête son 20e été de travaux sur la ligne C.</p>
   </div>
 </div>
-{% endexample %}
+{{< /example >}}
 
-{% example html %}
+{{< example html >}}
 <div class="proof has-strip text-white bg-info" style="max-width: 41.000rem">
   <div class="proof-icon pb-4 pb-md-0">
     <i class="icons-admin icons-size-96px icons-md-size-140px" aria-hidden="true"></i>
@@ -97,7 +97,7 @@ Use `is-gray` class or any `bg-{color}` classes available to change the `backgro
     <p class="mb-0">En 2016, SNCF fête son 20e été de travaux sur la ligne C.</p>
   </div>
 </div>
-{% endexample %}
+{{< /example >}}
 
 ## Editorial block
 
@@ -111,6 +111,7 @@ Text blocks are placed within text pages; they  offer additional content that ma
 
 A paragraph block is the key focus of a content page.
 For optimum effect, designers can choose from two versions:
+
 - the “100% paragraph” block,  where sub-headings, text and images each span  the entire content grid, so the designer can incorporate large images into the page.
 - the “50% paragraph” block, where sub-headings, text and images are divided into two equal columns. Images can be placed to the right or left of text content.
 If image credits are required, these appear below the image. 
@@ -119,10 +120,10 @@ If image credits are required, these appear below the image.
 
 A mid-page push highlights content linked closely to what the user is looking at on the rest of a page, thus improving the user experience. Mid-page pushes differ from footer pushes, which promote less closely related content.
 
-{% example html %}
+{{< example html >}}
 <div class="editorial" style="max-width: 41.000rem">
   <div class="editorial-icon order-md-1">
-      <p>média</p>
+    <p><i class="icons-large-sncf icons-size-96px"></i></p>
   </div>
   <div class="editorial-content order-md-0">
     <p class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</p>
@@ -130,12 +131,12 @@ A mid-page push highlights content linked closely to what the user is looking at
     <a href="#" class="btn btn-link btn-link-white">Lorem ipsum dolor <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
   </div>
 </div>
-{% endexample %}
+{{< /example >}}
 
-{% example html %}
+{{< example html >}}
 <div class="editorial editorial-light" style="max-width: 41.000rem">
   <div class="editorial-icon order-md-1">
-      <p>média</p>
+    <p><i class="icons-large-sncf icons-size-96px"></i></p>
   </div>
   <div class="editorial-content order-md-0">
     <p class="display-3 mb-3">Maecenas sed diam eget risus varius blandit sit amet non</p>
@@ -143,12 +144,12 @@ A mid-page push highlights content linked closely to what the user is looking at
     <a href="#" class="btn btn-link">Lorem ipsum dolor <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
   </div>
 </div>
-{% endexample %}
+{{< /example >}}
 
-{% example html %}
+{{< example html >}}
 <div class="editorial" style="max-width: 41.000rem">
   <div class="editorial-icon order-md-1">
-      <p>média</p>
+    <p><i class="icons-large-lightbulb icons-size-96px"></i></p>
   </div>
   <div class="editorial-content order-md-0">
     <p class="display-3 mb-4">Vous n'avez pas trouvé<br /> votre réponse ?</p>
@@ -157,7 +158,7 @@ A mid-page push highlights content linked closely to what the user is looking at
     </div>
   </div>
 </div>
-{% endexample %}
+{{< /example >}}
 
 ### Highlight
 
@@ -165,7 +166,7 @@ Grey cards highlight a point from the preceding paragraph on a text page. Severa
 
 We recommend only using one grey card per paragraph.
 
-{% example html %}
+{{< example html >}}
 <div class="editorial editorial-light">
   <div class="editorial-content order-md-0">
     <h1 class="text-primary display-3 mb-3">Choisissez votre région</h1>
@@ -197,13 +198,13 @@ We recommend only using one grey card per paragraph.
     <a href="#" class="btn btn-link">Lorem ipsum dolor <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
   </div>
 </div>
-{% endexample %}
+{{< /example >}}
 
 ### Push highlight
 
 On text pages without anchor links, some components can be placed in a column to the right of the editorial content: a grey-card push can make navigating the website easier, while “Date” and “Place” grey cards can be used to provide information on events or news.
 
-{% example html %}
+{{< example html >}}
 <div class="row">
   <div class="col-md-7">
   </div>
@@ -221,7 +222,7 @@ On text pages without anchor links, some components can be placed in a column to
     </div>
   </div>
 </div>
-{% endexample %}
+{{< /example >}}
 
 ### Other grey blocks
 “Date” grey cards provide time-sensitive information on news or events.
@@ -236,7 +237,7 @@ These blocks appear in threes on a text page.
 
 Content editors can choose from the following options: illustrations, packshots and photo essays.
 
-{% example html %}
+{{< example html >}}
 <div style="max-width: 41.000rem">
   <h2 class="display-3 text-primary mb-4">Les services OUIBUS</h2>
   <ul class="list-unstyled">
@@ -275,7 +276,7 @@ Content editors can choose from the following options: illustrations, packshots 
     </li>
   </ul>
 </div>
-{% endexample %}
+{{< /example >}}
 
 ### Packshot
 
@@ -283,7 +284,7 @@ Packshot blocks feature products or offers that need an illustration, where you 
 
 These blocks come in twos or fours in a text page.
 
-{% example html %}
+{{% example html %}}
 <div style="max-width: 41.000rem">
   <h2 class="display-3 text-primary mb-4">Titre bloc Packshot</h2>
   <div class="row">
@@ -313,7 +314,7 @@ These blocks come in twos or fours in a text page.
     </div>
   </div>
 </div>
-{% endexample %}
+{{% /example %}}
 
 ### Mosaic
 
@@ -322,7 +323,7 @@ Like packshot blocks, mosaic (or tiled) blocks showcase products that need a vis
 Mosaic/tiled blocks come in twos or fours on an text page.
 Content editors can choose from the following options: illustrations, packshots and photo essays.
 
-{% example html %}
+{{% example html %}}
 <div style="max-width: 41.000rem">
   <h2 class="display-3 text-primary mb-4">Titre bloc Mosaïque</h2>
   <div class="row">
@@ -348,7 +349,7 @@ Content editors can choose from the following options: illustrations, packshots 
     </div>
   </div>
 </div>
-{% endexample %}
+{{% /example %}}
 
 ## Contact
 
@@ -356,7 +357,7 @@ The “Contact” block—as its name suggests—lets users contact the company'
 
 A mailto link can be inserted instead of an input field.
 
-{% example html %}
+{{< example html >}}
 <div style="max-width: 41.000rem">
   <div class="row no-gutters edito-contact-bg rounded gx-3 gb-4 g-md-5">
     <div class="col-12 col-md-6 order-md-1">
@@ -371,7 +372,7 @@ A mailto link can be inserted instead of an input field.
         <div class="form-row">
           <div class="col-12 col-sm-auto flex-sm-fluid gb-3 gb-sm-0">
             <label for="inputEmail1">Courriel</label>
-            {% include components/input.html type="email" id="inputEmail1" placeholder="Example input" class="form-control-white" %}
+            {{< input type="email" id="inputEmail1" placeholder="Example input" class="form-control-white" >}}
           </div>
           <div class="col-12 col-sm-auto d-flex align-items-end">
             <button type="submit" class="btn btn-primary w-100 w-sm-auto">Valider mon inscription au magazine</button>
@@ -381,4 +382,4 @@ A mailto link can be inserted instead of an input field.
     </div>
   </div>
 </div>
-{% endexample %}
+{{< /example >}}

@@ -9,7 +9,7 @@ url: /docs/4.3/layout/navs/
 
 ## Tabs
 
-{% example html %}
+{{% example html %}}
 <div class="actionbar has-tabs">
   <div class="actionbar-head">
     <h1 class="h2 mb-0">Lorem Ipsum</h1>
@@ -34,7 +34,7 @@ url: /docs/4.3/layout/navs/
     </ul>
   </nav>
 </div>
-{% endexample %}
+{{% /example %}}
 
 ### Colored tabs
 
@@ -94,8 +94,8 @@ Just add `bg-colorname` to `<div class="actionbar">` to use colored tabs
 </div>
 </div>
 
-{% highlight html %}
-{% endhighlight %}
+{{% highlight html %}}
+{{% /highlight %}}
 
 
 ##  Actionbar
@@ -501,7 +501,7 @@ Just add `bg-colorname` to `<div class="actionbar">` to use colored tabs
   </nav>
 </div>
 
-{% highlight html %}
+{{% highlight html %}}
 <nav class="menu" data-role="menu" role="navigation">
   <div class="container">
     <div id="programme" class="menu-item panel primary-panel active">
@@ -898,11 +898,11 @@ Just add `bg-colorname` to `<div class="actionbar">` to use colored tabs
     </div>
   </div>
 </nav>
-{% endhighlight %}
+{{% /highlight %}}
 
 ### Complete example
 
-{% example html %}
+{{% example html %}}
 <div class="mastnav" data-component="mastnav">
   <div class="menubar">
     <div class="container">
@@ -1446,4 +1446,4 @@ Just add `bg-colorname` to `<div class="actionbar">` to use colored tabs
     </div>
   </nav>
 </div>
-{% endexample %}
+{{% /example %}}

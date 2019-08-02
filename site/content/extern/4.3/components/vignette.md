@@ -22,7 +22,7 @@ Content editors can choose from the following options: illustrations, packshots 
 </div>
 </div>
 
-{% highlight html %}
+{{% highlight html %}}
 <div>
   <img alt=""  class="w-100 mb-4 rounded" src="https://dummyimage.com/240x158/000/fff" />
   <div>
@@ -31,7 +31,7 @@ Content editors can choose from the following options: illustrations, packshots 
     <a href="#" class="btn btn-link">Lire la suite <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i></a>
   </div>
 </div>
-{% endhighlight %}
+{{% /highlight %}}
 
 ## Event vignettes
 <div class="bd-example bg-light">
@@ -47,7 +47,7 @@ Content editors can choose from the following options: illustrations, packshots 
 </div>
 </div>
 
-{% highlight html %}
+{{% highlight html %}}
 <div class="row">
   <div class="col-12 col-md-4">
     <div class="p-5 vignette-bg d-flex flex-column">
@@ -58,13 +58,13 @@ Content editors can choose from the following options: illustrations, packshots 
     </div>
   </div>
 </div>
-{% endhighlight %}
+{{% /highlight %}}
 
 ### With highlight
 
 Event highlight vignettes showcase an event or a major news story and offer a direct link from the home page to a content page.
 
-{% example html %}
+{{% example html %}}
 <div class="row">
   <div class="col-12 col-md-6">
     <img alt=""  class="w-100" src="https://dummyimage.com/640x383/000/fff" />
@@ -79,7 +79,7 @@ Event highlight vignettes showcase an event or a major news story and offer a di
     </div>
   </div>
 </div>
-{% endexample %}
+{{% /example %}}
 
 ## Social post
 
@@ -97,7 +97,7 @@ Social media vignettes display social network news feeds and are used in threes 
 </div>
 </div>
 
-{% highlight html %}
+{{% highlight html %}}
 <div class="row">
   <div class="col-12 col-md-4">
     <div class="p-5 vignette-bg">
@@ -107,6 +107,6 @@ Social media vignettes display social network news feeds and are used in threes 
     </div>
   </div>
 </div>
-{% endhighlight %}
+{{% /highlight %}}
 
 

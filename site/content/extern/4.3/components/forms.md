@@ -9,7 +9,7 @@ url: /docs/4.3/components/forms/
 
 ## Overview
 
-Bootstrap's form controls expand on [our Rebooted form styles]({{ site.baseurl }}/docs/{{ site.docs_version }}/content/reboot/#forms) with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
+Bootstrap's form controls expand on [our Rebooted form styles]({{< docsref "/content/reboot#forms" >}}) with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
 
 Be sure to use an appropriate `type` attribute on all inputs (e.g., `email` for email address or `number` for numerical information) to take advantage of newer input controls like email verification, number selection, and more.
 
@@ -22,73 +22,73 @@ Two criteria determine the length of fields: the longest possible wording and re
 
 Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are styled with the `.form-control` class. Included are styles for general appearance, focus state, sizing, and more.
 
-{% example html %}
+{{< example html >}}
 <form>
   <div class="form-group">
     <label for="inputEmail1">Example label</label>
-    {% include components/input.html type="email" id="inputEmail1" placeholder="Example input" %}
+    {{< input type="email" id="inputEmail1" placeholder="Example input" >}}
   </div>
   <div class="form-group">
     <label for="textarea1">Example textarea</label>
-    {% include components/textarea.html id="textarea1" placeholder="Example textarea" %}
+    {{< textarea id="textarea1" placeholder="Example textarea" >}}
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-{% endexample %}
+{{< /example >}}
 
 ### Inputs with icon
 
 Use `.has-left-icon` or `.has-right-icon` class on `.form-control` element. Then use `.form-control-icon` element with an fonticon element inside.
 
-{% capture control_icon %}
-  <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
-{% endcapture %}
-
-{% example html %}
+{{< example html >}}
 <label for="inputIcon1">Left icon</label>
-{% include components/input.html container="has-left-icon" id="inputIcon1" placeholder="Example input with left icon" content=control_icon %}
-{% endexample %}
+{{< input container="has-left-icon" id="inputIcon1" placeholder="Example for auto-completion" content="<span class=\"form-control-icon\"><i class=\"icons-search\"></i></span>" >}}
+{{< /example >}}
 
-{% example html %}
+{{< example html >}}
 <label for="inputIcon2">Right icon</label>
-{% include components/input.html container="has-right-icon" id="inputIcon2" placeholder="Example input with right icon" content=control_icon %}
-{% endexample %}
+{{< input container="has-right-icon" id="inputIcon2" placeholder="Example for auto-completion" content="<span class=\"form-control-icon\"><i class=\"icons-search\"></i></span>" >}}
+{{< /example >}}
+
 
 ### Readonly inputs
 
 Add the `readonly` boolean attribute on an input to prevent modification of the input's value.
 
-{% example html %}
+{{< example html >}}
 <label for="readonly1">Readonly input</label>
-{% include components/input.html type="text" id="readonly1" placeholder="Readonly input here..." attr="readonly" %}
-{% endexample %}
+{{< input type="text" id="readonly1" placeholder="Readonly input here..." attr="readonly" >}}
+{{< /example >}}
 
-{% example html %}
+{{< example html >}}
 <label for="readonly2">Readonly textarea</label>
-{% include components/textarea.html id="readonly2" placeholder="Readonly textarea here..." attr="readonly" %}
-{% endexample %}
+{{< textarea id="readonly2" placeholder="Readonly textarea here..." attr="readonly" >}}
+{{< /example >}}
+
 
 ### Required inputs
 
 Add the `required` boolean attribute on an input.
 
-{% callout warning %}
+{{% callout warning %}}
 For accessibility reasons, you **have to** put indication on `*` signification **before** any occurence of required fields.
-{% endcallout %}
+{{% /callout %}}
 
-{% example html %}
+{{< example html >}}
 <p class="mt-3">Fields marked with * are required.</p>
 <label for="required1" class="required">Required input</label>
-{% include components/input.html type="text" id="required1" placeholder="Required input here..." attr="required" %}
-{% endexample %}
+{{< input type="text" id="required1" placeholder="Required input here..." attr="required" >}}
+{{< /example >}}
+
 
 ### Input with clear option
 
 The clear text behavior is made of `javascript`. Use `data-component="control"` with `data-clear-option="true"` to enable it. Don't forget to add the `button` element.
 
-{% example html %}
-{% include components/input-clear-option.html type="text" id="readonly2" label="Rechercher" placeholder="Search..." %}
-{% endexample %}
+{{< example html >}}
+{{< input-clear-option type="text" id="readonly2" label="Rechercher" placeholder="Search..." >}}
+{{< /example >}}
+
 
 ## Textarea options
 
@@ -96,20 +96,20 @@ The clear text behavior is made of `javascript`. Use `data-component="control"` 
 
 Add a `stretchy` class on `textarea` element.
 
-{% example html %}
+{{< example html >}}
 <label for="stretchyTextarea1">Auto sizing textarea</label>
-{% include components/textarea.html id="stretchyTextarea1" class="stretchy" placeholder="Auto sizing..." %}
-{% endexample %}
+{{< textarea id="stretchyTextarea1" class="stretchy" placeholder="Auto sizing" >}}
+{{< /example >}}
 
 ### Textarea with counter
 
-{% example html %}
-{% include components/textarea-counter.html id="countTextarea1" placeholder="Character counter..." %}
-{% endexample %}
+{{< example html >}}
+{{< textarea-counter id="countTextarea1" placeholder="Character counter" >}}
+{{< /example >}}
 
 ### With toolbar
 
-{% example html %}
+{{< example html >}}
 <div class="form-group">
   <label for="exampleFormControlTextarea3">Example textarea</label>
   <div class="form-toolbar">
@@ -158,40 +158,40 @@ Add a `stretchy` class on `textarea` element.
     <span class="form-control-state"></span>
   </div>
 </div>
-{% endexample %}
+{{< /example >}}
 
 ## Range slider
 
-{% example html %}
+{{< example html >}}
 <div class="range-slider" data-component="range-slider" data-target="#range_01">
   <i class="icons-interrogation icons-size-1x25 pr-2" aria-hidden="true"></i>
   <div id="range_01" data-min="25" data-max="125" data-hide-from-to="true">
   </div>
   <i class="icons-interrogation icons-size-1x25 pl-2" aria-hidden="true"></i>
 </div>
-{% endexample %}
+{{< /example >}}
 
-{% example html %}
+{{< example html >}}
 <div class="range-slider" data-component="range-slider" data-target="#range_02">
   <span class="d-inline-block pr-2">25</span>
   <div id="range_02" data-min="25" data-max="125" data-type="double" data-from="50" data-to="100">
   </div>
   <span class="d-inline-block pl-2">125</span>
 </div>
-{% endexample %}
+{{< /example >}}
 
-{% example html %}
+{{% example html %}}
 <div class="range-slider is-disabled" data-component="range-slider" data-target="#range_03">
   <span class="d-inline-block pr-2">25</span>
   <div id="range_03" data-min="25" data-max="125" data-type="double" data-from="50" data-to="100">
   </div>
   <span class="d-inline-block pl-2">125</span>
 </div>
-{% endexample %}
+{{< /example >}}
 
 ## Chips
 
-{% example html %}
+{{% example html %}}
 <div role="list">
   <div class="chips-group" role="listitem">
     <span class="chips chips-label">Mathéo Mercier</span>
@@ -201,9 +201,9 @@ Add a `stretchy` class on `textarea` element.
     </button>
   </div>
 </div>
-{% endexample %}
+{{% /example %}}
 
-{% example html %}
+{{% example html %}}
 <label class="font-weight-medium mb-2" for="addreceivers1">Add receivers</label>
 <div class="form-control-container form-chips-container" data-component="chips">
   <input data-role="typewriter" type="text" class="chips-input stretchy" id="addreceivers1" />
@@ -214,9 +214,9 @@ Add a `stretchy` class on `textarea` element.
     <option selected>Pharetra Fusce Venenatis</option>
   </select>
 </div>
-{% endexample %}
+{{% /example %}}
 
-{% example html %}
+{{% example html %}}
 <label class="font-weight-medium mb-2" for="addreceivers2">Receivers</label>
 <div class="form-control-container form-chips-container" data-component="chips">
   <input id="addreceivers2" data-role="typewriter" type="text" class="chips-input stretchy" />
@@ -224,26 +224,26 @@ Add a `stretchy` class on `textarea` element.
   <select id="receivers2" class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" multiple>
   </select>
 </div>
-{% endexample %}
+{{% /example %}}
 
-{% callout warning %}
+{{% callout warning %}}
 ### Alternatives to hidden labels
 Assistive technologies such as screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the `.sr-only` class. There are further alternative methods of providing a label for assistive technologies, such as the `aria-label`, `aria-labelledby` or `title` attribute. If none of these are present, assistive technologies may resort to using the `placeholder` attribute, if present, but note that use of `placeholder` as a replacement for other labelling methods is not advised.
-{% endcallout %}
+{{% /callout %}}
 
 ## Help text
 
 Block-level help text in forms can be created using `.form-text` (previously known as `.help-block` in v3). Inline help text can be flexibly implemented using any inline HTML element and utility classes like `.text-muted`.
 
-{% callout warning %}
+{{% callout warning %}}
 #### Associating help text with form controls
 
 Help text should be explicitly associated with the form control it relates to using the `aria-describedby` attribute. This will ensure that assistive technologies—such as screen readers—will announce this help text when the user focuses or enters the control.
-{% endcallout %}
+{{% /callout %}}
 
 Help text below inputs can be styled with `.form-text`. This class includes `display: block` and adds some top margin for easy spacing from the inputs above.
 
-{% example html %}
+{{% example html %}}
 <label class="font-weight-medium mb-2" for="inputPassword5">Password</label>
 <div class="form-control-container">
   <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
@@ -252,11 +252,11 @@ Help text below inputs can be styled with `.form-text`. This class includes `dis
 <small id="passwordHelpBlock" class="form-text text-muted">
   Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
 </small>
-{% endexample %}
+{{% /example %}}
 
 Inline text can use any typical inline HTML element (be it a `<small>`, `<span>`, or something else) with nothing more than a utility class.
 
-{% example html %}
+{{% example html %}}
 <form class="form-inline">
   <div class="form-group">
     <label class="font-weight-medium" for="inputPassword6">Password</label>
@@ -269,19 +269,19 @@ Inline text can use any typical inline HTML element (be it a `<small>`, `<span>`
     </small>
   </div>
 </form>
-{% endexample %}
+{{% /example %}}
 
 ## Disabled forms
 
 Add the `disabled` boolean attribute on an input to prevent user interactions and make it appear lighter.
 
-{% highlight html %}
+{{% highlight html %}}
 <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
-{% endhighlight %}
+{{% /highlight %}}
 
 Add the `disabled` attribute to a `<fieldset>` to disable all the controls within.
 
-{% example html %}
+{{% example html %}}
 <form>
   <fieldset disabled>
     <div class="form-group">
@@ -297,37 +297,37 @@ Add the `disabled` attribute to a `<fieldset>` to disable all the controls withi
     <button type="submit" class="btn btn-primary">Submit</button>
   </fieldset>
 </form>
-{% endexample %}
+{{% /example %}}
 
-{% callout warning %}
+{{% callout warning %}}
 ### Caveat with anchors
 
-By default, browsers will treat all native form controls (`<input>`, `<select>` and `<button>` elements) inside a `<fieldset disabled>` as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes `<a ... class="btn btn-*">` elements, these will only be given a style of `pointer-events: none`. As noted in the section about [disabled state for buttons]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/buttons/#disabled-state) (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 10, and won't prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.
-{% endcallout %}
+By default, browsers will treat all native form controls (`<input>`, `<select>` and `<button>` elements) inside a `<fieldset disabled>` as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes `<a ... class="btn btn-*">` elements, these will only be given a style of `pointer-events: none`. As noted in the section about [disabled state for buttons]({{< docsref "/components/buttons" >}}) (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 10, and won't prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.
+{{% /callout %}}
 
-{% callout danger %}
+{{% callout danger %}}
 ### Cross-browser compatibility
 
 While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don't fully support the `disabled` attribute on a `<fieldset>`. Use custom JavaScript to disable the fieldset in these browsers.
-{% endcallout %}
+{{% /callout %}}
 
 ## Validation
 
 Provide valuable, actionable feedback to your users with HTML5 form validation–[available in all our supported browsers](https://caniuse.com/#feat=form-validation). Choose from the browser default validation feedback, or implement custom messages with our built-in classes and starter JavaScript.
 
-{% callout warning %}
+{{% callout warning %}}
 We **highly recommend** pouet custom validation styles as native browser defaults are not announced to screen readers.
-{% endcallout %}
+{{% /callout %}}
 
-{% callout info %}
+{{% callout info %}}
 The checkmarks <i class="text-primary icons-check"></i> are not mandatory (and even not included in SNCF's guidelines), but it is a interesting way to show users that a field is validated. Use it if you want.
-{% endcallout %}
+{{% /callout %}}
 
 ### Server side
 
 We recommend using client side validation, but in case you require server side, you can indicate invalid form fields with `.is-invalid`. Note that `.invalid-feedback` is also supported with these classes.
 
-{% example html %}
+{{% example html %}}
 <form class="needs-validation" novalidate>
   <div class="form-row">
     <div class="col-md-4 mb-3">
@@ -369,11 +369,11 @@ We recommend using client side validation, but in case you require server side, 
   </div>
   <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
-{% endexample %}
+{{% /example %}}
 
 ### Error message
 
-{% example html %}
+{{% example html %}}
 <form class="needs-validation" novalidate>
   <div class="form-error mb-3">
     <h2 class="text-white text-uppercase">Oouups ! Vous avez une erreur</h2>
@@ -395,7 +395,7 @@ We recommend using client side validation, but in case you require server side, 
   </div>
   <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
-{% endexample %}
+{{% /example %}}
 
 ### Browser defaults
 
@@ -403,7 +403,7 @@ Not interested in custom validation feedback messages or writing JavaScript to c
 
 While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
 
-{% example html %}
+{{% example html %}}
 <form>
   <div class="form-row">
     <div class="col-md-4 mb-3">
@@ -459,4 +459,4 @@ While these feedback styles cannot be styled with CSS, you can still customize t
   </div>
   <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
-{% endexample %}
+{{% /example %}}
