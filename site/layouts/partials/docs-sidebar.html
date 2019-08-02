@@ -13,8 +13,13 @@
   {{- $url := split .Permalink "/" -}}
   {{- $page_slug := index $url (sub (len $url) 2) -}}
 
+  {{- $data_nav := .Site.Data.nav_intern -}}
+  {{- if eq .Site.Params.doc_flavour "extern" }}
+    {{- $data_nav = .Site.Data.nav_extern -}}
+  {{- end -}}
+
   <ul class="list-unstyled">
-  {{- range $group := .Site.Data.nav_intern -}}
+  {{- range $group := $data_nav -}}
     {{- $link := $group.title -}}
     {{- $link_slug := $link | urlize -}}
 

@@ -14,6 +14,10 @@ Alternative browsers which use the latest version of WebKit, Blink, or Gecko, wh
 
 You can find our supported range of browsers and their versions [in our `.browserslistrc file`]({{< param repo >}}/blob/v{{< param current_version >}}/.browserslistrc):
 
+```text
+{{< rf.inline >}}{{ readFile ".browserslistrc" | htmlEscape }}{{< /rf.inline >}}
+```
+
 We use [Autoprefixer](https://github.com/postcss/autoprefixer) to handle intended browser support via CSS prefixes, which uses [Browserslist](https://github.com/browserslist/browserslist) to manage these browser versions. Consult their documentation for how to integrate these tools into your projects.
 
 ### Mobile devices
@@ -100,8 +104,6 @@ Similarly, the latest versions of most desktop browsers are supported.
 For Firefox, in addition to the latest normal stable release, we also support the latest [Extended Support Release (ESR)](https://www.mozilla.org/en-US/firefox/organizations/#faq) version of Firefox.
 
 Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, Firefox for Linux, and Internet Explorer 9, though they are not officially supported.
-
-For a list of some of the browser bugs that Bootstrap has to grapple with, see our [Wall of browser bugs]({{< docsref "/browser-bugs" >}}).
 
 ## Internet Explorer
 

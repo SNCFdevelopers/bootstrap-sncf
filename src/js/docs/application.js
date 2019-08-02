@@ -65,17 +65,6 @@ import Clipboard from './vendor/clipboard.min.js'
   $('.tooltip-test').tooltip()
   $('.popover-test').popover()
 
-  // Demos within modals
-  makeArray(document.querySelectorAll('.tooltip-test'))
-    .forEach(function (tooltip) {
-      new bootstrap.Tooltip(tooltip)
-    })
-
-  makeArray(document.querySelectorAll('.popover-test'))
-    .forEach(function (popover) {
-      new bootstrap.Popover(popover)
-    })
-
   // Indeterminate checkbox example
   makeArray(document.querySelectorAll('.bd-example-indeterminate [type="checkbox"]'))
     .forEach(function (checkbox) {

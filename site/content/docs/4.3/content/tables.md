@@ -6,649 +6,369 @@ group: content
 toc: true
 ---
 
-## Overview
+## Examples
 
-Due to the widespread use of `<table>` elements across third-party widgets like calendars and date pickers, Bootstrap's tables are **opt-in**. Add the base class `.table` to any `<table>`, then extend with our optional modifier classes or custom styles. **All table styles are inherited in Bootstrap**, meaning any nested tables will be styled in the same manner as the parent.
+Due to the widespread use of tables across third-party widgets like calendars and date pickers, we've designed our tables to be **opt-in**. Just add the base class `.table` to any `<table>`, then extend with custom styles or our various included modifier classes.
 
-Using the most basic table markup, here's how `.table`-based tables look in Bootstrap.
+Using the most basic table markup, here's how `.table`-based tables look in SNCF Framework.
 
-{{< example >}}
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+{{< example html >}}
+<div class="table-wrapper">
+  <div class="table-scroller dragscroll">
+    <table class="table">
+      <caption class="sr-only">Titre</caption>
+      <thead class="thead thead-light">
+        <tr>
+          <th>
+            <div class="cell-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="examples-thead">
+                <label class="custom-control-label" for="examples-thead"><span class="sr-only">Tout sélectionner</span></label>
+              </div>
+            </div>
+          </th>
+          <th scope="col"><div class="cell-inner">Nom</div></th>
+          <th scope="col"><div class="cell-inner">Type</div></th>
+          <th scope="col"><div class="cell-inner">Vers</div></th>
+          <th scope="col"><div class="cell-inner">Agent</div></th>
+          <th scope="col"><div class="cell-inner">Mise à jour</div></th>
+          <th scope="col"><span class="sr-only">Actions</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{< range.inline >}}
+        {{- range $index,$item := (index .Site.Data "tables") -}}
+        <tr>
+          <td>
+            <div class="cell-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="examples-cell{{ $index }}">
+                <label class="custom-control-label" for="examples-cell{{ $index }}"><span class="sr-only">{{ $item.name }}, type {{ $item.type }}, ver {{ $item.version }}</span></label>
+              </div>
+            </div>
+          </td>
+          <td><div class="cell-inner">{{ $item.name }}</div></td>
+          <td><div class="cell-inner">{{ $item.type }}</div></td>
+          <td><div class="cell-inner">{{ $item.version }}</div></td>
+          <td><div class="cell-inner">{{ $item.agent }}</div></td>
+          <td><div class="cell-inner">{{ $item.update }}</div></td>
+          <td>
+            <div class="cell-inner">
+              <button class="btn btn-only-icon btn-transparent btn-favorite">
+                <span class="sr-only">Favorite</span>
+                <i class="icons-favorite-on icons-size-1x25" aria-hidden="true"></i>
+              </button>
+              <button class="btn btn-only-icon btn-transparent btn-color-gray">
+                <span class="sr-only">Divers</span>
+                <i class="icons-circle-information icons-size-1x25" aria-hidden="true"></i>
+              </button>
+              <div class="btn-group dropdown">
+                <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" aria-controls="toggle{{ $index }}">
+                  <span class="sr-only">Actions</span>
+                  <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" id="examples-toggle{{ $index }}">
+                  <button type="button" class="dropdown-item">Télécharger</button>
+                  <button type="button" class="dropdown-item">Imprimer</button>
+                  <button type="button" class="dropdown-item">Partager</button>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        {{- end -}}
+        {{< /range.inline >}}
+      </tbody>
+    </table>
+  </div>
+</div>
 {{< /example >}}
 
-## Options
+## Table with fixed last row
 
-### Inverted
+Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `cell-placeholder` and `cell-fixed` elements.
 
-You can also invert the colors—with light text on dark backgrounds—with `.table-dark`.
-
-{{< example >}}
-<table class="table table-dark">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+{{< example html >}}
+<div class="table-wrapper">
+  <div class="table-scroller last-cell-fixed dragscroll">
+    <table class="table">
+      <caption class="sr-only">Titre</caption>
+      <thead class="thead thead-light">
+        <tr>
+          <th>
+            <div class="cell-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="fixedlastrow-thead">
+                <label class="custom-control-label" for="fixedlastrow-thead"><span class="sr-only">Tout sélectionner</span></label>
+              </div>
+            </div>
+          </th>
+          <th scope="col"><div class="cell-inner">Nom</div></th>
+          <th scope="col"><div class="cell-inner">Type</div></th>
+          <th scope="col"><div class="cell-inner">Vers</div></th>
+          <th scope="col"><div class="cell-inner">Agent</div></th>
+          <th scope="col"><div class="cell-inner">Mise à jour</div></th>
+          <td class="cell-placeholder" aria-hidden="true"><span></span></td>
+          <th class="cell-fixed"><span class="sr-only">Actions</span></th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        {{< range.inline >}}
+        {{- range $index,$item := (index .Site.Data "tables") -}}
+        <tr>
+          <td>
+            <div class="cell-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="fixedlastrow-cell{{ $index }}">
+                <label class="custom-control-label" for="fixedlastrow-cell{{ $index }}"><span class="sr-only">{{ $item.name }}, type {{ $item.type }}, ver {{ $item.version }}</span></label>
+              </div>
+            </div>
+          </td>
+          <td><div class="cell-inner">{{ $item.name }}</div></td>
+          <td><div class="cell-inner">{{ $item.type }}</div></td>
+          <td><div class="cell-inner">{{ $item.version }}</div></td>
+          <td><div class="cell-inner">{{ $item.agent }}</div></td>
+          <td><div class="cell-inner">{{ $item.update }}</div></td>
+          <td class="cell-placeholder"><span></span></td>
+          <td class="cell-fixed">
+            <div class="btn-group dropdown">
+              <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" aria-controls="toggle1{{ $index }}">
+                <span class="sr-only">Actions</span>
+                <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right" id="fixedlastrow-toggle{{ $index }}">
+                <button type="button" class="dropdown-item">Télécharger</button>
+                <button type="button" class="dropdown-item">Imprimer</button>
+                <button type="button" class="dropdown-item">Partager</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+        {{- end -}}
+        {{< /range.inline >}}
+      </tbody>
+    </table>
+  </div>
+</div>
 {{< /example >}}
 
-### Striped rows
+## Table with groups
+
+{{< example html >}}
+<div class="table-wrapper" data-component="table">
+  <div class="table-scroller dragscroll">
+    <table class="table">
+      <caption class="sr-only">Titre</caption>
+      <thead class="thead thead-light">
+        <tr>
+          <th scope="col"><div class="cell-inner cell-inner-350">Nom</div></th>
+          <th scope="col"><div class="cell-inner">Type</div></th>
+          <th scope="col"><div class="cell-inner">Vers</div></th>
+          <th scope="col"><div class="cell-inner">Agent</div></th>
+          <th scope="col"><div class="cell-inner">Mise à jour</div></th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        {{< range.inline >}}
+        {{- range $index,$item := (index .Site.Data "tables") -}}
+        <tr class="trhead">
+          <td class="cell-350 cell-caret" data-role="toggle-group-btn" data-id="{{ $index }}"><div class="cell-inner">{{ $item.name }}</div></td>
+          <td><div class="cell-inner">{{ $item.type }}</div></td>
+          <td><div class="cell-inner">{{ $item.version }}</div></td>
+          <td><div class="cell-inner">{{ $item.agent }}</div></td>
+          <td><div class="cell-inner">{{ $item.update }}</div></td>
+        </tr>
+        {{- range $subitem := (index $item.subrows) -}}
+          <tr class="trgroup" data-trgroup="{{ $index }}">
+            <td class="cell-350" colspan="5"><div class="cell-inner"><div class="text-truncate">{{ $subitem.name }}</div></div></td>
+          </tr>
+        {{- end -}}
+        {{- end -}}
+        {{< /range.inline >}}
+      </tbody>
+    </table>
+  </div>
+</div>
+{{< /example >}}
+
+{{< example html >}}
+<div class="table-wrapper" data-component="table">
+  <div class="table-scroller dragscroll">
+    <table class="table">
+      <caption class="sr-only">Titre</caption>
+      <thead class="thead thead-light">
+        <tr>
+          <th scope="col">
+            <div class="cell-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="tablegroups-thead">
+                <label class="custom-control-label" for="tablegroups-thead"><span class="sr-only">étiquette</span></label>
+              </div>
+            </div>
+          </th>
+          <th scope="col"><div class="cell-inner cell-inner-350">Nom</div></th>
+          <th scope="col"><div class="cell-inner">Type</div></th>
+          <th scope="col"><div class="cell-inner">Vers</div></th>
+          <th scope="col"><div class="cell-inner">Agent</div></th>
+          <th scope="col"><div class="cell-inner">Mise à jour</div></th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        {{< range.inline >}}
+        {{- range $index,$item := (index .Site.Data "tables") -}}
+        <tr class="trhead">
+          <td>
+            <div class="cell-inner">
+              <div class="custom-control custom-checkbox custom-checkbox-alone">
+                <input type="checkbox" class="custom-control-input" id="tablegroups-cell{{ $index }}">
+                <label class="custom-control-label" for="tablegroups-cell{{ $index }}"><span class="sr-only">étiquette</span></label>
+              </div>
+            </div>
+          </td>
+          <td class="cell-350 cell-caret" data-role="toggle-group-btn" data-id="{{ $index }}"><div class="cell-inner">{{ $item.name }}</div></td>
+          <td><div class="cell-inner">{{ $item.type }}</div></td>
+          <td><div class="cell-inner">{{ $item.version }}</div></td>
+          <td><div class="cell-inner">{{ $item.agent }}</div></td>
+          <td><div class="cell-inner">{{ $item.update }}</div></td>
+        </tr>
+        {{- range $subitem := (index $item.subrows) -}}
+          <tr class="trgroup" data-trgroup="{{ $index }}">
+            <td>
+              <div class="cell-inner">
+                <div class="custom-control custom-checkbox custom-checkbox-alone">
+                  <input type="checkbox" class="custom-control-input" id="tablegroups-cell2{{ $index }}">
+                  <label class="custom-control-label" for="tablegroups-cell2{{ $index }}"><span class="sr-only">étiquette</span></label>
+                </div>
+              </div>
+            </td>
+            <td class="cell-350" colspan="5"><div class="cell-inner"><div class="text-truncate">{{ $subitem.name }}</div></div></td>
+          </tr>
+        {{- end -}}
+        {{- end -}}
+        {{< /range.inline >}}
+      </tbody>
+    </table>
+  </div>
+</div>
+{{< /example >}}
+
+## Striped rows
 
 Use `.table-striped` to add zebra-striping to any table row within the `<tbody>`.
 
-{{< example >}}
+{{< example html >}}
 <table class="table table-striped">
+  <caption class="sr-only">Titre</caption>
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col"><div class="cell-inner">#</div></th>
+      <th scope="col"><div class="cell-inner">First</div></th>
+      <th scope="col"><div class="cell-inner">Last</div></th>
+      <th scope="col"><div class="cell-inner">Handle</div></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row"><div class="cell-inner">1</div></th>
+      <td><div class="cell-inner">Mark</div></td>
+      <td><div class="cell-inner">Otto</div></td>
+      <td><div class="cell-inner">@mdo</div></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <th scope="row"><div class="cell-inner">2</div></th>
+      <td><div class="cell-inner">Jacob</div></td>
+      <td><div class="cell-inner">Thornton</div></td>
+      <td><div class="cell-inner">@fat</div></td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <th scope="row"><div class="cell-inner">3</div></th>
+      <td><div class="cell-inner">Larry</div></td>
+      <td><div class="cell-inner">the Bird</div></td>
+      <td><div class="cell-inner">@twitter</div></td>
     </tr>
   </tbody>
 </table>
 {{< /example >}}
 
-{{< example >}}
-<table class="table table-striped table-dark">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-{{< /example >}}
-
-### Bordered
+## Bordered table
 
 Add `.table-bordered` for borders on all sides of the table and cells.
 
-{{< example >}}
+{{< example html >}}
 <table class="table table-bordered">
+  <caption class="sr-only">Titre</caption>
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col"><div class="cell-inner">#</div></th>
+      <th scope="col" id="cellfirst-t5"><div class="cell-inner">First</div></th>
+      <th scope="col" id="celllast-t5"><div class="cell-inner">Last</div></th>
+      <th scope="col"><div class="cell-inner">Handle</div></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row"><div class="cell-inner">1</div></th>
+      <td><div class="cell-inner">Mark</div></td>
+      <td><div class="cell-inner">Otto</div></td>
+      <td><div class="cell-inner">@mdo</div></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <th scope="row"><div class="cell-inner">2</div></th>
+      <td><div class="cell-inner">Jacob</div></td>
+      <td><div class="cell-inner">Thornton</div></td>
+      <td><div class="cell-inner">@fat</div></td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
+      <th scope="row"><div class="cell-inner">3</div></th>
+      <td colspan="2" headers="cellfirst-t5 celllast-t5"><div class="cell-inner">Larry the Bird</div></td>
+      <td><div class="cell-inner">@twitter</div></td>
     </tr>
   </tbody>
 </table>
 {{< /example >}}
 
-{{< example >}}
-<table class="table table-bordered table-dark">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-{{< /example >}}
-
-### No borders
-
-Add `.table-borderless` for a table without borders.
-
-{{< example >}}
-<table class="table table-borderless">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-{{< /example >}}
-
-`.table-borderless` can also be used on dark tables.
-
-{{< example >}}
-<table class="table table-borderless table-dark">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-{{< /example >}}
-
-### Hoverable rows
+## Hoverable rows
 
 Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
 
-{{< example >}}
+{{< example html >}}
 <table class="table table-hover">
+  <caption class="sr-only">Titre</caption>
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col"><div class="cell-inner">#</div></th>
+      <th scope="col" id="cellfirst-t6"><div class="cell-inner">First</div></th>
+      <th scope="col" id="celllast-t6"><div class="cell-inner">Last</div></th>
+      <th scope="col"><div class="cell-inner">Handle</div></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row"><div class="cell-inner">1</div></th>
+      <td><div class="cell-inner">Mark</div></td>
+      <td><div class="cell-inner">Otto</div></td>
+      <td><div class="cell-inner">@mdo</div></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <th scope="row"><div class="cell-inner">2</div></th>
+      <td><div class="cell-inner">Jacob</div></td>
+      <td><div class="cell-inner">Thornton</div></td>
+      <td><div class="cell-inner">@fat</div></td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
+      <th scope="row"><div class="cell-inner">3</div></th>
+      <td colspan="2" headers="cellfirst-t6 celllast-t6"><div class="cell-inner">Larry the Bird</div></td>
+      <td><div class="cell-inner">@twitter</div></td>
     </tr>
   </tbody>
 </table>
 {{< /example >}}
 
-{{< example >}}
-<table class="table table-hover table-dark">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-{{< /example >}}
-
-### Small tables
-
-Add `.table-sm` to make any `.table` more compact by cutting all cell `padding` in half.
-
-{{< example >}}
-<table class="table table-sm">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-{{< /example >}}
-
-## Vertical alignment
-
-Table cells of `<thead>` are always vertical aligned to the bottom. Table cells in `<tbody>` inherit their alignment from `<table>` and are aligned to the the top by default.
-
-{{< example >}}
-<table class="table align-middle">
-  <thead>
-    <tr>
-      <th scope="col" class="w-25">Heading 1</th>
-      <th scope="col" class="w-25">Heading 2</th>
-      <th scope="col" class="w-25">Heading 2</th>
-      <th scope="col" class="w-25">Heading 4</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
-      <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
-      <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
-      <td>Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.</td>
-    </tr>
-    <tr class="align-bottom">
-      <td>This cell inherits <code>vertical-align: bottom;</code> from the table row</td>
-      <td>This cell inherits <code>vertical-align: bottom;</code> from the table row</td>
-      <td>This cell inherits <code>vertical-align: bottom;</code> from the table row</td>
-      <td>Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.</td>
-    </tr>
-    <tr>
-      <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
-      <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
-      <td class="align-top">This cell is aligned to the top.</td>
-      <td>Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.</td>
-    </tr>
-  </tbody>
-</table>
-{{< /example >}}
-
-### Variants
-
-Use contextual classes to color table rows or individual cells.
-
-<div class="bd-example">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Class</th>
-        <th scope="col">Heading</th>
-        <th scope="col">Heading</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="table-active">
-        <th scope="row">Active</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      <tr>
-        <th scope="row">Default</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-
-      {{< table.inline >}}
-      {{- range (index $.Site.Data "theme-colors") }}
-      <tr class="table-{{ .name }}">
-        <th scope="row">{{ .name | title }}</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      {{- end -}}
-      {{< /table.inline >}}
-    </tbody>
-  </table>
-</div>
-
-{{< highlight html >}}
-<!-- On rows -->
-<tr class="table-active">...</tr>
-{{< table.inline >}}
-{{- range (index $.Site.Data "theme-colors") }}
-<tr class="table-{{ .name }}">...</tr>
-{{- end -}}
-{{< /table.inline >}}
-
-<!-- On cells (`td` or `th`) -->
-<tr>
-  <td class="table-active">...</td>
-{{< table.inline >}}
-{{- range (index $.Site.Data "theme-colors") }}
-  <td class="table-{{ .name }}">...</td>
-{{- end -}}
-{{< /table.inline >}}
-</tr>
-{{< /highlight >}}
-
-Regular table background variants are not available with the dark table, however, you may use [text or background utilities]({{< docsref "/utilities/colors" >}}) to achieve similar styles.
-
-<div class="bd-example">
-  <table class="table table-dark">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Heading</th>
-        <th scope="col">Heading</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="bg-primary">
-        <th scope="row">1</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      <tr class="bg-success">
-        <th scope="row">3</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      <tr class="bg-info">
-        <th scope="row">5</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      <tr class="bg-warning">
-        <th scope="row">7</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      <tr>
-        <th scope="row">8</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-      <tr class="bg-danger">
-        <th scope="row">9</th>
-        <td>Cell</td>
-        <td>Cell</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-{{< highlight html >}}
-<!-- On rows -->
-<tr class="bg-primary">...</tr>
-<tr class="bg-success">...</tr>
-<tr class="bg-warning">...</tr>
-<tr class="bg-danger">...</tr>
-<tr class="bg-info">...</tr>
-
-<!-- On cells (`td` or `th`) -->
-<tr>
-  <td class="bg-primary">...</td>
-  <td class="bg-success">...</td>
-  <td class="bg-warning">...</td>
-  <td class="bg-danger">...</td>
-  <td class="bg-info">...</td>
-</tr>
-{{< /highlight >}}
-
-{{< callout info >}}
-{{< partial "callout-warning-color-assistive-technologies.md" >}}
-{{< /callout >}}
-
-## Anatomy
-
-### Table head
-
-Similar to tables and dark tables, use the modifier classes `.thead-light` or `.thead-dark` to make `<thead>`s appear light or dark gray.
-
-{{< example >}}
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="table">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-{{< /example >}}
-
-### Captions
+## Captions
 
 A `<caption>` functions like a heading for a table. It helps users with screen readers to find a table and understand what it's about and decide if they want to read it.
 
-{{< example >}}
+{{< example html >}}
 <table class="table">
   <caption>List of users</caption>
   <thead>
@@ -684,21 +404,13 @@ A `<caption>` functions like a heading for a table. It helps users with screen r
 
 ## Responsive tables
 
-Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a `.table` with `.table-responsive`. Or, pick a maximum breakpoint with which to have a responsive table up to by using `.table-responsive{-sm|-md|-lg|-xl}`.
+Across every breakpoint, use `.table-wrapper` and `table-scroller` container elements for horizontally scrolling tables.
 
-{{< callout warning >}}
-##### Vertical clipping/truncation
-
-Responsive tables make use of `overflow-y: hidden`, which clips off any content that goes beyond the bottom or top edges of the table. In particular, this can clip off dropdown menus and other third-party widgets.
-{{< /callout >}}
-
-### Always responsive
-
-Across every breakpoint, use `.table-responsive` for horizontally scrolling tables.
-
-<div class="bd-example">
-  <div class="table-responsive">
+{{< example html >}}
+<div class="table-wrapper" data-component="table">
+  <div class="table-scroller dragscroll">
     <table class="table">
+      <caption class="sr-only">Titre</caption>
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -754,92 +466,4 @@ Across every breakpoint, use `.table-responsive` for horizontally scrolling tabl
     </table>
   </div>
 </div>
-
-{{< highlight html >}}
-<div class="table-responsive">
-  <table class="table">
-    ...
-  </table>
-</div>
-{{< /highlight >}}
-
-### Breakpoint specific
-
-Use `.table-responsive{-sm|-md|-lg|-xl}` as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave normally and not scroll horizontally.
-
-**These tables may appear broken until their responsive styles apply at specific viewport widths.**
-
-{{< tables.inline >}}
-{{ range $bp := $.Site.Data.breakpoints }}
-{{ if not (eq $bp "xs") }}
-<div class="bd-example">
-  <div class="table-responsive{{ $bp.abbr }}">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-{{ end -}}
-{{- end -}}
-{{< /tables.inline >}}
-
-{{< highlight html >}}
-{{< tables.inline >}}
-{{- range $bp := $.Site.Data.breakpoints -}}
-{{- if not (eq $bp "xs") }}
-<div class="table-responsive{{ $bp.abbr }}">
-  <table class="table">
-    ...
-  </table>
-</div>
-{{ end -}}
-{{- end -}}
-{{< /tables.inline >}}
-{{< /highlight >}}
+{{< /example >}}

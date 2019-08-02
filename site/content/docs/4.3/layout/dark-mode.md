@@ -83,9 +83,10 @@ Feel free to give us your feedback on this feature by giving us your feedback on
 
 
 ## Technical implementation
-Bootstrap SNCF distribution includes two CSS files :
-- `bootstrap-sncf.min.css`
-- `bootstrap-sncf.darkmode.min.css`
+Bootstrap SNCF distribution includes two CSS files (normal & minified):
+
+- `bootstrap-sncf.(min.)css`
+- `bootstrap-sncf.darkmode.(min.)css`
 
 > They are automatically generated at compilation time.
 
@@ -95,7 +96,10 @@ You can _switch_ between the two versions with native method (Firefox only) or a
 
 ### CSS, HTML
 
-{% include darkmode-{{ site.doc_theme }}-navbar-example.md %}
+{{< includenav.inline >}}
+{{- $navHTML := (printf "%s%s%s" "darkmode-" .Site.Params.doc_flavour "-navbar-example.html") -}}
+{{ partial $navHTML }}
+{{< /includenav.inline >}}
 
 ### Native browser implementation
 The simplest method is to use [W3C recommandations](https://www.w3.org/Style/Examples/007/alternatives.en.html).

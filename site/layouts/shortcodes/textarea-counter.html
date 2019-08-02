@@ -1,0 +1,6 @@
+<div class="form-control-container" data-component="control">
+  <label for="{{ .Get "id" }}">{{ .Get "placeholder" }}</label>
+  <textarea class="form-control stretchy {{ .Get "class" }}" id="{{ .Get "id" }}" placeholder="{{ .Get "placeholder" }}" data-role="input" aria-describedby="charcounter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illum aliquid, quis, labore sed ullam porro quam dolor error enim fuga et. Ratione assumenda, facilis illum placeat eligendi animi architecto.</textarea>
+  <span class="form-control-state"></span>
+</div>
+<div class="mt-2 font-weight-medium" data-role="counter" data-limit="200" id="charcounter"><span data-role="counter-value">0</span>/200 caractères</div>

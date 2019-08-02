@@ -1,7 +1,6 @@
 {{- $attr := .Get "attr" | default "id" -}}
-
 <div class="form-control-container {{ .Get "container" }}">
   <input type="{{ .Get "type" }}" class="form-control {{ .Get "class" }}" id="{{ .Get "id" }}" title="{{ .Get "placeholder" }}" placeholder="{{ .Get "placeholder" }}" value="{{ .Get "value" }}" {{ $attr }} >
   <span class="form-control-state"></span>
-  {{- .Get "content" }}
+  {{- safeHTML (.Get "content") -}}
 </div>
