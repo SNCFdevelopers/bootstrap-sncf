@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Badges en français
+slug: Badges
 description: Status indicators and counters are not interactive. They are visual components that communicate the status of a list that communicate, for example, the status of a list and the number of items found in it.
 group: components
 toc: true
