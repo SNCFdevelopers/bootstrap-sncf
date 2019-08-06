@@ -1,9 +1,8 @@
 ---
 layout: docs
-title: Badges en français
+title: Badges
 slug: Badges
-description: Status indicators and counters are not interactive. They are visual components that communicate the status of a list that communicate, for example, the status of a list and the number of items found in it.
-group: components
+description: Les indicateurs d'état ne sont pas interactifs. Ce sont des composants visuels qui communiquent par exemple le statut d'une liste et qui peuvent indiquer également le nombre d'éléments qu'elle contient.
 toc: true
 url: /docs/4.3/components/badge/
 ---
@@ -16,7 +15,7 @@ url: /docs/4.3/components/badge/
 
 ## Contextual variations
 
-Add any of the below mentioned modifier classes to change the appearance of a badge.
+Ajoutez l'une des classes de modificateurs mentionnées ci-dessous pour adapter l'apparence d'un badge.
 
 {{< example html >}}
 {{< colors.inline >}}
