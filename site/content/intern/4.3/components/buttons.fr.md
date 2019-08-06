@@ -2,13 +2,14 @@
 layout: docs
 title: Buttons
 slug: Boutons
-description: Les boutons ont plusieurs utilisations : ils peuvent permettre à l'utilisateur de déclencher une action, répondre à une question posée par un chat, activer ou désactiver un état, augmenter ou diminuer une valeur numérique, etc. A noter que les boutons de menu sont affichés dans la
+description: Les boutons ont plusieurs utilisations : ils peuvent permettre à l'utilisateur de déclencher une action, répondre à une question posée par un chat, activer ou désactiver un état, augmenter ou diminuer une valeur numérique, etc. A noter que les boutons de menu sont affichés dans la section "Drop Down".
+group: components
 toc: true
 url: /docs/4.3/components/buttons/
 ---
 
-## Examples
-Primary buttons are used for the main call to action. Secondary buttons are used for less important actions.
+## Exemples
+Les boutons principaux sont utilisés pour l'action principale. Les boutons secondaires sont utilisés pour des actions moins importantes.
 
 {{% example html %}}
 <button type="button" class="btn btn-primary">btn-primary</button>
@@ -19,11 +20,11 @@ Primary buttons are used for the main call to action. Secondary buttons are used
 {{% partial "callout-where-are-the-colors.md" %}}
 {{% /callout %}}
 
-## Button tags
+## Classes de boutons
 
-The `.btn` classes are designed to be used with the `<button>` element. However, you can also use these classes on `<a>` or `<input>` elements (though some browsers may apply a slightly different rendering).
+Les classes `.btn` sont conçues pour être utilisées avec l'élément `<button>`. Cependant, vous pouvez également des classes sur les éléments `<a>` ou `<input>` (bien que certains navigateurs puissent appliquer un rendu légèrement différent).
 
-When using button classes on `<a>` elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a `role="button"` to appropriately convey their purpose to assistive technologies such as screen readers.
+Lorsque vous utilisez des classes de boutons sur des éléments `<a>` utilisés pour déclencher des fonctionnalités de page (telles que la réduction de contenu), plutôt que sur des liens vers de nouvelles pages ou sections de la page en cours, un lien `role="button"` doit être attribué à ces liens afin de communiquer de manière appropriée avec les technologies d'assistance telles que les lecteurs d'écran.
 
 {{% example html %}}
 <a class="btn btn-primary" href="#" role="button">Link</a>
@@ -33,9 +34,9 @@ When using button classes on `<a>` elements that are used to trigger in-page fun
 <input class="btn btn-primary" type="reset" value="Reset">
 {{% /example %}}
 
-## Button links
+## Boutons liens
 
-These buttons are used for very minor actions.
+Ces boutons sont utilisés pour des actions mineures, ou des éléments appropriés (comme le téléchargement, les liens externes et le partage).
 
 <p><a href="#" class="btn btn-link"><span>Internal link</span> <i class="icons-arrow-next icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
 <p><a href="#" class="btn btn-link"><span>Share link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
@@ -49,14 +50,14 @@ These buttons are used for very minor actions.
 <a href="#" class="btn btn-link"><span>External link</span> <i class="icons-external-link icons-size-x75 ml-2" aria-hidden="true"></i></a>
 {{% /highlight %}}
 
-### Disabled state
+### Etat inactif
 {{% example html %}}
 <p><span class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></span></p>
 {{% /example %}}
 
-## Icon Button
+## Boutons icônes
 
-These buttons are used for a series of buttons placed next to each other; they allow a more compact design.
+Ces boutons sont utilisés pour une série de boutons placés les uns à côté des autres. Ils permettent un design plus compact pour des actions rapides (recherche, filtres, etc.).
 
 {{% example html %}}
 <button type="button" class="btn btn-only-icon btn-primary">
@@ -77,9 +78,9 @@ These buttons are used for a series of buttons placed next to each other; they a
 </button>
 {{% /example %}}
 
-## Navigation Icon Button
+## Boutons icônes de navigation
 
-These buttons are used to move between different views or anchor points on a screen.
+Ces boutons permettent de se déplacer entre différentes vues (dans un carousel par exemple), ou points d'ancrage sur un écran (bouton rapide de remontée en haut de l'écran).
 
 {{% example html %}}
 <button type="button" class="btn-rounded btn-rounded-white box-shadow"><span class="sr-only">Haut</span><i class="icons-arrow-up" aria-hidden="true"></i></button>
@@ -95,9 +96,9 @@ These buttons are used to move between different views or anchor points on a scr
 <button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><span class="sr-only">Précédent</span><i class="icons-arrow-prev" aria-hidden="true"></i></button>
 {{% /example %}}
 
-## Social Media Share Icon Button
+## Boutons icônes de partage réseaux sociaux
 
-These buttons are used to share a given page on social networks.
+Ces boutons permettent de partager une page donnée sur les réseaux sociaux.
 
 {{% example html %}}
 <button type="button" class="btn-rounded btn-rounded-primary"><span class="sr-only">Partager</span><i class="icons-share" aria-hidden="true"></i></button>
@@ -113,47 +114,47 @@ These buttons are used to share a given page on social networks.
 <button type="button" class="btn-rounded btn-rounded-gray">999</button>
 {{% /example %}}
 
-## Sizes
+## Tailles
 
-Small buttons are used when space is limited—in a table, for instance.
+Des petits boutons sont utilisés lorsque l'espace est limité, par exemple dans un tableau.
 
-Fancy smaller buttons? Add `.btn-sm` for additional sizes.
+Vous voulez de plus petits boutons ? Ajoutez `.btn-sm` pour des tailles supplémentaires.
 
 {{% example html %}}
 <button type="button" class="btn btn-primary btn-sm">Small button</button>
 <button type="button" class="btn btn-secondary btn-sm">Small button</button>
 {{% /example %}}
 
-Create block level buttons—those that span the full width of a parent—by adding `.btn-block`.
+Créez des boutons prenant la largeur d'un élément en ajoutant `.btn-block`.
 
 {{% example html %}}
 <button type="button" class="btn btn-primary btn-block">Block level button</button>
 <button type="button" class="btn btn-secondary btn-block">Block level button</button>
 {{% /example %}}
 
-## Active state
+## État actif
 
-Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. **There's no need to add a class to `<button>`s as they use a pseudo-class**. However, you can still force the same active appearance with `.active` (and include the <code>aria-pressed="true"</code> attribute) should you need to replicate the state programmatically.
+Lorsqu'ils sont activés, les boutons auront une apparence au roll et au clic, avec une couleur plus sombre, une bordure plus sombre et une ombre incrustée). **Il n'est pas nécessaire d'ajouter une classe à `<button>` car ils utilisent une pseudo-classe**. Cependant, vous pouvez toujours forcer la même apparence active avec `.active` (et inclure l'attribut <code>aria-pressed="true"</code>) si vous devez répliquer l'état programmatiquement.
 
 {{% example html %}}
 <button type="button" class="btn btn-primary active" aria-pressed="true">Primary link</button>
 <a href="#" class="btn btn-secondary active" role="button" aria-pressed="true">Link</a>
 {{% /example %}}
 
-## Disabled state
+## Etat inactif
 
-Make buttons look inactive by adding the `disabled` boolean attribute to any `<button>` element.
+Même si on ne l'utilise que très peu (un bouton inactif est un bouton qui n'existe pas), vous pouvez, en cas de force majeure, désactiver les boutons en ajoutant l'attribut `disabled` à tout élément `<button>`.
 
 {{% example html %}}
 <button type="button" class="btn btn-primary" disabled>Primary button</button>
 <a href="#" class="btn btn-secondary disabled">Button</a>
 {{% /example %}}
 
-Disabled buttons using the `<a>` element behave a bit different:
+Les boutons désactivés utilisant l'élément `<a>` se comportent différemment:
 
-- `<a>`s don't support the `disabled` attribute, so you must add the `.disabled` class to make it visually appear disabled.
-- Some future-friendly styles are included to disable all `pointer-events` on anchor buttons. In browsers which support that property, you won't see the disabled cursor at all.
-- Disabled buttons should include the `aria-disabled="true"` attribute to indicate the state of the element to assistive technologies.
+- `<a>` ne supporte pas l'attribut `disabled`, vous devez donc ajouter la classe `.disabled` pour lui donner une apparence désactivée.
+- Certains styles compatibles avec le futur sont inclus pour désactiver les `pointer-events` sur les boutons d'ancrage. Dans les navigateurs prenant en charge cette propriété, vous ne verrez pas du tout le curseur désactivé.
+- Les boutons désactivés doivent inclure l'attribut `aria-disabled="true"` pour indiquer l'état de l'élément pour les technologies d'assistance telles que les lecteurs d'écran.
 
 {{% example html %}}
 <a href="#" class="btn btn-primary disabled" aria-disabled="true">Primary link</a>
@@ -161,14 +162,14 @@ Disabled buttons using the `<a>` element behave a bit different:
 {{% /example %}}
 
 {{% callout warning %}}
-##### Link functionality caveat
+##### Mise en garde concernant la fonctionnalité de lien
 
-The `.disabled` class uses `pointer-events: none` to try to disable the link functionality of `<a>`s, but that CSS property is not yet standardized. In addition, even in browsers that do support `pointer-events: none`, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, add a `tabindex="-1"` attribute on these links (to prevent them from receiving keyboard focus) and use custom JavaScript to disable their functionality.
+La classe `.disabled` utilise `pointer-events: none` pour essayer de désactiver la fonctionnalité de liaison `<a>`s, mais cette propriété CSS n'est pas encore normalisée. En outre, même dans les navigateurs qui prennent en charge les événements de type `pointer-events: none`, la navigation au clavier reste inchangée, ce qui signifie que les utilisateurs de clavier et de technologies d'assistance comme les lecteurs d'écran pourront toujours activer ces liens. Pour plus de sécurité, ajoutez donc un attribut `tabindex="-1"` sur ces liens (pour les empêcher de recevoir le focus clavier) et utilisez du JavaScript personnalisé pour désactiver leurs fonctionnalités.
 {{% /callout %}}
 
-## Large picture button
+## Boutons pictogrammes
 
-Large picture buttons are used when the options the buttons offer need a picture for greater clarity.
+Les gros boutons avec pictogramme sont utilisés lorsque les options proposées par les boutons nécessitent une image pour davantage de clarté, ou pour illustrer des entrées sur un espace suffisant par exemple.
 
 {{% example html %}}
 <button type="button" class="btn btn-card">
