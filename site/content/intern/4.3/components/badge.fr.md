@@ -15,7 +15,7 @@ url: /docs/4.3/components/badge/
 
 ## Contextual variations
 
-Ajoutez l'une des classes de modificateurs mentionnées ci-dessous pour adapter l'apparence d'un badge.
+Ajoutez l'une des classes mentionnées ci-dessous pour adapter l'apparence d'un badge.
 
 {{< example html >}}
 {{< colors.inline >}}
