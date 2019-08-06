@@ -1,16 +1,16 @@
 ---
 layout: docs
 title: Breadcrumb
-description: Breadcrumbs show the path a reader has taken in a section and can return the reader to a higher-level page. It thus shows the reader's location within the website's hierarchy. Only websites with deep tree structures need breadcrumbs.
-group: components
+slug: Fil d'Ariane
+description: Le fil d'Ariane indique le chemin emprunté par l'utilisateur dans une section et peut le ramener à une page de niveau supérieur. Il indique donc l'emplacement de l'utilisateur dans la hiérarchie du site. Le fil d'Ariane est nécessaire sur les interfaces comportant des arborescences profondes.
 url: /docs/4.3/components/breadcrumb/
 ---
 
 ## Overview
 
-Separators are automatically added in CSS through [`::before`](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) and [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content).
+Les séparateurs sont automatiquement ajoutés en CSS via [`::before`](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) et [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content).
 
-The breadcrumbs should not be used in mobile interfaces.
+Le fil d'Ariane ne doit pas être utilisé sur les interfaces mobiles.
 
 {{% example html %}}
 <nav aria-label="Vous êtes : " role="navigation">
@@ -31,11 +31,11 @@ The breadcrumbs should not be used in mobile interfaces.
 {{% /example %}}
 
 {{% callout info %}}
-You will find steps indicator in the [progress components]({{< docsref "/components/progress#steps-indicator" >}}).
+Vous trouverez l'indicateur d'étapes dans [progress components]({{< docsref "/components/progress#steps-indicator" >}}).
 {{% /callout %}}
 
 ## Accessibility
 
-Since breadcrumbs provide a navigation, it's a good idea to add a meaningful label such as `aria-label="Vous êtes : "` to describe the type of navigation provided in the `<nav>` element, as well as applying an `aria-current="page"` to the last item of the set to indicate that it represents the current page.
+Comme le fil d'Ariane montre une navigation, c'est une bonne idée d'ajouter une étiquette significative telle que `aria-label="Vous êtes : "` pour décrire le type de navigation fourni dans le `<nav>` élément, ainsi que l'application d'un `aria-current="page"` au dernier élément de l'ensemble pour indiquer qu'il représente la page en cours.
 
-For more information, see the [WAI-ARIA Authoring Practices for the breadcrumb pattern](https://www.w3.org/TR/wai-aria-practices/#breadcrumb).
+Pour plus d'information, voir [WAI-ARIA Authoring Practices for the breadcrumb pattern](https://www.w3.org/TR/wai-aria-practices/#breadcrumb).
