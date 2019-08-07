@@ -14,9 +14,9 @@ Une **carte** est un conteneur flexible et extensible. Il comprend des options p
 
 ## Exemple
 
-Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no `margin` by default, so use [spacing utilities]({{< docsref "/utilities/spacing" >}}) as needed.
+Les cartes sont construites avec le moins de balises et de styles possibles, mais parviennent tou de même à fournir une tonne de contrôle et de personnalisation. Construits avec flexbox, ils offrent un alignement facile et se marient bien avec les autres composants Bootstrap. . Ils n'ont pas de `margin` par défaut, utilisez donc [spacing utilities]({{< docsref "/utilities/spacing" >}}) selon vos besoins.
 
-Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they'll naturally fill the full width of its parent element. This is easily customized with our various [sizing options](#sizing).
+Vous trouverez ci-dessous un exemple de carte de base à contenu mixte et à largeur fixe. Les cartes n'ayant pas de largeur fixe au début, elles rempliront donc naturellement toute la largeur de son élément parent. Ceci est facilement personnalisable avec nos différentes [options de dimensionnement](#sizing).
 
 {{% example html %}}
 <div class="row">
