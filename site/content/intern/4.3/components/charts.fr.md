@@ -70,10 +70,10 @@ Les graphiques "Donuts" ont un fonctionnement similaire aux diagrammes à secteu
 {{% /example %}}
 
 
-## Bar charts
+## Graphiques barres
 
-Bar graphs show changes in a quantity over time. We use them to display quantities measured periodically. There are three types of bar graphs: simple, cumulative and proportional. Simple bar graphs display a single measurement, while cumulative bar graphs display two to thr
-ee measurements per bar. In proportional bar graphs, all bars are the same size but have different proportions for the indicators measured within them.
+Les graphiques barres montrent les changements d'une quantiité dans le temps. Nous les utilisons pour afficher les quantités mesurées périodiquement. Il existe trois types de graphiques barres : simple, cumulatif et proportionnel. Les graphiques barres simples affichent une seule mesure, tandis que les cumulatifs affichent deux à trois mesures par barre. 
+Dans les graphiques barres proportionnelles, toutes les barres ont la même taille mais des proportions différentes pour les indicateurs mesurés.
 
 {{% example html %}}
 <div class="position-relative"
@@ -104,16 +104,17 @@ ee measurements per bar. In proportional bar graphs, all bars are the same size 
 {{% /example %}}
 
 
-## Line charts
+## Graphiques lignes
 
-Line charts represent changes in a specific piece of data over time. We use them to display pieces of data that are measured periodically. 
+Les graphiques lignes représentent les modifications d'une donnée spécifique au fil du temps.
+Nous les utilisons pour afficher des données mesurées périodiquement.
 
 Options:
 
-- data-styles : 'unfilled' (by default) or 'dashed'
-- data-colors : Array of rgb colors
+- data-styles : 'unfilled' (par défaut) ou 'dashed' (pointillés)
+- data-colors : tableau de couleurs RVB
 
-### Single line
+### Une seule ligne
 {{% example html %}}
 <div class="charts position-relative"
     data-component="line-chart"
@@ -131,7 +132,7 @@ Options:
 </div>
 {{% /example %}}
 
-### Multi line
+### Multi lignes
 {{% example html %}}
 <div class="charts position-relative"
     data-component="line-chart"
@@ -150,7 +151,7 @@ Options:
 </div>
 {{% /example %}}
 
-### Dashed line
+### Ligne en pointillés
 {{% example html %}}
 <div class="charts position-relative"
     data-component="line-chart"
@@ -171,8 +172,8 @@ Options:
 </div>
 {{% /example %}}
 
-### Custom colors
-Warning : don't forget to update the legend with your own color
+### Couleurs personnalisées
+Attention : n'oubliez pas de mettre à jour la légende avec votre couleur personnalisée
 
 {{% example html %}}
 <div class="charts position-relative"
@@ -186,11 +187,11 @@ Warning : don't forget to update the legend with your own color
 </div>
 {{% /example %}}
 
-### Area
+### Aires
 
-Area charts represent changes in a figure calculated over time, e.g., changes in passenger numbers on a rail line over time. 
+Les graphiques aires représentent les modifications d'un chiffre calculé dans le temps, souvent une fréquentation. Par exemple, les modifications du nombre de passagers sur une ligne au fil du temps.
 
-Use data-fill="true"
+Utilisez data-fill="true"
 
 {{% example html %}}
 <div class="position-relative"
@@ -204,7 +205,7 @@ Use data-fill="true"
 </div>
 {{% /example %}}
 
-### With border
+### Aires avec bordure
 Use data-straightlines="true"
 
 {{% example html %}}
@@ -220,7 +221,7 @@ Use data-straightlines="true"
 </div>
 {{% /example %}}
 
-### Custom colors
+### Aires avec couleurs personnalisées
 {{% example html %}}
 <div class="position-relative"
     data-component="line-chart"
@@ -248,6 +249,6 @@ Use data-straightlines="true"
 </div>
 {{% /example %}}
 
-## Maps
+## Cartes
 
-This “map” component can be used for any type of map. Examples include geolocation, zooming, moving around a map, map search features and filtering.
+Ce composant "carte" peut être utilisé pour tout type de carte. Les exemples incluent la géolocalisation, le zoom, le déplacement sur une carte, les fonctions de recherche sur la carte et le filtrage.
