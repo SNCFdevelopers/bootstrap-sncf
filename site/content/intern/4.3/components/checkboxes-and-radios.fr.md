@@ -12,12 +12,12 @@ url: /docs/4.3/components/checkboxes-and-radios/
 
 Plusieurs outils de sélection permettent aux utilisateurs de choisir parmi des options prédéfinies :
 
-- faire plusieurs choix : cases à cocher (ou listes déroulantes lorsqu'il y a beaucoup de choix)
-- to make one selection: radio buttons, switch
-- to define a value or range: slider (see “Forms” section)
+- faire plusieurs choix : cases à cocher (ou listes déroulantes avec cases à cocher lorsqu'il y a beaucoup de choix)
+- faire un seul choix: boutons radio, switch (ou listes déroulantes lorsqu'il y a beaucoup de choix)
+- définir une valeur ou une plage (voir la section “Forms”)
 
-When options need to be illustrated, use large picture buttons (see “Buttons” section).
-We use the sibling selector (`~`) for all our `<input>` states—like `:checked`—to properly style our custom form indicator. When combined with the `.custom-control-label` class, we can also style the text for each item based on the `<input>`'s state.
+Lorsque les options doivent être illustrées, utilisez les grands boutons d'image (voir la section “Boutons”).
+Nous utilisons le sélecteur (`~`) pour tous nos `<input>` states—comme `:checked`—to properly style our custom form indicator. When combined with the `.custom-control-label` class, we can also style the text for each item based on the `<input>`'s state.
 
 We hide the default `<input>` with `opacity` and use the `.custom-control-label` to build a new custom form indicator in its place with `::before` and `::after`. Unfortunately we can't build a custom one from just the `<input>` because CSS's `content` doesn't work on that element.
 
