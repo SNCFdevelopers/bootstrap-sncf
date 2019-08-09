@@ -21,15 +21,15 @@ Nous utilisons le sélecteur (`~`) pour tous nos `<input>` states—comme `:chec
 
 We hide the default `<input>` with `opacity` and use the `.custom-control-label` to build a new custom form indicator in its place with `::before` and `::after`. Unfortunately we can't build a custom one from just the `<input>` because CSS's `content` doesn't work on that element.
 
-In the checked states, we use **base64 embedded SVG icons** from [Open Iconic](https://useiconic.com/open). This provides us the best control for styling and positioning across browsers and devices.
+Dans les états cochés, nous utilisons **les icônes SVG intégrés base64** de [Open Iconic](https://useiconic.com/open). Cela nous fournit le meilleur contrôle pour le style et le positionnement sur les navigateurs et les appareils.
 
-### Checkboxes
+### Cases à cocher
 
 {{% example html %}}
 {{% checkbox name="exampleCheckbox1" id="exampleCheckbox1" label="Custom checkbox" %}}
 {{% /example %}}
 
-Custom checkboxes can also utilize the `:indeterminate` pseudo class and `aria-checked="mixed` for screen reader, when manually set via JavaScript (there is no available HTML attribute for specifying it).
+Les cases à cocher personnalisées peuvent également utiliser la pseudo-classe `:indeterminate` et `aria-checked="mixed` pour le lecteur d'écran, lorsqu'elles sont définies manuellement via JavaScript (il n'y a aucun attribut HTML disponible pour le spécifier).
 
 <div class="bd-example bd-example-indeterminate">
   <div class="custom-control custom-checkbox">
@@ -38,14 +38,14 @@ Custom checkboxes can also utilize the `:indeterminate` pseudo class and `aria-c
   </div>
 </div>
 
-If you're using jQuery, something like this should suffice:
+Si vous utilisez jQuery, cela devrait suffire :
 
 {{% highlight js %}}
 $('.your-checkbox').prop('indeterminate', true);
 $('.your-checkbox').attr('aria-checked', 'mixed');
 {{% /highlight %}}
 
-### Radios
+### Boutons radio
 
 {{% example html %}}
 <div class="custom-control custom-radio">
@@ -60,7 +60,7 @@ $('.your-checkbox').attr('aria-checked', 'mixed');
 
 ### Switch
 
-Switches turn a feature or option on or off. Labels can be applied when necessary.
+Les switch permettent d'activer ou de désactiver une fonctionnalité ou une option. Les items peuvent être appliqués si nécessaire (par exemple : Option 1 / Option 2).
 
 {{% example html %}}
 <label for="switch1" class="switch-control">
@@ -91,7 +91,7 @@ Switches turn a feature or option on or off. Labels can be applied when necessar
 </div>
 {{% /example %}}
 
-### Inline
+### En ligne
 
 {{% example html %}}
 <div class="custom-control custom-radio custom-control-inline">
@@ -104,9 +104,8 @@ Switches turn a feature or option on or off. Labels can be applied when necessar
 </div>
 {{% /example %}}
 
-### Disabled
-
-Custom checkboxes and radios can also be disabled. Add the `disabled` boolean attribute to the `<input>` and the custom indicator and label description will be automatically styled.
+### Etat désactivé
+Les cases à cocher personnalisées et les boutons radio peuvent également être désactivés en cas de force majeure (un élément désactivé est un élément à ne pas afficher dans la mesure du possible pour éviter les incompréhensions chez l'utilisateur). Ajoutez l'attribut `disabled` à `<input>` l'indicateur personnalisé et la description de l'item seront automatiquement stylisés.
 
 {{% example html %}}
 <div class="custom-control custom-checkbox">
