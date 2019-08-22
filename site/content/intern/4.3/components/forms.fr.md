@@ -228,7 +228,7 @@ Avec un curseur, les utilisateurs peuvent choisir une valeur approximative, c'es
 
 ## Chips
 
-Chips are compact components that appear after entering or selecting items as tags in a field. They can be used for various item types (contacts, concepts, etc.) and are predefined or can be adjusted for specific needs.
+Les chips sont des composants compacts qui apparaissent après la saisie ou la sélection d'éléments dans un champ. Ils peuvent être utilisés pour différents types d'éléments (contacts, concepts etc.) et sont prédéfinis ou peuvent être ajustés pour des besoins spécifiques. Ils sont également supprimables une fois que la saisie est faite.
 
 {{% example html %}}
 <div role="list">
@@ -256,16 +256,17 @@ Chips are compact components that appear after entering or selecting items as ta
 {{% /example %}}
 
 {{% callout warning %}}
-### Alternatives to hidden labels
-Assistive technologies such as screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the `.sr-only` class. There are further alternative methods of providing a label for assistive technologies, such as the `aria-label`, `aria-labelledby` or `title` attribute. If none of these are present, assistive technologies may resort to using the `placeholder` attribute, if present, but note that use of `placeholder` as a replacement for other labelling methods is not advised.
+
+### Alternatives aux étiquettes cachées
+Les technologies d'assistance telles que les lecteurs d'écran auront des problèmes avec formulaires si vous n'incluez pas d'étiquette pour chaque entrée. Pour ces formulaires en ligne, vous pouvez masquer les étiquettes avec la classe `.sr-only`. Il existe d'autres  méthodes alternatives pour fournir une  étiquette pour les technologies d'assistance, telles que les attributs `aria-label`, `aria-labelledby` ou `title`. Si aucune d'entre elles n'est présente, les technologies  d'assistance peuvent recourir à l'attribut `placeholder`, le cas échéant, mais notez que l'utilisation de `placeholder` en remplacement d'étiquetage n'est pas conseillée.
 {{% /callout %}}
 
-## Help text
+## Texte d'aide au remplissage
 
-### Inside field
+### Intérieur du champ
 
-You can precise what do you expect directly inside the input field with `placeholder="Help text"`.
-The placeholder disappear when you enter a character.
+Vous pouvez préciser ce que vous attendez directement dans le champ avec `placeholder="Help text"`.
+L'espace réservé disparaît à la saisie du premier caractère.
 
 {{% example html %}}
 <label class="font-weight-medium mb-2" for="inputPassword4">Password</label>
@@ -275,17 +276,18 @@ The placeholder disappear when you enter a character.
 </div>
 {{% /example %}}
 
-### Outside field
+### Extérieur du champ
 
-Block-level help text in forms can be created using `.form-text` (previously known as `.help-block` in v3). Inline help text can be flexibly implemented using any inline HTML element and utility classes like `.text-muted`.
+Le texte d'aide à l'extérieur du champ dans les formulaire peut être créé en utilisant `.form-text` (anciennement connu sous le nom `.help-block` dans la v3). Le texte d'aide sur une ligne peut être implémenté de manière flexible en utilisant n'importe quel élément HTML en ligne et des classes d'utilitaires telles que `.text-muted`.
 
 {{% callout warning %}}
-#### Associating help text with form controls
 
-Help text should be explicitly associated with the form control it relates to using the `aria-describedby` attribute. This will ensure that assistive technologies—such as screen readers—will announce this help text when the user focuses or enters the control.
+#### Associer un texte d'aide à des contrôles de formulaire
+
+Le texte d'aide doit être explicitement associé au contrôle de formulaire lié à l'utilisation de l'attribut `aria-describedby`. Cela garantira que les technologies d'assistance, telles que les lecteurs d'écran, annonceront ce texte d'aide lorsque l'utilisateur se concentrera ou entrera dans le contrôle.
 {{% /callout %}}
 
-Help text below inputs can be styled with `.form-text`. This class includes `display: block` and adds some top margin for easy spacing from the inputs above.
+Le texte d'aide sous les entrées peut être stylisée avec `.form-text`. Cette classe inclut `display: block` et ajouter une marge supérieure pour un espacement suffisant avec le champ.
 
 {{% example html %}}
 <label class="font-weight-medium mb-2" for="inputPassword5">Password</label>
@@ -298,7 +300,7 @@ Help text below inputs can be styled with `.form-text`. This class includes `dis
 </small>
 {{% /example %}}
 
-Inline text can use any typical inline HTML element (be it a `<small>`, `<span>`, or something else) with nothing more than a utility class.
+Le texte sur la ligne peut utiliser n'importe quel élément HTML typique (qu'il s'agisse d'un `<small>`, `<span>`, ou quelque chose d'autre) avec rien de plus qu'une classe utilitaire.
 
 {{% example html %}}
 <form class="form-inline">
@@ -317,14 +319,14 @@ Inline text can use any typical inline HTML element (be it a `<small>`, `<span>`
 
 ## Validation
 
-Provide valuable, actionable feedback to your users with HTML5 form validation–[available in all our supported browsers](https://caniuse.com/#feat=form-validation). Choose from the browser default validation feedback, or implement custom messages with our built-in classes and starter JavaScript.
+Fournissez à vos utilisateurs des informations précieuses et exploitables grâce à la validation de formulaire HTML5–[disponible sur tous les navigateurs pris en charge](https://caniuse.com/#feat=form-validation). Choisissez parmi les commentaires de validation par défaut du navigateur ou implémentez des messages personnalisés avec nos classes intégrées et JavaScript.
 
 {{% callout warning %}}
-We **highly recommend** pouet custom validation styles as native browser defaults are not announced to screen readers.
+Nous **recommandons fortement** les styles de validation personnalisés car les paramètres par défaut du navigateur ne sont pas annoncés aux lecteurs d'écran.
 {{% /callout %}}
 
 {{% callout info %}}
-The checkmarks <i class="text-primary icons-check"></i> are not mandatory (and even not included in SNCF's guidelines), but it is a interesting way to show users that a field is validated. Use it if you want.
+Les coches <i class="text-primary icons-check"></i> ne sont pas obligatoires (ni même inclues dans les guidelines SNCF), mais il s'agit d'un moyen intéressant de montrer aux utilisateurs que le champ est validé. Utilisez-le si vous le souhaitez.
 {{% /callout %}}
 
 ### Server side
