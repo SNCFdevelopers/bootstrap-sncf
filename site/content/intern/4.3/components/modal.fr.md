@@ -371,7 +371,7 @@ Vous pouvez également créer des fenêtres modales scrollables permettant de fa
 
 ### Info-bulles et bulles contextuelles
 
-[Tooltips]({{< docsref "/components/tooltips" >}}) and [popovers]({{< docsref "/components/popovers" >}}) can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.
+[Info-bulles]({{< docsref "/components/tooltips" >}}) et [bulles contextuelles]({{< docsref "/components/popovers" >}}) peuvent être placés dans les fenêtres modales. Lorsque les fenêtres modales sont fermées, les info-bulles et popovers sont également automatiquement fermés.
 
 <div id="exampleModalPopovers" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -413,9 +413,9 @@ Vous pouvez également créer des fenêtres modales scrollables permettant de fa
 </div>
 {{% /highlight %}}
 
-### Using the grid
+### Utiliser la grille
 
-Utilize the Bootstrap grid system within a modal by nesting `.container-fluid` within the `.modal-body`. Then, use the normal grid system classes as you would anywhere else.
+Utilisez le système de grille Bootstrap dans une fenêtre modale en imbriquant `.container-fluid` dans le `.modal-body`. Ensuite, utilisez les classes normales du système de grille comme vous le feriez n'importe où ailleurs.
 
 <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
