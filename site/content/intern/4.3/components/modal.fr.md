@@ -497,11 +497,11 @@ Utilisez le système de grille Bootstrap dans une fenêtre modale en imbriquant 
 </div>
 {{% /highlight %}}
 
-### Varying modal content
+### Variation du contenu de la fenêtre modale
 
-Have a bunch of buttons that all trigger the same modal with slightly different contents? Use `event.relatedTarget` and [HTML `data-*` attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) (possibly [via jQuery](https://api.jquery.com/data/)) to vary the contents of the modal depending on which button was clicked.
+Vous avez plusieurs boutons qui déclenchent tous la même fenêtre modale avec un contenu légèrement différent ? Utilisez `event.relatedTarget` et les [attributs HTML `data-*`](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) (éventuellement [via jQuery](https://api.jquery.com/data/)) pour modifier le contenu de la fenêtre modale en fonction du bouton sur lequel vous avez cliqué.
 
-Below is a live demo followed by example HTML and JavaScript. For more information, [read the modal events docs](#events) for details on `relatedTarget`.
+Vous trouverez ci-dessous une démonstration suivie d'un exemple HTML et JavaScript. Pour davantage d'informations, [lisez la documentation relatifive aux événéments](#events) pour des détails sur `relatedTarget`.
 
 {{% example html %}}
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
@@ -550,9 +550,9 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 })
 {{% /highlight %}}
 
-### Remove animation
+### Supprimer l'animation
 
-For modals that simply appear rather than fade in to view, remove the `.fade` class from your modal markup.
+Pour les fenêtres modales qui apparaissent simplement plutôt que d'être fondu à l'ouverture, supprimez la classe `fade`.
 
 {{% highlight html %}}
 <div class="modal" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
@@ -560,21 +560,20 @@ For modals that simply appear rather than fade in to view, remove the `.fade` cl
 </div>
 {{% /highlight %}}
 
-### Dynamic heights
+### Hauteurs dynamiques
+Si la hauteur d'une fenêtre modale change alors qu'il est ouvert, vous devez appeler `$('#myModal').modal('handleUpdate')` pour réajuster sa position si une barre de défilement apparaît.
 
-If the height of a modal changes while it is open, you should call `$('#myModal').modal('handleUpdate')` to readjust the modal's position in case a scrollbar appears.
+### Accessibilité
 
-### Accessibility
+Assurez-vous d'ajouter `role="dialog"` et `aria-labelledby="..."`, en référençant le titre de la modale, à `.modal`, et `role="document"` à la `.modal-dialog` même. De plus, vous pouvez décrire votre modale avec `aria-describedby` sur `.modal`.
 
-Be sure to add `role="dialog"` and `aria-labelledby="..."`, referencing the modal title, to `.modal`, and `role="document"` to the `.modal-dialog` itself. Additionally, you may give a description of your modal dialog with `aria-describedby` on `.modal`.
+### Intégration de vidéos YouTube
 
-### Embedding YouTube videos
+L'intégration de vidéos YouTube dans des modaux nécessite du JavaScript supplémentaire, pas dans Bootstrap, pour arrêter automatiquement la lecture, etc. [Voir cette publication Stack Overflow pour plus d'informations](https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal) for more information.
 
-Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. [See this helpful Stack Overflow post](https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal) for more information.
+## Options de tailles
 
-## Optional sizes
-
-Modals have two optional sizes, available via modifier classes to be placed on a `.modal-dialog`. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.
+Les modales ont deux tailles optionnelles, disponibles via des classes de modificateurs pour être placées dans un `.modal-dialog`. Ces tailles entrent en jeu à certains breakpoints, pour éviter les barres de défilement horizontales dans les fenêtres plus étroites (sur mobile par exemple).
 
 <div class="bd-example">
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Extra large modal</button>
@@ -670,11 +669,11 @@ Modals have two optional sizes, available via modifier classes to be placed on a
 
 ## Usage
 
-The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds `.modal-open` to the `<body>` to override default scrolling behavior and generates a `.modal-backdrop` to provide a click area for dismissing shown modals when clicking outside the modal.
+Le plugin de la fenêtre modale bascule votre contenu caché à la demande, via des attributs de données data ou JavaScript. Il ajoute également `.modal-open` au `<body>` pour remplacer le comportement de défilement par défaut et génère un `.modal-backdrop` pour réaliser la zone de clic en fond, permettant la fermeture de la modale lorsque vous cliquez sur ce même fond.
 
-### Via data attributes
+### Via des attributs de données
 
-Activate a modal without writing JavaScript. Set `data-toggle="modal"` on a controller element, like a button, along with a `data-target="#foo"` or `href="#foo"` to target a specific modal to toggle.
+Activer une modale sans écrire de JavaScript. Définissez `data-toggle="modal"` sur un élément du contrôleur, comme un bouton, avec `data-target="#foo"` ou `href="#foo"` pour cibler une modale spécifique à basculer.
 
 {{% highlight html %}}
 <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
@@ -682,13 +681,13 @@ Activate a modal without writing JavaScript. Set `data-toggle="modal"` on a cont
 
 ### Via JavaScript
 
-Call a modal with id `myModal` with a single line of JavaScript:
+Appelez une modale avec l'id `myModal` avec une seule ligne de JavaScript:
 
 {{% highlight js %}}$('#myModal').modal(options){{% /highlight %}}
 
 ### Options
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-backdrop=""`.
+Les options peuvent être passées via des attributs de données ou du JavaScript. Pour les attributs de données, ajoutez le nom de l'option à `data-`, comme dans `data-backdrop=""`.
 
 <table class="table table-bordered table-striped">
   <thead>
@@ -704,30 +703,30 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>backdrop</td>
       <td>boolean or the string <code>'static'</code></td>
       <td>true</td>
-      <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
+      <td>Inclut un élément modal-backdrop. Vous pouvez également spécifier <code>static</code> pour un fond qui ne ferme pas la modale au clic.</td>
     </tr>
     <tr>
       <td>keyboard</td>
       <td>boolean</td>
       <td>true</td>
-      <td>Closes the modal when escape key is pressed</td>
+      <td>Ferme la modale lorsque la touche Echap est pressée.</td>
     </tr>
     <tr>
       <td>focus</td>
       <td>boolean</td>
       <td>true</td>
-      <td>Puts the focus on the modal when initialized.</td>
+      <td>Met le focus sur la modale une fois initialisée.</td>
     </tr>
     <tr>
       <td>show</td>
       <td>boolean</td>
       <td>true</td>
-      <td>Shows the modal when initialized.</td>
+      <td>Affiche la modale une fois initialisée.</td>
     </tr>
   </tbody>
 </table>
 
-### Methods
+### Méthodes
 
 {{% callout danger %}}
 {{% partial "callout-danger-async-methods.md" %}}
@@ -735,7 +734,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 
 #### `.modal(options)`
 
-Activates your content as a modal. Accepts an optional options `object`.
+Active votre contenu en tant que fenêtre modale. Accepte les options `object`.
 
 {{% highlight js %}}
 $('#myModal').modal({
