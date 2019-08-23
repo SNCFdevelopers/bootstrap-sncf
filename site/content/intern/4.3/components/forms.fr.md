@@ -329,9 +329,9 @@ Nous **recommandons fortement** les styles de validation personnalisés car les 
 Les coches <i class="text-primary icons-check"></i> ne sont pas obligatoires (ni même inclues dans les guidelines SNCF), mais il s'agit d'un moyen intéressant de montrer aux utilisateurs que le champ est validé. Utilisez-le si vous le souhaitez.
 {{% /callout %}}
 
-### Server side
+### Côté serveur
 
-We recommend using client side validation, but in case you require server side, you can indicate invalid form fields with `.is-invalid`. Note that `.invalid-feedback` is also supported with these classes.
+Nous vous recommandons d'utiliser la validation côté client, mais si vous avez besoin du côté serveur, vous pouvez indiquer des champs de formulaire non valides avec `.is-invalid`. Notez que `.invalid-feedback` est également pris en charge avec ces classes.
 
 {{% example html %}}
 <form class="needs-validation" novalidate>
@@ -377,7 +377,7 @@ We recommend using client side validation, but in case you require server side, 
 </form>
 {{% /example %}}
 
-### Error message
+### Message d'erreur
 
 {{% example html %}}
 <form class="needs-validation" novalidate>
@@ -403,11 +403,11 @@ We recommend using client side validation, but in case you require server side, 
 </form>
 {{% /example %}}
 
-### Browser defaults
+### Paramètres par défaut du navigateur
 
-Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you'll see a slightly different style of feedback.
+Pas intéressé par les commentaires personnalisés de validation ou l'écriture de JavaScript pour changer les comportements de formulaire ? Tout va bien, vous pouvez utiliser les paramètres par défaut du navigateur. Essayez de soumettre le formulaire ci-dessous. En fonction de votre navigateur et de votre système d’exploitation, le style de vos commentaires sera légèrement différent.
 
-While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
+Bien que ces styles de commentaires ne puissent pas être stylés avec CSS, vous pouvez toujours personnaliser le texte des commentaires via JavaScript.
 
 {{% example html %}}
 <form>
