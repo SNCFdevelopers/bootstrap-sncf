@@ -7,17 +7,26 @@ toc: true
 ---
 
 {{% callout info %}}
-  Versions numbers will follow original Bootstrap versions, followed by SNCF's revision of this same version.<br>
-  For example, **v{{% param current_version %}} r{{% param sncf_version %}}** is :
+  Les numéros de versions suivent les versions originales de Bootstrap, suivies du numéro de révision SNCF liée à cette version.
+  Par exemple, **v{{% param current_version %}} r{{% param sncf_version %}}** donne :
 
-  - SNCF's **revision {{% param sncf_version %}}**
-  - of Bootstrap **v{{% param current_version %}}**
+  - révision SNCF **n°{{% param sncf_version %}}**
+  - de Bootstrap en version **v{{% param current_version %}}**
 
-  When changing Bootstrap version, SNCF revision will always reset to r0.
+  À chaque changement de version de Bootstrap, la révision SNCF repasse à r0.
 {{% /callout %}}
 
 
 ## v4.3.1
+
+### Révision 2 _01/10/2019_
+- La documentation est générée avec HUGO désormais
+- Traduction française
+
+{{% callout info %}}
+  La traduction française du changelog antérieur à celle de la documentation ne nous a pas semblé pertinente.
+  Si jamais vous aviez néanmoins besoin que celle-ci soit réalisée, n'hésitez pas à nous en parler.
+{{% /callout %}}
 
 ### Revision 1 _18/07/2019_
 - Added SNCF's guidelines on [Accessibility page]({{< docsref "/getting-started/accessibility" >}})
@@ -61,8 +70,8 @@ Major overhaul with original Bootstrap's patches. Here is a non-exhaustive list 
 ### Revision 6 _06/06/2019_
 General
 
-- Added [Métier's signatures]({{< docsref "/layout/navbars#use-métier-signature-logos" >}}) for navbar
-- Added [icons-rotate]({{< docsref "/components/icons#rotation" >}}) for correct alignement of sort icon in table heading
+- Added [Métier's signatures]({{< docsref "/layout/navbars" "#use-metier-signature-logos" >}}) for navbar
+- Added [icons-rotate]({{< docsref "/components/icons" "#rotation" >}}) for correct alignement of sort icon in table heading
 - Updated [colors page]({{< docsref "/utilities/colors" >}}) with all variants
 - Corrected lots of cursors issues
 
@@ -84,7 +93,7 @@ Documentation
 Some of markup has to be changed, to ensure your project will correctly be displayed in dark mode style, please follow thoses simples indications (we've essentially changed `bg-light` or `text-white` for some components to ensure that color will change with each of CSS files, so you won't have to change your HTML markup when going between light or dark modes)
 
 - [input-group]({{< docsref "/components/input-group" >}}) : remove `text-right` in _Button and select addons_ section
-- [popover]({{< docsref "/components/popovers" >}}) : add `class="btn btn-link"` 
+- [popover]({{< docsref "/components/popovers" >}}) : add `class="btn btn-link"`
 
 **Design métier**
 
@@ -93,21 +102,22 @@ Some of markup has to be changed, to ensure your project will correctly be displ
 - [list-double-columns]({{< docsref "/components/list-group" >}}) : replace `bg-light` by `list-group-double-panel-title`
 - [list-group]({{< docsref "/components/list-group" >}}) : remove `bg-light`
 - [sami]({{< docsref "/components/sami" >}}) : ordering colors have changed
-- [table-group]({{< docsref "/content/tables#table-with-groups" >}}), [tables]({{< docsref "//components/alerts" >}}) : header first case should be `<th>` instead of `<td>` when checkbox inside
+- [table-group]({{< docsref "/content/tables#table-with-groups" >}}), [tables]({{< docsref "/components/alerts" >}}) : header first case should be `<th>` instead of `<td>` when checkbox inside
 
 **Design communication**
 
-- [carousel]({{< docsref "/components/carousel" >}}) : `bg-light` becomes `bg-carousel`
-- [contact]({{< docsref "/components/edito#contact" >}}) : `bg-light` becomes `edito-contact-bg`
-- [edito]({{< docsref "/components/edito" >}}) : `bg-light` becomes `edito-push-highlight-bg`\\
+- [carousel](/docs/{{% param docs_version %}}/components/carousel) : `bg-light` becomes `bg-carousel`
+- [contact](/docs/{{% param docs_version %}}/components/edito#contact) : `bg-light` becomes `edito-contact-bg`
+- [edito](/docs/{{% param docs_version %}}/components/edito) : `bg-light` becomes `edito-push-highlight-bg`\\
   remove `text-gray500` in header
-- [navigation extern example]({{< docsref "/examples/navigation" >}}) : remove `bg-white` in `mastcontent`\\
+- [navigation extern example](/docs/{{% param docs_version %}}/examples/navigation) : remove `bg-white` in `mastcontent`\\
   remove `text-white` in `<h3>`
-- [navs/actionbar]({{< docsref "/layout/navs#actionbar" >}}) : remove all `text-white` from `<h3>` 
-- [packshot]({{< docsref "/components/edito#packshot" >}}) : `bg-light` becomes `edito-packshot`\\
+- [navs/actionbar]({{< docsref "/layout/navs" "#actionbar" >}}) : remove all `text-white` from `<h3>`
+- [packshot](/docs/{{% param docs_version %}}/components/edito#packshot) : `bg-light` becomes `edito-packshot`\\
   remove `text-gray500` in header `<h3>`
-- [vignette]({{< docsref "/components/vignette" >}}) : `bg-white` becomes `vignette-bg`\\
+- [vignette](/docs/{{% param docs_version %}}/components/vignette) : `bg-white` becomes `vignette-bg`\\
   remove `text-gray500` in header `<h3>`
+
 {{% /callout %}}
 
 ### Revision 4 _09/05/2019_
