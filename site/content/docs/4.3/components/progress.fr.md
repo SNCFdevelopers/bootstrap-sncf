@@ -1,29 +1,31 @@
 ---
 layout: docs
-title: Progress
-description: Documentation and examples for steps indicator, and progress bars featuring support text labels.
+title: Barres de progression
+slug: barres-de-progression
+description: Documentation et exemples des indicateurs d'étapes, barres de progression avec la gestion des labels.
 group: components
 toc: true
-permalink: /docs/4.3/components/progress/
+permalink: /docs/4.3/components/barres-de-progression/
 ---
 
-## Overview
+## Présentation
 
-Progress bars display the progress of an operation, such as retrieving data.
-There are two types of progress bars:
-- Determinate indicators show the duration of an operation and may feature a percentage to show progress.
-- Indeterminate indicators display an unspecified wait time.
+Les barres de progression affichent le progrés d'une opération, comme par exemple la récupération de données.
+Il y a deux types de barres de progression :
 
-## Progress bars, how it works ?
+- Les indicateurs déterminés qui montrent la durée d'une opération et peuvent afficher le pourcentage qui montre cette progression.
+- Les indicateurs indéterminés qui montrent une durée d'attente non spécifiée.
 
-Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don't use [the HTML5 `<progress>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress), ensuring you can stack progress bars, animate them, and place text labels over them.
+## Fonctionnement des barres de progression
 
-- We use the `.progress` as a wrapper to indicate the max value of the progress bar.
-- We use the inner `.progress-bar` to indicate the progress so far.
-- The `.progress-bar` requires an inline style, utility class, or custom CSS to set their width.
-- The `.progress-bar` also requires some `role` and `aria` attributes to make it accessible.
+Ce composant est construit avec deux éléments HTML, un peu de CSS pour spécifier la largeur et quelques attributs. Nous n'utilisons pas [l'élément HTML5 `<progress>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress), de façon à garantir la possibilité d'empiler les barres de progression, les animer et placer du texte par dessus.
 
-Put that all together, and you have the following examples.
+- On utilise la classe `.progress` comme _wrapper_ pour indiquer la valeur maximale de la barre de progression.
+- On utilise la classe secondaire `.progress-bar` pour indiquer le progrès réalisé.
+- La classe `.progress-bar` nécessite un style _inline_, une classe utilitaire ou du CSS dédié pour définir sa largeur.
+- La classe `.progress-bar` nécessite également quelques attributs `role` et `aria` pour la rendre accessible.
+
+Mettez tout cela ensemble, et vous avez les exemples suivant :
 
 {{% example html %}}
 <div class="progress">
@@ -43,7 +45,8 @@ Put that all together, and you have the following examples.
 </div>
 {{% /example %}}
 
-Bootstrap provides a handful of [utilities for setting width]({{< docsref "/utilities/sizing" >}}). Depending on your needs, these may help with quickly configuring progress.
+Bootstrap propose un set d'[outils très pratiques pour régler la largeur]({{< docsref "/utilities/sizing" >}}).
+Ils peuvent vous aider à rapidement configurer les barres de progression suivant vos besoins.
 
 {{% example html %}}
 <div class="progress">
@@ -53,7 +56,7 @@ Bootstrap provides a handful of [utilities for setting width]({{< docsref "/util
 
 ## Labels
 
-Add labels to your progress bars by placing text within the `.progress-bar`, ans add `has-label` class on `progress`.
+Ajoutez des labels à votre barre de progression en plaçant le texte à l'intérieur de `.progress-bar`, et ajoutez la classe `has-label` à `progress`.
 
 {{% example html %}}
 <div class="progress has-label">
@@ -73,7 +76,7 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
 </div>
 {{% /example %}}
 
-## Small version
+## Version réduite
 
 {{% example html %}}
 <div class="progress progress-sm">
@@ -81,9 +84,9 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
 </div>
 {{% /example %}}
 
-## Radial progress
+## Barre de progression circulaire
 
-### Without label
+### Sans label
 {{% example html %}}
 <div class="progress-circle" data-component="radial-progress">
     <svg class="progress-circle-figure" data-role="figure" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
@@ -94,7 +97,7 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
 </div>
 {{% /example %}}
 
-### With label
+### Avec label
 {{% example html %}}
 <div class="progress-circle" data-component="radial-progress">
     <svg class="progress-circle-figure" data-role="figure" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
@@ -106,16 +109,17 @@ Add labels to your progress bars by placing text within the `.progress-bar`, ans
 </div>
 {{% /example %}}
 
-## Steps indicator
+## Indicateurs d'étapes
 
 {{% callout info %}}
-If you're looking for breadcrumbs (Fil d'ariane), there is a [dedicated component]({{< docsref "/components/breadcrumb" >}}).
+Si vous cherchez de quoi afficher un fil d'ariane (ou _breadcrumbs_), il existe un [composant dédié]({{< docsref "/components/breadcrumb" >}}).
 {{% /callout %}}
 
-Steps indicators show the progress of steps in a process. Steps achieved remain active, which means users can return to previous steps. The step in progress is highlighted, and steps not yet completed must be inactive.
+Les indicateurs d'étapes montrent la progression d'étapes au sein d'un processus. Les étapes réalisées restent actives, ce qui signifie que les utilisateurs peuvent revenir à une étape antérieure.
+L'étape en cours est mise en lumière et les étapes non réalisées doivent rester inactives.
 
 {{% callout warning %}}
-The logic of the component needs that **only steps before active step** are links or buttons.
+La logique de ce composant nécessite que **seules les étapes précédant l'étape en cours** soient des liens ou boutons.
 {{% /callout %}}
 
 {{% example html %}}
