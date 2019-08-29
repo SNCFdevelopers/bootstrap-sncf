@@ -141,7 +141,7 @@ En savoir plus sur [le modèle de boîte et de taille sur les CSS Tricks](https:
 
 ### Remise à plat (_Reboot_)
 
-Pour améliorer le rendu sur tous les navigateurs, nous utilisons [la « remise à plat » ou « Reboot »]({{<<docsref "/content/reboot">}}) pour corriger les incohérences entre les navigateurs et les périphériques tout en fournissant des réinitialisations légèrement plus radicales aux éléments HTML courants.
+Pour améliorer le rendu sur tous les navigateurs, nous utilisons [la « remise à plat » ou « Reboot »]({{< docsref "/content/reboot" >}}) pour corriger les incohérences entre les navigateurs et les périphériques tout en fournissant des réinitialisations légèrement plus radicales aux éléments HTML courants.
 
 ## Communauté
 
