@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Input group
-description: Examples and usage guidelines for checkboxes and radios styles.
+description: Examples and usage guidelines for input groups.
 group: components
 toc: true
 ---
