@@ -8,10 +8,10 @@ toc: true
 
 ## Description
 For each SNCF's sites, you have to display a tiny SNCF logo in browser's adress bar, that is called [favicon](https://fr.wikipedia.org/wiki/Favicon).
-This can be used too for making favorites on mobile devices, so you should choose wisely a title for you page (eg. the name of your site or webapp) that will be used as title of the favorite.
+This can be used too for making favorites on mobile devices, so you should choose wisely a title for your page (eg. the name of your site or webapp) that will be used as title of the favorite.
 
 ## How to use favicon
-It's easy ! Just add theses lines in top of your page, inside `<head>` tag, and be sure to adapt `href` links to your site architecture (here, we've put`assets`directory in root of the site).
+It's easy ! Just add theses lines in top of your page, inside `<head>` tag, and be sure to adapt `href` links to your site architecture (here, we've put `assets` directory in root of the site).
 
 {{% callout danger %}}
 Assets and all favicons variants are provided inside Bootstrap SNCF, as it should be.
