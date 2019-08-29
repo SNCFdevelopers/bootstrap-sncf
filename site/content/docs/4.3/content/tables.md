@@ -84,7 +84,7 @@ Using the most basic table markup, here's how `.table`-based tables look in SNCF
 </div>
 {{< /example >}}
 
-## Table with fixed last row
+## Table with fixed last cell
 
 Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `cell-placeholder` and `cell-fixed` elements.
 
@@ -373,30 +373,29 @@ A `<caption>` functions like a heading for a table. It helps users with screen r
   <caption>List of users</caption>
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col"><div class="cell-inner">#</div></th>
+      <th scope="col" id="cellfirst-t6"><div class="cell-inner">First</div></th>
+      <th scope="col" id="celllast-t6"><div class="cell-inner">Last</div></th>
+      <th scope="col"><div class="cell-inner">Handle</div></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row"><div class="cell-inner">1</div></th>
+      <td><div class="cell-inner">Mark</div></td>
+      <td><div class="cell-inner">Otto</div></td>
+      <td><div class="cell-inner">@mdo</div></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <th scope="row"><div class="cell-inner">2</div></th>
+      <td><div class="cell-inner">Jacob</div></td>
+      <td><div class="cell-inner">Thornton</div></td>
+      <td><div class="cell-inner">@fat</div></td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <th scope="row"><div class="cell-inner">3</div></th>
+      <td colspan="2" headers="cellfirst-t6 celllast-t6"><div class="cell-inner">Larry the Bird</div></td>
+      <td><div class="cell-inner">@twitter</div></td>
     </tr>
   </tbody>
 </table>
@@ -406,61 +405,62 @@ A `<caption>` functions like a heading for a table. It helps users with screen r
 
 Across every breakpoint, use `.table-wrapper` and `table-scroller` container elements for horizontally scrolling tables.
 
+
 {{< example html >}}
 <div class="table-wrapper" data-component="table">
   <div class="table-scroller dragscroll">
     <table class="table">
-      <caption class="sr-only">Titre</caption>
+      <caption class="sr-only">Title</caption>
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
+          <th scope="col"><div class="cell-inner">#</div></th>
+          <th scope="col"><div class="cell-inner">Title</div></th>
+          <th scope="col"><div class="cell-inner">Title</div></th>
+          <th scope="col"><div class="cell-inner">Title</div></th>
+          <th scope="col"><div class="cell-inner">Title</div></th>
+          <th scope="col"><div class="cell-inner">Title</div></th>
+          <th scope="col"><div class="cell-inner">Title</div></th>
+          <th scope="col"><div class="cell-inner">Title</div></th>
+          <th scope="col"><div class="cell-inner">Title</div></th>
+          <th scope="col"><div class="cell-inner">Title</div></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
+          <th scope="row"><div class="cell-inner">1</div></th>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
         </tr>
         <tr>
-          <th scope="row">2</th>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
+          <th scope="row"><div class="cell-inner">2</div></th>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
         </tr>
         <tr>
-          <th scope="row">3</th>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
+          <th scope="row"><div class="cell-inner">3</div></th>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
+          <td><div class="cell-inner">Cell content</div></td>
         </tr>
       </tbody>
     </table>

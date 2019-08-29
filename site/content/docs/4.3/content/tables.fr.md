@@ -1,16 +1,16 @@
 ---
 layout: docs
 title: Tables
-description: Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.
+description: Documentation et exemple pour la décoration _opt-in_ des tables (étant donné leur utilisation répandue dans les plugins JavaScript) avec Bootstrap.
 group: content
 toc: true
 ---
 
-## Examples
+## Exemples
 
-Due to the widespread use of tables across third-party widgets like calendars and date pickers, we've designed our tables to be **opt-in**. Just add the base class `.table` to any `<table>`, then extend with custom styles or our various included modifier classes.
+En raison de l'utilisation répandue des tables sur des widgets tiers tels que des calendriers et des sélecteurs de date, nous avons conçu nos tables de manière à être **opt-in**. Ajoutez simplement la classe de base `.table` à n'importe quelle `<table>`, puis étendez-la avec des styles personnalisés ou les différentes classes de modificateurs incluses dans Bootstrap.
 
-Using the most basic table markup, here's how `.table`-based tables look in SNCF Framework.
+En utilisant le code HTML de table le plus basic, voici comment les tables basées sur `.table` sont représentées dans le framework SNCF.
 
 {{< example html >}}
 <div class="table-wrapper">
@@ -84,9 +84,9 @@ Using the most basic table markup, here's how `.table`-based tables look in SNCF
 </div>
 {{< /example >}}
 
-## Table with fixed last row
+## Table avec la dernière cellule fixe
 
-Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `cell-placeholder` and `cell-fixed` elements.
+Ajoutez la classe `last-cell-fixed` à l'élément `table-scroller`. N'oubliez pas d'ajouter par conséquent les éléments `cell-placeholder` et `cell-fixed`.
 
 {{< example html >}}
 <div class="table-wrapper">
@@ -152,7 +152,7 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
 </div>
 {{< /example >}}
 
-## Table with groups
+## Table avec groupes
 
 {{< example html >}}
 <div class="table-wrapper" data-component="table">
@@ -252,9 +252,9 @@ Use `last-cell-fixed` class on `table-scroller` element. Don't forget to add `ce
 </div>
 {{< /example >}}
 
-## Striped rows
+## Lignes au fond alterné
 
-Use `.table-striped` to add zebra-striping to any table row within the `<tbody>`.
+Utilisez la classe `.table-striped` pour définir une alternance de la couleur de fond pour tous les éléments de `<tbody>`.
 
 {{< example html >}}
 <table class="table table-striped">
@@ -290,9 +290,9 @@ Use `.table-striped` to add zebra-striping to any table row within the `<tbody>`
 </table>
 {{< /example >}}
 
-## Bordered table
+## Table avec bordure
 
-Add `.table-bordered` for borders on all sides of the table and cells.
+Ajoutez `.table-bordered` pour avoir des bordures sur toute la table et ses cellules.
 
 {{< example html >}}
 <table class="table table-bordered">
@@ -327,9 +327,9 @@ Add `.table-bordered` for borders on all sides of the table and cells.
 </table>
 {{< /example >}}
 
-## Hoverable rows
+## Survol des lignes
 
-Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
+Ajotuez `.table-hover` pour activer un effet visuel au survol des lignes de `<tbody>`.
 
 {{< example html >}}
 <table class="table table-hover">
@@ -364,47 +364,46 @@ Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
 </table>
 {{< /example >}}
 
-## Captions
+## Légendes
 
-A `<caption>` functions like a heading for a table. It helps users with screen readers to find a table and understand what it's about and decide if they want to read it.
+La fonction `<caption>` agît comme une légende à une table. Elle aide les utilisateurs avec lecteurs d'écran à trouver la table et comprendre de quoi il s'agît avant de décider s'ils veulent la lire.
 
 {{< example html >}}
 <table class="table">
-  <caption>List of users</caption>
+  <caption>Liste des utilisateurs</caption>
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col"><div class="cell-inner">#</div></th>
+      <th scope="col" id="cellfirst-t6"><div class="cell-inner">First</div></th>
+      <th scope="col" id="celllast-t6"><div class="cell-inner">Last</div></th>
+      <th scope="col"><div class="cell-inner">Handle</div></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row"><div class="cell-inner">1</div></th>
+      <td><div class="cell-inner">Mark</div></td>
+      <td><div class="cell-inner">Otto</div></td>
+      <td><div class="cell-inner">@mdo</div></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <th scope="row"><div class="cell-inner">2</div></th>
+      <td><div class="cell-inner">Jacob</div></td>
+      <td><div class="cell-inner">Thornton</div></td>
+      <td><div class="cell-inner">@fat</div></td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <th scope="row"><div class="cell-inner">3</div></th>
+      <td colspan="2" headers="cellfirst-t6 celllast-t6"><div class="cell-inner">Larry the Bird</div></td>
+      <td><div class="cell-inner">@twitter</div></td>
     </tr>
   </tbody>
 </table>
 {{< /example >}}
 
-## Responsive tables
+## Tables adaptatives (_responsives_)
 
-Across every breakpoint, use `.table-wrapper` and `table-scroller` container elements for horizontally scrolling tables.
+Fonctionnant pour tous les [breakpoints]({{< docsref "/layout/overview" "#responsive-breakpoints" >}}), les classes `.table-wrapper` et `table-scroller` ajoutent des éléments de type _container_ pour avoir des tables scrollant horizontalement.
 
 {{< example html >}}
 <div class="table-wrapper" data-component="table">
@@ -413,54 +412,54 @@ Across every breakpoint, use `.table-wrapper` and `table-scroller` container ele
       <caption class="sr-only">Titre</caption>
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
-          <th scope="col">Heading</th>
+          <th scope="col"><div class="cell-inner">N°</div></th>
+          <th scope="col"><div class="cell-inner">Titre</div></th>
+          <th scope="col"><div class="cell-inner">Titre</div></th>
+          <th scope="col"><div class="cell-inner">Titre</div></th>
+          <th scope="col"><div class="cell-inner">Titre</div></th>
+          <th scope="col"><div class="cell-inner">Titre</div></th>
+          <th scope="col"><div class="cell-inner">Titre</div></th>
+          <th scope="col"><div class="cell-inner">Titre</div></th>
+          <th scope="col"><div class="cell-inner">Titre</div></th>
+          <th scope="col"><div class="cell-inner">Titre</div></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
+          <th scope="row"><div class="cell-inner">1</div></th>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
         </tr>
         <tr>
-          <th scope="row">2</th>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
+          <th scope="row"><div class="cell-inner">2</div></th>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
         </tr>
         <tr>
-          <th scope="row">3</th>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
-          <td>Cell</td>
+          <th scope="row"><div class="cell-inner">3</div></th>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
+          <td><div class="cell-inner">Contenu de cellule</div></td>
         </tr>
       </tbody>
     </table>
