@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Introduction
-description: Get started with Bootstrap, the world's most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page, adapted for SNCF.
+description: Débutez avec Bootstrap, le framework CSS le plus répandu au monde pour la création de sites réactifs axés sur le mobile, avec des exemples spécifiques à SNCF.
 group: getting-started
 aliases:
   - /docs/
@@ -11,124 +11,123 @@ aliases:
 toc: true
 ---
 
-## Quick start
+## Démarrage rapide
 
-Looking to quickly add Bootstrap to your project? Just download and unzip SNCF's Bootstrap [here]({{< param "download.source" >}}) in your working directory, and follow next steps.
+Vous souhaitez ajouter rapidement Bootstrap à votre projet ? Il suffit de télécharger et décompresser le Bootstrap SNCF [téléchargeable ici]({{< param "download.source" >}}) dans le répertoire de votre projet et de suivre les étapes suivantes.
 
 ### CSS
 
-Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
+Copiez-collez la feuille de style `<link>` dans la partie `<head>` avant tout autre feuille de style pour charger notre CSS.
 
-Alternate CSS is optional, use it if your project needs a [dark mode]({{< docsref "/layout/dark-mode" >}}).
+La feuille de style alternative est optionnelle, utilisez-la si votre projet a besoin d'un [mode sombre]({{< docsref "/layout/dark-mode" >}}).
 
 {{< highlight html >}}
 <link rel="stylesheet" href="/bootstrap-sncf.min.css">
 <link rel="stylesheet alternate" href="/bootstrap-sncf.darkmode.min.css">
 {{< /highlight >}}
 
-### JS
+### JavaScript
 
-Many of our components require the use of JavaScript to function. Specifically, they require:
+Plusieurs de nos composants nécessitent l'utilisation de JavaScript pour fonctionner. De plus, ils dépendent des librairies suivantes :
 
 - [jQuery](https://jquery.com)
 - [Popper.js](https://popper.js.org/)
 - [Flatpickrjs](https://flatpickr.js.org/)
 - [Chart.js](https://www.chartjs.org/)
-- and our own JavaScript plugins (included in all .js files)
+- et nos propres plugins JavaScript plugins (inclus dans in tous les fichiers .js)
 
 {{< callout info >}}
-For commodity reasons, **we have integrated** jQuery and popper inside `bootstrap-sncf.min.js`. \\
-However, we propose a "no-externals" (without extra libs) version named `bootstrap-sncf-noext.min.js` (you'll need to add extra libs before loading this version).
+Pour plus de commidités, **nous avons intégré** _jQuery_ et _popper_ dans `bootstrap-sncf.min.js`. \\
+Néanmoins, nous proposons également une version « sans librairies externes » nommée `bootstrap-sncf-noext.min.js` (vous aurez cependant besoin d'ajouter manuellement les librairies nécessaires à vos plugins).
 {{< /callout >}}
 
 {{< highlight html >}}
 <script src="/bootstrap-sncf.min.js"></script>
 {{< /highlight >}}
 
-Curious which components explicitly require jQuery, our JS, Popper.js or other libs? Here's a list of those components. \\
-Please remember that **all these libs are already included** in ours main releases, by default (except if you're using `-noext` lightened version).
+Curieux de connaître quels composants nécessitent explicitement ces librairies ? En voici la liste. \\
+N'oubliez pas que **toutes ces librairies sont déjà incluses** dans nos versions principales par défaut (sauf si vous utilisez les versions allégées `-noext`).
 
-- Alerts for dismissing
-- Buttons for toggling states and checkbox/radio functionality
-- Carousel for all slide behaviors, controls, and indicators
-- Charts (also requires [Chart.js](https://www.chartjs.org/))
-- Chips for input & delete elements
-- Collapse for toggling visibility of content
-- Dropdowns for displaying and positioning (also requires [Popper.js](https://popper.js.org/))
-- Modals for displaying, positioning, and scroll behavior
-- Navbar for extending our Collapse plugin to implement responsive behavior
-- Pickers (also requires [Flatpickrjs](https://flatpickr.js.org/))
-- Progress & range sliders
-- Scrollspy for scroll behavior and navigation updates
-- Searchbar (for erasing with button)
-- Select for all elements
+- Alertes pour l'effacement
+- Boutons pour les changements d'état et les fonctionnalités type cases à cocher
+- Caroussel pour les comportements de diaporama, les contrôles et indicateurs
+- Graphiques (nécessitent également [Chart.js](https://www.chartjs.org/))
+- _Chips_ pour la saisie et la suppression des éléments
+- _Collapse_ pour la bascule de visibilité du contenu
+- Menus déroulants pour l'affichage et le positionnement (nécessite également [Popper.js](https://popper.js.org/))
+- Modales pour l'affichage, le positionnement et le comportement au défilement
+- Barre de navigation pour étendre le plugin _Collapse_ et implémenter le comportement adaptatif
+- Sélecteurs de date & heure (nécessite également [Flatpickrjs](https://flatpickr.js.org/))
+- Barres de progression
+- _Scrollspy_ pour le comportement au défilement et mises à jour de la navigation
+- Barre de rechercher pour effacer avec le bouton
+- Selecteurs pour tous les éléments
 - Tables
-- Tooltips and popovers for displaying and positioning (also requires [Popper.js](https://popper.js.org/))
+- Infos-bulles et _popovers_ pour l'affichage et le positionnement (nécessite également [Popper.js](https://popper.js.org/))
 
-## Starter template
+## Kit de démarrage
 
 {{< callout warning >}}
-### IE11 Compatibility
-To ensure IE11 compatibility you have to put this string `<meta http-equiv="X-UA-Compatible" content="IE=edge">` immediatly after `<head>`.
-Moreover, SNCF's IE11 configuration uses IE7 compatibility mode by default, put this on IE11 mode.
+### Compatibilité IE11
+Pour assurer la compatibilité avec IE11, vous devez ajouter la ligne `<meta http-equiv="X-UA-Compatible" content="IE=edge">` immédiatement après `<head>`.
+De plus, la configuration IE11 chez SNCF utilise le mode de compatibilité IE7par défaut : réglez le sur le mode IE11.
 {{< /callout >}}
 
-Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
+Assurez-vous que vos pages sont configurées avec les normes de conception et de développement les plus récentes. Cela signifie qu’il est nécessaire d’utiliser un `doctype HTML5` et d’inclure une balise méta `viewport` pour obtenir les comportements réactifs appropriés. Si vous mettez le tout ensemble, vos pages devraient ressembler à ceci:
 
 {{< highlight html >}}
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- IE 11 compatibility -->
+    <!-- compatibilité IE 11 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Required meta tags -->
+    <!-- Meta tags requis -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
+    <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="dist/bootstrap-sncf.min.css">
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Coucou !</h1>
 
     <script src="dist/bootstrap-sncf.min.js"></script>
   </body>
 </html>
 {{< /highlight >}}
 
-That's all you need for overall page requirements. Visit the [Layout docs]({{< docsref "/layout/overview" >}}) or [our official examples]({{< docsref "/examples" >}}) to start laying out your site's content and components.
+C'est tout ce dont vous avez besoin en terme d'éléments requis ! Consultez la [documentation de mise en page]({{< docsref "/layout/overview" >}}) ou nos [exemples officiels]({{< docsref "/examples" >}}) pour commencer à mettre en page le contenu de votre site et ses composants.
 
-## Important globals
+## Éléments globaux importants
 
-Bootstrap employs a handful of important global styles and settings that you'll need to be aware of when using it, all of which are almost exclusively geared towards the *normalization* of cross browser styles. Let's dive in.
+Bootstrap utilise une poignée de styles et de paramètres globaux importants dont vous devrez tenir compte lors de son utilisation, qui sont tous presque exclusivement orientés vers la *normalisation* des styles de navigateurs. Allons-y !
 
-### HTML5 doctype
+### doctype HTML5
 
-Bootstrap requires the use of the HTML5 doctype. Without it, you'll see some funky incomplete styling, but including it shouldn't cause any considerable hiccups.
+Bootstrap nécessite l'utilisation du doctype HTML5. Sans cela, vous verrez un style incomplet et quelque peu funky. Son inclusion ne devrait pas causer de problème majeur.
 
 {{< highlight html >}}
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   ...
 </html>
 {{< /highlight >}}
 
-### Responsive meta tag
-
-Bootstrap is developed *mobile first*, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, **add the responsive viewport meta tag** to your `<head>`.
+### Meta tag adaptatif (_responsive_)
+Bootstrap est développé *mobile first*, une stratégie dans laquelle nous optimisons d’abord le code pour les appareils mobiles, puis mettons à l’échelle les composants à l’aide de requêtes multimédia CSS. Pour que le rendu et le zoom tactile soient corrects pour tous les périphériques, **ajoutez la balise méta responsive de la fenêtre d'affichage** à votre `<tête>`.
 
 {{< highlight html >}}
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {{< /highlight >}}
 
-You can see an example of this in action in the [starter template](#starter-template).
+Vous pouvez voir un exemple de cela en action dans le [kit de démarrage de base](#starter-template).
 
-### Box-sizing
+### Taille des boîtes (_Box-sizing_)
 
-For more straightforward sizing in CSS, we switch the global `box-sizing` value from `content-box` to `border-box`. This ensures `padding` does not affect the final computed width of an element, but it can cause problems with some third party software like Google Maps and Google Custom Search Engine.
+Pour un dimensionnement plus simple en CSS, nous passons la valeur globale de `box-sizing` de` content-box` à `border-box`. Cela garantit que le `padding` n'affecte pas la largeur finale calculée d'un élément, mais peut causer des problèmes avec certains logiciels tiers tels que _Google Maps_ et le moteur de recherche personnalisé _Google_.
 
-On the rare occasion you need to override it, use something like the following:
+Dans les rares cas où vous devez le remplacer, utilisez l'une des méthodes suivantes :
 
 {{< highlight css >}}
 .selector-for-some-widget {
@@ -136,30 +135,29 @@ On the rare occasion you need to override it, use something like the following:
 }
 {{< /highlight >}}
 
-With the above snippet, nested elements—including generated content via `::before` and `::after`—will all inherit the specified `box-sizing` for that `.selector-for-some-widget`.
+Avec l'extrait de code ci-dessus, les éléments imbriqués, y compris le contenu généré via `:: before` et `:: après` hériteront du `box-sizing` spécifié pour le `.selector-for-some-widget`.
 
-Learn more about [box model and sizing at CSS Tricks](https://css-tricks.com/box-sizing/).
+En savoir plus sur [le modèle de boîte et de taille sur les CSS Tricks](https://css-tricks.com/box-sizing/).
 
-### Reboot
+### Remise à plat (_Reboot_)
 
-For improved cross-browser rendering, we use [Reboot]({{< docsref "/content/reboot" >}}) to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+Pour améliorer le rendu sur tous les navigateurs, nous utilisons [la « remise à plat » ou « Reboot »]({{<<docsref "/content/reboot">}}) pour corriger les incohérences entre les navigateurs et les périphériques tout en fournissant des réinitialisations légèrement plus radicales aux éléments HTML courants.
 
-## Community
+## Communauté
 
-Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
+Restez à jour sur le développement de Bootstrap et contactez la communauté avec ces ressources utiles.
 
-Contact the humans at [Fab Design](mailto:design.fab@sncf.fr) for more informations & how to.
+Contactez les humains de la [Fab Design](mailto:design.fab@sncf.fr) pour plus d'informations et d'aide.
 
-- Share & learn with the others developers of SNCF on [GitHub]({{< param repo >}})
+- Partagez et apprenez avec les autres développeurs de SNCF sur [GitHub]({{< param repo >}})
 
-For original Bootstrap :
+Pour le Bootstrap original :
 
-- Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).
-- Read and subscribe to [The Official Bootstrap Blog]({{ site.blog }}).
-- Join [the official Slack room]({{ site.slack }}).
-- Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##bootstrap` channel.
-- Implementation help may be found at Stack Overflow (tagged [`bootstrap-4`](https://stackoverflow.com/questions/tagged/bootstrap-4)).
-- Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/browse/keyword/bootstrap) or similar delivery mechanisms for maximum discoverability.
+- Suivez [@getbootstrap sur Twitter](https://twitter.com/getbootstrap).
+- Lisez et inscrivez-vous au [blog officiel de Bootstrap]({{ site.blog }}).
+- Rejoignez [le canal officiel sur Slack]({{ site.slack }}).
+- Discutez avec la compagnie des Bootstrappers sur IRC. Sur le serveur `irc.freenode.net` dans le canal `##bootstrap`.
+- Une aide à l'implémentation peut être trouvée sur _Stack Overflow_ (cherchez les tags [`bootstrap-4`](https://stackoverflow.com/questions/tagged/bootstrap-4)).
+- Les développeurs devraient utiliser le mot-clef `bootstrap` sur les paquets qui modifient ou ajoutent des fonctionnalités à Bootstrap au moment de les redistribuer avec [npm](https://www.npmjs.com/browse/keyword/bootstrap) ou alors des techniques ou mécaniques similaires pour permettre une découvrabilité maximale.
 
-You can also follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap) for the latest gossip and awesome music videos.
-
+Vous pouvez enfin suivre également [@getbootstrap sur Twitter](https://twitter.com/getbootstrap) pour les dernières nouvelles ou des clips musicaux géniaux.

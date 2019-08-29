@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Introduction
-description: Get started with Bootstrap, the world's most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page, adapted for SNCF.
+description: Get started with Bootstrap, the world's most popular framework for building responsive, mobile-first sites, with a template starter page, adapted for SNCF.
 group: getting-started
 aliases:
   - /docs/
@@ -26,7 +26,7 @@ Alternate CSS is optional, use it if your project needs a [dark mode]({{< docsre
 <link rel="stylesheet alternate" href="/bootstrap-sncf.darkmode.min.css">
 {{< /highlight >}}
 
-### JS
+### JavaScript
 
 Many of our components require the use of JavaScript to function. Specifically, they require:
 
@@ -152,7 +152,7 @@ Contact the humans at [Fab Design](mailto:design.fab@sncf.fr) for more informati
 
 - Share & learn with the others developers of SNCF on [GitHub]({{< param repo >}})
 
-For original Bootstrap :
+For original Bootstrap:
 
 - Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).
 - Read and subscribe to [The Official Bootstrap Blog]({{ site.blog }}).
@@ -162,4 +162,3 @@ For original Bootstrap :
 - Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/browse/keyword/bootstrap) or similar delivery mechanisms for maximum discoverability.
 
 You can also follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap) for the latest gossip and awesome music videos.
-
