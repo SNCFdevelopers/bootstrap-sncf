@@ -1,28 +1,29 @@
 ---
 layout: docs
-title: Pickers
-description: Pickers let users select a value from a set of pre-determined values with the help of visual and interactive aids.
+title: Sélecteurs de date et Heure
+description: Permettent aux utilisateurs de choisir une valeur de date et heure prédéterminée à l'aide d'élements visuels et interactifs.
+slug: selecteurs-de-date-et-heure
 group: components
 toc: true
 permalink: /docs/4.3/components/picker/
 ---
 
-There are several types of pickers:
+Plusieurs types de sélecteurs existent :
 
-- date-pickers
-- time-pickers
-- date-time-pickers
-- range-pickers
+- sélecteur de date
+- sélecteur d'heure
+- sélecteur de date et d'heure
+- sélecteur d'intervalle
 
 {{% callout warning %}}
-### Accessibility
-This components, and the library which it's based on, needs to automatically add `readonly` on input tag to ensure correct working.
+### Accessibilité
+Ce composant, et la librairie sur laquelle il est basé, nécessitent d'ajouter le paramètre `readonly` sur la balise `input`.
 {{% /callout %}}
 
 {{% callout info %}}
-### How to use programmatic access ?
-Our pickers are based upon [Flatpickr library](https://flatpickr.js.org/) and you can use all the fonctions included and described in their documentation.
-Please note that **you don't** have to load `flatpickr.js` since it's already included in bootstrap's `bootstrap-sncf.min.js`.
+### Comment utiliser l'API de fonctionnement ?
+Nos sélecteurs sont basé sur la [librairie FlatpickrJS](https://flatpickr.js.org/) et vous pouvez utiliser toutes les fonctions incluses et décrites dans sa documentation.
+Veuillez noter qu'il n'est **pas nécessaire** de charger `flatpickr.js` si vous utilisez le fichier `bootstrap-sncf.min.js`, elle y est incluse.
 {{% /callout %}}
 
 ## Date
@@ -43,9 +44,9 @@ Please note that **you don't** have to load `flatpickr.js` since it's already in
 </div>
 {{% /example %}}
 
-## Default date
+## Date par défaut
 
-Date-pickers let users select a date (in dd/mm/yyyy format) using a calendar visual. Be sure to visually differentiate the current date (selected by default), the date the user selects, and dates that cannot be selected.
+Le sélecteur de date laisse l'utilisateur choisir une date (au format dd/mm/yyyy) en utilisant un calendrier visuel. Veuillez notez que la date du jour (sélectionnée par défaut), la date que l'utilisateur choisit, et celles qui ne sont pas disponibles sont visuellement différenciées.
 
 {{% example html %}}
 <label for="defaultdate" class="font-weight-medium mb-2">Date (jj/mm/aaaa)</label>
@@ -64,9 +65,9 @@ Date-pickers let users select a date (in dd/mm/yyyy format) using a calendar vis
 </div>
 {{% /example %}}
 
-## Range
+## Intervalle
 
-The range-picker lets users select a start date and end date to define a period using two separate fields.
+Le sélecteur d'intervalle permet aux utilisateurs de choisir une date de début et une date de fin pour définir une période en utilisant deux champs séparés.
 
 {{< example html >}}
 <div aria-hidden="true">
@@ -106,9 +107,10 @@ The range-picker lets users select a start date and end date to define a period 
 </div>
 {{< /example >}}
 
-## Time picker
+## Sélecteur d'heure
 
-Time-pickers let users select a time (in hh:mm format) using a clock visual. Be sure to visually differentiate the time selected and times that cannot be selected. You can also use a drop-down list instead of a time-picker to display and select a time.
+Le sélecteur d'heure permet aux utilisateurs de choisir un horaire (au format hh:mm) en utilisant une horloge visuelle. Veuillez noter que l'heure sélectionnée et les heures non sélectionnables sont visuellement différenciées.
+Vous pouvez également utiliser une list type _drop-down_ à la place d'un sélecteur si nécessaire.
 
 {{% example html %}}
 <label class="font-weight-medium mb-2" for="timepickerExemple">Time</label>
@@ -128,9 +130,9 @@ Time-pickers let users select a time (in hh:mm format) using a clock visual. Be 
 </div>
 {{% /example %}}
 
-## DateTime picker
+## Sélecteur de date et heure
 
-Only use a date-time-picker when you need to optimize space and reduce the number of fields. The date-time-picker lets readers select a date and time in the same component instead of using a separate date-picker and time-picker.
+N'utilisez seulement le sélecteur de date et heure lorsqu'il est nécessaire d'optimiser l'espace et réduire le nombre de champs. Ce sélecteur permet de choisir une date et une heure dans le même composant à la place d'utiliser des sélecteur de date et d'heure séparés.
 
 {{< example html >}}
 <label class="font-weight-medium mb-2">Heure</label>
@@ -169,7 +171,7 @@ Only use a date-time-picker when you need to optimize space and reduce the numbe
 </div>
 {{< /example >}}
 
-## Second range picker
+## Sélecteur de plage de dates
 
 {{< example html >}}
 <form autocomplete="false">
