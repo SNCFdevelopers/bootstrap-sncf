@@ -1,51 +1,52 @@
 ---
 layout: docs
-title: Spacing
-description: Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an element's appearance.
+title: Espacement
+slug: espacement
+description: Boostrap inclut une large gamme de raccourcis de marges intérieures et extérieurs, adaptatifs, pour modifier l'apparence d'un élément.
 group: utilities
 toc: true
 ---
 
-## How it works
+## Fonctionnement
 
-Assign responsive-friendly `margin` or `padding` values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties. Classes are built from a default Sass map ranging from `.25rem` to `3rem`.
+Assignez des valeurs adaptatives pour les valeurs `margin` et `padding`d'un élément ou un sous-ensemble de ses côtés avec des classes de sténographie. La prise en charge est incluse pour les propriétés individuelles, toutes les propriétés, les propriétés verticales, les propriétés horizontales. Les classes sont construites à partir d'une définition SASS par défaut allant de `.25rem` à` 3rem`.
 
-## Notation
+## Nomenclature
 
-Spacing utilities that apply to all breakpoints, from `xs` to `xl`, have no breakpoint abbreviation in them. This is because those classes are applied from `min-width: 0` and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.
+Les utilitaires d'espacement qui s'appliquent à tous les breakpoints, de `xs` à `xl`, ne possèdent pas d'abbréviation dans leur nom. Ceci car ces classes sont appliqués depuis `min-width: 0` et plus, bien qu'elles ne soient pas encadrées par une requête média (_media query_). Les breakpoints restants, eux, incluent une abbréviation.
 
-The classes are named using the format `{property}{sides}-{size}` for `xs` and `{property}{sides}-{breakpoint}-{size}` for `sm`, `md`, `lg`, and `xl`.
+Les classes sont nommées suivant le format `{property}{sides}-{size}` pour `xs` et `{property}{sides}-{breakpoint}-{size}` pour `sm`, `md`, `lg`, et `xl`.
 
-Where *property* is one of:
+Où *property* peut être :
 
-* `m` - for classes that set `margin`
-* `p` - for classes that set `padding`
+* `m` - pour les classes qui définissent `margin`
+* `p` - pour les classes qui définissent `padding`
 
-Where *sides* is one of:
+Où *sides* peut être :
 
-* `t` - for classes that set `margin-top` or `padding-top`
-* `b` - for classes that set `margin-bottom` or `padding-bottom`
-* `l` - for classes that set `margin-left` or `padding-left`
-* `r` - for classes that set `margin-right` or `padding-right`
-* `x` - for classes that set both `*-left` and `*-right`
-* `y` - for classes that set both `*-top` and `*-bottom`
-* blank - for classes that set a `margin` or `padding` on all 4 sides of the element
+* `t` - pour les classes qui définissent `margin-top` ou `padding-top`
+* `b` - pour les classes qui définissent `margin-bottom` ou `padding-bottom`
+* `l` - pour les classes qui définissent `margin-left` ou `padding-left`
+* `r` - pour les classes qui définissent `margin-right` ou `padding-right`
+* `x` - pour les classes qui définissent `*-left` et `*-right`
+* `y` - pour les classes qui définissent `*-top` et `*-bottom`
+* rien - pour les classes qui définissent `margin` ou `padding` on all 4 sides of the element
 
-Where *size* is one of:
+Où *size* peut être :
 
-* `0` - for classes that eliminate the `margin` or `padding` by setting it to `0`
-* `1` - (by default) for classes that set the `margin` or `padding` to `$spacer * .25`
-* `2` - (by default) for classes that set the `margin` or `padding` to `$spacer * .5`
-* `3` - (by default) for classes that set the `margin` or `padding` to `$spacer`
-* `4` - (by default) for classes that set the `margin` or `padding` to `$spacer * 1.5`
-* `5` - (by default) for classes that set the `margin` or `padding` to `$spacer * 3`
-* `auto` - for classes that set the `margin` to auto
+* `0` - pour les classes qui éliminent `margin` ou `padding` en le réglant à `0`
+* `1` - (par défaut) pour les classes qui définissent `margin` ou `padding` jusqu'à `$spacer * .25`
+* `2` - (par défaut) pour les classes qui définissent `margin` ou `padding` jusqu'à `$spacer * .5`
+* `3` - (par défaut) pour les classes qui définissent `margin` ou `padding` jusqu'à `$spacer`
+* `4` - (par défaut) pour les classes qui définissent `margin` ou `padding` jusqu'à `$spacer * 1.5`
+* `5` - (par défaut) pour les classes qui définissent `margin` ou `padding` jusqu'à `$spacer * 3`
+* `auto` - pour les classes qui définissent `margin` à auto
 
-(You can add more sizes by adding entries to the `$spacers` Sass map variable.)
+(Vous pouvez ajouter plus de tailles en ajoutant des entrées à la variable SASS `$spacers`)
 
-## Examples
+## Exemples
 
-Here are some representative examples of these classes:
+Quelques représentations de ces classes :
 
 {{< highlight scss >}}
 .mt-0 {
@@ -66,27 +67,27 @@ Here are some representative examples of these classes:
 }
 {{< /highlight >}}
 
-### Horizontal centering
+### Centrage horizontale
 
-Additionally, Bootstrap also includes an `.mx-auto` class for horizontally centering fixed-width block level content—that is, content that has `display: block` and a `width` set—by setting the horizontal margins to `auto`.
+De plus, Bootstrap propose une classe `.mx-auto` pour horizontalement centrer le content de niveau block à largeur fixe — qui est un contenu possédant la propriété `display: block` et une largeur `width` définie — en plaçant la marge horizontale sur `auto`.
 
 <div class="bd-example">
   <div class="mx-auto" style="width: 200px; background-color: rgba(86,61,124,.15);">
-    Centered element
+    Élément centré
   </div>
 </div>
 
 {{< highlight html >}}
 <div class="mx-auto" style="width: 200px;">
-  Centered element
+  Élément centré
 </div>
 {{< /highlight >}}
 
-### Negative margin
+### Marge négative
 
-In CSS, `margin` properties can utilize negative values (`padding` cannot). As of 4.2, we've added negative margin utilities for every non-zero integer size listed above (e.g., `1`, `2`, `3`, `4`, `5`). These utilities are ideal for customizing grid column gutters across breakpoints.
+En CSS, les propriétés de marge `margin` peuvent prendre des valeurs négatives (alors que `padding` ne peut pas). Depuis la version 4.2, nous avons ajouté des classes utilitaires de marge à valeur négative pour tout entier différent de zéro listé ci dessus (par exemple : `1`, `2`, `3`, `4`, `5`). Ces classes sont idéales pour adapter les gouttières de colonnes de la grille suivant les différents breakpoints.
 
-The syntax is nearly the same as the default, positive margin utilities, but with the addition of `n` before the requested size. Here's an example class that's the opposite of `.mt-1`:
+La syntaxe est presque la même que les classes utilitaires de marge positive, avec l'addition d'un `n` avant la taille requise. Voici un exemple de classe qui serait l'opposé de `.mt-1`:
 
 {{< highlight scss >}}
 .mt-n1 {
@@ -94,11 +95,11 @@ The syntax is nearly the same as the default, positive margin utilities, but wit
 }
 {{< /highlight >}}
 
-Here's an example of customizing the Bootstrap grid at the medium (`md`) breakpoint and above. We've increased the `.col` padding with `.px-md-5` and then counteracted that with `.mx-md-n5` on the parent `.row`.
+Voici un exemple d'une grille Bootstrap modifiée pour le breakpoint moyen (`md`) et plus haut. Nous avons augmenté le padding de `.col` avec `.px-md-5` et ensuite compensé cela vec `.mx-md-n5` sur la ligne `.row` parente.
 
 {{< example >}}
 <div class="row mx-md-n5">
-  <div class="col py-3 px-md-5 border bg-light">Custom column padding</div>
-  <div class="col py-3 px-md-5 border bg-light">Custom column padding</div>
+  <div class="col py-3 px-md-5 border bg-light">Padding de colonne modifié</div>
+  <div class="col py-3 px-md-5 border bg-light">Padding de colonne modifié</div>
 </div>
 {{< /example >}}
