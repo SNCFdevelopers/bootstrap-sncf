@@ -1,33 +1,36 @@
 ---
 layout: docs
-title: Float
-description: Toggle floats on any element, across any breakpoint, using our responsive float utilities.
+title: Flottants (float)
+slug: flottants
+description: Active l'attribut `float` sur un élément, via les breakpoints en utilisant des classes utilitaires dédiées.
 group: utilities
 toc: true
 ---
 
-## Overview
+## Vue d'ensemble
 
-These utility classes float an element to the left or right, or disable floating, based on the current viewport size using the [CSS `float` property](https://developer.mozilla.org/en-US/docs/Web/CSS/float). `!important` is included to avoid specificity issues. These use the same viewport breakpoints as our grid system. Please be aware float utilities have no affect on flex items.
-
-{{< example >}}
-<div class="float-left">Float left on all viewport sizes</div><br>
-<div class="float-right">Float right on all viewport sizes</div><br>
-<div class="float-none">Don't float on all viewport sizes</div>
-{{< /example >}}
-
-## Responsive
-
-Responsive variations also exist for each `float` value.
+Ces classe utilitaires font _flotter_ un élément à gauche ou à droite, ou désactivent complètement le flottement, le tout basé sur la taille courante d'écran en utilisant [la propriété CSS `float`](https://developer.mozilla.org/en-US/docs/Web/CSS/float). `!important` est ajouté pour éviter des problèmes spécifiques.\\
+Ces classes utilisent les même breakpoint que le système de grille.\\
+Enfin, pour rappel, ces classes n'ont aucun effet sur les [éléments flexibles]({{< docsref "/utilities/flex" >}}).
 
 {{< example >}}
-<div class="float-sm-left">Float left on viewports sized SM (small) or wider</div><br>
-<div class="float-md-left">Float left on viewports sized MD (medium) or wider</div><br>
-<div class="float-lg-left">Float left on viewports sized LG (large) or wider</div><br>
-<div class="float-xl-left">Float left on viewports sized XL (extra-large) or wider</div><br>
+<div class="float-left">Flottant à gauche sur toutes les tailles d'écran</div><br>
+<div class="float-right">Flottant à droite sur toutes les tailles d'écran</div><br>
+<div class="float-none">Flottant désactivé sur toutes les tailles d'écran</div>
 {{< /example >}}
 
-Here are all the support classes:
+## Adaptatif (_responsive_)
+
+Des variantes adaptatives existent également pour chaque valeur de `float`.
+
+{{< example >}}
+<div class="float-sm-left">Flottant à gauche sur les tailles d'écran SM (petit) ou plus large</div><br>
+<div class="float-md-left">Flottant à gauche sur les tailles d'écran MD (moyen) ou plus large</div><br>
+<div class="float-lg-left">Flottant à gauche sur les tailles d'écran LG (large) ou plus large</div><br>
+<div class="float-xl-left">Flottant à gauche sur les tailles d'écran XL (extra-large) ou plus large</div><br>
+{{< /example >}}
+
+Voici la liste de toutes les classes supportées :
 
 {{< markdown >}}
 {{< float.inline >}}
