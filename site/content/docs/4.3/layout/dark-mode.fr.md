@@ -1,130 +1,129 @@
 ---
 layout: docs
-title: Dark mode
-description: Darker theme of all components & examples.
+title: Mode sombre
+slug: mode-sombre
+description: Thème sombre pour tous les composants et exemples.
 group: layout
 toc: true
 ---
-## Why a dark mode ?
-The dark mode was created from a double wish.
+## Pourquoi un mode sombre ?
 
-1. **An answer of a job use case**\\
-Some of our agents works in low light environments, whether indoors or outdoors.
-Dark mode makes readability more easier in this environment. 
+Le mode sombre a été créé pour deux raisons principales :
 
-2. **Make our Design an Ethical Design**\\
-If the ethics notion is certainly much bigger than simply limiting the energy consumption of internal screens to the company, it’s already a first step.
-We want to commit ourselves, as other entities do, to the energy savings achieved by the company, by fully adhering to our motto : "bringing freedom to everyone to circulate easily while preserving the planet".\\
-Beyond that, this dark mode is an opportunity that the greatest interface designers and companies had taken to respond to this new demand from the user.
-This use would allow the user to consume 6 times less battery than a white screen (even if the white is better for readability). An experiment was realized on Youtube, proving that a dark active mode (100% brightness) allowed to consume 60% less energy. Less energy spent, less recharge, a battery with a longer life, a virtuous circle.
+1. **Répondre à un cas d'usage métier**\\
+Plusieurs de nos agents travaillent dans des environnements à faible luminosité, à l'intérieur comme à l'extérieur. Le mode sombre rend la lisibilité plus importante dans ce type d'environnements.
 
+2. **Faire de notre Design un Design Éthique**\\
+Si la notion d’éthique est assurément bien plus vaste que la simple limitation de la consommation énergétique des écrans internes à l’entreprise, c’est déjà un premier pas. Nous souhaitons nous engager, comme d’autres entités le font, dans les économies d’énergie réalisées par l’entreprise, en s’inscrivant pleinement dans notre devise « Apporter la liberté à chacun de circuler facilement en préservant la planète ».\\
+Ce mode sombre est au-delà de cela une opportunité que saisissent les plus grands concepteurs d’interfaces et entreprises afin de répondre à cette nouvelle demande de l’utilisateur, bien au-delà de SNCF. Cette utilisation permettrait notamment à l’utilisateur de consommer 6 fois moins de batterie qu’un écran blanc. Une expérience a été réalisée sur Youtube, prouvant qu’un mode sombre actif (luminosité à 100%) permettait de consommer 60% de moins d’énergie. Moins d’énergie dépensée, moins de recharge, une batterie avec une durée de vie plus longue, un cercle vertueux.\\
 
-## An accessible approach
-If the realization of dark mode is obvious, answering a job use case, it fits even more in a Ethical Design logic, because fully accessible.
-The colors have been redesigned in this sense : some are unchanged, others have been adapted (thinned or darkened) and finally others have simply been removed because they are not accessible and can’t be adapted.
+## Une démarche accessible
 
-Beware, dark mode should not be confused with the contrasts reversion, which responds perfectly to an accessibility logic and need. We are talking about a "Dark Design", a suitable design as mentioned above.
+Si la réalisation du mode sombre est une évidence, répondant donc à un cas d’usage métier, il s’inscrit encore plus dans une logique de Design Éthique car pleinement accessible.\\
+Les couleurs ont été repensées en ce sens : certaines sont inchangées, d’autres ont été adaptées (éclaircies ou assombries) et enfin d’autres ont été tout simplement supprimées car non accessibles et qui ne peuvent être adaptées.
+
+Attention, le mode sombre n’est pas à confondre avec une inversion de contrastes, qui lui répond totalement à une logique d’accessibilité. Ici, nous parlons bien d’un « Design Sombre », c’est-à-dire un design adapté comme évoqué précédemment.
 
 
-## How does this translate ?
-In a global view, the adaptations in a Design term which have been realized are the following ones.
+## Comment cela se traduit ?
 
-### Background
-The white background `fff` of the page becomes a black background `000`.\\
-The colored backgrounds (flat colors) are unchanged.\\
-The _cool gray_ gray background 1 `f2f2f2` on a white background becomes a carbon background `333`.\\
-The carbon background `333` on a white background becomes a _cool gray_ gray background 1 `f2f2f2`.
+Dans les grandes lignes, les adaptations en terme de Design qui ont été réalisées sont les suivantes.
 
-### Nav
-The main navigation `fff` passes on a carbon background `000`.\\
-The color of the galactic bar and footer on carbon background `333` is unchanged.
+### Fonds
+Le fond blanc `FFF` de la page devient un fond noir `000`.
+Les fonds colorés (aplats de couleurs) sont inchangés.
+Le fond gris cool gray 1 `F2F2F2` sur fond blanc devient un fond carbone `333`.
+Le fond carbone `333` sur fond blanc devient un fond gris cool gray 1 `F2F2F2`.
 
-### Texts & Links
-The texts in the different shades of gray, from carbon `333` to cool gray 1 `f2f2f2` on a white background change to cool gray 3 `D7D7D7`.\\
-On the other hand, the white texts on the backgrounds of the different hues of gray go black `000`.
+### Navigations
+La couleur de la barre galactique et du footer sur fond carbone `333` est inchangée.
+La navigation principale `FFF` passe sur un fond carbone `000`.
 
-The primary blue text `0088ce` on a white background becomes `00a1ff` on dark backgrounds.\\
-The orange text `e05206` on a white background becomes `ff6e20` on dark backgrounds.\\
-The text blue duck `009aa6` on a white background becomes `00abb9` on dark backgrounds.
+### Textes & Liens
+Les textes dans les différentes teintes de gris, du carbone `333` au cool gray 1 `F2F2F2` sur fond blanc passent en cool gray 3 `D7D7D7`.
+A l’inverse, les textes blancs sur les fonds des différentes teintes de gris passent en noir `000`.
 
-The yellow saffron text `ffb612` on a white background is unchanged on dark backgrounds.\\
-The green anise text `d2e100` on a white background is unchanged on dark backgrounds.\\
-The apple green text `82be00` on a white background is unchanged on dark backgrounds.
+Le texte bleu primaire `0088CE` sur fond blanc devient `00A1FF` sur fonds foncés.
+Le texte orange `E05206` sur fond blanc devient `FF6E20` sur fonds foncés.
+Le texte bleu canard `009AA6` sur fond blanc devient `00ABB9` sur fonds foncés.
 
-The purple text `6E1E78` on a white background would not be accessible on a black background 8% `191919`. This text changes to primary blue `00a1ff`.\\
-The text plum `a1006b` on a white background would not be accessible on black background 8% `191919`. This text changes to primary blue `00a1ff`.\\
-The raspberry text `cd0037` on a white background would not be accessible on a black background 8% `191919`. This text changes to primary blue `00a1ff`.
+Le texte jaune safran `FFB612` sur fond blanc est inchangé sur fonds foncés.
+Le texte vert anis `D2E100` sur fond blanc est inchangé sur fonds foncés.
+Le texte vert pomme `82BE00` sur fond blanc est inchangé sur fonds foncés.
 
-When a block uses a red help text, the whole block will remain unchanged (background and color of the text).
+Le texte violet `6E1E78` sur fond blanc ne serait pas accessible sur fond noir 8% `191919`. Ce texte passe en bleu primaire `00A1FF`.
+Le texte prune `A1006B` sur fond blanc ne serait pas accessible sur fond noir 8% `191919`. Ce texte passe en bleu primaire `00A1FF`.
+Le texte framboise `CD0037` sur fond blanc ne serait pas accessible sur fond noir 8% `191919`. Ce texte passe en bleu primaire `00A1FF`.
 
-### Buttons & Tags
-The colors of the buttons are based on the main color used and will be the same as those defined for the texts.\\
-The carbon button changes to cool gray 1 `f2f2f2`.\\
-The text of the button will always be black `000`.
+Lorsqu’un bloc utilisera un texte rouge assistance, l’ensemble du bloc sera inchangé (fond et couleur du texte).
 
-### Fields
-The white fields `fff` on a _cool gray_ gray background 1 `f2f2f2` change to black `000` on a carbon background `333`.\\
-The cool gray gray 1 `f2f2f2` white background `#fff` fields change to carbon `333` on a black background `000`.
+### Boutons & Tags
+Les couleurs des boutons sont fonction de la couleur principale utilisée et seront les mêmes que celles définies pour les textes.
+Le bouton carbone se transforme en cool gray 1 `F2F2F2`.
+Le texte du bouton sera quant à lui toujours en noir `000`.
 
-_NB: other adaptations have been made at the margin for particular cases, these are integrated in this version_
+### Champs
+Les champs blancs `FFF` sur fond gris cool gray 1 `F2F2F2` passent en noir `000` sur fond carbone `333`.
+Les champs gris cool gray 1 `F2F2F2` sur fond blanc `FFF` passent en carbone `333` sur fond noir `000`.
 
+_NB : d’autres adaptations ont été réalisées à la marge pour des cas particuliers, celles-ci sont intégrées dans cette version_
 
-## An "Alpha" version
-An "Alpha" version is a primary version, launched in a logic of experimentation.
-It doesn’t have the vocation to be as integrated as possible. That is why we need you : test it on your use cases, that we invite you to let us know on Github or by email at [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Dark mode) with "Bootstrap - Dark mode" subject.
+## Une version « Alpha »
 
-This version is available on our Bootstrap : Communication & Métier.
-We invite you to consult all the technical documentation below to implement the dark mode, and enable its activation on your interface.
+Une version « Alpha » est une version primaire, que nous lançons dans une logique d’expérimentation.
+Elle n’a pas la vocation d’être la plus intégrée possible. C’est pour cela que nous avons besoin de vous, de vos cas d’usage, que nous vous invitons à nous faire remonter soit via GitHub, soit via notre adresse email [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Dark mode) avec pour objet « Bootstrap - Mode sombre ».
 
-We have already begun to think about improving this feature : should we leave it as it is, leaving the user to activate it or not ? Should we facilitate its visibility during specific time slots and offer it on the interface (like cookies banner) or even activate it by default ?
-Don’t hesitate to give us your opinion on the subject by mail on [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Dark mode) or on the dedicated [Yammer page](https://www.yammer.com/sncf.fr/#/threads/inGroup?type=in_group&feedId=11125103).
+Cette version est disponible sur nos deux versions de Bootstrap (Communication & Métier).
+Nous vous invitons à consulter l’ensemble de la documentation technique ci-dessous pour implémenter le mode sombre, et permettre son activation sur votre interface.
 
-Feel free to give us your feedback on this feature by giving us your feedback on Usabilla (the right tab to the right of the interface).
+Nous avons d’ores et déjà entamé des réflexions concernant l’amélioration de cette fonctionnalité : doit-on le laisser tel quel en laissant le soin à l’utilisateur de l’activer ou non ? Doit-on lui faciliter sa visibilité durant des créneaux horaire spécifiques et le proposer sur l’interface (à l’instar des cookies) voire même l’activer par défaut ? N’hésitez pas à nous donner votre avis sur le sujet [par mail](mailto:design.fab@sncf.fr?subject=Bootstrap - Dark mode) ou sur le [Yammer dédié](https://www.yammer.com/sncf.fr/#/threads/inGroup?type=in_group&feedId=11125103).
 
+N’hésitez pas à nous donner votre feedback sur cette fonctionnalité en nous donnant votre retour sur Usabilla (la languette de droite située à droite de l’interface).
 
-## Technical implementation
-Bootstrap SNCF distribution includes two CSS files (normal & minified):
+## Implémentation technique
+La distribution Bootstrap SNCF distribution inclut deux fichiers CSS (normal & minifié):
 
 - `bootstrap-sncf.(min.)css`
 - `bootstrap-sncf.darkmode.(min.)css`
 
-> They are automatically generated at compilation time.
+> Ils sont automatiquement généré au moment de la compilation SASS.
 
-You can use one of thoses for your project, but **not together**: each file includes all SNCF's Bootstrap, one with the light, standard theme, one with the dark side of the same design.
+Vous pouvez utiliser l'un ou l'autre pour votre projet mais **pas en même temps** : chaque fichier intègre l'ensemble du Bootstrap SNCF, l'un en mode normal, clair, l'autre avec le côté obscur du même design.
 
-You can _switch_ between the two versions with native method (Firefox only) or a bit of javascript, see below.
+Il est possible de _permuter_ d'une version à l'autre avec la méthode native du navigateur Firefo, ou avec un peu de JavaScript, voir plus bas.
 
 ### CSS, HTML
 
 {{< includenav.inline >}}
 {{- if eq .Site.Params.doc_flavour "extern" -}}
-  For <em>Design Communication</em>, the darkmode switch should be inside <em>accessibility component</em> with others switches. This navbar example contains a working link, try it now !
+  Pour le <em>Design Communication</em>, le bouton mode-sombre devrait être incorporé à l'intérieur des réglages d'accessibilité, avec les autres interrupteurs. Cet exemple de barre de navigation contient un interrupteur fonctionnel, essayez-le tout de suite !
 {{- else -}}
-  For <em>Design Métier</em> The switch should be inside dropdown menu in top right corner from the navbar, in the personal menu. This navbar example contains a working link, try it now !
+  Pour le <em>Design Métier</em> l'interrupteur devrait être inclus dans le menu déroulant des paramètres personnels, en haut à droite de la barre de navigation. Cet exemple de barre de navigation contient un interrupteur fonctionnel, essayez-le tout de suite !
 {{- end -}}
 {{- $navHTML := (printf "%s%s%s" "darkmode-" .Site.Params.doc_flavour "-navbar-example.html") -}}
 {{ partial $navHTML }}
 {{< /includenav.inline >}}
 
-### Native browser implementation
-The simplest method is to use [W3C recommandations](https://www.w3.org/Style/Examples/007/alternatives.en.html).
-Add the following lines in your project :
+### Implémentation native dans le navigateur
+
+La méthode la plus simples est d'utiliser les [recommandations du W3C](https://www.w3.org/Style/Examples/007/alternatives.en.html).
+Ajoutez les lignes suivantes à votre projet :
 ```html
 <link title="Light mode" href="bootstrap-sncf.min.css" rel="stylesheet">
 <link title="Dark mode" href="bootstrap-sncf.darkmode.min.css" rel="stylesheet alternate">
 ```
-On Opera, Internet Explorer and Firefox you can find the styles under the “View” menu, while Chrome requires an extension.
+Sur Opera, Internet Explorer et Firefox vous allez pouvoir trouver la liste des styles disponibles dans une page dans le menu « Affichage » (Chrome nécessite une extension spécifique pour prendre en compte cette norme).
 
-Yes, as simple as it sounds !
+Et oui, c'est aussi simple que ça !
 
 ### JS
 {{% callout info %}}
-The following approach is not a reference but a proposal for implementing dark mode switching in your project.
-Especially if you design with _single page_ model, you could not need to save value of dark mode switch.
+L'approche suivante n'est pas une référence mais une proposition d'implémentation de l'interrupteur mode sombre dans votre projet.
+Si votre design est en mode « page unique » sans rechargement, il ne vous sera notamment pas nécessaire de sauvegarder l'état de l'interrupteur.
 {{% /callout %}}
 
-First, we have to init and choose which CSS file we've to load and test if dark mode has been chosen by the past.
-If note, the default value will be classic version. Please note that the following code needs to be placed inside `<head>` tags to not suffer from [FOUC](https://en.wikipedia.org/wiki/Flash_of_unstyled_content).
+D'abord, il faut initialiser et choisir quel fichier CSS nous voulons charger et tester si le mode sombre doit être activé par défaut.
+Sinon, la valeur par défaut sera la version claire. Veuillez notez que le code JavaScript suivant doit être placé à l'intérieur de la balise `<head>` de façon à éviter un [FOUC](https://fr.wikipedia.org/wiki/FOUC).
 
 ```js
 initDarkmode()
@@ -141,10 +140,9 @@ function initDarkmode() {
   }
 }
 ```
+Après cela, ajoutez un bouton, lien, pour basculer entre les modes normal ou sombre, avec par exemple un id `darkmode-btn` et le script suivant pourra changer la valeur de l'attribut `href` entre `stylesheet` et `stylesheet alternate`. Idéalement, essayez d'utiliser le design d'implémentation que nous avons choisie pour chaque variante du socle design SNCF (Communication or Métier).
 
-After that, insert a button, link, to toggle light or dark mode for example with `darkmode-btn` id, and the following JS code will change href between `stylesheet` and `stylesheet alternate` links. Ideally, please use design implementation we've chosed for each of SNCF's variant (Communication or Métier).
-
-To keep user's choice, you can record it in a _local storage_ object and request it's value at the next page loading.
+Pour conserver le choix de l'utilisateur, vous pouvez enregistrer cette valeur par exemple dans un objet _local storage_ et récupérer sa valeur à sa prochaine visite pour lui proposer le bon mode.
 
 ```js
 document.getElementById('darkmode-btn').addEventListener('click', () => {

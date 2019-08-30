@@ -10,7 +10,7 @@ The dark mode was created from a double wish.
 
 1. **An answer of a job use case**\\
 Some of our agents works in low light environments, whether indoors or outdoors.
-Dark mode makes readability more easier in this environment. 
+Dark mode makes readability more easier in this environment.
 
 2. **Make our Design an Ethical Design**\\
 If the ethics notion is certainly much bigger than simply limiting the energy consumption of internal screens to the company, it’s already a first step.
@@ -124,7 +124,7 @@ Especially if you design with _single page_ model, you could not need to save va
 {{% /callout %}}
 
 First, we have to init and choose which CSS file we've to load and test if dark mode has been chosen by the past.
-If note, the default value will be classic version. Please note that the following code needs to be placed inside `<head>` tags to not suffer from [FOUC](https://en.wikipedia.org/wiki/Flash_of_unstyled_content).
+Else, the default value will be classic version. Please note that the following code needs to be placed inside `<head>` tags to not suffer from [FOUC](https://en.wikipedia.org/wiki/Flash_of_unstyled_content).
 
 ```js
 initDarkmode()
@@ -142,7 +142,7 @@ function initDarkmode() {
 }
 ```
 
-After that, insert a button, link, to toggle light or dark mode for example with `darkmode-btn` id, and the following JS code will change href between `stylesheet` and `stylesheet alternate` links. Ideally, please use design implementation we've chosed for each of SNCF's variant (Communication or Métier).
+After that, insert a button, link, to toggle light or dark mode for example with `darkmode-btn` id, and the following JS code will change href's attribute value between `stylesheet` and `stylesheet alternate` links. Ideally, please use design implementation we've chosed for each of SNCF's variant (Communication or Métier).
 
 To keep user's choice, you can record it in a _local storage_ object and request it's value at the next page loading.
 
