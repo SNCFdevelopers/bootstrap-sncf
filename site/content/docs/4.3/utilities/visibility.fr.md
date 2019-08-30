@@ -1,13 +1,14 @@
 ---
 layout: docs
-title: Visibility
-description: Control the visibility, without modifying the display, of elements with visibility utilities.
+title: Visibilité
+slug: visibilite
+description: Contrôlez la visibilité, sans modifier l'affichage `display`, avec les classes utilitaires dédiées à celle-ci.
 group: utilities
 ---
 
-Set the `visibility` of elements with our visibility utilities. These utility classes do not modify the `display` value at all and do not affect layout – `.invisible` elements still take up space in the page. Content will be hidden both visually and for assistive technology/screen reader users.
+Définissez la visibilité `visibility` des éléments avec ces classes utilitaires. Elles ne modifient absolument pas la valeur de `display` et ne perturbent pas la mise en page ou la disposition — les éléments `.invisible` prennent donc toujours leur « place » dans la page. Le contenu sera masqué à la fois visuellement et pour les technologies d'assistances comme les lecteurs d'écran.
 
-Apply `.visible` or `.invisible` as needed.
+Appliquez la classe `.visible` ou `.invisible` selon votre besoin.
 
 {{< highlight html >}}
 <div class="visible">...</div>
