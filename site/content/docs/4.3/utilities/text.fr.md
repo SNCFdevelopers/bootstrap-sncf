@@ -1,105 +1,107 @@
 ---
 layout: docs
-title: Text
-description: Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.
+title: Texte
+slug: texte
+description: Documentation et exemples pour les classes utilitaires courantes pour les textes, afin de contrôler l'alignement, la graisse, le wrapping, etc.
 group: utilities
 toc: true
 ---
 
-## Text alignment
+## Alignement du texte
 
-Easily realign text to components with text alignment classes.
+Réalignez facilement du texte aux composants avec les classes d'alignement.
 
 {{< example >}}
 <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
 {{< /example >}}
 
-For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.
+Pour l'alignement à gauche, à droite, et centré, des classes adpatatives sont disponibles et utilisent les mêmes largeurs d'écran que les breakpoints du système de grille.
 
 {{< example >}}
-<p class="text-left">Left aligned text on all viewport sizes.</p>
-<p class="text-center">Center aligned text on all viewport sizes.</p>
-<p class="text-right">Right aligned text on all viewport sizes.</p>
+<p class="text-left">Texte aligné à gauche sur toutes les tailles d'écran.</p>
+<p class="text-center">Texte centré sur toutes les tailles d'écran.</p>
+<p class="text-right">Texte aligné à droite sur toutes les tailles d'écran.</p>
 
-<p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
-<p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
-<p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
-<p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+<p class="text-sm-left">Texte aligné à gauche pour la taille SM (petit) ou plus large.</p>
+<p class="text-md-left">Texte aligné à gauche pour la taille MD (moyen) ou plus large.</p>
+<p class="text-lg-left">Texte aligné à gauche pour la taille LG (large) ou plus large.</p>
+<p class="text-xl-left">Texte aligné à gauche pour la taille XL (extra-large) ou plus large.</p>
 {{< /example >}}
 
-## Text wrapping and overflow
+## Retour à la ligne (_Wrapping_) et débordement (_overflow_)
 
-Wrap text with a `.text-wrap` class.
+Gérez le retour à la ligne de textes plus longs que la largeur de l'élément parent avec `.text-wrap`.
 
 {{< example >}}
 <div class="badge badge-primary text-wrap" style="width: 6rem;">
-  This text should wrap.
+  Ce texte va à la ligne.
 </div>
 {{< /example >}}
 
-Prevent text from wrapping with a `.text-nowrap` class.
+Empêchez un texte d'aller à la ligne avec la classe `.text-nowrap`.
 
 {{< example >}}
 <div class="text-nowrap bd-highlight" style="width: 8rem;">
-  This text should overflow the parent.
+  Ce texte va déborder du parent.
 </div>
 {{< /example >}}
 
-## Word break
+## Césure des mots
 
-Prevent long strings of text from breaking your components' layout by using `.text-break` to set `overflow-wrap: break-word` (and `word-break: break-word` for IE & Edge compatibility).
+Empêchez de longues chaînes de texte de perturber la présentation de vos composants en utilisant la classe `.text-break` qui définit `overflow-wrap: break-word` (et `word-break: break-word` pour la compatibilité IE et Edge).
 
 {{< example >}}
 <p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
 {{< /example >}}
 
-## Text transform
+## Transformation de texte
 
-Transform text in components with text capitalization classes.
+Transformer le texte de vos composants avec les classes qui définissent la casse.
 
 {{< example >}}
-<p class="text-lowercase">Lowercased text.</p>
-<p class="text-uppercase">Uppercased text.</p>
-<p class="text-capitalize">CapiTaliZed text.</p>
+<p class="text-lowercase">Texte en minuscules.</p>
+<p class="text-uppercase">Texte en majuscules.</p>
+<p class="text-capitalize">TeXte capiTaliZé.</p>
 {{< /example >}}
 
-Note how `.text-capitalize` only changes the first letter of each word, leaving the case of any other letters unaffected.
+Notez comme `.text-capitalize` modifie seulement la première lettre de chaque mot, laissant la casse des autres lettres non affectée.
 
-## Font weight and italics
+## Graisse et italiques
 
+Modifiez facilement la graisse (_weight_) du texte, ou passez-le en italiques.
 Quickly change the weight (boldness) of text or italicize text.
 
 {{< example >}}
-<p class="font-weight-bold">Bold text.</p>
-<p class="font-weight-bolder">Bolder weight text (relative to the parent element).</p>
-<p class="font-weight-normal">Normal weight text.</p>
-<p class="font-weight-light">Light weight text.</p>
-<p class="font-weight-lighter">Lighter weight text (relative to the parent element).</p>
-<p class="font-italic">Italic text.</p>
+<p class="font-weight-bold">Texte en gras _bold_.</p>
+<p class="font-weight-bolder">Texte en gras _bold_ (relatif à l'élément parent).</p>
+<p class="font-weight-normal">Texte à la graisse normale.</p>
+<p class="font-weight-light">Texte à la graisse légère _light_.</p>
+<p class="font-weight-lighter">Texte à la graisse légère _lighter_ (relatif à l'élément parent).</p>
+<p class="font-italic">Texte en italiques.</p>
 {{< /example >}}
 
-## Monospace
+## Écartement fixe, _monospace_
 
-Change a selection to our monospace font stack with `.text-monospace`.
+Passez du texte sur une police de caractère à écartement fixe avec la classe `.text-monospace`.
 
 {{< example >}}
-<p class="text-monospace">This is in monospace</p>
+<p class="text-monospace">Ce texte est à écartement fixe</p>
 {{< /example >}}
 
-## Reset color
+## Réinitialiser la couleur
 
-Reset a text or link's color with `.text-reset`, so that it inherits the color from its parent.
+Réinitilisez la couleur d'un texte ou d'un lien avec la classe `.text-reset`, ainsi il héritera de la couleur de son parent.
 
 {{< example >}}
 <p class="text-muted">
-  Muted text with a <a href="#" class="text-reset">reset link</a>.
+  Texte muté avec un <a href="#" class="text-reset">lien réinitialisé</a>.
 </p>
 {{< /example >}}
 
-## Text decoration
+## Décoration du texte
 
-Remove a text decoration with a `.text-decoration-none` class.
+Supprimez la décoration du texte avec la classe `.text-decoration-none`.
 
 {{< example >}}
-<a href="#" class="text-decoration-none">Non-underlined link</a>
+<a href="#" class="text-decoration-none">Lien non-souligné</a>
 {{< /example >}}
