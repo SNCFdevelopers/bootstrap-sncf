@@ -38,4 +38,4 @@ Vous trouverez l'indicateur d'étapes dans [progress components]({{< docsref "/c
 
 Comme le fil d'Ariane montre une navigation, c'est une bonne idée d'ajouter une étiquette significative telle que `aria-label="Vous êtes : "` pour décrire le type de navigation fourni dans le `<nav>` élément, ainsi que l'application d'un `aria-current="page"` au dernier élément de l'ensemble pour indiquer qu'il représente la page en cours.
 
-Pour plus d'information, voir [WAI-ARIA Authoring Practices for the breadcrumb pattern](https://www.w3.org/TR/wai-aria-practices/#breadcrumb).
+Pour plus d'information, consultez [WAI-ARIA Authoring Practices for the breadcrumb pattern](https://www.w3.org/TR/wai-aria-practices/#breadcrumb).
