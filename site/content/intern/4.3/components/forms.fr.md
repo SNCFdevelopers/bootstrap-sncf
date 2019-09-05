@@ -1,20 +1,20 @@
 ---
 layout: docs
-title: Forms
-slug: Formulaires & Champs
+title: Formulaires et champs
+slug: formulaires-et-champs
 description: Exemples et consignes d'utilisation pour les champs, les options de disposition et les composants personnalisés permettant de créer une grande variété de formulaires.
 group: components
 toc: true
-url: /docs/4.3/components/forms/
+url: /docs/4.3/components/formulaires-et-champs/
 ---
 
 ## Vue d'ensemble
 
 Vous trouverez ci-dessous des composants pour les formulaires (champs de saisie, curseurs, puces, textes d'aide, gestion des erreurs). Cependant, notez que les boutons de validation sont dans la section "Boutons", les boutons menu sont dans "Listes déroulantes" et les sélecteurs dans "Sélecteurs".
 
-Bootstrap's form controls expand on [our Rebooted form styles]({{< docsref "/content/reboot#forms" >}}) with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
+Les contrôles de formulaires de Bootstrap sont étendus par [nos formulaires avec style réinitialisé (_reboot_)]({{< docsref "/content/reboot#forms" >}}) avec les classes. Utilisez-les pour obtenir, via leurs affichages personnalisés, un rendu plus cohérent sur les navigateurs et les périphériques.
 
-Be sure to use an appropriate `type` attribute on all inputs (e.g., `email` for email address or `number` for numerical information) to take advantage of newer input controls like email verification, number selection, and more.
+Veuillez à choisir un attribut `type` approprié sur toutes les _inputs_ (par exemple `email` pour les adresses de courriel ou `number` pour les informations numériques, etc.) de façon à profiter des avantages des nouveaux contrôles d'entrée comme la vérification de courriel, de nombre, et plus encore.
 
 ## Champs
 
@@ -71,7 +71,7 @@ Ajoutez l'attribut booléen `readonly` sur un champ pour empêcher la modificati
 {{< textarea id="readonly2" placeholder="Readonly textarea here..." attr="readonly" >}}
 {{< /example >}}
 
-### Required inputs
+### Entrées obligatoires
 
 Ajoutez l'attribut booléen `required` sur une entrée.
 
@@ -85,7 +85,7 @@ Pour des raisons d'accessibilité, vous **devez** mettre le code sur la signific
 {{< input type="text" id="required1" placeholder="Required input here..." attr="required" >}}
 {{< /example >}}
 
-### Champ avec bouton de suppression 
+### Champ avec bouton de suppression
 
 Le comportement de l'effacement de texte est fait en `javascript`. Utilisez `data-component="control"` avec `data-clear-option="true"` pour l'activer. N'oubliez pas d'ajouter l'élément `button`.
 
@@ -405,7 +405,7 @@ Nous vous recommandons d'utiliser la validation côté client, mais si vous avez
 
 ### Paramètres par défaut du navigateur
 
-Pas intéressé par les commentaires personnalisés de validation ou l'écriture de JavaScript pour changer les comportements de formulaire ? Tout va bien, vous pouvez utiliser les paramètres par défaut du navigateur. Essayez de soumettre le formulaire ci-dessous. En fonction de votre navigateur et de votre système d’exploitation, le style de vos commentaires sera légèrement différent.
+Vous n'êtes pas intéressé par les commentaires personnalisés de validation ou l'écriture de JavaScript pour changer les comportements de formulaire ? Tout va bien, vous pouvez utiliser les paramètres par défaut du navigateur. Essayez de soumettre le formulaire ci-dessous. En fonction de votre navigateur et de votre système d’exploitation, le style de vos commentaires sera légèrement différent.
 
 Bien que ces styles de commentaires ne puissent pas être stylés avec CSS, vous pouvez toujours personnaliser le texte des commentaires via JavaScript.
 

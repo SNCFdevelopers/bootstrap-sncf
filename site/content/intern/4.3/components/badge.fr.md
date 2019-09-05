@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Badges
-slug: Badges
 description: Les indicateurs d'état ne sont pas interactifs. Ce sont des composants visuels qui communiquent par exemple le statut d'une liste et qui peuvent indiquer également le nombre d'éléments qu'elle contient.
 toc: true
 url: /docs/4.3/components/badge/

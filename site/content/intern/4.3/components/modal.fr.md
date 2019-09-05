@@ -1,11 +1,12 @@
 ---
 layout: docs
-title: Modal
+title: Fenêtres modales
+slug: modales
 description: Utilisez le plugin JavaScript modal de Bootstrap pour ajuster des boîtes de dialogue sur votre site pour les Lightbox, les notifications des utilisateurs ou un contenu entièrement personnalisé.
 slug: Fenêtre modale
 group: components
 toc: true
-url: /docs/4.3/components/modal/
+url: /docs/4.3/components/modales/
 ---
 ## Description
 
@@ -19,7 +20,7 @@ Avant de commencer avec le composant modal de Bootstrap, veillez à lire les inf
 - Un clic sur le «fond» de la fenêtre modale la fermera automatiquement.
 - Bootstrap ne prend en charge qu’une fenêtre modale à la fois. Les modaux imbriqués ne sont pas pris en charge car nous pensons qu’ils nuisent à l'expérience utilisateur.
 - Les fenêtres modales utilisent `position: fixed`, qui peut parfois rendre particulier le rendu. Dans la mesure du possible, placez votre code HTML modal au plus haut niveau pour éviter toute interférence éventuelle d'autres éléments. Vous rencontrerez probablement des problèmes lors de l’imbrication d’un fichier `.modal` dans un autre élément fixe.
-- Encore une fois, en raison de la classe `position: fixed`,  l'utilisation de modaux sur des appareils mobiles pose certains problèmes. [Consultez la documentation technique de votre navigateur]({{< docsref "/getting-started/browsers-devices#modals-and-dropdowns-on-mobile" >}}) pour plus de détails.
+- Encore une fois, en raison de la classe `position: fixed`,  l'utilisation de modaux sur des appareils mobiles pose certains problèmes.
 - En raison de la manière dont HTML5 définit sa sémantique, [l'attribut HTML `autofocus`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus) n'a aucun effet dans les fenêtres modales Bootstrap. Pour obtenir le même effet, utilisez du code JavaScript personnalisé :
 
 {{% highlight js %}}
@@ -667,7 +668,7 @@ Les modales ont deux tailles optionnelles, disponibles via des classes de modifi
   </div>
 </div>
 
-## Usage
+## Utilisation
 
 Le plugin de la fenêtre modale bascule votre contenu caché à la demande, via des attributs de données data ou JavaScript. Il ajoute également `.modal-open` au `<body>` pour remplacer le comportement de défilement par défaut et génère un `.modal-backdrop` pour réaliser la zone de clic en fond, permettant la fermeture de la modale lorsque vous cliquez sur ce même fond.
 
@@ -744,65 +745,65 @@ $('#myModal').modal({
 
 #### `.modal('toggle')`
 
-Manually toggles a modal. **Returns to the caller before the modal has actually been shown or hidden** (i.e. before the `shown.bs.modal` or `hidden.bs.modal` event occurs).
+Alterner l'ouverture d'une modale manuellement. **Le retour de la méthode intervient avant que la modale ait été ouverte ou fermée** (par exemple, avant les évènements `shown.bs.modal` ou `hidden.bs.modal`).
 
 {{% highlight js %}}$('#myModal').modal('toggle'){{% /highlight %}}
 
 #### `.modal('show')`
 
-Manually opens a modal. **Returns to the caller before the modal has actually been shown** (i.e. before the `shown.bs.modal` event occurs).
+Ouvre manuellement une modale. **Le retour de la méthode intervient avant que la modale ait été ouverte** (par exemple, avant l'évènement `shown.bs.modal`).
 
 {{% highlight js %}}$('#myModal').modal('show'){{% /highlight %}}
 
 #### `.modal('hide')`
 
-Manually hides a modal. **Returns to the caller before the modal has actually been hidden** (i.e. before the `hidden.bs.modal` event occurs).
+Ferme manuellement une modale. **Le retour de la méthode intervient avant que la modale ait été fermée** (par exemple, avant l'évènement `hidden.bs.modal`).
 
 {{% highlight js %}}$('#myModal').modal('hide'){{% /highlight %}}
 
 #### `.modal('handleUpdate')`
 
-Manually readjust the modal's position if the height of a modal changes while it is open (i.e. in case a scrollbar appears).
+Ajuste manuellement la position de la modale si sa hauteur change pendant qu'elle est visible (par exemple, si une barre de scroll apparaît).
 
 {{% highlight js %}}$('#myModal').modal('handleUpdate'){{% /highlight %}}
 
 #### `.modal('dispose')`
 
-Destroys an element's modal.
+Détruit un élément de type modale.
 
-### Events
+### Évènements
 
-Bootstrap's modal class exposes a few events for hooking into modal functionality. All modal events are fired at the modal itself (i.e. at the `<div class="modal">`).
+Les classes des modales de Bootstrap exposent quelques évènements de façon à capturer certaines fonctionnalités. Tous ces évènements sont déclenchés au niveau de la modale elle-même (par exemple, à `<div class="modal">`).
 
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th scope="col" style="width: 150px;">Event Type</th>
+      <th scope="col" style="width: 150px;">Type d'évènement</th>
       <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>show.bs.modal</td>
-      <td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
+      <td>Cet évènement est déclenché immédiatement quand l'instance <code>show</code> est appelée. Si c'est causé par un click, l'élément cliqué est disponible comme <code>relatedTarget</code>, propriété de l'évènement.</td>
     </tr>
     <tr>
       <td>shown.bs.modal</td>
-      <td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
+      <td>Cet évènement est déclenché quand la modale a été rendue visible à l'utilisateur, transitions CSS terminées). Si c'est causé par un click, l'élément cliqué est disponible comme <code>relatedTarget</code>, propriété de l'évènement.</td>
     </tr>
     <tr>
       <td>hide.bs.modal</td>
-      <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+      <td>Cet évènement est déclenché immédiatement quand l'instance <code>hide</code> est appelée.</td>
     </tr>
     <tr>
       <td>hidden.bs.modal</td>
-      <td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+      <td>Cet évènement est déclenché quand la modale a terminé d'être masquée à l'utilisateur, fermée, transitions CSS terminées.</td>
     </tr>
   </tbody>
 </table>
 
 {{% highlight js %}}
 $('#myModal').on('hidden.bs.modal', function (e) {
-  // do something...
+  // fait quelque chose...
 })
 {{% /highlight %}}

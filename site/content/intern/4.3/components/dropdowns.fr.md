@@ -1,11 +1,11 @@
 ---
 layout: docs
-title: Dropdowns
-slug: Listes déroulantes
-description: Utilisez les listes déroulantes permettant l'affichage d'une liste de liens contextuels avec le plugin Bootstrap.
+title: Menus déroulants
+slug: menus-deroulants
+description: Utilisez les menus déroulants permettant l'affichage d'une liste de liens contextuels avec le plugin Bootstrap.
 group: components
 toc: true
-url: /docs/4.3/components/dropdowns/
+url: /docs/4.3/components/menus-deroulants/
 ---
 
 ## Vue d'ensemble
@@ -14,13 +14,11 @@ Les menus déroulants sont des superpositions contextuelles permettant d'affiche
 
 Les listes déroulantes reposent sur une bibliothèque tierce, [Popper.js](https://popper.js.org/), qui fournit un positionnement dynamique et une détection de viewport. Il est déjà livré dans le kit standard Bootstrap SNCF.
 
-Si vous construisez notre code JavaScript à partir des sources, cela [requiert `util.js`]({{< docsref "/getting-started/javascript#util" >}}).
-
 ## Accessibilité
 
 Les menus déroulants de Bootstrap, quant à eux, sont conçus pour être génériques et applicables à une variété de situations et de structures de balisage. Par exemple, il est possible de créer des listes déroulantes contenant des entrées et des contrôles de formulaires supplémentaires, tels que des champs de recherche ou des formulaires de connexion.
 
-Cependant, Bootstrap ajoute une prise en charge intégrée pour la plupart des interactions clavier standards sur le menu, telles que la possibilité de se déplacer dans les éléments individuels '.dropdown-item` à l'aide des touches de direction et de fermer le menu à l'aide de la touche <kbd>ESC</kbd>.
+Cependant, Bootstrap ajoute une prise en charge intégrée pour la plupart des interactions clavier standards sur le menu, telles que la possibilité de se déplacer dans les éléments individuels `.dropdown-item` à l'aide des touches de direction et de fermer le menu à l'aide de la touche <kbd>ESC</kbd>.
 
 ## Exemples
 
@@ -70,7 +68,7 @@ Nous recommandons l'utilisation de `dropdown-menu-right` **seulement**, bien que
 </div>
 {{% /example %}}
 
-## Menu items
+## Éléments de menus
 
 Historiquement, le contenu des menu déroulants *devait* être des liens, mais ce n'est plus le cas dans la v4. Maintenant, vous pouvez éventuellement utiliser des éléments `<button>` dans vos listes déroulantes au lieu de simplement `<a>`s.
 
@@ -106,7 +104,7 @@ Ajoutez un en-tête pour étiqueter les différentes sections d'actions dans n'i
 
 ## Séparateurs de menus
 
-Séparez les groupes d'éléments de menu associés avec un séparateur. 
+Séparez les groupes d'éléments de menu associés avec un séparateur.
 Par exemple, le lien de déconnexion des autres items liés au compte dans un menu déroulant "Mon compte".
 
 {{% example html %}}
@@ -148,7 +146,7 @@ Placez un formulaire dans un menu déroulant, et utilisez [utilitaires de marges
 </div>
 {{% /example %}}
 
-## Éléments activés de menus
+## Éléments de menus actifs
 
 Ajoutez `.active` aux éléments du menu déroulant pour les  **qualifier d'actifs**.
 
@@ -162,7 +160,7 @@ Ajoutez `.active` aux éléments du menu déroulant pour les  **qualifier d'acti
 </div>
 {{% /example %}}
 
-## Éléments désactivés de menus
+## Éléments de menus inactifs
 
 Ajoutez `.disabled` aux éléments du menu déroulant pour les **qualifier d'inactifs**.
 
@@ -176,17 +174,18 @@ Ajoutez `.disabled` aux éléments du menu déroulant pour les **qualifier d'ina
 </div>
 {{% /example %}}
 
-## Usage
+## Utilisation
 
-Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the `.show` class on the parent list item. The `data-toggle="dropdown"` attribute is relied on for closing dropdown menus at an application level, so it's a good idea to always use it.
+Grâce aux attributs `data-` ou JavaScript, le menu déroulant alterne la visibilité du contenu (le menu _dropdown_) en basculant la classe `.show` sur les éléments de liste parents.
+L'attribut `data-toggle="dropdown"` est lié à la fermeture du menu déroulant au niveau applicatif, donc c'est toujours une bonne idée de toujours l'utiliser.
 
 {{% callout info %}}
-On touch-enabled devices, opening a dropdown adds empty (`$.noop`) `mouseover` handlers to the immediate children of the `<body>` element. This admittedly ugly hack is necessary to work around a [quirk in iOS' event delegation](https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html), which would otherwise prevent a tap anywhere outside of the dropdown from triggering the code that closes the dropdown. Once the dropdown is closed, these additional empty `mouseover` handlers are removed.
+Sur des périphériques tactiles, ouvrir un menu déroulant ajoute des gestionnaires vides (`$.noop`) `mouseover` aux enfants immédiats de l'élément  `<body>`. Ce hack, assumé comme affreux (!) est nécessaire pour contourner une [délégation d'évènements sur iOS](https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html), qui empêcherait sinon la possibilité de fermer le menu déroulant en tapotant ailleurs que sur celui-ci. Une fois le menu déroulant fermé, ces gestionnaires vides `mouseover` supplémentaires sont supprimés.
 {{% /callout %}}
 
-### Via data attributes
+### Avec les  _data attributes_
 
-Add `data-toggle="dropdown"` to a button to toggle a dropdown.
+Ajouter `data-toggle="dropdown"` à un bouton pour définir un menu déroulant.
 
 {{% highlight html %}}
 <div class="dropdown">
@@ -199,32 +198,31 @@ Add `data-toggle="dropdown"` to a button to toggle a dropdown.
 </div>
 {{% /highlight %}}
 
-### Via JavaScript
+### Avec JavaScript
 
-Call the dropdowns via JavaScript:
+Appeler les menus déroulants avec JavaScript:
 
 {{% highlight js %}}
 $('.dropdown-toggle').dropdown()
 {{% /highlight %}}
 
 {{% callout info %}}
-##### `data-toggle="dropdown"` still required
-
-Regardless of whether you call your dropdown via JavaScript or instead use the data-api, `data-toggle="dropdown"` is always required to be present on the dropdown's trigger element.
+##### `data-toggle="dropdown"` est toujours nécessaire
+Peu importe le moyen avec lequel vous déclarez/appelez vos menus déroulants (JavaScript ou via l'api `data-`), `data-toggle="dropdown"` est toujours nécessaire sur l'élément _trigger_.
 {{% /callout %}}
 
 ### Options
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-offset=""`.
+Les options peuvent être définies par des attributs `data-` — pour ces derniers, ajoutez le nom de l'option à `data-`, par exemple : `data-offset=""`.
 
 <div class="table-wrapper">
   <div class="table-scroller dragscroll">
     <table class="table table-bordered table-striped">
       <thead>
         <tr>
-          <th scope="col" style="width: 100px;">Name</th>
+          <th scope="col" style="width: 100px;">Nom</th>
           <th scope="col" style="width: 100px;">Type</th>
-          <th scope="col" style="width: 50px;">Default</th>
+          <th scope="col" style="width: 50px;">Par défaut</th>
           <th scope="col">Description</th>
         </tr>
       </thead>
@@ -233,48 +231,48 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
           <td>offset</td>
           <td>number | string | function</td>
           <td>0</td>
-          <td>Offset of the dropdown relative to its target. For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..offset.offset">offset docs</a>.</td>
+          <td>Décalage de la liste déroulante par rapport à sa cible. Pour plus d'informations, consultez <a href="https://popper.js.org/popper-documentation.html#modifiers..offset.offset">la documentation de popper.js</a>.</td>
         </tr>
         <tr>
           <td>flip</td>
           <td>boolean</td>
           <td>true</td>
-          <td>Allow Dropdown to flip in case of an overlapping on the reference element. For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..flip.enabled">flip docs</a>.</td>
+          <td>Autorisez la liste déroulante à basculer en cas de chevauchement sur l'élément de référence. Pour plus d'informations, consultez <a href="https://popper.js.org/popper-documentation.html#modifiers..flip.enabled">la documentation de popper.js sur ce thème</a>.</td>
         </tr>
         <tr>
           <td>boundary</td>
           <td>string | element</td>
           <td>'scrollParent'</td>
-          <td>Overflow constraint boundary of the dropdown menu. Accepts the values of <code>'viewport'</code>, <code>'window'</code>, <code>'scrollParent'</code>, or an HTMLElement reference (JavaScript only). For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..preventOverflow.boundariesElement">preventOverflow docs</a>.</td>
+          <td>Limite la capacité du menu déroulant à dépasser le cadre. La valeurs acceptées sont <code>'viewport'</code>, <code>'window'</code>, <code>'scrollParent'</code>, ou une référence HTMLElement (seulement JavaScript). Pour plus d'informations, consultez <a href="https://popper.js.org/popper-documentation.html#modifiers..preventOverflow.boundariesElement">la documentation de popper.js sur ce thème</a>.</td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
 
-Note when `boundary` is set to any value other than `'scrollParent'`, the style `position: static` is applied to the `.dropdown` container.
+Notez que lorsque que `boundary` est défini à toute autre valeur que `'scrollParent'`, le style `position: static` est appliqué au container `.dropdown`.
 
-### Methods
+### Méthodes
 
-| Method | Description |
+| Méthode | Description |
 | --- | --- |
-| `$().dropdown('toggle')` | Toggles the dropdown menu of a given navbar or tabbed navigation. |
-| `$().dropdown('update')` | Updates the position of an element's dropdown. |
-| `$().dropdown('dispose')` | Destroys an element's dropdown. |
+| `$().dropdown('toggle')` | Alterne l'ouverture du menu déroulant sur une barre de navigation ou d'onglets. |
+| `$().dropdown('update')` | Met à jour la position de l'élément d'un menu déroulant. |
+| `$().dropdown('dispose')` | Détruit un élément `dropdown`. |
 
-### Events
+### Évènements
 
-All dropdown events are fired at the `.dropdown-menu`'s parent element and have a `relatedTarget` property, whose value is the toggling anchor element.
+Tous les évènements de menus déroulants sont déclenchés au niveau de l'élément parent de `.dropdown-menu`' et possèdent une propriété `relatedTarget`, dont la valeur est celle de l'élément appelant.
 
-| Event | Description |
+| Évènement | Description |
 | --- | --- |
-| `show.bs.dropdown` | This event fires immediately when the show instance method is called. |
-| `shown.bs.dropdown` | This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions, to complete). |
-| `hide.bs.dropdown` | This event is fired immediately when the hide instance method has been called. |
-| `hidden.bs.dropdown`| This event is fired when the dropdown has finished being hidden from the user (will wait for CSS transitions, to complete). |
+| `show.bs.dropdown` | Cet évènement est déclenché immédiatement quand la méthode d'instance `show` est appelée. |
+| `shown.bs.dropdown` | Cet évènement est déclenché quand le menu déroulant a été rendu visible à l'utilisateur, transitions CSS terminées. |
+| `hide.bs.dropdown` | Cet évènement est déclenché immédiatement quand la méthode d'instance `hide` est appelée. |
+| `hidden.bs.dropdown`| Cet évènement est déclenché quand le menu déroulant a été masqué à l'utilisateur, transitions CSS terminées. |
 
 {{% highlight js %}}
 $('#myDropdown').on('show.bs.dropdown', function () {
-  // do something…
+  // Faire quelque chose…
 })
 {{% /highlight %}}

@@ -1,11 +1,11 @@
 ---
 layout: docs
-title: Charts
-slug: Graphiques
+title: Graphiques
+slug: graphiques
 description: Les graphiques peuvent être notamment utilisés dans les dashboards d'applications de production. Ils permettent de mettre graphiquement en valeur les données.
 group: components
 toc: true
-url: /docs/4.3/components/charts/
+url: /docs/4.3/components/graphiques/
 ---
 
 {{% callout info %}}
@@ -72,7 +72,7 @@ Les graphiques "Donuts" ont un fonctionnement similaire aux diagrammes à secteu
 
 ## Graphiques barres
 
-Les graphiques barres montrent les changements d'une quantiité dans le temps. Nous les utilisons pour afficher les quantités mesurées périodiquement. Il existe trois types de graphiques barres : simple, cumulatif et proportionnel. Les graphiques barres simples affichent une seule mesure, tandis que les cumulatifs affichent deux à trois mesures par barre. 
+Les graphiques barres montrent les changements d'une quantiité dans le temps. Nous les utilisons pour afficher les quantités mesurées périodiquement. Il existe trois types de graphiques barres : simple, cumulatif et proportionnel. Les graphiques barres simples affichent une seule mesure, tandis que les cumulatifs affichent deux à trois mesures par barre.
 Dans les graphiques barres proportionnelles, toutes les barres ont la même taille mais des proportions différentes pour les indicateurs mesurés.
 
 {{% example html %}}

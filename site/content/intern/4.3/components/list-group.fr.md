@@ -1,11 +1,12 @@
 ---
 layout: docs
-title: List group
+title: Groupes de listes
+slug: groupes-de-listes
 description: Les groupes de listes constituent un composant souple et puissant, permettant d'afficher une série de contenus. Modifiez-les et étendez-les pour prendre en charge à peu près tous les contenus.
 slug: Groupes de liste pour tableaux
 group: components
 toc: true
-url: /docs/4.3/components/list-group/
+url: /docs/4.3/components/groupes-de-listes/
 ---
 
 ## Description
@@ -132,7 +133,7 @@ Des cases à cocher peuvent être ajoutées lorsqu'une action de groupe est prop
         <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pellentesque mauris, a efficitur urna. Curabitur.</p>
       </div>
       <div class="management-item-action">
-        <button type="button" class="btn btn-options dropdown-toggle" title="Télécharger (pdf 50mo)" data-toggle="dropdown"> 
+        <button type="button" class="btn btn-options dropdown-toggle" title="Télécharger (pdf 50mo)" data-toggle="dropdown">
           <i class="icons-download" aria-hidden="true"></i>
           <span class="sr-only">Télécharger</span>
         </button>
