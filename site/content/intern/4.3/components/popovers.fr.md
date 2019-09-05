@@ -1,33 +1,34 @@
 ---
 layout: docs
-title: Popovers
+title: Bulles contextuelles
+slug: bulles-contextuelles
 description: Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
 group: components
 toc: true
 url: /docs/4.3/components/popovers/
 ---
 
-## Overview
+## Vue d'ensemble
 
-Popovers provide additional information on features available on the website to improve the user experience or simply display more details. Information appears when the user rolls over or clicks on them (for longer content).
+Les bulles contextuelles, ou _popovers_ propose une information additionnelle sur des fonctionnalités disponibles sur une site pour améliorer l'expérience utilisateurs ou simplement afficher plus de détails. L'information apparaît lorsque l'utilisateur déroule ou clique sur un élément.
 
-Things to know when using the popover plugin:
+Choses à savoir pour utiliser ce composant :
 
-- Popovers rely on the 3rd party library [Popper.js](https://popper.js.org/) for positioning. You must include [popper.min.js]({{ site.cdn.popper }}) before bootstrap.js or use `bootstrap.bundle.min.js` / `bootstrap.bundle.js` which contains Popper.js in order for popovers to work! (included by default in bootstrap.min.js)
-- Popovers require the [tooltip plugin]({{< docsref "/components/tooltips" >}}) as a dependency.
-- Popovers are opt-in for performance reasons, so **you must initialize them yourself**.
-- Zero-length `title` and `content` values will never show a popover.
-- Specify `container: 'body'` to avoid rendering problems in more complex components (like our input groups, button groups, etc).
-- Triggering popovers on hidden elements will not work.
-- Popovers for `.disabled` or `disabled` elements must be triggered on a wrapper element.
-- When triggered from anchors that wrap across multiple lines, popovers will be centered between the anchors' overall width. Use `white-space: nowrap;` on your `<a>`s to avoid this behavior.
-- Popovers must be hidden before their corresponding elements have been removed from the DOM.
+- il dépend d'une librairie tierce [Popper.js](https://popper.js.org/) pour le positionnement. Vous devez inclure [popper.min.js]({{ site.cdn.popper }}) avant bootstrap-sncf.js ou utiliser le fichier minifié `bootstrap.bundle.min.js` / `bootstrap.bundle.js` qui contient déjà cette librairie pour que les bulles contextuelles fonctionnent.
+- il nécessite le composant [tooltip]({{< docsref "/components/tooltips" >}}) comme dépendance.
+- les _popovers_ ne sont pas activés par défaut pour des raisons de performances, par conséquent **vous devez les initialiser vous-même**.
+- des valeurs vides de `title` et `content` n'afficheront jamais de bulles contextuelles.
+- spécifiez `container: 'body'` pour éviter des problèmes de rendu dans des composants plus complexes (comme des groupes d'entrées ou de boutons par exemple).
+- déclencher des bulles contextuelles sur des éléments masqués ne fonctionnera pas.
+- Les bulles contextuelles sur des éléments `.disabled` ou `disabled` doivent être liés sur un élément enveloppant.
+- Quand déclenché depuis des ancres qui enveloppent plusieurs lignes, les bulles contextuelles seront centrées entres ces ancres suivant leur largeur totale. Utilisez `white-space: nowrap;` sur les balises `<a>` pour empêcher ce comportement.
+- Les bulles contextuelles doivent être masquées avant que leurs éléments correspondants aient été supprimés du DOM.
 
-Keep reading to see how popovers work with some examples.
+Voyons maintenant comment les bulles contextuelles fonctionnent à travers plusieurs exemples.
 
-## Example: Enable popovers everywhere
+## Exemple : Activer les bulles contextuelles sur toute la pages
 
-One way to initialize all popovers on a page would be to select them by their `data-toggle` attribute:
+Une manière d'initialiser toutes les bulles contextuelles sur une page est de les sélectionner à travers leur attribut `data-toggle` :
 
 {{% highlight js %}}
 $(function () {
@@ -35,9 +36,9 @@ $(function () {
 })
 {{% /highlight %}}
 
-## Example: Using the `container` option
+## Example : Utiliser l'option `container`
 
-When you have some styles on a parent element that interfere with a popover, you'll want to specify a custom `container` so that the popover's HTML appears within that element instead.
+Lorsque vous avez quelques styles sur un élément parent qui interfèrent avec une bulle contextuelle, vous aimerez sûrement spéicifier un `container` maison de façon à ce que le code HTML de la bulle contextuelle apparaisse attachée à cet élément à la place.
 
 {{% highlight js %}}
 $(function () {
@@ -47,12 +48,12 @@ $(function () {
 })
 {{% /highlight %}}
 
-## Example
+## Exemple
 
 {{% callout danger %}}
-#### SNCF's popovers implementation requires dismiss-on-next-click
+#### L'implémentation des bulles contextuelles SNCF nécessite une disparition au prochain clic
 
-For all proposed examples, [specific markup](#dismiss-on-next-clik) is included, the cross in the top-right corner is not a button. By design, the popovers should be dismissed by the next click.
+Pour tous les exemples proposés, du [code HTML spécifique](#dismiss-on-next-clik) est proposé, la croix placée en haut à droite n'étant pas un bouton à proporement parler. Suivant la charte SNCF, les bulles contextuelles doivent disparaître au clic suivant.
 {{% /callout %}}
 
 {{% example html %}}
@@ -66,82 +67,82 @@ For all proposed examples, [specific markup](#dismiss-on-next-clik) is included,
 </button>
 {{% /example %}}
 
-### Four directions
+### Quatre directions
 
-Four options are available: top, right, bottom, and left aligned.
+Quatre options sont disponible : alignement en haut, à droite, en bas, et à gauche.
 
 <div class="bd-example popover-demo">
   <div class="bd-example-popovers">
     <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-      Popover on top
+      Bulle contextuelle en haut
     </button>
     <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-      Popover on right
+      Bulle contextuelle à droite
     </button>
     <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-      Popover on bottom
+      Bulle contextuelle en bas
     </button>
     <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-      Popover on left
+      Bulle contextuelle à gauche
     </button>
   </div>
 </div>
 
 {{% highlight html %}}
 <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on top
+  Bulle contextuelle en haut
 </button>
 
 <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on right
+  Bulle contextuelle à droite
 </button>
 
 <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
 sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on bottom
+  Bulle contextuelle en bas
 </button>
 
 <button type="button" tabindex="0" data-trigger="focus" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on left
+  Bulle contextuelle à gauche
 </button>
 {{% /highlight %}}
 
-### Aligned with icon
+### Alignées sur une icône
 
-Use `data-placement` to choose one direction (top, right, bottom or left).
+Utilisez `data-placement` pour définir une direction d'ouverture avec comme valeurs top, right, bottom ou left.
 
 {{% example html %}}
 <div class="row">
   <div class="col-sm-6 text-right pt-5 pb-5">
-    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="top" title="Bulle contextuelle en haut" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Cliquez pour activer la bulle contextuelle</span><i class="text-primary icons-circle-tooltip"></i></button>
   </div>
   <div class="col-sm-6 pt-5 pb-5">
-    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-circle-tooltip"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="right" title="Bulle contextuelle à droite" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Cliquez pour activer la bulle contextuelle</span><i class="text-primary icons-circle-tooltip"></i></button>
   </div>
 </div>
 <div class="row">
   <div class="col-sm-6 text-right pt-5 pb-5">
-    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="left" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="left" title="Bulle contextuelle en haut" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Cliquez pour activer la bulle contextuelle</span><i class="text-primary icons-pencil"></i></button>
   </div>
   <div class="col-sm-6 pt-5 pb-5">
-    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="bottom" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Click to toggle popover</span><i class="text-primary icons-pencil"></i></button>
+    <button class="btn btn-link" type="button" data-trigger="focus" data-toggle="popover" data-placement="bottom" title="Bulle contextuelle à droite" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="sr-only">Cliquez pour activer la bulle contextuelle</span><i class="text-primary icons-pencil"></i></button>
   </div>
 </div>
 {{% /example %}}
 
 
-### Dismiss on next click
+### Fermer au prochain clic
 
-Use the `focus` trigger to dismiss popovers on the user's next click of a different element than the toggle element.
+Utilisez l'élément `focus` pour fermer la bulle contextuelle au prochain clic de l'utilisateur.
 
 {{% callout danger %}}
-#### Specific markup required for dismiss-on-next-click
+#### Du code HTML sépcifique est nécessaire !
 
-For proper cross-browser and cross-platform behavior, you must use the `<a>` tag, _not_ the `<button>` tag, and you also must include a [`tabindex`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex) attribute.
+Pour une fonctionnement interopérable entre les navigateurs et systèmes, vous devez utiliser une balise `<a>` _et non pas_ la balise `<button>`. Vous devez également inclure un attribut [`tabindex`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex).
 {{% /callout %}}
 
 {{% example html %}}
-<button type="button" tabindex="0" class="btn btn-lg btn-secondary" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</button>
+<button type="button" tabindex="0" class="btn btn-lg btn-secondary" data-toggle="popover" data-trigger="focus" title="Bulle contextuelle se fermant au prochain clic" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Bulle contextuelle à cliquer</button>
 {{% /example %}}
 
 {{% highlight js %}}
@@ -150,34 +151,34 @@ $('.popover-dismiss').popover({
 })
 {{% /highlight %}}
 
-### Disabled elements
+### Éléments inactifs
 
-Elements with the `disabled` attribute aren't interactive, meaning users cannot hover or click them to trigger a popover (or tooltip). As a workaround, you'll want to trigger the popover from a wrapper `<div>` or `<span>` and override the `pointer-events` on the disabled element.
+Les éléments avec l'attribut `disabled` ne sont pas interactifs, ce qui signifie que les utilisateurs ne pourront pas survoler ou cliquer sur ce composant pour déclencher une bulle contextuelle (ou une infobulle). Pour contourner ce comportement, utilisez un container encapsulant auquel lier le déclencheur, en écrasant l'élément `pointer-events` sur l'élément inactif.
 
-For disabled popover triggers, you may also prefer `data-trigger="hover"` so that the popover appears as immediate visual feedback to your users as they may not expect to _click_ on a disabled element.
+Pour les déclencheurs inactifs de bulles contextuelles, vous pourriez préférer `data-trigger="hover"` de façon à ce que la bulle apparaisse comme un retour visuel immédiat à vos utilisateurs, comme ils ne s'attendront pas à devoir cliquer sur un élément inactif.
 
 {{% example html %}}
-<span tabindex="0" class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
-  <button class="btn btn-primary disabled" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+<span tabindex="0" class="d-inline-block" data-toggle="popover" data-content="Bulle contextuelle inactive">
+  <button class="btn btn-primary disabled" style="pointer-events: none;" type="button" disabled>Bouton inactif</button>
 </span>
 {{% /example %}}
 
-## Usage
+## Utilisation
 
-Enable popovers via JavaScript:
+Activer les bulles contextuelles en JavaScript :
 
 {{% highlight js %}}$('#example').popover(options){{% /highlight %}}
 
 ### Options
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-animation=""`.
+Les options peuvent être renseignées via les attributs `data-`. Pour ces derniers, ajoutez-y le nom de l'option, par exemple `data-animation=""`.
 
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th scope="col" style="width: 100px;">Name</th>
+      <th scope="col" style="width: 100px;">Nom</th>
       <th scope="col" style="width: 100px;">Type</th>
-      <th scope="col" style="width: 50px;">Default</th>
+      <th scope="col" style="width: 50px;">Par défaut</th>
       <th scope="col">Description</th>
     </tr>
   </thead>
@@ -186,14 +187,14 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>animation</td>
       <td>boolean</td>
       <td>true</td>
-      <td>Apply a CSS fade transition to the popover</td>
+      <td>Ajoute une transition CSS de fondu</td>
     </tr>
     <tr>
       <td>container</td>
       <td>string | element | false</td>
       <td>false</td>
       <td>
-        <p>Appends the popover to a specific element. Example: <code>container: 'body'</code>. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize.</p>
+        <p>Ajoute la bulle contextuelle à un élément spécifique. Par exemple : <code>container: 'body'</code>. Cette option est particulièrement utile car elle vous permet de placer la bulle contextuelle dans le flux du document près de l'élément déclencheur, ce qui l'empêchera de s'éloigner de l'élément déclencheur pendant le redimensionnement de la fenêtre.</p>
       </td>
     </tr>
     <tr>
@@ -201,8 +202,8 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>string | element | function</td>
       <td>''</td>
       <td>
-        <p>Default content value if <code>data-content</code> attribute isn't present.</p>
-        <p>If a function is given, it will be called with its <code>this</code> reference set to the element that the popover is attached to.</p>
+        <p>Valeur de contenu par défaut si l'attribut <code>data-content</code> n'est pas présent.</p>
+        <p>Si une fonction est donnée, elle sera appelée avec la référence <code>this</code> à l'élément auquel la bulle contextuelle est attachée.</p>
       </td>
     </tr>
     <tr>
@@ -210,42 +211,42 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>number | object</td>
       <td>0</td>
       <td>
-        <p>Delay showing and hiding the popover (ms) - does not apply to manual trigger type</p>
-        <p>If a number is supplied, delay is applied to both hide/show</p>
-        <p>Object structure is: <code>delay: { "show": 500, "hide": 100 }</code></p>
+        <p>Délai d'apparition/disparition de la bulle contextuelle en ms — ne s'applique pas au déclenchement manuel.</p>
+        <p>Si un nombre est fourni, le délai s'appliquera à l'apparition et la disparition.</p>
+        <p>La structure de l'objet est : <code>delay: { "show": 500, "hide": 100 }</code></p>
       </td>
     </tr>
     <tr>
       <td>html</td>
       <td>boolean</td>
       <td>false</td>
-      <td>Insert HTML into the popover. If false, jQuery's <code>text</code> method will be used to insert content into the DOM. Use text if you're worried about XSS attacks.</td>
+      <td>Insérer du code HTML dans la bulle contextuelle. Si `false`, la méthode jQuery <code>text</code> sera utilisée pour insérer du contenu dans le DOM. Utilisez `text` si vous voulez vous prémunir des attaques XSS.</td>
     </tr>
     <tr>
       <td>placement</td>
       <td>string | function</td>
       <td>'right'</td>
       <td>
-        <p>How to position the popover - auto | top | bottom | left | right.<br>When <code>auto</code> is specified, it will dynamically reorient the popover.</p>
-        <p>When a function is used to determine the placement, it is called with the popover DOM node as its first argument and the triggering element DOM node as its second. The <code>this</code> context is set to the popover instance.</p>
+        <p>Comment positionner la bulle contextuelle — auto | top | bottom | left | right.<br>Quand <code>auto</code> est spécifié, la bulle contextuelle sera automatiquement réorientée.</p>
+        <p>Si une fonction est utilisée pour déterminer le positionnement, elle sera appelée avec le nœud DOM de la bulle contextuelle en premier argument et l'élément déclencheur en second. L'élément contextuel <code>this</code> sera défini à l'instance de la bulle..</p>
       </td>
     </tr>
     <tr>
       <td>selector</td>
       <td>string | false</td>
       <td>false</td>
-      <td>If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See <a href="https://github.com/twbs/bootstrap/issues/4215">this</a> and <a href="https://jsbin.com/zopod/1/edit">an informative example</a>.</td>
+      <td>Si un sélecteur est fournir, les objets bulle contextuelle seront délégués aux destinations spéicifées. En pratique, cela est utilisé pour permettre du contenu dynamique en HTML dans la bulle. Consultez <a href="https://github.com/twbs/bootstrap/issues/4215">ceci</a> et <a href="https://jsbin.com/zopod/1/edit">cet exemple informatif</a>.</td>
     </tr>
     <tr>
       <td>template</td>
       <td>string</td>
       <td><code>'&lt;div class="popover" role="tooltip"&gt;&lt;div class="arrow"&gt;&lt;/div&gt;&lt;h3 class="popover-header"&gt;&lt;/h3&gt;&lt;div class="popover-body"&gt;&lt;/div&gt;&lt;/div&gt;'</code></td>
       <td>
-        <p>Base HTML to use when creating the popover.</p>
-        <p>The popover's <code>title</code> will be injected into the <code>.popover-header</code>.</p>
-        <p>The popover's <code>content</code> will be injected into the <code>.popover-body</code>.</p>
-        <p><code>.arrow</code> will become the popover's arrow.</p>
-        <p>The outermost wrapper element should have the <code>.popover</code> class.</p>
+        <p>Code HTML de référence à utiliser quand vous créez une bulle contextuelle.</p>
+        <p>Le titre de la bulle <code>title</code> sera injecté dans <code>.popover-header</code>.</p>
+        <p>Le contenu <code>content</code> sera injecté dans <code>.popover-body</code>.</p>
+        <p><code>.arrow</code> deviendra la flèche de la bulle contextuelle.</p>
+        <p>L'élément le plus extérieur de la bulle doit avoir la classe <code>.popover</code>.</p>
       </td>
     </tr>
     <tr>
@@ -253,136 +254,136 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>string | element | function</td>
       <td>''</td>
       <td>
-        <p>Default title value if <code>title</code> attribute isn't present.</p>
-        <p>If a function is given, it will be called with its <code>this</code> reference set to the element that the popover is attached to.</p>
+        <p>Valeur de titre par défaut si l'attribut <code>title</code> est absent.</p>
+        <p>Si une fonction est donnée, elle sera appelée avec la référence <code>this</code> à l'élément auquel la bulle contextuelle est attachée.</p>
       </td>
     </tr>
     <tr>
       <td>trigger</td>
       <td>string</td>
       <td>'click'</td>
-      <td>How popover is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space. `manual` cannot be combined with any other trigger.</td>
+      <td>Manières de déclencher la bulle contextuelle — click | hover | focus | manual. Il est possible d'en choisir plusieurs, séparés par un espace, sauf pour `manual` qui ne peut être combiné avec une autre.</td>
     </tr>
     <tr>
       <td>offset</td>
       <td>number | string</td>
       <td>0</td>
-      <td>Offset of the popover relative to its target. For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..offset.offset">offset docs</a>.</td>
+      <td>Décalage de la bulle contextuelle par rapport à sa cible. Pour plus d'informations, veuillez vous référer à <a href="https://popper.js.org/popper-documentation.html#modifiers..offset.offset">la documentation de popper.js sur le décalage</a>.</td>
     </tr>
     <tr>
       <td>fallbackPlacement</td>
       <td>string | array</td>
       <td>'flip'</td>
-      <td>Allow to specify which position Popper will use on fallback. For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..flip.behavior">behavior docs</a></td>
+      <td>Permet de spécifier quelle position _Popper_ utilisera par défaut. Pour plus d'informations, veuillez consulter <a href="https://popper.js.org/popper-documentation.html#modifiers..flip.behavior">la documentation de popper.js sur le comportement</a></td>
     </tr>
     <tr>
       <td>boundary</td>
       <td>string | element</td>
       <td>'scrollParent'</td>
-      <td>Overflow constraint boundary of the popover. Accepts the values of <code>'viewport'</code>, <code>'window'</code>, <code>'scrollParent'</code>, or an HTMLElement reference (JavaScript only). For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..preventOverflow.boundariesElement">preventOverflow docs</a>.</td>
+      <td>Zone de contrainte de dépassement des bulles contextuelles. Accepte les valeurs <code>'viewport'</code>, <code>'window'</code>, <code>'scrollParent'</code>, ou une référence HTMLElement (JavaScript seulement). Pour plus d'informations, veuillez vous référer à <a href="https://popper.js.org/popper-documentation.html#modifiers..preventOverflow.boundariesElement">la documentation de popper.js sur ce point</a>.</td>
     </tr>
   </tbody>
 </table>
 
 {{% callout info %}}
-#### Data attributes for individual popovers
+#### Attributs `data-` pour les bulles contextuelles individuelles
 
-Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.
+Les options pour les bulles contextuelles indidivuelles peuvent alternativement être spécifiées via des attributs `data-` comme expliqué plus haut.
 {{% /callout %}}
 
-### Methods
+### Methodes
 
 {{% callout danger %}}
-{{% partial "callout-danger-async-methods.md" %}}
+{{% partial "callout-danger-async-methods.fr.md" %}}
 {{% /callout %}}
 
 #### `$().popover(options)`
 
-Initializes popovers for an element collection.
+Initialise les bulles contextuelles pour une collection d'éléments.
 
 #### `.popover('show')`
 
-Reveals an element's popover. **Returns to the caller before the popover has actually been shown** (i.e. before the `shown.bs.popover` event occurs). This is considered a "manual" triggering of the popover. Popovers whose both title and content are zero-length are never displayed.
+Affiche une bulle contextuelle. **Le retour à la fonction appelante se fait avant que la bulle soit visible** (par exemple, avant que l'évènement `shown.bs.popover` soit déclenché). Cela est considéré comme un déclenchement manuel — si le titre `title` et le contenu sont vides, la bulle n'est jamais affichée.
 
 {{% highlight js %}}$('#element').popover('show'){{% /highlight %}}
 
 #### `.popover('hide')`
 
-Hides an element's popover. **Returns to the caller before the popover has actually been hidden** (i.e. before the `hidden.bs.popover` event occurs). This is considered a "manual" triggering of the popover.
+Masque une bulle contextuelle. **Le retour à la fonction appelante se fait avant que la bulle soit visible** (par exemple, avant que l'évènement `hidden.bs.popover` soit déclenché). Cela est considéré comme un déclenchement manuel.
 
 {{% highlight js %}}$('#element').popover('hide'){{% /highlight %}}
 
 #### `.popover('toggle')`
 
-Toggles an element's popover. **Returns to the caller before the popover has actually been shown or hidden** (i.e. before the `shown.bs.popover` or `hidden.bs.popover` event occurs). This is considered a "manual" triggering of the popover.
+Alterne la visibilité d'une bulle contextuelle. **Le retour à la fonction appelante se fait avant que la bulle soit visible** (par exemple, avant que l'évènement `shown.bs.popover` ou `hidden.bs.popover` soient déclenchés). Cela est considéré comme un déclenchement manuel.
 
 {{% highlight js %}}$('#element').popover('toggle'){{% /highlight %}}
 
 #### `.popover('dispose')`
 
-Hides and destroys an element's popover. Popovers that use delegation (which are created using [the `selector` option](#options)) cannot be individually destroyed on descendant trigger elements.
+Masque et détruit le composant bulle contextuelle. Ceux qui utilisent une délégation (créés avec [l'option `selector`](#options)) ne peuvent pas être individuellement détruit sur les éléments déclenchant descendant.
 
 {{% highlight js %}}$('#element').popover('dispose'){{% /highlight %}}
 
 #### `.popover('enable')`
 
-Gives an element's popover the ability to be shown. **Popovers are enabled by default.**
+Donne à une bulle contextuelle la possibilité d'être affichée. **Les bulles contextuelles sont activées par défaut.**
 
 {{% highlight js %}}$('#element').popover('enable'){{% /highlight %}}
 
 #### `.popover('disable')`
 
-Removes the ability for an element's popover to be shown. The popover will only be able to be shown if it is re-enabled.
+Enlève la possibilité à une bulle contextuelle d'être affichée. Il faudra l'activer à nouveau pour pouvoir être déclenchée.
 
 {{% highlight js %}}$('#element').popover('disable'){{% /highlight %}}
 
 #### `.popover('toggleEnabled')`
 
-Toggles the ability for an element's popover to be shown or hidden.
+Alterne la possibilité d'une bulle contextuelle d'être affichée ou masquée.
 
 {{% highlight js %}}$('#element').popover('toggleEnabled'){{% /highlight %}}
 
 #### `.popover('update')`
 
-Updates the position of an element's popover.
+Met à jour la position d'un élément de bulle contextuelle.
 
 {{% highlight js %}}$('#element').popover('update'){{% /highlight %}}
 
-### Events
+### Évènements
 
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th scope="col" style="width: 150px;">Event Type</th>
+      <th scope="col" style="width: 150px;">Type d'évènement</th>
       <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>show.bs.popover</td>
-      <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+      <td>Cet évènement se déclenche immédiatement quand la méthode d'instance <code>show</code> est appelée.</td>
     </tr>
     <tr>
       <td>shown.bs.popover</td>
-      <td>This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete).</td>
+      <td>Cet évènement se déclenche quand la bulle contextuelle est devenue visible pour l'utilisateur, transitions CSS terminées.</td>
     </tr>
     <tr>
       <td>hide.bs.popover</td>
-      <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+      <td>Cet évènement se déclenche immédiatement  when the <code>hide</code> instance method has been called.</td>
     </tr>
     <tr>
       <td>hidden.bs.popover</td>
-      <td>This event is fired when the popover has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+      <td>Cet évènement se déclenche the popover has finished being hidden from the user (will wait for CSS transitions to complete).</td>
     </tr>
     <tr>
       <td>inserted.bs.popover</td>
-      <td>This event is fired after the <code>show.bs.popover</code> event when the popover template has been added to the DOM.</td>
+      <td>Cet évènement se déclenche après after the <code>show.bs.popover</code> event when the popover template has been added to the DOM.</td>
     </tr>
   </tbody>
 </table>
 
 {{% highlight js %}}
 $('#myPopover').on('hidden.bs.popover', function () {
-  // do something…
+  // Fait quelque chose…
 })
 {{% /highlight %}}
