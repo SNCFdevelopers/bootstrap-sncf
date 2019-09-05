@@ -1,22 +1,23 @@
 ---
 layout: docs
-title: Sami
+title: SAMI
+description: Indicateurs de performance
 group: components
 toc: true
 url: /docs/4.3/components/sami/
 ---
 
-There are several performance indicators. The most common is: 
+Il y a plusieurs indicateurs de performance. Les plus courants sont :
 
-- Satisfactory
-- Meets expectations
-- Improvement needed
-- Unsatisfactory.
+- Satisfaisant
+- Améliorations attendues
+- Moyennement satisfaisant
+- Insuffisant
 
-You can also use emoticons (to indicate satisfaction, quality, etc.). These components can be either clickable (if data must be entered) or unclickable if they are for display only.
+Vous pouvez également utiliser des émoticones (pour indiquer la satisfaction, la qualité, etc.). Ces composants sont par ailleurs cliquables (si une donnée doit être entrée) ou non cliquables s'ils sont à destination d'affichage seulement.
 
 {{% example html %}}
-<span class="pr-3">Click me!</span>
+<span class="pr-3">Cliquez sur moi !</span>
 <input type="checkbox" class="sr-only" id="samigreen">
 <label for="samigreen" class="sami sami-checkbox-green">S</label>
 <input type="checkbox" class="sr-only" id="samiblue">
@@ -30,7 +31,7 @@ You can also use emoticons (to indicate satisfaction, quality, etc.). These comp
 {{% /example %}}
 
 {{% example html %}}
-<span class="pr-3">Click me!</span>
+<span class="pr-3">Cliquez sur moi !</span>
 
 <input type="checkbox" class="sr-only" id="smileysgreen">
 <label for="smileysgreen" class="sami sami-checkbox-green">
