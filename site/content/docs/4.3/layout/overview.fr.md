@@ -1,7 +1,8 @@
 ---
 layout: docs
-title: Overview
-description: Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, and responsive utility classes.
+title: Vue d'ensemble
+slug: vue-d-ensemble
+description: Composants et options pour mettre en page votre projet avec Bootstrap SNCF, notamment l'encapsulage de containers, le puissant système de grille et les utilitaires de classes adaptatives (_responsive_).
 group: layout
 aliases: "/docs/4.3/layout/"
 toc: true
@@ -9,11 +10,11 @@ toc: true
 
 ## Containers
 
-Containers are the most basic layout element in Bootstrap and are **required when using our default grid system**. While containers *can* be nested, most layouts do not require a nested container.
+Les conteneurs sont les éléments de présentation les plus élémentaires de Bootstrap et sont **obligatoires pour l’utilisation de notre système de grille par défaut**. Bien que les conteneurs _puissent_ être imbriqués, la plupart des mises en page ne nécessitent pas de conteneur imbriqué.
 
-### All-in-one
+### « Tout en un »
 
-Our default `.container` class is a responsive, fixed-width container, meaning its `max-width` changes at each breakpoint.
+Notre classe par défaut `.container` est un container adaptatif, à largeur fixe, ce qui signifie que sa largeur maximale varie à chaque point d'arrêt.
 
 <div class="bd-example">
   <div class="example-container-element col-6 p-3 mx-auto">
@@ -23,13 +24,13 @@ Our default `.container` class is a responsive, fixed-width container, meaning i
 
 {{< highlight html >}}
 <div class="container">
-  <!-- Content here -->
+  <!-- Contenu ici -->
 </div>
 {{< /highlight >}}
 
-### Fluid
+### Fluide
 
-Use `.container-fluid` for a full width container, spanning the entire width of the viewport.
+Utilisez `.container-fluid` pour un container qui prenne toute la largeur de la vue ou de l'écran.
 
 <div class="bd-example">
   <div class="example-container-element p-3">
@@ -43,9 +44,9 @@ Use `.container-fluid` for a full width container, spanning the entire width of 
 </div>
 {{< /highlight >}}
 
-### Responsive
+### Adaptatif (_responsive_)
 
-Responsive containers are new in Bootstrap v4.4. They allow you to specify a class that is 100% wide until particular breakpoint is reached and a `max-width` is applied. For example, `.container-sm` is 100% wide to start until the `sm` breakpoint is reached, where it will remain through the higher breakpoints.
+Les conteneurs réactifs sont nouveaux dans Bootstrap v4. Ils vous permettent de spécifier une classe pleine largeur jusqu'à ce qu'un point d'arrêt particulier soit atteint et qu'une `max-width` soit appliquée. Par exemple, `.container-sm` a une largeur de 100% pour commencer, jusqu'à ce que le point d'arrêt de `sm` soit atteint, où il restera jusqu'aux points d'arrêt les plus élevés.
 
 <div class="bd-example">
   <div class="example-container-element p-3 mb-3">
@@ -63,39 +64,39 @@ Responsive containers are new in Bootstrap v4.4. They allow you to specify a cla
 <div class="container-xl">100% wide until extra large breakpoint</div>
 {{< /highlight >}}
 
-## Responsive breakpoints
+## Points d'arrêts adaptatifs
 
-Since Bootstrap is developed to be mobile first, we use a handful of [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.
+Depuis que Bootstrap est développé pour être d'abord mobile, nous utilisons quelques [requêtes média (_media queries_)](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) pour créer des points de rupture sensibles pour nos mises en page. et interfaces. Ces points d'arrêt sont principalement basés sur les largeurs minimales de la fenêtre d'affichage et nous permettent de redimensionner des éléments lorsque la fenêtre d'affichage change.
 
-Bootstrap primarily uses the following media query ranges—or breakpoints—in our source Sass files for our layout, grid system, and components.
+Bootstrap utilise principalement les plages de requête média suivantes (ou points d'arrêt) dans nos fichiers Sass source pour notre structure, notre système de grille et nos composants.
 
 {{< highlight scss >}}
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
+// Ecrans très petits (téléphones en mode portrait, moins de 576px)
+// Pas de requêtes media (_media query_) pour `xs` puisque c'est la taille par défaut dans Bootstrap
 
-// Small devices (landscape phones, 576px and up)
+// Petits écrans (téléphones en mode paysage, 576px et au delà)
 @media (min-width: 576px) { ... }
 
-// Medium devices (tablets, 768px and up)
+// Écrans de taille moyenne (tablettes, 768px et au delà)
 @media (min-width: 768px) { ... }
 
-// Large devices (desktops, 1024px and up)
+// Écrans larges (ordinateurs de bureau, 1024px et au delà)
 @media (min-width: 1024px) { ... }
 
-// Extra large devices (large desktops, 1280px and up)
+// Écrans très larges (1280px and up)
 @media (min-width: 1280px) { ... }
 {{< /highlight >}}
 
-Since we write our source CSS in Sass, all our media queries are available via Sass mixins:
+Comme nous écrivons notre code source CSS en Sass, toutes nos requêtes média sont disponibles depuis des mixins Sass :
 
 {{< highlight scss >}}
-// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+// Pas de requêtes média nécessaires pour le point de rupture `xs`, puisqu'il s'agît effectivement de `@media (min-width: 0) { ... }`
 @include media-breakpoint-up(sm) { ... }
 @include media-breakpoint-up(md) { ... }
 @include media-breakpoint-up(lg) { ... }
 @include media-breakpoint-up(xl) { ... }
 
-// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+// Exemple : Masquer dès `min-width: 0`, et ensuite afficher au point de rupture `sm`
 .custom-class {
   display: none;
 }
@@ -106,39 +107,39 @@ Since we write our source CSS in Sass, all our media queries are available via S
 }
 {{< /highlight >}}
 
-We occasionally use media queries that go in the other direction (the given screen size *or smaller*):
+Occasionnellement nous utilisons des requêtes media qui vont dans une autre direction (taille d'écran donnée _ou plus petite_) :
 
 {{< highlight scss >}}
-// Extra small devices (portrait phones, less than 576px)
+// Ecrans très petits (téléphones en mode portrait, moins de 576px)
 @media (max-width: 575.98px) { ... }
 
-// Small devices (landscape phones, less than 768px)
+// Petits écrans (téléphones en mode paysage, moins de 768px)
 @media (max-width: 767.98px) { ... }
 
-// Medium devices (tablets, less than 1024px)
+// Écrans de taille moyenne (tablettes, moins de 1024px)
 @media (max-width: 1023.98px) { ... }
 
-// Large devices (desktops, less than 1280px)
+// Écrans larges (ordinateurs de bureau, moins de 1280px)
 @media (max-width: 1279.98px) { ... }
 
-// Extra large devices (large desktops)
-// No media query since the extra-large breakpoint has no upper bound on its width
+// Écrans très larges
+// Pas de requêtes media puisque le point de rupture extra-large n'a pas de limite à sa largeur
 {{< /highlight >}}
 
 {{< callout info >}}
-{{< partial "callout-info-mediaqueries-breakpoints.md" >}}
+{{< partial "callout-info-mediaqueries-breakpoints.fr.md" >}}
 {{< /callout >}}
 
-Once again, these media queries are also available via Sass mixins:
+Une fois encore, ces requêtes média sont aussi disponibles avec des mixins Sass :
 
 {{< highlight scss >}}
 @include media-breakpoint-down(xs) { ... }
 @include media-breakpoint-down(sm) { ... }
 @include media-breakpoint-down(md) { ... }
 @include media-breakpoint-down(lg) { ... }
-// No media query necessary for xl breakpoint as it has no upper bound on its width
+// Pas de requête média nécessaire pour les points de rupture `xl` n'ayant pas de limite de largeur
 
-// Example: Style from medium breakpoint and down
+// Exemple : Style appliqué depuis le point de rupture moyen `md` et en dessous
 @include media-breakpoint-down(md) {
   .custom-class {
     display: block;
@@ -146,26 +147,33 @@ Once again, these media queries are also available via Sass mixins:
 }
 {{< /highlight >}}
 
-There are also media queries and mixins for targeting a single segment of screen sizes using the minimum and maximum breakpoint widths.
+Il existe également des requêtes médias et mixins pour cibler un segment simple de tailles d'écrans en utilisant des largeurs minimales et maximales comme point de rupture.
+
+// Ecrans très petits (téléphones en mode portrait, moins de 576px)
+// Petits écrans (téléphones en mode paysage, 576px et au delà)
+// Écrans de taille moyenne (tablettes, 768px et au delà)
+// Écrans larges (ordinateurs de bureau, 1024px et au delà)
+// Écrans très larges (1280px and up)
+
 
 {{< highlight scss >}}
-// Extra small devices (portrait phones, less than 576px)
+// Ecrans très petits (téléphones en mode portrait, moins de 576px)
 @media (max-width: 575.98px) { ... }
 
-// Small devices (landscape phones, 576px and up)
+// Petits écrans (téléphones en mode paysage, 576px et au delà)
 @media (min-width: 576px) and (max-width: 767.98px) { ... }
 
-// Medium devices (tablets, 768px and up)
+// Écrans de taille moyenne (tablettes, 768px et au delà)
 @media (min-width: 768px) and (max-width: 991.98px) { ... }
 
-// Large devices (desktops, 1024px and up)
+// Écrans larges (ordinateurs de bureau, 1024px et au delà)
 @media (min-width: 1024px) and (max-width: 1023.98px) { ... }
 
-// Extra large devices (large desktops, 1280px and up)
+// Écrans très larges (1280px and up)
 @media (min-width: 1280px) { ... }
 {{< /highlight >}}
 
-These media queries are also available via Sass mixins:
+Requêtes média aussi disponibles avec des mixins Sass :
 
 {{< highlight scss >}}
 @include media-breakpoint-only(xs) { ... }
@@ -175,15 +183,15 @@ These media queries are also available via Sass mixins:
 @include media-breakpoint-only(xl) { ... }
 {{< /highlight >}}
 
-Similarly, media queries may span multiple breakpoint widths:
+De la même manière les requêtes média peuvent couvrir plusieurs largeurs de points de rupture :
 
 {{< highlight scss >}}
-// Example
-// Apply styles starting from medium devices and up to extra large devices
+// Exemple
+// Appliquer les styles depuis des écrans de taille moyenne jusqu'à extra-large
 @media (min-width: 768px) and (max-width: 1199.98px) { ... }
 {{< /highlight >}}
 
-The Sass mixin for targeting the same screen size range would be:
+La mixin Sass pour cibler la même amplitude de tailles d'écran serait :
 
 {{< highlight scss >}}
 @include media-breakpoint-between(md, xl) { ... }
@@ -191,11 +199,11 @@ The Sass mixin for targeting the same screen size range would be:
 
 ## Z-index
 
-Several Bootstrap components utilize `z-index`, the CSS property that helps control layout by providing a third axis to arrange content. We utilize a default z-index scale in Bootstrap that's been designed to properly layer navigation, tooltips and popovers, modals, and more.
+Plusieurs composants Bootstrap utilisent `z-index`, la propriété CSS qui permet de contrôler la mise en page en fournissant un troisième axe pour organiser le contenu. Dans Bootstrap, nous utilisons une échelle d'`index-z` conçue par défaut  pour superposer correctement la navigation, les info-bulles et les bulles contextuelles, fenêtres modales, etc.
 
-These higher values start at an arbitrary number, high and specific enough to ideally avoid conflicts. We need a standard set of these across our layered components—tooltips, popovers, navbars, dropdowns, modals—so we can be reasonably consistent in the behaviors. There's no reason we couldn't have used `100`+ or `500`+.
+Les valeurs les plus élevées commencent par un nombre arbitraire, élevé et suffisamment spécifique pour éviter idéalement les conflits. Nous avons besoin d'un ensemble standard de ces composants dans nos composants en couches (info-bulles, bulles contextuelles, fenêtres modales, barres de navigation, menus déroulants) pour que nous puissions être raisonnablement cohérents dans les comportements. Il n'y a aucune raison pour laquelle nous n'aurions pas pu utiliser `100` ou `500` par exemple.
 
-We don't encourage customization of these individual values; should you change one, you likely need to change them all.
+Nous n'encourageons pas la personnalisation de ces valeurs individuelles : **si vous en changez un, vous devrez probablement les changer tous**.
 
 {{< highlight scss >}}
 $zindex-dropdown:          1000 !default;
@@ -207,4 +215,4 @@ $zindex-popover:           1060 !default;
 $zindex-tooltip:           1070 !default;
 {{< /highlight >}}
 
-To handle overlapping borders within components (e.g., buttons and inputs in input groups), we use low single digit `z-index` values of `1`, `2`, and `3` for default, hover, and active states. On hover/focus/active, we bring a particular element to the forefront with a higher `z-index` value to show their border over the sibling elements.
+Pour gérer les bordures qui se chevauchent dans les composants (par exemple, les boutons et les champs dans les groupes d'entrées), nous utilisons des valeurs `z-index` à un seul chiffre de `1`, `2` et `3` pour les états par défaut, survolé et actif. En survol/focus/actif, nous mettons au premier plan un élément particulier avec une valeur `z-index` supérieure pour afficher sa bordure sur les éléments frères.
