@@ -9,7 +9,7 @@ url: /docs/4.3/content/typography/
 
 ## Headings
 
-All HTML headings, `<h1>` through `<h2>`, are available.
+Only HTML headings `<h1>` and `<h2>` are available in SNCF's design.
 
 <div class="table-wrapper">
   <div class="table-scroller dragscroll">
