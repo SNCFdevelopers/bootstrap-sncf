@@ -1,14 +1,15 @@
 ---
 layout: docs
-title: Navbars
+title: Barres de navigation
+slug: barres-de-navigation
 group: layout
 toc: true
-url: /docs/4.3/layout/navbars/
+url: /docs/4.3/layout/barres-de-navigation/
 ---
 
-## Galactic bar
+## Barre galactique
 
-By default, the page has a header, a main navbar, a section header and a content area. The header contains the website’s logo, a search function, notifications and a user account menu. The user account menu lets the user manage account settings and/or preferences and log out.
+Par défaut, la page comporte un en-tête, une barre de navigation principale, une en-tête de section et une zone de contenu. L’en-tête contient le logo du site Web, une fonction de recherche, des notifications et un menu de compte d’utilisateur. Le menu du compte utilisateur permet à l'utilisateur de gérer les paramètres du compte et/ou les préférences, et de se déconnecter.
 
 {{< example html >}}
 {{< includenav.inline >}}
@@ -16,17 +17,17 @@ By default, the page has a header, a main navbar, a section header and a content
 {{< /includenav.inline >}}
 {{< /example >}}
 
-### Use "métier" signature logos
+### Utiliser les logos des signatures "métier"
 
 {{% callout warning %}}
-SNCF's logo should be used by default for all "métier" applications, especially for _SNCF Mobilités_.
+Le logo SNCF doit être utilisé par défaut pour toutes les applications « métier », notamment pour _SNCF Mobilités_.
 {{% /callout %}}
 
-You could use SNCF's logos with "métier" signature. In this case, please use monochromatic logo versions for accessibility reasons. Indeed, "métier" signature is violet colored and will not be visible on carbon background.
+Vous pouvez utiliser le logo SNCF avec la signature « métier ». Dans ce cas, merci de préférer les versions monochromes pour des raisons d'accessibilité — la couleur de police des signatures est le violet ce qui le rend difficilement lisible sur le fond _carbon_.
 
-For reference, you can consult all the rules about using logos [on this page](https://www.sncf.com/fr/groupe/marques/sncf/logo-sncf), and [here](https://www.sncf.com/fr/groupe/marques/sncf/signatures-metiers) for "métier" signatures.
+Pour référence, vous pouvez consulter toutes les règles concernant les logos [sur cette page du site de l'identité SNCF](https://www.sncf.com/fr/groupe/marques/sncf/logo-sncf), et [ici](https://www.sncf.com/fr/groupe/marques/sncf/signatures-metiers) pour les signatures « métier ».
 
-We've added "métier" signatures logos to perfectly fit into `mastheader` navbar :
+Les logos des signatures métier sont intégrées dans Bootstrap SNCF de façon à parfaitement s'intégrer dans la balise `mastheader` de la barre de navigation :
 
 <div class="bd-example">
   <div class="row">
@@ -91,12 +92,12 @@ We've added "métier" signatures logos to perfectly fit into `mastheader` navbar
 </div>
 {{% /highlight %}}
 
-## Vertical Nav
+## Barre de navigation verticale
 
-Readers can use the main navbar—a menu on the left-hand side of the website—to navigate to the main sections of the application. We recommend blocking landscape mode for tablets when site navigation is complex due to a deep tree structure.
+Il est possible d'utiliser une barre principale de navigation — un menu latéral gauche — pour naviguer entre les sections principales d'une application. Nous recommandons l'usage du mode paysage pour les tablettes lorsque la navigation se fait dans une arborescence complexe.
 
 {{% callout info %}}
-Pro-tip : reduce your browser's size or use mobile utilities to see the horizontal state of _vertical nav_ in mobile mode.
+Pro-tip : réduisez la taille de la fenêtre de votre navigateur ou utilisez les vues « mobiles » (<kbd>CTRL</kbd> + <kbd>MAJ</kbd> + <kbd>M</kbd> sur Firefox) pour vous rendre compte de l'état horizontal de cette barre de navigation verticale lorsque la largeur est réduite, ou vision mobile.
 {{% /callout %}}
 
 {{% example html %}}

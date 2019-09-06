@@ -1,18 +1,19 @@
 ---
 layout: docs
-title: Navs
+title: Navigation, onglets
+slug: navigation-onglets
 group: layout
 toc: true
-url: /docs/4.3/layout/navs/
+url: /docs/4.3/layout/navigation-onglets
 ---
 
-Section header bars are displayed under the header and show the section header, and depending on use, the sub-menus as tabs, display modes, context search and other actions (edit, delete, filter, etc.).
+Les barres d'en-tête de section sont affichées sous l'en-tête et indiquent l'en-tête de section et, en fonction de l'utilisation, les sous-menus sous forme d'onglets, modes d'affichage, recherche de contexte et autres actions (édition, suppression, filtrage, etc.).
 
-For mobiles, an arrow to the left of the section returns the reader to the previous page.  For tablets and desktops, breadcrumbs (see ["breadcrumbs section"]({{< docsref "/components/breadcrumb" "" >}})) should go above the section header. Tabs are placed under the section header so users can navigate in subsections.
+Pour les mobiles, une flèche à gauche de la section ramène le lecteur à la page précédente. Le _fil d'ariane_ pour les tablettes et les ordinateurs de bureau (voir la section [fil d'ariane]({{< docsref "/components/breadcrumb" "" >}})) devrait se placer au-dessus de l'en-tête de la section. Les onglets sont eux placés sous l'en-tête de la section afin que les utilisateurs puissent naviguer dans les sous-sections.
 
-You can also add a set of steps when the user has to execute a series of tasks across multiple pages (to indicate  progress with each step, see [steps indicators]({{< docsref "/components/progress" "#steps-indicator" >}})).
+Vous pouvez également ajouter un ensemble d'étapes lorsque l'utilisateur doit exécuter une série de tâches sur plusieurs pages (pour indiquer la progression de chaque étape, voir [les indicateurs d'étapes]({{< docsref "/components/progress" "#steps-indicator" >}})).
 
-## Simple action bar
+## Barre d'action simple
 
 {{% example html %}}
 <div class="actionbar">
@@ -42,7 +43,7 @@ You can also add a set of steps when the user has to execute a series of tasks a
 </div>
 {{% /example %}}
 
-## Tabs
+## Onglets
 
 {{% example html %}}
 <div class="actionbar">
@@ -68,7 +69,7 @@ You can also add a set of steps when the user has to execute a series of tasks a
 </div>
 {{% /example %}}
 
-## Action bar with tabs
+## Barre d'action avec onglets
 
 {{% example html %}}
 <div class="actionbar has-tabs">
@@ -138,32 +139,32 @@ You can also add a set of steps when the user has to execute a series of tasks a
 </div>
 {{% /example %}}
 
-## Title section
+## Section de titre
 
 {{% example html %}}
 <div class="actionbar">
   <div class="actionbar-head">
-    <h1 class="mb-0"><a href="#"><i class="icons-arrow-prev icons-size-x75 mr-2"></i>Titre section</a></h1>
+    <h1 class="mb-0"><a href="#"><i class="icons-arrow-prev icons-size-x75 mr-2"></i>Section de titre</a></h1>
   </div>
 </div>
 {{% /example %}}
 
-## Breadcrumbs
+## Fil d'ariane
 
 {{% example html %}}
 <div class="actionbar">
   <div class="actionbar-head">
     <nav role="navigation" aria-label="Vous êtes : ">
       <ol class="breadcrumb breadcrumb-lg mb-0 p-0">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Library</li>
+        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contenu</li>
       </ol>
     </nav>
   </div>
 </div>
 {{% /example %}}
 
-## Title section with steps indicators
+## Titre de section avec indicateur d'étapes
 
 {{% example html %}}
 <div class="actionbar has-tabs">
@@ -172,7 +173,7 @@ You can also add a set of steps when the user has to execute a series of tasks a
     <ul class="toolbar mb-0 d-none d-md-flex">
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
-          <span class="sr-only">Edit</span>
+          <span class="sr-only">Edition</span>
           <i class="icons-pencil icons-size-1x25"></i>
         </button>
       </li>
@@ -185,27 +186,27 @@ You can also add a set of steps when the user has to execute a series of tasks a
           <div class="dropdown-menu dropdown-menu-right" id="mycontrol-actionbar2">
             <ul>
               <li class="dropdown-item"><a href="#">Action</a></li>
-              <li class="dropdown-item"><a href="#">Another action</a></li>
-              <li class="dropdown-item"><a href="#">Something else here</a></li>
+              <li class="dropdown-item"><a href="#">Une autre action</a></li>
+              <li class="dropdown-item"><a href="#">Encore une autre action</a></li>
             </ul>
           </div>
         </div>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
-          <span class="sr-only">List</span>
+          <span class="sr-only">Liste</span>
           <i class="icons-list icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
-          <span class="sr-only">Search</span>
+          <span class="sr-only">Recherche</span>
           <i class="icons-search icons-size-1x25"></i>
         </button>
       </li>
       <li class="toolbar-item">
         <button class="btn btn-sm btn-transparent btn-color-gray toolbar-item-spacing">
-          <span class="sr-only">Filters</span>
+          <span class="sr-only">Filtres</span>
           <i class="icons-filters icons-size-1x25"></i>
         </button>
       </li>
@@ -213,21 +214,21 @@ You can also add a set of steps when the user has to execute a series of tasks a
   </div>
   <nav role="navigation" aria-label="Étapes" class="d-none d-md-flex">
     <ol class="breadcrumb mt-2 mb-0">
-      <li class="breadcrumb-item"><a href="#">Step 1</a></li>
-      <li class="breadcrumb-item active" aria-current="step">Step 2</li>
-      <li class="breadcrumb-item disabled"><a href="#">Step 3</a></li>
-      <li class="breadcrumb-item disabled"><a href="#">Step 4</a></li>
+      <li class="breadcrumb-item"><a href="#">Étape 1</a></li>
+      <li class="breadcrumb-item active" aria-current="step">Étape 2</li>
+      <li class="breadcrumb-item disabled"><a href="#">Étape 3</a></li>
+      <li class="breadcrumb-item disabled"><a href="#">Étape 4</a></li>
     </ol>
   </nav>
 </div>
 {{% /example %}}
 
-## Title section witch search box
+## Section de titre avec champ de recherche
 
 {{% example html %}}
 <div class="actionbar">
   <div class="actionbar-head d-none d-md-flex">
-    <h1 class="mb-0">Titre section</h1>
+    <h1 class="mb-0">Section de titre</h1>
     <div class="d-flex align-items-center">
       <label for="rechercheveille" class="font-weight-medium text-nowrap pr-3 mb-0">Sélectionner un plan de veille</label>
       <div class="input-group align-items-center">
@@ -246,7 +247,7 @@ You can also add a set of steps when the user has to execute a series of tasks a
           </button>
         </div>
         <button type="button" class="btn btn-only-icon btn-white d-block d-md-none" data-role="close">
-          <span class="sr-only">Close search</span>
+          <span class="sr-only">Fermer la recherche</span>
           <i class="icons-close icons-size-1x25"></i>
         </button>
       </div>
@@ -255,10 +256,10 @@ You can also add a set of steps when the user has to execute a series of tasks a
 </div>
 {{% /example %}}
 
-## Contextual menu
+## Menu contextuel
 
 {{% callout info %}}
-The contextual menu uses the dropdown component [described here]({{< docsref "/components/dropdowns" >}}).
+Le menu contextuel utilise le composant menu déroulant [présenté ici]({{< docsref "/components/dropdowns" >}}).
 {{% /callout %}}
 
 {{% example html %}}
@@ -277,7 +278,7 @@ The contextual menu uses the dropdown component [described here]({{< docsref "/c
 </div>
 {{% /example %}}
 
-### With icons
+### Avec icones
 
 {{% example html %}}
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="mycontrol-icons">
@@ -289,31 +290,33 @@ The contextual menu uses the dropdown component [described here]({{< docsref "/c
   </div>
 {{% /example %}}
 
-## Display modes
+## Modes d'afficage
 
-### Default
+### Par défaut
+
 {{% example html %}}
 <i class="icons-list"></i>
 {{% /example %}}
 
-### Clic/tap
+### Au clic/tapotage
+
 {{% example html %}}
 <i class="icons-mosaic"></i>
 {{% /example %}}
 
 ## Pagination
 
-There is a [dedicated topic]({{< docsref "/components/pagination" >}}) for this component.
+Consultez le [sujet dédié]({{< docsref "/components/pagination" >}}) à ce composant.
 
-## Javascript tabs behavior
+## Comportement des onglets avec javascript
 
-Dynamic tabbed interfaces, as described in the [<abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr> Authoring Practices](https://www.w3.org/TR/wai-aria-practices/#tabpanel), require `role="tablist"`, `role="tab"`, `role="tabpanel"`, and additional `aria-` attributes in order to convey their structure, functionality and current state to users of assistive technologies (such as screen readers).
+Les interfaces dynamiques d'onglets, comme décrites dans le document [<abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr> Authoring Practices](https://www.w3.org/TR/wai-aria-practices/#tabpanel), nécessite `role="tablist"`, `role="tab"`, `role="tabpanel"`, et un attribut additionnel `aria-` de façon à correctement transmettre leur structure, leurs fonctionnalités et leur état courant aux utilisateurs de technologies d'assistance (comme les lecteurs d'écrans).
 
-Note that dynamic tabbed interfaces should <em>not</em> contain dropdown menus, as this causes both usability and accessibility issues. From a usability perspective, the fact that the currently displayed tab's trigger element is not immediately visible (as it's inside the closed dropdown menu) can cause confusion. From an accessibility point of view, there is currently no sensible way to map this sort of construct to a standard WAI ARIA pattern, meaning that it cannot be easily made understandable to users of assistive technologies.
+Veuillez noter que les interfaces dynamiques d'onglets **ne proposent pas de menus déroulants** car cela cause des problèmes d'accessibilité et d'usabilité. D'un point de vue usuel, le fait que l'élément déclencheur de l'onglet actuellement affiché ne soit pas immédiatement visible (comme il se trouve dans le menu déroulant fermé) peut être source de confusion. Du point de vue de l'accessibilité, il n'existe actuellement aucun moyen judicieux de _mapper_ ce type de construction sur un modèle WAI ARIA standard, ce qui signifie qu'il est difficile de le rendre compréhensible pour les utilisateurs de technologies d'assistance.
 
 {{% callout warning %}}
-### Accessibility
-This components does not permit to navigate with keyboard arrow's, you have to use <kbd>TAB</kbd> or <kbd>SHIFT</kbd>+<kbd>TAB</kbd> and then <kbd>ENTER</kbd> to select a tab.
+### Accessibilité
+Ce composant ne permet pas de naviguer avec les flèches du clavier, vous devez utiliser <kbd>TAB</kbd> ou <kbd>SHIFT</kbd> + <kbd>TAB</kbd>, puis <kbd>ENTER</kbd> pour sélectionner un onglet.
 {{% /callout %}}
 
 <div class="bd-example">
@@ -388,9 +391,9 @@ This components does not permit to navigate with keyboard arrow's, you have to u
 </div>
 {{% /highlight %}}
 
-### Via JavaScript
+### En JavaScript
 
-Enable tabbable tabs via JavaScript (each tab needs to be activated individually):
+Activer les onglets via JavaScript (chaque onglet doit être activé individuellement) :
 
 {{% highlight js %}}
 $('#myTab a').on('click', function (e) {
@@ -399,59 +402,59 @@ $('#myTab a').on('click', function (e) {
 })
 {{% /highlight %}}
 
-You can activate individual tabs in several ways:
+Vous pouvez activer des onglets individuels de plusieurs manières:
 
 {{% highlight js %}}
-$('#myTab a[href="#profile"]').tab('show') // Select tab by name
-$('#myTab li:first-child a').tab('show') // Select first tab
-$('#myTab li:last-child a').tab('show') // Select last tab
-$('#myTab li:nth-child(3) a').tab('show') // Select third tab
+$('#myTab a[href="#profile"]').tab('show') // Sélectionner l'onglet par son nom
+$('#myTab li:first-child a').tab('show') // Sélectionner le premier onglet
+$('#myTab li:last-child a').tab('show') // Sélectionner le dernier onglet
+$('#myTab li:nth-child(3) a').tab('show') // Sélectionner le troisième onglet
 {{% /highlight %}}
 
-### Fade effect
+### Effet de fondu
 
-To make tabs fade in, add `.fade` to each `.tab-pane`. The first tab pane must also have `.show` to make the initial content visible.
+Pour rendre un effet de fondu sur les onglets, ajoutez `.fade` à chaque `.tab-pane`. Le premier volet d'onglet doit également contenir `.show` pour rendre le contenu initial visible.
 
 {{% highlight html %}}
 <div class="tab-content">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="accueil">...</div>
+  <div class="tab-pane fade" id="profil" role="tabpanel" aria-labelledby="profile-tab">...</div>
   <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
-  <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+  <div class="tab-pane fade" id="parametres" role="tabpanel" aria-labelledby="settings-tab">...</div>
 </div>
 {{% /highlight %}}
 
-### Methods
+### Methodes
 
 {{% callout danger %}}
-{{% partial "callout-danger-async-methods.md" %}}
+{{% partial "callout-danger-async-methods.fr.md" %}}
 {{% /callout %}}
 
 #### $().tab
 
-Activates a tab element and content container. Tab should have either a `data-target` or an `href` targeting a container node in the DOM.
+Active un onglet et un conteneur de contenu. L'onglet devrait avoir un `data-target` ou un` href` ciblant un nœud de conteneur dans le DOM.
 
 {{% highlight html %}}
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    <a class="nav-link active" id="accueil-tab" data-toggle="tab" href="#home" role="tab" aria-controls="accueil" aria-selected="true">Accueil</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    <a class="nav-link" id="profil-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profil</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+    <a class="nav-link" id="parametres-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="parametres" aria-selected="false">Paramètres</a>
   </li>
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane active" id="accueil" role="tabpanel" aria-labelledby="accueil-tab">...</div>
+  <div class="tab-pane" id="profil" role="tabpanel" aria-labelledby="profil-tab">...</div>
   <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
-  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+  <div class="tab-pane" id="parametres" role="tabpanel" aria-labelledby="parametres-tab">...</div>
 </div>
 
 <script>
@@ -463,7 +466,7 @@ Activates a tab element and content container. Tab should have either a `data-ta
 
 #### .tab('show')
 
-Selects the given tab and shows its associated pane. Any other tab that was previously selected becomes unselected and its associated pane is hidden. **Returns to the caller before the tab pane has actually been shown** (i.e. before the `shown.bs.tab` event occurs).
+Sélectionne l'onglet donné et affiche le volet associé. Tout autre onglet précédemment sélectionné devient désélectionné et son volet associé est masqué. **Le retour de la fonction se fait avant que le volet d'onglet ne soit réellement affiché** (c'est-à-dire avant l'événement `shown.bs.tab`).
 
 {{% highlight js %}}
 $('#someTab').tab('show')
@@ -471,49 +474,49 @@ $('#someTab').tab('show')
 
 #### .tab('dispose')
 
-Destroys an element's tab.
+Détruit un composant d'onglets.
 
-### Events
+### Évènements
 
-When showing a new tab, the events fire in the following order:
+Lorsqu'on change d'onglet, cet évènement se déclenche dans l'ordre suivant :
 
-1. `hide.bs.tab` (on the current active tab)
-2. `show.bs.tab` (on the to-be-shown tab)
-3. `hidden.bs.tab` (on the previous active tab, the same one as for the `hide.bs.tab` event)
-4. `shown.bs.tab` (on the newly-active just-shown tab, the same one as for the `show.bs.tab` event)
+1. `hide.bs.tab` (sur l'onglet actif)
+2. `show.bs.tab` (sur l'onglet à afficher)
+3. `hidden.bs.tab` (sur l'onglet précédemment actif, celui concerné par l'évènement `hide.bs.tab`)
+4. `shown.bs.tab` (sur l'onglet nouvellement actif, celui concerné par l'évènement `show.bs.tab`)
 
-If no tab was already active, then the `hide.bs.tab` and `hidden.bs.tab` events will not be fired.
+Si aucun onglet n'était déjà actif, alors les évènements `hide.bs.tab` et `hidden.bs.tab` ne seront pas déclenchés.
 
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th scope="col" style="width: 150px;">Event Type</th>
+      <th scope="col" style="width: 150px;">Type d'évènement</th>
       <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>show.bs.tab</td>
-      <td>This event fires on tab show, but before the new tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+      <td>Cet évènement se déclenche à la visualisation d'un onglet, mais avant qu'il soit visible. Utilisez <code>event.target</code> et <code>event.relatedTarget</code> pour cibler respectivement l'onglet actif et l'onglet précédemment actif (si disponible).</td>
     </tr>
     <tr>
       <td>shown.bs.tab</td>
-      <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+      <td>Cet évènement se déclenche à la visualisation d'un onglet, une fois qu'il ait été rendu visible. Utilisez <code>event.target</code> et <code>event.relatedTarget</code> pour cibler respectivement l'onglet actif et l'onglet précédemment actif (si disponible).</td>
     </tr>
     <tr>
       <td>hide.bs.tab</td>
-      <td>This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use <code>event.target</code> and <code>event.relatedTarget</code> to target the current active tab and the new soon-to-be-active tab, respectively.</td>
+      <td>Cet évènement se déclenche à la visualisation d'un nouvel onglet et qu'un onglet précédemment actif va être masqué. Utilisez <code>event.target</code> et <code>event.relatedTarget</code> pour cibler respectivement l'onglet actif et l'onglet qui sera bientôt actif.</td>
     </tr>
     <tr>
       <td>hidden.bs.tab</td>
-      <td>This event fires after a new tab is shown (and thus the previous active tab is hidden). Use <code>event.target</code> and <code>event.relatedTarget</code> to target the previous active tab and the new active tab, respectively.</td>
+      <td>Cet évènement se déclenche après qu'un nouvel onglet ait été rendu visible, et qu'un onglet précédemment actif soit masqué. Utilisez <code>event.target</code> et <code>event.relatedTarget</code> pour cibler respectivement l'onglet précédemment actif et l'onglet nouvellement actif.</td>
     </tr>
   </tbody>
 </table>
 
 {{% highlight js %}}
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-  e.target // newly activated tab
-  e.relatedTarget // previous active tab
+  e.target // Onglet nouvellement actif
+  e.relatedTarget // Onglet précdemment actif
 })
 {{% /highlight %}}
