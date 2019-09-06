@@ -5,7 +5,7 @@ slug: bulles-contextuelles
 description: Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
 group: components
 toc: true
-url: /docs/4.3/components/popovers/
+url: /docs/4.3/components/bulles-contextuelles/
 ---
 
 ## Vue d'ensemble
@@ -26,7 +26,7 @@ Choses à savoir pour utiliser ce composant :
 
 Voyons maintenant comment les bulles contextuelles fonctionnent à travers plusieurs exemples.
 
-## Exemple : Activer les bulles contextuelles sur toute la pages
+## Exemple : Activer les bulles contextuelles sur toute la page
 
 Une manière d'initialiser toutes les bulles contextuelles sur une page est de les sélectionner à travers leur attribut `data-toggle` :
 
@@ -262,7 +262,7 @@ Les options peuvent être renseignées via les attributs `data-`. Pour ces derni
       <td>trigger</td>
       <td>string</td>
       <td>'click'</td>
-      <td>Manières de déclencher la bulle contextuelle — click | hover | focus | manual. Il est possible d'en choisir plusieurs, séparés par un espace, sauf pour `manual` qui ne peut être combiné avec une autre.</td>
+      <td>Manières de déclencher la bulle contextuelle : click | hover | focus | manual. Il est possible d'en choisir plusieurs, séparés par un espace, sauf pour `manual` qui ne peut être combiné avec une autre.</td>
     </tr>
     <tr>
       <td>offset</td>
@@ -288,7 +288,7 @@ Les options peuvent être renseignées via les attributs `data-`. Pour ces derni
 {{% callout info %}}
 #### Attributs `data-` pour les bulles contextuelles individuelles
 
-Les options pour les bulles contextuelles indidivuelles peuvent alternativement être spécifiées via des attributs `data-` comme expliqué plus haut.
+Les options pour les bulles contextuelles individuelles peuvent alternativement être spécifiées via des attributs `data-` comme expliqué plus haut.
 {{% /callout %}}
 
 ### Methodes
@@ -303,19 +303,19 @@ Initialise les bulles contextuelles pour une collection d'éléments.
 
 #### `.popover('show')`
 
-Affiche une bulle contextuelle. **Le retour à la fonction appelante se fait avant que la bulle soit visible** (par exemple, avant que l'évènement `shown.bs.popover` soit déclenché). Cela est considéré comme un déclenchement manuel — si le titre `title` et le contenu sont vides, la bulle n'est jamais affichée.
+Affiche une bulle contextuelle. **Le retour à la fonction appelante se fait avant que la bulle ne soit visible** (par exemple, avant que l'évènement `shown.bs.popover` soit déclenché). Cela est considéré comme un déclenchement manuel — si le titre `title` et le contenu sont vides, la bulle n'est jamais affichée.
 
 {{% highlight js %}}$('#element').popover('show'){{% /highlight %}}
 
 #### `.popover('hide')`
 
-Masque une bulle contextuelle. **Le retour à la fonction appelante se fait avant que la bulle soit visible** (par exemple, avant que l'évènement `hidden.bs.popover` soit déclenché). Cela est considéré comme un déclenchement manuel.
+Masque une bulle contextuelle. **Le retour à la fonction appelante se fait avant que la bulle ne soit masquée** (par exemple, avant que l'évènement `hidden.bs.popover` soit déclenché). Cela est considéré comme un déclenchement manuel.
 
 {{% highlight js %}}$('#element').popover('hide'){{% /highlight %}}
 
 #### `.popover('toggle')`
 
-Alterne la visibilité d'une bulle contextuelle. **Le retour à la fonction appelante se fait avant que la bulle soit visible** (par exemple, avant que l'évènement `shown.bs.popover` ou `hidden.bs.popover` soient déclenchés). Cela est considéré comme un déclenchement manuel.
+Alterne la visibilité d'une bulle contextuelle. **Le retour à la fonction appelante se fait avant que la bulle soit visible ou masquée** (par exemple, avant que l'évènement `shown.bs.popover` ou `hidden.bs.popover` soient déclenchés). Cela est considéré comme un déclenchement manuel.
 
 {{% highlight js %}}$('#element').popover('toggle'){{% /highlight %}}
 
@@ -327,13 +327,13 @@ Masque et détruit le composant bulle contextuelle. Ceux qui utilisent une dél�
 
 #### `.popover('enable')`
 
-Donne à une bulle contextuelle la possibilité d'être affichée. **Les bulles contextuelles sont activées par défaut.**
+Donne à une bulle contextuelle la capacité d'être affichée. **Les bulles contextuelles sont activées par défaut.**
 
 {{% highlight js %}}$('#element').popover('enable'){{% /highlight %}}
 
 #### `.popover('disable')`
 
-Enlève la possibilité à une bulle contextuelle d'être affichée. Il faudra l'activer à nouveau pour pouvoir être déclenchée.
+Enlève la capacité à une bulle contextuelle d'être affichée. Il faudra l'activer à nouveau pour pouvoir être déclenchée.
 
 {{% highlight js %}}$('#element').popover('disable'){{% /highlight %}}
 
@@ -361,7 +361,7 @@ Met à jour la position d'un élément de bulle contextuelle.
   <tbody>
     <tr>
       <td>show.bs.popover</td>
-      <td>Cet évènement se déclenche immédiatement quand la méthode d'instance <code>show</code> est appelée.</td>
+      <td>Cet évènement se déclenche immédiatement quand la méthode d'instance <code>show</code> a été appelée.</td>
     </tr>
     <tr>
       <td>shown.bs.popover</td>
@@ -369,15 +369,15 @@ Met à jour la position d'un élément de bulle contextuelle.
     </tr>
     <tr>
       <td>hide.bs.popover</td>
-      <td>Cet évènement se déclenche immédiatement  when the <code>hide</code> instance method has been called.</td>
+      <td>Cet évènement se déclenche immédiatement quand la méthode d'instance <code>hide</code> a été appelée.</td>
     </tr>
     <tr>
       <td>hidden.bs.popover</td>
-      <td>Cet évènement se déclenche the popover has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+      <td>Cet évènement se déclenche quand la bulle contextuelle est devenue masquiée pour l'utilisateur, transitions CSS terminées.</td>
     </tr>
     <tr>
       <td>inserted.bs.popover</td>
-      <td>Cet évènement se déclenche après after the <code>show.bs.popover</code> event when the popover template has been added to the DOM.</td>
+      <td>Cet évènement se déclenche après l'évènement <code>show.bs.popover</code>, quand le code HTML de la bulle contextuelle ait été ajouté au DOM.</td>
     </tr>
   </tbody>
 </table>
