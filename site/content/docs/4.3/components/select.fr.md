@@ -1,20 +1,23 @@
 ---
 layout: docs
-title: Select
-description: Examples and usage guidelines for select.
+title: Listes déroulantes
+slug: listes-deroulantes
+description: Exemples et guide d'utilisation des listes déroulantes (select)
 group: components
 toc: true
-url: /docs/4.3/components/select/
+url: /docs/4.3/components/listes-deroulantes/
 ---
 
-## Default
+## Utilisation par défaut
 
-Drop-down lists let readers choose one or more options in a pre-defined list, using single selection or multiple selection. We recommend replacing radio buttons (single select) and check boxes (multiple select) with drop-down lists when there are many items to choose from. Items must appear in a logical order for readers (e.g., alphabetical or numerical order).
+Les listes déroulantes permettent aux lecteurs de choisir une ou plusieurs options dans une liste d'éléments pré-définis, utilisant la sélection individuelle ou multiple. Nous recommandons de remplacer les boutons radios (sélection simple) ou cases à cocher (sélections multiples) avec des listes déroulantes lorsqu'il y a beaucoup d'éléments dans lesquels choisir.
+Ces éléments doivent apparaître dans un ordre logique pour le lecteur (par exemple, alphabétique, numérique, etc.).
 
-Custom `<select>` menus need a custom class and data attribute, `.select-improved` to trigger the custom styles and `data-component="select-exclusive"` to trigger the custom javascript. Given the complexity and the different versions of the menu (simple, groups, input, etc), this one must be built in the markup.
+Les listes déroulantes personnalisées `<select>` nécessitent des classes et attributs également personnalisés, `.select-improved` pour déclencher les styles personnalisés et `data-component="select-exclusive"` pour déclencher le code JavaScript personnalisé.
+Étant donnée la complexité entre les différentes version d'une liste (simple, groupée, entrée, etc.), celle-ci doit être construite dans le code HTML.
 
 {{% example html %}}
-<label for="select1">Example select</label>
+<label for="select1">Liste déroulante d'exemple</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
@@ -49,12 +52,12 @@ Custom `<select>` menus need a custom class and data attribute, `.select-improve
 </div>
 {{% /example %}}
 
-### Select menu with additional input
+### Liste déroulante avec champ d'entrée supplémentaire
 
-Users can be offered the option of adding a new item to the list, but we suggest this be used sparingly, as it risks making the list longer with similar or even double entries.
+Il est possible d’offrir aux utilisateurs la possibilité d’ajouter un nouvel élément à la liste, mais nous suggérons de l’utiliser avec parcimonie, car cela risquerait d’allonger la liste avec des entrées similaires, voire doubles.
 
 {{< example html >}}
-<label for="select2">Additional input</label>
+<label for="select2">Entrée additionnelle</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
@@ -100,12 +103,12 @@ Users can be offered the option of adding a new item to the list, but we suggest
 </div>
 {{< /example >}}
 
-### Select with search field
+### Liste déroulante avec champ de recherche
 
-When a list is very long and scrolling through all the options becomes fussy, a search bar can be added to allow users to search for a specific item or eliminate some options.
+Lorsqu'une liste est très longue et que le défilement de toutes les options devient difficile, une barre de recherche peut être ajoutée pour permettre aux utilisateurs de rechercher un élément spécifique ou d'éliminer certaines options.
 
 {{% example html %}}
-<label for="select3">Search</label>
+<label for="select3">Recherche</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
@@ -122,7 +125,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
     <div class="select-menu" data-role="menu">
       <div class="d-flex flex-column flex-sm-row" data-role="add">
         <div class="form-control-container w-100 has-left-icon">
-          <input type="" class="form-control form-control-sm" id="inputIcon3" placeholder="Example for auto-completion" >
+          <input type="" class="form-control form-control-sm" id="inputIcon3" placeholder="Exemple d'auto-remplissage" >
           <span class="form-control-state"></span>
           <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
         </div>
@@ -132,10 +135,10 @@ When a list is very long and scrolling through all the options becomes fussy, a 
 </div>
 {{% /example %}}
 
-### Select with search field and additional input
+### Liste déroulante avec champ d'entrée supplémentaire et champ de recherche
 
 {{% example html %}}
-<label for="select4">Search</label>
+<label for="select4">Recherche</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
@@ -152,7 +155,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
     <div class="select-menu" data-role="menu">
       <div class="d-flex flex-column flex-sm-row mb-2" data-role="add">
         <div class="form-control-container w-100 has-left-icon">
-          <input type="" class="form-control" id="inputIcon4" placeholder="Example for auto-completion" >
+          <input type="" class="form-control" id="inputIcon4" placeholder="Exemple d'auto-remplissage" >
           <span class="form-control-state"></span>
           <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
         </div>
@@ -167,21 +170,20 @@ When a list is very long and scrolling through all the options becomes fussy, a 
 </div>
 {{% /example %}}
 
-### Select with default select value
+### Liste déroulante avec valeur sélectionnée par défaut
 
 {{% example html %}}
-<label for="select5">Option selected by default</label>
+<label for="select5">Option sélectionnée par défaut</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <p class="form-control is-placeholder  d-flex align-items-center" data-role="placeholder" data-selected-prefix="Sélection actuelle">Lorem ipsum</p>
       <select class="sr-only" id="select5" data-role="input" tabindex="-1" aria-hidden="true">
-        <option  data-role="default-hidden-option" disabled hidden>Lorem ipsum</option>
-        <option data-id="1" >Sem Inceptos Tellus</option>
+        <option data-role="default-hidden-option" disabled hidden>Lorem ipsum</option>
+        <option data-id="1">Sem Inceptos Tellus</option>
         <option data-id="2" selected>Sollicitudin Adipiscing Mattis</option>
-        <option data-id="3" >Amet Porta</option>
-        <option data-id="4" >Pharetra Fusce Venenatis</option>
-
+        <option data-id="3">Amet Porta</option>
+        <option data-id="4">Pharetra Fusce Venenatis</option>
       </select>
       <div class="input-group-append input-group-last">
         <button class="btn btn-primary btn-only-icon " data-role="btn" type="button" aria-expanded="false" aria-controls="selecttoggle">
@@ -197,7 +199,6 @@ When a list is very long and scrolling through all the options becomes fussy, a 
           <span class="select-menu-item" role="listitem"><button data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
           <span class="select-menu-item" role="listitem"><button data-role="value" data-target="3">Amet Porta</button></span>
           <span class="select-menu-item" role="listitem"><button data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
-
         </div>
       </div>
     </div>
@@ -205,12 +206,12 @@ When a list is very long and scrolling through all the options becomes fussy, a 
 </div>
 {{% /example %}}
 
-## By group
+## Par groupe
 
-When the list contains very different items, it may be a good idea to group them by category.
+Lorsque la liste contient des éléments très différents, il peut s'avérer être une bonne idée de les ranger par catégories par exemple.
 
 {{% example html %}}
-<label for="exampleFormControlSelect1">Example select</label>
+<label for="exampleFormControlSelect1">Liste déroulante avec groupes</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
@@ -255,8 +256,10 @@ When the list contains very different items, it may be a good idea to group them
 </div>
 {{% /example %}}
 
+Une version avec les groupes repliés pour exemple également.
+
 {{% example html %}}
-<label for="exampleFormControlSelect2">Example select</label>
+<label for="exampleFormControlSelect2">Liste déroulante avec groupes repliés</label>
 <div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
@@ -313,10 +316,10 @@ When the list contains very different items, it may be a good idea to group them
 
 ## Multiple
 
-Multi-select drop-down lists let users choose multiple options.
+Liste déroulante avec choix multiples.
 
 {{% example html %}}
-<label for="exampleFormControlMultiSelect1">Multi select</label>
+<label for="exampleFormControlMultiSelect1">Choisissez plusieurs options</label>
 <div class="select-improved" data-component="select-multiple">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
@@ -365,10 +368,12 @@ Multi-select drop-down lists let users choose multiple options.
 </div>
 {{% /example %}}
 
-### With groups
+### Par groupes
+
+Liste déroulante avec choix multiples, par groupes.
 
 {{% example html %}}
-<label for="exampleFormControlMultiSelect3">Multi select</label>
+<label for="exampleFormControlMultiSelect3">Choisissez plusieurs options</label>
 <div class="select-improved" data-component="select-multiple">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
