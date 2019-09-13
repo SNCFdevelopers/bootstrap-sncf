@@ -21,22 +21,25 @@ permalink: /docs/4.3/components/icons-generator/
     </div>
     <div class="col col-2">
       <div class="form-group">
-        {% include components/input.html type="number" id="size" placeholder="Taille des png/svg" %}
+        {% include components/input.html type="number" id="withSize" placeholder="Taille des png/svg" %}
       </div>
     </div>
     <div class="col">
       <div class="row">
         <div class="col">
-          {% include components/checkbox.html name="png" id="png" label="PNG" %}
+          {% include components/checkbox.html name="withFont" id="withFont" label="FONT" %}
         </div>
         <div class="col">
-          {% include components/checkbox.html name="svg" id="svg" label="SVG" %}
+          {% include components/checkbox.html name="withPng" id="withPng" label="PNG" %}
+        </div>
+        <div class="col">
+          {% include components/checkbox.html name="withSvg" id="withSvg" label="SVG" %}
         </div>
       </div>
     </div>
     <div class="col d-flex justify-content-end">
       <div>
-        <button type="button" disabled="true" class="btn btn-primary" data-role="download">Download webfont</button>
+        <button type="button" disabled="true" class="btn btn-primary" data-role="download">Download</button>
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 .ig-container {
   font-size: 2rem;
-  color: theme-color("dark");
+  color: theme-color("primary");
 
   > .col {
     flex-grow: 0;
@@ -17,15 +17,22 @@
   background-color: theme-color("white");
   border: 2px solid theme-color("white");
 
-  &:hover,
   &:focus {
     color: inherit;
     background-color: theme-color("white");
-    border-color: theme-color("primary");
+    border-color: theme-color("white");
+    outline: 0;
+  }
+
+  &:hover {
+    color: inherit;
+    background-color: theme-color("white");
+    border-color: currentColor;
   }
 
   &.selected {
-    border-color: theme-color("primary");
+    border-color: currentColor;
+    border-width: 4px;
   }
 }
 

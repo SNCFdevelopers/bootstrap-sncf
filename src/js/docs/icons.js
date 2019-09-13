@@ -10,16 +10,15 @@ const download = `${api}/download`
 class IconsGenerator {
   constructor(element) {
     this.element = element
-    const data = {
-      withFont: true,
-      withPng: true
-    }
+    const data = {}
     const container = element.querySelector('[data-role=container]')
     const colors = element.querySelectorAll('[data-role=color]')
     const icons = element.querySelectorAll('[data-role=icon')
     const downloadBtn = element.querySelector('[data-role=download]')
-    const pngInput = element.getElementById('png')
-    const svgInput = element.getElementById('svg')
+    const fontInput = document.getElementById('withFont')
+    const pngInput = document.getElementById('withPng')
+    const svgInput = document.getElementById('withSvg')
+    const sizeInput = document.getElementById('withSize')
 
     colors.forEach((elem) => {
       const color = elem.getAttribute('data-color')
@@ -51,7 +50,16 @@ class IconsGenerator {
     })
 
     downloadBtn.addEventListener('click', () => {
-      this.handleDownload(downloadBtn, data)
+      this.handleDownload(downloadBtn, sizeInput, data)
+    })
+
+    fontInput.addEventListener('change', () => {
+      if (fontInput.checked) {
+        data.withFont = true
+      } else {
+        data.withFont = false
+      }
+      this.handleBtnState(downloadBtn, data)
     })
 
     pngInput.addEventListener('change', () => {
@@ -60,6 +68,7 @@ class IconsGenerator {
       } else {
         data.withPng = false
       }
+      this.handleBtnState(downloadBtn, data)
     })
 
     svgInput.addEventListener('change', () => {
@@ -68,11 +77,17 @@ class IconsGenerator {
       } else {
         data.withSvg = false
       }
+      this.handleBtnState(downloadBtn, data)
     })
   }
 
-  handleDownload(btn, data) {
+  handleDownload(btn, sizeInput, data) {
     this.disableBtn(btn)
+
+
+    if (sizeInput.value) {
+      data.withSize = parseInt(sizeInput.value, 10)
+    }
 
     window.fetch(download, {
       method: 'POST',
@@ -88,7 +103,6 @@ class IconsGenerator {
         console.log('data: ', data)
         window.open(`${download}/${data}`)
       })
-      // .then(() => window.open('http://0.0.0.0:3000/api/download/ace35159081a0dec2676862bf2beacc6b55fb9e6'))
   }
 
   disableBtn(btn) {
@@ -100,7 +114,7 @@ class IconsGenerator {
   }
 
   handleBtnState(btn, data) {
-    if (data.icons && data.icons.length > 0) {
+    if (data.icons && data.icons.length > 0 && (data.withSvg || data.withPng || data.withFont)) {
       btn.removeAttribute('disabled')
     } else {
       btn.setAttribute('disabled', true)
