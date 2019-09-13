@@ -43,6 +43,7 @@
     "docs-lint-htmllint": "htmllint --rc build/.htmllintrc \"_gh_pages/**/*.html\" \"src/js/tests/**/*.html\"",
     "docs-serve-intern": "bundle exec jekyll serve --config _config.intern.yml",
     "docs-serve-extern": "bundle exec jekyll serve --config _config.extern.yml",
+    "svg": "svgo -r src/assets/icons --config=svgo.yml",
     "icofont": "icon-font-generator src/assets/icons/*.svg -o src/assets/fonts/icons --csspath src/scss/common/generic/_icons.css --prefix icons --fontspath ../assets/fonts/icons/ --html false -j false"
   },
   "devDependencies": {
@@ -77,6 +78,7 @@
     "stylelint-order": "^0.8.1",
     "stylelint-scss": "^3.0.0",
     "stylelint-webpack-plugin": "^0.10.4",
+    "svgo": "^1.3.0",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.1"
   },
