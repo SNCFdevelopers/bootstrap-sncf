@@ -1,0 +1,36 @@
+.ig-container {
+  font-size: 2rem;
+  color: theme-color("dark");
+
+  > .col {
+    flex-grow: 0;
+  }
+}
+
+.ig-color {
+  cursor: pointer;
+}
+
+.ig-button {
+  width: 5rem;
+  height: 5rem;
+  background-color: theme-color("white");
+  border: 2px solid theme-color("white");
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    background-color: theme-color("white");
+    border-color: theme-color("primary");
+  }
+
+  &.selected {
+    border-color: theme-color("primary");
+  }
+}
+
+.ig-button,
+.ig-icon {
+  font-size: inherit;
+  color: inherit;
+}
