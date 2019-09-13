@@ -46,12 +46,15 @@ permalink: /docs/4.3/components/icons-generator/
 
   <h2>Icons</h2>
   <div class="ig-container row mt-4" data-role="container">
-  {% for item in site.data.icons %}
-    <div class="col mb-3">
-      <button type="button" class="ig-button btn-rounded text-center mb-2" data-role="icon" data-icon="{{ item }}">
-        <i class="icons-{{ item }} ig-icon" aria-hidden="true"></i>
-      </button>
+    <div class="col-12 pb-5">
+      <button type="button" class="btn btn-primary" data-role="selectall" data-values='[{% for item in site.data.icons %}"{{item}}"{% if forloop.last == false %},{% endif %}{% endfor %}]'>Tout sélectionner</button>
     </div>
-  {% endfor %}
+    {% for item in site.data.icons %}
+      <div class="col mb-3">
+        <button type="button" class="ig-button btn-rounded text-center mb-2" data-role="icon" data-icon="{{ item }}">
+          <i class="icons-{{ item }} ig-icon" aria-hidden="true"></i>
+        </button>
+      </div>
+    {% endfor %}
   </div>
 </div>

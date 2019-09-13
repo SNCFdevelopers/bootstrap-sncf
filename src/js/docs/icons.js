@@ -19,6 +19,8 @@ class IconsGenerator {
     const pngInput = document.getElementById('withPng')
     const svgInput = document.getElementById('withSvg')
     const sizeInput = document.getElementById('withSize')
+    const selectAllBtn = element.querySelector('[data-role=selectall]')
+    const allIcons = JSON.parse(selectAllBtn.getAttribute('data-values'))
 
     colors.forEach((elem) => {
       const color = elem.getAttribute('data-color')
@@ -79,6 +81,14 @@ class IconsGenerator {
       }
       this.handleBtnState(downloadBtn, data)
     })
+
+    selectAllBtn.addEventListener('click', () => {
+      data.icons = allIcons
+      icons.forEach((elem) => {
+        elem.classList.add('selected')
+      })
+      this.handleBtnState(downloadBtn, data)
+    })
   }
 
   handleDownload(btn, sizeInput, data) {
@@ -99,8 +109,6 @@ class IconsGenerator {
     })
       .then((response) => response.json())
       .then((data) => {
-        /* eslint-disable no-console */
-        console.log('data: ', data)
         window.open(`${download}/${data}`)
       })
   }
