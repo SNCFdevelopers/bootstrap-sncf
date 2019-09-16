@@ -17,7 +17,7 @@ Les boutons principaux sont utilisés pour l'action principale. Les boutons seco
 {{% /example %}}
 
 {{% callout info %}}
-{{% partial "callout-where-are-the-colors.md" %}}
+{{% partial "callout-where-are-the-colors.fr.md" %}}
 {{% /callout %}}
 
 ## Classes de boutons

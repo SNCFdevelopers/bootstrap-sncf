@@ -1,10 +1,11 @@
 ---
 layout: docs
-title: Buttons
-description: Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+title: Boutons
+slug: boutons
+description: "Les boutons ont plusieurs utilisations : ils peuvent permettre à l'utilisateur de déclencher une action, répondre à une question posée dans une interface conversationnelle, activer ou désactiver un état, augmenter ou diminuer une valeur numérique, etc. A noter que les boutons de menu sont affichés dans la section des menus déroulants."
 group: components
 toc: true
-url: /docs/4.3/components/buttons/
+url: /docs/4.3/components/boutons/
 ---
 
 ## Example
@@ -14,29 +15,29 @@ url: /docs/4.3/components/buttons/
 {{% /example %}}
 
 {{% callout info %}}
-{{% partial "callout-where-are-the-colors.md" %}}
+{{% partial "callout-where-are-the-colors.fr.md" %}}
 {{% /callout %}}
 
-## Button tags
+## Boutons d'action
 
-These are call-to-action buttons. They are always blue and look like a real button. The action written on the button must be short and be a command. Example: “Confirm your registration”. We prefer links for less important actions. Buttons indicate the main action. Do not overuse.
+Ce sont des boutons d'actions. Ils sont toujours bleus et ressemblent à un vrai bouton. L'action écrite sur le bouton doit être courte et constituer une commande. Exemple : « Confirmez votre inscription ». Nous préférons les liens pour des actions moins importantes. Les boutons indiquent l'action principale. Ne pas en abuser.
 
-Call-to-action buttons are left-aligned, except for mobile devices and for certain forms where they may occupy the screen's full usable width.
+Les boutons d'actions sont alignés à gauche, à l'exception des périphériques mobiles et de certains formulaires, où ils peuvent occuper toute la largeur utilisable de l'écran.
 
-The `.btn` classes are designed to be used with the `<button>` element. However, you can also use these classes on `<a>` or `<input>` elements (though some browsers may apply a slightly different rendering).
+Les classes `.btn` sont conçues pour être utilisées avec l’élément `<button>`. Cependant, vous pouvez également utiliser ces classes sur les éléments `<a>` ou `<input>` (bien que certains navigateurs puissent appliquer un rendu légèrement différent).
 
-When using button classes on `<a>` elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a `role="button"` to appropriately convey their purpose to assistive technologies such as screen readers.
+Lorsque vous utilisez des classes de boutons sur des éléments `<a>` utilisés pour déclencher des fonctionnalités de page (telles que masquer du contenu), plutôt que de lier à de nouvelles pages ou sections de la page en cours, ces liens devraient avoir un attribut `role="button"` pour correctement transmettre leur fonction aux technologies d'assistance telles que les lecteurs d'écran.
 
 {{% example html %}}
-<button class="btn btn-primary" type="submit">Button</button>
+<button class="btn btn-primary" type="submit">Boutons</button>
 <input class="btn btn-primary" type="button" value="Input">
 <input class="btn btn-primary" type="submit" value="Submit">
 <input class="btn btn-primary" type="reset" value="Reset">
 {{% /example %}}
 
-## Button links
+## Boutons liens
 
-These buttons are used for very minor actions.
+Ces boutons sont utilisés pour des actions mineures, ou des éléments appropriés (comme le téléchargement, les liens externes et le partage).
 
 <p><a href="#" class="btn btn-link"><span>Internal link</span> <i class="icons-arrow-next icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
 <p><a href="#" class="btn btn-link"><span>Share link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></a></p>
@@ -50,14 +51,15 @@ These buttons are used for very minor actions.
 <a href="#" class="btn btn-link"><span>External link</span> <i class="icons-external-link icons-size-x75 ml-2" aria-hidden="true"></i></a>
 {{% /highlight %}}
 
-### Disabled state
+### Etat inactif
+
 {{% example html %}}
 <p><span class="btn btn-link disabled"><span>Disabled link</span> <i class="icons-share icons-size-x75 ml-2" aria-hidden="true"></i></span></p>
 {{% /example %}}
 
-## Button icon
+## Boutons icônes
 
-These buttons are used for a series of buttons placed next to each other; they allow a more compact design.
+Ces boutons sont utilisés pour une série de boutons placés les uns à côté des autres. Ils permettent un design plus compact pour des actions rapides (recherche, filtres, etc.).
 
 {{% example html %}}
 <button type="button" class="btn btn-only-icon btn-primary">
@@ -78,9 +80,9 @@ These buttons are used for a series of buttons placed next to each other; they a
 </button>
 {{% /example %}}
 
-## Navigation Icon Button
+## Boutons icônes de navigation
 
-These buttons are used to move between different views or anchor points on a screen.
+Ces boutons permettent de se déplacer entre différentes vues (dans un carousel par exemple), ou points d'ancrage sur un écran (bouton rapide de remontée en haut de l'écran).
 
 {{% example html %}}
 <button type="button" class="btn-rounded btn-rounded-white box-shadow"><span class="sr-only">Haut</span><i class="icons-arrow-up" aria-hidden="true"></i></button>
@@ -96,9 +98,9 @@ These buttons are used to move between different views or anchor points on a scr
 <button type="button" class="btn-rounded btn-rounded-white box-shadow" disabled><span class="sr-only">Précédent</span><i class="icons-arrow-prev" aria-hidden="true"></i></button>
 {{% /example %}}
 
-## Social Media Share Icon Button
+## Boutons icônes de partage réseaux sociaux
 
-These buttons are used to share a given page on social networks.
+Ces boutons permettent de partager une page donnée sur les réseaux sociaux.
 
 {{% example html %}}
 <button type="button" class="btn-rounded btn-rounded-primary"><span class="sr-only">Partager</span><i class="icons-share" aria-hidden="true"></i></button>
@@ -114,10 +116,10 @@ These buttons are used to share a given page on social networks.
 <button type="button" class="btn-rounded btn-rounded-gray">999</button>
 {{% /example %}}
 
-## Block level button
+## Bouton de taille de bloc
 
-Create block level buttons—those that span the full width of a parent—by adding `.btn-block`.
+Créez des boutons prenant la largeur d'un élément en ajoutant `.btn-block`.
 
 {{% example html %}}
-<button type="button" class="btn btn-primary btn-block">Block level button</button>
+<button type="button" class="btn btn-primary btn-block">Bouton de taille de bloc</button>
 {{% /example %}}
