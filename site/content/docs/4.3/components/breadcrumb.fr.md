@@ -3,7 +3,6 @@ layout: docs
 title: Fil d'ariane
 slug: fil-d-ariane
 description: Le fil d'Ariane indique le chemin emprunté par l'utilisateur dans une section et peut le ramener à une page de niveau supérieur. Il indique donc l'emplacement de l'utilisateur dans la hiérarchie du site. Le fil d'Ariane est nécessaire sur les interfaces comportant des arborescences profondes.
-url: /docs/4.3/components/breadcrumb/
 ---
 
 ## Vue d'ensemble

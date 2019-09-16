@@ -1,9 +1,8 @@
 ---
 layout: docs
 title: Breadcrumb
-description: Indicate the current page's location within a navigational hierarchy that automatically adds separators via CSS.
+description: Breadcrumbs show the path a reader has taken in a section and can return the reader to a higher-level page. It thus shows the reader's location within the website's hierarchy. Only websites with deep tree structures need breadcrumbs.
 group: components
-url: /docs/4.3/components/breadcrumb/
 ---
 
 ## Overview
@@ -13,15 +12,26 @@ Separators are automatically added in CSS through [`::before`](https://developer
 The breadcrumbs should not be used in mobile interfaces.
 
 {{% example html %}}
+<nav aria-label="Vous êtes : " role="navigation">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+  </ol>
+</nav>
 
 <nav aria-label="Vous êtes : " role="navigation">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Menu</a></li>
-    <li class="breadcrumb-item"><a href="#">Offres voyageurs</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Voyager à petits prix</li>
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item"><a href="#">Books</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
   </ol>
 </nav>
 {{% /example %}}
+
+{{% callout info %}}
+You will find steps indicator in the [progress components]({{< docsref "/components/progress#steps-indicator" >}}).
+{{% /callout %}}
 
 ## Accessibility
 
