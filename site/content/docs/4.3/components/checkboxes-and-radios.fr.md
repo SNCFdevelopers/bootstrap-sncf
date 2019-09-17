@@ -5,10 +5,7 @@ slug: cases-a-cocher-et-boutons-radio
 description: Exemples et consignes d'utilisation pour les styles de cases à cocher et de boutons radios.
 group: components
 toc: true
-url: /docs/4.3/components/cases-a-cocher-et-boutons-radio/
 ---
-
-## Cases à cocher et boutons radio
 
 Plusieurs outils de sélection permettent aux utilisateurs de choisir parmi des options prédéfinies :
 
@@ -17,6 +14,7 @@ Plusieurs outils de sélection permettent aux utilisateurs de choisir parmi des 
 - définir une valeur ou une plage (voir la section “Forms”)
 
 Lorsque les options doivent être illustrées, utilisez les grands boutons d'image (voir la section “Boutons”).
+
 Nous utilisons le sélecteur (`~`) pour tous nos `<input>` states—comme `:checked`—to properly style our custom form indicator. When combined with the `.custom-control-label` class, we can also style the text for each item based on the `<input>`'s state.
 
 We hide the default `<input>` with `opacity` and use the `.custom-control-label` to build a new custom form indicator in its place with `::before` and `::after`. Unfortunately we can't build a custom one from just the `<input>` because CSS's `content` doesn't work on that element.
@@ -24,6 +22,10 @@ We hide the default `<input>` with `opacity` and use the `.custom-control-label`
 Dans les états cochés, nous utilisons **les icônes SVG intégrés base64** de [Open Iconic](https://useiconic.com/open). Cela nous fournit le meilleur contrôle pour le style et le positionnement sur les navigateurs et les appareils.
 
 ### Cases à cocher
+
+Les cases à cocher sont souvent utilisées pour les formulaires ou pour d'autres fonctions permettant aux utilisateurs de sélectionner des options dans un questionnaire à choix multiple. Avec les cases à cocher, les utilisateurs peuvent choisir plusieurs critères ou options, ce qui n'est pas possible avec les boutons radio.
+
+Il existe trois états de sélection : « désélectionné », « sélectionné » et « indéfini ». L'état « indéfini » apparaît lorsqu'un groupe de sous-sélections contient des états « désélectionné » et « sélectionné ».
 
 {{% example html %}}
 {{% checkbox name="exampleCheckbox1" id="exampleCheckbox1" label="Custom checkbox" %}}
@@ -46,6 +48,8 @@ $('.your-checkbox').attr('aria-checked', 'mixed');
 {{% /highlight %}}
 
 ### Boutons radio
+
+Les boutons radio sont souvent utilisés dans les formulaires ou pour d’autres fonctions permettant aux utilisateurs de sélectionner une seule option dans une liste. Avec les boutons radio, les utilisateurs ne peuvent pas faire plusieurs sélections parmi les options suggérées (comme ils le peuvent avec des cases à cocher).
 
 {{% example html %}}
 <div class="custom-control custom-radio">

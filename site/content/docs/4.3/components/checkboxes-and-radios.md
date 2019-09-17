@@ -4,10 +4,7 @@ title: Checkboxes and radios
 description: Examples and usage guidelines for checkboxes and radios styles.
 group: components
 toc: true
-url: /docs/4.3/components/checkboxes-and-radios/
 ---
-
-## Checkboxes and radios
 
 There are several selection tools that let users choose from pre-defined options:
 
@@ -16,6 +13,7 @@ There are several selection tools that let users choose from pre-defined options
 - to define a value or range: slider (see “Forms” section)
 
 When options need to be illustrated, use large picture buttons (see “Buttons” section).
+
 We use the sibling selector (`~`) for all our `<input>` states—like `:checked`—to properly style our custom form indicator. When combined with the `.custom-control-label` class, we can also style the text for each item based on the `<input>`'s state.
 
 We hide the default `<input>` with `opacity` and use the `.custom-control-label` to build a new custom form indicator in its place with `::before` and `::after`. Unfortunately we can't build a custom one from just the `<input>` because CSS's `content` doesn't work on that element.
@@ -23,6 +21,10 @@ We hide the default `<input>` with `opacity` and use the `.custom-control-label`
 In the checked states, we use **base64 embedded SVG icons** from [Open Iconic](https://useiconic.com/open). This provides us the best control for styling and positioning across browsers and devices.
 
 ### Checkboxes
+
+Check boxes are often used for forms or for other functions that let users select options from a multiple-choice format. With check boxes, users can choose several criteria or options, which is not possible with radio buttons.
+
+There are three selection states—deselected, selected, and undefined. The undefined state appears when a group of sub-selections contains deselected and selected states.
 
 {{% example html %}}
 {{% checkbox name="exampleCheckbox1" id="exampleCheckbox1" label="Custom checkbox" %}}
@@ -45,6 +47,8 @@ $('.your-checkbox').attr('aria-checked', 'mixed');
 {{% /highlight %}}
 
 ### Radios
+
+Radio buttons are often used in forms or for other functions that let users select only one option from a list. With radio buttons, users cannot make multiple selections from options suggested (as they can with check boxes).
 
 {{% example html %}}
 <div class="custom-control custom-radio">
