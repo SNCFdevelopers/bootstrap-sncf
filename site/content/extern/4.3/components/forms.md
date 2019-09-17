@@ -9,6 +9,8 @@ url: /docs/4.3/components/forms/
 
 ## Overview
 
+Below are components for forms (input fields, sliders, chips, help text, error management). However, note that buttons are in the “Buttons” section, menu-buttons are in the “Drop-downs” section and pickers are in the “Pickers” section.
+
 Bootstrap's form controls expand on [our Rebooted form styles]({{< docsref "/content/reboot#forms" >}}) with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
 
 Be sure to use an appropriate `type` attribute on all inputs (e.g., `email` for email address or `number` for numerical information) to take advantage of newer input controls like email verification, number selection, and more.
@@ -162,6 +164,10 @@ Add a `stretchy` class on `textarea` element.
 
 ## Range slider
 
+Sliders let users define and adjust a value or a range along a pre-defined span of values. There are two types of sliders: single-value and dual-point. When necessary, display a minimum and maximum value at each end of the line.
+
+With a slider, users can choose an approximate value, i.e., a value considered to be relative.
+
 {{< example html >}}
 <div class="range-slider" data-component="range-slider" data-target="#range_01">
   <i class="icons-interrogation icons-size-1x25 pr-2" aria-hidden="true"></i>
@@ -190,6 +196,8 @@ Add a `stretchy` class on `textarea` element.
 {{< /example >}}
 
 ## Chips
+
+Chips are compact components that appear after entering or selecting items as tags in a field. They can be used for various item types (contacts, concepts, etc.) and are predefined or can be adjusted for specific needs.
 
 {{% example html %}}
 <div role="list">
@@ -250,7 +258,7 @@ Help text below inputs can be styled with `.form-text`. This class includes `dis
   <span class="form-control-state"></span>
 </div>
 <small id="passwordHelpBlock" class="form-text text-muted">
-  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+    Your password must be 230 characters long, without letters and numbers.
 </small>
 {{% /example %}}
 

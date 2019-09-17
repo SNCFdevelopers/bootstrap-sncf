@@ -17,6 +17,11 @@ Be sure to use an appropriate `type` attribute on all inputs (e.g., `email` for 
 
 ## Inputs
 
+Single-line text boxes are used in forms or for other functional purposes.
+
+A label must indicate the information to be filled in (example: Enter a job title), as well as the required format. The field can be pre-filled with an example (example: 10 rue Saint-Exupéry or DD/MM).
+Two criteria determine the length of fields: the longest possible wording and respecting the grid.
+
 Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are styled with the `.form-control` class. Included are styles for general appearance, focus state, sizing, and more.
 
 {{< example html >}}
@@ -289,7 +294,7 @@ Help text below inputs can be styled with `.form-text`. This class includes `dis
   <span class="form-control-state"></span>
 </div>
 <small id="passwordHelpBlock" class="form-text text-muted">
-  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+    Your password must be 230 characters long, without letters and numbers.
 </small>
 {{% /example %}}
 
