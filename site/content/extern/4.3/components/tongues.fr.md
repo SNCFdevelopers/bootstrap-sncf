@@ -17,7 +17,7 @@ Les languettes indiquent des informations urgentes liées à une offre, à une a
 Le choix de la couleur du texte (noir ou blanc) n'est pas arbitraire mais résulte d'études sur l'accesibilité quant aux constrates. C'est pourquoi nous n'affichons seulement les combinaisons qui garantissent le respect des normes d'accessibilité.
 {{% /callout %}}
 
-## Avec le texte en blanc
+## Texte en blanc
 <div class="row">
   <div class="col-sm-6 mb-3">
     <div class="tongue">Du 2 janvier au 28 février</div>
@@ -48,7 +48,7 @@ Le choix de la couleur du texte (noir ou blanc) n'est pas arbitraire mais résul
 <div class="tongue bg-purple">Du 2 janvier au 28 février</div>
 {{% /highlight %}}
 
-## Avec le texte en noir
+## Texte en noir
 
 <div class="row">
   <div class="col-sm-6 mb-3">
