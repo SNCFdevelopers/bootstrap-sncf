@@ -1,25 +1,23 @@
 ---
 layout: docs
-title: Typographie
-description: Documentation et exemples pour la typographie de Bootstrap SNCF, incluant des paramètres généraux, pour les titres, corps de texte, listes, etc.
-slug: typographie
+title: Typographies
+description: Documentation et exemples pour la typographie de Bootstrap, en incluant les paramètres globaux pour les en-têtes, titres, texte, listes, etc.
 group: content
 toc: true
-url: /docs/4.3/content/typographie/
+url: /docs/4.3/content/typography/
 ---
 
 ## Titres
 
-Seuls les titres HTML `<h1>` et `<h2>` sont disponibles chez SNCF.
+Seuls les titres HTML `<h1>`, `<h2>` et `<h3>` sont disponibles chez SNCF.
 
 <div class="table-wrapper">
   <div class="table-scroller dragscroll">
     <table class="table table-bordered">
-      <caption class="sr-only">Aperçu des niveaux de titres</caption>
       <thead>
         <tr>
-          <th scope="col"><div class="cell-inner">Titre</div></th>
-          <th scope="col"><div class="cell-inner">Exemple</div></th>
+          <th scope="col"><div class="cell-inner">Heading</div></th>
+          <th scope="col"><div class="cell-inner">Example</div></th>
         </tr>
       </thead>
       <tbody>
@@ -27,13 +25,19 @@ Seuls les titres HTML `<h1>` et `<h2>` sont disponibles chez SNCF.
           <td><div class="cell-inner">
             {{% markdown %}}`<h1></h1>`{{% /markdown %}}
           </div></td>
-          <td><div class="cell-inner"><h1 aria-level="1">h1. Titre bootstrap SNCF</h1></div></td>
+          <td><div class="cell-inner"><span class="h1" role="heading" aria-level="1">h1. Titre bootstrap SNCF</span></div></td>
         </tr>
         <tr>
           <td><div class="cell-inner">
             {{% markdown %}}`<h2></h2>`{{% /markdown %}}
           </div></td>
-          <td><div class="cell-inner"><h2>h2. Titre bootstrap SNCF</h2></div></td>
+          <td><div class="cell-inner"><span class="h2" role="heading" aria-level="2">h2. Titre bootstrap SNCF</span></div></td>
+        </tr>
+        <tr>
+          <td><div class="cell-inner">
+            {{% markdown %}}`<h3></h3>`{{% /markdown %}}
+          </div></td>
+          <td><div class="cell-inner"><span class="h3" role="heading" aria-level="3">h3. Titre bootstrap SNCF</span></div></td>
         </tr>
       </tbody>
     </table>
@@ -43,14 +47,55 @@ Seuls les titres HTML `<h1>` et `<h2>` sont disponibles chez SNCF.
 {{% highlight html %}}
 <h1>h1. Titre bootstrap SNCF</h1>
 <h2>h2. Titre bootstrap SNCF</h2>
+<h3>h3. Titre bootstrap SNCF</h2>
 {{% /highlight %}}
 
-Les classes `.h1` et `.h2` sont également disponibles, si vous aviez besoin de coller à la taille et au style d'un titre, sans pouvoir utiliser le composant HTML associé.
+
+Les classes `.h1`, `h2` et `.h3` sont également disponibles, si vous aviez besoin de coller à la taille et au style d'un titre, sans pouvoir utiliser le composant HTML associé.
 
 {{% example html %}}
 <p class="h1" role="heading" aria-level="1">h1. Titre bootstrap SNCF</p>
 <p class="h2" role="heading" aria-level="2">h2. Titre bootstrap SNCF</p>
+<p class="h3" role="heading" aria-level="3">h3. Titre bootstrap SNCF</p>
 {{% /example %}}
+
+## Titres colorés
+
+Les couleurs des titres et sous-titres d'articles peuvent être ajustées :
+
+- si l'en-tête de site Web est d'une couleur vive, les titres de la section de contenu doivent reproduire cette couleur. Utilisez la même couleur pour toutes les pages de contenu du site Web.
+- si le titre du site Web est en noir ou en gris, le contributeur doit pouvoir choisir une couleur pour le titre et les sous-titres de la section de texte tant que les consignes d’accessibilité sont respectées (veillez à un contraste suffisant). Cela signifie que les couleurs du titre peuvent changer d'une page de contenu à une autre, ce qui peut également aider à distinguer les sujets/catégories.
+
+<div class="row">
+  <div class="col-sm-6">
+    <span class="h2 text-primary">Magnifique titre coloré</span>
+  </div>
+  <div class="col-sm-6">
+    <span class="h2 text-info">Magnifique titre coloré</span>
+  </div>
+  <div class="col-sm-6">
+    <span class="h2 text-pink">Magnifique titre coloré</span>
+  </div>
+  <div class="col-sm-6">
+    <span class="h2 text-danger">Magnifique titre coloré</span>
+  </div>
+  <div class="col-sm-6">
+    <span class="h2 text-warning">Magnifique titre coloré</span>
+  </div>
+  <div class="col-sm-6">
+    <span class="h2 text-purple">Magnifique titre coloré</span>
+  </div>
+</div>
+
+{{% highlight html %}}
+<h2 class="text-primary">Magnifique titre coloré</h2>
+<h2 class="text-info">Magnifique titre coloré</h2>
+<h2 class="text-pink">Magnifique titre coloré</h2>
+<h2 class="text-danger">Magnifique titre coloré</h2>
+<h2 class="text-warning">Magnifique titre coloré</h2>
+<h2 class="text-purple">Magnifique titre coloré</h2>
+{{% /highlight %}}
+
 
 ## Titre pour l'affichage
 
@@ -60,14 +105,22 @@ Les éléments de titre traditionnels sont designés pour fonctionner au mieux d
   <table class="table">
     <tbody>
       <tr>
-        <td><span class="display-1">Display 1</span></td>
+        <td><span class="display-1 text-primary">Display 1</span></td>
+      </tr>
+      <tr>
+        <td><span class="display-2">Display 2</span></td>
+      </tr>
+      <tr>
+        <td><span class="display-3 text-primary">Display 3</span></td>
       </tr>
     </tbody>
   </table>
 </div>
 
 {{% highlight html %}}
-<h1 class="display-1">Display 1</h1>
+<h1 class="display-1 text-primary">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3 text-primary">Display 3</h1>
 {{% /highlight %}}
 
 ## Classe `Lead`
@@ -79,6 +132,8 @@ Mettez un paragraphe en exergue en ajoutant la classe `.lead`.
   Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
 </p>
 {{% /example %}}
+
+## Inline text elements
 
 ## Éléments de style sur une ligne (_inline_)
 
@@ -97,6 +152,7 @@ Styles pour les éléments communs à mettre sur une ligne en HTML5 (_inline_).
 Les classes `.mark` et `.small` sont aussi disponibles de façon à appliquer le même style que les balises éponymes tout en évitant les implications sémantiques imposées par ces balises.
 
 Bien que non présenté, vous pouvez tout à fait utiliser les balises `<b>` et `<i>` en HTML5. `<b>` est destiné à mettre en valeur des mots ou des phrases sans donner d’importance supplémentaire alors que `<i>` est principalement utilisé pour la voix, les termes techniques, etc.
+
 
 ## Utilitaires de texte
 
@@ -196,8 +252,8 @@ Alignez les intitulés et descriptions horizontalement en utilisant nos classes 
 
 {{% example html %}}
 <dl class="row">
-  <dt class="col-sm-3">Liste descriptive</dt>
-  <dd class="col-sm-9">Une liste descriptive est parfaite pour donner des définitions.</dd>
+  <dt class="col-sm-3">Description lists</dt>
+  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
 
   <dt class="col-sm-3">Euismod</dt>
   <dd class="col-sm-9">
@@ -211,10 +267,10 @@ Alignez les intitulés et descriptions horizontalement en utilisant nos classes 
   <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
   <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
 
-  <dt class="col-sm-3">Imbrication</dt>
+  <dt class="col-sm-3">Nesting</dt>
   <dd class="col-sm-9">
     <dl class="row">
-      <dt class="col-sm-4">Définition imbriquée</dt>
+      <dt class="col-sm-4">Nested definition list</dt>
       <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
     </dl>
   </dd>
