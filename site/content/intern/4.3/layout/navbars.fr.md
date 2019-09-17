@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Barres de navigation
-slug: barres-de-navigation
+title: Barre de navigation
+slug: barre-de-navigation
 group: layout
 toc: true
 url: /docs/4.3/layout/barres-de-navigation/
