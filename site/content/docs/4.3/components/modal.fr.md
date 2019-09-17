@@ -370,50 +370,6 @@ Vous pouvez également créer des fenêtres modales scrollables permettant de fa
 </div>
 {{% /highlight %}}
 
-### Info-bulles et bulles contextuelles
-
-[Info-bulles]({{< docsref "/components/tooltips" >}}) et [bulles contextuelles]({{< docsref "/components/popovers" >}}) peuvent être placés dans les fenêtres modales. Lorsque les fenêtres modales sont fermées, les info-bulles et popovers sont également automatiquement fermés.
-
-<div id="exampleModalPopovers" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="h1 modal-title" id="exampleModalPopoversLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h5>Popover in a modal</h5>
-        <p>This <button type="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute." data-container="#exampleModalPopovers">button</button> triggers a popover on click.</p>
-        <hr>
-        <h5>Tooltips in a modal</h5>
-        <p><a href="#" class="tooltip-test" title="Tooltip" data-container="#exampleModalPopovers">This link</a> and <a href="#" class="tooltip-test" title="Tooltip" data-container="#exampleModalPopovers">that link</a> have tooltips on hover.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bd-example">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalPopovers">
-    Launch demo modal
-  </button>
-</div>
-
-{{% highlight html %}}
-<div class="modal-body">
-  <h5>Popover in a modal</h5>
-  <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
-  <hr>
-  <h5>Tooltips in a modal</h5>
-  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
-</div>
-{{% /highlight %}}
-
 ### Utiliser la grille
 
 Utilisez le système de grille Bootstrap dans une fenêtre modale en imbriquant `.container-fluid` dans le `.modal-body`. Ensuite, utilisez les classes normales du système de grille comme vous le feriez n'importe où ailleurs.
@@ -577,14 +533,14 @@ L'intégration de vidéos YouTube dans des modaux nécessite du JavaScript suppl
 Les modales ont deux tailles optionnelles, disponibles via des classes de modificateurs pour être placées dans un `.modal-dialog`. Ces tailles entrent en jeu à certains breakpoints, pour éviter les barres de défilement horizontales dans les fenêtres plus étroites (sur mobile par exemple).
 
 <div class="bd-example">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Extra large modal</button>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Modale extra grande</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Grande modale</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Petite modale</button>
 </div>
 
 {{% highlight html %}}
-<!-- Extra large modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Large modal</button>
+<!-- Modale extra grande -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Modale extra grande</button>
 
 <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
@@ -595,8 +551,8 @@ Les modales ont deux tailles optionnelles, disponibles via des classes de modifi
 </div>
 
 
-<!-- Large modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+<!-- Grande modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Grande modale</button>
 
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -606,8 +562,8 @@ Les modales ont deux tailles optionnelles, disponibles via des classes de modifi
   </div>
 </div>
 
-<!-- Small modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+<!-- Petite modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Petite modale</button>
 
 <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
@@ -623,7 +579,7 @@ Les modales ont deux tailles optionnelles, disponibles via des classes de modifi
     <div class="modal-content">
 
       <div class="modal-header">
-        <h4 class="h1 modal-title" id="myLargeModalLabel">Large modal</h4>
+        <h4 class="h1 modal-title" id="myLargeModalLabel">Modale extra grande</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -640,7 +596,7 @@ Les modales ont deux tailles optionnelles, disponibles via des classes de modifi
     <div class="modal-content">
 
       <div class="modal-header">
-        <h4 class="h1 modal-title" id="myLargeModalLabel">Large modal</h4>
+        <h4 class="h1 modal-title" id="myLargeModalLabel">Grande modale</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -656,7 +612,7 @@ Les modales ont deux tailles optionnelles, disponibles via des classes de modifi
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="h1 modal-title" id="mySmallModalLabel">Small modal</h4>
+        <h4 class="h1 modal-title" id="mySmallModalLabel">Petite modale</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
