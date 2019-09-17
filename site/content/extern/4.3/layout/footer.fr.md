@@ -1,16 +1,17 @@
 ---
 layout: docs
-title: Footer
+title: Pied de page
+slug: pied-de-page
 group: layout
 toc: true
 url: /docs/4.3/layout/footer/
 ---
 
 {{% callout warning %}}
-Subsections **must** all be contained in one unique section `<footer class="mastfooter bg-gray"></footer>`, see [final example](#complete-example) for complete implementation.
+Les sous-sections **doivent** toutes être contenues dans une seule et unique section `<footer class="mastfooter bg-gray"></footer>`, consultez [l'exemple final](#exemple-complet) pour une implémentation complète.
 {{% /callout %}}
 
-### Links
+### Liens
 
 {{% example html %}}
 <footer class="mastfooter bg-gray">
@@ -48,7 +49,7 @@ Subsections **must** all be contained in one unique section `<footer class="mast
 </footer>
 {{% /example %}}
 
-### Newsletter inscription
+### Inscription à la newsletter
 <div class="bd-example">
 <footer class="mastfooter bg-gray">
   <div class="container d-flex flex-column">
@@ -101,7 +102,7 @@ Subsections **must** all be contained in one unique section `<footer class="mast
 </footer>
 {{% /highlight %}}
 
-### Site plan
+### Plan du site
 
 {{% example html %}}
 <footer class="mastfooter bg-gray">
@@ -171,7 +172,7 @@ Subsections **must** all be contained in one unique section `<footer class="mast
 </footer>
 {{% /example %}}
 
-## Complete Example
+## Exemple complet
 
 {{% example html %}}
 <footer class="mastfooter bg-gray" role="contentinfo">
