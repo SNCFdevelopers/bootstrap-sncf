@@ -1,12 +1,13 @@
 ---
 layout: docs
-title: Navs
+title: Navigation, onglets
+slug: navigation-onglets
 group: layout
 toc: true
 url: /docs/4.3/layout/navs/
 ---
 
-## Tabs
+## Onglets
 
 {{% example html %}}
 <div class="actionbar has-tabs">
@@ -35,9 +36,9 @@ url: /docs/4.3/layout/navs/
 </div>
 {{% /example %}}
 
-### Colored tabs
+### Onglets colorés
 
-Just add `bg-colorname` to `<div class="actionbar">` to use colored tabs
+Ajoutez simplement `bg-colorname` à `<div class="actionbar">` pour utiliser les onglets colorés.
 
 <div class="bd-example">
 <div class="actionbar dark bg-teal has-tabs">
@@ -113,9 +114,9 @@ Just add `bg-colorname` to `<div class="actionbar">` to use colored tabs
 {{% /highlight %}}
 
 
-##  Actionbar
+##  Barre d'action
 
-### Menu example
+### Exemple de menu
 
 <div class="bd-example">
   <nav class="menu" data-role="menu" style="position: relative;" role="navigation">
@@ -915,7 +916,7 @@ Just add `bg-colorname` to `<div class="actionbar">` to use colored tabs
 </nav>
 {{% /highlight %}}
 
-### Complete example
+### Exemple complet
 
 {{% example html %}}
 <div class="mastnav" data-component="mastnav">
