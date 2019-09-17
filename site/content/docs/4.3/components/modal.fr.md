@@ -550,7 +550,6 @@ Les modales ont deux tailles optionnelles, disponibles via des classes de modifi
   </div>
 </div>
 
-
 <!-- Grande modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Grande modale</button>
 
