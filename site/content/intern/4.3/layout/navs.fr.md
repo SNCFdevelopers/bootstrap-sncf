@@ -3,7 +3,7 @@ layout: docs
 title: Navigation, onglets
 group: layout
 toc: true
-url: /docs/4.3/layout/navigation-onglets
+url: /fr/docs/4.3/layout/navs/
 ---
 
 Les barres d'en-tête de section sont affichées sous l'en-tête et indiquent l'en-tête de section et, en fonction de l'utilisation, les sous-menus sous forme d'onglets, modes d'affichage, recherche de contexte et autres actions (édition, suppression, filtrage, etc.).

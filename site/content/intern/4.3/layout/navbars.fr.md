@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: Barre de navigation
+title: Barres de navigation
 group: layout
 toc: true
-url: /docs/4.3/layout/barres-de-navigation/
+url: /fr/docs/4.3/layout/navbars/
 ---
 
 ## Barre galactique

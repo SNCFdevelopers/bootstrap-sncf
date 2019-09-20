@@ -10,6 +10,11 @@
 </div>
 
 <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  {{- $lang := "" -}}
+  {{- if eq $.Lang "fr" -}}
+    {{- $lang = "/fr" -}}
+  {{- end -}}
+
   {{- $url := split .Permalink "/" -}}
   {{- $page_slug := index $url (sub (len $url) 2) -}}
 
@@ -36,7 +41,7 @@
     {{- $active_group := eq $.Page.Params.group $group_slug }}
 
       <li class="bd-sidenav-group my-1{{ if $active_group }} active{{ end }} js-sidenav-group{{ if $group.pages }} has-children{{ end }}">
-        <a class="d-inline-flex align-items-center bd-sidenav-group-link" href="/docs/{{ $.Site.Params.docs_version }}/{{ $group_slug }}/{{ if $group.pages }}{{ $link_slug }}/{{ end }}">
+        <a class="d-inline-flex align-items-center bd-sidenav-group-link" href="{{ $lang }}/docs/{{ $.Site.Params.docs_version }}/{{ $group_slug }}/{{ if $group.pages }}{{ $link_slug }}/{{ end }}">
           <div>{{- $group.title -}}</div>
         </a>
 
@@ -50,7 +55,7 @@
             {{- end -}}
 
             <li{{ if and $active_group (eq $page_slug $doc_slug) }} class="active bd-sidenav-active"{{ end }}>
-              <a href="/{{ $.Lang }}/docs/{{ $.Site.Params.docs_version }}/{{ $group_slug }}/{{ $doc_slug }}/">
+              <a href="{{ $lang }}/docs/{{ $.Site.Params.docs_version }}/{{ $group_slug }}/{{ $doc_slug }}/">
                 {{- $doc.title -}}
               </a>
             </li>
