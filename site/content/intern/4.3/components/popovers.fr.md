@@ -1,15 +1,13 @@
 ---
 layout: docs
 title: Bulles contextuelles
-description: Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
+description: Les bulles contextuelles, ou _popovers_ proposent une information additionnelle sur des fonctionnalités disponibles sur un site pour améliorer l'expérience utilisateur ou simplement afficher plus de détails. L'information apparaît lorsque l'utilisateur déroule ou clique sur un élément.
 group: components
 toc: true
 url: /fr/docs/4.3/components/popovers/
 ---
 
 ## Vue d'ensemble
-
-Les bulles contextuelles, ou _popovers_ propose une information additionnelle sur des fonctionnalités disponibles sur une site pour améliorer l'expérience utilisateurs ou simplement afficher plus de détails. L'information apparaît lorsque l'utilisateur déroule ou clique sur un élément.
 
 Choses à savoir pour utiliser ce composant :
 

@@ -1,15 +1,13 @@
 ---
 layout: docs
 title: Popovers
-description: Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
+description: Popovers provide additional information on features available on the website to improve the user experience or simply display more details. Information appears when the user rolls over or clicks on them (for longer content).
 group: components
 toc: true
 url: /docs/4.3/components/popovers/
 ---
 
 ## Overview
-
-Popovers provide additional information on features available on the website to improve the user experience or simply display more details. Information appears when the user rolls over or clicks on them (for longer content).
 
 Things to know when using the popover plugin:
 
