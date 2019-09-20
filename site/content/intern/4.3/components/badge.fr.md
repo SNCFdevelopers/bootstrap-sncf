@@ -6,13 +6,13 @@ toc: true
 url: /fr/docs/4.3/components/badge/
 ---
 
-## Example
+## Exemple
 
 {{% example html %}}
 <span class="badge badge-secondary">New</span>
 {{% /example %}}
 
-## Contextual variations
+## Variations contextuelles
 
 Ajoutez l'une des classes mentionnées ci-dessous pour adapter l'apparence d'un badge.
 
@@ -23,4 +23,4 @@ Ajoutez l'une des classes mentionnées ci-dessous pour adapter l'apparence d'un 
 {{< /colors.inline >}}
 {{< /example >}}
 
-{{% partial "callout-warning-color-assistive-technologies.md" %}}
+{{% partial "callout-warning-color-assistive-technologies.fr.md" %}}
