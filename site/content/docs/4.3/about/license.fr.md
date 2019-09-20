@@ -1,10 +1,8 @@
 ---
 layout: docs
 title: Licence
-slug: licence
 description: Questions fréquemment posées sur la licence opensource de Bootstrap.
 group: about
-url: /docs/4.3/about/licence/
 ---
 
 Bootstrap est livré sous licence MIT et copyright Twitter {{< year >}}. Pour résumer, voici quelques conditions d'utilisation.

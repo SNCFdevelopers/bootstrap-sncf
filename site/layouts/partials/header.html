@@ -6,6 +6,12 @@
   {{ partial "analytics-intern" . }}
 {{ end }}
 
+{{ if .IsTranslated }}
+	{{ range .Translations }}
+	<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+	{{ end }}
+{{ end }}
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{{ index .Page.Params "description" | default .Site.Params.description | markdownify }}">
