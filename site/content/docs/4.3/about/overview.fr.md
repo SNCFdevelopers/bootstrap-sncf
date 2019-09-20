@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: À propos
-slug: a-propos
 description: Plus d'informations sur l'équipe qui maintient Bootstrap, comment et pourquoi le projet a démarré, et comment y contribuer
 group: about
 aliases:
