@@ -1,0 +1,35 @@
+<main class="bd-masthead" id="content" role="main">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-6 mx-auto col-md-6 order-md-1">
+        <img class="img-fluid mb-3 mb-md-0" src="{{ .Site.BaseURL }}/assets/img/docs/design-bootstrap.png" alt="" >
+      </div>
+      <div class="col-md-6 order-md-2 text-center text-md-left pr-md-5">
+        <h2 class="text-muted lead font-weight-medium mb-2" style="text-transform:none;">SNCF Bootstrap</h2>
+        <h1 class="mb-3 text-primary" style="font-size:42px;text-transform:none;">Design Communication</h1>
+        <p class="">
+          Ceci est une version béta du Bootstrap SNCF, fork de Bootstrap.
+        </p>
+        <p class="">
+          Vous êtes designer ou développeur et vous aimeriez concevoir une interface à des fins de communication interne, ou à l'usage de nos clients, vous êtes au bon endroit !
+        </p>
+        <p class="">
+          Si au contraire, vous aimeriez concevoir une interface interne, dédiée à la production, sans but de communiquer <a class="btn btn-link" href="{{ .Site.Params.urlother }}" target="_blank"><span>consultez la variante Bootstrap Métier</span><i class="icons-external-link icons-size-x75 ml-2"></i></a>.
+        </p>
+        <p class="">
+          Ces dernières années, plusieurs applications internes ont malheureusement été réalisées sans réellement coller à la charte SNCF.
+          De plus, beaucoup de temps a été perdu par les développeurs à réinventer des composants qui existaient déjà.
+          C'est pourquoi nous avons créé cet outil pour vous, pour vous garantir le respect de la charte et passer moins de temps à coder, et avoir plus de temps pour concevoir !
+          <a class="btn btn-link" href="/docs/4.3/getting-started/how-to-contribute/">Comment contribuer ?<i class="icons-arrow-next ml-2"></i></a>
+        </p>
+        <p class="">
+          Pour plus d'informations, contactez-nous sur <a class="btn btn-link" href="mailto:design.fab@sncf.fr">design.fab@sncf.fr</a>, nous serons ravis de découvrir votre projet, et de savoir comment nous pourrions vous aider !
+        </p>
+        <div class="d-flex flex-column flex-md-row lead mb-3">
+          <a href="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/getting-started/introduction/" class="btn btn-lg btn-primary mb-3 mb-md-0 mr-md-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Bien démarrer</a>
+          <a href="{{ .Site.BaseURL }}/docs/{{ .Site.Params.docs_version }}/getting-started/download/" class="btn btn-lg btn-secondary">Télécharger</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
