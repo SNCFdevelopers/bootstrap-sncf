@@ -8,14 +8,14 @@
     {{ partial "docs-navbar" . }}
 
     {{- if eq .Site.Params.doc_flavour "extern" -}}
-      {{ partial "index-extern" . }}
+      {{ partial (printf "index-extern.%s" .Lang) . }}
     {{- else -}}
-      {{ partial "index-intern" . }}
+      {{ partial (printf "index-intern.%s" .Lang) . }}
     {{- end -}}
 
     {{ .Content }}
 
-    {{ partial "footer" . }}
+    {{ partial (printf "footer.%s" .Lang) . }}
     {{ partial "scripts" . }}
   </body>
 </html>
