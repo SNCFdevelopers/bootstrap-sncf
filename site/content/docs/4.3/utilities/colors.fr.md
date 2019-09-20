@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Couleurs
-slug: couleurs
 description: Donnez du sens grâce aux couleurs avec des classes utilitaires prévues à cet effet. Cela inclut également le support des états au survol.
 group: utilities
 toc: true

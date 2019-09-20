@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Flottants (float)
-slug: flottants
 description: Active l'attribut `float` sur un élément, via les breakpoints en utilisant des classes utilitaires dédiées.
 group: utilities
 toc: true

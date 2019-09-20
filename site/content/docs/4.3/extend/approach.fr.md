@@ -1,13 +1,11 @@
 ---
 layout: docs
 title: Approche
-slug: approche
 description: Découvrez les principes directeurs, les stratégies et les techniques utilisés pour créer et gérer Bootstrap afin que vous puissiez plus facilement le personnaliser et l'étendre vous-même.
 group: extend
 toc: true
 aliases:
   - "/docs/4.3/extend/"
-url: /docs/4.3/extend/approche/
 ---
 
 Bien que les pages de démarrage fournissent une introduction au projet et à ce qu'il offre, le présent document est consacré à pourquoi nous faisons ce que nous faisons dans Bootstrap. Cela explique notre philosophie de construire le Web afin que d'autres puissent apprendre de nous, contribuer avec nous et nous aider à nous améliorer.

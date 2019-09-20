@@ -2,7 +2,6 @@
 layout: docs
 title: Sélecteurs de date et Heure
 description: Permettent aux utilisateurs de choisir une valeur de date et heure prédéterminée à l'aide d'élements visuels et interactifs.
-slug: selecteurs-de-date-et-heure
 group: components
 toc: true
 permalink: /docs/4.3/components/picker/

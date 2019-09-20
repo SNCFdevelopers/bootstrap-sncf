@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Vue d'ensemble
-slug: vue-d-ensemble
 description: Composants et options pour mettre en page votre projet avec Bootstrap SNCF, notamment l'encapsulage de containers, le puissant système de grille et les utilitaires de classes adaptatives (_responsive_).
 group: layout
 aliases: "/docs/4.3/layout/"

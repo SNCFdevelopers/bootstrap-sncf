@@ -1,15 +1,14 @@
 ---
 layout: docs
 title: Graphiques
-slug: graphiques
 description: Les graphiques peuvent être notamment utilisés dans les dashboards d'applications de production. Ils permettent de mettre graphiquement en valeur les données.
 group: components
 toc: true
-url: /docs/4.3/components/graphiques/
+url: /fr/docs/4.3/components/charts/
 ---
 
 {{% callout info %}}
-### Comment utiliser l'accès programmatique ?
+### Comment utiliser l'API de ce composant ?
 Nos graphiques sont basés sur la [ChartJS library](http://www.chartjs.org/docs/latest/) et vous pouvez utiliser toutes les fonctions incluses et décrites dans leur documentation.
 Veuillez noter que **vous ne devez pas** charger `chart.js` car il est déjà inclus dans `bootstrap-sncf.min.js`.
 {{% /callout %}}

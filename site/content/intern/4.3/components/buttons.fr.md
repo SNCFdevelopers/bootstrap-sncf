@@ -1,11 +1,10 @@
 ---
 layout: docs
 title: Boutons
-slug: boutons
 description: "Les boutons ont plusieurs utilisations : ils peuvent permettre à l'utilisateur de déclencher une action, répondre à une question posée dans une interface conversationnelle, activer ou désactiver un état, augmenter ou diminuer une valeur numérique, etc. A noter que les boutons de menu sont affichés dans la section des menus déroulants."
 group: components
 toc: true
-url: /docs/4.3/components/boutons/
+url: /fr/docs/4.3/components/buttons/
 ---
 
 ## Exemples

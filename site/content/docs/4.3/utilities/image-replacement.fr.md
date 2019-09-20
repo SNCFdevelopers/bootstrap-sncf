@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Remplacement d'image
-slug: remplacement-d-image
 description: Remplacer le texte d'un élément avec une images de fond grâce à la classe utilitaire dédiée.
 group: utilities
 toc: true

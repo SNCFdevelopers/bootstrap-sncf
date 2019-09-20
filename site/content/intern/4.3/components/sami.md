@@ -1,6 +1,7 @@
 ---
 layout: docs
-title: Sami
+title: SAMI
+description: Performance indicators
 group: components
 toc: true
 url: /docs/4.3/components/sami/

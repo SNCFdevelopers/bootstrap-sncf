@@ -1,11 +1,10 @@
 ---
 layout: docs
 title: Édito
-slug: edito
 description: Éléments de mise en forme éditoriaux.
 group: components
 toc: true
-url: /docs/4.3/components/edito/
+url: /fr/docs/4.3/components/edito/
 ---
 
 ## Accordéons

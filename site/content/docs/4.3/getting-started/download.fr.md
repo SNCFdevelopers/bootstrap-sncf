@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Téléchargement
-slug: telechargement
 description: Téléchargez Bootstrap SNCF pour obtenir le code CSS et JavaScript compilé, le code source ou incluez-le via npm.
 group: getting-started
 toc: true

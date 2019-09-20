@@ -1,11 +1,10 @@
 ---
 layout: docs
 title: Carrousel
-slug: carrousel
 description: Un composant diaporama permettant de parcourir des éléments, images ou diapositives de texte, comme un carrousel.
 group: components
 toc: true
-url: /docs/4.3/components/carousel/
+url: /fr/docs/4.3/components/carousel/
 ---
 
 ## Carrousel
@@ -61,7 +60,7 @@ Il est possible d'y présenter plusieurs types de contenu : illustrations, _pack
 
 ### Description
 
-Les notes de bas de page du carrousel sur les pages de texte offrent un contenu supplémentaire intéressant pour les utilisateurs en fonction de la page actuellement consultée. Ils facilitent la navigation sur un site Web. 
+Les notes de bas de page du carrousel sur les pages de texte offrent un contenu supplémentaire intéressant pour les utilisateurs en fonction de la page actuellement consultée. Ils facilitent la navigation sur un site Web.
 Il est possible également d'y présenter plusieurs types de contenu : illustrations, _packshots_, et photos produites par SNCF.
 
 {{% example html %}}

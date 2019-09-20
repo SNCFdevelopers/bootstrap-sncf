@@ -1,10 +1,9 @@
 ---
 layout: docs
 title: Languettes
-slug: languettes
 group: components
 toc: true
-url: /docs/4.3/components/languettes/
+url: /fr/docs/4.3/components/tongues/
 ---
 
 Les languettes indiquent des informations urgentes liées à une offre, à une actualité ou à un nouveau développement. Exemples: « depuis novembre », « du 12 au 22 janvier », « à venir » ou « nouveau ». Ils peuvent être utilisés pour les composants suivants de la page d'accueil :

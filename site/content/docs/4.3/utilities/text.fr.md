@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Texte
-slug: texte
 description: Documentation et exemples pour les classes utilitaires courantes pour les textes, afin de contrôler l'alignement, la graisse, le wrapping, etc.
 group: utilities
 toc: true

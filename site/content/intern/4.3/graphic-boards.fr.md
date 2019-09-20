@@ -1,11 +1,10 @@
 ---
 layout: docs
 title: Planches graphiques
-slug: planches-graphiques
 description: Téléchargez tous nos composants et mises en page aux formats JPG ou PSD, ainsi que les _guidelines_ UX.
 group: components
 toc: true
-url: /docs/4.3/planches-graphiques/
+url: /fr/docs/4.3/graphic-boards/
 ---
 
 <a class="btn btn-primary mr-2" href="https://sources.fd.sncf.fr/designsystem//designsystem.zip">Télécharger</a>

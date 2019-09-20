@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Dimensions
-slug: dimensions
 description: Modifier facilement les dimensions d'un élément grâce à nos utilitaires pour la largeur et la hauteur.
 group: utilities
 toc: true

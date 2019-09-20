@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Positionnement
-slug: positionnement
 description: Utilisez ces raccourcis pour rapidement configurer la position d'un élément.
 group: utilities
 toc: true

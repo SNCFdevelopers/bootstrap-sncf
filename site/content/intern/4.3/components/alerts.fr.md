@@ -1,11 +1,10 @@
 ---
 layout: docs
 title: Alertes
-slug: alertes
 description: Fournit des notifications contextuelles sous forme de messages d'alerte.
 group: components
 toc: true
-url: /docs/4.3/components/alertes/
+url: /fr/docs/4.3/components/alerts/
 ---
 
 ## Messages d'erreur

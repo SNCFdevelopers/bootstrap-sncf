@@ -4,7 +4,7 @@ title: Typographies
 description: Documentation et exemples pour la typographie de Bootstrap, en incluant les paramètres globaux pour les en-têtes, titres, texte, listes, etc.
 group: content
 toc: true
-url: /docs/4.3/content/typography/
+url: /fr/docs/4.3/content/typography/
 ---
 
 ## Titres

@@ -2,7 +2,6 @@
 layout: docs
 title: Système de grille
 description: Utilisez notre grille flexbox puissante et pensée pour le mobile en premier, de façon à construire des mises en pages pour toutes les formes et toutes les tailles grâce à un système divisant la page en 12 colonnes, 5 niveaux d'adaptation, des variables SASS et des mixins, et de nombreuses classes prédéfinies.
-slug: grille
 group: layout
 toc: true
 ---

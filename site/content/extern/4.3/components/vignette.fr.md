@@ -3,7 +3,7 @@ layout: docs
 title: Vignettes
 group: components
 toc: true
-url: /docs/4.3/components/vignette/
+url: /fr/docs/4.3/components/vignette/
 ---
 
 Les vignettes classiques mettent en valeur le contenu et sont utilisées par trois sur la page d'accueil. Ils dirigent les utilisateurs directement vers une page située plus en profondeur dans l’arborescence du site Web.

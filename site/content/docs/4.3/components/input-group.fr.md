@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Groupes de saisies
-slug: groupes-de-saisies
 description: Exemples et guide d'utilisation pour les groupes de saisies.
 group: components
 toc: true

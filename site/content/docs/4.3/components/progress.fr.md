@@ -1,11 +1,10 @@
 ---
 layout: docs
 title: Barres de progression
-slug: barres-de-progression
 description: Documentation et exemples des indicateurs d'étapes, barres de progression avec la gestion des labels.
 group: components
 toc: true
-permalink: /docs/4.3/components/barres-de-progression/
+permalink: /docs/4.3/components/progress/
 ---
 
 ## Présentation

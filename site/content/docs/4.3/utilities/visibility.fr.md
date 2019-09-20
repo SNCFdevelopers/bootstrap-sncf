@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Visibilité
-slug: visibilite
 description: Contrôlez la visibilité, sans modifier l'affichage `display`, avec les classes utilitaires dédiées à celle-ci.
 group: utilities
 ---

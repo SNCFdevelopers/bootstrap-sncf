@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Mode sombre
-slug: mode-sombre
 description: Thème sombre pour tous les composants et exemples.
 group: layout
 toc: true

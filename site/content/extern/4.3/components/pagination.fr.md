@@ -4,7 +4,7 @@ title: Pagination
 description: Les numéros de page guident les utilisateurs dans le contenu sur plusieurs pages. Ils apparaissent au bas de la page.
 group: components
 toc: true
-url: /docs/4.3/components/pagination/
+url: /fr/docs/4.3/components/pagination/
 ---
 
 ## Vue d'ensemble

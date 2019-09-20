@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Espacement
-slug: espacement
 description: Boostrap inclut une large gamme de raccourcis de marges intérieures et extérieurs, adaptatifs, pour modifier l'apparence d'un élément.
 group: utilities
 toc: true

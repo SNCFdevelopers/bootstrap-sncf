@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Icones
-slug: icones
 description: Exemples et guide d'utilisation des icones, pictogrammes.
 group: components
 toc: true

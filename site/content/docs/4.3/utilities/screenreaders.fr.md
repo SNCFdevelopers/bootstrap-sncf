@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Lecteurs d'écran
-slug: lecteurs-d-ecran
 description: Utilisez les classes utilitaires dédiées aux lecteurs d'écran pour masquer des éléments sur tous les périphériques, sauf les lecteurs d'écran.
 group: utilities
 toc: true

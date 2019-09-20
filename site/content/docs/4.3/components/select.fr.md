@@ -1,11 +1,9 @@
 ---
 layout: docs
 title: Listes déroulantes
-slug: listes-deroulantes
 description: Exemples et guide d'utilisation des listes déroulantes (select)
 group: components
 toc: true
-url: /docs/4.3/components/listes-deroulantes/
 ---
 
 ## Utilisation par défaut

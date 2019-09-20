@@ -4,7 +4,7 @@ title: Médias
 description: Les pages de contenu peuvent utiliser différents formats d'image. Les contributeurs peuvent opter pour des illustrations, packshots ou photos produite SNCF.
 group: components
 toc: true
-url: /docs/4.3/components/medias/
+url: /fr/docs/4.3/components/medias/
 ---
 
 ## Images

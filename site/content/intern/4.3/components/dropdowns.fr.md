@@ -1,11 +1,10 @@
 ---
 layout: docs
 title: Menus déroulants
-slug: menus-deroulants
 description: Utilisez les menus déroulants permettant l'affichage d'une liste de liens contextuels avec le plugin Bootstrap.
 group: components
 toc: true
-url: /docs/4.3/components/menus-deroulants/
+url: /fr/docs/4.3/components/dropdowns/
 ---
 
 ## Vue d'ensemble

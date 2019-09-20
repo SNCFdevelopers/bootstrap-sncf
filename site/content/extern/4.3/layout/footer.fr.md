@@ -1,10 +1,9 @@
 ---
 layout: docs
 title: Pied de page
-slug: pied-de-page
 group: layout
 toc: true
-url: /docs/4.3/layout/footer/
+url: /fr/docs/4.3/layout/footer/
 ---
 
 {{% callout warning %}}

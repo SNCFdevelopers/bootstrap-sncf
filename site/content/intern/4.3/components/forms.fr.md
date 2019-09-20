@@ -1,11 +1,10 @@
 ---
 layout: docs
 title: Formulaires et champs
-slug: formulaires-et-champs
 description: Exemples et consignes d'utilisation pour les champs, les options de disposition et les composants personnalisés permettant de créer une grande variété de formulaires.
 group: components
 toc: true
-url: /docs/4.3/components/formulaires-et-champs/
+url: /fr/docs/4.3/components/forms/
 ---
 
 ## Vue d'ensemble

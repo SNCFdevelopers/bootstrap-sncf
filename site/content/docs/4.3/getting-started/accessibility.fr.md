@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Accessibilité
-slug: accessibilite
 description: Un bref aperçu des fonctionnalités et des limitations de Bootstrap pour la création de contenu accessible.
 group: getting-started
 toc: true

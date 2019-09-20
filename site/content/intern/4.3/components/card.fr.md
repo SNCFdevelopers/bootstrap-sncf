@@ -1,11 +1,10 @@
 ---
 layout: docs
 title: Cartes
-slug: cartes
 description: Les cartes peuvent être utilisées lorsque les images permettent de mieux identifier le contenu (sous forme de liste mosaique d'éléments reconnaissables visuellement par exemple).
 group: components
 toc: true
-url: /docs/4.3/components/cartes/
+url: /fr/docs/4.3/components/cards/
 ---
 
 ## A propos

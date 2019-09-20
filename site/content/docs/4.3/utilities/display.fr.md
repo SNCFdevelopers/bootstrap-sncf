@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Propriétés d'affichage
-slug: affichage
 description: Basculez rapidement et de manière adaptative l'affichage des composants, et plus encore, avec nos utilitaires d'affichage. Ils prennent en charge certaines des valeurs les plus courantes, et quelques extras permettant de contrôler l’affichage lors de l’impression.
 group: utilities
 toc: true

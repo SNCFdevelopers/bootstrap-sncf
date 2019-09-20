@@ -4,7 +4,7 @@ title: Pagination
 description: Documentation et exemples montrant la pagination pour indiquer une série de contenus existants sur plusieurs pages.
 group: components
 toc: true
-url: /docs/4.3/components/pagination/
+url: /fr/docs/4.3/components/pagination/
 ---
 
 ## Vue d'ensemble

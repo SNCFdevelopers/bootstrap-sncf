@@ -3,6 +3,7 @@ layout: docs
 title: Breadcrumb
 description: Breadcrumbs show the path a reader has taken in a section and can return the reader to a higher-level page. It thus shows the reader's location within the website's hierarchy. Only websites with deep tree structures need breadcrumbs.
 group: components
+toc: true
 ---
 
 ## Overview

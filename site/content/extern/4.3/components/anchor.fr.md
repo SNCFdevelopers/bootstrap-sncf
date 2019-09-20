@@ -4,7 +4,7 @@ title: Ancre
 description: Les liens d'ancrage facilitent la navigation verticale en amenant les utilisateurs directement à un emplacement spécifique sur une page de texte.
 group: components
 toc: true
-url: /docs/4.3/components/anchor/
+url: /fr/docs/4.3/components/anchor/
 ---
 
 Les ancres sont situées à gauche du texte/contenu en haut de la page. Les liens d'ancrage restent figés lorsque l'utilisateur fait défiler la page. Un indicateur de position indique aux lecteurs où ils se trouvent sur la page.

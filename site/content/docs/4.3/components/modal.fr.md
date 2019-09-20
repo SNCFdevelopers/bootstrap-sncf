@@ -1,12 +1,9 @@
 ---
 layout: docs
 title: Fenêtres modales
-slug: modales
 description: Utilisez le plugin JavaScript modal de Bootstrap pour ajuster des boîtes de dialogue sur votre site pour les Lightbox, les notifications des utilisateurs ou un contenu entièrement personnalisé.
-slug: Fenêtre modale
 group: components
 toc: true
-url: /docs/4.3/components/modales/
 ---
 ## Description
 

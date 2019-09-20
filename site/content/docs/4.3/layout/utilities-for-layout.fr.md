@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Outils de mise en page
-slug: outils-de-mise-en-page
 description: Bootstrap inclut des dizaines de classes d’utilitaires permettant d’afficher, de masquer, d’aligner et d’espacer le contenu pour un développement plus rapide, adapté aux mobiles et adaptatif.
 group: layout
 toc: true

@@ -1,11 +1,10 @@
 ---
 layout: docs
 title: Info-bulles
-slug: info-bulles
 description: Documentation et exemples pour ajouter des info-bulles Bootstrap en CSS et JavaScript, avec CSS3 pour les animations, et des attributs `data-` pour le stockage local du titre.
 group: components
 toc: true
-url: /docs/4.3/components/info-bulles/
+url: /fr/docs/4.3/components/tooltips/
 ---
 
 ## Vue d'ensemble

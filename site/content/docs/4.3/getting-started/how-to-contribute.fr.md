@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Comment contribuer ?
-slug: comment-contribuer
 description: Vous n'avez pas trouvé ce que vous cherchez ? Vous voulez contribuer ?
 group: getting-started
 toc: true

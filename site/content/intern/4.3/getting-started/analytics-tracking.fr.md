@@ -4,7 +4,7 @@ title: Analytics tracking
 description: Bonnes pratiques pour implémenter le suivi utilisateurs et le tracking d'évènements, ou utilisateurs.
 group: getting-started
 toc: true
-url: /docs/4.3/getting-started/analytics-tracking/
+url: /fr/docs/4.3/getting-started/analytics-tracking/
 ---
 
 Data Analytics has become a strong subject on continuous improvement within the SNCF Group.

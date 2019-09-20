@@ -4,7 +4,7 @@ title: SAMI
 description: Indicateurs de performance
 group: components
 toc: true
-url: /docs/4.3/components/sami/
+url: /fr/docs/4.3/components/sami/
 ---
 
 Il y a plusieurs indicateurs de performance. Les plus courants sont :

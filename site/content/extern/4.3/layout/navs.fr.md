@@ -1,10 +1,9 @@
 ---
 layout: docs
 title: Navigation, onglets
-slug: navigation-onglets
 group: layout
 toc: true
-url: /docs/4.3/layout/navs/
+url: /fr/docs/4.3/layout/navs/
 ---
 
 ## Onglets

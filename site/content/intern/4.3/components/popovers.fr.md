@@ -1,11 +1,10 @@
 ---
 layout: docs
 title: Bulles contextuelles
-slug: bulles-contextuelles
 description: Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
 group: components
 toc: true
-url: /docs/4.3/components/bulles-contextuelles/
+url: /fr/docs/4.3/components/popovers/
 ---
 
 ## Vue d'ensemble

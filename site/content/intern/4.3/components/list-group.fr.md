@@ -1,12 +1,10 @@
 ---
 layout: docs
 title: Groupes de listes
-slug: groupes-de-listes
 description: Les groupes de listes constituent un composant souple et puissant, permettant d'afficher une série de contenus. Modifiez-les et étendez-les pour prendre en charge à peu près tous les contenus.
-slug: Groupes de liste pour tableaux
 group: components
 toc: true
-url: /docs/4.3/components/groupes-de-listes/
+url: /fr/docs/4.3/components/list-group/
 ---
 
 ## Description

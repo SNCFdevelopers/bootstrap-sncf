@@ -2,10 +2,9 @@
 layout: docs
 title: Typographie
 description: Documentation et exemples pour la typographie de Bootstrap SNCF, incluant des paramètres généraux, pour les titres, corps de texte, listes, etc.
-slug: typographie
 group: content
 toc: true
-url: /docs/4.3/content/typographie/
+url: /fr/docs/4.3/content/typography/
 ---
 
 ## Titres

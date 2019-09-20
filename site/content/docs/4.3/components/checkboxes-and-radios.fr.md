@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Cases à cocher et boutons radio
-slug: cases-a-cocher-et-boutons-radio
 description: Exemples et consignes d'utilisation pour les styles de cases à cocher et de boutons radios.
 group: components
 toc: true

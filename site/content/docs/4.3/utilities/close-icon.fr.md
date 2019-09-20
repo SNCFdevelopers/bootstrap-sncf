@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Icône de fermeture
-slug: icone-de-fermeture
 description: Utilisez une icône de fermeture générique pour faire disparaître des éléments que les modaux et les alertes.
 group: utilities
 toc: true

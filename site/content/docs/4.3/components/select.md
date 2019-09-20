@@ -4,7 +4,6 @@ title: Select
 description: Examples and usage guidelines for select.
 group: components
 toc: true
-url: /docs/4.3/components/select/
 ---
 
 ## Default

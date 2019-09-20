@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Alignement vertical
-slug: alignement-vertical
 description: Changez facilement l'alignement vertical des éléments `inline`, `inline-block`, `inline-table`, et cellules d'une `table`.
 group: utilities
 ---
