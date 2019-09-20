@@ -31,6 +31,7 @@ assetDir:               "_gh_pages/assets"
 contentDir:             "site/content"
 dataDir:                "site/data"
 layoutDir:              "site/layouts"
+i18nDir:                "site/i18n"
 staticDir:              "_gh_pages"
 
 params:

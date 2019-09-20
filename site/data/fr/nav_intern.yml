@@ -1,0 +1,127 @@
+- title: Bien démarrer
+  link: Getting started
+  pages:
+    - title: Introduction
+    - title: Téléchargement
+      link: Download
+    - title: Javascript
+    - title: Browsers & devices
+    - title: Accessibilité
+      link: Accessibility
+    - title: Analytics tracking
+    - title: Comment contribuer
+      link: How to contribute
+
+- title: Graphic boards
+
+- title: Mise en page
+  link: Layout
+  pages:
+    - title: Overview
+    - title: Grid
+    - title: Dark mode
+    - title: Utilities for layout
+    - title: Navbars
+    - title: Navs
+
+- title: Contenu
+  link: Content
+  pages:
+    - title: Reboot
+    - title: Typographie
+      link: Typography
+    - title: Code
+    - title: Images
+    - title: Tableaux
+      link: Tables
+    - title: Favicon
+
+- title: Composants
+  link: Components
+  pages:
+    - title: Alertes
+      link: Alerts
+    - title: Badge
+    - title: Fil d'ariane
+      link: Breadcrumb
+    - title: boutons
+      link: Buttons
+    - title: Cartes
+      link: Card
+    - title: Graphiques
+      link: Charts
+    - title: Cases à cocher, boutons radio
+      link: Checkboxes and radios
+    - title: Menus déroulants
+      link: Dropdowns
+    - title: Formulaires
+      link: Forms
+    - title: Icônes
+      link: Icons
+    - title: Groupes de champs
+      link: Input group
+    - title: Groupe de Listes
+      link: List group
+    - title: Fenêtres modales
+      link: Modal
+    - title: Pagination
+    - title: Sélécteur de dates
+      link: Picker
+    - title: Bulles contextuelles
+      link: Popovers
+    - title: Barres de progression
+      link: Progress
+    - title: Sami
+    - title: Listes déroulantes
+      link: Select
+    - title: Infos-bulles
+      link: Tooltips
+
+- title: Utilitaires
+  link: Utilities
+  pages:
+    - title: API
+    - title: Clearfix
+    - title: Icône « croix »
+      link: Close icon
+    - title: Couleurs
+      link: Colors
+    - title: Affichage
+      link: Display
+    - title: Embed
+    - title: Flex
+    - title: Float
+    - title: Remplacement d'Images
+      link: Image replacement
+    - title: Positionnement
+      link: Position
+    - title: Lecteurs d'écrans
+      link: Screenreaders
+    - title: Dimension
+      link: Sizing
+    - title: Espacement
+      link: Spacing
+    - title: Texte
+      link: Text
+    - title: Alignement Vertical
+      link: Vertical align
+    - title: Visibilité
+      link: Visibility
+
+- title: Extend
+  pages:
+    - title: Approche
+      link: Approach
+
+- title: Migration
+
+- title: À propos
+  link: About
+  pages:
+    - title: Vue d'ensemble
+      link: Overview
+    - title: Versions
+    - title: Licence
+      link: License
+    - title: Traductions
+      link: Translations

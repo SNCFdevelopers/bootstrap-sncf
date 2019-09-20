@@ -13,13 +13,14 @@
   {{- $url := split .Permalink "/" -}}
   {{- $page_slug := index $url (sub (len $url) 2) -}}
 
-  {{- $data_nav := .Site.Data.nav_intern -}}
+  {{- $data_nav := index .Site.Data .Site.Language.Lang -}}
+  {{- $nav := $data_nav.nav_intern -}}
   {{- if eq .Site.Params.doc_flavour "extern" }}
-    {{- $data_nav = .Site.Data.nav_extern -}}
+    {{- $nav = $data_nav.nav_extern -}}
   {{- end -}}
 
   <ul class="list-unstyled">
-  {{- range $group := $data_nav -}}
+  {{- range $group := $nav -}}
     {{- $link := $group.title -}}
     {{- $link_slug := $link | urlize -}}
 
@@ -29,6 +30,9 @@
     {{- end -}}
 
     {{- $group_slug := $group.title | urlize -}}
+    {{- if $group.link -}}
+      {{- $group_slug = $group.link | urlize }}
+    {{- end -}}
     {{- $active_group := eq $.Page.Params.group $group_slug }}
 
       <li class="bd-sidenav-group my-1{{ if $active_group }} active{{ end }} js-sidenav-group{{ if $group.pages }} has-children{{ end }}">
@@ -39,9 +43,14 @@
         {{- if $group.pages }}
         <ul class="nav bd-sidenav flex-column mb-2">
           {{- range $doc := $group.pages -}}
+
             {{- $doc_slug := $doc.title | urlize }}
+            {{- if $doc.link -}}
+              {{- $doc_slug = $doc.link | urlize }}
+            {{- end -}}
+
             <li{{ if and $active_group (eq $page_slug $doc_slug) }} class="active bd-sidenav-active"{{ end }}>
-              <a href="/docs/{{ $.Site.Params.docs_version }}/{{ $group_slug }}/{{ $doc_slug }}/">
+              <a href="/{{ $.Lang }}/docs/{{ $.Site.Params.docs_version }}/{{ $group_slug }}/{{ $doc_slug }}/">
                 {{- $doc.title -}}
               </a>
             </li>
