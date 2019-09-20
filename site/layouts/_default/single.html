@@ -23,7 +23,7 @@
       </div>
     </main>
 
-    {{ partial "footer" . }}
+    {{ partial (printf "footer.%s" .Lang) . }}
     {{ partial "scripts" . }}
   </body>
 </html>
