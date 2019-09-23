@@ -30,8 +30,7 @@
 
           {{ .Content }}
 
-          {{ if eq .Title "How to contribute" }}
-          {{ else }}
+          {{ if and (ne .Title "How to contribute") (ne .Title "Comment contribuer ?") }}
             {{ partial "insert-howtocontribute" . }}
           {{ end }}
         </main>
