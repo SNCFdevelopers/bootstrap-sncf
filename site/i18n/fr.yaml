@@ -37,3 +37,12 @@
 
 - id: searchfor
   translation: rechercher
+
+- id: language
+  translation: langue
+
+- id: french
+  translation: français
+
+- id: english
+  translation: anglais
