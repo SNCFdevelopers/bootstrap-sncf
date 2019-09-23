@@ -56,7 +56,7 @@ N'oubliez pas que **toutes ces librairies sont déjà incluses** dans nos versio
 - _Collapse_ pour la bascule de visibilité du contenu
 - Menus déroulants pour l'affichage et le positionnement (nécessite également [Popper.js](https://popper.js.org/))
 - Modales pour l'affichage, le positionnement et le comportement au défilement
-- Barre de navigation pour étendre le plugin _Collapse_ et implémenter le comportement adaptatif
+- Barre de navigation pour étendre le plugin _Collapse_ et implémenter le comportement _responsive_
 - Sélecteurs de date & heure (nécessite également [Flatpickrjs](https://flatpickr.js.org/))
 - Barres de progression
 - _Scrollspy_ pour le comportement au défilement et mises à jour de la navigation
@@ -114,7 +114,7 @@ Bootstrap nécessite l'utilisation du doctype HTML5. Sans cela, vous verrez un s
 </html>
 {{< /highlight >}}
 
-### Meta tag adaptatif (_responsive_)
+### Meta tag _responsive_
 Bootstrap est développé *mobile first*, une stratégie dans laquelle nous optimisons d’abord le code pour les appareils mobiles, puis mettons à l’échelle les composants à l’aide de requêtes multimédia CSS. Pour que le rendu et le zoom tactile soient corrects pour tous les périphériques, **ajoutez la balise méta responsive de la fenêtre d'affichage** à votre `<tête>`.
 
 {{< highlight html >}}

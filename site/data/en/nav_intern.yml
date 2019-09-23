@@ -2,8 +2,6 @@
   pages:
     - title: Introduction
     - title: Download
-    - title: Javascript
-    - title: Browsers & devices
     - title: Accessibility
     - title: Analytics tracking
     - title: How to contribute
@@ -25,16 +23,17 @@
     - title: Typography
     - title: Code
     - title: Images
+    - title: Figures
     - title: Tables
     - title: Favicon
 
 - title: Components
   pages:
     - title: Alerts
-    - title: Badge
+    - title: Badges
     - title: Breadcrumb
     - title: Buttons
-    - title: Card
+    - title: Cards
     - title: Charts
     - title: Checkboxes and radios
     - title: Dropdowns
@@ -53,7 +52,6 @@
 
 - title: Utilities
   pages:
-    - title: Api
     - title: Clearfix
     - title: Close icon
     - title: Colors

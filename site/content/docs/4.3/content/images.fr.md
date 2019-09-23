@@ -1,18 +1,12 @@
 ---
 layout: docs
 title: Images
-description: Documentation et exemples pour permettre aux images d'avoir un comportement adaptatif (_responsive_) pour notamment ne pas être plus grandes que leur élément parent, et ajouter des styles légers via les classes.
+description: Documentation et exemples pour permettre aux images d'avoir un comportement _responsive_ pour notamment ne pas être plus grandes que leur élément parent, et ajouter des styles légers via les classes.
 group: content
 toc: true
 ---
 
-{{% callout info %}}
-### Note de traduction
-Nous avons traduit _responsive_ par _adaptatif_ dans l'ensemble du document. \\
-Plus d'informations sur la [page wikipédia qui en parle](https://fr.wikipedia.org/wiki/Site_web_adaptatif).
-{{% /callout %}}
-
-## Images adaptatives
+## Images _responsives_
 
 Les images dans Bootstrap sont rendues adaptatives avec les classes `.img-fluid`. `max-width: 100%;` et `height: auto;` et ajouté à l'image de façon à ce qu'elle se mette à l'échelle avec l'élément parent.
 

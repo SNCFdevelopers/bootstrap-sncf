@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Vue d'ensemble
-description: Composants et options pour mettre en page votre projet avec Bootstrap SNCF, notamment l'encapsulage de containers, le puissant système de grille et les utilitaires de classes adaptatives (_responsive_).
+description: Composants et options pour mettre en page votre projet avec Bootstrap SNCF, notamment l'encapsulage de containers, le puissant système de grille et les utilitaires de classes _responsive_.
 group: layout
 aliases: "/docs/4.3/layout/"
 toc: true
@@ -13,7 +13,7 @@ Les conteneurs sont les éléments de présentation les plus élémentaires de B
 
 ### « Tout en un »
 
-Notre classe par défaut `.container` est un container adaptatif, à largeur fixe, ce qui signifie que sa largeur maximale varie à chaque point d'arrêt.
+Notre classe par défaut `.container` est un container _responsive_, à largeur fixe, ce qui signifie que sa largeur maximale varie à chaque point d'arrêt.
 
 <div class="bd-example">
   <div class="example-container-element col-6 p-3 mx-auto">
@@ -43,9 +43,9 @@ Utilisez `.container-fluid` pour un container qui prenne toute la largeur de la 
 </div>
 {{< /highlight >}}
 
-### Adaptatif (_responsive_)
+### _Responsive_
 
-Les conteneurs réactifs sont nouveaux dans Bootstrap v4. Ils vous permettent de spécifier une classe pleine largeur jusqu'à ce qu'un point d'arrêt particulier soit atteint et qu'une `max-width` soit appliquée. Par exemple, `.container-sm` a une largeur de 100% pour commencer, jusqu'à ce que le point d'arrêt de `sm` soit atteint, où il restera jusqu'aux points d'arrêt les plus élevés.
+Les conteneurs réactifs sont nouveaux dans Bootstrap v4. Ils vous permettent de spécifier une classe pleine largeur jusqu'à ce qu'un point d'arrêt particulier soit atteint et qu'une `max-width` soit appliquée. Par exemple, `.container-sm` a une largeur de 100% pour commencer, jusqu'à ce que le point d'arrêt de `sm` soit atteint, où il restera jusqu'aux _breakpoints_ les plus élevés.
 
 <div class="bd-example">
   <div class="example-container-element p-3 mb-3">
@@ -63,11 +63,11 @@ Les conteneurs réactifs sont nouveaux dans Bootstrap v4. Ils vous permettent de
 <div class="container-xl">100% wide until extra large breakpoint</div>
 {{< /highlight >}}
 
-## Points d'arrêts adaptatifs
+## _Breakpoints Responsive_
 
-Depuis que Bootstrap est développé pour être d'abord mobile, nous utilisons quelques [requêtes média (_media queries_)](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) pour créer des points de rupture sensibles pour nos mises en page. et interfaces. Ces points d'arrêt sont principalement basés sur les largeurs minimales de la fenêtre d'affichage et nous permettent de redimensionner des éléments lorsque la fenêtre d'affichage change.
+Depuis que Bootstrap est développé pour être d'abord mobile, nous utilisons quelques [requêtes média (_media queries_)](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) pour créer des _breakpoints_ sensibles pour nos mises en page. et interfaces. Ces p _breakpoints_ sont principalement basés sur les largeurs minimales de la fenêtre d'affichage et nous permettent de redimensionner des éléments lorsque la fenêtre d'affichage change.
 
-Bootstrap utilise principalement les plages de requête média suivantes (ou points d'arrêt) dans nos fichiers Sass source pour notre structure, notre système de grille et nos composants.
+Bootstrap utilise principalement les plages de requête média suivantes (ou _breakpoints_) dans nos fichiers Sass source pour notre structure, notre système de grille et nos composants.
 
 {{< highlight scss >}}
 // Ecrans très petits (téléphones en mode portrait, moins de 576px)
@@ -136,7 +136,7 @@ Une fois encore, ces requêtes média sont aussi disponibles avec des mixins Sas
 @include media-breakpoint-down(sm) { ... }
 @include media-breakpoint-down(md) { ... }
 @include media-breakpoint-down(lg) { ... }
-// Pas de requête média nécessaire pour les points de rupture `xl` n'ayant pas de limite de largeur
+// Pas de requête média nécessaire pour les _breakpoints_ `xl` n'ayant pas de limite de largeur
 
 // Exemple : Style appliqué depuis le point de rupture moyen `md` et en dessous
 @include media-breakpoint-down(md) {
@@ -182,7 +182,7 @@ Requêtes média aussi disponibles avec des mixins Sass :
 @include media-breakpoint-only(xl) { ... }
 {{< /highlight >}}
 
-De la même manière les requêtes média peuvent couvrir plusieurs largeurs de points de rupture :
+De la même manière les requêtes média peuvent couvrir plusieurs largeurs de _breakpoints_ :
 
 {{< highlight scss >}}
 // Exemple

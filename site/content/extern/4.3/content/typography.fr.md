@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Typographies
+title: Typographie
 description: Documentation et exemples pour la typographie de Bootstrap, en incluant les paramètres globaux pour les en-têtes, titres, texte, listes, etc.
 group: content
 toc: true

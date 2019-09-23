@@ -112,6 +112,8 @@
     display: inline-block;
     width: .875rem;
     height: .875rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
     margin-left: .5rem;
     color: $doc-sidebar-color;
     content: "";
@@ -129,6 +131,11 @@
     > .bd-sidenav-group-link {
       color: $doc-sidebar-color;
     }
+    margin-bottom: 1rem;
+  }
+
+  &.active:not(:first-child) {
+    margin-top: 1rem;
   }
 }
 

@@ -20,8 +20,8 @@ toc: true
 ## v4.3.1
 
 ### Revision 1 _18/07/2019_
-- Added SNCF's guidelines on [Accessibility page]({{< docsref "/getting-started/accessibility" >}})
-- Added SNCF's guidelines on [new Analytics page]({{< docsref "/getting-started/analytics-tracking" >}})
+- Added SNCF's guidelines on [Accessibility page](/docs/{{% param docs_version %}}/getting-started/accessibility)
+- Added SNCF's guidelines on [new Analytics page](/docs/{{% param docs_version %}}/getting-started/analytics-tracking)
 - Added unminified versions of CSS & JS in releases (zip, npm)
 - Added "no external" version of JS bundle
 - Corrected `.min.` filename for documentation's CSS & JS
@@ -61,16 +61,16 @@ Major overhaul with original Bootstrap's patches. Here is a non-exhaustive list 
 ### Revision 6 _06/06/2019_
 General
 
-- Added [Métier's signatures]({{< docsref "/layout/navbars" "#use-metier-signature-logos" >}}) for navbar
-- Added [icons-rotate]({{< docsref "/components/icons" "#rotation" >}}) for correct alignement of sort icon in table heading
-- Updated [colors page]({{< docsref "/utilities/colors" >}}) with all variants
+- Added [Métier's signatures]({{% param url_metier %}}/docs/{{% param docs_version %}}/layout/navbars#use-metier-signature-logos) for navbar
+- Added [icons-rotate](/docs/{{% param docs_version %}}/components/icons#rotation) for correct alignement of sort icon in table heading
+- Updated [colors page](/docs/{{% param docs_version %}}/utilities/colors) with all variants
 - Corrected lots of cursors issues
 
 
 ### Revision 5 _24/05/2019_
 General
 
-- Added [Dark mode]({{< docsref "/layout/dark-mode" >}})
+- Added [Dark mode](/docs/{{% param docs_version %}}/layout/dark-mode)
 
 Documentation
 
@@ -83,30 +83,30 @@ Documentation
 #### Please apply theses modifications in your project if you're coming from version prior to v4.0.0-r5
 Some of markup has to be changed, to ensure your project will correctly be displayed in dark mode style, please follow thoses simples indications (we've essentially changed `bg-light` or `text-white` for some components to ensure that color will change with each of CSS files, so you won't have to change your HTML markup when going between light or dark modes)
 
-- [input-group]({{< docsref "/components/input-group" >}}) : remove `text-right` in _Button and select addons_ section
-- [popover]({{< docsref "/components/popovers" >}}) : add `class="btn btn-link"`
+- [input-group](/docs/{{% param docs_version %}}/components/input-group" >}}) : remove `text-right` in _Button and select addons_ section
+- [popover]({{% param url_metier %}}/docs/{{% param docs_version %}}/components/popovers" >}}) : add `class="btn btn-link"`
 
 **Design métier**
 
-- [alert]({{< docsref "/components/alerts" >}}) : remove `text-white` from `<h2>`
-- [charts]({{< docsref "/components/charts" >}}) : add `data-gridcolor="rgb(51,51,51,1)"` if you want to change grid color behind charts
-- [list-double-columns]({{< docsref "/components/list-group" >}}) : replace `bg-light` by `list-group-double-panel-title`
-- [list-group]({{< docsref "/components/list-group" >}}) : remove `bg-light`
-- [sami]({{< docsref "/components/sami" >}}) : ordering colors have changed
-- [table-group]({{< docsref "/content/tables#table-with-groups" >}}), [tables]({{< docsref "/components/alerts" >}}) : header first case should be `<th>` instead of `<td>` when checkbox inside
+- [alert]({{% param url_metier %}}/docs/{{% param docs_version %}}/components/alerts) : remove `text-white` from `<h2>`
+- [charts]({{% param url_metier %}}/docs/{{% param docs_version %}}/components/charts) : add `data-gridcolor="rgb(51,51,51,1)"` if you want to change grid color behind charts
+- [list-double-columns]({{% param url_metier %}}/docs/{{% param docs_version %}}/components/list-group) : replace `bg-light` by `list-group-double-panel-title`
+- [list-group]({{% param url_metier %}}/docs/{{% param docs_version %}}/components/list-group) : remove `bg-light`
+- [sami]({{% param url_metier %}}/docs/{{% param docs_version %}}/components/sami) : ordering colors have changed
+- [table-group]({{% param url_metier %}}/docs/{{% param docs_version %}}/content/tables#table-with-groups), [tables]({{% param url_metier %}}/docs/{{% param docs_version %}}/components/alerts) : header first case should be `<th>` instead of `<td>` when checkbox inside
 
 **Design communication**
 
-- [carousel](/docs/{{% param docs_version %}}/components/carousel) : `bg-light` becomes `bg-carousel`
-- [contact](/docs/{{% param docs_version %}}/components/edito#contact) : `bg-light` becomes `edito-contact-bg`
-- [edito](/docs/{{% param docs_version %}}/components/edito) : `bg-light` becomes `edito-push-highlight-bg`\\
+- [carousel]({{% param url_communication %}}/docs/{{% param docs_version %}}/components/carousel) : `bg-light` becomes `bg-carousel`
+- [contact]({{% param url_communication %}}/docs/{{% param docs_version %}}/components/edito#contact) : `bg-light` becomes `edito-contact-bg`
+- [edito]({{% param url_communication %}}/docs/{{% param docs_version %}}/components/edito) : `bg-light` becomes `edito-push-highlight-bg`\\
   remove `text-gray500` in header
-- [navigation extern example](/docs/{{% param docs_version %}}/examples/navigation) : remove `bg-white` in `mastcontent`\\
+- [navigation extern example]({{% param url_communication %}}/docs/{{% param docs_version %}}/examples/navigation) : remove `bg-white` in `mastcontent`\\
   remove `text-white` in `<h3>`
-- [navs/actionbar]({{< docsref "/layout/navs" "#actionbar" >}}) : remove all `text-white` from `<h3>`
-- [packshot](/docs/{{% param docs_version %}}/components/edito#packshot) : `bg-light` becomes `edito-packshot`\\
+- [navs/actionbar]({{% param url_communication %}}/docs/{{% param docs_version %}}/layout/navs#actionbar) : remove all `text-white` from `<h3>`
+- [packshot]({{% param url_communication %}}/docs/{{% param docs_version %}}/components/edito#packshot) : `bg-light` becomes `edito-packshot`\\
   remove `text-gray500` in header `<h3>`
-- [vignette](/docs/{{% param docs_version %}}/components/vignette) : `bg-white` becomes `vignette-bg`\\
+- [vignette]({{% param url_communication %}}/docs/{{% param docs_version %}}/components/vignette) : `bg-white` becomes `vignette-bg`\\
   remove `text-gray500` in header `<h3>`
 
 {{% /callout %}}
@@ -147,7 +147,7 @@ Docs
 
 - Search activated (by [Algolia](https://www.algolia.com/))
 - Lots of minors corrections for accessibility
-- [Favicon](/docs/4.3/content/favicon/) & how to use added
+- [Favicon](/docs/{{% param docs_version %}}/content/favicon/) & how to use added
 
 Corrections
 

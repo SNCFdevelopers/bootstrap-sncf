@@ -69,11 +69,11 @@
                             <div class="options-control">
                                 <a class="options-item option-language" href="{{ if eq .Lang "fr" }}{{ range .Translations }}{{ .Permalink }}{{ end }}{{ end }}">
                                     <input type="radio" name="languageSwitch" id="language-btn-en" class="sr-only" {{ if eq .Lang "en" }} value="enabled" checked {{ else }} value="disabled" {{ end }}/>
-                                    <label class="options-btn font-weight-medium" for="language-btn-en"><img src="/assets/img/flags/english.svg" class="gr-3"> {{ T "english" | humanize }}</label>
+                                    <label class="options-btn font-weight-medium" for="language-btn-en"><img src="/assets/img/flags/english.svg" class="gr-2"> {{ T "english" | humanize }}</label>
                                 </a>
                                 <a class="options-item option-language" href="{{ if eq .Lang "en" }}{{ range .Translations }}{{ .Permalink }}{{ end }}{{ end }}">
                                     <input type="radio" name="languageSwitch" id="language-btn-fr" class="sr-only" {{ if eq .Lang "fr" }} value="enabled" checked {{ else }} value="disabled" {{ end }}/>
-                                    <label class="options-btn font-weight-medium" for="language-btn-fr"><img src="/assets/img/flags/french.svg" class="gr-3"> {{ T "french" | humanize }}</label>
+                                    <label class="options-btn font-weight-medium" for="language-btn-fr"><img src="/assets/img/flags/french.svg" class="gr-2"> {{ T "french" | humanize }}</label>
                                 </a>
                             </div>
                         </div>

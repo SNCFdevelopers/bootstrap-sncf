@@ -1,14 +1,14 @@
 ---
 layout: docs
 title: Espacement
-description: Boostrap inclut une large gamme de raccourcis de marges intérieures et extérieurs, adaptatifs, pour modifier l'apparence d'un élément.
+description: Boostrap inclut une large gamme de raccourcis de marges intérieures et extérieurs, _responsive_, pour modifier l'apparence d'un élément.
 group: utilities
 toc: true
 ---
 
 ## Fonctionnement
 
-Assignez des valeurs adaptatives pour les valeurs `margin` et `padding`d'un élément ou un sous-ensemble de ses côtés avec des classes de sténographie. La prise en charge est incluse pour les propriétés individuelles, toutes les propriétés, les propriétés verticales, les propriétés horizontales. Les classes sont construites à partir d'une définition SASS par défaut allant de `.25rem` à` 3rem`.
+Assignez des valeurs _responsive_ pour les valeurs `margin` et `padding`d'un élément ou un sous-ensemble de ses côtés avec des classes de sténographie. La prise en charge est incluse pour les propriétés individuelles, toutes les propriétés, les propriétés verticales, les propriétés horizontales. Les classes sont construites à partir d'une définition SASS par défaut allant de `.25rem` à` 3rem`.
 
 ## Nomenclature
 

@@ -18,9 +18,9 @@ Enfin, pour rappel, ces classes n'ont aucun effet sur les [éléments flexibles]
 <div class="float-none">Flottant désactivé sur toutes les tailles d'écran</div>
 {{< /example >}}
 
-## Adaptatif (_responsive_)
+## _Responsive_
 
-Des variantes adaptatives existent également pour chaque valeur de `float`.
+Des variantes _responsive_ existent également pour chaque valeur de `float`.
 
 {{< example >}}
 <div class="float-sm-left">Flottant à gauche sur les tailles d'écran SM (petit) ou plus large</div><br>

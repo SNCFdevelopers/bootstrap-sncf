@@ -1,23 +1,22 @@
 - title: Bien démarrer
   link: Getting started
   pages:
+    - title: Introduction
+    - title: Téléchargement
+      link: Download
     - title: Accessibilité
       link: Accessibility
     - title: Analytics tracking
     - title: Comment contribuer
       link: How to contribute
-    - title: Introduction
-    - title: Javascript
-    - title: Navigateurs & Périphériques
-      link: Browsers & devices
-    - title: Téléchargement
-      link: Download
 
 - title: Graphic boards
 
 - title: Mise en page
   link: Layout
   pages:
+    - title: Vue d'ensemble
+      link: Overview
     - title: Barres de navigation
       link: Navbars
     - title: Grille
@@ -25,30 +24,28 @@
     - title: Mode sombre
       link: Dark mode
     - title: Navigation, onglets
-      link: Navbars
+      link: Navs
     - title: Utilitaires de mise en page
       link: Utilities for layout
-    - title: Vue d'ensemble
-      link: Overview
 
 - title: Contenu
   link: Content
   pages:
-    - title: Code
-    - title: Favicon
-    - title: Images
     - title: Reboot
-    - title: Tableaux
-      link: Tables
     - title: Typographie
       link: Typography
+    - title: Code
+    - title: Images
+    - title: Figures
+    - title: Tables
+    - title: Favicon
 
 - title: Composants
   link: Components
   pages:
     - title: Alertes
       link: Alerts
-    - title: Badge
+    - title: Badges
     - title: Barres de progression
       link: Progress
     - title: Boutons
@@ -56,7 +53,7 @@
     - title: Bulles contextuelles
       link: Popovers
     - title: Cartes
-      link: Card
+      link: Cards
     - title: Cases à cocher, boutons radio
       link: Checkboxes and radios
     - title: Fenêtres modales
@@ -67,9 +64,9 @@
       link: Forms
     - title: Graphiques
       link: Charts
-    - title: Groupes de champs
+    - title: Groupes de saisies
       link: Input group
-    - title: Groupe de listes
+    - title: Groupes de listes
       link: List group
     - title: Icônes
       link: Icons
@@ -91,31 +88,32 @@
       link: Display
     - title: Alignement Vertical
       link: Vertical align
-    - title: API
     - title: Clearfix
     - title: Couleurs
       link: Colors
     - title: Dimension
       link: Sizing
-    - title: Embed
     - title: Espacement
       link: Spacing
     - title: Flex
     - title: Float
-    - title: Icône « croix »
+    - title: Icône de fermeture
       link: Close icon
+    - title: Intégration
+      link: Embed
     - title: Lecteurs d'écrans
       link: Screenreaders
     - title: Positionnement
       link: Position
-    - title: Remplacement d'Images
+    - title: Remplacement d'images
       link: Image replacement
     - title: Texte
       link: Text
     - title: Visibilité
       link: Visibility
 
-- title: Extend
+- title: Extension
+  link: Extend
   pages:
     - title: Approche
       link: Approach
@@ -125,10 +123,10 @@
 - title: À propos
   link: About
   pages:
+    - title: "Équipe, Historique"
+      link: Overview
     - title: Licence
       link: License
     - title: Traductions
       link: Translations
     - title: Versions
-    - title: Vue d'ensemble
-      link: Overview

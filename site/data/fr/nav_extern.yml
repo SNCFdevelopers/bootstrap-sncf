@@ -1,76 +1,122 @@
 - title: Bien démarrer
+  link: Getting started
   pages:
     - title: Introduction
-    - title: Download
-    - title: Javascript
-    - title: Accessibility
-    - title: How to contribute
+    - title: Téléchargement
+      link: Download
+    - title: Accessibilité
+      link: Accessibility
+    - title: Comment contribuer
+      link: How to contribute
 
-- title: Layout
+- title: Mise en page
+  link: Layout
   pages:
-    - title: Grid
-    - title: Dark mode
-    - title: Utilities for layout
-    - title: Navbar
-    - title: Navs
-    - title: Footer
+    - title: Vue d'ensemble
+      link: Overview
+    - title: Barre de navigation
+      link: Navbar
+    - title: Grille
+      link: Grid
+    - title: Mode sombre
+      link: Dark mode
+    - title: Navigation, onglets
+      link: Navs
+    - title: Pied de page
+      link: Footer
+    - title: Utilitaires de mise en page
+      link: Utilities for layout
 
-- title: Content
+- title: Contenu
+  link: Content
   pages:
     - title: Reboot
-    - title: Typography
+    - title: Typographie
+      link: Typography
     - title: Code
     - title: Images
+    - title: Figures
     - title: Favicon
 
 - title: Components
   pages:
-    - title: Anchor
-    - title: Breadcrumb
-    - title: Buttons
-    - title: Carousel
-    - title: Checkboxes and radios
+    - title: Ancre
+      link: Anchor
+    - title: Barres de progression
+      link: Progress
+    - title: Boutons
+      link: Buttons
+    - title: Carrousel
+      link: Carousel
+    - title: Cases à cocher, boutons radio
+      link: Checkboxes and radios
     - title: Edito
-    - title: Forms
-    - title: Icons
-    - title: Input group
+    - title: Fenêtres modales
+      link: Modal
+    - title: Fil d'ariane
+      link: Breadcrumb
+    - title: Formulaires
+      link: Forms
+    - title: Groupes de saisies
+      link: Input group
+    - title: Icones
+      link: Icons
+    - title: Languettes
+      link: Tongues
+    - title: Listes déroulantes
+      link: Select
     - title: Medias
-    - title: Modal
     - title: Pagination
-    - title: Picker
-    - title: Progress
-    - title: Select
-    - title: Tongues
-    - title: Vignette
+    - title: Sélécteur de dates
+      link: Picker
+    - title: Vignettes
 
-- title: Utilities
+- title: Utilitaires
+  link: Utilities
   pages:
-    - title: Api
+    - title: Affichage
+      link: Display
+    - title: Alignement Vertical
+      link: Vertical align
     - title: Clearfix
-    - title: Close icon
-    - title: Colors
-    - title: Display
-    - title: Embed
+    - title: Couleurs
+      link: Colors
+    - title: Dimension
+      link: Sizing
+    - title: Espacement
+      link: Spacing
     - title: Flex
     - title: Float
-    - title: Image replacement
-    - title: Position
-    - title: Screenreaders
-    - title: Sizing
-    - title: Spacing
-    - title: Text
-    - title: Vertical align
-    - title: Visibility
+    - title: Icône de fermeture
+      link: Close icon
+    - title: Intégration
+      link: Embed
+    - title: Lecteurs d'écrans
+      link: Screenreaders
+    - title: Positionnement
+      link: Position
+    - title: Remplacement d'images
+      link: Image replacement
+    - title: Texte
+      link: Text
+    - title: Visibilité
+      link: Visibility
 
-- title: Extend
+- title: Extension
+  link: Extend
   pages:
-    - title: Approach
+    - title: Approche
+      link: Approach
 
 - title: Migration
 
-- title: About
+- title: À propos
+  link: About
   pages:
-    - title: Overview
+    - title: "Équipe, Historique"
+      link: Overview
+    - title: Licence
+      link: License
+    - title: Traductions
+      link: Translations
     - title: Versions
-    - title: License
-    - title: Translations

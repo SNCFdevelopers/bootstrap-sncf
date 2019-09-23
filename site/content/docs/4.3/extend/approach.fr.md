@@ -17,18 +17,18 @@ Vous voyez quelque chose qui ne sonne pas bien ou qui pourrait peut-être être 
 
 Nous allons approfondir chacun des points suivant :
 
-- Les composants doivent être adaptatifs (_responsive_) et pensés pour le mobile (_mobile first_ !) en premier
+- Les composants doivent être _responsive_ et pensés pour le mobile (_mobile first_ !) en premier
 - Les composants doivent être construits avec une classe de base puis étendus via des classes de modificateurs
 - Les états des composants doivent obéir à une échelle commune de `z-index`
 - Dans la mesure du possible, préférez une implémentation HTML et CSS au JavaScript
 - Dans la mesure du possible, utilisez des utilitaires plutôt que des styles personnalisés
 - Dans la mesure du possible, évitez d'imposer des exigences HTML strictes (sélecteurs enfants)
 
-## Adaptatif (_responsive_)
+## _Responsive_
 
-Les styles adaptatifs de Bootstrap sont conçus pour être adaptatifs, une approche à laquelle on attribue souvent le qualificatif de _mobile-first_ (pensée pour le mobile en premier). Nous utilisons ce terme dans nos documents et nous sommes en grande partie en accord avec lui, mais il peut parfois être trop large. Bien que tous les composants _ne doivent pas_ être entièrement adaptatifs dans Bootstrap, cette approche adaptative consiste à réduire les substitutions CSS en vous poussant à ajouter des styles à mesure que la fenêtre d'affichage s'agrandit.
+Les styles de Bootstrap sont conçus pour être _Responsive_, une approche à laquelle on attribue souvent le qualificatif de _mobile-first_ (pensée pour le mobile en premier). Nous utilisons ce terme dans nos documents et nous sommes en grande partie en accord avec lui, mais il peut parfois être trop large. Bien que tous les composants _ne doivent pas_ être entièrement _Responsive_ dans Bootstrap, cette approche consiste à réduire les substitutions CSS en vous poussant à ajouter des styles à mesure que la fenêtre d'affichage s'agrandit.
 
-À travers Bootstrap, vous le verrez plus clairement dans nos requêtes médias. Dans la plupart des cas, nous utilisons des requêtes `min-width` qui commencent à s’appliquer à un point de rupture (_breakpoint_) spécifique et continuent aux points de rupture supérieurs. Par exemple, un `.d-none` s'applique de` min-width: 0` jusqu'à l'infini. Par ailleurs, un `.d-md-none` s’applique à partir du point d’arrêt moyen.
+À travers Bootstrap, vous le verrez plus clairement dans nos requêtes médias. Dans la plupart des cas, nous utilisons des requêtes `min-width` qui commencent à s’appliquer à un _breakpoint_ spécifique et continuent aux _breakpoints_ supérieurs. Par exemple, un `.d-none` s'applique de` min-width: 0` jusqu'à l'infini. Par ailleurs, un `.d-md-none` s’applique à partir du point d’arrêt moyen.
 
 Nous utilisons parfois `max-width` lorsque la complexité inhérente à un composant l'exige. Parfois, ces substitutions sont plus simples à mettre en œuvre et à prendre en charge sur les plans fonctionnel et mental que la réécriture des fonctionnalités essentielles de nos composants. Nous nous efforçons de limiter cette approche, mais l’utilisons de temps à autre.
 

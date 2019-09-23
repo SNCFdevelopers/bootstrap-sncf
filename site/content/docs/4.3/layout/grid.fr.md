@@ -41,15 +41,15 @@ Voici comment cela fonctionne:
 - Les classes de colonnes indiquent le nombre de colonnes que vous souhaitez utiliser sur les 12 possibles par ligne. Donc, si vous voulez trois colonnes de largeur égale, vous pouvez utiliser `.col-4`.
 - Les largeurs de colonne `width` sont définies en pourcentage, ainsi elles sont donc toujours fluides et dimensionnées par rapport à leur élément parent.
 - Les colonnes ont un `padding` horizontal pour créer les gouttières entre les colonnes individuelles; toutefois, vous pouvez supprimer la `margin` des lignes et le `padding` des colonnes avec `.no-gutters` sur le `.row`.
-- Pour rendre la grille _responsive_, il existe cinq _breakpoints_, un pour chaque [_responsive breakpoints_]({{< docsref "/layout/overview" "#responsive-breakpoints" >}}) : tous les points d'arrêt (très petits), petits, moyens, grand et extra large.
-- Les points d'arrêt de la grille sont basés sur des requêtes média de largeur minimale, ce qui signifie **qu'ils s'appliquent à ce breakpoint et à tous ceux qui le précèdent** (par exemple, `.col-sm-4` s'applique aux écran de petite, moyenne, grande et très grande taille, mais pas au premier point d’arrêt `xs`).
+- Pour rendre la grille _responsive_, il existe cinq _breakpoints_, un pour chaque [_responsive breakpoints_]({{< docsref "/layout/overview" "#responsive-breakpoints" >}}) : tous les _breakpoints_ (très petits), petits, moyens, grand et extra large.
+- Les _breakpoints_ de la grille sont basés sur des requêtes média de largeur minimale, ce qui signifie **qu'ils s'appliquent à ce breakpoint et à tous ceux qui le précèdent** (par exemple, `.col-sm-4` s'applique aux écran de petite, moyenne, grande et très grande taille, mais pas au premier point d’arrêt `xs`).
 - Vous pouvez utiliser des classes de grille prédéfinies (comme `.col-4`) ou [des mixins SASS](# sass-mixins) pour un HTML plus sémantique.
 
 Soyez attentitfs aux limites et [bugs de Flexbox](https://github.com/philipwalton/flexbugs), comme [l'impossibilité d'utiliser certains éléments HTML en tant que containers flex](https://github.com/philipwalton/flexbugs#flexbug-9).
 
 ## Options de grille
 
-Bien que Bootstrap utilise `em` ou `rem` pour définir la plupart des tailles, les `px` sont utilisés pour les points d'arrêt de la grille et les largeurs de conteneur. En effet, la largeur de la fenêtre d'affichage est en pixels et ne change pas avec la [taille de la police](https://drafts.csswg.org/mediaqueries-3/#units).
+Bien que Bootstrap utilise `em` ou `rem` pour définir la plupart des tailles, les `px` sont utilisés pour les _breakpoints_ de la grille et les largeurs de conteneur. En effet, la largeur de la fenêtre d'affichage est en pixels et ne change pas avec la [taille de la police](https://drafts.csswg.org/mediaqueries-3/#units).
 
 Découvrez comment certains aspects du système de grille Bootstrap fonctionnent sur plusieurs périphériques grâce à ce tableau pratique :
 
@@ -113,7 +113,7 @@ Découvrez comment certains aspects du système de grille Bootstrap fonctionnent
 
 ## Colonnes de taille automatique
 
-Utilisez des classes de colonnes spécifiques aux points d'arrêt pour faciliter le dimensionnement des colonnes sans classe numérotée explicite comme `.col-sm-6`.
+Utilisez des classes de colonnes spécifiques aux _breakpoints_ pour faciliter le dimensionnement des colonnes sans classe numérotée explicite comme `.col-sm-6`.
 
 ### Largeur égale
 

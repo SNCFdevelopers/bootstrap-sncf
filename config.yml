@@ -34,6 +34,9 @@ layoutDir:              "site/layouts"
 i18nDir:                "site/i18n"
 staticDir:              "_gh_pages"
 
+DefaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
 params:
   authors:              "SNCF Fab Design, Mark Otto, Jacob Thornton, and Bootstrap contributors"
   social_image_path:    /docs/4.3/assets/brand/bootstrap-social.png
@@ -43,6 +46,8 @@ params:
   docs_version:         "4.3"
   sncf_version:         "2"
   repo:                 "https://github.com/SNCFdevelopers/bootstrap-sncf"
+  url_metier:           "https://designmetier-bootstrap.sncf.fr"
+  url_communication:    "https://design-bootstrap.sncf.fr"
 
   download:
     source:             "https://github.com/SNCFdevelopers/bootstrap-sncf/archive/master.zip"
