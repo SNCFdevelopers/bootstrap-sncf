@@ -35,7 +35,6 @@ i18nDir:                "site/i18n"
 staticDir:              "_gh_pages"
 
 DefaultContentLanguage: en
-defaultContentLanguageInSubdir: true
 
 params:
   authors:              "SNCF Fab Design, Mark Otto, Jacob Thornton, and Bootstrap contributors"

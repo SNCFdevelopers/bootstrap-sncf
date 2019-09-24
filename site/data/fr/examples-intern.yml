@@ -1,0 +1,62 @@
+- category: Navigation
+  description: "Mise en forme de la navigation"
+  examples:
+    - name: Navigation
+      description: "Démo complète de la navigation « métier », responsive."
+    - name: Onglets
+      link: Navtabs
+      description: "Barre d'action avec onglets de navigation."
+    - name: Mobile menu
+      description: "Menu mobile"
+
+- category: Modales
+  description: "Mise en œuvre de la fenêtre modale."
+  examples:
+    - name: Modale centrée
+      link: Modal
+      description: "Fenêtre modale centrée."
+
+- category: Mises en page
+  examples:
+    - name: Table
+      description: "Démo complète des tables, responsive."
+    - name: Filtres
+      link: Table filters
+      description: "Table avec filtres et tris."
+    - name: En-tête fixe
+      link: Table fixed head
+      description: "Table avec en-tête fixe."
+    - name: Colonne fixe
+      link: Table fixed
+      description: "Table avec une colonne fixe."
+    - name: Pagination
+      link: Table pagination
+      description: "Table avec pagination."
+    - name: Double colonne
+      link: List double columns
+      description: "Liste avec double colonne."
+    - name: Groupe & recherche
+      link: Table group
+      description: "Liste avec groupe et menu de recherche."
+
+- category: Formulaires
+  examples:
+    - name: Formulaires
+      link: Forms
+      description: "Démo complète des formulaires, responsive."
+
+- category: Calendrier
+  description: "Mise en œuvre du calendrier."
+  examples:
+    - name: Mensuel
+      link: Calendar monthly
+      description: "Calendrier mensuel."
+    - name: Hebdomadaire
+      link: Calendar weekly
+      description: "Calendrier hebdomadaire."
+    - name: Au jour
+      link: Calendar daily
+      description: "Calendrier journalier."
+    - name: Planning
+      link: Calendar planning
+      description: "Calendrier type « planning »."
