@@ -1,6 +1,6 @@
 ---
 layout: empty
-url: /docs/4.3/examples/table/
+url: /docs/4.3/examples/table-filters/
 table:
   - name: Aorem ipsum dolor sit amet
     type: Aenean commodo
@@ -95,7 +95,7 @@ table:
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tables</title>
+    <title>Tables filters</title>
 
     {{ partial "darkmode-js-header.html" . }}
   </head>
@@ -127,6 +127,7 @@ table:
         </ul>
       </div>
     </div>
+
     <div class="controlbar">
       <div class="toolbar w-100">
         <div class="w-50 toolbar-item separator-gray-200">
@@ -137,9 +138,11 @@ table:
         </div>
       </div>
     </div>
+
     <main role="main" class="mastcontainer">
-      {{ partial "components/table.html" . }}
+      {{ partial "components/table-filters.html" . }}
     </main>
+
     {{ partial "components/table-filters-menu.html" . }}
     {{ partial "components/table-sorts-menu.html" . }}
     <script src="{{ .Site.BaseURL }}/bootstrap-sncf.js"></script>
