@@ -1,0 +1,19 @@
+{{ range (index .Site.Data .Site.Language.Lang (printf "examples-%s" .Site.Params.doc_flavour)) }}
+  <span></span>
+  <h2>{{ .category | humanize }}</h2>
+  <p>{{ .description }}</p>
+  <div class="row">
+  {{ range (index .examples) }}
+      <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+        {{- if .link -}}
+        <a href="{{ .link | urlize }}/">
+        {{- else -}}
+        <a href="{{ .name | urlize }}/">
+        {{- end -}}
+          <h5 class="mb-1">{{ .name }}</h5>
+        </a>
+        <p class="text-muted">{{ .description }}</p>
+      </div>
+  {{ end }}
+  </div>
+{{ end }}
