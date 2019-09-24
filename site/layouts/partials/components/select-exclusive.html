@@ -1,0 +1,29 @@
+<div class="select-improved" data-component="select-exclusive">
+  <div class="select-control">
+    <div class="input-group" data-role="select-toggle">
+      <p class="form-control is-placeholder {{ .Get "formcontrol" }} d-flex align-items-center" data-role="placeholder" data-selected-prefix="Sélection actuelle">{{ .Get "placeholder" }}</p>
+      <select class="sr-only" id="{{ .Get "id" }}" data-role="input" tabindex="-1" aria-hidden="true">
+        <option {{ .Get "placeholderAttr" }} data-role="default-hidden-option" disabled hidden>{{ .Get "placeholder" }}</option>
+        {{ range $index,$item := .Get "items" }}
+            <option data-id="{{ $index }}" {{ $item.attr }}>{{ $item.name }}</option>
+        {{ end }}
+      </select>
+      <div class="input-group-append input-group-last">
+        <button class="btn btn-primary btn-only-icon {{ .Get "btn" }}" data-role="btn" type="button" aria-expanded="false" aria-controls="{{ .Get "id" }}selecttoggle">
+          <i class="icons-arrow-down {{ .Get "iconsize" }}" aria-hidden="true"></i>
+          <span class="sr-only">Sélectionner</span>
+        </button>
+      </div>
+    </div>
+    <div class="select-menu" id="{{ .Get "id" }}-selecttoggle">
+      <div class="d-flex flex-column">
+        <div class="flex-fluid overflow-y" role="list" data-role="menu">
+          {{ range $index,$item := .Get "items" }}
+            <span class="select-menu-item" role="listitem"><button data-role="value" data-target="{{ $index }}">{{ $item.name }}</button></span>
+          {{ end }}
+        </div>
+        {{- .Get "content" -}}
+      </div>
+    </div>
+  </div>
+</div>
