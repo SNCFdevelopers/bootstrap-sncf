@@ -16,8 +16,11 @@ toc: true
   When changing Bootstrap version, SNCF revision will always reset to r0.
 {{% /callout %}}
 
-
 ## v4.3.1
+
+### Révision 2 _01/10/2019_
+- Documentation build with HUGO
+- French translation
 
 ### Revision 1 _18/07/2019_
 - Added SNCF's guidelines on [Accessibility page](/docs/{{% param docs_version %}}/getting-started/accessibility)

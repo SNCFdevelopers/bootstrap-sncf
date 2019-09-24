@@ -16,7 +16,6 @@ toc: true
   À chaque changement de version de Bootstrap, la révision SNCF repasse à r0.
 {{% /callout %}}
 
-
 ## v4.3.1
 
 ### Révision 2 _01/10/2019_
