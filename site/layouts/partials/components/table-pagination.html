@@ -1,0 +1,100 @@
+<div class="table-wrapper has-footerbar" data-component="table">
+  <div class="table-scroller last-cell-fixed dragscroll">
+    <table class="table mb-0">
+      <caption class="sr-only">Titre</caption>
+      <thead class="thead thead-light">
+        <tr>
+          <th scope="col"><div class="cell-inner cell-inner-350">Nom</div></th>
+          <th scope="col"><div class="cell-inner">Type</div></th>
+          <th scope="col"><div class="cell-inner">Vers</div></th>
+          <th scope="col"><div class="cell-inner">Agent</div></th>
+          <th scope="col"><div class="cell-inner">Mise à jour</div></th>
+          <td class="cell-placeholder" aria-hidden="true"><span></span></td>
+          <th class="cell-fixed"><span class="sr-only">Actions</span></th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        {{ range $index,$item := (index .Page.Params.table) }}
+            <tr class="trhead">
+              <td class="cell-350 cell-caret" data-role="toggle-group-btn" data-id="{{ $index }}"><div class="cell-inner">{{ $item.name }}</div></td>
+              <td><div class="cell-inner">{{ $item.type }}</div></td>
+              <td><div class="cell-inner">{{ $item.version }}</div></td>
+              <td><div class="cell-inner">{{ $item.agent }}</div></td>
+              <td><div class="cell-inner">{{ $item.update }}</div></td>
+              <td class="cell-placeholder"><span></span></td>
+              <td class="cell-fixed">
+                <div class="cell-inner btn-group dropdown">
+                  <button class="btn btn-only-icon btn-transparent btn-color-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window" aria-controls="toggle{{ $index }}">
+                    <span class="sr-only">Actions</span>
+                    <i class="icons-options icons-size-1x75" aria-hidden="true"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right" id="toggle{{ $index }}">
+                    <button type="button" class="dropdown-item" href="#">Télécharger</button>
+                    <button type="button" class="dropdown-item" href="#">Imprimer</button>
+                    <button type="button" class="dropdown-item" href="#">Partager</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            {{ range $subindex,$subitem := $item.subrows }}
+              <tr class="trgroup" data-trgroup="{{ $index }}">
+                <td class="cell-350" colspan="6"><div class="cell-inner"><div class="text-truncate">{{ $subitem.name }}</div></div></td>
+              </tr>
+            {{ end }}
+          {{ end }}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footerbar d-none d-md-flex align-items-center justify-content-end">
+    <div class="pr-3">
+      <div class="select-improved select-improved-up" data-component="select-exclusive">
+        <div class="select-control">
+          <div class="input-group" data-role="select-toggle">
+            <div class="form-control is-placeholder" data-role="placeholder">
+              Sélectionner un secteur
+            </div>
+            <select class="sr-only" id="exampleFormControlSelect1" data-role="input" tabindex="-1" aria-hidden="true">
+              <option data-id="1" selected>Afficher 50 lignes par page</option>
+              <option data-id="2">Sem Inceptos Tellus</option>
+              <option data-id="3">Sollicitudin Adipiscing Mattis</option>
+              <option data-id="4">Amet Porta</option>
+              <option data-id="5">Pharetra Fusce Venenatis</option>
+            </select>
+            <div class="input-group-append input-group-last">
+              <button class="btn btn-primary btn-only-icon" data-role="btn" type="button">
+                <i class="icons-arrow-down icons-size-x75" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="select-menu" data-role="menu">
+            <button class="select-menu-item" data-role="value" data-target="1">Sem Inceptos Tellus</button>
+            <button class="select-menu-item" data-role="value" data-target="2">Sem Inceptos Tellus</button>
+            <button class="select-menu-item" data-role="value" data-target="3">Sollicitudin Adipiscing Mattis</button>
+            <button class="select-menu-item" data-role="value" data-target="4">Amet Porta</button>
+            <button class="select-menu-item" data-role="value" data-target="5">Pharetra Fusce Venenatis</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination mb-0">
+        <li class="page-item page-skip">
+          <a class="page-link" href="#" aria-label="Previous">
+            <i class="icons-arrow-prev icons-size-x75" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item page-skip">
+          <a class="page-link" href="#" aria-label="Next">
+            <i class="icons-arrow-next icons-size-x75" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
