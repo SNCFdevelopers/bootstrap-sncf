@@ -3,9 +3,9 @@
   categories:
     - name: Loisirs & Tourisme
       subcategories:
-        - name: Category 1
-        - name: Category 2
-        - name: Category 3
+        - name: Categorie 1
+        - name: Categorie 2
+        - name: Categorie 3
     - name: Toutes les lignes
       subcategories:
         - name: RER & Trains
@@ -23,35 +23,35 @@
         - name: Quotidien 1
         - name: Quotidien 2
         - name: Quotidien 3
-    - name: Le réseaux
+    - name: Le réseau
       subcategories:
-        - name: Réseaux 1
-        - name: Réseaux 2
-        - name: Réseaux 3
+        - name: Réseau 1
+        - name: Réseau 2
+        - name: Réseau 3
 
 - name: Startup
   description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
   categories:
     - name: Startup catégorie
       subcategories:
-        - name: Category 1
-        - name: Category 2
-        - name: Category 3
+        - name: Categorie 1
+        - name: Categorie 2
+        - name: Categorie 3
 
 - name: Store
   description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
   categories:
     - name: Store catégorie
       subcategories:
-        - name: Category 1
-        - name: Category 2
-        - name: Category 3
+        - name: Categorie 1
+        - name: Categorie 2
+        - name: Categorie 3
 
-- name: Resources
+- name: Ressources
   description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
   categories:
-    - name: Resources catégorie
+    - name: Ressources catégorie
       subcategories:
-        - name: Category 1
-        - name: Category 2
-        - name: Category 3
+        - name: Categorie 1
+        - name: Categorie 2
+        - name: Categorie 3

@@ -1,8 +1,11 @@
 ---
+layout: empty
 url: /docs/4.3/examples/navigation/
+aliases: [/fr/docs/4.3/examples/navigation/]
 ---
 
-<html lang="en">
+{{< fullexample.inline >}}
+<html lang="{{ .Site.Params.Lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +14,7 @@ url: /docs/4.3/examples/navigation/
 
     <title>Navigation template</title>
 
-    {% include darkmode-js-header.html %}
+    {{ partial "darkmode-js-header.html" . }}
   </head>
   <body>
     <a id="skippy" class="sr-only sr-only-focusable" href="#content">
@@ -25,7 +28,7 @@ url: /docs/4.3/examples/navigation/
         <header role="banner" class="d-flex align-items-center">
           <div class="mastheader-logo">
             <a href="/docs" class="d-block">
-              <img alt="" class="d-block" src="{{ site.baseurl }}/assets/img/brand/sncf-logo.png" width="34" />
+              <img alt="" class="d-block" src="{{ .Site.BaseURL }}/assets/img/brand/sncf-logo.png" width="34" />
             </a>
           </div>
           <h1 class="mastheader-title flex-fluid text-white">Les trains en Ile-de-France de SNCF</h1>
@@ -137,12 +140,12 @@ url: /docs/4.3/examples/navigation/
             </div>
             <h3 class="gt-5 mb-3 d-md-none">Menu</h3>
             <nav class="nav">
-              {% for item in site.data.nav-fixtures %}
-                <button type="button" class="nav-item" data-role="main-toggle" data-target="#{{ item.name | slugify }}">
-                  {{ item.name }}
-                  <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+              {{ range (index .Site.Data "nav-fixtures") }}
+                <button type="button" class="nav-item" data-role="main-toggle" data-target="#{{ .name | urlize }}">
+                  {{ .name }}
+                  <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i>
                 </button>
-              {% endfor %}
+              {{ end }}
               <div class="dropdown dropdown-menubar gt-5 d-md-none">
                 <button type="button" class="btn w-100 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessibilité <i class="icons-arrow-down icons-size-x5 ml-2"></i></button>
                 <div class="dropdown-menu">
@@ -261,13 +264,13 @@ url: /docs/4.3/examples/navigation/
 
       <nav class="menu" data-role="menu">
         <div class="container">
-          {% for item in site.data.nav-fixtures %}
-            <div id="{{ item.name | slugify }}" class="menu-item panel primary-panel">
+          {{ range (index .Site.Data "nav-fixtures") }}
+            <div id="{{ .name | urlize }}" class="menu-item panel primary-panel">
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
                     <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-                    {{ item.name }}
+                    {{ .name }}
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
                     <span class="sr-only">Fermer</span>
@@ -276,32 +279,32 @@ url: /docs/4.3/examples/navigation/
                 </div>
                 <div class="panel-content">
                   <div class="panel-lead">
-                    <h3 class="mb-4">{{ item.name }}</h3>
-                    <p>{{ item.description }}</p>
+                    <h3 class="mb-4">{{ .name }}</h3>
+                    <p>{{ .description }}</p>
                   </div>
                   <div class="subnav">
                     <ul class="subnav-inner">
-                      {% for category in item.categories %}
+                      {{ range .categories }}
                         <li class="subnav-item">
-                          <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#{{ category.name | slugify }}" aria-expanded="false" aria-controls="{{ category.name | slugify }}">
-                            {{ category.name }}
+                          <button type="button" class="subnav-btn" data-role="sub-toggle" data-target="#{{ .name | urlize }}" aria-expanded="false" aria-controls="{{ .name | urlize }}">
+                            {{ .name }}
                             <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                           </button>
                         </li>
-                      {% endfor %}
+                      {{ end }}
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
 
-          {% for category in item.categories %}
-            <div id="{{ category.name | slugify }}" class="menu-item panel secondary-panel">
+            {{ range .categories }}
+            <div id="{{ .name | urlize }}" class="menu-item panel secondary-panel">
               <div class="panel-inner">
                 <div class="panel-head">
                   <h3 class="h3 mb-0" data-role="prev">
                     <i class="icons-arrow-prev icons-size-1x mr-3" aria-hidden="true"></i>
-                    {{ category.name }}
+                    {{ .name }}
                   </h3>
                   <a href="#" class="btn btn-sm btn-transparent btn-color-gray panel-close" data-role="close">
                     <span class="sr-only">Fermer</span>
@@ -310,18 +313,18 @@ url: /docs/4.3/examples/navigation/
                 </div>
                 <div class="panel-content">
                   <nav class="subnav">
-                      {% for subcategory in category.subcategories %}
+                      {{ range .subcategories }}
                         <button type="button" class="subnav-item">
-                          {{ subcategory.name }}
+                          {{ .name }}
                           <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                         </button>
-                      {% endfor %}
+                      {{ end }}
                   </nav>
                 </div>
               </div>
             </div>
-          {% endfor %}
-          {% endfor %}
+            {{ end }}
+          {{ end }}
         </div>
       </nav>
     </div>
@@ -501,6 +504,7 @@ url: /docs/4.3/examples/navigation/
       </footer>
     </main>
 
-    <script src="{{ site.baseurl }}/bootstrap-sncf.js"></script>
-  </body>
+    <script src="{{ .Site.BaseURL }}/bootstrap-sncf.js"></script>
+    </body>
 </html>
+{{< /fullexample.inline >}}

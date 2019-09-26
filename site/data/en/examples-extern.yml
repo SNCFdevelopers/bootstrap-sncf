@@ -1,11 +1,7 @@
-- category: Navigation
-  description: "Navigation template"
+- category: Navigation & Edito
+  description: ""
   examples:
     - name: Navigation
       description: "Demonstration of all responsive and container options for the navbar."
-
-- category: Edito
-  description: "Edito template"
-  examples:
     - name: Texts and images
       description: "Example."

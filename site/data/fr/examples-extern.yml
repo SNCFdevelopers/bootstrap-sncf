@@ -1,11 +1,7 @@
-- category: Navigation
+- category: Navigation & Edito
   examples:
     - name: Navigation
       description: "Démo complète de la navigation « communication », responsive."
-
-- category: Edito
-  description: "Modèle éditorial"
-  examples:
     - name: Textes et images
       link: Texts and images
       description: "Mise en œuvre d'une page type, avec du texte et des images."

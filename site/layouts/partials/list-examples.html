@@ -5,9 +5,9 @@
   <div class="row">
   {{ range (index .examples) }}
       <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
-        {{ $link := .name | urlize }}
+        {{- $link := .name | urlize -}}
         {{- if .link -}}
-          {{ $link = .link | urlize }}
+          {{- $link = .link | urlize -}}
         {{- end -}}
         <a href="{{ $link }}/" class="doc-example-link">
           <img class="rounded img-fluid mb-2" alt="Exemple d'écran {{ .name }}" src="{{ $.Site.BaseURL }}docs/{{ $.Site.Params.docs_version }}/examples/{{ $link }}/{{ $link }}.png" />
