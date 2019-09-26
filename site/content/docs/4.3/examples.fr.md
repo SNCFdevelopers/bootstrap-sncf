@@ -1,7 +1,7 @@
 ---
 layout: examples
 title: Exemples
-description: Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.
+description: Démarrez rapidement un projet grâce à ces exemples qui utilisent les composants et mises en page de notre _framework_.
 url: /fr/docs/4.3/examples/
 ---
 
