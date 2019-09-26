@@ -5,14 +5,15 @@
   <div class="row">
   {{ range (index .examples) }}
       <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+        {{ $link := .name | urlize }}
         {{- if .link -}}
-        <a href="{{ .link | urlize }}/">
-        {{- else -}}
-        <a href="{{ .name | urlize }}/">
+          {{ $link = .link | urlize }}
         {{- end -}}
+        <a href="{{ $link }}/" class="doc-example-link">
+          <img class="rounded img-fluid mb-2" alt="Exemple d'écran {{ .name }}" src="{{ $.Site.BaseURL }}docs/{{ $.Site.Params.docs_version }}/examples/{{ $link }}/{{ $link }}.png" />
           <h5 class="mb-1">{{ .name }}</h5>
+          <p class="text-muted">{{ .description }}</p>
         </a>
-        <p class="text-muted">{{ .description }}</p>
       </div>
   {{ end }}
   </div>
