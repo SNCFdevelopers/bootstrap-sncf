@@ -18,9 +18,12 @@ toc: true
 
 ## v4.3.1
 
-### Révision 2 _01/10/2019_
+### Révision 3 _01/10/2019_
 - Documentation build with HUGO
 - French translation
+
+### Revision 2 _26/09/2019_
+- Added style & main in package.json for NPM
 
 ### Revision 1 _18/07/2019_
 - Added SNCF's guidelines on [Accessibility page](/docs/{{% param docs_version %}}/getting-started/accessibility)
