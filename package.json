@@ -1,9 +1,10 @@
 {
   "name": "@sncf/bootstrap-sncf",
   "description": "SNCF frontend framework",
-  "version": "4.3.1-r1",
+  "version": "4.3.1-r2",
   "sideEffects": false,
-  "main": "index.js",
+  "main": "dist/bootstrap-sncf.min.js",
+  "style": "dist/bootstrap-sncf.min.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/SNCFdevelopers/bootstrap-sncf"

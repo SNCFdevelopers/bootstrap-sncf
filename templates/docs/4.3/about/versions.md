@@ -18,6 +18,9 @@ toc: true
 
 ## v4.3.1
 
+### Revision 2 _26/09/2019_
+- Added style & main in package.json for NPM
+
 ### Revision 1 _18/07/2019_
 - Added SNCF's guidelines on [Accessibility page]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/accessibility/)
 - Added SNCF's guidelines on [new Analytics page]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/analytics-tracking/)
@@ -76,7 +79,7 @@ Documentation
 Some of markup has to be changed, to ensure your project will correctly be displayed in dark mode style, please follow thoses simples indications (we've essentially changed `bg-light` or `text-white` for some components to ensure that color will change with each of CSS files, so you won't have to change your HTML markup when going between light or dark modes)
 
 - [input-group]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/input-group/) : remove `text-right` in _Button and select addons_ section
-- [popover]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/popovers/) : add `class="btn btn-link"` 
+- [popover]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/popovers/) : add `class="btn btn-link"`
 
 **Design métier**
 - [alert]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/alerts/) : remove `text-white` from `<h2>`
@@ -93,7 +96,7 @@ Some of markup has to be changed, to ensure your project will correctly be displ
   remove `text-gray500` in header
 - [navigation extern example]({{ site.baseurl }}/docs/{{ site.docs_version }}/examples/navigation/) : remove `bg-white` in `mastcontent`\\
   remove `text-white` in `<h3>`
-- [navs/actionbar]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/navs/#actionbar) : remove all `text-white` from `<h3>` 
+- [navs/actionbar]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/navs/#actionbar) : remove all `text-white` from `<h3>`
 - [packshot]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/edito/#packshot) : `bg-light` becomes `edito-packshot`\\
   remove `text-gray500` in header `<h3>`
 - [vignette]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/vignette/) : `bg-white` becomes `vignette-bg`\\
