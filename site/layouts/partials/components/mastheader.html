@@ -43,7 +43,7 @@
             <div class="font-weight-medium text-uppercase">Notifications</div>
             <a href="#">Paramètres</a>
           </div>
-          {% for i in (1..4) %}
+          {{ range (seq 4) }}
           <div class="d-flex gt-4 gb-3 border-top">
             <a href="#" class="d-flex text-gray500">
               <div class="gt-1 gx-3">
@@ -58,7 +58,7 @@
               <i class="icons-circle-delete icons-size-1x25" aria-hidden="true"></i>
             </div>
           </div>
-          {% endfor %}
+          {{ end }}
         </div>
       </div>
     </li>

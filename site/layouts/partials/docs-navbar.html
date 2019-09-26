@@ -21,7 +21,7 @@
 
     <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
         <li class="nav-item">
-            <a class="nav-link text-nowrap" href="{{ .Site.BaseURL }}{{ .Lang }}/docs/{{ .Site.Params.docs_version }}/about/versions/" id="bd-versions">
+            <a class="nav-link text-nowrap" href="{{ .Site.BaseURL }}{{ if eq .Lang "fr"}}{{ .Lang }}{{ end }}/docs/{{ .Site.Params.docs_version }}/about/versions/" id="bd-versions">
                 v{{ .Site.Params.current_version }} r{{ .Site.Params.sncf_version }}
             </a>
         </li>

@@ -4,7 +4,7 @@ title: Cards
 description: Cards can be used when images would better identify the content (in tiled form for a list of visually recognizable items, for example).
 group: components
 toc: true
-url: /docs/4.3/components/card/
+url: /docs/4.3/components/cards/
 ---
 
 ## About
