@@ -1,7 +1,7 @@
 <div class="mastheader">
   <div class="mastheader-logo">
-    <a href="{{ .Site.BaseURL }}{{ .Site.Params.Lang }}/docs/{{ .Site.Params.docs_version }}/examples">
-      <img alt="SNCF" src="{{ .Site.BaseURL }}/assets/img/brand/sncf-logo.png" />
+    <a href="{{ .Site.BaseURL }}{{ if eq .Site.Params.Lang "fr"}}{{ printf "%s/" .Lang }}{{ end }}docs/{{ .Site.Params.docs_version }}/examples">
+      <img alt="SNCF" src="{{ .Site.BaseURL }}assets/img/brand/sncf-logo.png" />
     </a>
   </div>
   <header role="banner" class="mastheader-title d-none d-xl-block">

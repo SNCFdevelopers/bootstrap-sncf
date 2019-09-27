@@ -7,12 +7,12 @@
     <div class="navbar-nav-scroll">
         <ul class="navbar-nav bd-navbar-nav flex-row">
             <li class="nav-item">
-                <a class="nav-link d-flex align-items-center {{ if eq .Page.Layout "docs" }}active{{ end }}" href="{{ .Site.BaseURL }}{{ if eq .Lang "fr"}}{{ .Lang }}{{ end }}/docs/{{ .Site.Params.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">
+                <a class="nav-link d-flex align-items-center {{ if eq .Page.Layout "docs" }}active{{ end }}" href="{{ .Site.BaseURL }}{{ if eq .Lang "fr"}}{{ printf "%s/" .Lang }}{{ end }}docs/{{ .Site.Params.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">
                     Documentation	<i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link d-flex align-items-center {{ if eq .Page.Title "Examples" }}active{{ end }}" href="{{ .Site.BaseURL }}{{ if eq .Lang "fr"}}{{ .Lang }}{{ end }}/docs/{{ .Site.Params.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">
+                <a class="nav-link d-flex align-items-center {{ if eq .Page.Title "Examples" }}active{{ end }}" href="{{ .Site.BaseURL }}{{ if eq .Lang "fr"}}{{ printf "%s/" .Lang }}{{ end }}docs/{{ .Site.Params.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">
                     {{ T "example" 2 | humanize }} <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
                 </a>
             </li>
@@ -21,7 +21,7 @@
 
     <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
         <li class="nav-item">
-            <a class="nav-link text-nowrap" href="{{ .Site.BaseURL }}{{ if eq .Lang "fr"}}{{ .Lang }}{{ end }}/docs/{{ .Site.Params.docs_version }}/about/versions/" id="bd-versions">
+            <a class="nav-link text-nowrap" href="{{ .Site.BaseURL }}{{ if eq .Lang "fr"}}{{ printf "%s/" .Lang }}{{ end }}docs/{{ .Site.Params.docs_version }}/about/versions/" id="bd-versions">
                 v{{ .Site.Params.current_version }} r{{ .Site.Params.sncf_version }}
             </a>
         </li>

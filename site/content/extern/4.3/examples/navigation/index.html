@@ -27,8 +27,8 @@ aliases: [/fr/docs/4.3/examples/navigation/]
       <div class="container">
         <header role="banner" class="d-flex align-items-center">
           <div class="mastheader-logo">
-            <a href="/docs" class="d-block">
-              <img alt="" class="d-block" src="{{ .Site.BaseURL }}/assets/img/brand/sncf-logo.png" width="34" />
+            <a href="{{ .Site.BaseURL }}{{ if eq .Site.Params.Lang "fr"}}{{ printf "%s/" .Lang }}{{ end }}docs/{{ .Site.Params.docs_version }}/examples" class="d-block">
+              <img alt="" class="d-block" src="{{ .Site.BaseURL }}assets/img/brand/sncf-logo.png" width="34" />
             </a>
           </div>
           <h1 class="mastheader-title flex-fluid text-white">Les trains en Ile-de-France de SNCF</h1>
@@ -492,9 +492,9 @@ aliases: [/fr/docs/4.3/examples/navigation/]
                   </li>
                 </ul>
                 <ul class="mastfooter-lang pt-2 pt-md-0 mb-0 list-unstyled">
-                  <li><a href="#" class="text-gray300 active" title="Fr langue active"><img alt="" src="/assets/img/flags/french.svg" class="gr-2">Fr</a></li>
-                  <li><a href="#" class="text-gray300" title="En langue"><img alt="" src="/assets/img/flags/english.svg" class="d-none gr-3">En</a></li>
-                  <li><a href="#" class="text-gray300" title="De langue"><img alt="" src="/assets/img/flags/german.svg" class="d-none gr-3">De</a></li>
+                  <li><a href="#" class="text-gray300 active" title="Fr langue active"><img alt="" src="{{ .Site.BaseURL }}assets/img/flags/french.svg" class="gr-2">Fr</a></li>
+                  <li><a href="#" class="text-gray300" title="En langue"><img alt="" src="{{ .Site.BaseURL }}assets/img/flags/english.svg" class="d-none gr-3">En</a></li>
+                  <li><a href="#" class="text-gray300" title="De langue"><img alt="" src="{{ .Site.BaseURL }}assets/img/flags/german.svg" class="d-none gr-3">De</a></li>
                 </ul>
               </div>
             </div>
@@ -504,7 +504,7 @@ aliases: [/fr/docs/4.3/examples/navigation/]
       </footer>
     </main>
 
-    <script src="{{ .Site.BaseURL }}/bootstrap-sncf.js"></script>
+    <script src="{{ .Site.BaseURL }}bootstrap-sncf.js"></script>
     </body>
 </html>
 {{< /fullexample.inline >}}

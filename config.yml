@@ -8,7 +8,7 @@ languages:
     description:  "Intégration du Design System SNCF, basé sur Bootstrap, la librairie HTML, CSS et JS la plus populaire du monde."
     weight: 2
 
-BaseURL:                ""
+BaseURL:                "/"
 enableInlineShortcodes: true
 
 pygmentsUseClasses:     true
