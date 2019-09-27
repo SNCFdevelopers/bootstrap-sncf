@@ -1,3 +1,3 @@
 <div class="mt-5">
-    {{ T "howtocontributetxt" }} <a class="btn btn-link" href="/{{ .Lang }}/docs/4.3/getting-started/how-to-contribute/">{{ T "howtocontributetxt2" }} <i class="icons-arrow-next icons-size-x75 ml-1"></i></a>.
+    {{ T "howtocontributetxt" }} <a class="btn btn-link" href="{{ .Site.BaseURL }}{{ if eq .Lang "fr"}}{{ printf "%s/" .Lang }}{{ end }}docs/4.3/getting-started/how-to-contribute/">{{ T "howtocontributetxt2" }} <i class="icons-arrow-next icons-size-x75 ml-1"></i></a>.
 </div>
