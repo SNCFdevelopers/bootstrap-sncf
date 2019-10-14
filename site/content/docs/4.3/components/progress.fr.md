@@ -24,7 +24,7 @@ Ce composant est construit avec deux éléments HTML, un peu de CSS pour spécif
 - La classe `.progress-bar` nécessite un style _inline_, une classe utilitaire ou du CSS dédié pour définir sa largeur.
 - La classe `.progress-bar` nécessite également quelques attributs `role` et `aria` pour la rendre accessible.
 
-Mettez tout cela ensemble, et vous avez les exemples suivant :
+Mettez tout cela ensemble, et vous avez les exemples suivants :
 
 {{% example html %}}
 <div class="progress">
