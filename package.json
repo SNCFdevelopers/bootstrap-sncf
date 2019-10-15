@@ -27,6 +27,8 @@
     "src/"
   ],
   "scripts": {
+    "watch-intern": "webpack --env.documentation --env.theme=intern --watch",
+    "watch-extern": "webpack --env.documentation --env.theme=extern --watch",
     "build-intern": "webpack --env.documentation --env.theme=intern",
     "build-intern-dark": "webpack --env.documentation --env.theme=intern --env.darkmode",
     "build-extern": "webpack --env.documentation --env.theme=extern",
