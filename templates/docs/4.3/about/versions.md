@@ -18,6 +18,9 @@ toc: true
 
 ## v4.3.1
 
+### Revision 3 _15/10/2019_
+- Added Select Native (without javascript)
+
 ### Revision 2 _26/09/2019_
 - Added style & main in package.json for NPM
 
