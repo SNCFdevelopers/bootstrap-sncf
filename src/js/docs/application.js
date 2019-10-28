@@ -106,11 +106,28 @@ import Clipboard from './vendor/clipboard.min.js'
     })
   }
 
+  // Traduction
+  const lang = $('[name="languageSwitch"]:checked').data('lang')
+  const trad = {
+    fr: {
+      copy: "Copier",
+      copyclipboard: "Copier vers le presse-papier",
+      hidesource: "Masquer le code source",
+      showsource: "Afficher le code source"
+    },
+    en: {
+      copy: "Copy",
+      copyclipboard: "Copy to clipboard",
+      hidesource: "Hide source code",
+      showsource: "Show source code"
+    },
+  }
+
   // Insert hide & copy to clipboard button before .highlight
   if (localStorage.getItem('bootstrap-sncf-hidesource') === 'true') {
-    var btnHtml = '<div class="bd-clipboard d-flex"><button class="btn-show-source d-none d-flex mr-auto align-items-center" title="Show the source code">Show source code <i class="icons-arrow-down icons-size-x5 ml-2"></i></button><button class="btn-hide-source mr-auto d-none align-items-center" title="Hide the source code">Hide source code <i class="icons-arrow-up icons-size-x5 ml-2"></i></button><button class="btn-clipboard btn-secondary d-none" title="Copy to clipboard">Copy</button></div>'
+    var btnHtml = `<div class="bd-clipboard d-flex"><button class="btn-show-source d-none d-flex mr-auto align-items-center">${trad[lang].showsource} <i class="icons-arrow-down icons-size-x5 ml-2"></i></button><button class="btn-hide-source mr-auto d-none align-items-center">${trad[lang].hidesource} <i class="icons-arrow-up icons-size-x5 ml-2"></i></button><button class="btn-clipboard btn-secondary d-none" title="${trad[lang].copyclipboard}">${trad[lang].copy}</button></div>`
   } else {
-    var btnHtml = '<div class="bd-clipboard bd-clipboard-bg-light d-flex"><button class="btn-show-source d-none mr-auto align-items-center" title="Show the source code">Show source code <i class="icons-arrow-down icons-size-x5 ml-2"></i></button><button class="btn-hide-source mr-auto d-none d-flex align-items-center" title="Hide the source code">Hide source code <i class="icons-arrow-up icons-size-x5 ml-2"></i></button><button class="btn-clipboard btn-secondary" title="Copy to clipboard">Copy</button></div>'
+    var btnHtml = `<div class="bd-clipboard bd-clipboard-bg-light d-flex"><button class="btn-show-source d-none mr-auto align-items-center">${trad[lang].showsource} <i class="icons-arrow-down icons-size-x5 ml-2"></i></button><button class="btn-hide-source mr-auto d-none d-flex align-items-center">${trad[lang].hidesource} <i class="icons-arrow-up icons-size-x5 ml-2"></i></button><button class="btn-clipboard btn-secondary" title="${trad[lang].copyclipboard}">${trad[lang].copy}</button></div>`
   }
   $('figure.highlight, div.highlight').each(function () {
     $(this).before(btnHtml)
