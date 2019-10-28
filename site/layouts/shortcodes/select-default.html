@@ -1,5 +1,5 @@
-<select id="{{ include.id }}">
-  <option {{ include.placeholderAttr }} data-role="default-hidden-option" disabled hidden>{{ include.placeholder }}</option>
-  {% for item in include.items %}<option data-id="{{ forloop.index }}" {{ item.attr }}>{{ item.name }}</option>
+<select id="{{ .id }}">
+  <option {{ .placeholderAttr }} data-role="default-hidden-option" disabled hidden>{{ .placeholder }}</option>
+  {% for .item in .items %}<option data-id="{{ .index }}" {{ .item.attr }}>{{ .item.name }}</option>
   {% endfor %}
 </select>

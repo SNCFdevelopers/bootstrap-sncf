@@ -18,10 +18,6 @@ toc: true
   <option data-id="4" >Pharetra Fusce Venenatis</option>
 </select>
 {{% /example %}}
-<-- {% example html %}
-<label for="select0">Example select</label>
-{% include components/select-default.html id="select0" placeholder="Lorem ipsum" iconsize="icons-size-x75" placeholderAttr="selected" items=page.default %}
-{% endexample %} !-->
 
 ## Default
 
