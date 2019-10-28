@@ -21,7 +21,6 @@
   // stylelint-disable declaration-no-important
   width: rem(306px) !important;
   // stylelint-enable declaration-no-important
-  // min-width: 100%;
   padding: rem(24px) rem(30px);
   margin-top: rem(10px);
   font-size: rem(12px);
@@ -90,6 +89,16 @@
     justify-content: center;
   }
 
+  .flatpickr-prev-month {
+    padding-right: rem(14px);
+    padding-left: rem(6px);
+  }
+
+  .flatpickr-next-month {
+    padding-right: rem(6px);
+    padding-left: rem(14px);
+  }
+
   // stylelint-disable selector-no-qualifying-type
   span.arrowDown,
   span.arrowUp {
@@ -127,18 +136,20 @@
 }
 
 .flatpickr-current-month {
-  left: rem(34px);
+  left: rem(30px);
   display: flex;
-  justify-content: space-around;
-  width: calc(100% - #{rem(68px)});
+  align-items: center;
+  width: calc(100% - #{rem(60px)});
   padding-top: 0;
   font-size: rem(16px);
 
   .numInputWrapper {
     position: relative;
     display: flex;
+    flex: 0 0 rem(72px);
     align-items: center;
-    width: auto;
+    min-height: rem(30px);
+    padding-right: rem(28px);
     padding-bottom: rem(1px);
 
     &:hover {
@@ -146,11 +157,14 @@
     }
   }
 
-  // stylelint-disable selector-no-qualifying-type
-  input.cur-year {
-    padding-left: rem(14px);
+  .flatpickr-monthDropdown-months {
+    flex: 1 1 auto;
   }
-  // stylelint-enable selector-no-qualifying-type
+
+  .numInput.cur-year {
+    width: rem(48px);
+    padding-left: rem(10px);
+  }
 }
 
 .flatpickr-weekday.flatpickr-weekday {
