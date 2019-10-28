@@ -20,11 +20,17 @@ class SelectExclusive {
 
     this.collapses = element.querySelectorAll('[data-role=collapse]') // if collapse groups
 
-    this.addContainerNode = element.querySelector('[data-role=add]')
+    const addContainerNode = element.querySelector('[data-role=add]')
     const addBtn = element.querySelector('[data-role=add-btn]')
     this.addInput = element.querySelector('[data-role=add-input]')
 
     this._addEventListeners() // ui event listeners
+
+    if (addContainerNode) {
+      addContainerNode.addEventListener('click', (event) => {
+        event.stopPropagation()
+      })
+    }
 
     if (addBtn && this.addInput) {
       addBtn.addEventListener('click', (event) => {
