@@ -51,10 +51,10 @@ Les listes déroulantes personnalisées `<select>` nécessitent des classes et a
     <div class="select-menu" id="-selecttoggle">
       <div class="d-flex flex-column">
         <div class="flex-fluid overflow-y" role="list" data-role="menu">
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="3">Amet Porta</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="3">Amet Porta</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
 
         </div>
       </div>
@@ -91,10 +91,10 @@ Il est possible d’offrir aux utilisateurs la possibilité d’ajouter un nouve
     <div class="select-menu" id="-selecttoggle">
       <div class="d-flex flex-column">
         <div class="flex-fluid overflow-y" role="list" data-role="menu">
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="3">Amet Porta</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="3">Amet Porta</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
 
         </div>
       <div class="d-flex pt-4 flex-column flex-sm-row" data-role="add">
@@ -173,7 +173,7 @@ Lorsqu'une liste est très longue et que le défilement de toutes les options de
       </div>
       <div class="d-flex flex-column flex-sm-row" data-role="add">
         <div class="form-control-container w-100 has-left-icon">
-          <button class="btn btn-primary btn-block">Ajouter un nouvel agent</button>
+          <button type="button" class="btn btn-primary btn-block">Ajouter un nouvel agent</button>
         </div>
       </div>
     </div>
@@ -206,10 +206,10 @@ Lorsqu'une liste est très longue et que le défilement de toutes les options de
     <div class="select-menu" id="-selecttoggle">
       <div class="d-flex flex-column">
         <div class="flex-fluid overflow-y" role="list" data-role="menu">
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="3">Amet Porta</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="3">Amet Porta</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
         </div>
       </div>
     </div>
@@ -248,9 +248,9 @@ Lorsque la liste contient des éléments très différents, il peut s'avérer ê
           <span class="select-group-title text-uppercase">Unité 1</span>
         </div>
         <div class="select-group-content" role="list">
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="0">Sem Inceptos Tellus</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="0">Sem Inceptos Tellus</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
         </div>
       </div>
       <div role="listitem" class="select-group">
@@ -258,8 +258,8 @@ Lorsque la liste contient des éléments très différents, il peut s'avérer ê
           <span class="select-group-title text-uppercase">Unité 2</span>
         </div>
         <div class="select-group-content" role="list">
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="3">Amet Porta</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="3">Amet Porta</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
         </div>
       </div>
     </div>
@@ -301,9 +301,9 @@ Une version avec les groupes repliés pour exemple également.
           </div>
         </button>
         <div id="collapseExample" role="list" class="collapse select-group-content">
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="0">Sem Inceptos Tellus</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="0">Sem Inceptos Tellus</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="1">Sem Inceptos Tellus</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="2">Sollicitudin Adipiscing Mattis</button></span>
         </div>
       </div>
       <div class="select-group select-group-expand" role="listitem">
@@ -316,8 +316,8 @@ Une version avec les groupes repliés pour exemple également.
           </div>
         </button>
         <div id="collapseExample1" role="list" class="collapse select-group-content">
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="3">Amet Porta</button></span>
-          <span class="select-menu-item" role="listitem"><button data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="3">Amet Porta</button></span>
+          <span class="select-menu-item" role="listitem"><button type="button" data-role="value" data-target="4">Pharetra Fusce Venenatis</button></span>
         </div>
       </div>
     </div>
@@ -355,22 +355,22 @@ Liste déroulante avec choix multiples.
       <div class="select-group" data-role="group" data-id="0" role="list">
         <div class="select-menu-item" role="listitem">
           <div class="custom-control custom-checkbox">
-            <button data-role="value" data-target="0" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Sem Inceptos Tellus</button>
+            <button type="button" data-role="value" data-target="0" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Sem Inceptos Tellus</button>
           </div>
         </div>
         <div class="select-menu-item" role="listitem">
           <div class="custom-control custom-checkbox">
-            <button data-role="value" data-target="1" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Sollicitudin Adipiscing Mattis</button>
+            <button type="button" data-role="value" data-target="1" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Sollicitudin Adipiscing Mattis</button>
           </div>
         </div>
         <div class="select-menu-item" role="listitem">
           <div class="custom-control custom-checkbox">
-            <button data-role="value" data-target="2" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Amet Porta</button>
+            <button type="button" data-role="value" data-target="2" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Amet Porta</button>
           </div>
         </div>
         <div class="select-menu-item" role="listitem">
           <div class="custom-control custom-checkbox">
-            <button data-role="value" data-target="3" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Pharetra Fusce Venenatis</button>
+            <button type="button" data-role="value" data-target="3" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Pharetra Fusce Venenatis</button>
           </div>
         </div>
       </div>
@@ -416,12 +416,12 @@ Liste déroulante avec choix multiples, par groupes.
         <div class="select-group-content" role="list">
           <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
-              <button data-role="value" data-target="0" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Sem Inceptos Tellus</button>
+              <button type="button" data-role="value" data-target="0" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Sem Inceptos Tellus</button>
             </div>
           </div>
           <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
-              <button data-role="value" data-target="1" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Sollicitudin Adipiscing Mattis</button>
+              <button type="button" data-role="value" data-target="1" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Sollicitudin Adipiscing Mattis</button>
             </div>
           </div>
         </div>
@@ -429,18 +429,18 @@ Liste déroulante avec choix multiples, par groupes.
       <div class="select-group" data-role="group" data-id="1" role="listitem">
         <div class="select-group-head">
           <div class="custom-control custom-checkbox w-100">
-            <button data-role="counter" class="custom-control-label font-weight-medium w-100 text-left text-uppercase">Unité 2</button>
+            <button type="button" data-role="counter" class="custom-control-label font-weight-medium w-100 text-left text-uppercase">Unité 2</button>
           </div>     
         </div>
         <div class="select-group-content" role="list">
           <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
-              <button data-role="value" data-target="2" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Amet Porta</button>
+              <button type="button" data-role="value" data-target="2" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Amet Porta</button>
             </div>
           </div>
           <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
-              <button data-role="value" data-target="3" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Pharetra Fusce Venenatis</button>
+              <button type="button" data-role="value" data-target="3" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">Pharetra Fusce Venenatis</button>
             </div>
           </div>
         </div>
@@ -448,13 +448,13 @@ Liste déroulante avec choix multiples, par groupes.
       <div class="select-group" data-role="group" data-id="2" role="listitem">
         <div class="select-group-head">
           <div class="custom-control custom-checkbox w-100">
-            <button data-role="counter" class="custom-control-label font-weight-medium w-100 text-left text-uppercase">Unité 3</button>
+            <button type="button" data-role="counter" class="custom-control-label font-weight-medium w-100 text-left text-uppercase">Unité 3</button>
           </div>     
         </div>
         <div class="select-group-content" role="list">
           <div class="select-menu-item" role="listitem">
             <div class="custom-control custom-checkbox">
-              <button data-role="value" data-target="4" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">En plus</button>
+              <button type="button" data-role="value" data-target="4" role="checkbox" aria-checked="false" class="custom-control-label w-100 text-left font-weight-medium">En plus</button>
             </div>
           </div>
         </div>
