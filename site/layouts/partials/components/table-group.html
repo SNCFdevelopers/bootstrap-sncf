@@ -1,0 +1,56 @@
+<div class="table-wrapper" data-component="table">
+    <div class="table-scroller dragscroll">
+        <table class="table">
+            <caption class="sr-only">Titre</caption>
+            <thead class="thead thead-light">
+                <tr>
+                    <th>
+                        <div class="cell-inner">
+                            <div class="custom-control custom-checkbox custom-checkbox-alone">
+                                <input type="checkbox" class="custom-control-input" id="thead">
+                                <label class="custom-control-label" for="thead"><span class="sr-only">Tout sélectionner</span></label>
+                            </div>
+                        </div>
+                    </th>
+                    <th scope="col"><div class="cell-inner cell-inner-350">Nom</div></th>
+                    <th scope="col"><div class="cell-inner">Type</div></th>
+                    <th scope="col"><div class="cell-inner">Vers</div></th>
+                    <th scope="col"><div class="cell-inner">Agent</div></th>
+                    <th scope="col"><div class="cell-inner">Mise à jour</div></th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                {{ range $index,$item := .Site.Data.tables }}
+                    <tr class="trhead">
+                        <td>
+                            <div class="cell-inner">
+                                <div class="custom-control custom-checkbox custom-checkbox-alone">
+                                    <input type="checkbox" class="custom-control-input" id="trheadcell{{ $index }}">
+                                    <label class="custom-control-label" for="trheadcell{{ $index }}"><span class="sr-only">{{ $item.name }}, type {{ $item.type }}, ver {{ $item.version }}</span></label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="cell-350 cell-caret" data-role="toggle-group-btn" data-id="{{ $index }}"><div class="cell-inner">{{ $item.name }}</div></td>
+                        <td><div class="cell-inner">{{ $item.type }}</div></td>
+                        <td><div class="cell-inner">{{ $item.version }}</div></td>
+                        <td><div class="cell-inner">{{ $item.agent }}</div></td>
+                        <td><div class="cell-inner">{{ $item.update }}</div></td>
+                    </tr>
+                    {{ range $subindex,$subitem := $item.subrows }}
+                    <tr class="trgroup" data-trgroup="{{ $index }}">
+                        <td>
+                            <div class="cell-inner">
+                                <div class="custom-control custom-checkbox custom-checkbox-alone">
+                                    <input type="checkbox" class="custom-control-input" id="cell{{ $index }}{{ $subindex }}">
+                                    <label class="custom-control-label" for="cell{{ $index }}{{ $subindex }}"><span class="sr-only">{{ $subitem.name }}</span></label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="cell-350" colspan="5"><div class="cell-inner"><div class="text-truncate">{{ $subitem.name }}</div></div></td>
+                    </tr>
+                    {{ end }}
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</div>

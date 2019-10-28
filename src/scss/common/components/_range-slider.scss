@@ -22,7 +22,7 @@
   height: 75px;
 }
 
-.irs-line {
+.irs--flat .irs-line {
   top: 8px;
   height: 10px;
   background: gray("100");
@@ -41,7 +41,7 @@
   height: 8px;
 }
 
-.irs-bar {
+.irs--flat .irs-bar {
   top: 8px;
   height: 10px;
   background: theme-color("primary");
@@ -55,7 +55,7 @@
   border-radius: 5px 0 0 5px;
 }
 
-.irs-slider {
+.irs--flat .irs-handle {
   top: 0;
   width: 26px;
   height: 26px;
@@ -65,25 +65,37 @@
   border-radius: 50%;
 }
 
-.irs-min,
-.irs-max,
-.irs-from,
-.irs-to,
-.irs-single {
+.irs--flat .irs-handle i {
+  display: none;
+  opacity: 0;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max,
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--single {
   font-size: 14px;
   font-weight: $font-weight-medium;
   line-height: 26px;
   color: color("white");
+  cursor: pointer;
+  background-color: transparent;
   opacity: 0;
 
   @include hover-focus {
     opacity: 1;
   }
+
+  &::before {
+    display: none;
+    opacity: 0;
+  }
 }
 
-.irs-from,
-.irs-to,
-.irs-single {
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--single {
   z-index: 10;
 }
 
@@ -93,11 +105,11 @@
 
   .irs-bar,
   .irs-bar-edge,
-  .irs-slider {
+  .irs-handle {
     background-color: gray("300");
   }
 
-  .irs-slider {
+  .irs-handle {
     border-color: gray("300");
   }
 }

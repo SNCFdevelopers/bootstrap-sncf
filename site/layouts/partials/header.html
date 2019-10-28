@@ -1,0 +1,40 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{{ if eq .Site.Params.doc_theme "extern" }}
+  {{ partial "analytics-extern" . }}
+{{ else }}
+  {{ partial "analytics-intern" . }}
+{{ end }}
+
+{{ if .IsTranslated }}
+	{{ range .Translations }}
+	<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+	{{ end }}
+{{ end }}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ index .Page.Params "description" | default .Site.Params.description | markdownify }}">
+<meta name="author" content="{{ .Site.Params.authors }}">
+<meta name="generator" content="Hugo {{ hugo.Version }}">
+
+<meta name="docsearch:language" content="{{ .Lang }}">
+<meta name="docsearch:version" content="{{ .Site.Params.docs_version }}">
+
+<title>{{ if .IsHome }}{{ .Site.Title | markdownify }} · {{ .Site.Params.description | markdownify }}{{ else }}{{ .Title | markdownify }} · {{ .Site.Title | markdownify }}{{ end }}</title>
+
+{{ if (or (eq .Page.Layout "docs") (eq .Page.Layout "single")) -}}
+{{- "<!-- Documentation extras -->" | safeHTML }}
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+{{- end -}}
+
+<!-- Manual include of css / disabled, using JS instead for darkmode switching
+  <link rel="stylesheet" type="text/css" title="Mode sombre" name="dark" href="/bootstrap-sncf.darkmode.css" id="activecss">
+  <link rel="stylesheet alternate" type="text/css" title="Style classique" name="light" href="/bootstrap-sncf.css" id="inactivecss">
+-->
+
+<!-- Include css using JS for darkmode switching -->
+{{ partial "darkmode-js-header" . }}
+
+<!-- Favicons -->
+{{ partial "favicons" .}}
