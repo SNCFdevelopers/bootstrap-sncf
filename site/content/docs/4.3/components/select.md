@@ -6,7 +6,9 @@ group: components
 toc: true
 ---
 
-## Standard
+## Standard, native component
+
+While it doesn't precisely reflects SNCF's design, it seems to be pertinent to propose a _best-effort_ native version of select component, without any functional or javascript dependancy.
 
 {{% example html %}}
 <label for="select0">Example select</label>
@@ -18,6 +20,10 @@ toc: true
   <option data-id="4" >Pharetra Fusce Venenatis</option>
 </select>
 {{% /example %}}
+
+For most of cases, it can save your life, saving you from implement all markup needed by the more ambitious and complete version of this component.
+
+You want more functionnalities ? please keep reading below !
 
 ## Default
 

@@ -6,7 +6,9 @@ group: components
 toc: true
 ---
 
-## Utilisation du composant natif
+## Composant Select natif & standard
+
+Bien qu'il ne reflète pas exactement le design prévu par SNCF, il nous a semblé pertinent de proposer une version arrangée _au mieux_ du composant Select, sans dépendances fonctionnelles ou javascript.
 
 {{% example html %}}
 <label for="select0">Example select</label>
@@ -18,6 +20,10 @@ toc: true
   <option data-id="4" >Pharetra Fusce Venenatis</option>
 </select>
 {{% /example %}}
+
+Pour la plupart des usages normaux, cette version pourra vous sauver la vie en vous évitant d'implémenter tout le markup nécessaire à la version plus ambitieuse et plus complète de ce composant.
+
+Vous voulez plus de fonctionnalités et de paillettes ? Continuez alors ci-dessous.
 
 ## Utilisation par défaut
 
