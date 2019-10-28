@@ -90,6 +90,7 @@
     justify-content: center;
   }
 
+  // stylelint-disable selector-no-qualifying-type
   span.arrowDown,
   span.arrowUp {
     position: absolute;
@@ -111,8 +112,8 @@
   }
 
   span.arrowDown {
-    bottom: 0;
     right: 0;
+    bottom: 0;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 2'%3e%3cdefs%3e%3cstyle%3e.a%7bfill:%230088ce;%7d%3c/style%3e%3c/defs%3e%3ctitle%3eSans titre - 1%3c/title%3e%3crect class='a' width='12' height='2'/%3e%3c/svg%3e");
     background-size: 12px 2px;
   }
@@ -122,6 +123,7 @@
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3cdefs%3e%3cstyle%3e.a%7bfill:%230088ce;%7d%3c/style%3e%3c/defs%3e%3ctitle%3eSans titre - 1%3c/title%3e%3crect class='a' y='5' width='12' height='2'/%3e%3crect class='a' y='5' width='12' height='2' transform='translate(0 12) rotate(-90)'/%3e%3c/svg%3e");
     background-size: 12px 12px;
   }
+  // stylelint-enable selector-no-qualifying-type
 }
 
 .flatpickr-current-month {
@@ -143,10 +145,12 @@
       background-color: transparent;
     }
   }
-  
+
+  // stylelint-disable selector-no-qualifying-type
   input.cur-year {
     padding-left: rem(14px);
   }
+  // stylelint-enable selector-no-qualifying-type
 }
 
 .flatpickr-weekday.flatpickr-weekday {
