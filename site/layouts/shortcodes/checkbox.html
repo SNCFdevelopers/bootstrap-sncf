@@ -1,6 +1,6 @@
 {{- $attr := .Get "attr" | default "id" -}}
 
-<div class="custom-control custom-checkbox {{ .Get "container" }}">
-  <input type="checkbox" name="{{ .Get "name" }}" class="custom-control-input" id="{{ .Get "id" }}" {{ .Get "attr" }}>
-  <label class="custom-control-label" for="{{ .Get "id" }}">{{ .Get "label" }}</label>
+<div class="custom-control custom-checkbox {{ .Get `container` }}">
+  <input type="checkbox" name="{{ .Get `name` }}" class="custom-control-input" id="{{ .Get `id` }}" {{ $attr }}>
+  <label class="custom-control-label" for="{{ .Get `id` }}">{{ .Get "label" }}</label>
 </div>
