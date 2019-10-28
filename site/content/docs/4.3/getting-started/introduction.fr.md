@@ -37,8 +37,7 @@ Plusieurs de nos composants nécessitent l'utilisation de JavaScript pour foncti
 - et nos propres plugins JavaScript plugins (inclus dans in tous les fichiers .js)
 
 {{< callout info >}}
-Pour plus de commidités, **nous avons intégré** _jQuery_ et _popper_ dans `bootstrap-sncf.min.js`. \\
-Néanmoins, nous proposons également une version « sans librairies externes » nommée `bootstrap-sncf-noext.min.js` (vous aurez cependant besoin d'ajouter manuellement les librairies nécessaires à vos plugins).
+Pour plus de commidités, **nous avons intégré** _jQuery_ et _popper_ dans `bootstrap-sncf.min.js`.
 {{< /callout >}}
 
 {{< highlight html >}}
@@ -46,7 +45,7 @@ Néanmoins, nous proposons également une version « sans librairies externes »
 {{< /highlight >}}
 
 Curieux de connaître quels composants nécessitent explicitement ces librairies ? En voici la liste. \\
-N'oubliez pas que **toutes ces librairies sont déjà incluses** dans nos versions principales par défaut (sauf si vous utilisez les versions allégées `-noext`).
+N'oubliez pas que **toutes ces librairies sont déjà incluses** dans nos versions principales par défaut.
 
 - Alertes pour l'effacement
 - Boutons pour les changements d'état et les fonctionnalités type cases à cocher

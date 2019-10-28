@@ -20,7 +20,6 @@ Vous pouvez télécharger le code compilé, prêt à l'emploi pour **Bootstrap S
 - `bootstrap-sncf.min.css` Feuille de style CSS originale minifiée
 - `bootstrap-sncf.darkmode.min.css` Feuille de style CSS « mode sombre » minifiée
 - `bootstrap-sncf.min.js` JavaScript minifié, contenant [toutes les librairies externes]({{< docsref "/getting-started/introduction#js" >}})
-- `bootstrap-sncf-noext.min.js` JavaScript minifié, sans les librairies externes
 
 Ce fichier ne comporte pas la documentation et les fichiers sources.
 

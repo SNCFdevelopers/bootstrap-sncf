@@ -20,7 +20,6 @@ Download ready-to-use compiled code for **Bootstrap SNCF v{{< param current_vers
 - `bootstrap-sncf.min.css` Minified CSS stylesheet original version
 - `bootstrap-sncf.darkmode.min.css` Minified CSS stylesheet "dark mode" version
 - `bootstrap-sncf.min.js` Minified JS, with all libs inside
-- `bootstrap-sncf-noext.min.js` Minified JS, without [externals libs]({{< docsref "/getting-started/introduction#js" >}})
 
 This doesn't include documentation and source files.
 
@@ -45,4 +44,3 @@ npm install @sncf/bootstrap-sncf.metier
 {{% highlight sh %}}
 npm install @sncf/bootstrap-sncf.communication
 {{% /highlight %}}
-

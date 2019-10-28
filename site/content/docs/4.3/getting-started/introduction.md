@@ -37,8 +37,7 @@ Many of our components require the use of JavaScript to function. Specifically, 
 - and our own JavaScript plugins (included in all .js files)
 
 {{< callout info >}}
-For commodity reasons, **we have integrated** jQuery and popper inside `bootstrap-sncf.min.js`. \\
-However, we propose a "no-externals" (without extra libs) version named `bootstrap-sncf-noext.min.js` (you'll need to add extra libs before loading this version).
+For commodity reasons, **we have integrated** jQuery and popper inside `bootstrap-sncf.min.js`.
 {{< /callout >}}
 
 {{< highlight html >}}
@@ -46,7 +45,7 @@ However, we propose a "no-externals" (without extra libs) version named `bootstr
 {{< /highlight >}}
 
 Curious which components explicitly require jQuery, our JS, Popper.js or other libs? Here's a list of those components. \\
-Please remember that **all these libs are already included** in ours main releases, by default (except if you're using `-noext` lightened version).
+Please remember that **all these libs are already included** in ours main releases, by default.
 
 - Alerts for dismissing
 - Buttons for toggling states and checkbox/radio functionality
