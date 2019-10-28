@@ -9,26 +9,26 @@ url: /fr/docs/4.3/getting-started/analytics-tracking/
 
 ## Pourquoi utiliser une solution de web analytics ?
 
-La web-analyse est devenu un sujet régulier dans une optique d’amélioration continue pilotée par les données Les outils d’analytics ont déjà pris part dans le quotidien des métiers du _B2C_ (s’adressant aux clients et prospects) et certains métiers _B2E_ (s’adressant à l’interne).
+La web-analyse est devenu un sujet régulier dans une optique d’amélioration continue pilotée par les données. Les outils d’analytics ont déjà pris part dans le quotidien des métiers du _B2C_ (s’adressant aux clients et prospects) et certains métiers _B2E_ (s’adressant à l’interne).
 
 ### Présentation
 
-Il est important d’avoir de l’informations concrète, quantifiable et qualifiable afin de pouvoir mesurer la performance son dispositif (Site web, App et même IoT).
+Il est important d’avoir de l’information concrète, quantifiable et qualifiable afin de pouvoir mesurer la performance son dispositif (Site web, App et même IoT).
 
 Ces informations permettent de déterminer les actions à mener pour améliorer son dispositif grâce aux actions utilisateurs.
 
-Les outils d’analytics permettent de récolter et de quantifier ces informations afin de pouvoir prendre des décisions basé sur des faits mesurés.
+Les outils d’analytics permettent de récolter et de quantifier ces informations afin de pouvoir prendre des décisions basées sur des faits mesurés.
 
 Ces informations permettent de répondre à des questions de ce genre :
 
-- Est-ce que le parcours défini est compris par les utilisateurs ? (Implicitement, est-ce que j’ai défini un parcours ?)
+- Est-ce que le parcours défini est compris par les utilisateurs ? (implicitement, ai-je défini un parcours ?)
 - Quelle est l’étape du parcours où je perds le plus d’utilisateurs ? Est-ce par manque de compréhension ou est-ce un problème technique ?
-- Quel est le ratio des utilisateurs qui navigue sur la partie A vs la partie B du site web ?
-- Est-ce que mes utilisateurs passent plus de 3 minute sur mes pages de contenu ?
-- En moyenne, combien de formulaires de demandes ont été envoyés ? Différencié par type de formulaire ?
-- Combien de clics sur le bouton A vs le bouton B ?
+- Quel est le ratio des utilisateurs qui naviguent sur la partie A _vs_ la partie B du site web ?
+- Est-ce que mes utilisateurs passent plus de 3 minutes sur mes pages de contenu ?
+- En moyenne, combien de formulaires de demandes ont été envoyés ? Différencier par type de formulaire ?
+- Combien de clics sur le bouton A _vs_ le bouton B ?
 
-Aujourd’hui, il est difficile voir impossible de répondre à ces questions sans avoir intégré d’outils dédiés car :
+Aujourd’hui, il est difficile voir impossible de répondre à ces questions sans avoir intégré des outils dédiés car :
 
 - Vous ne connaîtrez pas la fréquentation du site
 - Vous ne connaissez pas les actions réalisées sur le site
@@ -48,9 +48,9 @@ Nous suivons principalement 3 types de données :
 | Géolocalisation                | Appareil utilisé, version de l'OS, définition d'écran | Données personnalisées                |
 | Liste des appareils utilisés   | Données personnalisées                                |                                       |
 
-### Socle analytics basement
+### Socle analytics
 
-Les solutions d’analytics récoltent des données comportementales sur les utilisateurs des dispositifs trackés (Site web, App et même IoT). Elles permettent d’aider au pilotage du trafic sur le-dit dispositif et de mesurer les performances.
+Les solutions d’analytics récoltent des données comportementales sur les utilisateurs des dispositifs _trackés_ (Site web, App et même IoT). Elles permettent d’aider au pilotage du trafic sur le-dit dispositif et de mesurer les performances.
 
 Le socle analytics déployé dans le groupe SNCF est le suivant :
 
