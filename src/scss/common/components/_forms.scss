@@ -160,6 +160,7 @@ input {
 
 .form-control-sm {
   min-height: $input-min-height-sm; // for IE11
+  padding: rem(2px) rem(20px);
 }
 
 .form-control-white {
