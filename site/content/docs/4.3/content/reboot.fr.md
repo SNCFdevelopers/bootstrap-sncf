@@ -195,7 +195,7 @@ HTML5 a ajouté [un nouvel attribut global nommé `[hidden]`](https://developer.
 {{< callout warning >}}
 ##### Incompatibilité avec jQuery
 
-`[hidden]` n'est pas compatible avec les méthode jQuery `$(...).hide()` et `$(...).show()`. De plus, nous n'encourageons pas forcément `[hidden]` comme technique de gestion des éléments `display` d'affichage.
+`[hidden]` n'est pas compatible avec les méthodes jQuery `$(...).hide()` et `$(...).show()`. De plus, nous n'encourageons pas forcément `[hidden]` comme technique de gestion des éléments `display` d'affichage.
 {{< /callout >}}
 
 Pour définir le statut de visibilité d'un élément, à savoir faire en sorte que `display` ne soit pas modifié afin que l'élément affecte toujours le flux du document, veuillez plutôt utiliser [la classe `.invisible`]({{< docsref "/utilities/visibility" >}}).

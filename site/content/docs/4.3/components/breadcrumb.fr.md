@@ -31,7 +31,7 @@ Le fil d'Ariane ne doit pas être utilisé sur les interfaces mobiles.
 {{% /example %}}
 
 {{% callout info %}}
-Vous trouverez l'indicateur d'étapes dans [progress components]({{< docsref "/components/progress#steps-indicator" >}}).
+Vous trouverez l'indicateur d'étapes dans [les indicateurs de progression]({{< docsref "/components/progress#steps-indicator" >}}).
 {{% /callout %}}
 
 ## Accessibilité

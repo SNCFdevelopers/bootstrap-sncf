@@ -18,12 +18,12 @@ Une info-bulle est utile pour fournir des informations additionnelles sur des é
 Deux trois choises à savoir si vous utilisez les info-bulles :
 
 - Elles dépendent de la librairie [Popper.js](https://popper.js.org/) pour le positionnement. La librairie est déjà incluse dans la distribution `bootstrap-sncf.min.js`.
-- Elles ne sont pas initialisées par défauit, **vous devez le faire vous-même**.
+- Elles ne sont pas initialisées par défaut, **vous devez le faire vous-même**.
 - Des info-bulles avec un titre vide ne seront pas affichées.
 - Spécifiez `container: 'body'` pour éviter des problèmes de rendus dans des composants plus complexes tels que les groupes d'entrées, de boutons, etc.
 - Déclencher une info-bulle sur un élément masqué ne fonctionnera pas.
-- Les info-bulles sur des éléments `.disabled` ou `disabled` doivent être liés sur un élément enveloppant.
-- Quand déclenché depuis des ancres qui enveloppent plusieurs lignes, les info-bulles seront centrées. Utilisez `white-space: nowrap;` sur les balises `<a>` pour empêcher ce comportement.
+- Les info-bulles sur des éléments `.disabled` ou `disabled` doivent être liés sur un élément parent.
+- Quand déclenché depuis des ancres qui encapsulent plusieurs lignes, les info-bulles seront centrées. Utilisez `white-space: nowrap;` sur les balises `<a>` pour empêcher ce comportement.
 - Les info-bulles doivent être masquées avant que leurs éléments correspondants aient été supprimés du DOM.
 
 Tout est ok ? Super ! Maintenant, quelques exemples.
@@ -43,7 +43,9 @@ $(function () {
 Survolez les liens ci-dessous pour voir les info-bulles :
 
 <div class="bd-example tooltip-demo">
-  <p class="muted">Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+  <p class="muted">
+    Donec luctus turpis urna, <a href="#" data-toggle="tooltip" title="Info-bulle par défaut">quis lacinia</a> massa pretium quis.<br>
+    Mauris nulla magna, placerat sed ex ut, condimentum porta ipsum. Cras efficitur metus id lectus congue sodales. Aenean tempus sem vel libero tincidunt, quis vulputate ex consequat. Proin <a href="#" data-toggle="tooltip" title="Une autre info-bulle">luctus facilisis enim ac vestibulum</a>. Vestibulum interdum neque velit, eget <a href="#" data-toggle="tooltip" title="Encore une autre ici">dapibus</a> massa pharetra eget. Morbi lobortis rhoncus nulla et euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc tristique, elit eget fringilla hendrerit, libero <a href="#" data-toggle="tooltip" title="Et la dernière !">lectus molestie</a> tellus, venenatis dapibus nibh elit sit amet lorem.
   </p>
 </div>
 
@@ -191,7 +193,7 @@ Les options peuvent être passées par des attributs `data-` ou en JavaScript. P
       <td>selector</td>
       <td>string | false</td>
       <td>false</td>
-      <td>Si un sélecteur est fournir, l'objet de l'info-bulle sera délégué à une cible spécifiée. En pratique, cela est utilisé pour permettre l'ajout de bulles contextuelles à du contenu HTML dynamique. Consultez <a href="https://github.com/twbs/bootstrap/issues/4215">ceci</a> et <a href="https://jsbin.com/zopod/1/edit">cet exemple informatif</a>.</td>
+      <td>Si un sélecteur est fourni, l'objet de l'info-bulle sera délégué à une cible spécifiée. En pratique, cela est utilisé pour permettre l'ajout de bulles contextuelles à du contenu HTML dynamique. Consultez <a href="https://github.com/twbs/bootstrap/issues/4215">ceci</a> et <a href="https://jsbin.com/zopod/1/edit">cet exemple informatif</a>.</td>
     </tr>
     <tr>
       <td>template</td>
@@ -254,7 +256,7 @@ Les options pour les info-bulles individuelles peuvent alternativement être sp�
 ### Methodes
 
 {{% callout danger %}}
-{{% partial "callout-danger-async-methods.md" %}}
+{{% partial "callout-danger-async-methods.fr.md" %}}
 {{% /callout %}}
 
 #### `$().tooltip(options)`

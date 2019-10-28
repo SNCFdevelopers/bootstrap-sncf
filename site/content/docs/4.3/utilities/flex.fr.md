@@ -31,7 +31,7 @@ Des variantes adaptatives existent également pour `.d-flex` et `.d-inline-flex`
 
 ## Sens (_direction_)
 
-Ajustez le sens (_direction_) des éléments flexibles d'un container avec les utilitaires dédiées. Dans la plupart des cas, vous pouvez omettre la classe horizontale ici car la valeur par défaut du navigateur est `row`. Néanmoins, vous pourriez rencontrer des situations où vous il sera nécessaire de renseigner explicitement cette valeur (comme les dispositions adaptatives).
+Ajustez le sens (_direction_) des éléments flexibles d'un container avec les classes utilitaires dédiées. Dans la plupart des cas, vous pouvez omettre la classe horizontale ici car la valeur par défaut du navigateur est `row`. Néanmoins, vous pourriez rencontrer des situations où vous il sera nécessaire de renseigner explicitement cette valeur (comme les dispositions adaptatives).
 
 Utilisez `.flex-row` pour définir un sens horizontal (la valeur du navigateur par défaut) ou `.flex-row-reverse` pour un sens horizontal inverse (le début commence à l'extrémité opposée).
 

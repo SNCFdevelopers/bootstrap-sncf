@@ -71,7 +71,7 @@ Les graphiques "Donuts" ont un fonctionnement similaire aux diagrammes à secteu
 
 ## Graphiques barres
 
-Les graphiques barres montrent les changements d'une quantiité dans le temps. Nous les utilisons pour afficher les quantités mesurées périodiquement. Il existe trois types de graphiques barres : simple, cumulatif et proportionnel. Les graphiques barres simples affichent une seule mesure, tandis que les cumulatifs affichent deux à trois mesures par barre.
+Les graphiques barres montrent les changements d'une quantité dans le temps. Nous les utilisons pour afficher les quantités mesurées périodiquement. Il existe trois types de graphiques barres : simple, cumulatif et proportionnel. Les graphiques barres simples affichent une seule mesure, tandis que les cumulatifs affichent deux à trois mesures par barre.
 Dans les graphiques barres proportionnelles, toutes les barres ont la même taille mais des proportions différentes pour les indicateurs mesurés.
 
 {{% example html %}}
@@ -205,7 +205,8 @@ Utilisez data-fill="true"
 {{% /example %}}
 
 ### Aires avec bordure
-Use data-straightlines="true"
+
+Utilisez `data-straightlines="true"`
 
 {{% example html %}}
 <div class="position-relative"

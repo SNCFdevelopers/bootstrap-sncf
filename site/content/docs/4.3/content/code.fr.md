@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Code
-description: Documentation et examples pour afficher du code source sur une ou plusieurs lignes avec Bootstrap.
+description: Documentation et exemples pour afficher du code source sur une ou plusieurs lignes avec Bootstrap.
 group: content
 toc: true
 ---

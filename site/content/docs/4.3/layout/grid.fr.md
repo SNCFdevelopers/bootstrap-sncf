@@ -42,7 +42,7 @@ Voici comment cela fonctionne:
 - Les largeurs de colonne `width` sont définies en pourcentage, ainsi elles sont donc toujours fluides et dimensionnées par rapport à leur élément parent.
 - Les colonnes ont un `padding` horizontal pour créer les gouttières entre les colonnes individuelles; toutefois, vous pouvez supprimer la `margin` des lignes et le `padding` des colonnes avec `.no-gutters` sur le `.row`.
 - Pour rendre la grille _responsive_, il existe cinq _breakpoints_, un pour chaque [_responsive breakpoints_]({{< docsref "/layout/overview" "#responsive-breakpoints" >}}) : tous les _breakpoints_ (très petits), petits, moyens, grand et extra large.
-- Les _breakpoints_ de la grille sont basés sur des requêtes média de largeur minimale, ce qui signifie **qu'ils s'appliquent à ce breakpoint et à tous ceux qui le précèdent** (par exemple, `.col-sm-4` s'applique aux écran de petite, moyenne, grande et très grande taille, mais pas au premier point d’arrêt `xs`).
+- Les _breakpoints_ de la grille sont basés sur des requêtes média de largeur minimale, ce qui signifie **qu'ils s'appliquent à ce breakpoint et à tous ceux qui le précèdent** (par exemple, `.col-sm-4` s'applique aux écrans de petite, moyenne, grande et très grande taille, mais pas au premier point d’arrêt `xs`).
 - Vous pouvez utiliser des classes de grille prédéfinies (comme `.col-4`) ou [des mixins SASS](# sass-mixins) pour un HTML plus sémantique.
 
 Soyez attentitfs aux limites et [bugs de Flexbox](https://github.com/philipwalton/flexbugs), comme [l'impossibilité d'utiliser certains éléments HTML en tant que containers flex](https://github.com/philipwalton/flexbugs#flexbug-9).
@@ -326,7 +326,7 @@ Voici un exemple de personnalisation de la grille Bootstrap au niveau du grand p
 Utilisez les utilitaires d'alignement de _flexbox_ pour aligner les colonnes verticalement et horizontalement. **Internet Explorer 10-11 ne prennent pas en charge l'alignement vertical des éléments _flex_ lorsque le conteneur _flex_ a une hauteur minimale, comme indiqué ci-dessous.** [Voir Flexbugs n°3 pour plus de détails.](https://github.com/philipwalton/flexbugs#flexbug-3)
 
 
-### Alignement vetitcal
+### Alignement vertical
 
 <div class="bd-example-row bd-example-row-flex-cols">
 {{< example >}}
@@ -756,7 +756,7 @@ Vous pouvez modifier les variables selon vos propres valeurs personnalisées ou 
 
 ## Modifier/adapter la grille
 
-En utilisant les _maps_ et variables Sass intégrées pour la grilles, il est possible de personnaliser complètement les classes de grille prédéfinies. Modifiez le nombre de niveaux, les dimensions de la requête média et les largeurs de conteneur, puis recompilez.
+En utilisant les _maps_ et variables Sass intégrées pour la grille, il est possible de personnaliser complètement les classes de grille prédéfinies. Modifiez le nombre de niveaux, les dimensions de la requête média et les largeurs de conteneur, puis recompilez.
 
 ### Colonnes et gouttières
 

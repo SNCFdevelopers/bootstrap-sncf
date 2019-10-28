@@ -54,7 +54,7 @@ Pour un développement plus rapide et convivial pour les mobiles, utilisez des c
 
 Pour masquer un élément, utilisez simplement la classe `.d-none` ou l'une des classes `.d-{sm,md,lg,xl}-none` pour chaque variante de taille d'écran (_breakpoint_).
 
-Pour afficher un élément seulement sur un intervalle de tailles d'écran, vous pouvez combiner la classe `.d-*-none` avec une classe `.d-*-*`, par exemple `.d-none .d-md-block .d-xl-none` va masquer l'éléments pour toutes les tailles d'écran, sauf sur celles de taille moyen (_medium_) et large.
+Pour afficher un élément seulement sur un intervalle de tailles d'écran, vous pouvez combiner la classe `.d-*-none` avec une classe `.d-*-*`, par exemple `.d-none .d-md-block .d-xl-none` va masquer l'élément pour toutes les tailles d'écran, sauf sur celles de taille moyen (_medium_) et large.
 
 <table class="table">
   <thead>

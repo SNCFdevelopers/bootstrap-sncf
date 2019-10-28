@@ -13,7 +13,7 @@ Les conteneurs sont les éléments de présentation les plus élémentaires de B
 
 ### « Tout en un »
 
-Notre classe par défaut `.container` est un container _responsive_, à largeur fixe, ce qui signifie que sa largeur maximale varie à chaque point d'arrêt.
+Notre classe par défaut `.container` est un container _responsive_, à largeur fixe, ce qui signifie que sa largeur maximale varie à chaque _breakpoint_.
 
 <div class="bd-example">
   <div class="example-container-element col-6 p-3 mx-auto">
@@ -45,7 +45,7 @@ Utilisez `.container-fluid` pour un container qui prenne toute la largeur de la 
 
 ### _Responsive_
 
-Les conteneurs réactifs sont nouveaux dans Bootstrap v4. Ils vous permettent de spécifier une classe pleine largeur jusqu'à ce qu'un point d'arrêt particulier soit atteint et qu'une `max-width` soit appliquée. Par exemple, `.container-sm` a une largeur de 100% pour commencer, jusqu'à ce que le point d'arrêt de `sm` soit atteint, où il restera jusqu'aux _breakpoints_ les plus élevés.
+Les conteneurs réactifs sont nouveaux dans Bootstrap v4. Ils vous permettent de spécifier une classe pleine largeur jusqu'à ce qu'un _breakpoint_ particulier soit atteint et qu'une `max-width` soit appliquée. Par exemple, `.container-sm` a une largeur de 100% pour commencer, jusqu'à ce que le _breakpoint_ de `sm` soit atteint, où il restera jusqu'aux _breakpoints_ les plus élevés.
 
 <div class="bd-example">
   <div class="example-container-element p-3 mb-3">
@@ -65,7 +65,7 @@ Les conteneurs réactifs sont nouveaux dans Bootstrap v4. Ils vous permettent de
 
 ## _Breakpoints Responsive_
 
-Depuis que Bootstrap est développé pour être d'abord mobile, nous utilisons quelques [requêtes média (_media queries_)](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) pour créer des _breakpoints_ sensibles pour nos mises en page. et interfaces. Ces p _breakpoints_ sont principalement basés sur les largeurs minimales de la fenêtre d'affichage et nous permettent de redimensionner des éléments lorsque la fenêtre d'affichage change.
+Depuis que Bootstrap est développé pour être d'abord mobile, nous utilisons quelques [requêtes média (_media queries_)](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) pour créer des _breakpoints_ sensibles pour nos mises en page. et interfaces. Ces _breakpoints_ sont principalement basés sur les largeurs minimales de la fenêtre d'affichage et nous permettent de redimensionner des éléments lorsque la fenêtre d'affichage change.
 
 Bootstrap utilise principalement les plages de requête média suivantes (ou _breakpoints_) dans nos fichiers Sass source pour notre structure, notre système de grille et nos composants.
 

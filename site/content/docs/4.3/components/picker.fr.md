@@ -45,7 +45,7 @@ Veuillez noter qu'il n'est **pas nécessaire** de charger `flatpickr.js` si vous
 
 ## Date par défaut
 
-Le sélecteur de date laisse l'utilisateur choisir une date (au format dd/mm/yyyy) en utilisant un calendrier visuel. Veuillez notez que la date du jour (sélectionnée par défaut), la date que l'utilisateur choisit, et celles qui ne sont pas disponibles sont visuellement différenciées.
+Le sélecteur de date laisse l'utilisateur choisir une date (au format dd/mm/yyyy) en utilisant un calendrier visuel. Veuillez noter que la date du jour (sélectionnée par défaut), la date que l'utilisateur choisit, et celles qui ne sont pas disponibles sont visuellement différenciées.
 
 {{% example html %}}
 <label for="defaultdate" class="font-weight-medium mb-2">Date (jj/mm/aaaa)</label>

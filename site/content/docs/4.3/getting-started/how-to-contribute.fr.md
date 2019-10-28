@@ -8,15 +8,14 @@ toc: true
 
 Bootstrap SNCF est en construction continuelle. C'est un outil sur lequel vous pouvez vous appuyer, mais également un outil que vous pouvez faire évoluer : pour vous, mais aussi pour les autres. Alors si vous êtes dans l’un des cas suivants, n’hésitez pas à consulter les procédures pour contribuer !
 
-
 <details class="mb-3">
 <summary class="text-primary text-lg mb-2">Un composant devrait être dans cette rubrique, mais vous ne le trouvez pas ?</summary>
 {{% markdown %}}
 Ce composant existe peut-être dans une autre rubrique. Des liens vous permettent de passer d’une rubrique à l’autre pour les sujets liés (par exemple pour les composants checkbox et radios, un lien vous permet de les retrouver à partir de la rubrique des formulaires).
 Si vous ne le trouvez définitivement pas :
 
-- **Vous avez un compte GitHub :** N’hésitez pas à parcourir le [Github du projet](https://github.com/SNCFdevelopers/bootstrap-sncf), une issue a peut-être déjà été créée sur ce sujet (vous pouvez souscrire les notifications pour suivre son avancée). Dans le cas contraire, n’hésitez pas à en créer une.
-- **Vous n’avez pas de compte GitHub :** ’hésitez pas à nous écrire sur [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Composant) avec l’objet suivant : « Bootstrap - Composant » en précisant votre besoin.
+- **Vous avez un compte GitHub :** N'hésitez pas à parcourir le [Github du projet](https://github.com/SNCFdevelopers/bootstrap-sncf), une issue a peut-être déjà été créée sur ce sujet (vous pouvez souscrire les notifications pour suivre son avancée). Dans le cas contraire, n’hésitez pas à en créer une.
+- **Vous n’avez pas de compte GitHub :** N'hésitez pas à nous écrire sur [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Composant) avec l’objet suivant : « Bootstrap - Composant » en précisant votre besoin.
 {{% /markdown %}}
 </details>
 
@@ -27,8 +26,8 @@ N’hésitez pas à nous contacter car, soit ce composant existe, mais nous ne l
 
 Dans ce cas :
 
-- **Vous avez un compte GitHub :** N’hésitez pas à parcourir le [Github du projet](https://github.com/SNCFdevelopers/bootstrap-sncf), une issue a peut-être déjà été créée sur ce sujet (vous pouvez souscrire les notifications pour suivre son avancée). Dans le cas contraire, n’hésitez pas à en créer une.
-- **Vous n’avez pas de compte GitHub :** ’hésitez pas à nous écrire sur [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Composant) avec l’objet suivant : « Bootstrap - Composant » en précisant votre besoin.
+- **Vous avez un compte GitHub :** N'hésitez pas à parcourir le [Github du projet](https://github.com/SNCFdevelopers/bootstrap-sncf), une issue a peut-être déjà été créée sur ce sujet (vous pouvez souscrire les notifications pour suivre son avancée). Dans le cas contraire, n’hésitez pas à en créer une.
+- **Vous n’avez pas de compte GitHub :** N'hésitez pas à nous écrire sur [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap - Composant) avec l’objet suivant : « Bootstrap - Composant » en précisant votre besoin.
 {{% /markdown %}}
 </details>
 

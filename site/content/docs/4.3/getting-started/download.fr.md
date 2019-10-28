@@ -22,7 +22,7 @@ Vous pouvez télécharger le code compilé, prêt à l'emploi pour **Bootstrap S
 - `bootstrap-sncf.min.js` JavaScript minifié, contenant [toutes les librairies externes]({{< docsref "/getting-started/introduction#js" >}})
 - `bootstrap-sncf-noext.min.js` JavaScript minifié, sans les librairies externes
 
-Ce fichier ne comporte pas la documentation et les fichiers source.
+Ce fichier ne comporte pas la documentation et les fichiers sources.
 
 <a href="/bootstrap-sncf.{{< param doc_theme >}}.v{{< param current_version >}}-r{{< param sncf_version >}}.zip" class="btn btn-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download Bootstrap');">Télécharger</a>
 
@@ -37,7 +37,7 @@ Compilez Bootstrap SNCF avec votre propre infrastructure en téléchargeant le c
 
 ## npm
 
-Installez Bootstrap SNCF dans vos applications Node.js avec le paquet _NPM_. Choisissez l'un de ces paquest suivant le type de votre projet :
+Installez Bootstrap SNCF dans vos applications Node.js avec le paquet _NPM_. Choisissez l'un de ces paquets suivant le type de votre projet :
 
 {{% highlight sh %}}
 npm install @sncf/bootstrap-sncf.metier

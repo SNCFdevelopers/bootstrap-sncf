@@ -16,7 +16,7 @@ Lorsque les options doivent être illustrées, utilisez les grands boutons d'ima
 
 Nous utilisons le sélecteur (`~`) pour tous nos `<input>` states—comme `:checked`—to properly style our custom form indicator. When combined with the `.custom-control-label` class, we can also style the text for each item based on the `<input>`'s state.
 
-We hide the default `<input>` with `opacity` and use the `.custom-control-label` to build a new custom form indicator in its place with `::before` and `::after`. Unfortunately we can't build a custom one from just the `<input>` because CSS's `content` doesn't work on that element.
+Le champ `<input>` par défaut est masqué avec `opacity` ainsi que l'utilisation de `.custom-control-label` pour fabriquer un nouvel indicateur de formulaire customisé à sa place avec `::before` et `::after`. Malheureusement, nous ne pouvions le faire directement depuis la balise native `<input>` du fait que la propriété CSS `content` ne fonctionne pas sur cet élément.
 
 Dans les états cochés, nous utilisons **les icônes SVG intégrés base64** de [Open Iconic](https://useiconic.com/open). Cela nous fournit le meilleur contrôle pour le style et le positionnement sur les navigateurs et les appareils.
 
@@ -27,7 +27,7 @@ Les cases à cocher sont souvent utilisées pour les formulaires ou pour d'autre
 Il existe trois états de sélection : « désélectionné », « sélectionné » et « indéfini ». L'état « indéfini » apparaît lorsqu'un groupe de sous-sélections contient des états « désélectionné » et « sélectionné ».
 
 {{% example html %}}
-{{% checkbox name="exampleCheckbox1" id="exampleCheckbox1" label="Custom checkbox" %}}
+{{% checkbox name="exampleCheckbox1" id="exampleCheckbox1" label="Case à cocher custom" %}}
 {{% /example %}}
 
 Les cases à cocher personnalisées peuvent également utiliser la pseudo-classe `:indeterminate` et `aria-checked="mixed` pour le lecteur d'écran, lorsqu'elles sont définies manuellement via JavaScript (il n'y a aucun attribut HTML disponible pour le spécifier).
@@ -35,7 +35,7 @@ Les cases à cocher personnalisées peuvent également utiliser la pseudo-classe
 <div class="bd-example bd-example-indeterminate">
   <div class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input" id="customCheck2">
-    <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+    <label class="custom-control-label" for="customCheck2">Cochez cette case à cocher customisée</label>
   </div>
 </div>
 
@@ -53,11 +53,11 @@ Les boutons radio sont souvent utilisés dans les formulaires ou pour d’autres
 {{% example html %}}
 <div class="custom-control custom-radio">
   <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-  <label class="custom-control-label font-weight-medium" for="customRadio1">Toggle this custom radio</label>
+  <label class="custom-control-label font-weight-medium" for="customRadio1">Basculez l'état de ce bouton radio customisé</label>
 </div>
 <div class="custom-control custom-radio">
   <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-  <label class="custom-control-label font-weight-medium" for="customRadio2">Or toggle this other custom radio</label>
+  <label class="custom-control-label font-weight-medium" for="customRadio2">Ou basculez l'état de cet autre bouton radio</label>
 </div>
 {{% /example %}}
 
@@ -99,11 +99,11 @@ Les switch permettent d'activer ou de désactiver une fonctionnalité ou une opt
 {{% example html %}}
 <div class="custom-control custom-radio custom-control-inline">
   <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-  <label class="custom-control-label font-weight-medium" for="customRadioInline1">Toggle this custom radio</label>
+  <label class="custom-control-label font-weight-medium" for="customRadioInline1">Basculez l'état de ce bouton radio customisé</label>
 </div>
 <div class="custom-control custom-radio custom-control-inline">
   <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-  <label class="custom-control-label font-weight-medium" for="customRadioInline2">Or toggle this other custom radio</label>
+  <label class="custom-control-label font-weight-medium" for="customRadioInline2">Ou celui-ci</label>
 </div>
 {{% /example %}}
 
@@ -113,24 +113,24 @@ Les cases à cocher personnalisées et les boutons radio peuvent également êtr
 {{% example html %}}
 <div class="custom-control custom-checkbox">
   <input type="checkbox" class="custom-control-input" id="customCheckDisabled1" disabled>
-  <label class="custom-control-label font-weight-medium" for="customCheckDisabled1">Check this custom checkbox</label>
+  <label class="custom-control-label font-weight-medium" for="customCheckDisabled1">Case à cocher customisée</label>
 </div>
 
 <div class="custom-control custom-checkbox">
   <input type="checkbox" class="custom-control-input" id="customCheckCheckedDisabled2" disabled checked>
-  <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled2">Check this custom checkbox</label>
+  <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled2">Case à cocher customisée</label>
 </div>
 
 <div class="bd-example-indeterminate">
   <div class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input" id="customCheckCheckedDisabled3" disabled>
-    <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled3">Check this custom checkbox</label>
+    <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled3">Case à cocher customisée</label>
   </div>
 </div>
 
 <div class="custom-control custom-radio">
   <input type="radio" id="radio3" name="radioDisabled" id="customCheckCheckedDisabled4" class="custom-control-input" disabled>
-  <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled4">Toggle this custom radio</label>
+  <label class="custom-control-label font-weight-medium" for="customCheckCheckedDisabled4">Bouton radio customisé</label>
 </div>
 
 <div class="mt-2">

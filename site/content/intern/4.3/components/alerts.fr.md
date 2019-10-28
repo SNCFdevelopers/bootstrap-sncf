@@ -27,7 +27,7 @@ Pour des raisons de compatibilité, les autres couleurs `alert-xxx` de Bootstrap
 
 ## Notifications
 
-Les messages de notifications (actions à confirmer, relatifs à une suppression) sont affichés en haut de la page.
+Les messages de notifications (actions confirmées, relatifs à une suppression, etc.) sont affichés en haut de la page.
 
 {{% example html %}}
 <p class="text-primary pl-4 pt-2 pb-2 font-weight-medium">

@@ -289,7 +289,7 @@ Le menu contextuel utilise le composant menu déroulant [présenté ici]({{< doc
   </div>
 {{% /example %}}
 
-## Modes d'afficage
+## Modes d'affichage
 
 ### Par défaut
 
@@ -297,7 +297,7 @@ Le menu contextuel utilise le composant menu déroulant [présenté ici]({{< doc
 <i class="icons-list"></i>
 {{% /example %}}
 
-### Au clic/tapotage
+### Au clic/tap
 
 {{% example html %}}
 <i class="icons-mosaic"></i>

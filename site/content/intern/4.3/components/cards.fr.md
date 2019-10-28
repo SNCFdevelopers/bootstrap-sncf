@@ -13,7 +13,7 @@ Une **carte** est un conteneur flexible et extensible. Il comprend des options p
 
 ## Exemple
 
-Les cartes sont construites avec le moins de balises et de styles possibles, mais parviennent tou de même à fournir une tonne de contrôle et de personnalisation. Construits avec flexbox, ils offrent un alignement facile et se marient bien avec les autres composants Bootstrap. . Ils n'ont pas de `margin` par défaut, utilisez donc [spacing utilities]({{< docsref "/utilities/spacing" >}}) selon vos besoins.
+Les cartes sont construites avec le moins de balises et de styles possibles, mais parviennent tout de même à fournir une tonne de contrôle et de personnalisation. Construits avec flexbox, ils offrent un alignement facile et se marient bien avec les autres composants Bootstrap. . Ils n'ont pas de `margin` par défaut, utilisez donc [spacing utilities]({{< docsref "/utilities/spacing" >}}) selon vos besoins.
 
 Vous trouverez ci-dessous un exemple de carte de base à contenu mixte et à largeur fixe. Les cartes n'ayant pas de largeur fixe au début, elles rempliront donc naturellement toute la largeur de son élément parent. Ceci est facilement personnalisable avec nos différentes [options de dimensionnement](#sizing).
 

@@ -15,9 +15,9 @@ Vous voyez quelque chose qui ne sonne pas bien ou qui pourrait peut-être être 
 
 ## Sommaire
 
-Nous allons approfondir chacun des points suivant :
+Nous allons approfondir chacun des points suivants :
 
-- Les composants doivent être _responsive_ et pensés pour le mobile (_mobile first_ !) en premier
+- Les composants doivent être _responsive_ et pensés _mobile first_ (pour le mobile en premier)
 - Les composants doivent être construits avec une classe de base puis étendus via des classes de modificateurs
 - Les états des composants doivent obéir à une échelle commune de `z-index`
 - Dans la mesure du possible, préférez une implémentation HTML et CSS au JavaScript

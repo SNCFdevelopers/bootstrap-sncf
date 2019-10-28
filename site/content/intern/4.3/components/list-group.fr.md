@@ -11,7 +11,7 @@ url: /fr/docs/4.3/components/list-group/
 
 Les listes standard peuvent être utilisées avec ou sans icônes. Selon le contexte, la liste peut comporter une ou plusieurs actions (favori, télécharger, supprimer, etc.). Utilisez des listes standard avec une action unique lorsque chaque ligne a une action.
 
-Des cases à cocher peuvent être ajoutées lorsqu'une action de groupe est proposée pour tous les éléments de la liste. une autre variante est un bouton unique qui combine plusieurs actions par ligne (menu contextuel). Lorsque les lecteurs doivent pouvoir voir à la fois la liste et les détails, utilisez des listes à double volets.
+Des cases à cocher peuvent être ajoutées lorsqu'une action de groupe est proposée pour tous les éléments de la liste. Une autre variante est un bouton unique qui combine plusieurs actions par ligne (menu contextuel). Lorsque les utilisateurs doivent pouvoir voir à la fois la liste et les détails, utilisez des listes à double volets.
 
 ## Liste standard
 

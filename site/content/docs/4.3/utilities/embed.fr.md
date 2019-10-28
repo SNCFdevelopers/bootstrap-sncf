@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Éléments incorporés
-description: Incorporez des vidéos et diaporamas de manière adaptative en créant un ratio intrinsèque qui s'adapte à chaque périphérique, en fonction de la largeur de son élément parent.
+description: Incorporez des vidéos et diaporamas de manière responsive.
 group: utilities
 toc: true
 ---

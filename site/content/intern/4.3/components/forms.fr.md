@@ -9,7 +9,7 @@ url: /fr/docs/4.3/components/forms/
 
 ## Vue d'ensemble
 
-Vous trouverez ci-dessous des composants pour les formulaires (champs de saisie, curseurs, puces, textes d'aide, gestion des erreurs). Cependant, notez que les boutons de validation sont dans la section « Boutons », les boutons menu sont dans « menu déroulants » et les sélecteurs dans « listes déroulantes ».
+Vous trouverez ci-dessous des composants pour les formulaires (champs de saisie, curseurs, puces, textes d'aide, gestion des erreurs). Cependant, notez que les boutons de validation sont dans la section [boutons]({{< docsref "/components/buttons" >}}), les boutons menu sont dans [menu déroulants]({{< docsref "/components/dropdowns" >}}) et les sélecteurs dans [listes déroulantes]({{< docsref "/components/select" >}}).
 
 Les contrôles de formulaires de Bootstrap sont étendus par [nos formulaires avec style réinitialisé (_reboot_)]({{< docsref "/content/reboot#forms" >}}) avec les classes. Utilisez-les pour obtenir, via leurs affichages personnalisés, un rendu plus cohérent sur les navigateurs et les périphériques.
 
@@ -27,14 +27,14 @@ Les contrôles de champs texte, tels que `<input>`, `<select>`, et `<textarea>` 
 {{< example html >}}
 <form>
   <div class="form-group">
-    <label for="inputEmail1">Example label</label>
-    {{< input type="email" id="inputEmail1" placeholder="Example input" >}}
+    <label for="inputEmail1">Label d'exemple</label>
+    {{< input type="email" id="inputEmail1" placeholder="Entrée exemple" >}}
   </div>
   <div class="form-group">
-    <label for="textarea1">Example textarea</label>
-    {{< textarea id="textarea1" placeholder="Example textarea" >}}
+    <label for="textarea1">Exemple de textarea</label>
+    {{< textarea id="textarea1" placeholder="Exemple de textarea" >}}
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Envoyer</button>
 </form>
 {{< /example >}}
 
@@ -45,8 +45,8 @@ Ces champs peuvent être utilisés lorsqu'ils sont implémentés dans un bloc, o
 {{< example html >}}
 <form>
   <div class="form-group">
-    <label for="inputSmall1">Small input</label>
-    {{< input type="email" id="inputSmall1" placeholder="Small input" class="form-control-sm" >}}
+    <label for="inputSmall1">Petit champ de saisie</label>
+    {{< input type="email" id="inputSmall1" placeholder="Petit champ de saisie" class="form-control-sm" >}}
   </div>
 </form>
 {{< /example >}}
@@ -56,7 +56,7 @@ Ces champs peuvent être utilisés lorsqu'ils sont implémentés dans un bloc, o
 Utilisez la classe `.has-left-icon` sur l'élément `.form-control`. Ensuite, utilisez l'élément `.form-control-icon` avec une icône à l'intérieur.
 
 {{< example html >}}
-{{< input container="has-left-icon" id="inputIcon1" placeholder="Example for auto-completion" content="<span class=\"form-control-icon\"><i class=\"icons-search\"></i></span>" >}}
+{{< input container="has-left-icon" id="inputIcon1" placeholder="Exemple pour l'auto-completion" content="<span class=\"form-control-icon\"><i class=\"icons-search\"></i></span>" >}}
 {{< /example >}}
 
 ### Champs en lecture seule
@@ -66,13 +66,13 @@ Ces champs peuvent être utilisés lorsqu'une information a besoin d'être vue p
 Ajoutez l'attribut booléen `readonly` sur un champ pour empêcher la modification de la valeur de l'entrée.
 
 {{< example html >}}
-<label for="readonly1">Readonly input</label>
-{{< input type="text" id="readonly1" placeholder="Readonly input here..." attr="readonly" >}}
+<label for="readonly1">Input en lecture seule</label>
+{{< input type="text" id="readonly1" placeholder="Input en lecture seule..." attr="readonly" >}}
 {{< /example >}}
 
 {{< example html >}}
-<label for="readonly2">Readonly textarea</label>
-{{< textarea id="readonly2" placeholder="Readonly textarea here..." attr="readonly" >}}
+<label for="readonly2">Textarea en lecture seule</label>
+{{< textarea id="readonly2" placeholder="Textarea en lecture seule..." attr="readonly" >}}
 {{< /example >}}
 
 ### Entrées obligatoires
@@ -80,13 +80,13 @@ Ajoutez l'attribut booléen `readonly` sur un champ pour empêcher la modificati
 Ajoutez l'attribut booléen `required` sur une entrée.
 
 {{% callout warning %}}
-Pour des raisons d'accessibilité, vous **devez** mettre le code sur la signification `*` signification **avant** toute occurrence des champs obligatoires.
+Pour des raisons d'accessibilité, vous **devez** mettre un texte d'aide expliquant la signification de `*` **avant** toute occurrence des champs obligatoires.
 {{% /callout %}}
 
 {{< example html >}}
-<p class="mt-3">Fields marked with * are required.</p>
-<label for="required1" class="required">Required input</label>
-{{< input type="text" id="required1" placeholder="Required input here..." attr="required" >}}
+<p class="mt-3">Les champs marqués avec * sont obligatoires.</p>
+<label for="required1" class="required">Champ obligatoire</label>
+{{< input type="text" id="required1" placeholder="Saisie obligatoire ici..." attr="required" >}}
 {{< /example >}}
 
 ### Champ avec bouton pour effacer
@@ -94,7 +94,7 @@ Pour des raisons d'accessibilité, vous **devez** mettre le code sur la signific
 Le comportement de l'effacement de texte est réalisé en `javascript`. Utilisez `data-component="control"` avec `data-clear-option="true"` pour l'activer. N'oubliez pas d'ajouter l'élément `button`.
 
 {{< example html >}}
-{{< input-clear-option type="text" id="readonly2" label="Rechercher" placeholder="Search..." >}}
+{{< input-clear-option type="text" id="readonly2" label="Rechercher" placeholder="Recherche..." >}}
 {{< /example >}}
 
 ### Champs pour données normalisées
@@ -131,14 +131,14 @@ Dans certains cas, les champs peuvent contenir des données normalisées. Des ca
 Ajoutez une classe `stretchy` sur un élément `textarea`.
 
 {{< example html >}}
-<label for="stretchyTextarea1">Auto sizing textarea</label>
-{{< textarea id="stretchyTextarea1" class="stretchy" placeholder="Auto sizing" >}}
+<label for="stretchyTextarea1">Textarea à dimensionnement automatique</label>
+{{< textarea id="stretchyTextarea1" class="stretchy" placeholder="Taille automatique" >}}
 {{< /example >}}
 
 ### Zone de texte avec compteur de caractères
 
 {{< example html >}}
-{{< textarea-counter id="countTextarea1" placeholder="Character counter" >}}
+{{< textarea-counter id="countTextarea1" placeholder="Compteur de caractères" >}}
 {{< /example >}}
 
 ### Zone de texte multi-ligne avec barre d'outils
@@ -147,7 +147,7 @@ Nous vous recommandons de limiter les barres d’outils à une ligne et de place
 
 {{< example html >}}
 <div class="form-group">
-  <label for="exampleFormControlTextarea3">Example textarea</label>
+  <label for="exampleFormControlTextarea3">Exemple de textarea</label>
   <div class="form-toolbar">
     <div class="form-toolbar-content">
       <button type="button" class="form-toolbar-item">
@@ -190,7 +190,7 @@ Nous vous recommandons de limiter les barres d’outils à une ligne et de place
     </div>
   </div>
   <div class="form-control-container">
-    <textarea id="exampleFormControlTextarea3" class="form-control" title="Comment" placeholder="Comment"></textarea>
+    <textarea id="exampleFormControlTextarea3" class="form-control" title="Commentaire" placeholder="Commentaire"></textarea>
     <span class="form-control-state"></span>
   </div>
 </div>
@@ -281,7 +281,7 @@ L'espace réservé disparaît à la saisie du premier caractère.
 
 ### Extérieur du champ
 
-Le texte d'aide à l'extérieur du champ dans les formulaire peut être créé en utilisant `.form-text` (anciennement connu sous le nom `.help-block` dans la v3). Le texte d'aide sur une ligne peut être implémenté de manière flexible en utilisant n'importe quel élément HTML en ligne et des classes d'utilitaires telles que `.text-muted`.
+Le texte d'aide à l'extérieur du champ dans les formulaires peut être créé en utilisant `.form-text` (anciennement connu sous le nom `.help-block` dans la v3). Le texte d'aide sur une ligne peut être implémenté de manière flexible en utilisant n'importe quel élément HTML en ligne et des classes d'utilitaires telles que `.text-muted`.
 
 {{% callout warning %}}
 
@@ -290,7 +290,7 @@ Le texte d'aide à l'extérieur du champ dans les formulaire peut être créé e
 Le texte d'aide doit être explicitement associé au contrôle de formulaire lié à l'utilisation de l'attribut `aria-describedby`. Cela garantira que les technologies d'assistance, telles que les lecteurs d'écran, annonceront ce texte d'aide lorsque l'utilisateur se concentrera ou entrera dans le contrôle.
 {{% /callout %}}
 
-Le texte d'aide sous les entrées peut être stylisée avec `.form-text`. Cette classe inclut `display: block` et ajouter une marge supérieure pour un espacement suffisant avec le champ.
+Le texte d'aide sous les entrées peut être stylisé avec `.form-text`. Cette classe inclut `display: block` et ajouter une marge supérieure pour un espacement suffisant avec le champ.
 
 {{% example html %}}
 <label class="font-weight-medium mb-2" for="inputPassword5">Password</label>
@@ -329,7 +329,7 @@ Nous **recommandons fortement** les styles de validation personnalisés car les 
 {{% /callout %}}
 
 {{% callout info %}}
-Les coches <i class="text-primary icons-check"></i> ne sont pas obligatoires (ni même inclues dans les guidelines SNCF), mais il s'agit d'un moyen intéressant de montrer aux utilisateurs que le champ est validé. Utilisez-le si vous le souhaitez.
+Les coches <i class="text-primary icons-check"></i> ne sont pas obligatoires (et non incluses dans les guidelines SNCF), mais il s'agit d'un moyen intéressant pour montrer aux utilisateurs que le champ est validé. Utilisez-le si vous le souhaitez.
 {{% /callout %}}
 
 ### Côté serveur

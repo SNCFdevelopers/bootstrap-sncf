@@ -17,9 +17,9 @@ Le pacte est basé sur le respect minimum du niveau de conformité "AA" du [<abb
 
 Comme indiqué dans la documentation technique ci-après, Bootstrap est "prêt à l'emploi" mais ne porte pas l'entière responsabilité de ce niveau de conformité. \\
 Les composants sont en effet réalisés dans ce sens, optimisés (à quelques exceptions près, spécifiquement annoncés quand il le est), que ce soit en termes de code, mais également en termes de design. \\
-Par contre, le travail appartient à l’équipe qui implémente le code, et donc les composants un par un, qui définit les couleurs de son interface et donc la personnalisation du design numérique de la SNCF, qui est de garantir l’accessibilité des logiciels. son interface.
+Par contre, le travail appartient à l’équipe qui implémente le code, et donc les composants un par un, qui définit les couleurs de son interface et donc la personnalisation du design numérique de la SNCF, qui est de garantir l’accessibilité des logiciels.
 
-Vous trouverez les consignes d'accessibilité sur la plate-forme Digital SNCF, afin de vous donner tous les détails nécessaires à ce processus
+Vous trouverez les consignes d'accessibilité sur la plate-forme Digital SNCF, afin de vous donner tous les détails nécessaires à ce processus :
 
 - [Accessibilité numérique pour les designers](https://www.digital.sncf.com/ressources/accessibilite-numerique-design)
 - [Accessibilité numérique pour les développeurs](https://www.digital.sncf.com/ressources/accessibilite-numerique-developpement)
@@ -31,7 +31,7 @@ Nous pouvons également vous guider ou recommander des partenaires de confiance 
 
 ## Vue d'ensemble et limitations
 
-L'accessibilité globale de tout projet construit avec Bootstrap dépend en grande partie du balisage de l'auteur, du style supplémentaire et des scripts inclus. Cependant, à condition que ceux-ci aient été correctement implémentés, il devrait être parfaitement possible de créer des sites Web et des applications avec Bootstrap [<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0](https://www.w3.org/TR/WCAG20/) (A/AA/AAA), [Section 508](https://www.section508.gov/) et des normes d'accessibilité similaires .
+L'accessibilité globale de tout projet construit avec Bootstrap dépend en grande partie du balisage de l'auteur, du style supplémentaire et des scripts inclus. Cependant, à condition que ceux-ci aient été correctement implémentés, il devrait être parfaitement possible de créer des sites Web et des applications avec Bootstrap [<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0](https://www.w3.org/TR/WCAG20/) (A/AA/AAA), [Section 508](https://www.section508.gov/) et des normes d'accessibilité similaires.
 
 ### Balisage structurel
 
@@ -41,16 +41,16 @@ Le style et la présentation de Bootstrap peuvent être appliqués à une large 
 
 Les composants interactifs de Bootstrap, tels que les boîtes de dialogue modales, les menus déroulants et les info-bulles personnalisées, sont conçus pour fonctionner avec les utilisateurs tactiles, souris et clavier. Grâce à l'utilisation des roles et attributs de [<abbr title="Web Accessibility Initiative">WAI</abbr>-<abbr title="Accessible Rich Internet Applications">ARIA</abbr>](https://www.w3.org/WAI/intro/aria), ces composants doivent également être compréhensibles et utilisables à l'aide de technologies d'assistance (telles que des lecteurs d'écran).
 
-Les composants de Bootstrap étant volontairement conçus pour être assez génériques, les auteurs peuvent avoir besoin d'inclure davantage de rôles et d'attributs <abbr title = "Applications Internet riches accessibles">ARIA</abbr>, ainsi que le comportement JavaScript, pour en préciser la nature. et la fonctionnalité de leur composant. Ceci est généralement noté dans la documentation.
+Les composants de Bootstrap étant volontairement conçus pour être assez génériques, les auteurs peuvent avoir besoin d'inclure davantage de rôles et d'attributs <abbr title = "Applications Internet riches accessibles">ARIA</abbr>, ainsi que le comportement JavaScript, pour en préciser la nature et la fonctionnalité de leur composant. Ceci est généralement noté dans la documentation.
 
 
 ### Contraste de couleur
 
 La plupart des couleurs qui constituent actuellement la palette par défaut de Bootstrap SNCF respectent les besoins en contraste pour assurer le niveau « AA » du WCAG.
 
-### Visually hidden content
+### Contenu masqué visuellement
 
-Le contenu qui doit être masqué visuellement, tout en restant accessible aux technologies d'assistance telles que les lecteurs d'écran, peut être stylisé à l'aide de la classe `.sr-only`. Cela peut être utile dans les situations où des informations visuelles supplémentaires (telles que la signification indiquée par l'utilisation de couleurs) doivent également être transmises aux utilisateurs non-visuels.
+Le contenu qui doit être masqué visuellement, tout en restant accessible aux technologies d'assistance telles que les lecteurs d'écran, peut être stylisé à l'aide de la classe `.sr-only`. Cela peut être utile dans les situations où des informations visuelles supplémentaires (telles que la signification indiquée par l'utilisation de couleurs) doivent également être transmises aux utilisateurs non-voyants.
 
 {{% highlight html %}}
 <p class="text-danger">

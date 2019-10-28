@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Tables
-description: Documentation et exemple pour la décoration _opt-in_ des tables (étant donné leur utilisation répandue dans les plugins JavaScript) avec Bootstrap.
+title: Tableaux
+description: Documentation et exemple pour la customisation _opt-in_ des tables (étant donné leur utilisation répandue dans les plugins JavaScript) avec Bootstrap.
 group: content
 toc: true
 ---

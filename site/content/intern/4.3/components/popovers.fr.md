@@ -11,14 +11,14 @@ url: /fr/docs/4.3/components/popovers/
 
 Choses à savoir pour utiliser ce composant :
 
-- il dépend d'une librairie tierce [Popper.js](https://popper.js.org/) pour le positionnement. Vous devez inclure [popper.min.js]({{ site.cdn.popper }}) avant bootstrap-sncf.js ou utiliser le fichier minifié `bootstrap.bundle.min.js` / `bootstrap.bundle.js` qui contient déjà cette librairie pour que les bulles contextuelles fonctionnent.
-- il nécessite le composant [tooltip]({{< docsref "/components/tooltips" >}}) comme dépendance.
-- les _popovers_ ne sont pas activés par défaut pour des raisons de performances, par conséquent **vous devez les initialiser vous-même**.
-- des valeurs vides de `title` et `content` n'afficheront jamais de bulles contextuelles.
-- spécifiez `container: 'body'` pour éviter des problèmes de rendu dans des composants plus complexes (comme des groupes d'entrées ou de boutons par exemple).
-- déclencher des bulles contextuelles sur des éléments masqués ne fonctionnera pas.
-- Les bulles contextuelles sur des éléments `.disabled` ou `disabled` doivent être liés sur un élément enveloppant.
-- Quand déclenché depuis des ancres qui enveloppent plusieurs lignes, les bulles contextuelles seront centrées entres ces ancres suivant leur largeur totale. Utilisez `white-space: nowrap;` sur les balises `<a>` pour empêcher ce comportement.
+- Il dépend d'une librairie tierce [Popper.js](https://popper.js.org/) pour le positionnement. Vous devez inclure [popper.min.js]({{ site.cdn.popper }}) avant bootstrap-sncf.js ou utiliser le fichier minifié `bootstrap.bundle.min.js` / `bootstrap.bundle.js` qui contient déjà cette librairie pour que les bulles contextuelles fonctionnent.
+- Il nécessite le composant [tooltip]({{< docsref "/components/tooltips" >}}) comme dépendance.
+- Les _popovers_ ne sont pas activés par défaut pour des raisons de performances, par conséquent **vous devez les initialiser vous-même**.
+- Des valeurs vides de `title` et `content` n'afficheront jamais de bulles contextuelles.
+- Spécifiez `container: 'body'` pour éviter des problèmes de rendu dans des composants plus complexes (comme des groupes d'entrées ou de boutons par exemple).
+- Déclencher des bulles contextuelles sur des éléments masqués ne fonctionnera pas.
+- Les bulles contextuelles sur des éléments `.disabled` ou `disabled` doivent être liés sur un élément parent.
+- Quand déclenché depuis des ancres qui encapsulent plusieurs lignes, les bulles contextuelles seront centrées entres ces ancres suivant leur largeur totale. Utilisez `white-space: nowrap;` sur les balises `<a>` pour empêcher ce comportement.
 - Les bulles contextuelles doivent être masquées avant que leurs éléments correspondants aient été supprimés du DOM.
 
 Voyons maintenant comment les bulles contextuelles fonctionnent à travers plusieurs exemples.
@@ -66,7 +66,7 @@ Pour tous les exemples proposés, du [code HTML spécifique](#dismiss-on-next-cl
 
 ### Quatre directions
 
-Quatre options sont disponible : alignement en haut, à droite, en bas, et à gauche.
+Quatre options sont disponibles : alignement en haut, à droite, en bas, et à gauche.
 
 <div class="bd-example popover-demo">
   <div class="bd-example-popovers">
@@ -133,9 +133,9 @@ Utilisez `data-placement` pour définir une direction d'ouverture avec comme val
 Utilisez l'élément `focus` pour fermer la bulle contextuelle au prochain clic de l'utilisateur.
 
 {{% callout danger %}}
-#### Du code HTML sépcifique est nécessaire !
+#### Du code HTML spécifique est nécessaire !
 
-Pour une fonctionnement interopérable entre les navigateurs et systèmes, vous devez utiliser une balise `<a>` _et non pas_ la balise `<button>`. Vous devez également inclure un attribut [`tabindex`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex).
+Pour un fonctionnement interopérable entre les navigateurs et systèmes, vous devez utiliser une balise `<a>` _et non pas_ la balise `<button>`. Vous devez également inclure un attribut [`tabindex`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex).
 {{% /callout %}}
 
 {{% example html %}}
@@ -232,7 +232,7 @@ Les options peuvent être renseignées via les attributs `data-`. Pour ces derni
       <td>selector</td>
       <td>string | false</td>
       <td>false</td>
-      <td>Si un sélecteur est fournir, les objets bulle contextuelle seront délégués aux destinations spéicifées. En pratique, cela est utilisé pour permettre du contenu dynamique en HTML dans la bulle. Consultez <a href="https://github.com/twbs/bootstrap/issues/4215">ceci</a> et <a href="https://jsbin.com/zopod/1/edit">cet exemple informatif</a>.</td>
+      <td>Si un sélecteur est fourni, les objets « _bulle contextuelle_ » seront délégués aux destinations spécifiées. En pratique, cela est utilisé pour permettre du contenu dynamique en HTML dans la bulle. Consultez <a href="https://github.com/twbs/bootstrap/issues/4215">ceci</a> et <a href="https://jsbin.com/zopod/1/edit">cet exemple informatif</a>.</td>
     </tr>
     <tr>
       <td>template</td>

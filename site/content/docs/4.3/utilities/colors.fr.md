@@ -8,7 +8,7 @@ toc: true
 
 ## Couleurs
 
-Les classes contextuelles de texte fonctionnement également bien sur les ancres avec les états de survol ou focus. **Notez que les classes `.text-white` et `.text-muted` n'ont pas de lien de style.**
+Les classes contextuelles de texte fonctionnent également bien sur les ancres avec les états de survol ou focus. **Notez que les classes `.text-white` et `.text-muted` n'ont pas de lien de style.**
 
 <div class="row">
 <div class="col-lg-6">

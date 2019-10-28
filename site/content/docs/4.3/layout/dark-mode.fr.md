@@ -36,7 +36,7 @@ Le fond carbone `333` sur fond blanc devient un fond gris cool gray 1 `F2F2F2`.
 
 ### Navigations
 La couleur de la barre galactique et du footer sur fond carbone `333` est inchangée.
-La navigation principale `FFF` passe sur un fond carbone `000`.
+La navigation principale `FFF` passe sur un fond carbone `333`.
 
 ### Textes & Liens
 Les textes dans les différentes teintes de gris, du carbone `333` au cool gray 1 `F2F2F2` sur fond blanc passent en cool gray 3 `D7D7D7`.
@@ -50,9 +50,9 @@ Le texte jaune safran `FFB612` sur fond blanc est inchangé sur fonds foncés.
 Le texte vert anis `D2E100` sur fond blanc est inchangé sur fonds foncés.
 Le texte vert pomme `82BE00` sur fond blanc est inchangé sur fonds foncés.
 
-Le texte violet `6E1E78` sur fond blanc ne serait pas accessible sur fond noir 8% `191919`. Ce texte passe en bleu primaire `00A1FF`.
-Le texte prune `A1006B` sur fond blanc ne serait pas accessible sur fond noir 8% `191919`. Ce texte passe en bleu primaire `00A1FF`.
-Le texte framboise `CD0037` sur fond blanc ne serait pas accessible sur fond noir 8% `191919`. Ce texte passe en bleu primaire `00A1FF`.
+Le texte violet `6E1E78` sur fond blanc ne serait pas accessible sur fond noir 8% `191919`. Ce texte passe en bleu primaire _adapté_ `00A1FF`.
+Le texte prune `A1006B` sur fond blanc ne serait pas accessible sur fond noir 8% `191919`. Ce texte passe en bleu primaire _adapté_ `00A1FF`.
+Le texte framboise `CD0037` sur fond blanc ne serait pas accessible sur fond noir 8% `191919`. Ce texte passe en bleu primaire _adapté_ `00A1FF`.
 
 Lorsqu’un bloc utilisera un texte rouge assistance, l’ensemble du bloc sera inchangé (fond et couleur du texte).
 
@@ -89,7 +89,7 @@ La distribution Bootstrap SNCF distribution inclut deux fichiers CSS (normal & m
 
 Vous pouvez utiliser l'un ou l'autre pour votre projet mais **pas en même temps** : chaque fichier intègre l'ensemble du Bootstrap SNCF, l'un en mode normal, clair, l'autre avec le côté obscur du même design.
 
-Il est possible de _permuter_ d'une version à l'autre avec la méthode native du navigateur Firefo, ou avec un peu de JavaScript, voir plus bas.
+Il est possible de _permuter_ d'une version à l'autre avec la méthode native du navigateur Firefox, ou avec un peu de JavaScript, voir plus bas.
 
 ### CSS, HTML
 
@@ -139,7 +139,7 @@ function initDarkmode() {
   }
 }
 ```
-Après cela, ajoutez un bouton, lien, pour basculer entre les modes normal ou sombre, avec par exemple un id `darkmode-btn` et le script suivant pourra changer la valeur de l'attribut `href` entre `stylesheet` et `stylesheet alternate`. Idéalement, essayez d'utiliser le design d'implémentation que nous avons choisie pour chaque variante du socle design SNCF (Communication or Métier).
+Après cela, ajoutez un bouton, lien, pour basculer entre les modes normal ou sombre, avec par exemple un id `darkmode-btn` et le script suivant pourra changer la valeur de l'attribut `href` entre `stylesheet` et `stylesheet alternate`. Idéalement, essayez d'utiliser le design d'implémentation que nous avons choisi pour chaque variante du socle design SNCF (Communication ou Métier).
 
 Pour conserver le choix de l'utilisateur, vous pouvez enregistrer cette valeur par exemple dans un objet _local storage_ et récupérer sa valeur à sa prochaine visite pour lui proposer le bon mode.
 

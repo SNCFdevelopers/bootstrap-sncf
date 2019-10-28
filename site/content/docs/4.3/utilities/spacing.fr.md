@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Espacement
-description: Boostrap inclut une large gamme de raccourcis de marges intérieures et extérieurs, _responsive_, pour modifier l'apparence d'un élément.
+description: Boostrap inclut une large gamme de raccourcis de marges intérieures et extérieures, _responsive_, pour modifier l'apparence d'un élément.
 group: utilities
 toc: true
 ---
@@ -66,7 +66,7 @@ Quelques représentations de ces classes :
 }
 {{< /highlight >}}
 
-### Centrage horizontale
+### Centrage horizontal
 
 De plus, Bootstrap propose une classe `.mx-auto` pour horizontalement centrer le content de niveau block à largeur fixe — qui est un contenu possédant la propriété `display: block` et une largeur `width` définie — en plaçant la marge horizontale sur `auto`.
 

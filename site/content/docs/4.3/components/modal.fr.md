@@ -32,7 +32,7 @@ Continuez la lecture pour voir les démonstrations et les consignes d'utilisatio
 
 ### Composants fenêtres modales classiques
 
-Vous trouverez ci-dessous un exemple de fenêtre modale _statique_ (ce qui veut dire que `position` et `display` ont été surpassés). Sont inclus l'en-tête de la fenêtre modale, son corps principal (requis pour `padding`), et le pied de page (optionnel). Nous vous demandons d'inclure des en-têtes de mode avec des actions de rejet dès que possible ou de fournir une autre action explicite de renvoi.
+Vous trouverez ci-dessous un exemple de fenêtre modale _statique_ (ce qui veut dire que `position` et `display` ont été surchargées). Sont inclus l'en-tête de la fenêtre modale, son corps principal (requis pour `padding`), et le pied de page (optionnel). Nous vous demandons d'inclure des en-têtes de mode avec des actions de rejet dès que possible ou de fournir une autre action explicite de renvoi.
 
 <div class="bd-example bd-example-modal">
   <div class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
@@ -523,7 +523,7 @@ Assurez-vous d'ajouter `role="dialog"` et `aria-labelledby="..."`, en référen�
 
 ### Intégration de vidéos YouTube
 
-L'intégration de vidéos YouTube dans des modaux nécessite du JavaScript supplémentaire, pas dans Bootstrap, pour arrêter automatiquement la lecture, etc. [Voir cette publication Stack Overflow pour plus d'informations](https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal) for more information.
+L'intégration de vidéos YouTube dans des modaux nécessite du JavaScript supplémentaire, pas dans Bootstrap, pour arrêter automatiquement la lecture, etc. [Voir cette publication Stack Overflow pour plus d'informations](https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal).
 
 ## Options de tailles
 
@@ -682,7 +682,7 @@ Les options peuvent être passées via des attributs de données ou du JavaScrip
 ### Méthodes
 
 {{% callout danger %}}
-{{% partial "callout-danger-async-methods.md" %}}
+{{% partial "callout-danger-async-methods.fr.md" %}}
 {{% /callout %}}
 
 #### `.modal(options)`
