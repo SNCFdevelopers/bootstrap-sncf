@@ -115,7 +115,7 @@ Last option: use tiles for more eye-catching lists.
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample1" aria-label="Title 1">
           <label class="custom-control-label" for="managementExample1"></label>
         </div>
@@ -143,7 +143,7 @@ Last option: use tiles for more eye-catching lists.
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample2" aria-label="Title 2">
           <label class="custom-control-label" for="managementExample2"></label>
         </div>
@@ -171,7 +171,7 @@ Last option: use tiles for more eye-catching lists.
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample3" aria-label="Title 3">
           <label class="custom-control-label" for="managementExample3"></label>
         </div>
@@ -200,7 +200,7 @@ Last option: use tiles for more eye-catching lists.
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample4" aria-label="Title 4">
           <label class="custom-control-label" for="managementExample4"></label>
         </div>
@@ -236,7 +236,7 @@ Last option: use tiles for more eye-catching lists.
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample11" aria-label="Title 1">
           <label class="custom-control-label" for="managementExample11"></label>
         </div>
@@ -287,7 +287,7 @@ Last option: use tiles for more eye-catching lists.
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample12" aria-label="Title 1">
           <label class="custom-control-label" for="managementExample12"></label>
         </div>
@@ -338,7 +338,7 @@ Last option: use tiles for more eye-catching lists.
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample13" aria-label="Title 1">
           <label class="custom-control-label" for="managementExample13"></label>
         </div>
@@ -389,7 +389,7 @@ Last option: use tiles for more eye-catching lists.
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample14" aria-label="Title 4">
           <label class="custom-control-label" for="managementExample14"></label>
         </div>
@@ -579,7 +579,7 @@ Note the use of `no-gutters` class to stick the columns together.
 <li id="group{{ $group }}" class="list-group-item management-item management-item-group" >
   <div class="management-item-content" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group{{ $group }}">
     <div class="management-item-checkbox">
-      <div class="custom-control custom-checkbox custom-checkbox-alone">
+      <div class="custom-control custom-checkbox custom-checkbox-alone custom-checkbox custom-checkbox-alone-alone">
         <input type="checkbox" class="custom-control-input" id="cell{{ $group }}">
         <label class="custom-control-label" for="cell{{ $group }}"><span class="sr-only">étiquette</span></label>
       </div>
@@ -597,7 +597,7 @@ Note the use of `no-gutters` class to stick the columns together.
     <li class="management-item">
       <div class="management-item-content">
         <div class="management-item-checkbox">
-          <div class="custom-control custom-checkbox custom-checkbox-alone">
+          <div class="custom-control custom-checkbox custom-checkbox-alone custom-checkbox custom-checkbox-alone-alone">
             <input type="checkbox" class="custom-control-input" id="sublist{{ $group }}-cell{{ $item_grp }}">
             <label class="custom-control-label" for="sublist{{ $group }}-cell{{ $item_grp }}"><span class="sr-only">étiquette</span></label>
           </div>
@@ -654,7 +654,7 @@ Note the use of `no-gutters` class to stick the columns together.
   <li id="group1" class="list-group-item management-item management-item-group active">
     <div class="management-item-content" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group1">
       <div class="management-item-checkbox">
-        <div class="custom-control custom-checkbox custom-checkbox-alone">
+        <div class="custom-control custom-checkbox custom-checkbox-alone custom-checkbox custom-checkbox-alone-alone">
           <input type="checkbox" class="custom-control-input" id="cell1">
           <label class="custom-control-label" for="cell1"><span class="sr-only">étiquette</span></label>
         </div>
@@ -671,7 +671,7 @@ Note the use of `no-gutters` class to stick the columns together.
       <li class="management-item">
         <div class="management-item-content">
           <div class="management-item-checkbox">
-            <div class="custom-control custom-checkbox custom-checkbox-alone">
+            <div class="custom-control custom-checkbox custom-checkbox-alone custom-checkbox custom-checkbox-alone-alone">
               <input type="checkbox" class="custom-control-input" id="cell1">
               <label class="custom-control-label" for="cell1"><span class="sr-only">étiquette</span></label>
             </div>

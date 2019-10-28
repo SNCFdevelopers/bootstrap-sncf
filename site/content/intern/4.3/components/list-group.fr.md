@@ -113,7 +113,7 @@ Des cases à cocher peuvent être ajoutées lorsqu'une action de groupe est prop
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample1" aria-label="Title 1">
           <label class="custom-control-label" for="managementExample1"></label>
         </div>
@@ -141,7 +141,7 @@ Des cases à cocher peuvent être ajoutées lorsqu'une action de groupe est prop
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample2" aria-label="Title 2">
           <label class="custom-control-label" for="managementExample2"></label>
         </div>
@@ -169,7 +169,7 @@ Des cases à cocher peuvent être ajoutées lorsqu'une action de groupe est prop
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample3" aria-label="Title 3">
           <label class="custom-control-label" for="managementExample3"></label>
         </div>
@@ -198,7 +198,7 @@ Des cases à cocher peuvent être ajoutées lorsqu'une action de groupe est prop
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample4" aria-label="Title 4">
           <label class="custom-control-label" for="managementExample4"></label>
         </div>
@@ -234,7 +234,7 @@ Des cases à cocher peuvent être ajoutées lorsqu'une action de groupe est prop
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample11" aria-label="Title 1">
           <label class="custom-control-label" for="managementExample11"></label>
         </div>
@@ -285,7 +285,7 @@ Des cases à cocher peuvent être ajoutées lorsqu'une action de groupe est prop
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample12" aria-label="Title 1">
           <label class="custom-control-label" for="managementExample12"></label>
         </div>
@@ -336,7 +336,7 @@ Des cases à cocher peuvent être ajoutées lorsqu'une action de groupe est prop
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample13" aria-label="Title 1">
           <label class="custom-control-label" for="managementExample13"></label>
         </div>
@@ -387,7 +387,7 @@ Des cases à cocher peuvent être ajoutées lorsqu'une action de groupe est prop
   <li class="list-group-item management-item">
     <div class="management-item-content">
       <div class="management-item-input">
-        <div class="custom-control custom-checkbox">
+        <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="managementExample14" aria-label="Title 4">
           <label class="custom-control-label" for="managementExample14"></label>
         </div>
