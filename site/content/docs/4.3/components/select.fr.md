@@ -25,7 +25,7 @@ Les listes déroulantes permettent aux lecteurs de choisir une ou plusieurs opti
 Ces éléments doivent apparaître dans un ordre logique pour le lecteur (par exemple, alphabétique, numérique, etc.).
 
 Les listes déroulantes personnalisées `<select>` nécessitent des classes et attributs également personnalisés, `.select-improved` pour déclencher les styles personnalisés et `data-component="select-exclusive"` pour déclencher le code JavaScript personnalisé.
-Étant donnée la complexité entre les différentes version d'une liste (simple, groupée, entrée, etc.), celle-ci doit être construite dans le code HTML.
+Étant donnée la complexité entre les différentes versions d'une liste (simple, groupée, entrée, etc.), celle-ci doit être construite dans le code HTML.
 
 {{% example html %}}
 <label for="select1">Liste déroulante d'exemple</label>

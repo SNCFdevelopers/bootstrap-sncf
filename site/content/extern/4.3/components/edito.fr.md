@@ -203,7 +203,7 @@ Nous vous recommandons d'utiliser une seule carte à fond gris par paragraphe.
 
 ### Surlignage _push_
 
-Sur les pages de texte sans ancres, certains composants peuvent être placés dans une colonne à droite du contenu éditorial : un _push_ au fond grisé peut faciliter la navigation sur le site Web, tandis que les fonds grisés « Date » et « lieu » peuvent être utilisées pour fournir des informations sur des événements ou des nouvelles.
+Sur les pages de texte sans ancres, certains composants peuvent être placés dans une colonne à droite du contenu éditorial : un _push_ au fond grisé peut faciliter la navigation sur le site Web, tandis que les fonds grisés « Date » et « lieu » peuvent être utilisés pour fournir des informations sur des événements ou des nouvelles.
 
 {{< example html >}}
 <div class="row">
@@ -236,10 +236,6 @@ Les cartes à fonds gris « Lieu » fournissent des informations géographiques 
 Les blocs 1/3 2/3 améliorent le flux dans la page et illustrent un point spécifique dans le corps de la page.
 
 Ces blocs apparaissent par trois sur une page de texte.
-
-Il est possible
-
-These blocks appear in threes on a text page.
 
 Il est possible d'y présenter plusieurs types de contenu : illustrations, _packshots_, et photos produites par SNCF.
 
@@ -286,7 +282,7 @@ Il est possible d'y présenter plusieurs types de contenu : illustrations, _pack
 
 ### Packshot
 
-Le block _packshots_ contiennent des produits ou des offres qui nécessitent une illustration et permettent de rediriger les utilisateurs vers une page ou une fenêtre contenant des informations plus détaillées.
+Les blocs _packshots_ contiennent des produits ou des offres qui nécessitent une illustration et permettent de rediriger les utilisateurs vers une page ou une fenêtre contenant des informations plus détaillées.
 
 Ces blocs viennent par deux ou quatre sur une page de texte.
 
@@ -324,11 +320,11 @@ Ces blocs viennent par deux ou quatre sur une page de texte.
 
 ### Mosaïques
 
-À l'instar des blocs _packshots_, les blocs de mosaïques présentent des produits qui nécessitent un visuel, où les utilisateurs peuvent être redirigés vers une page, ou fenêtre avec un peu plus d'information détaillée.
+À l'instar des blocs _packshots_, les blocs mosaïques présentent des produits qui nécessitent un visuel, où les utilisateurs peuvent être redirigés vers une page, ou fenêtre avec un peu plus d'information détaillée.
 
 Les blocs mosaïques viennent par deux ou quatre sur une page de texte.
 
-Il est possible d'y présenter plusieurs types de contenu : illustrations, _packshots_, et photos produites par SNCF.
+Il est possible d'y présenter plusieurs types de contenus : illustrations, _packshots_, et photos produites par SNCF.
 
 {{% example html %}}
 <div style="max-width: 41.000rem">
@@ -360,7 +356,7 @@ Il est possible d'y présenter plusieurs types de contenu : illustrations, _pack
 
 ## Contact
 
-Le bloc « contact », comme son nom l'indique, permet aux utilisateurs de contacter le service client d'une société par courriel pour lui envoyer du contenu ou échanger de l'information.
+Le bloc « contact », comme son nom l'indique, permet aux utilisateurs de contacter le service d'une société / d'une équipe, par courriel pour lui envoyer du contenu ou échanger de l'information.
 
 Un lien _mailto_ peut être inséré à la place d'un champ `input`.
 
