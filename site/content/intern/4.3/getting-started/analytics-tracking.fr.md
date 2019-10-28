@@ -7,151 +7,75 @@ toc: true
 url: /fr/docs/4.3/getting-started/analytics-tracking/
 ---
 
-Data Analytics has become a strong subject on continuous improvement within the SNCF Group.
+## Pourquoi utiliser une solution de web analytics ?
 
-Analytics tools are already used by _B2C_ entities.
-We need to create this maturity and behaviour around performance management with _B2E_ entities and agents working with digital tools.
-When you have a traffic monitoring by user actions tracking, you’ll stock datas in the aim of making evolve your agent interfaces, looking at insights gave by tools
+La web-analyse est devenu un sujet régulier dans une optique d’amélioration continue pilotée par les données Les outils d’analytics ont déjà pris part dans le quotidien des métiers du _B2C_ (s’adressant aux clients et prospects) et certains métiers _B2E_ (s’adressant à l’interne).
 
-For internal projects (production app and webapps) SNCF Group chose a _GDPR_ compliant _open source_ analytics solution : [Matomo Analytics](https://matomo.org/).
-This tool will collect datas and will send it to SNCF secured servers that will be treated by internal Analysts : **every informations will stay in SNCF environment**.
+### Présentation
 
-We can provide you this integrated solution that is central to each SNCF entity.
+Il est important d’avoir de l’informations concrète, quantifiable et qualifiable afin de pouvoir mesurer la performance son dispositif (Site web, App et même IoT).
 
-Linked with Customer Knowledge central team, we’ll also provide advices about setting up your KPIs (Key Performance Indicators), according to your business needs and your goals to offer the best tracking that you need.
+Ces informations permettent de déterminer les actions à mener pour améliorer son dispositif grâce aux actions utilisateurs.
 
-So, please feel free to contact us by email on [design.fab@sncf.fr](mailto:design.fab@sncf.fr?subject=Bootstrap Métier - Analytics) with the object “Bootstrap Métier – Analytics”.\\
-We will open access to make you autonomous on your tracking.
+Les outils d’analytics permettent de récolter et de quantifier ces informations afin de pouvoir prendre des décisions basé sur des faits mesurés.
 
-However, if you are not comfortable with this subject, the “Customer Knowledge” team can occasionally advise you to define your KPIs according to your business needs, and guide you in the design of your tracking.
+Ces informations permettent de répondre à des questions de ce genre :
 
-Do not hesitate to read technical informations wrote down or read official documentation of Matomo.
+- Est-ce que le parcours défini est compris par les utilisateurs ? (Implicitement, est-ce que j’ai défini un parcours ?)
+- Quelle est l’étape du parcours où je perds le plus d’utilisateurs ? Est-ce par manque de compréhension ou est-ce un problème technique ?
+- Quel est le ratio des utilisateurs qui navigue sur la partie A vs la partie B du site web ?
+- Est-ce que mes utilisateurs passent plus de 3 minute sur mes pages de contenu ?
+- En moyenne, combien de formulaires de demandes ont été envoyés ? Différencié par type de formulaire ?
+- Combien de clics sur le bouton A vs le bouton B ?
 
-You’ll find below some examples of tracking, what do we track and how does it works.
+Aujourd’hui, il est difficile voir impossible de répondre à ces questions sans avoir intégré d’outils dédiés car :
 
-## What is it? How it works?
+- Vous ne connaîtrez pas la fréquentation du site
+- Vous ne connaissez pas les actions réalisées sur le site
+- Vous ne savez pas si les fonctions prévues sont correctement utilisées
 
-[Matomo](https://matomo.org/) is an analytics tool, wrote in Javascript (Web), Swift (iOS), Java (Android) or measurement protocol (any IoT object).
-It will track datas from users, their sessions and actions they realized onsite (like Google Analytics, Xiti, Adobe Analytics…).
+### Qu’est-ce que l’on suit exactement ?
 
-{{% callout info %}}
-**Example for a website** \\
-A javascript tag collect datas from navigator and send it to a Matomo server owned by SNCF.
-{{% /callout %}}
+Nous suivons principalement 3 types de données :
 
-## Why to track? What do we do with?
+| Données utilisateurs           | Données de session                                    | Données d'évènements                  |
+|--------------------------------|-------------------------------------------------------|---------------------------------------|
+| User ID                        | Temps moyen passé                                     | Détail des pages visitées             |
+| Volume de sessions             | Nombre de pages vues                                  | Boutons déclenchés par l’utilisateurs |
+| Total du temps passé           | Conversions                                           | Détail des transactions e-commerce    |
+| Total de pages vues            | Source d'acquisition                                  | Atteinte d’objectif paramétrés        |
+| Total du nombre de conversions | Géolocalisation par adresse IP                        | Mots clés utilisés dans la recherche  |
+| Géolocalisation                | Appareil utilisé, version de l'OS, définition d'écran | Données personnalisées                |
+| Liste des appareils utilisés   | Données personnalisées                                |                                       |
 
-It is important to have concrete and measurable insights based on behaviors.
+### Socle analytics basement
 
-In a continuous improvement case of users experience, how to manage an app/website evolution if :
+Les solutions d’analytics récoltent des données comportementales sur les utilisateurs des dispositifs trackés (Site web, App et même IoT). Elles permettent d’aider au pilotage du trafic sur le-dit dispositif et de mesurer les performances.
 
-- you don’t know how often it is used
-- you don’t know how it is used
-- you don’t know if it is correctly used
+Le socle analytics déployé dans le groupe SNCF est le suivant :
 
-## What do we track?
+<img class="img-fluid" src="/analytics-tracking.png">
 
-It will track multiples informations scoped on 3 types of datas :
+- Site Web : Dispositif mis en place dans le cadre d’un projet SNCF
+- TMS : Outil qui va centraliser les outils tiers
+- Outils tiers : Outils d’analyse de données, de récolte publicitaire ainsi que les outils marketing dans des optiques d’amélioration du site et de ses performances
 
-| Users data               | Session data                                 | Action data                           |
-|--------------------------|----------------------------------------------|---------------------------------------|
-| User ID                  | Time on site                                 | Pages visited                         |
-| Visits volume            | Page views                                   | Action events hitted by user’s clicks |
-| Total time on site       | Conversions                                  | e-commerce transaction                |
-| Total page views         | Source (marketing lever used to catch users) | Goals hitted                          |
-| Total conversions        | Geographic location based on IP Adress       | Internal search keywords              |
-| Geographic location list | Device + OS version + Screenresolution       | Custom Datas                          |
-| Device list              | Custom Datas                                 |                                       |
+## Implémentation technique et contact
 
-## Technical implementation
+### Pour intégrer le socle analytics SNCF
 
-{{% callout info %}}
-**Official documentation** \\
-[https://developer.matomo.org/guides/tracking-javascript-guide](https://developer.matomo.org/guides/tracking-javascript-guide)
-{{% /callout %}}
+[https://developers.google.com/analytics](https://developers.google.com/analytics)
 
+[https://support.google.com/tagmanager/answer/6103696?hl=fr](https://support.google.com/tagmanager/answer/6103696?hl=fr)
 
-There’s multiples things to implant :
+[https://developers.google.com/tag-manager/devguide](https://developers.google.com/tag-manager/devguide)
 
-- page tracker on every html pages
-- events tracker
-- goals tracker
+### Pour intégrer le socle analytics SNCF
 
-### Pages tracking
+[metrologie_applicative@sncf.fr](mailto:metrologie_applicative@sncf.fr) (Fab IT)
 
-{{% highlight html %}}
-<!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq || [];
+### Pour plus d’informations contactez la Fab Design
 
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//{$PIWIK_URL}/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', {$IDSITE}]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
-{{% /highlight %}}
+[design.fab@sncf.fr](mailto:design.fab@sncf.fr)
 
-### Actions tracking
-
-{{% highlight html %}}
-<a href="#" onclick="_paq.push(['trackEvent', {EventCategory}', '{EventAction}', '{EventName}']);">Link</a>
-{{% /highlight %}}
-
-`{EventCategory}`\\
-Category given to the event pushed. Examples : Header, Menu, Footer, Homepage...
-
-`{EventAction}`\\
-Action given to the event pushed. Examples : Click, Scroll, Submit, Accept, Decline...
-
-`{EventName}`\\
-Name given to the event pushed. Examples : Validated, [product name], [page name]...
-
-### Goal tracking
-
-{{% highlight html %}}
-<a href="#" onclick="_paq.push(['trackGoal', {$GoalSlot}])>">Link</a>
-{{% /highlight %}}
-
-`{$GoalSlot}`\\
-The numbered location given to the goal that will feed the slot used on Matomo tool
-
-### Internal search tracking
-
-{{% highlight html %}}
-<a href="_paq.push(['trackSiteSearch','{$keyword}','{$searchcategory}', {$searchvolume}]);">Link</a>
-{{% /highlight %}}
-
-`{$keyword}`\\
-Value to push according to keywords used by user’s search.
-
-`{$searchcategory}`\\
-Optional value to push according to the category defined by the search (**please, put “false” if the variable is not used**.)
-
-`{$searchvolume}`\\
-Optional value to push with the results volume (**please, put “false” if the variable is not used**.)
-
-## Simple example
-An simple example of where do you need to implant the page tracker (before closing the head or after opening the body) :
-
-{{% highlight html %}}
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>
-      Coucou
-    </title>
-    Meta descriptions etc etc
-    <script> Matomo tracking script to put here ! </script>
-  </head>
-  <body>
-    <script> or here :) </script>
-    Page content
-  </body>
-</html>
-{{% /highlight %}}
+[https://www.digital.sncf.com/ressources/analytics](https://www.digital.sncf.com/ressources/analytics)

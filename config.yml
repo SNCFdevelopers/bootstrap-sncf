@@ -32,7 +32,9 @@ contentDir:             "site/content"
 dataDir:                "site/data"
 layoutDir:              "site/layouts"
 i18nDir:                "site/i18n"
-staticDir:              "_gh_pages"
+staticDir:
+  - "_gh_pages"
+  - "site/images"
 
 DefaultContentLanguage: en
 
