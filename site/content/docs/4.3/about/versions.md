@@ -18,8 +18,11 @@ toc: true
 
 ## v4.3.1
 
-
-### Révision 4 _01/11/2019_
+### Révision 4 _28/10/2019_
+- Corrected bug Select Additionnal input
+- Corrected bug checkbox **MANDATORY MIGRATION** List-group, tables : you must add `custom-checkbox-alone` class to `<input type="checkbox">` parent
+- Added month/year chooser to datepicker
+- Analytics doc updated
 - Documentation build with HUGO
 - French translation
 

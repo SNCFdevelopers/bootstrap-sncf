@@ -18,7 +18,11 @@ toc: true
 
 ## v4.3.1
 
-### Révision 4 _01/11/2019_
+### Révision 4 _28/10/2019_
+- Correction bug Select Additionnal input
+- Correction bug positionnement des checkbox **MIGRATION NÉCESSAIRE** List-group, tables : il faut ajouter la classe `custom-checkbox-alone` au parent de `<input type="checkbox">`
+- Ajout d'un sélecteur de mois/année dans le picker
+- Mise à jour documentation analytics
 - La documentation est générée avec HUGO désormais
 - Traduction française
 
