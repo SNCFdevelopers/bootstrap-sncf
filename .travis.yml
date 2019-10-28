@@ -11,11 +11,8 @@ node_js:
   - "8"
 before_install:
   - export PATH=$(python -c 'from sys import argv;from collections import OrderedDict as od;print(":".join(od((p,None) for p in argv[1].split(":") if p.startswith("/")).keys()))' "$PATH")
-  - rvm install 2.5.1
-  - rvm use 2.5.1 --fuzzy
 install:
-  - bundle install --deployment --jobs=1
-  - npm install
+  - yarn install
 before_script:
   - export VERSION=v$(node -e "console.log(require('./package.json').version);")
   - export TRAVIS_TAG=$VERSION
@@ -31,12 +28,11 @@ script:
   - mkdir documentation
 
   # Intern / metier
-  - npm run build-intern
-  - npm run dist-intern
-  - npm run dist-intern-full
-  - npm run dist-intern-noext
+  - yarn build-intern
+  - yarn dist-intern
+  - yarn dist-intern-full
   - if [ $TRAVIS_BRANCH = 'master' ]; then scripts/pushnpm.sh metier; fi
-  - npm run docs-compile-intern
+  - yarn docs-compile-intern
   - mv _gh_pages documentation/intern
   - cd dist/
   - zip -r ../documentation/intern/bootstrap-sncf.metier.${VERSION}.zip *
@@ -44,12 +40,11 @@ script:
   - rm -rf dist
 
   # Extern / communication
-  - npm run build-extern
-  - npm run dist-extern
-  - npm run dist-extern-full
-  - npm run dist-extern-noext
+  - yarn build-extern
+  - yarn dist-extern
+  - yarn dist-extern-full
   - if [ $TRAVIS_BRANCH = 'master' ]; then scripts/pushnpm.sh communication; fi
-  - npm run docs-compile-extern
+  - yarn docs-compile-extern
   - mv _gh_pages documentation/extern
   - cd dist/
   - zip -r ../documentation/extern/bootstrap-sncf.communication.${VERSION}.zip *
