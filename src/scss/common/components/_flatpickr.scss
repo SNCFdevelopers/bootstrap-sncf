@@ -159,6 +159,9 @@
 
   .flatpickr-monthDropdown-months {
     flex: 1 1 auto;
+    min-height: auto;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .numInput.cur-year {
