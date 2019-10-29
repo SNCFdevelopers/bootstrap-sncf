@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="{{ .Lang }}">
+  <head>
+    {{ partial "header" . }}
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+
+    {{ partial "docs-navbar" . }}
+
+    <main class="my-auto p-5" id="content" role="main">
+      {{ .Content }}
+    </main>
+
+    {{ partial (printf "footer.%s" .Lang) . }}
+    {{ partial "scripts" . }}
+  </body>
+</html>

@@ -1,0 +1,48 @@
+- id: howtocontributetxt
+  translation: "Avez-vous trouvé ce que vous cherchiez ? si non,"
+
+- id: howtocontributetxt2
+  translation: "dites-le nous"
+
+- id: example
+  translation:
+    one: exemple
+    other: exemples
+
+- id: setting
+  translation:
+    one: paramètre
+    other: paramètres
+
+- id: download
+  translation: télécharger
+
+- id: darkmode
+  translation: mode sombre
+
+- id: sourcecode
+  translation: code source
+
+- id: show
+  translation: afficher
+
+- id: hide
+  translation: masquer
+
+- id: enabled
+  translation: actif
+
+- id: disabled
+  translation: inactif
+
+- id: searchfor
+  translation: rechercher
+
+- id: language
+  translation: langue
+
+- id: french
+  translation: français
+
+- id: english
+  translation: anglais

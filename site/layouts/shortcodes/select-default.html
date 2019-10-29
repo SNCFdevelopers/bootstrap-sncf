@@ -1,0 +1,5 @@
+<select id="{{ .id }}">
+  <option {{ .placeholderAttr }} data-role="default-hidden-option" disabled hidden>{{ .placeholder }}</option>
+  {% for .item in .items %}<option data-id="{{ .index }}" {{ .item.attr }}>{{ .item.name }}</option>
+  {% endfor %}
+</select>

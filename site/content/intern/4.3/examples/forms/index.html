@@ -1,0 +1,138 @@
+---
+layout: empty
+url: /docs/4.3/examples/forms/
+profile:
+  - name: Agent de secteur
+  - name: Autre
+unit:
+  - name: Unité 1
+    attr: selected
+  - name: Unité 2
+  - name: Unité 3
+sector:
+  - name: Secteur 100
+  - name: Secteur 101
+  - name: Secteur 102
+  - name: Secteur 103
+    attr: selected
+aliases: [/fr/docs/4.3/examples/forms/]
+---
+
+{{< fullexample.inline >}}
+{{ $formsInputScratch := newScratch }}
+{{ $formsSelectScratch := newScratch }}
+{{ $formsCheckboxScratch := newScratch }}
+<html lang="{{ .Site.Params.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Forms template</title>
+
+    {{ partial "darkmode-js-header.html" . }}
+  </head>
+  <body class="bd-content">
+    <main class="container-fluid">
+      <div class="row justify-content-center pt-5 pb-5">
+        <div class="col-12 col-md-7">
+          <h1 class="display-1 pt-5">Formulaire empilé (e.g. E-isolement : Ajouter un agent)</h1>
+          <div class="form-error mb-5">
+            <span class="h2 text-uppercase">Oouups ! Vous avez une erreur</span>
+            <ul class="mt-1 mb-0">
+              <li>Veuillez vérifier l'adresse email saisie</li>
+            </ul>
+          </div>
+          <div class="form-group">
+            <label for="zip">N° de CP</label>
+            {{ $formsInputScratch.Set "type" "text" }}
+            {{ $formsInputScratch.Set "id" "zip" }}
+            {{ partial "components/input.html" $formsInputScratch }}
+          </div>
+          <div class="form-group">
+            <label for="firstname">Prénom</label>
+            {{ $formsInputScratch.Set "type" "email" }}
+            {{ $formsInputScratch.Set "id" "firstname" }}
+            {{ partial "components/input.html" $formsInputScratch }}
+          </div>
+          <div class="form-group">
+            <label for="lastname">Nom</label>
+            {{ $formsInputScratch.Set "type" "email" }}
+            {{ $formsInputScratch.Set "id" "lastname" }}
+            {{ partial "components/input.html" $formsInputScratch }}
+          </div>
+          <div class="form-group">
+            <label for="profile">Profil</label>
+            {{ $formsSelectScratch.Set "id" "profile" }}
+            {{ $formsSelectScratch.Set "placeholder" "Sélectionner un profil" }}
+            {{ $formsSelectScratch.Set "iconsize" "icons-size-x75" }}
+            {{ $formsSelectScratch.Set "items" .Page.Params.profile }}
+            {{ partial "components/select-exclusive.html" $formsSelectScratch }}
+          </div>
+          <div class="form-group">
+            <label>Droit d'admin</label>
+            {{ $formsSelectScratch.Set "container" "mb-2" }}
+            {{ $formsSelectScratch.Set "id" "alert" }}
+            {{ $formsSelectScratch.Set "label" "Réception des alertes" }}
+            {{ $formsSelectScratch.Set "attr" "checked" }}
+            {{ partial "components/checkbox.html" $formsSelectScratch }}
+
+            {{ $formsSelectScratch.Set "id" "nfc" }}
+            {{ $formsSelectScratch.Set "label" "Initialisation de cartes NFC" }}
+            {{ partial "components/checkbox.html" $formsSelectScratch }}
+
+            {{ $formsSelectScratch.Set "id" "history" }}
+            {{ $formsSelectScratch.Set "label" "Saisie de l'historique" }}
+            {{ $formsSelectScratch.Set "attr" "" }}
+            {{ partial "components/checkbox.html" $formsSelectScratch }}
+          </div>
+          <div class="form-group mt-2">
+            <label for="email">Email</label>
+            {{ $formsInputScratch.Set "container" "is-invalid" }}
+            {{ $formsInputScratch.Set "type" "email" }}
+            {{ $formsInputScratch.Set "id" "email" }}
+            {{ $formsInputScratch.Set "attr" "value='test@sncf.com' required" }}
+            {{ partial "components/input.html" $formsInputScratch }}
+            <div class="invalid-feedback">
+              Veuillez vérifier l'adresse email saisie
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Téléphone</label>
+            {{ $formsInputScratch.Set "container" "" }}
+            {{ $formsInputScratch.Set "type" "tel" }}
+            {{ $formsInputScratch.Set "id" "phones_pattern2" }}
+            {{ $formsInputScratch.Set "size" "10" }}
+            {{ $formsInputScratch.Set "attr" "value='0623456798' required" }}
+            {{ partial "components/input.html" $formsInputScratch }}
+          </div>
+          <div class="form-group">
+            <label for="profile">Unité</label>
+            {{ $formsSelectScratch.Set "container" "" }}
+            {{ $formsSelectScratch.Set "id" "unit1" }}
+            {{ $formsSelectScratch.Set "placeholder" "Sélectionner une unité" }}
+            {{ $formsSelectScratch.Set "label" "" }}
+            {{ $formsSelectScratch.Set "attr" "" }}
+            {{ $formsSelectScratch.Set "items" .Page.Params.unit }}
+            {{ partial "components/select-exclusive.html" $formsSelectScratch }}
+          </div>
+          <div class="form-group">
+            <label for="profile">Secteur</label>
+            {{ $formsSelectScratch.Set "id" "unit2" }}
+            {{ $formsSelectScratch.Set "placeholder" "Sélectionner un secteur" }}
+            {{ $formsSelectScratch.Set "items" .Page.Params.sector }}
+            {{ partial "components/select-exclusive.html" $formsSelectScratch }}
+          </div>
+          <div class="form-group pt-2">
+            <button type="button" class="btn btn-primary mr-2">Ajouter</button>
+            <button type="button" class="btn btn-secondary">Annuler</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="{{ .Site.BaseURL }}bootstrap-sncf.js"></script>
+    </body>
+</html>
+{{< /fullexample.inline >}}

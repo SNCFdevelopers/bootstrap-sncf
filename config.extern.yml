@@ -1,0 +1,14 @@
+title:                  "Bootstrap Communication"
+
+permalinks:
+  intern:               "/docs"
+
+ignoreFiles:            "intern"
+
+params:
+  doc_flavour:          "extern"
+  doc_theme:            "communication"
+  name:                 "DESIGN COMMUNICATION"
+  url:                  "https://design-bootstrap.sncf.fr"
+  urlother:             "https://designmetier-bootstrap.sncf.fr"
+  titleother:           "Bootstrap Métier"

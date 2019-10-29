@@ -1,0 +1,132 @@
+- title: Bien démarrer
+  link: Getting started
+  pages:
+    - title: Introduction
+    - title: Téléchargement
+      link: Download
+    - title: Accessibilité
+      link: Accessibility
+    - title: Analytics tracking
+    - title: Comment contribuer
+      link: How to contribute
+
+- title: Graphic boards
+
+- title: Mise en page
+  link: Layout
+  pages:
+    - title: Vue d'ensemble
+      link: Overview
+    - title: Barres de navigation
+      link: Navbars
+    - title: Grille
+      link: Grid
+    - title: Mode sombre
+      link: Dark mode
+    - title: Navigation, onglets
+      link: Navs
+    - title: Utilitaires de mise en page
+      link: Utilities for layout
+
+- title: Contenu
+  link: Content
+  pages:
+    - title: Reboot
+    - title: Typographie
+      link: Typography
+    - title: Code
+    - title: Images
+    - title: Figures
+    - title: Tables
+    - title: Favicon
+
+- title: Composants
+  link: Components
+  pages:
+    - title: Alertes
+      link: Alerts
+    - title: Badges
+    - title: Barres de progression
+      link: Progress
+    - title: Boutons
+      link: Buttons
+    - title: Bulles contextuelles
+      link: Popovers
+    - title: Cartes
+      link: Cards
+    - title: Cases à cocher, boutons radio
+      link: Checkboxes and radios
+    - title: Fenêtres modales
+      link: Modal
+    - title: Fil d'ariane
+      link: Breadcrumb
+    - title: Formulaires
+      link: Forms
+    - title: Graphiques
+      link: Charts
+    - title: Groupes de saisies
+      link: Input group
+    - title: Groupes de listes
+      link: List group
+    - title: Icônes
+      link: Icons
+    - title: Infos-bulles
+      link: Tooltips
+    - title: Listes déroulantes
+      link: Select
+    - title: Menus déroulants
+      link: Dropdowns
+    - title: Pagination
+    - title: Sélécteur de dates
+      link: Picker
+    - title: Sami
+
+- title: Utilitaires
+  link: Utilities
+  pages:
+    - title: Affichage
+      link: Display
+    - title: Alignement Vertical
+      link: Vertical align
+    - title: Clearfix
+    - title: Couleurs
+      link: Colors
+    - title: Dimensions
+      link: Sizing
+    - title: Espacement
+      link: Spacing
+    - title: Flex
+    - title: Float
+    - title: Icône de fermeture
+      link: Close icon
+    - title: Intégration
+      link: Embed
+    - title: Lecteurs d'écrans
+      link: Screenreaders
+    - title: Positionnement
+      link: Position
+    - title: Remplacement d'images
+      link: Image replacement
+    - title: Texte
+      link: Text
+    - title: Visibilité
+      link: Visibility
+
+- title: Extension
+  link: Extend
+  pages:
+    - title: Approche
+      link: Approach
+
+- title: Migration
+
+- title: À propos
+  link: About
+  pages:
+    - title: "Équipe, Historique"
+      link: Overview
+    - title: Licence
+      link: License
+    - title: Traductions
+      link: Translations
+    - title: Versions

@@ -7,17 +7,12 @@ module.exports = env => {
   const theme = env.theme;
   const thememode = env.darkmode ? 'dark' : 'light';
   const production = env.production;
+  const willMinify = production ? '.min' : '';
   const documentation = env.documentation;
-  //const externals = ['flatpickr','jquery','popper.js','chart.js'];
-  const entry = {
-    normal: [
-        path.resolve(__dirname, `src/js/${theme}.js`),
-        path.resolve(__dirname, `src/scss/${thememode}-${theme}.scss`)
-    ],
-    darkmode: [
-        path.resolve(__dirname, `src/scss/dark-${theme}.scss`)
-    ]
-  };
+  const externals = (env.noexternals) ? ['flatpickr','jquery','popper.js','chart.js'] : '';
+  const noextFlag = (env.noexternals) ? '-noext' : '';
+
+  const entry = setEntry(noextFlag,theme,thememode);
   let outputPath = path.resolve(__dirname, 'dist');
 
   if (documentation) {
@@ -32,13 +27,13 @@ module.exports = env => {
     entry,
     output: {
       filename: (chunkData) => {
-        return chunkData.chunk.name === 'normal' ? 'bootstrap-sncf.min.js': '.generated-by-webpack'
+        return chunkData.chunk.name === 'normal' ? `bootstrap-sncf${noextFlag + willMinify}.js` : '.generated-by-webpack'
       },
       path: outputPath
     },
     devtool: production ? 'none' : 'source-map',
     mode: production ? 'production' : 'development',
-    externals: (typeof externals === 'undefined') ? '' : externals,
+    externals: externals,
     module: {
       
       rules: [
@@ -59,35 +54,8 @@ module.exports = env => {
             }
           }
         },
-        {
-          test: /\.(scss|css)$/,
-          use: [
-            MiniCssExtractPlugin.loader,
-            {
-              loader: 'css-loader', options: { sourceMap: true } // translates CSS into CommonJS modules
-            }, {
-              loader: 'postcss-loader',
-              options: {
-                config: {
-                  path: path.resolve(__dirname, 'build/postcss.config.js'),
-                },
-                sourceMap: true
-              }
-            }, {
-              loader: 'sass-loader', options: { sourceMap: true }
-            }]
-        },
-        {
-          test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
-          include: path.resolve(__dirname, 'src/assets/fonts'),
-          use: [{
-            loader: 'file-loader',
-            options: {
-              limit: 100000,
-              name: 'assets/fonts/[name].[ext]'
-            }
-          }],
-        },
+        parseCSS(noextFlag),
+        parseAssets(noextFlag),
         {
           test: require.resolve('jquery'),
           use: [{
@@ -106,9 +74,78 @@ module.exports = env => {
         }
       ]
     },
-    plugins: [
+    plugins: getPlugins(noextFlag,willMinify)
+  }
+};
+
+function setEntry(noextFlag,theme,thememode) {
+  if (noextFlag === '') {
+    return {
+      normal: [
+          path.resolve(__dirname, `src/js/${theme}.js`),
+          path.resolve(__dirname, `src/scss/${thememode}-${theme}.scss`)
+      ],
+      darkmode: [
+          path.resolve(__dirname, `src/scss/dark-${theme}.scss`)
+      ]
+    }
+  } else {
+    return {
+      normal: [
+          path.resolve(__dirname, `src/js/${theme}.js`),
+      ]
+    }
+  }
+}
+
+function parseAssets(noextFlag) {
+  if (noextFlag === '') {
+    return {
+      test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
+      include: path.resolve(__dirname, 'src/assets/fonts'),
+      use: [{
+        loader: 'file-loader',
+        options: {
+          limit: 100000,
+          name: 'assets/fonts/[name].[ext]'
+        }
+      }],
+    }
+  } else {
+    return {}
+  }
+}
+
+function parseCSS(noextFlag) {
+  if (noextFlag === '') {
+    return {
+      test: /\.(scss|css)$/,
+      use: [
+        MiniCssExtractPlugin.loader,
+        {
+          loader: 'css-loader', options: { sourceMap: true } // translates CSS into CommonJS modules
+        }, {
+          loader: 'postcss-loader',
+          options: {
+            config: {
+              path: path.resolve(__dirname, 'build/postcss.config.js'),
+            },
+            sourceMap: true
+          }
+        }, {
+          loader: 'sass-loader', options: { sourceMap: true }
+        }]
+    }
+  } else {
+    return {}
+  }
+}
+
+function getPlugins(noextFlag,willMinify) {
+  if (noextFlag === '') {
+    return [
       new MiniCssExtractPlugin({
-        moduleFilename: ({ name }) => (name === 'normal') ? 'bootstrap-sncf.min.css' : 'bootstrap-sncf.darkmode.min.css'
+        moduleFilename: ({ name }) => (name === 'normal') ? `bootstrap-sncf${noextFlag + willMinify}.css` : `bootstrap-sncf${noextFlag}.darkmode${willMinify}.css`
       }),
       new CopyWebpackPlugin([
         { 
@@ -119,5 +156,8 @@ module.exports = env => {
         context: path.resolve(__dirname, 'src/assets/img')
       })
     ]
+  } else {
+    return []
   }
-};
+}
+

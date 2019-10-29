@@ -1,0 +1,5 @@
+<div class="form-control-container {{ .Get "container" }}">
+  <input type="{{ .Get "type" }}" class="form-control {{ .Get "class" }}" id="{{ .Get "id" }}" title="{{ .Get "placeholder" }}" placeholder="{{ .Get "placeholder" }}" {{ .Get "attr" }}>
+  <span class="form-control-state"></span>
+  {{- .Get "content" }}
+</div>

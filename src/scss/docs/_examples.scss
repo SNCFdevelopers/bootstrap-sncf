@@ -22,3 +22,11 @@
     padding-left: .75rem;
   }
 }
+
+.doc-example-link {
+  transition: .3s;
+}
+.doc-example-link:hover {
+  background-color: $doc-highlight-bg;
+  opacity: .6;
+}

@@ -1,0 +1,86 @@
+<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+    <a class="navbar-brand mr-0 mr-md-4" href="{{ .Site.BaseURL }}{{ .Lang }}/" aria-label="Bootstrap">
+        <img alt="SNCF" src="{{ .Site.BaseURL }}assets/img/brand/sncf-logo.png" width="70" />
+        <span class="ml-2">{{ .Site.Params.name }}</span>
+    </a>
+
+    <div class="navbar-nav-scroll">
+        <ul class="navbar-nav bd-navbar-nav flex-row">
+            <li class="nav-item">
+                <a class="nav-link d-flex align-items-center {{ if eq .Page.Layout "docs" }}active{{ end }}" href="{{ .Site.BaseURL }}{{ if eq .Lang "fr"}}{{ printf "%s/" .Lang }}{{ end }}docs/{{ .Site.Params.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">
+                    Documentation	<i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d-flex align-items-center {{ if eq .Page.Title "Examples" }}active{{ end }}" href="{{ .Site.BaseURL }}{{ if eq .Lang "fr"}}{{ printf "%s/" .Lang }}{{ end }}docs/{{ .Site.Params.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">
+                    {{ T "example" 2 | humanize }} <i class="icons-arrow-next icons-size-x5 ml-2" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
+        <li class="nav-item">
+            <a class="nav-link text-nowrap" href="{{ .Site.BaseURL }}{{ if eq .Lang "fr"}}{{ printf "%s/" .Lang }}{{ end }}docs/{{ .Site.Params.docs_version }}/about/versions/" id="bd-versions">
+                v{{ .Site.Params.current_version }} r{{ .Site.Params.sncf_version }}
+            </a>
+        </li>
+        <li class="nav-item">
+            <div class="btn-group dropdown dropdown-doc-navbar">
+                <a class="nav-link d-flex align-items-center dropdown-toggle toolbar-item-spacing" type="button" id="dropdownSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="mycontrol">
+                    <i class="icons-admin icons-size-1x25 icons-md-size-1x5 mr-2" aria-hidden="true"></i>
+                    <span class="d-xl-block d-sm-block d-block d-lg-none d-md-none mr-2">{{ T "setting" 2 | humanize }}</span>
+                    <i class="icons-arrow-down icons-size-x5 ml-2" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-mastheader" aria-labelledby="dropdownSettings" id="dropdownSettingsMenu">
+                    <i class="dropdown-close icons-close icons-size-x5"></i>
+                    <div data-role="stop-propagation">
+
+                        <div class="mb-3">
+                            <label class="w-100 text-white font-weight-medium mb-2">{{ T "darkmode" | humanize }}</label>
+                            <div class="options-control">
+                                <div class="options-item">
+                                    <input type="radio" name="darkmodeSwitch" id="darkmode-btn-off" class="sr-only" value="disabled" checked />
+                                    <label class="options-btn font-weight-medium darkmode-btn" for="darkmode-btn-off">{{ T "disabled" | humanize }}</label>
+                                </div>
+                                <div class="options-item">
+                                    <input type="radio" name="darkmodeSwitch" id="darkmode-btn" class="sr-only" value="enabled" />
+                                    <label class="options-btn font-weight-medium darkmode-btn" for="darkmode-btn">{{ T "enabled" | humanize }}</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="w-100 text-white font-weight-medium mb-2">{{ T "sourcecode" | humanize }}</label>
+                            <div class="options-control">
+                                <div class="options-item">
+                                    <input type="radio" name="hidesourceSwitch" id="hidesource-btn-off" class="sr-only" value="disabled" checked />
+                                    <label class="options-btn font-weight-medium" for="hidesource-btn-off">{{ T "show" | humanize }}</label>
+                                </div>
+                                <div class="options-item">
+                                    <input type="radio" name="hidesourceSwitch" id="hidesource-btn" class="sr-only" value="enabled" />
+                                    <label class="options-btn font-weight-medium" for="hidesource-btn">{{ T "hide" | humanize }}</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="w-100 text-white font-weight-medium mb-2">{{ T "language" | humanize }}</label>
+                            <div class="options-control">
+                                <a class="options-item option-language" href="{{ if eq .Lang "fr" }}{{ range .Translations }}{{ .Permalink }}{{ end }}{{ end }}">
+                                    <input type="radio" name="languageSwitch" id="language-btn-en" data-lang="{{ .Lang }}" class="sr-only" {{ if eq .Lang "en" }} value="enabled" checked {{ else }} value="disabled" {{ end }}/>
+                                    <label class="options-btn font-weight-medium" for="language-btn-en"><img src="/assets/img/flags/english.svg" class="gr-2"> {{ T "english" | humanize }}</label>
+                                </a>
+                                <a class="options-item option-language" href="{{ if eq .Lang "en" }}{{ range .Translations }}{{ .Permalink }}{{ end }}{{ end }}">
+                                    <input type="radio" name="languageSwitch" id="language-btn-fr" data-lang="{{ .Lang }}" class="sr-only" {{ if eq .Lang "fr" }} value="enabled" checked {{ else }} value="disabled" {{ end }}/>
+                                    <label class="options-btn font-weight-medium" for="language-btn-fr"><img src="/assets/img/flags/french.svg" class="gr-2"> {{ T "french" | humanize }}</label>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <a class="btn btn-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/bootstrap-sncf.{{ .Site.Params.doc_theme }}.v{{ .Site.Params.current_version }}-r{{ .Site.Params.sncf_version }}.zip">{{ T "download" | humanize }}</a>
+</header>

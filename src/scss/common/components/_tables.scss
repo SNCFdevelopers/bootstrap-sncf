@@ -326,23 +326,23 @@ td[data-role="toggle-group-btn"] > * {
 @include media-breakpoint-down(sm) {
   .mastcontainer .table-vh {
     .mastheader + & {
-      height: calc(100vh - $mastheader-height);
+      height: calc(100vh - #{$mastheader-height});
     }
 
     .mastheader + .actionbar + & {
-      height: calc(100vh - ($mastheader-height + $actionbar-min-height));
+      height: calc(100vh - #{$mastheader-height + $actionbar-min-height});
     }
 
     .mastheader + .actionbar.has-tabs + & {
-      height: calc(100vh - ($mastheader-height + $actionbar-max-height));
+      height: calc(100vh - #{$mastheader-height + $actionbar-max-height});
     }
 
     .mastheader + .actionbar + .controlbar + & {
-      height: calc(100vh - ($mastheader-height + $actionbar-min-height + $controlbar-height));
+      height: calc(100vh - #{$mastheader-height + $actionbar-min-height + $controlbar-height});
     }
 
     .mastheader + .actionbar.has-tabs + .controlbar + & {
-      height: calc(100vh - ($mastheader-height + $actionbar-max-height + $controlbar-height));
+      height: calc(100vh - #{$mastheader-height + $actionbar-max-height + $controlbar-height});
     }
   }
 }

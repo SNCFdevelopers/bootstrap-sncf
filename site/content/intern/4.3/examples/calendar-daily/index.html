@@ -1,0 +1,39 @@
+---
+layout: empty
+url: /docs/4.3/examples/calendar-daily/
+aliases: [/fr/docs/4.3/examples/calendar-daily/]
+---
+
+{{< fullexample.inline >}}
+<html lang="{{ .Site.Params.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Daily calendar layout</title>
+
+    {{ partial "darkmode-js-header.html" . }}
+  </head>
+  <body>
+    {{ partial "components/mastnav.html" . }}
+    {{ partial "components/mastheader.html" . }}
+
+    {{ partial "components/schedule-daily-actionbar.html" . }}
+
+    <main class="mastcontainer h-100 d-flex flex-column">
+      <div class="schedule-grid">
+        <div class="schedule-sidebar schedule-sidebar-filters bg-white border-top border-right border-light">
+          {{ partial "components/schedule-filters-menu.html" . }}
+        </div>
+        <div class="schedule-maincontent border-top border-light">
+          {{ partial "components/schedule-daily.html" . }}
+        </div>
+      </div>
+    </main>
+
+    <script src="{{ .Site.BaseURL }}bootstrap-sncf.js"></script>
+    </body>
+</html>
+{{< /fullexample.inline >}}

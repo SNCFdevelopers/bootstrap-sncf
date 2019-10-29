@@ -14,9 +14,12 @@ function toggleDarkmode() {
   const inactivecss = document.getElementById('inactivecss')
   const oldhref = activecss.getAttribute('href')
   const newhref = inactivecss.getAttribute('href')
-  const name = inactivecss.getAttribute('name')
+  const oldname = activecss.getAttribute('name')
+  const newname = inactivecss.getAttribute('name')
   activecss.setAttribute('href', newhref)
+  activecss.setAttribute('name', newname)
   inactivecss.setAttribute('href', oldhref)
-  localStorage.setItem('bootstrap-sncf-css-name', name)
+  inactivecss.setAttribute('name', oldname)
+  localStorage.setItem('bootstrap-sncf-css-name', newname)
 }
 

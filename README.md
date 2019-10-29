@@ -8,9 +8,8 @@
 
 ## Requirements
 
-- npm 5.6.0
-- yarn 1.15.2
-- node v8.10.0
+- `npm 5.6.0` OR `yarn 1.15.2` (follow instructions from Yarn or NPM officials to install last versions on Debian/Ubuntu systems
+- `node v8.10.0`
 
 ## How to build
 
@@ -31,7 +30,7 @@ Bootstrap's documentation, included in this repo in the root directory, is built
 
 Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/).
 
-1. From the root `/bootstrap-sncf` directory, run `yarn run docs-serve-intern` or `docs-serve-extern` in the command line **after building the version you want**
+1. From the root `/bootstrap-sncf` directory, run `yarn run docs-serve-intern` or `yarn run docs-serve-extern` in the command line **after building the version you want**
 2. Open `http://localhost:9001` in your browser, and voilà. Modifications in `template` folder will force regenerating.
 
 Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
