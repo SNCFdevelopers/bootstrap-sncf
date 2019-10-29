@@ -147,6 +147,7 @@ function getPlugins(noextFlag,willMinify) {
       new MiniCssExtractPlugin({
         moduleFilename: ({ name }) => (name === 'normal') ? `bootstrap-sncf${noextFlag + willMinify}.css` : `bootstrap-sncf${noextFlag}.darkmode${willMinify}.css`
       }),
+      new StyleLintPlugin(),
       new CopyWebpackPlugin([
         { 
           from: '**/*',
