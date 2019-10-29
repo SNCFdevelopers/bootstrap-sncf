@@ -20,8 +20,8 @@ import Table from './components/table'
 import state from './components/states'
 
 let callbackTimeout = null
-const mainNode = document.body
 const timeoutDelay = 500
+const intervalAwait = 200
 const mutationObserverConfig = {
   attributes: true,
   childList: true,
@@ -135,5 +135,11 @@ function mutationObserverCallback() {
   }, timeoutDelay)
 }
 
-const mutationObserver = new MutationObserver(mutationObserverCallback)
-mutationObserver.observe(mainNode, mutationObserverConfig)
+
+const interval = setInterval(() => {
+  if (document.body && document.body !== null) {
+    clearInterval(interval)
+    const mutationObserver = new MutationObserver(mutationObserverCallback)
+    mutationObserver.observe(document.body, mutationObserverConfig)
+  }
+}, intervalAwait)
