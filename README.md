@@ -29,8 +29,8 @@ Bootstrap's documentation, included in this repo in the root directory, is built
 
 1. Run `yarn install` to install the Node.js dependencies, including Hugo (the site builder).
 2. Decide which version you need (intern or extern, cf. [SNCF Digital resources](http://sn.cf/socledesign))
-3. Run `yarn run docs-serve-intern` or `yarn run docs-serve-extern` to build the templates.
-4. Run `yarn run watch-intern` or `yarn run watch-extern` to generate and watch css & js.
+3. Run `watch-docs-extern` or `watch-docs-intern` to watch css & js.
+4. Run `yarn docs-serve-extern` or `yarn docs-serve-intern` to build the templates.
 5. Open `http://localhost:9001/` in your browser, and voilà.
 
 Learn more about using Hugo by reading its [documentation](https://gohugo.io/documentation/).

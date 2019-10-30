@@ -13,8 +13,8 @@ Download ready-to-use compiled code for **Bootstrap SNCF v{{< param current_vers
 - `assets` All pictures, logos & fonts
 - `bootstrap-sncf.css` Unminified CSS stylesheet original version
 - `bootstrap-sncf.css.map`
-- `bootstrap-sncf.darkmode.css` Unminified CSS stylesheet "dark mode" version
-- `bootstrap-sncf.darkmode.css.map`
+- `bootstrap-sncf.dark.css` Unminified CSS stylesheet "dark mode" version
+- `bootstrap-sncf.dark.css.map`
 - `bootstrap-sncf.js` Unminified JS, with [all needed externals libs]({{< docsref "/getting-started/introduction#js" >}}) inside
 - `bootstrap-sncf.js.map`
 - `bootstrap-sncf.min.css` Minified CSS stylesheet original version
