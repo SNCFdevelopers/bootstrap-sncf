@@ -27,6 +27,7 @@
     "src/"
   ],
   "scripts": {
+    "build-dist-bundle": "webpack --env.bundle",
     "build-dist-extern": "webpack -p --env.production --env.theme=extern",
     "build-dist-intern": "webpack -p --env.production --env.theme=intern",
     "build-docs-extern": "yarn clean-docs && yarn docs-compile-extern && webpack -p --env.production --env.documentation --env.theme=extern",
@@ -36,7 +37,7 @@
     "docs-compile-extern": "hugo -s . --config config.yml,config.extern.yml",
     "docs-compile-intern": "hugo -s . --config config.yml,config.intern.yml",
     "docs-lint-htmllint": "htmllint --rc build/.htmllintrc \"_gh_pages/**/*.html\" \"src/js/tests/**/*.html\"",
-    "docs-serve": "hugo server --port 9001 --disableFastRender",
+    "docs-serve": "hugo server --port 9001 --disableFastRender --forceSyncStatic",
     "docs-serve-extern": "yarn docs-serve --config config.yml,config.extern.yml",
     "docs-serve-intern": "yarn docs-serve --config config.yml,config.intern.yml",
     "watch-docs": "webpack --env.documentation --watch",

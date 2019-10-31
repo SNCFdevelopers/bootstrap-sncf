@@ -46,14 +46,14 @@ class Nav {
     })
 
     closeBtns.forEach((btn) => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (event) => {
         event.stopPropagation()
         this.handleCloseEvent()
       })
     })
 
     prevBtns.forEach((btn) => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (event) => {
         event.stopPropagation()
         this.handlePrevEvent()
       })

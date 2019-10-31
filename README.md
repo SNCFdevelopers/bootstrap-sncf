@@ -70,3 +70,65 @@ If you want to create a new [Reactjs](https://github.com/facebook/create-react-a
     ```
 
 </details>
+
+### Use Bootstrap and SNCF components with Reactjs
+
+<details>
+
+<summary>Read the cookbook</summary>
+
+See the [Bootstrap JavaScript](https://getbootstrap.com/docs/4.2/getting-started/webpack/) section, import what you need:
+
+1. Import
+
+    ```js
+    import 'bootstrap/js/dist/dropdown';
+    import SelectExclusive from './dist/js/components/selectRadios'
+    ```
+
+2. Init
+
+    ```js
+    useEffect(() => {
+        const dataSelectRadios = 'select-radios';
+        const components = document.querySelectorAll(dataComponent);
+    
+        components.forEach((component) => {
+            if (component.dataset.component === dataSelectRadios) {
+                new SelectRadios(component)
+            }
+        });
+    }, []);
+    ```
+
+3. Use template
+
+    ```js
+    return (
+        <div className="form-group">
+            <div className="input-group">
+                <div className="input-group-prepend">
+                <div className="btn-group dropdown" data-component="select-radios">
+                    <button type="button" className="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="actionsgroup">
+                    <span data-role="placeholder">Tous ces mots</span>
+                    <i className="icons-arrow-down" aria-hidden="true"></i>
+                    </button>
+                    <div className="dropdown-menu dropdown-menu-right" id="actionsgroup">
+                    <input data-role="value" type="radio" name="keywordSearch" value="keywordSearch1" id="action1" className="sr-only" />
+                    <label className="dropdown-item" htmlFor="action1">Action</label>
+                    <hr className="dropdown-divider"/>
+                    <input data-role="value" type="radio" name="keywordSearch" value="keywordSearch2" id="action2" className="sr-only" />
+                    <label className="dropdown-item" htmlFor="action2">Another action</label>
+                    <input data-role="value" type="radio" name="keywordSearch" value="keywordSearch3" id="action3" className="sr-only" />
+                    <label className="dropdown-item" htmlFor="action3">Something else here</label>
+                    </div>
+                </div>
+                </div>
+                <div className="form-control-container">
+                <input id="entertext" type="text" className="form-control" title="Enter text" placeholder="Enter text" />
+                <span className="form-control-state"></span>
+                </div>
+            </div>
+        </div>
+    );
+    ```

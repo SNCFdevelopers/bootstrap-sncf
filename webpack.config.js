@@ -1,11 +1,13 @@
 const path = require('path');
+const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const RemovePlugin = require('remove-files-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
-const buildDocs = require('./build/build-doc');
+const buildBundle = require('./build/build-bundle');
 const buildDist = require('./build/build-dist');
+const buildDocs = require('./build/build-doc');
 const srcPath = path.resolve(__dirname, 'src');
 
 function getFilename(name, ext, isProduction) {
@@ -20,12 +22,12 @@ module.exports = env => {
   const theme = env.theme;
   const production = env.production;
   const documentation = env.documentation;
+  const bundle = env.bundle;
 
-  let entry = buildDist.getEntry(srcPath, theme);
+  let entry = bundle ? buildBundle.getEntry(srcPath) : buildDist.getEntry(srcPath, theme);
   let outputPath = path.resolve(__dirname, buildDist.outputDir);
-  let removeIncludeFiles = buildDist.getRemoveIncludeFiles(production);
 
-  if (documentation) {
+  if (documentation && !bundle) {
     entry = buildDocs.mergeEntry(entry, srcPath, theme);
     outputPath = path.resolve(__dirname, buildDocs.outputDir);
   }
@@ -36,10 +38,12 @@ module.exports = env => {
       filename: (chunkData) => {
         return getFilename(chunkData.chunk.name, 'js', production);
       },
-      path: outputPath
+      path: outputPath,
+      libraryTarget: bundle ? 'commonjs2' : 'umd'
     },
     devtool: production ? 'none' : 'source-map',
     mode: production ? 'production' : 'development',
+    externals: bundle ? buildBundle.getExternals() : [],
     module: {
       rules: [
         {
@@ -108,6 +112,9 @@ module.exports = env => {
       ]
     },
     plugins: [
+      new webpack.ProvidePlugin({
+        jQuery: 'jquery'
+      }),
       new MiniCssExtractPlugin({
         moduleFilename: ({ name }) => {
           return getFilename(name, 'css', production);
@@ -124,11 +131,17 @@ module.exports = env => {
       }),
       new RemovePlugin({
         /**
-         * After compilation removes `js` files.
+         * After compilation removes `js` files in `css` folder.
          */
         after: {
-          root: outputPath,
-          include: removeIncludeFiles
+          test: [
+            {
+              folder: path.resolve(outputPath, 'css'),
+              method: (filePath) => {
+                return new RegExp(/\.js*$|\.js.map$/, 'm').test(filePath);
+              }
+            }
+          ]
         }
       })
     ]
