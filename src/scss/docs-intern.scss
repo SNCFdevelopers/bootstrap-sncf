@@ -1,6 +1,7 @@
 // Load Bootstrap variables and mixins
+@import "site-common/settings/variables";
+@import "site-common/settings/map";
 @import "~bootstrap/scss/functions";
-@import "common/settings/variables-darkmode";
 @import "~bootstrap/scss/mixins";
 
 // Load bootstrap components
@@ -8,5 +9,5 @@
 @import "~bootstrap/scss/navbar";
 
 // Load docs components
-@import "docs/variables-darkmode";
-@import "intern-docs";
+@import "docs-common/variables-lightmode";
+@import "docs-intern/main";
