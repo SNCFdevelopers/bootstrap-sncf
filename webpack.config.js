@@ -32,6 +32,50 @@ module.exports = env => {
     outputPath = path.resolve(__dirname, buildDocs.outputDir);
   }
 
+
+  const plugins = [
+    new MiniCssExtractPlugin({
+      moduleFilename: ({ name }) => {
+        return getFilename(name, 'css', production);
+      },
+    }),
+    new StyleLintPlugin(),
+    new CopyWebpackPlugin([
+      { 
+        from: '**/*',
+        to: 'assets/img' 
+      }
+    ], {
+      context: path.resolve(__dirname, 'src/assets/img')
+    }),
+  ]
+  
+  if (production) {
+    plugins.push(new RemovePlugin({
+      /**
+       * After compilation removes `js` files in `css` folder.
+       */
+      after: {
+        test: [
+          {
+            folder: path.resolve(outputPath, 'css'),
+            method: (filePath) => {
+              return new RegExp(/\.js*$|\.js.map*$/, 'm').test(filePath);
+            }
+          }
+        ]
+      }
+    }));
+  }
+
+  if (bundle) {
+    plugins.push(
+      new webpack.ProvidePlugin({
+        jQuery: 'jquery'
+      })
+    );
+  }
+
   return {
     entry,
     output: {
@@ -111,39 +155,6 @@ module.exports = env => {
         }
       ]
     },
-    plugins: [
-      new webpack.ProvidePlugin({
-        jQuery: 'jquery'
-      }),
-      new MiniCssExtractPlugin({
-        moduleFilename: ({ name }) => {
-          return getFilename(name, 'css', production);
-        },
-      }),
-      new StyleLintPlugin(),
-      new CopyWebpackPlugin([
-        { 
-          from: '**/*',
-          to: 'assets/img' 
-        }
-      ], {
-        context: path.resolve(__dirname, 'src/assets/img')
-      }),
-      new RemovePlugin({
-        /**
-         * After compilation removes `js` files in `css` folder.
-         */
-        after: {
-          test: [
-            {
-              folder: path.resolve(outputPath, 'css'),
-              method: (filePath) => {
-                return new RegExp(/\.js*$|\.js.map$/, 'm').test(filePath);
-              }
-            }
-          ]
-        }
-      })
-    ]
+    plugins
   }
 };

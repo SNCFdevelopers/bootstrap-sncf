@@ -49,7 +49,7 @@ toc: true
   <h2>Icons</h2>
   <div class="ig-container row mt-4" data-role="container">
     <div class="col-12 pb-5">
-      <button type="button" class="btn btn-primary" data-role="selectall" data-values="[{{- delimit (index .Site.Data `icons`) `,` -}}]">Tout sélectionner</button>
+      <button type="button" class="btn btn-primary" data-role="selectall" data-values='["{{- delimit (index .Site.Data `icons`) `", "` -}}"]'>Tout sélectionner</button>
     </div>    
     {{- range (index .Site.Data "icons") -}}
       <div class="col mb-3">
