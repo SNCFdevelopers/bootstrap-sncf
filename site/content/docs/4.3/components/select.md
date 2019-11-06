@@ -73,7 +73,7 @@ Users can be offered the option of adding a new item to the list, but we suggest
 
 {{< example html >}}
 <label for="select2">Additional input</label>
-<div class="select-improved" data-component="select-exclusive" id="select">
+<div class="select-improved" data-component="select-exclusive">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <p class="form-control is-placeholder  d-flex align-items-center" data-role="placeholder" data-selected-prefix="Sélection actuelle">Lorem ipsum</p>
@@ -335,7 +335,7 @@ Multi-select drop-down lists let users choose multiple options.
 
 {{% example html %}}
 <label for="exampleFormControlMultiSelect1">Multi select</label>
-<div class="select-improved" data-component="select-multiple" id="test">
+<div class="select-improved" data-component="select-multiple">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <div class="form-control">
