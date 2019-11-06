@@ -73,7 +73,7 @@ Users can be offered the option of adding a new item to the list, but we suggest
 
 {{< example html >}}
 <label for="select2">Additional input</label>
-<div class="select-improved" data-component="select-exclusive">
+<div class="select-improved" data-component="select-exclusive" id="select">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <p class="form-control is-placeholder  d-flex align-items-center" data-role="placeholder" data-selected-prefix="Sélection actuelle">Lorem ipsum</p>
@@ -335,7 +335,7 @@ Multi-select drop-down lists let users choose multiple options.
 
 {{% example html %}}
 <label for="exampleFormControlMultiSelect1">Multi select</label>
-<div class="select-improved" data-component="select-multiple">
+<div class="select-improved" data-component="select-multiple" id="test">
   <div class="select-control">
     <div class="input-group" data-role="select-toggle">
       <div class="form-control">
@@ -465,3 +465,62 @@ Multi-select drop-down lists let users choose multiple options.
   </div>
 </div>
 {{% /example %}}
+
+## Use with JavaScript
+Not working with select by group.
+
+{{% highlight html %}}
+<div class="select-improved" data-component="select-<choose-your-mode>" id="my-select">
+  ...
+</div>
+{{% /highlight %}}
+
+Access to your component instance : `document.querySelector('#my-select').select`
+
+### Select methods
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.getCurrentValue()</code></td>
+      <td>Access to the current value.</td>
+    </tr>
+    <tr>
+      <td><code>.setOption('my-option-1', true)</code></td>
+      <td>Add a selected option.</td>
+    </tr>
+    <tr>
+      <td><code>.setOptions(['my-option-1', 'my-option-2'])</code></td>
+      <td>Add options.</td>
+    </tr>
+    <tr>
+      <td><code>.replaceOptions(['my-option-1', 'my-option-2'])</code></td>
+      <td>Replace all options.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Multiple methods
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>values</code></td>
+      <td>Access to the current values.</td>
+      <td><code>instance.values</code></td>
+    </tr>
+  </tbody>
+</table>

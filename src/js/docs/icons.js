@@ -1,11 +1,12 @@
+import {
+  fontBuilderDownloadPath
+} from './../config'
+
 /**
  * ------------------------------------------------------------------------
  * Class Definition
  * ------------------------------------------------------------------------
  */
-
-const api = 'http://0.0.0.0:3000/api'
-const download = `${api}/download`
 
 class IconsGenerator {
   constructor(element) {
@@ -99,7 +100,7 @@ class IconsGenerator {
       data.withSize = parseInt(sizeInput.value, 10)
     }
 
-    window.fetch(download, {
+    window.fetch(fontBuilderDownloadPath, {
       method: 'POST',
       mode: 'cors',
       body: JSON.stringify(data),
@@ -109,7 +110,7 @@ class IconsGenerator {
     })
       .then((response) => response.json())
       .then((data) => {
-        window.open(`${download}/${data}`)
+        window.open(`${fontBuilderDownloadPath}/${data}`)
       })
   }
 

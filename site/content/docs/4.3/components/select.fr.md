@@ -469,3 +469,61 @@ Liste déroulante avec choix multiples, par groupes.
   </div>
 </div>
 {{% /example %}}
+
+## Usage via JavaScript
+Ne fonctionne pas avec les `select` contenant des groupes.
+
+{{% highlight html %}}
+<div class="select-improved" data-component="select-exclusive" id="my-select">
+  ...
+</div>
+{{% /highlight %}}
+
+Accéder à l'instance de votre composant : `document.querySelector('#my-select').select`
+
+### Select
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Methode</th>
+      <th>Description</th>
+      <th>Exemple</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.getCurrentValue()</code></td>
+      <td>Accédez à la valeur actuelle.</td>
+    </tr>
+    <tr>
+      <td><code>.setOption('my-option-1')</code></td>
+      <td>Ajouter une option sélectionnée.</td>
+    </tr>
+    <tr>
+      <td><code>.setOption(['my-option-1', 'my-option-2'])</code></td>
+      <td>Ajouter des options.</td>
+    </tr>
+    <tr>
+      <td><code>.replaceOptions(['my-option-1', 'my-option-2'])</code></td>
+      <td>Remplacer les options.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Multiple
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Methode</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.getCurrentValues()</code></td>
+      <td>Accédez aux valeurs actuelles.</td>
+    </tr>
+  </tbody>
+</table>

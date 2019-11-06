@@ -32,7 +32,6 @@ module.exports = env => {
     outputPath = path.resolve(__dirname, buildDocs.outputDir);
   }
 
-
   const plugins = [
     new MiniCssExtractPlugin({
       moduleFilename: ({ name }) => {

@@ -95,11 +95,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (component.dataset.component === dataSelectExclusive) {
-      new SelectExclusive(component)
+      component.select = new SelectExclusive(component)
     }
 
     if (component.dataset.component === dataSelectMultiple) {
-      new SelectMultiple(component)
+      component.select = new SelectMultiple(component)
     }
 
     if (component.dataset.component === dataSelectRadios) {
