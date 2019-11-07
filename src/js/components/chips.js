@@ -8,15 +8,17 @@ import getSelectedOptions from './../utils/getSelectedOptions'
 
 class Chips {
   constructor(element) {
+    this.element = element
     this.inputNode = element.querySelector('[data-role=input]')
+    this.defaultValues = JSON.parse(this.element.getAttribute('data-values')) || []
     this.selectedOptions = getSelectedOptions(this.inputNode)
     this.typewriterNode = element.querySelector('[data-role=typewriter]')
+    this.values = {}
+    this.count = 0
 
-    for (const key in this.selectedOptions) {
-      if (Object.prototype.hasOwnProperty.call(this.selectedOptions, key)) {
-        this._createChipsNode(element, this.selectedOptions[key].innerHTML, this.selectedOptions[key])
-      }
-    }
+    this.defaultValues.forEach((value) => {
+      this._createChipsNode(element, value)
+    })
 
     if (this.typewriterNode) {
       element.addEventListener('click', () => {
@@ -35,7 +37,21 @@ class Chips {
     }
   }
 
-  _createChipsNode(element, value = 'Martin Dupond', optionNode = null) {
+  // Public
+  getValues() {
+    return Object.keys(this.values).map((key) => this.values[key])
+  }
+
+  addChips(value) {
+    this._createChipsNode(this.element, value)
+  }
+
+  destroyChips(node) {
+    this._destroyChipsNode(this.element, node)
+  }
+
+  // Private
+  _createChipsNode(element, value = 'Martin Dupond') {
     const groupNode = document.createElement('div')
     const chipsLabelNode = document.createElement('span')
     const chipsLabelContent = document.createTextNode(value)
@@ -43,15 +59,9 @@ class Chips {
     const chipsBtnRemove = document.createElement('span')
     const chipsBtnRemoveContent = document.createTextNode(`Remove ${value}`)
     const chipsIcon = document.createElement('i')
+    const id = `chips-${this.count}`
 
-    if (!optionNode) {
-      optionNode = document.createElement('option')
-      optionNode.value = value
-      optionNode.text = value
-      optionNode.selected = true
-      this.inputNode.add(optionNode)
-    }
-
+    groupNode.setAttribute('id', id)
     groupNode.setAttribute('class', 'chips-group')
     groupNode.setAttribute('class', 'chips-group')
     chipsLabelNode.setAttribute('class', 'chips chips-label')
@@ -62,7 +72,7 @@ class Chips {
 
     chipsBtnNode.addEventListener('click', (e) => {
       e.preventDefault()
-      this._destroyChipsNode(element, optionNode, groupNode)
+      this._destroyChipsNode(element, groupNode)
     })
 
     chipsLabelNode.appendChild(chipsLabelContent)
@@ -72,13 +82,18 @@ class Chips {
     groupNode.appendChild(chipsLabelNode)
     groupNode.appendChild(chipsBtnNode)
 
+    this.values[id] = value
     element.insertBefore(groupNode, this.typewriterNode)
     this.typewriterNode.value = ''
+
+    this.count += 1
+    this.element = element
   }
 
-  _destroyChipsNode = (element, optionNode, chips) => {
+  _destroyChipsNode = (element, chips) => {
+    delete this.values[chips.getAttribute('id')]
     element.removeChild(chips)
-    optionNode.selected = false
+    this.element = element
   }
 }
 

@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (component.dataset.component === dataChips) {
+      component.chips = new Chips(component)
       new Chips(component)
     }
 

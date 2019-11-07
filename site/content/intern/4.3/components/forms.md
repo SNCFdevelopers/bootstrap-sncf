@@ -244,14 +244,9 @@ Chips are compact components that appear after entering or selecting items as ta
 
 {{% example html %}}
 <label class="font-weight-medium mb-2" for="addreceivers1">Add receivers</label>
-<div class="form-control-container form-chips-container" data-component="chips">
+<div class="form-control-container form-chips-container" data-component="chips" data-values='["Sem Inceptos Tellus", "Amet Porta"]' id="my-chips">
   <input data-role="typewriter" type="text" class="chips-input stretchy" id="addreceivers1" />
   <label class="font-weight-medium mb-2 sr-only" for="receivers1">Receivers</label>
-  <select class="sr-only" data-role="input" tabindex="-1" aria-hidden="true" id="receivers1" multiple>
-    <option selected>Sem Inceptos Tellus</option>
-    <option>Amet Porta</option>
-    <option selected>Pharetra Fusce Venenatis</option>
-  </select>
 </div>
 {{% /example %}}
 
@@ -259,6 +254,41 @@ Chips are compact components that appear after entering or selecting items as ta
 ### Alternatives to hidden labels
 Assistive technologies such as screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the `.sr-only` class. There are further alternative methods of providing a label for assistive technologies, such as the `aria-label`, `aria-labelledby` or `title` attribute. If none of these are present, assistive technologies may resort to using the `placeholder` attribute, if present, but note that use of `placeholder` as a replacement for other labelling methods is not advised.
 {{% /callout %}}
+
+### Use with JavaScript
+
+{{% highlight html %}}
+<div data-component="chips" id="my-chips" ...>
+  ...
+</div>
+{{% /highlight %}}
+
+Access to your component instance : `document.querySelector('#my-chips').chips`
+
+#### Select methods
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.getValues()</code></td>
+      <td>Access to the current values.</td>
+    </tr>
+    <tr>
+      <td><code>.addChips('text')</code></td>
+      <td>Add a chips.</td>
+    </tr>
+    <tr>
+      <td><code>.destroyChips(document.querySelector('#chips-0'))</code></td>
+      <td>Remove chips.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Help text
 
