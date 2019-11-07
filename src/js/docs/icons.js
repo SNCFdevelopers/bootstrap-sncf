@@ -20,8 +20,7 @@ class IconsGenerator {
     const pngInput = document.getElementById('withPng')
     const svgInput = document.getElementById('withSvg')
     const sizeInput = document.getElementById('withSize')
-    const selectAllBtn = element.querySelector('[data-role=selectall]')
-    const allIcons = JSON.parse(selectAllBtn.getAttribute('data-values'))
+    const selectAllBtns = element.querySelectorAll('[data-role=selectall]')
 
     colors.forEach((elem) => {
       const color = elem.getAttribute('data-color')
@@ -83,12 +82,27 @@ class IconsGenerator {
       this.handleBtnState(downloadBtn, data)
     })
 
-    selectAllBtn.addEventListener('click', () => {
-      data.icons = allIcons
-      icons.forEach((elem) => {
-        elem.classList.add('selected')
+    selectAllBtns.forEach((selectAllBtn) => {
+      const allIcons = JSON.parse(selectAllBtn.getAttribute('data-values'))
+
+      selectAllBtn.addEventListener('click', () => {
+        if (!data.icons || !Array.isArray(data.icons)) {
+          data.icons = [...allIcons]
+        } else {
+          allIcons.forEach((icon) => {
+            if (!data.icons.includes(icon)) {
+              data.icons.push(icon)
+            }
+          })
+        }
+
+        icons.forEach((elem) => {
+          if (data.icons.includes(elem.getAttribute('data-icon'))) {
+            elem.classList.add('selected')
+          }
+        })
+        this.handleBtnState(downloadBtn, data)
       })
-      this.handleBtnState(downloadBtn, data)
     })
   }
 

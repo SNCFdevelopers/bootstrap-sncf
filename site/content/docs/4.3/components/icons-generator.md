@@ -46,18 +46,22 @@ toc: true
   </div>
 
   {{< icons.inline >}}
-  <h2>Icons</h2>
-  <div class="ig-container row mt-4" data-role="container">
-    <div class="col-12 pb-5">
-      <button type="button" class="btn btn-primary" data-role="selectall" data-values='["{{- delimit (index .Site.Data `icons`) `", "` -}}"]'>Tout sélectionner</button>
-    </div>    
-    {{- range (index .Site.Data "icons") -}}
-      <div class="col mb-3">
-        <button type="button" class="ig-button btn-rounded text-center mb-2" data-role="icon" data-icon="{{ . }}">
-          <i class="icons-{{ . }} ig-icon" aria-hidden="true"></i>
-        </button>
+  <div class="bd-content ig-container" data-role="container">
+    {{- range (index .Site.Data "icons-generator") -}}
+      <span></span>
+      <h2>{{ .name }}</h2>
+      <div class="row mt-4 mb-1">
+        <div class="col-12 pb-3">
+          <button type="button" class="btn btn-primary" data-role="selectall" data-values='["{{- delimit (index .icons) `", "` -}}"]'>Tout sélectionner</button>
+        </div>    
+        {{- range (index .icons) -}}
+          <div class="col mb-3">
+            <button type="button" class="ig-button btn-rounded text-center mb-2" data-role="icon" data-icon="{{ . }}">
+              <i class="icons-{{ . }} ig-icon" aria-hidden="true"></i>
+            </button>
+          </div>
+        {{ end }}
       </div>
     {{ end }}
-  </div>  
-  {{< /icons.inline >}}
-</div>
+  </div>
+{{< /icons.inline >}}

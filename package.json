@@ -43,8 +43,9 @@
     "watch-docs": "webpack --env.documentation --watch",
     "watch-docs-extern": "yarn watch-docs --env.theme=extern",
     "watch-docs-intern": "yarn watch-docs --env.theme=intern",
-    "svg": "svgo -r src/assets/icons --config=svgo.yml",
-    "icofont": "icon-font-generator src/assets/icons/*.svg -o src/assets/fonts/icons --csspath src/scss/common/generic/_icons.css --prefix icons --fontspath ../assets/fonts/icons/ --html false -j false"
+    "svg": "svgo -r src/assets/icons --config=svgo.yml && svgo -r src/assets/icons-base --config=svgo.yml",
+    "icofont": "icon-font-generator src/assets/icons/*.svg -o src/assets/fonts/icons --csspath src/scss/common/generic/_icons.css --prefix icons --fontspath ../assets/fonts/icons/ --html false -j false",
+    "icofont-base": "icon-font-generator src/assets/icons-base/*.svg -o src/assets/fonts/icons --csspath src/scss/common/generic/_icons.css --prefix icons --fontspath ../assets/fonts/icons/ --html false -j false"
   },
   "devDependencies": {
     "ajv": "^6.7.0",

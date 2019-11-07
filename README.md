@@ -35,6 +35,11 @@ Bootstrap's documentation, included in this repo in the root directory, is built
 
 Learn more about using Hugo by reading its [documentation](https://gohugo.io/documentation/).
 
+### Build icofonts
+
+- `yarn icofont-base` : build only required icons
+- `yarn iconfont` : build all icons
+
 ## Cookbooks
 
 ### How to use with Reactjs
