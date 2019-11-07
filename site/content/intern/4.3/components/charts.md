@@ -262,7 +262,7 @@ This “map” component can be used for any type of map. Examples include geolo
 Use <a target="_blank" href="https://www.chartjs.org/docs/latest/developers/api.html">Chart Prototype Methods</a>
 
 {{% highlight html %}}
-<div class="position-relative" data-component="<choose-your-mode>-chart" ...>
+<div class="position-relative" data-component="<choose-your-mode>-chart" id="my-chart" ...>
   ...
 </div>
 {{% /highlight %}}

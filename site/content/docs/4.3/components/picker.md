@@ -49,7 +49,7 @@ Date-pickers let users select a date (in dd/mm/yyyy format) using a calendar vis
 
 {{% example html %}}
 <label for="defaultdate" class="font-weight-medium mb-2">Date (jj/mm/aaaa)</label>
-<div data-component="picker" data-default-date="2017-02-26">
+<div data-component="picker" data-default-date="2017-02-26" id="my-picker">
   <div class="input-group" data-toggle>
     <div class="form-control-container">
       <input id="defaultdate" type="text" class="form-control" placeholder="Sélectionner une date" data-input>
@@ -192,9 +192,9 @@ Only use a date-time-picker when you need to optimize space and reduce the numbe
       </div>
     </div>
     <div class="col">
-      <div class="input-group">
+      <div class="input-group" id="secondRangeInput">
         <div class="form-control-container">
-          <input id="secondRangeInput" type="text" class="form-control" placeholder="Date & Heure" data-input>
+          <input type="text" class="form-control" placeholder="Date & Heure" data-input>
           <span class="form-control-state"></span>
         </div>
         <div class="input-group-append">
@@ -227,3 +227,14 @@ Only use a date-time-picker when you need to optimize space and reduce the numbe
   </div>
 </form>
 {{< /example >}}
+
+## Use with JavaScript
+Use <a target="_blank" href="https://flatpickr.js.org/">Flatpickr documentation</a>
+
+{{% highlight html %}}
+<div data-component="picker" id="my-picker" ...>
+  ...
+</div>
+{{% /highlight %}}
+
+Access to your component instance : `document.querySelector('#my-picker').flatpickr`
