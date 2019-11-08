@@ -285,9 +285,7 @@
 
 /* stylelint-disable selector-no-qualifying-type */
 .flatpickr-time {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
   max-height: none;
   color: $flatpickr-time-color;
 

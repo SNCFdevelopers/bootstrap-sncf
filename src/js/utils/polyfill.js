@@ -1,3 +1,5 @@
+import 'get-root-node-polyfill/implement'
+
 if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = function (callback, argument) {
     argument = argument || window

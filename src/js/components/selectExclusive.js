@@ -105,7 +105,7 @@ class SelectExclusive {
       this._updatePlaceholder(value)
     }
 
-    this.menu.append(currentValueNode)
+    this.menu.insertBefore(currentValueNode)
     currentValueNode.focus()
     this._refreshOptionsNode()
   }

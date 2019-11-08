@@ -101,7 +101,16 @@ module.exports = env => {
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['env'],
+              presets: [
+                [
+                  'env',
+                  {
+                    targets: {
+                      'ie': '11'
+                    }
+                  }
+                ]
+              ],
               plugins: ['transform-class-properties', 'transform-object-rest-spread']
             }
           }

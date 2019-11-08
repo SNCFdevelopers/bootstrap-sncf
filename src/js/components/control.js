@@ -70,7 +70,7 @@ class Control {
 
   _removeAlert() {
     if (this.alertElement) {
-      this.element.parentNode.querySelector('[role=alert]').remove()
+      this.element.parentNode.removeChild(document.querySelector('[role=alert]'))
       this.alertElement = false
     }
   }

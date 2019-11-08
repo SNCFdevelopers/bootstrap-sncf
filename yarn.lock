@@ -3567,6 +3567,11 @@ get-proxy@^2.0.0:
   dependencies:
     npm-conf "^1.1.0"
 
+get-root-node-polyfill@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/get-root-node-polyfill/-/get-root-node-polyfill-1.0.0.tgz#58e34431c0b7fee66823b2a5fab4d33bc0aac36d"
+  integrity sha512-AzucsG1DdepagLF8tkxfjUqn3cCQ63MgH/tBWwPSy0BIDt8iLFZYDwnTxA08d+zdgL8l2dkPdZDe+Qkd+RMl9Q==
+
 get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"

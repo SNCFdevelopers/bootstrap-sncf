@@ -12,6 +12,16 @@
   padding-bottom: rem(18px);
   padding-left: rem(8px);
 
+  &.center {
+    align-items: center;
+
+    &::after {
+      min-height: inherit;
+      font-size: 0;
+      content: "";
+    }
+  }
+
   &:hover {
     background-color: $list-group-hover-bg;
   }

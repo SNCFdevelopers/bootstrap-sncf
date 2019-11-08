@@ -55,7 +55,7 @@ toc: true
           <button type="button" class="btn btn-primary" data-role="selectall" data-values='["{{- delimit (index .icons) `", "` -}}"]'>Tout sélectionner</button>
         </div>    
         {{- range (index .icons) -}}
-          <div class="col mb-3">
+          <div class="col-3 col-md-2 col-lg-1 mb-3">
             <button type="button" class="ig-button btn-rounded text-center mb-2" data-role="icon" data-icon="{{ . }}">
               <i class="icons-{{ . }} ig-icon" aria-hidden="true"></i>
             </button>
