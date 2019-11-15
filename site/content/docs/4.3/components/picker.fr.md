@@ -49,7 +49,7 @@ Le sélecteur de date laisse l'utilisateur choisir une date (au format dd/mm/yyy
 
 {{% example html %}}
 <label for="defaultdate" class="font-weight-medium mb-2">Date (jj/mm/aaaa)</label>
-<div data-component="picker" data-default-date="2017-02-26">
+<div data-component="picker" data-default-date="26/02/2017">
   <div class="input-group" data-toggle>
     <div class="form-control-container">
       <input id="defaultdate" type="text" class="form-control" placeholder="Sélectionner une date" data-input>
