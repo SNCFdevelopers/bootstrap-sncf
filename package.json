@@ -1,7 +1,7 @@
 {
   "name": "@sncf/bootstrap-sncf",
   "description": "SNCF frontend framework",
-  "version": "4.3.1-r4",
+  "version": "4.3.1-r5",
   "sideEffects": false,
   "main": "dist/bootstrap-sncf.min.js",
   "style": "dist/bootstrap-sncf.min.css",

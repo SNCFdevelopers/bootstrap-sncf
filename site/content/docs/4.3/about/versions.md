@@ -18,7 +18,11 @@ toc: true
 
 ## v4.3.1
 
-### Révision 4 _28/10/2019_
+### Revision 5 _15/11/2019_
+- Corrected data-default-date format for picker (should be jj/mm/yyyy)
+- Corrected favicons links **MANDATORY MIGRATION** replace `docs` by `brand` in asset's path for favicons (see docs for reference)
+
+### Revision 4 _28/10/2019_
 - Corrected bug Select Additionnal input
 - Corrected bug checkbox **MANDATORY MIGRATION** List-group, tables : you must add `custom-checkbox-alone` class to `<input type="checkbox">` parent
 - Added month/year chooser to datepicker

@@ -18,6 +18,10 @@ toc: true
 
 ## v4.3.1
 
+### Révision 5 _15/11/2019_
+- Correction du format de data-default-date format pour le picker (devrait être jj/mm/yyyy)
+- Correction des liens pour les favicons **MIGRATION NÉCESSAIRE** remplacez `docs` par `brand` dans le chemins des assets des favicons (consultez la documentation pour référence)
+
 ### Révision 4 _28/10/2019_
 - Correction bug Select Additionnal input
 - Correction bug positionnement des checkbox **MIGRATION NÉCESSAIRE** List-group, tables : il faut ajouter la classe `custom-checkbox-alone` au parent de `<input type="checkbox">`
