@@ -21,12 +21,12 @@ Assets and all favicons variants are provided inside Bootstrap SNCF, as it shoul
 
 {{% highlight html %}}
 <!-- Favicons -->
-<link rel="apple-touch-icon" href="/assets/img/docs/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/assets/img/docs/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/assets/img/docs/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/assets/img/docs/favicons/manifest.json">
-<link rel="mask-icon" href="/assets/img/docs/favicons/safari-pinned-tab.svg" color="#563d7c">
-<link rel="icon" href="/assets/img/docs/favicons/favicon.ico">
-<meta name="msapplication-config" content="/assets/img/docs/favicons/browserconfig.xml">
+<link rel="apple-touch-icon" href="/assets/img/brand/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/assets/img/brand/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/img/brand/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/assets/img/brand/favicons/manifest.json">
+<link rel="mask-icon" href="/assets/img/brand/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/assets/img/brand/favicons/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/brand/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
 {{% /highlight %}}
