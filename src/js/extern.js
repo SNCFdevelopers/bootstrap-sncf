@@ -6,6 +6,7 @@ import Chips from './components/chips'
 import Control from './components/control'
 import Header from './components/header'
 import LineChart from './components/charts/lineChart'
+import Menu from './components/menu'
 import Nav from './components/nav-extern'
 import Picker from './components/picker'
 import PieChart from './components/charts/pieChart'
@@ -45,9 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataMultiSlideshow = 'multi-slideshow'
   const dataTable = 'table'
   const dataRadialProgress = 'radial-progress'
+  const dataMenu = 'menu-toutsncf'
 
   const components = document.querySelectorAll(dataComponent)
 
+  /* eslint-disable complexity */
   components.forEach((component) => {
     /* eslint-disable no-new */
     if (component.dataset.component === dataLineChart) {
@@ -169,6 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (component.dataset.component === dataTable) {
       new Table(component)
+    }
+
+    if (component.dataset.component === dataMenu) {
+      new Menu(component)
     }
     /* eslint-enable no-new */
   })
