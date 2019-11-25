@@ -22,7 +22,8 @@
   }
 
   &.active {
-    color: $breadcrumb-color;
+    // stylelint-disable declaration-no-important
+    color: $breadcrumb-color !important;
 
     & ~ .breadcrumb-item {
       &::before {
