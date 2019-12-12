@@ -40,6 +40,7 @@ class Picker {
     const decrementHoursOnMinutesMin = element.getAttribute('data-decrement-hours-on-minutes-min') || false
     const plugins = []
     const onOpen = []
+    const onClose = []
     const onReady = []
 
     if (secondRangeInput) {
@@ -82,21 +83,27 @@ class Picker {
       options.defaultDate = defaultDate
     }
 
-    onOpen.push(
-      () => {
-        btnNode.classList.add('active')
-        btnNode.setAttribute('aria-expanded', 'true')
-      }
-    )
+    if (btnNode) {
+      onOpen.push(
+        () => {
+          btnNode.classList.add('active')
+          btnNode.setAttribute('aria-expanded', 'true')
+        }
+      )
+
+      onClose.push(
+        () => {
+          btnNode.classList.remove('active')
+          btnNode.setAttribute('aria-expanded', 'false')
+        }
+      )
+    }
 
     element.flatpickr = flatpickr(element, {
       ...DEFAULT_OPTIONS,
       ...options,
       onOpen,
-      onClose: () => {
-        btnNode.classList.remove('active')
-        btnNode.setAttribute('aria-expanded', 'false')
-      },
+      onClose,
       onReady
     })
   }

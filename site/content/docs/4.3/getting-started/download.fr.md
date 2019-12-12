@@ -13,8 +13,8 @@ Vous pouvez télécharger le code compilé, prêt à l'emploi pour **Bootstrap S
 - `assets` Toutes les images, icônes et fontes
 - `bootstrap-sncf.css` Feuille de style CSS originale non minifiée
 - `bootstrap-sncf.css.map`
-- `bootstrap-sncf.darkmode.css` Feuille de style CSS « mode sombre » non minifiée
-- `bootstrap-sncf.darkmode.css.map`
+- `bootstrap-sncf.dark.css` Feuille de style CSS « mode sombre » non minifiée
+- `bootstrap-sncf.dark.css.map`
 - `bootstrap-sncf.js` JavaScript non minifié, contenant [toutes les librairies externes]({{< docsref "/getting-started/introduction#js" >}})
 - `bootstrap-sncf.js.map`
 - `bootstrap-sncf.min.css` Feuille de style CSS originale minifiée

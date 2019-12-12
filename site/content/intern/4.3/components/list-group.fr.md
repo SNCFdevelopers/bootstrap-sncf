@@ -575,7 +575,7 @@ Notez l'utilisation de la classe `no-gutters` pour coller les colonnes ensemble.
   <ul class="list-group">
 {{ range $index,$group := (seq 3) }}
 <li id="group{{ $group }}" class="list-group-item management-item management-item-group" >
-  <div class="management-item-content" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group{{ $group }}">
+  <div class="management-item-content center" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group{{ $group }}">
     <div class="management-item-checkbox">
       <div class="custom-control custom-checkbox custom-checkbox-alone">
         <input type="checkbox" class="custom-control-input" id="cell{{ $group }}">
@@ -593,7 +593,7 @@ Notez l'utilisation de la classe `no-gutters` pour coller les colonnes ensemble.
   <ul id="sublist{{ $group }}" class="management-item-grouplist">
     {{ range $item_idx,$item_grp := (seq 4) }}
     <li class="management-item">
-      <div class="management-item-content">
+      <div class="management-item-content center">
         <div class="management-item-checkbox">
           <div class="custom-control custom-checkbox custom-checkbox-alone">
             <input type="checkbox" class="custom-control-input" id="sublist{{ $group }}-cell{{ $item_grp }}">
@@ -650,7 +650,7 @@ Notez l'utilisation de la classe `no-gutters` pour coller les colonnes ensemble.
 {{% highlight html %}}
 <ul class="list-group">
   <li id="group1" class="list-group-item management-item management-item-group active">
-    <div class="management-item-content" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group1">
+    <div class="management-item-content center" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group1">
       <div class="management-item-checkbox">
         <div class="custom-control custom-checkbox custom-checkbox-alone">
           <input type="checkbox" class="custom-control-input" id="cell1">
@@ -667,7 +667,7 @@ Notez l'utilisation de la classe `no-gutters` pour coller les colonnes ensemble.
     </div>
     <ul id="sublist1" class="management-item-grouplist">
       <li class="management-item">
-        <div class="management-item-content">
+        <div class="management-item-content center">
           <div class="management-item-checkbox">
             <div class="custom-control custom-checkbox custom-checkbox-alone">
               <input type="checkbox" class="custom-control-input" id="cell1">

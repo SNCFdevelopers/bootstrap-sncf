@@ -13,6 +13,7 @@ class SelectExclusive {
     this.toggleNode = element.querySelector('[data-role=select-toggle]') // menu toggle trigger
     this.inputNode = element.querySelector('[data-role=input]') // select node
     this.placeholderNode = element.querySelector('[data-role=placeholder]') // placeholder
+    this.defaultPlaceholder = this.placeholderNode ? this.placeholderNode.innerHTML : ''
     this.selectedPrefix = this.placeholderNode.getAttribute('data-selected-prefix')
     this.menu = element.querySelector('[data-role=menu]')
     this.defaultHiddenOption = element.querySelector('[data-role=default-hidden-option]')
@@ -24,6 +25,7 @@ class SelectExclusive {
     const addBtn = element.querySelector('[data-role=add-btn]')
     this.addInput = element.querySelector('[data-role=add-input]')
 
+    this._setDefaultOption()
     this._addEventListeners() // ui event listeners
 
     if (addContainerNode) {
@@ -41,8 +43,28 @@ class SelectExclusive {
     }
   }
 
-  // Private
+  // Public
+  getCurrentValue() {
+    return this.inputNode.options[this.inputNode.selectedIndex].value
+  }
 
+  setOption(value, selected) {
+    this._addOption(value, selected)
+  }
+
+  setOptions(values) {
+    values.forEach((value) => {
+      this._addOption(value, false)
+    })
+  }
+
+  replaceOptions(values) {
+    this._resetPlaceholder()
+    this._removeOptions()
+    values.forEach((value) => this._addOption(value, false))
+  }
+
+  // Private
   _addEventListeners() {
     this.toggleNode.addEventListener('click', (event) => {
       event.stopPropagation()
@@ -59,6 +81,7 @@ class SelectExclusive {
 
     this.collapses.forEach((item) => {
       item.addEventListener('click', (event) => {
+        event.stopPropagation()
         event.target.classList.toggle('active')
         // bootstrap jQuery collapse
         $(event.target.dataset.target).collapse('toggle')
@@ -72,14 +95,17 @@ class SelectExclusive {
     })
   }
 
-  _addOption(value) {
+  _addOption(value, selected = true) {
     const currentValueNode = this._createOptionBtn(value)
-    this._updateOption(currentValueNode)
     this.inputNode.add(this._createOption(value))
-    this.inputNode.selectedIndex = this.defaultHiddenOption ? this.inputNode.length - 1 : this.inputNode.length // added option is always the las
-    this._updatePlaceholder(value)
 
-    this.menu.append(currentValueNode)
+    if (selected) {
+      this._updateOption(currentValueNode)
+      this.inputNode.selectedIndex = this.defaultHiddenOption ? this.inputNode.length - 1 : this.inputNode.length // added option is always the las
+      this._updatePlaceholder(value)
+    }
+
+    this.menu.insertBefore(currentValueNode)
     currentValueNode.focus()
     this._refreshOptionsNode()
   }
@@ -95,7 +121,7 @@ class SelectExclusive {
   _createOptionBtn(value) {
     const btn = document.createElement('button')
     const btnLabel = document.createTextNode(value)
-    btn.setAttribute('class', 'select-menu-item active')
+    btn.setAttribute('class', 'select-menu-item')
     btn.setAttribute('data-role', 'value')
     btn.setAttribute('data-target', this.defaultHiddenOption ? this.inputNode.length : this.inputNode.length + 1)
     btn.appendChild(btnLabel)
@@ -151,6 +177,37 @@ class SelectExclusive {
         this.btnNode.classList.remove('active')
         this.btnNode.setAttribute('aria-expanded', 'false')
       })
+    })
+  }
+
+  _removeOptions() {
+    this.menu.innerHTML = ''
+
+    if (this.currentValueNode) {
+      this.currentValueNode = null
+    }
+
+    const count = this.inputNode.options.length
+    for (let i = count; i > 0; i--) {
+      this.inputNode.remove(i)
+    }
+  }
+
+  _resetPlaceholder() {
+    if (this.placeholderNode) {
+      this.placeholderNode.classList.add('is-placeholder')
+      this.placeholderNode.innerHTML = this.defaultPlaceholder
+    }
+  }
+
+  _setDefaultOption() {
+    const optionsNode = this.element.querySelectorAll('[data-role=value]') // options
+
+    optionsNode.forEach((option) => {
+      if (this.inputNode.selectedIndex === Number(option.dataset.target)) {
+        this._updatePlaceholder(option.innerHTML)
+        this._updateOption(option)
+      }
     })
   }
 }

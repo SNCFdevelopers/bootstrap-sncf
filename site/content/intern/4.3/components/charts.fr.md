@@ -252,3 +252,14 @@ Utilisez `data-straightlines="true"`
 ## Cartes
 
 Ce composant "carte" peut être utilisé pour tout type de carte. Les exemples incluent la géolocalisation, le zoom, le déplacement sur une carte, les fonctions de recherche sur la carte et le filtrage.
+
+## Usage via JavaScript
+Utilisez <a target="_blank" href="https://www.chartjs.org/docs/latest/developers/api.html">Chart Prototype Methods</a>
+
+{{% highlight html %}}
+<div class="position-relative" data-component="<choose-your-mode>-chart" id="my-chart" ...>
+  ...
+</div>
+{{% /highlight %}}
+
+Accéder à l'instance de votre composant : `document.querySelector('#my-chart').chart`

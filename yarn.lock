@@ -3567,6 +3567,11 @@ get-proxy@^2.0.0:
   dependencies:
     npm-conf "^1.1.0"
 
+get-root-node-polyfill@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/get-root-node-polyfill/-/get-root-node-polyfill-1.0.0.tgz#58e34431c0b7fee66823b2a5fab4d33bc0aac36d"
+  integrity sha512-AzucsG1DdepagLF8tkxfjUqn3cCQ63MgH/tBWwPSy0BIDt8iLFZYDwnTxA08d+zdgL8l2dkPdZDe+Qkd+RMl9Q==
+
 get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
@@ -5626,7 +5631,7 @@ npm-packlist@^1.1.6:
     ignore-walk "^3.0.1"
     npm-bundled "^1.0.1"
 
-npm-run-all@^4.1.2:
+npm-run-all@^4.1.5:
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/npm-run-all/-/npm-run-all-4.1.5.tgz#04476202a15ee0e2e214080861bff12a51d98fba"
   integrity sha512-Oo82gJDAVcaMdi3nuoKFavkIHBRVqQ1qvMb+9LHk/cF4P6B2m8aP04hGf7oL6wZ9BuGwX1onlLhpuoofSyoQDQ==
@@ -7097,6 +7102,11 @@ remark@^10.0.1:
     remark-parse "^6.0.0"
     remark-stringify "^6.0.0"
     unified "^7.0.0"
+
+remove-files-webpack-plugin@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/remove-files-webpack-plugin/-/remove-files-webpack-plugin-1.1.3.tgz#4b27351811d3212f2d48e4b5bfa7e9db9f80a94d"
+  integrity sha512-r53wQ/IlTkmcv11wri71CZ27S+GhFI5SjHbTbaAJbisPC3qGwg87vlA2C5Z1PuVA+aMI8SgimnE4SqI+ZYzu6Q==
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"

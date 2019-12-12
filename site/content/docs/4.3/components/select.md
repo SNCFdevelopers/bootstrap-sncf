@@ -104,7 +104,7 @@ Users can be offered the option of adding a new item to the list, but we suggest
       <div class="d-flex pt-4 flex-column flex-sm-row" data-role="add">
         <div class="form-control-container w-100">
           <label for="addagent" class="sr-only">Saisir le nom d’un agent à ajouter</label>
-          <input id="addagent" type="text" class="form-control form-control-sm" data-role="add-input" placeholder="Ajouter un agent" value="John Doe">
+          <input id="addagent" type="text" class="form-control form-control-sm" data-role="add-input" placeholder="Ajouter un agent" value="John Doe" />
           <span class="form-control-state"></span>
         </div>
         <div class="pt-2 pt-sm-0 pl-sm-2">
@@ -140,7 +140,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
     <div class="select-menu" data-role="menu">
       <div class="d-flex flex-column flex-sm-row" data-role="add">
         <div class="form-control-container w-100 has-left-icon">
-          <input type="" class="form-control form-control-sm" id="inputIcon3" placeholder="Example for auto-completion" >
+          <input type="" class="form-control form-control-sm" id="inputIcon3" placeholder="Example for auto-completion" />
           <span class="form-control-state"></span>
           <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
         </div>
@@ -170,7 +170,7 @@ When a list is very long and scrolling through all the options becomes fussy, a 
     <div class="select-menu" data-role="menu">
       <div class="d-flex flex-column flex-sm-row mb-2" data-role="add">
         <div class="form-control-container w-100 has-left-icon">
-          <input type="" class="form-control" id="inputIcon4" placeholder="Example for auto-completion" >
+          <input type="" class="form-control" id="inputIcon4" placeholder="Example for auto-completion" />
           <span class="form-control-state"></span>
           <span class="form-control-icon"><i class="icons-search" aria-hidden="true"></i></span>
         </div>
@@ -465,3 +465,62 @@ Multi-select drop-down lists let users choose multiple options.
   </div>
 </div>
 {{% /example %}}
+
+## Use with JavaScript
+Not working with select by group.
+
+{{% highlight html %}}
+<div class="select-improved" data-component="select-<choose-your-mode>" id="my-select">
+  ...
+</div>
+{{% /highlight %}}
+
+Access to your component instance : `document.querySelector('#my-select').select`
+
+### Select methods
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.getCurrentValue()</code></td>
+      <td>Access to the current value.</td>
+    </tr>
+    <tr>
+      <td><code>.setOption('my-option-1', true)</code></td>
+      <td>Add a selected option.</td>
+    </tr>
+    <tr>
+      <td><code>.setOptions(['my-option-1', 'my-option-2'])</code></td>
+      <td>Add options.</td>
+    </tr>
+    <tr>
+      <td><code>.replaceOptions(['my-option-1', 'my-option-2'])</code></td>
+      <td>Replace all options.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Multiple methods
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>values</code></td>
+      <td>Access to the current values.</td>
+      <td><code>instance.values</code></td>
+    </tr>
+  </tbody>
+</table>

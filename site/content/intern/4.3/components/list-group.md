@@ -577,7 +577,7 @@ Note the use of `no-gutters` class to stick the columns together.
   <ul class="list-group">
 {{ range $index,$group := (seq 3) }}
 <li id="group{{ $group }}" class="list-group-item management-item management-item-group" >
-  <div class="management-item-content" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group{{ $group }}">
+  <div class="management-item-content center" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group{{ $group }}">
     <div class="management-item-checkbox">
       <div class="custom-control custom-checkbox custom-checkbox-alone custom-checkbox custom-checkbox-alone-alone">
         <input type="checkbox" class="custom-control-input" id="cell{{ $group }}">
@@ -595,7 +595,7 @@ Note the use of `no-gutters` class to stick the columns together.
   <ul id="sublist{{ $group }}" class="management-item-grouplist">
     {{ range $item_idx,$item_grp := (seq 4) }}
     <li class="management-item">
-      <div class="management-item-content">
+      <div class="management-item-content center">
         <div class="management-item-checkbox">
           <div class="custom-control custom-checkbox custom-checkbox-alone custom-checkbox custom-checkbox-alone-alone">
             <input type="checkbox" class="custom-control-input" id="sublist{{ $group }}-cell{{ $item_grp }}">
@@ -652,7 +652,7 @@ Note the use of `no-gutters` class to stick the columns together.
 {{% highlight html %}}
 <ul class="list-group">
   <li id="group1" class="list-group-item management-item management-item-group active">
-    <div class="management-item-content" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group1">
+    <div class="management-item-content center" data-component="state" data-state="active" data-behaviour="toggle" data-target="#group1">
       <div class="management-item-checkbox">
         <div class="custom-control custom-checkbox custom-checkbox-alone custom-checkbox custom-checkbox-alone-alone">
           <input type="checkbox" class="custom-control-input" id="cell1">
@@ -669,7 +669,7 @@ Note the use of `no-gutters` class to stick the columns together.
     </div>
     <ul id="sublist1" class="management-item-grouplist">
       <li class="management-item">
-        <div class="management-item-content">
+        <div class="management-item-content center">
           <div class="management-item-checkbox">
             <div class="custom-control custom-checkbox custom-checkbox-alone custom-checkbox custom-checkbox-alone-alone">
               <input type="checkbox" class="custom-control-input" id="cell1">

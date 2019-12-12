@@ -74,8 +74,12 @@ class SelectMultiple {
     })
   }
 
-  // Private
+  // Public
+  getCurrentValues() {
+    return this._getSelectValues()
+  }
 
+  // Private
   _addEventListeners() {
     this.toggle.addEventListener('click', (event) => {
       event.stopPropagation()
@@ -108,6 +112,19 @@ class SelectMultiple {
     })
   }
 
+  _getSelectValues() {
+    const result = []
+    const options = this.input.options
+
+    Array.prototype.forEach.call(options, (option) => {
+      if (option.selected) {
+        result.push(option.value || option.text)
+      }
+    })
+
+    return result
+  }
+
   _setDefaultSelectedOptions(groupId, valueId, toggleCallback) {
     /* eslint-disable arrow-body-style */
     const isSelected = findIndex(this.selectedOptions, (o) => {
@@ -127,11 +144,13 @@ class SelectMultiple {
       this.count.currentValues += 1
       valueNode.classList.add(ACTIVE_CLASS)
       valueNode.setAttribute('aria-checked', 'true')
+      this.input.options[valueId].setAttribute('selected', true)
     } else {
       pull(this.store[groupId].currentValues, valueId)
       this.count.currentValues -= 1
       valueNode.classList.remove(ACTIVE_CLASS)
       valueNode.setAttribute('aria-checked', 'false')
+      this.input.options[valueId].removeAttribute('selected')
     }
 
     this._updatePlaceholderNodeStyle()

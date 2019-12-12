@@ -258,3 +258,13 @@ Use data-straightlines="true"
 
 This “map” component can be used for any type of map. Examples include geolocation, zooming, moving around a map, map search features and filtering.
 
+## Use with JavaScript
+Use <a target="_blank" href="https://www.chartjs.org/docs/latest/developers/api.html">Chart Prototype Methods</a>
+
+{{% highlight html %}}
+<div class="position-relative" data-component="<choose-your-mode>-chart" id="my-chart" ...>
+  ...
+</div>
+{{% /highlight %}}
+
+Access to your component instance : `document.querySelector('#my-chart').chart`

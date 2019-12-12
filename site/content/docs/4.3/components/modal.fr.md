@@ -273,7 +273,7 @@ Vous pouvez également créer des fenêtres modales scrollables permettant de fa
           </div>
         </div>
         <div class="modal-footer">
-          <div class="row no-gutters">
+          <div class="row w-100 no-gutters">
             <div class="col-6 pr-1">
               <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Annuler</button>
             </div>
@@ -353,7 +353,7 @@ Vous pouvez également créer des fenêtres modales scrollables permettant de fa
         </div>
       </div>
       <div class="modal-footer">
-        <div class="row no-gutters">
+        <div class="row w-100 no-gutters">
           <div class="col-6 pr-1">
             <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Annuler</button>
           </div>

@@ -1,41 +1,93 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const RemovePlugin = require('remove-files-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+
+const buildBundle = require('./build/build-bundle');
+const buildDist = require('./build/build-dist');
+const buildDocs = require('./build/build-doc');
+const srcPath = path.resolve(__dirname, 'src');
+
+function getFilename(name, ext, isProduction) {
+  if (isProduction) {
+    return `${name}.min.${ext}`;
+  }
+
+  return `${name}.${ext}`;
+}
 
 module.exports = env => {
   const theme = env.theme;
-  const thememode = env.darkmode ? 'dark' : 'light';
   const production = env.production;
-  const willMinify = production ? '.min' : '';
   const documentation = env.documentation;
-  const externals = (env.noexternals) ? ['flatpickr','jquery','popper.js','chart.js'] : '';
-  const noextFlag = (env.noexternals) ? '-noext' : '';
+  const bundle = env.bundle;
 
-  const entry = setEntry(noextFlag,theme,thememode);
-  let outputPath = path.resolve(__dirname, 'dist');
+  let entry = bundle ? buildBundle.getEntry(srcPath) : buildDist.getEntry(srcPath, theme);
+  let outputPath = path.resolve(__dirname, buildDist.outputDir);
 
-  if (documentation) {
-    entry.normal.push(path.resolve(__dirname, 'src/js/docs.js'));
-    entry.normal.push(path.resolve(__dirname, `src/js/docs/search-${theme}.js`));
-    entry.normal.push(path.resolve(__dirname, `src/scss/${thememode}-docs-${theme}.scss`));
-    entry.darkmode.push(path.resolve(__dirname, `src/scss/dark-docs-${theme}.scss`));
-    outputPath = path.resolve(__dirname, '_gh_pages');
+  if (documentation && !bundle) {
+    entry = buildDocs.mergeEntry(entry, srcPath, theme);
+    outputPath = path.resolve(__dirname, buildDocs.outputDir);
+  }
+
+  const plugins = [
+    new MiniCssExtractPlugin({
+      moduleFilename: ({ name }) => {
+        return getFilename(name, 'css', production);
+      },
+    }),
+    new StyleLintPlugin(),
+    new CopyWebpackPlugin([
+      { 
+        from: '**/*',
+        to: 'assets/img' 
+      }
+    ], {
+      context: path.resolve(__dirname, 'src/assets/img')
+    }),
+  ]
+  
+  if (production) {
+    plugins.push(new RemovePlugin({
+      /**
+       * After compilation removes `js` files in `css` folder.
+       */
+      after: {
+        test: [
+          {
+            folder: path.resolve(outputPath, 'css'),
+            method: (filePath) => {
+              return new RegExp(/\.js*$|\.js.map*$/, 'm').test(filePath);
+            }
+          }
+        ]
+      }
+    }));
+  }
+
+  if (bundle) {
+    plugins.push(
+      new webpack.ProvidePlugin({
+        jQuery: 'jquery'
+      })
+    );
   }
 
   return {
     entry,
     output: {
       filename: (chunkData) => {
-        return chunkData.chunk.name === 'normal' ? `bootstrap-sncf${noextFlag + willMinify}.js` : '.generated-by-webpack'
+        return getFilename(chunkData.chunk.name, 'js', production);
       },
-      path: outputPath
+      path: outputPath,
+      libraryTarget: bundle ? 'commonjs2' : 'umd'
     },
     devtool: production ? 'none' : 'source-map',
     mode: production ? 'production' : 'development',
-    externals: externals,
+    externals: bundle ? buildBundle.getExternals() : [],
     module: {
-      
       rules: [
         {
           enforce: 'pre',
@@ -49,13 +101,50 @@ module.exports = env => {
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['env'],
+              presets: [
+                [
+                  'env',
+                  {
+                    targets: {
+                      'ie': '11'
+                    }
+                  }
+                ]
+              ],
               plugins: ['transform-class-properties', 'transform-object-rest-spread']
             }
           }
         },
-        parseCSS(noextFlag),
-        parseAssets(noextFlag),
+        {
+          test: /\.(scss|css)$/,
+          use: [
+            MiniCssExtractPlugin.loader,
+            {
+              loader: 'css-loader', options: { sourceMap: true } // translates CSS into CommonJS modules
+            }, {
+              loader: 'postcss-loader',
+              options: {
+                config: {
+                  path: path.resolve(__dirname, 'build/postcss.config.js'),
+                },
+                sourceMap: true
+              }
+            }, {
+              loader: 'sass-loader', options: { sourceMap: true }
+            }]
+        },
+        {
+          test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
+          include: path.resolve(__dirname, 'src/assets/fonts'),
+          use: [{
+            loader: 'file-loader',
+            options: {
+              limit: 100000,
+              name: 'assets/fonts/[name].[ext]',
+              publicPath: '../'
+            }
+          }],
+        },
         {
           test: require.resolve('jquery'),
           use: [{
@@ -74,91 +163,6 @@ module.exports = env => {
         }
       ]
     },
-    plugins: getPlugins(noextFlag,willMinify)
+    plugins
   }
 };
-
-function setEntry(noextFlag,theme,thememode) {
-  if (noextFlag === '') {
-    return {
-      normal: [
-          path.resolve(__dirname, `src/js/${theme}.js`),
-          path.resolve(__dirname, `src/scss/${thememode}-${theme}.scss`)
-      ],
-      darkmode: [
-          path.resolve(__dirname, `src/scss/dark-${theme}.scss`)
-      ]
-    }
-  } else {
-    return {
-      normal: [
-          path.resolve(__dirname, `src/js/${theme}.js`),
-      ]
-    }
-  }
-}
-
-function parseAssets(noextFlag) {
-  if (noextFlag === '') {
-    return {
-      test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
-      include: path.resolve(__dirname, 'src/assets/fonts'),
-      use: [{
-        loader: 'file-loader',
-        options: {
-          limit: 100000,
-          name: 'assets/fonts/[name].[ext]'
-        }
-      }],
-    }
-  } else {
-    return {}
-  }
-}
-
-function parseCSS(noextFlag) {
-  if (noextFlag === '') {
-    return {
-      test: /\.(scss|css)$/,
-      use: [
-        MiniCssExtractPlugin.loader,
-        {
-          loader: 'css-loader', options: { sourceMap: true } // translates CSS into CommonJS modules
-        }, {
-          loader: 'postcss-loader',
-          options: {
-            config: {
-              path: path.resolve(__dirname, 'build/postcss.config.js'),
-            },
-            sourceMap: true
-          }
-        }, {
-          loader: 'sass-loader', options: { sourceMap: true }
-        }]
-    }
-  } else {
-    return {}
-  }
-}
-
-function getPlugins(noextFlag,willMinify) {
-  if (noextFlag === '') {
-    return [
-      new MiniCssExtractPlugin({
-        moduleFilename: ({ name }) => (name === 'normal') ? `bootstrap-sncf${noextFlag + willMinify}.css` : `bootstrap-sncf${noextFlag}.darkmode${willMinify}.css`
-      }),
-      new StyleLintPlugin(),
-      new CopyWebpackPlugin([
-        { 
-          from: '**/*',
-          to: 'assets/img' 
-        }
-      ], {
-        context: path.resolve(__dirname, 'src/assets/img')
-      })
-    ]
-  } else {
-    return []
-  }
-}
-

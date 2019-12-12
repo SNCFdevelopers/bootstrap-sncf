@@ -228,3 +228,14 @@ N'utilisez seulement le sélecteur de date et heure lorsqu'il est nécessaire d'
   </div>
 </form>
 {{< /example >}}
+
+## Usage via JavaScript
+Utilisez <a target="_blank" href="https://flatpickr.js.org/">Flatpickr documentation</a>
+
+{{% highlight html %}}
+<div data-component="picker" id="my-picker" ...>
+  ...
+</div>
+{{% /highlight %}}
+
+Accéder à l'instance de votre composant : `document.querySelector('#my-picker').flatpickr`

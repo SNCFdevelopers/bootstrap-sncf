@@ -1,0 +1,328 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+//
+// Color system
+//
+
+// stylelint-disable
+$blue:    #00a1ff;
+$orange:  #ff6e20;
+
+$secondary:     $gray-100;
+$danger:        $orange;
+
+$required-asterix:  $orange;
+
+$btn-primary-color:       $black;
+$btn-secondary-color:     $black;
+$btn-secondary-bg:        $gray-300;
+$btn-white-color:         $primary;
+$btn-white-hover-color:   $primary-dark;
+$btn-white-bg:            $carbon;
+$btn-white-hover-bg:      $carbon;
+
+$btn-color-gray: $gray-200;
+
+$btn-disabled-color:        $gray-300;
+$btn-disabled-bg:           $carbon;
+$btn-disabled-border-color: $carbon;
+
+$btn-rounded-white-color:       $primary;
+$btn-rounded-white-hover-color: $black;
+$btn-rounded-white-bg:          $carbon;
+$btn-rounded-white-hover-bg:    $primary;
+
+$sami-grey: $gray-500;
+
+
+// stylelint-enable
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $black;
+$body-bg-lg:                $gray-100;
+$body-color:                $gray-100;
+$background:                $body-bg;
+
+
+$border-color:                $gray-500;
+
+$component-active-color:      $black;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$headings-color:              $gray-100;
+$text-muted:                  $gray-200;
+
+$blockquote-small-color:      $gray-200;
+
+
+// ControlBar
+//
+$controlbar-bg:               $carbon;
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-color:                 $body-color;
+$table-bg:                    $body-bg;
+$table-accent-bg:             $gray-500;
+$table-hover-color:           $table-color;
+$table-hover-bg:              $carbon;
+$table-active-bg:             $table-hover-bg;
+
+$table-border-width:          $border-width;
+$table-border-color:          $border-color;
+
+$table-head-bg:               $carbon;
+$table-head-color:            $gray-100;
+
+
+// Table Filters
+
+$table-filters-color:             $body-color;
+$table-filters-title-color:       $gray-200;
+$table-filters-item-color:        $gray-100;
+$table-filters-group-title-color: $gray-200;
+$table-filters-bg:                $carbon;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+// Button cards
+$btn-card-bg:                 $carbon;
+$btn-card-border:             $carbon;
+$btn-card-color:              $primary;
+$btn-card-active-bg:          $primary;
+$btn-card-active-border:      $primary;
+$btn-card-active-color:       $black;
+
+
+// Forms
+
+$input-bg:                              $carbon;
+$input-bg-mastheader:                   $black;
+$input-disabled-bg:                     $carbon;
+$input-disabled-color:                  $gray-500;
+
+$input-focus-bg:                        $carbon;
+
+$input-placeholder-color:               $gray-300;
+
+$form-toolbar-border-color:             $carbon;
+$form-toolbar-color:                    $body-color;
+
+$form-control-white:                    $black; // Only useful for darkmode
+
+$form-error-color:                      $black;
+
+
+//
+// Chips
+//
+
+$chips-color:                           $black;
+$chips-input-color:                     $primary;
+
+
+$custom-control-indicator-bg:           $black;
+
+$custom-control-label-color:            $gray-200;
+
+
+// REFACTORING
+$switch-control-slider-bg:          $carbon;
+
+$select-improved-border-color:      $carbon;
+$select-improved-menu-item-color:   $gray-100;
+$select-improved-menu-bg:           $black;
+$select-improved-menu-border-color: $carbon;
+$select-improved-group-title:       $gray-100;
+
+
+//
+// Advanced search
+//
+
+$advanced-search-bg:                $black;
+$advanced-search-border-color:      $gray-500;
+$advanced-search-color:             $gray-100;
+$advanced-search-menu-title-color:  $gray-100;
+
+
+// Navs
+
+$nav-tabs-bg:                       $black;
+$nav-tabs-color:                    $gray-100;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-color:                    $body-color;
+$dropdown-bg:                       $black;
+
+$dropdown-link-color:               $gray-100;
+
+$dropdown-link-disabled-color:      $gray-200;
+
+$dropdown-header-color:             $gray-100;
+
+
+// Mastnav
+$mastnav-color-lg:                  $black;
+$mastcontent-bg:                    $black;
+
+// Actionbar
+$actionbar-bg:                      $black;
+
+// Menus, panels
+$menubar-color:                     $gray-100;
+$menubar-bg:                        $carbon;
+$menu-color:                        $carbon;
+$menu-secondary-color:              $gray-100;
+
+// Anchor
+$anchor-gradient-color:             $gray-400;
+$anchor-item-color:                 $gray-100;
+$anchor-item-bg:                    $body-bg;
+
+// Accordion
+$accordion-bg:                      $carbon;
+
+// Proof
+$proof-gray-bg:                     $carbon;
+$proof-strip-color:                 $gray-500;
+
+// Editorial
+$editorial-color:                   $gray-100;
+$editorial-bg:                      $carbon;
+$edito-push-highlight-bg:           $carbon;
+
+// Packshot
+$packshot-color:                    $gray-100;
+$packshot-bg:                       $carbon;
+
+// Contact
+$edito-contact-bg:                  $carbon;
+
+// Tongues
+$tongues-point:                     $black;
+
+// Vignettes
+$vignette-bg:                      $black;
+
+// Pagination
+$pagination-color:                  $gray-100;
+$pagination-disabled-color:         $gray-200;
+
+
+// Cards
+
+$card-bg:                           $carbon;
+
+
+// Tooltips
+
+$tooltip-bg:                  $carbon;
+
+
+// Popovers
+
+$popover-bg:                        $black;
+$popover-header-bg:                 $popover-bg;
+$popover-header-color:              $primary;
+
+
+// Modals
+
+// Padding applied to the modal body
+$modal-content-bg:               $black;
+$modal-content-border-color:     $carbon;
+$modal-header-border-width:      0;
+$modal-footer-border-width:      0;
+
+
+// Progress bars
+
+$progress-bg:                       $black;
+
+
+// List group
+
+$list-group-bg:                     $black;
+$list-group-hover-bg:               $gray-500;
+$list-group-active-bg:              $black;
+$list-group-active-border-color:    $border-color;
+$list-group-disabled-color:         $gray-200;
+$list-group-action-active-bg:       $carbon;
+$list-group-double-panel-title-bg:  $carbon;
+
+
+// Breadcrumbs
+
+$breadcrumb-color:                  $gray-100;
+$breadcrumb-bg:                     $black;
+$breadcrumb-divider-color:          $gray-100;
+
+
+// Mobile menu
+
+$mobile-menu-bg:                    $carbon;
+$mobile-menu-close-color:           $white;
+
+
+// Carousel
+
+$carousel-bg:                       $carbon;
+
+
+// Swiper for carousel
+$swiper-btn-color:                  $black;
+$swiper-btn-bg:                     $primary;
+$swiper-btn-disabled-color:         $black;
+
+
+// Close
+
+$close-color:                       $body-color;
+
+
+// Code
+
+$code-color:                        $yellow;
+
+
+// Flatpickr
+
+$flatpickr-bg:                      $carbon;
+$flatpickr-day-othermonth-color:    $gray-300;
+$flatpickr-weekday-color:           $gray-200;
+$flatpickr-day-focus-color:         $black;
+$flatpickr-day-hover-color:         $black;
+
+$flatpickr-time-color:              $body-color;
+$flatpickr-time-input-bg:           $carbon;
+$flatpickr-time-focus-bg:           $gray-500;
+
+$flatpickr-range-bg:                $gray-500;
+
+
+// Charts
+
+$charts-tooltip-bg:                 $carbon;
+$charts-tooltip-title-color:        $body-color;
+$charts-head-bg:                    $carbon;

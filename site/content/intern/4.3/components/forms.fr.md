@@ -264,6 +264,41 @@ Les chips sont des composants compacts qui apparaissent après la saisie ou la s
 Les technologies d'assistance telles que les lecteurs d'écran auront des problèmes avec formulaires si vous n'incluez pas d'étiquette pour chaque entrée. Pour ces formulaires en ligne, vous pouvez masquer les étiquettes avec la classe `.sr-only`. Il existe d'autres  méthodes alternatives pour fournir une  étiquette pour les technologies d'assistance, telles que les attributs `aria-label`, `aria-labelledby` ou `title`. Si aucune d'entre elles n'est présente, les technologies  d'assistance peuvent recourir à l'attribut `placeholder`, le cas échéant, mais notez que l'utilisation de `placeholder` en remplacement d'étiquetage n'est pas conseillée.
 {{% /callout %}}
 
+## Usage via JavaScript
+
+{{% highlight html %}}
+<div data-component="chips" id="my-chips" ...>
+  ...
+</div>
+{{% /highlight %}}
+
+Accéder à l'instance de votre composant : `document.querySelector('#my-chips').chips`
+
+#### Select methodes
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Methode</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.getValues()</code></td>
+      <td>Accédez aux valeurs.</td>
+    </tr>
+    <tr>
+      <td><code>.addChips('text')</code></td>
+      <td>Ajoutez une chips.</td>
+    </tr>
+    <tr>
+      <td><code>.destroyChips(document.querySelector('#chips-0'))</code></td>
+      <td>Supprimer une chips.</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Texte d'aide au remplissage
 
 ### Intérieur du champ
