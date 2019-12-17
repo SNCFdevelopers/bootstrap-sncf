@@ -5,30 +5,27 @@ description: Examples and usage guidelines for icons.
 group: components
 toc: true
 ---
+Le poids d'une fonte d'icônes peut s'avérer important suivant le nombre de celles-ci, d'autant plus si vous n'aviez besoin que d'une poignée d'entre elles.
 
-The weight of an icon's webfont can be huge depending on the number of these, especially if you only needed a handful of them.
+C'est pourquoi nous vous proposons ce générateur de fonte, qui permet également de télécharger ces icônes au format SVG ou PNG avec un paramètre de couleur (non pris en compte par la fonte puisque vous pouvez l'ajuster a posteriori dans le code).
 
-This is why we offer this webfont-generator, which also allows you to download these icons in SVG or PNG format with a color parameter (webfont not concerned since you can adjust it in the code).
-
-Don't worry, the icons necessary for Bootstrap are included by default.
+Pas d'inquiétudes, les icônes nécessaires à Bootstrap sont elles incluses par défaut.
 
 <div class="bd-content pr-5" data-component="icons-generator">
   <span></span>
   <h2>Configuration</h2>
   <div class="row justify-content-between mt-3">
-    <div class="col-12">
+    <div class="col-4">
       <div class="row">
       {{< colors.inline >}}
       {{ range (index .Site.Data "theme-colors") }}
-        <div class="ig-color col-2 mb-3" data-role="color" data-color="{{ .hex }}">
-          <div class="p-3 mb-2 bg-{{ .name }}">{{ .name }}</div>
+        <div class="ig-color col-1 mb-3" data-role="color" data-color="{{ .hex }}">
+          <div class="p-3 mb-2 bg-{{ .name }}"></div>
         </div>
       {{ end }}
       {{< /colors.inline >}}
       </div>
     </div>
-  </div>
-  <div class="row justify-content-between mt-3">
     <div class="col col-2">
       <div class="form-group">
         {{< input type="number" id="withSize" placeholder="Taille des png/svg" >}}
