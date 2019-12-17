@@ -1,2 +1,2 @@
-const fontBuilderApiPath = 'http://192.168.99.102:49161/api'
+const fontBuilderApiPath = 'https://ext.iin.ovh/iconbuilder/api'
 export const fontBuilderDownloadPath = `${fontBuilderApiPath}/download`
