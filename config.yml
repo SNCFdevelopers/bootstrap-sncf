@@ -45,7 +45,7 @@ params:
 
   current_version:      "4.3.1"
   docs_version:         "4.3"
-  sncf_version:         "5"
+  sncf_version:         "6"
   repo:                 "https://github.com/SNCFdevelopers/bootstrap-sncf"
   url_metier:           "https://designmetier-bootstrap.sncf.fr"
   url_communication:    "https://design-bootstrap.sncf.fr"
