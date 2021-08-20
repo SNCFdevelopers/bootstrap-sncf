@@ -219,7 +219,7 @@ input[type="button"] {
   @include transition($btn-transition);
 
   @include hover {
-    background-color: #0074af;
+    background-color: $primary-dark;
   }
 
   &.disabled,

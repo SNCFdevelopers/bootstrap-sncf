@@ -47,13 +47,13 @@
 
     @include hover-focus-active {
       position: relative;
-      color: theme-color("primary");
+      color: $nav-tabs-color-active;
     }
 
     // stylelint-disable selector-no-qualifying-type
     &.active {
       font-weight: $font-weight-medium;
-      color: theme-color("primary");
+      color: $nav-tabs-color-active;
     }
     // stylelint-enable selector-no-qualifying-type
   }

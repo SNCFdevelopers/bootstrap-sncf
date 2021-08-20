@@ -9,15 +9,15 @@
 //
 
 // stylelint-disable
-$blue:    #00a1ff;
+$blue-on-black: #585eea;
 $primary: $blue;
 $orange:  #ff6e20;
 
-$secondary:     $gray-100;
 $danger:        $orange;
 
 $colors: map-merge((
-  "blue":       $blue,
+  "blue":           $blue,
+  "blue-on-black":  $blue-on-black,
 ), $colors);
 
 $theme-colors: map-merge((
@@ -26,9 +26,6 @@ $theme-colors: map-merge((
 
 $required-asterix:  $orange;
 
-$btn-primary-color:       $black;
-$btn-secondary-color:     $black;
-$btn-secondary-bg:        $gray-300;
 $btn-white-color:         $primary;
 $btn-white-hover-color:   $primary-dark;
 $btn-white-bg:            $carbon;
@@ -47,7 +44,7 @@ $btn-rounded-white-hover-bg:    $primary;
 
 $sami-grey: $gray-500;
 
-$link-color: $blue;
+$link-color: $blue-on-black;
 
 // stylelint-enable
 
@@ -123,6 +120,7 @@ $btn-card-active-color:       $black;
 
 // Forms
 
+$input-color:                           $blue-on-black !default;
 $input-bg:                              $carbon;
 $input-bg-mastheader:                   $black;
 $input-disabled-bg:                     $carbon;
@@ -139,13 +137,13 @@ $form-control-white:                    $black; // Only useful for darkmode
 
 $form-error-color:                      $black;
 
+$textarea-form-control-color:           $blue-on-black !default;
+
 
 //
 // Chips
 //
-
-$chips-color:                           $black;
-$chips-input-color:                     $primary;
+$chips-input-color:                     $blue-on-black;
 
 
 $custom-control-indicator-bg:                     $black;
@@ -184,6 +182,7 @@ $advanced-search-menu-title-color:  $gray-100;
 
 $nav-tabs-bg:                       $black;
 $nav-tabs-color:                    $gray-100;
+$nav-tabs-color-active:             $blue-on-black;
 
 
 // Dropdowns
@@ -199,14 +198,6 @@ $dropdown-link-color:               $gray-100;
 $dropdown-link-disabled-color:      $gray-200;
 
 $dropdown-header-color:             $gray-100;
-
-
-// Mastnav
-$mastnav-color-lg:                  $black;
-$mastcontent-bg:                    $black;
-
-// Actionbar
-$actionbar-bg:                      $black;
 
 // Menus, panels
 $menubar-color:                     $gray-100;
@@ -263,7 +254,7 @@ $tooltip-bg:                  $carbon;
 
 $popover-bg:                        $black;
 $popover-header-bg:                 $popover-bg;
-$popover-header-color:              $primary;
+$popover-header-color:              $blue-on-black;
 $popover-border-color:              $border-color;
 
 

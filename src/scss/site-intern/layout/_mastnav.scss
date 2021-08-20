@@ -91,7 +91,7 @@ $mastnav-width-lg: rem(100px);
 
     @include hover-focus-active {
       color: $mastnav-color-lg;
-      background-color: #0074af;
+      background-color: $primary-dark;
     }
 
     [class^="icons-"] {

@@ -34,36 +34,40 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:    #0088ce !default;
-$purple:  #6e1e78 !default;
-$pink:    #a1006b !default;
-$red:     #cd0037 !default;
-$orange:  #e05206 !default;
-$yellow:  #ffb612 !default;
-$green:   #82be00 !default;
-$teal:    #d2e100 !default;
-$cyan:    #009aa6 !default;
-$carbon:  #333 !default;
+$blue:          #303383 !default;
+$darkblue:      #16183d !default;
+$verydarkblue:  #0e0f26 !default;
+$purple:        #6e1e78 !default;
+$pink:          #a1006b !default;
+$red:           #cd0037 !default;
+$orange:        #e05206 !default;
+$yellow:        #ffb612 !default;
+$green:         #82be00 !default;
+$teal:          #d2e100 !default;
+$cyan:          #009aa6 !default;
+$carbon:        #333 !default;
 
 $colors: ();
 $colors: map-merge((
-  "blue":       $blue,
-  "purple":     $purple,
-  "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "white":      $white,
-  "black":      $black,
-  "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "blue":         $blue,
+  "darkblue":     $darkblue,
+  "verydarkblue": $verydarkblue,
+  "purple":       $purple,
+  "pink":         $pink,
+  "red":          $red,
+  "orange":       $orange,
+  "yellow":       $yellow,
+  "green":        $green,
+  "teal":         $teal,
+  "cyan":         $cyan,
+  "white":        $white,
+  "black":        $black,
+  "gray":         $gray-600,
+  "gray-dark":    $gray-800
 ), $colors);
 
 $primary:       $blue !default;
-$primary-dark:  #0074af !default;
+$primary-dark:  #202258 !default;
 $secondary:     $gray-500 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -903,6 +907,7 @@ $nav-divider-margin-y:              $spacer / 2 !default;
 
 $nav-tabs-bg:                       $white !default;
 $nav-tabs-color:                    $gray-400 !default;
+$nav-tabs-color-active:             $primary;
 
 // Navbar
 
@@ -1295,7 +1300,7 @@ $breadcrumb-color:                  $carbon !default;
 $breadcrumb-bg:                     $white !default;
 $breadcrumb-divider-color:          $gray-600 !default;
 $breadcrumb-active-color:           $primary !default;
-$breadcrumb-active-divider:         str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%230088ce' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
+$breadcrumb-active-divider:         str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%23303383' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
 $breadcrumb-current-divider:        str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%333333' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
 $breadcrumb-divider:                str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='%23b9b9b9' d='M40.42 25 17 48.85a4.69 4.69 0 0 1-6.15 0,5.15 5.15 0 0 1-1.16-3.08 4.38 4.38 0 0 1 1.16-3.08L28.12 25 10.81 7.31A4.6 4.6 0 0 1 11.58.38a5.39 5.39 0 0 1 5.77 1.16Z'/%3E%3C/svg%3E"), "#", "%23");
 

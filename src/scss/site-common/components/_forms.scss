@@ -132,7 +132,7 @@ input {
 
   .form-control-container:not(.is-invalid) &[required]:valid {
     padding-right: $icon-width;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 22'%3e%3cdefs%3e%3cstyle%3e.check-icon%7bfill:%230088ce;%7d%3c/style%3e%3c/defs%3e%3ctitle%3echeck%3c/title%3e%3cpath class='check-icon' d='M33.18,13.21,15.53,30.87a1.11,1.11,0,0,1-1.58,0L6.82,23.75a1.13,1.13,0,0,1,0-1.58l2.1-2.11a1.13,1.13,0,0,1,1.58,0L14,23.5a1.13,1.13,0,0,0,1.58,0l14-14a1.13,1.13,0,0,1,1.58,0l2.11,2.11a1.13,1.13,0,0,1,0,1.58' transform='translate(-6.5 -9.2)'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 22'%3e%3cdefs%3e%3cstyle%3e.check-icon%7bfill:%23303383;%7d%3c/style%3e%3c/defs%3e%3ctitle%3echeck%3c/title%3e%3cpath class='check-icon' d='M33.18,13.21,15.53,30.87a1.11,1.11,0,0,1-1.58,0L6.82,23.75a1.13,1.13,0,0,1,0-1.58l2.1-2.11a1.13,1.13,0,0,1,1.58,0L14,23.5a1.13,1.13,0,0,0,1.58,0l14-14a1.13,1.13,0,0,1,1.58,0l2.11,2.11a1.13,1.13,0,0,1,0,1.58' transform='translate(-6.5 -9.2)'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: center right 18px;
     background-size: 18px 14px;
