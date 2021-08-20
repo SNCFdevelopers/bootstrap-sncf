@@ -18,6 +18,11 @@ toc: true
 
 ## v4.3.1
 
+### Revision 6 _15/04/2019_
+- Adding import possibilities for js components (React & Angular)
+- WIP Pictotheque
+- WIP « Tout SNCF » component
+
 ### Revision 5 _15/11/2019_
 - Corrected data-default-date format for picker (should be jj/mm/yyyy)
 - Corrected favicons links **MANDATORY MIGRATION** replace `docs` by `brand` in asset's path for favicons (see docs for reference)

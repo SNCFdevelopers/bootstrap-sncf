@@ -1,5 +1,5 @@
 {
-  "name": "@sncf/bootstrap-sncf",
+  "name": "@sncf/bootstrap-sncf.metier",
   "description": "SNCF frontend framework",
   "version": "4.3.1-r6-beta",
   "sideEffects": false,
