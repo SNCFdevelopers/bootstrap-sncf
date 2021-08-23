@@ -120,7 +120,8 @@ $btn-card-active-color:       $black;
 
 // Forms
 
-$input-color:                           $blue-on-black !default;
+$input-color:                           $blue-on-black;
+$input-focus-color:                     $input-color;
 $input-bg:                              $carbon;
 $input-bg-mastheader:                   $black;
 $input-disabled-bg:                     $carbon;
@@ -137,7 +138,7 @@ $form-control-white:                    $black; // Only useful for darkmode
 
 $form-error-color:                      $black;
 
-$textarea-form-control-color:           $blue-on-black !default;
+$textarea-form-control-color:           $blue-on-black;
 
 
 //
@@ -198,6 +199,7 @@ $dropdown-link-color:               $gray-100;
 $dropdown-link-disabled-color:      $gray-200;
 
 $dropdown-header-color:             $gray-100;
+$dropdown-link-hover-color:         $blue-on-black !default;
 
 // Menus, panels
 $menubar-color:                     $gray-100;

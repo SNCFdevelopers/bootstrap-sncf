@@ -587,7 +587,7 @@ $btn-card-active-color:       $white !default;
 
 $label-margin-bottom:                   .5rem !default;
 
-$textarea-form-control-color:           $primary !default;
+$textarea-form-control-color:           $primary;
 
 $input-padding-y:                       .65625rem; // 10.5px
 $input-padding-x:                       1.25rem;
@@ -613,7 +613,7 @@ $input-bg-mastheader:                   $input-bg !default;
 $input-disabled-bg:                     $gray-100 !default;
 $input-disabled-color:                  $gray-500 !default;
 
-$input-color:                           $primary !default;
+$input-color:                           $primary;
 $input-border-color:                    $gray-400 !default;
 $input-border-width:                    0;
 $input-box-shadow:                      0; // inset 0 1px 1px rgba($black, .075);
