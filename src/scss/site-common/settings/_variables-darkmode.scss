@@ -26,8 +26,8 @@ $theme-colors: map-merge((
 
 $required-asterix:  $orange;
 
-$btn-white-color:         $primary;
-$btn-white-hover-color:   $primary-dark;
+$btn-white-color:         $blue-on-black;
+$btn-white-hover-color:   $primary;
 $btn-white-bg:            $carbon;
 $btn-white-hover-bg:      $carbon;
 
@@ -37,7 +37,7 @@ $btn-disabled-color:        $gray-300;
 $btn-disabled-bg:           $carbon;
 $btn-disabled-border-color: $carbon;
 
-$btn-rounded-white-color:       $primary;
+$btn-rounded-white-color:       $blue-on-black;
 $btn-rounded-white-hover-color: $black;
 $btn-rounded-white-bg:          $carbon;
 $btn-rounded-white-hover-bg:    $primary;
@@ -112,7 +112,7 @@ $table-filters-bg:                $carbon;
 // Button cards
 $btn-card-bg:                 $carbon;
 $btn-card-border:             $carbon;
-$btn-card-color:              $primary;
+$btn-card-color:              $blue-on-black;
 $btn-card-active-bg:          $primary;
 $btn-card-active-border:      $primary;
 $btn-card-active-color:       $black;
@@ -149,8 +149,8 @@ $chips-input-color:                     $blue-on-black;
 
 $custom-control-indicator-bg:                     $black;
 $custom-control-indicator-checked-bg:             $component-active-bg;
-$custom-control-hover-color:                      $primary;
-$custom-control-checked-color:                    $primary;
+$custom-control-hover-color:                      $blue-on-black;
+$custom-control-checked-color:                    $blue-on-black;
 $custom-control-indicator-checked-border-color:   $primary;
 $custom-control-label-color:                      $gray-200;
 $custom-control-label-disabled-color:             $gray-300;
@@ -199,7 +199,7 @@ $dropdown-link-color:               $gray-100;
 $dropdown-link-disabled-color:      $gray-200;
 
 $dropdown-header-color:             $gray-100;
-$dropdown-link-hover-color:         $blue-on-black !default;
+$dropdown-link-hover-color:         $blue-on-black;
 
 // Menus, panels
 $menubar-color:                     $gray-100;

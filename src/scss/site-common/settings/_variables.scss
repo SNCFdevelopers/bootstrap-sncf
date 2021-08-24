@@ -965,7 +965,7 @@ $dropdown-divider-margin-y:         $nav-divider-margin-y !default;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175);
 
 $dropdown-link-color:               $gray-900 !default;
-$dropdown-link-hover-color:         $primary !default;
+$dropdown-link-hover-color:         $primary;
 $dropdown-link-hover-bg:            transparent;
 
 $dropdown-link-active-color:        $component-active-color;
