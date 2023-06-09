@@ -34,6 +34,7 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
+$oldblue:       #0088ce !default;
 $blue:          #303383 !default;
 $darkblue:      #16183d !default;
 $verydarkblue:  #0e0f26 !default;
@@ -49,6 +50,7 @@ $carbon:        #333 !default;
 
 $colors: ();
 $colors: map-merge((
+  "oldblue":      $oldblue,
   "blue":         $blue,
   "darkblue":     $darkblue,
   "verydarkblue": $verydarkblue,
@@ -301,7 +303,10 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 1024px,
-  xl: 1280px
+  xl: 1280px,
+  hd: 1366px,
+  hdp: 1600px,
+  fhd: 1920px
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -316,7 +321,10 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1140px,
+  hd: 1220px,
+  hdp: 1400px,
+  fhd: 1664px
 );
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -1203,6 +1211,9 @@ $modal-header-border-width:   $modal-content-border-width;
 $modal-footer-border-width:   $modal-header-border-width;
 $modal-header-padding:        1rem;
 
+$modal-fhd:                         1664px;
+$modal-hdp:                         1400px;
+$modal-hd:                          1220px;
 $modal-xl:                          1140px !default;
 $modal-lg:                          800px;
 $modal-md:                          480px;
