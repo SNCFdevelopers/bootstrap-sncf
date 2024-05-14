@@ -1,3 +1,5 @@
+⚠️ This project is not supported anymore, and is deprecated ⚠️
+
 ## Builds status
 
 ### Master Branch
