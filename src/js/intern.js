@@ -19,13 +19,20 @@ import SelectRadios from './components/selectRadios'
 import Table from './components/table'
 import state from './components/states'
 
-document.addEventListener('DOMContentLoaded', () => {
+let callbackTimeout = null
+const timeoutDelay = 500
+const intervalAwait = 200
+const mutationObserverConfig = {
+  attributes: true,
+  childList: true,
+  subtree: true
+}
+
+function initializeComponents() {
   /* eslint-disable no-console */
-  console.log('Hello from the Fab Design.')
-  /* eslint-enable no-console */
 
   // data components
-  const dataComponent = '[data-component]'
+  const dataComponent = '[data-component]:not([fabdesigninitialized="true"])'
   const dataLineChart = 'line-chart'
   const dataBarChart = 'bar-chart'
   const dataPieChart = 'pie-chart'
@@ -42,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const dataTable = 'table'
   const dataRadialProgress = 'radial-progress'
   const dataSchedule = 'schedule'
-
   const components = document.querySelectorAll(dataComponent)
 
   components.forEach((component) => {
@@ -110,6 +116,30 @@ document.addEventListener('DOMContentLoaded', () => {
     if (component.dataset.component === dataSchedule) {
       new Schedule(component)
     }
+
+    component.setAttribute('fabdesigninitialized', true)
     /* eslint-enable no-new */
   })
-})
+
+  if (components.length > 0) {
+    console.log(`FabDesign initialized ${components.length} components`)
+  }
+}
+
+function mutationObserverCallback() {
+  if (callbackTimeout) {
+    clearTimeout(callbackTimeout)
+  }
+  callbackTimeout = setTimeout(() => {
+    initializeComponents()
+  }, timeoutDelay)
+}
+
+
+const interval = setInterval(() => {
+  if (document.body && document.body !== null) {
+    clearInterval(interval)
+    const mutationObserver = new MutationObserver(mutationObserverCallback)
+    mutationObserver.observe(document.body, mutationObserverConfig)
+  }
+}, intervalAwait)
