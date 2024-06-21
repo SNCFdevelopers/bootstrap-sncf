@@ -3,5 +3,7 @@
   examples:
     - name: Navigation
       description: "Demonstration of all responsive and container options for the navbar."
+    - name: Navigation Api
+      description: "Demonstration of all responsive and container options for the navbar."
     - name: Texts and images
       description: "Example."
